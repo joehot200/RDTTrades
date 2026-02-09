@@ -12,13 +12,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    # 1 ▸ checkout with manual retry
+    # 1 ▸ checkout with retry
     - name: Checkout repository (up to 3 tries)
       shell: bash
       run: |
         for i in 1 2 3; do
           echo "🛎️  git clone attempt $i..."
-          if git clone --depth 0 "https://github.com/${{ github.repository }}.git" repo; then
+          if git clone --depth 1 "https://github.com/${{ github.repository }}.git" repo; then
             echo "✅  clone succeeded"; break
           elif [ "$i" -eq 3 ]; then
             echo "❌  clone failed after 3 attempts"; exit 1
