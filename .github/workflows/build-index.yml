@@ -1,45 +1,21 @@
 name: build-trades-index
 on:
   push:
-    paths: [ 'trades/*' ]            # fire whenever anything inside /trades changes
-
+    paths: [ 'trades/*.json' ]          # run whenever any trade file changes
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
-    - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-    # 1️⃣  Validate each trade file; quarantine bad ones
-    - name: Quarantine invalid JSON files
-      id: validate
-      run: |
-        echo "🧹  Scanning trade files for valid JSON..."
-        shopt -s nullglob               # avoid literal pattern when no files
-        for f in trades/*.json; do
-          if ! jq -e . "$f" >/dev/null 2>&1; then
-            echo "❌  $f is NOT valid JSON – moving to ${f%.json}.bad"
-            mv "$f" "${f%.json}.bad"
-          else
-            echo "✅  $f is valid"
-          fi
-        done
+      - name: Merge all trade files into trades.json
+        run: |
+          jq -s '.' trades/*.json > trades.json    # -s slurps an array of objects
 
-    # 2️⃣  Merge all remaining .json files into a single array
-    - name: Merge valid trade files into trades.json
-      run: |
-        echo "📦  Building aggregate trades.json..."
-        if ls trades/*.json >/dev/null 2>&1; then
-          jq -s '.' trades/*.json > trades.json
-        else
-          echo "[]"> trades.json        # create empty array if no good files yet
-        fi
-
-    # 3️⃣  Commit the updated index (and any *.bad renames)
-    - name: Commit updated index
-      run: |
-        git config user.name  "github-actions[bot]"
-        git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-        git add trades.json trades/*.bad || true
-        git commit -m "build: refresh aggregate trades.json & quarantine bad files" || echo "Nothing to commit"
-        git push
+      - name: Commit updated index
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add trades.json
+          git commit -m "build: refresh aggregate trades.json" || echo "No change"
+          git push
