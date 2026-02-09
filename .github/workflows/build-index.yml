@@ -1,37 +1,26 @@
 name: build-trades-index
 
+# Give the workflow token write access to repo contents
+permissions:
+  contents: write            # allows git push, commit, create/update files
+
 on:
   push:
-    paths: [ 'trades/*' ]
-
-permissions:
-  contents: write             # lets the workflow push to main
+    paths: [ 'trades/*.json' ]
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v4      # ←-- NOW you are inside the repo
+      - uses: actions/checkout@v4        # keeps the repo URL pre-loaded with ${{ secrets.GITHUB_TOKEN }}
 
-    - name: Quarantine malformed JSON
-      run: |
-        shopt -s nullglob
-        for f in trades/*.json; do
-          jq -e . "$f" >/dev/null 2>&1 || mv "$f" "${f%.json}.bad"
-        done
+      - name: Merge all trade files into trades.json
+        run: jq -s '.' trades/*.json > trades.json
 
-    - name: Build aggregate trades.json
-      run: |
-        if ls trades/*.json >/dev/null 2>&1; then
-          jq -s '.' trades/*.json > trades.json
-        else
-          echo "[]" > trades.json
-        fi
-
-    - name: Commit updated index
-      run: |
-        git config user.name  "github-actions[bot]"
-        git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-        git add trades.json trades/*.bad || true
-        git commit -m "build: refresh aggregate trades.json" || echo "Nothing to commit"
-        git push
+      - name: Commit updated index
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add trades.json
+          git commit -m "build: refresh aggregate trades.json" || echo "No change"
+          git push
