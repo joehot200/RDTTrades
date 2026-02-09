@@ -19,5 +19,19 @@
     "ID:": "19c43223a290739c",
     "Time Received EST (Github)": "2026-02-09T11:00:47-05:00",
     "Time Received UTC (Github)": "2026-02-09T16:00:47+00:00"
+  },
+  {
+    "Trade": "#14600828655 PAPERMONEY SOLD -1 SPY 100 (Weeklys) 9 FEB 26 696 CALL @.38, ACCOUNT D-******81",
+    "Timestamp": "Mon, 9 Feb 2026 11:45:18 -0500 (EST)",
+    "ID:": "19c434b13a30d3ce",
+    "Time Received EST (Github)": "2026-02-09T11:45:42-05:00",
+    "Time Received UTC (Github)": "2026-02-09T16:45:42+00:00"
+  },
+  {
+    "Trade": "#14600834333 PAPERMONEY SOLD -1 IBKR 100 (Weeklys) 13 FEB 26 75 CALL @2.64, ACCOUNT D-******81",
+    "Timestamp": "Mon, 9 Feb 2026 11:49:54 -0500 (EST)",
+    "ID:": "19c434f499a17665",
+    "Time Received EST (Github)": "2026-02-09T11:51:43-05:00",
+    "Time Received UTC (Github)": "2026-02-09T16:51:43+00:00"
   }
 ]
