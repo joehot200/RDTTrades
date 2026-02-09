@@ -1,36 +1,35 @@
 name: build-trades-index
 
-###############################################################################
-# • runs whenever any file inside /trades is added, removed or modified
-# • token is granted write-access so the bot can commit the rebuilt index
-###############################################################################
 on:
   push:
     paths: [ 'trades/*' ]
 
 permissions:
-  contents: write    # <-- allows git push with ${{ github.token }}
+  contents: write          # allow the workflow’s GITHUB_TOKEN to push
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-    ###########################################################################
-    # 1 ▸ Checkout with retry + full history (avoids shallow-clone edge cases)
-    ###########################################################################
-    - name: Checkout repository (with retry)
-      uses: actions/checkout@v4
-      with:
-        fetch-depth: 0              # full clone
-      retry:                         # built-in retry directive
-        max-attempts: 5
-        delay-seconds: 20
+    # 1 ▸ checkout with manual retry
+    - name: Checkout repository (up to 3 tries)
+      shell: bash
+      run: |
+        for i in 1 2 3; do
+          echo "🛎️  git clone attempt $i..."
+          if git clone --depth 0 "https://github.com/${{ github.repository }}.git" repo; then
+            echo "✅  clone succeeded"; break
+          elif [ "$i" -eq 3 ]; then
+            echo "❌  clone failed after 3 attempts"; exit 1
+          else
+            echo "🔁  retrying in 15 s"; sleep 15
+          fi
+        done
+        cd repo
 
-    ###########################################################################
-    # 2 ▸ Quarantine malformed JSON files so jq won't choke later
-    ###########################################################################
-    - name: Validate each trade file
+    # 2 ▸ quarantine malformed JSON
+    - name: Validate trade files
       shell: bash
       run: |
         shopt -s nullglob
@@ -41,27 +40,22 @@ jobs:
           fi
         done
 
-    ###########################################################################
-    # 3 ▸ Merge all valid JSON objects into a single array
-    ###########################################################################
+    # 3 ▸ build aggregate
     - name: Merge valid trade files into trades.json
       shell: bash
       run: |
-        echo "📦 Building aggregate trades.json"
         if ls trades/*.json >/dev/null 2>&1; then
           jq -s '.' trades/*.json > trades.json
         else
           echo "[]" > trades.json
         fi
 
-    ###########################################################################
-    # 4 ▸ Commit the updated index (and any *.bad renames) back to main
-    ###########################################################################
+    # 4 ▸ commit back to main
     - name: Commit updated index
       shell: bash
       run: |
         git config user.name  "github-actions[bot]"
         git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
         git add trades.json trades/*.bad || true
-        git commit -m "build: refresh aggregate trades.json" || echo "No changes to commit"
+        git commit -m "build: refresh aggregate trades.json" || echo "Nothing to commit"
         git push
