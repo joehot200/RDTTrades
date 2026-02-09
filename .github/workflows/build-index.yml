@@ -1,0 +1,21 @@
+name: build-trades-index
+on:
+  push:
+    paths: [ 'trades/*.json' ]          # run whenever any trade file changes
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Merge all trade files into trades.json
+        run: |
+          jq -s '.' trades/*.json > trades.json    # -s slurps an array of objects
+
+      - name: Commit updated index
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add trades.json
+          git commit -m "build: refresh aggregate trades.json" || echo "No change"
+          git push
