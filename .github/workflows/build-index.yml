@@ -1,16 +1,21 @@
 name: build-trades-index
+
+# Give the workflow token write access to repo contents
+permissions:
+  contents: write            # allows git push, commit, create/update files
+
 on:
   push:
-    paths: [ 'trades/*.json' ]          # run whenever any trade file changes
+    paths: [ 'trades/*.json' ]
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4        # keeps the repo URL pre-loaded with ${{ secrets.GITHUB_TOKEN }}
 
       - name: Merge all trade files into trades.json
-        run: |
-          jq -s '.' trades/*.json > trades.json    # -s slurps an array of objects
+        run: jq -s '.' trades/*.json > trades.json
 
       - name: Commit updated index
         run: |
