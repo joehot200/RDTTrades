@@ -1,26 +1,56 @@
 name: build-trades-index
 
-# Give the workflow token write access to repo contents
 permissions:
-  contents: write            # allows git push, commit, create/update files
+  contents: write
 
 on:
   push:
-    paths: [ 'trades/*.json' ]
+    branches: [main]
+    paths: ['trades/*.json']
+
+# Ensure only one run per branch at a time
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4        # keeps the repo URL pre-loaded with ${{ secrets.GITHUB_TOKEN }}
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
 
-      - name: Merge all trade files into trades.json
-        run: jq -s '.' trades/*.json > trades.json
-
-      - name: Commit updated index
+      - name: Build & push trades.json (safe against reruns/races)
         run: |
+          set -euo pipefail
+
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add trades.json
-          git commit -m "build: refresh aggregate trades.json" || echo "No change"
-          git push
+
+          for attempt in 1 2 3; do
+            # Always rebuild from the latest remote main
+            git fetch origin main
+            git reset --hard origin/main
+
+            jq -s '.' trades/*.json > trades.json
+
+            git add trades.json
+            if git diff --cached --quiet; then
+              echo "No change in trades.json"
+              exit 0
+            fi
+
+            git commit -m "build: refresh aggregate trades.json"
+
+            if git push origin HEAD:main; then
+              echo "Pushed successfully"
+              exit 0
+            fi
+
+            echo "Push rejected (someone updated main). Retrying... ($attempt/3)"
+          done
+
+          echo "Failed to push after 3 attempts"
+          exit 1
