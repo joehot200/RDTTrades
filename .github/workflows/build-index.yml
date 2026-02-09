@@ -2,35 +2,20 @@ name: build-trades-index
 
 on:
   push:
-    paths: [ 'trades/*' ]
+    paths: [ 'trades/*' ]          # run whenever something in /trades changes
 
 permissions:
-  contents: write          # allow the workflow’s GITHUB_TOKEN to push
+  contents: write                  # let the workflow push to main
 
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
-    # 1 ▸ checkout with retry
-    - name: Checkout repository (up to 3 tries)
-      shell: bash
-      run: |
-        for i in 1 2 3; do
-          echo "🛎️  git clone attempt $i..."
-          if git clone --depth 1 "https://github.com/${{ github.repository }}.git" repo; then
-            echo "✅  clone succeeded"; break
-          elif [ "$i" -eq 3 ]; then
-            echo "❌  clone failed after 3 attempts"; exit 1
-          else
-            echo "🔁  retrying in 15 s"; sleep 15
-          fi
-        done
-        cd repo
+    # 1 ▸ Get the repo; nothing else to configure
+    - uses: actions/checkout@v4
 
-    # 2 ▸ quarantine malformed JSON
+    # 2 ▸ Quarantine malformed JSON so jq never crashes
     - name: Validate trade files
-      shell: bash
       run: |
         shopt -s nullglob
         for f in trades/*.json; do
@@ -40,19 +25,17 @@ jobs:
           fi
         done
 
-    # 3 ▸ build aggregate
-    - name: Merge valid trade files into trades.json
-      shell: bash
+    # 3 ▸ Merge all valid JSON objects into one array
+    - name: Build aggregate trades.json
       run: |
         if ls trades/*.json >/dev/null 2>&1; then
-          jq -s '.' trades/*.json > trades.json
+          jq -s '.' trades/*.json > trades.json     # -s = “slurp” into array
         else
-          echo "[]" > trades.json
+          echo "[]" > trades.json                   # empty array if none yet
         fi
 
-    # 4 ▸ commit back to main
+    # 4 ▸ Commit the result back to main
     - name: Commit updated index
-      shell: bash
       run: |
         git config user.name  "github-actions[bot]"
         git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
