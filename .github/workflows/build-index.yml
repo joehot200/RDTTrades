@@ -2,39 +2,32 @@ name: build-trades-index
 
 on:
   push:
-    paths: [ 'trades/*' ]          # run whenever something in /trades changes
+    paths: [ 'trades/*' ]
 
 permissions:
-  contents: write                  # let the workflow push to main
+  contents: write             # lets the workflow push to main
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    # 1 ▸ Get the repo; nothing else to configure
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v4      # ←-- NOW you are inside the repo
 
-    # 2 ▸ Quarantine malformed JSON so jq never crashes
-    - name: Validate trade files
+    - name: Quarantine malformed JSON
       run: |
         shopt -s nullglob
         for f in trades/*.json; do
-          if ! jq -e . "$f" >/dev/null 2>&1; then
-            echo "::warning ::$f is NOT valid JSON – moving to ${f%.json}.bad"
-            mv "$f" "${f%.json}.bad"
-          fi
+          jq -e . "$f" >/dev/null 2>&1 || mv "$f" "${f%.json}.bad"
         done
 
-    # 3 ▸ Merge all valid JSON objects into one array
     - name: Build aggregate trades.json
       run: |
         if ls trades/*.json >/dev/null 2>&1; then
-          jq -s '.' trades/*.json > trades.json     # -s = “slurp” into array
+          jq -s '.' trades/*.json > trades.json
         else
-          echo "[]" > trades.json                   # empty array if none yet
+          echo "[]" > trades.json
         fi
 
-    # 4 ▸ Commit the result back to main
     - name: Commit updated index
       run: |
         git config user.name  "github-actions[bot]"
