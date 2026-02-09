@@ -9,4 +9,4 @@ Zapier may have a slight delay.
 "Time Received (Github)" = Zapier timestamp (trade sent to github from gmail).
 
 
-Raw trades (trades folder) are copied into trades.json.
+Raw trades (trades folder) are compiled into trades.json.
