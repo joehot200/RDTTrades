@@ -124,5 +124,12 @@
     "ID:": "19c6c300bf1ad285",
     "Time Received EST (Github)": "2026-02-17T10:21:31-05:00",
     "Time Received UTC (Github)": "2026-02-17T15:21:31+00:00"
+  },
+  {
+    "Trade": "#14603991864 PAPERMONEY BOT +1 AAPL 100 20 FEB 26 265 CALL @1.58, ACCOUNT D-******81",
+    "Timestamp": "Tue, 17 Feb 2026 10:25:39 -0500 (EST)",
+    "ID:": "19c6c35079893224",
+    "Time Received EST (Github)": "2026-02-17T10:27:30-05:00",
+    "Time Received UTC (Github)": "2026-02-17T15:27:30+00:00"
   }
 ]
