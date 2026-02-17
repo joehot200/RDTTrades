@@ -173,5 +173,12 @@
     "ID:": "19c6c905dd5e6f3d",
     "Time Received EST (Github)": "2026-02-17T12:05:43-05:00",
     "Time Received UTC (Github)": "2026-02-17T17:05:43+00:00"
+  },
+  {
+    "Trade": "#14604152259 PAPERMONEY SOLD -1 AAPL 100 (Weeklys) 23 FEB 26 260 CALL @4.90, ACCOUNT D-******81",
+    "Timestamp": "Tue, 17 Feb 2026 12:15:11 -0500 (EST)",
+    "ID:": "19c6c9953401bc95",
+    "Time Received EST (Github)": "2026-02-17T12:15:32-05:00",
+    "Time Received UTC (Github)": "2026-02-17T17:15:32+00:00"
   }
 ]
