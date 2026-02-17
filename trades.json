@@ -145,5 +145,19 @@
     "ID:": "19c6c6165d976685",
     "Time Received EST (Github)": "2026-02-17T11:15:09-05:00",
     "Time Received UTC (Github)": "2026-02-17T16:15:09+00:00"
+  },
+  {
+    "Trade": "#14604111971 PAPERMONEY SOLD -1 PYPL 100 20 FEB 26 41 CALL @1.05, ACCOUNT D-******81",
+    "Timestamp": "Tue, 17 Feb 2026 11:34:55 -0500 (EST)",
+    "ID:": "19c6c7471d896564",
+    "Time Received EST (Github)": "2026-02-17T11:35:35-05:00",
+    "Time Received UTC (Github)": "2026-02-17T16:35:35+00:00"
+  },
+  {
+    "Trade": "#14604110831 PAPERMONEY SOLD -1 AAPL 100 20 FEB 26 265 CALL @1.32, ACCOUNT D-******81",
+    "Timestamp": "Tue, 17 Feb 2026 11:33:51 -0500 (EST)",
+    "ID:": "19c6c73794d34930",
+    "Time Received EST (Github)": "2026-02-17T11:35:36-05:00",
+    "Time Received UTC (Github)": "2026-02-17T16:35:36+00:00"
   }
 ]
