@@ -278,5 +278,12 @@
     "ID:": "19c7c1134c92d5b6",
     "Time Received EST (Github)": "2026-02-20T12:28:41-05:00",
     "Time Received UTC (Github)": "2026-02-20T17:28:41+00:00"
+  },
+  {
+    "Trade": "#14606163713 PAPERMONEY SOLD -1 PYPL 100 20 FEB 26 42.5 CALL @.02, ACCOUNT D-******81",
+    "Timestamp": "Fri, 20 Feb 2026 13:53:55 -0500 (EST)",
+    "ID:": "19c7c66cb05d4fd9",
+    "Time Received EST (Github)": "2026-02-20T14:11:04-05:00",
+    "Time Received UTC (Github)": "2026-02-20T19:11:04+00:00"
   }
 ]
