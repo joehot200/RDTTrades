@@ -320,5 +320,19 @@
     "ID:": "19c8b58773c598e9",
     "Time Received EST (Github)": "2026-02-23T11:39:37-05:00",
     "Time Received UTC (Github)": "2026-02-23T16:39:37+00:00"
+  },
+  {
+    "Trade": "#14607650213 PAPERMONEY SOLD -1 ORCL 100 (Weeklys) 27 FEB 26 139 PUT @4.50, ACCOUNT D-******81",
+    "Timestamp": "Mon, 23 Feb 2026 11:45:24 -0500 (EST)",
+    "ID:": "19c8b642f80b6d07",
+    "Time Received EST (Github)": "2026-02-23T11:53:20-05:00",
+    "Time Received UTC (Github)": "2026-02-23T16:53:20+00:00"
+  },
+  {
+    "Trade": "#14607603662 PAPERMONEY SOLD -1 PYPL 100 (Weeklys) 27 FEB 26 39 PUT @.05, ACCOUNT D-******81",
+    "Timestamp": "Mon, 23 Feb 2026 11:39:54 -0500 (EST)",
+    "ID:": "19c8b5f2bb1f670e",
+    "Time Received EST (Github)": "2026-02-23T11:53:23-05:00",
+    "Time Received UTC (Github)": "2026-02-23T16:53:23+00:00"
   }
 ]
