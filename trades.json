@@ -355,5 +355,26 @@
     "ID:": "19c906da98f6c668",
     "Time Received EST (Github)": "2026-02-24T11:24:19-05:00",
     "Time Received UTC (Github)": "2026-02-24T16:24:19+00:00"
+  },
+  {
+    "Trade": "#14622348933 PAPERMONEY BOT +1 AXP 100 (Weeklys) 27 FEB 26 320 PUT @6.30, ACCOUNT D-******81",
+    "Timestamp": "Tue, 24 Feb 2026 11:31:50 -0500 (EST)",
+    "ID:": "19c907e23807b0e8",
+    "Time Received EST (Github)": "2026-02-24T11:39:17-05:00",
+    "Time Received UTC (Github)": "2026-02-24T16:39:17+00:00"
+  },
+  {
+    "Trade": "#14622261308 PAPERMONEY BOT +1 BAC @50.16, ACCOUNT D-******81",
+    "Timestamp": "Tue, 24 Feb 2026 11:25:38 -0500 (EST)",
+    "ID:": "19c907875ec87db4",
+    "Time Received EST (Github)": "2026-02-24T11:39:18-05:00",
+    "Time Received UTC (Github)": "2026-02-24T16:39:18+00:00"
+  },
+  {
+    "Trade": "#14622261296 PAPERMONEY SOLD -1 BAC 100 (Weeklys) 6 MAR 26 50 PUT @1.08, ACCOUNT D-******81",
+    "Timestamp": "Tue, 24 Feb 2026 11:25:38 -0500 (EST)",
+    "ID:": "19c90787482c2c5e",
+    "Time Received EST (Github)": "2026-02-24T11:39:19-05:00",
+    "Time Received UTC (Github)": "2026-02-24T16:39:19+00:00"
   }
 ]
