@@ -1,6 +1,6 @@
 # RDTTrades
 
-Trade log. (Still slightly WIP)
+Trade log. (Still slightly WIP*)
 
 Workflow is: ToS -> Email -> Zapier -> Github ("Inbox" folder).
 
@@ -9,3 +9,6 @@ Use the "Inbox" folder as the absolute truth (raw file from ToS) - everything el
 Zapier may have a slight delay.
 "Timestamp" = Gmail timestamp (trade received from ToS).
 "Time Received (Github)" = Zapier timestamp (trade sent to github from zapier).
+
+
+* - I had ChatGPT assistance - the current plan is just to 
