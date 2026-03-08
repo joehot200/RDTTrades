@@ -24,7 +24,7 @@
   },
   "computed": {
     "month": "2026-02",
-    "dte": -27,
+    "dte": 0,
     "wiki_ok": false
   },
   "rdt": {
