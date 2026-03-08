@@ -30,5 +30,37 @@
     "trade_role": "unknown",
     "pos_side": "unknown",
     "contract_key": null
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "13e7ff6e29b6",
+    "received_at": "2026-03-08T14:45:28.704Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "trades/inbox/2026-03-08T13:21:57+00:00--19c434b13a30d3ce.json",
+      "raw_id": "2026-03-08T13:21:57+00:00--19c434b13a30d3ce"
+    },
+    "raw": {
+      "text": ""
+    },
+    "instrument": "unknown",
+    "paper": false,
+    "action": null,
+    "symbol": null,
+    "qty": null,
+    "fill": null,
+    "option": null,
+    "computed": {
+      "month": "2026-03",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "none",
+      "text": "Trade alert received (no text found)."
+    },
+    "trade_role": "unknown",
+    "pos_side": "unknown",
+    "contract_key": null
   }
 ]
