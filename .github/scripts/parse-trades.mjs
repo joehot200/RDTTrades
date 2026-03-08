@@ -3,6 +3,7 @@ import path from "path";
 import crypto from "crypto";
 
 const ROOT = process.cwd();
+const LOCAL_TZ = "Europe/London";
 
 const MONTH = {
   JAN: "01", FEB: "02", MAR: "03", APR: "04", MAY: "05", JUN: "06",
@@ -117,6 +118,48 @@ function classifyOptionAction(actionUpper) {
   if (a.includes("BUY"))  return { role: "open",  pos_side: "long" };
 
   return { role: "unknown", pos_side: "unknown" };
+}
+
+function getDatePartsInTimeZone(dateInput, timeZone = LOCAL_TZ) {
+  const d = new Date(dateInput);
+  const fmt = new Intl.DateTimeFormat("en-CA", {
+    timeZone,
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit"
+  });
+
+  const parts = Object.fromEntries(
+    fmt.formatToParts(d)
+      .filter(p => p.type !== "literal")
+      .map(p => [p.type, p.value])
+  );
+
+  return {
+    year: Number(parts.year),
+    month: Number(parts.month),
+    day: Number(parts.day),
+    ymd: `${parts.year}-${parts.month}-${parts.day}`
+  };
+}
+
+function ymdToUtcDate(ymd) {
+  const [y, m, d] = ymd.split("-").map(Number);
+  return new Date(Date.UTC(y, m - 1, d, 12, 0, 0));
+}
+
+function subtractDaysFromYmd(ymd, days) {
+  const d = ymdToUtcDate(ymd);
+  d.setUTCDate(d.getUTCDate() - days);
+  return d.toISOString().slice(0, 10);
+}
+
+function mondayOfWeekYmd(dateInput, timeZone = LOCAL_TZ) {
+  const { ymd } = getDatePartsInTimeZone(dateInput, timeZone);
+  const d = ymdToUtcDate(ymd);
+  const dow = d.getUTCDay();      // Sun=0 ... Sat=6
+  const offset = (dow + 6) % 7;   // Mon=0 ... Sun=6
+  return subtractDaysFromYmd(ymd, offset);
 }
 
 function parseRaw(raw, now = new Date()) {
@@ -491,7 +534,6 @@ function main() {
   const entriesExitsRoot = path.join(ROOT, "trades", "entries-exits");
   let cleanedLogs = walkJsonFiles(entriesExitsRoot).map(readJson);
 
-  // dedupe by trade_id
   const byId = new Map();
   for (const e of cleanedLogs) {
     const prev = byId.get(e.trade_id);
@@ -529,6 +571,17 @@ function main() {
   writeJson(
     path.join(ROOT, "month-to-date.json"),
     cleanedLogs.filter(e => e.computed?.month === currentMonth)
+  );
+
+  const londonTodayYmd = getDatePartsInTimeZone(new Date(), LOCAL_TZ).ymd;
+  const londonWeekStartYmd = mondayOfWeekYmd(new Date(), LOCAL_TZ);
+
+  writeJson(
+    path.join(ROOT, "week-to-date.json"),
+    cleanedLogs.filter(e => {
+      const eventYmd = getDatePartsInTimeZone(e.received_at, LOCAL_TZ).ymd;
+      return eventYmd >= londonWeekStartYmd && eventYmd <= londonTodayYmd;
+    })
   );
 
   // build completed trades
@@ -575,6 +628,6 @@ function main() {
   console.log(`Cleaned entry/exit logs: ${cleanedLogs.length}`);
   console.log(`Months: ${months.length}`);
   console.log(`Completed trades: ${completedTrades.length}`);
+  console.log(`Week start (${LOCAL_TZ}): ${londonWeekStartYmd}`);
 }
-
 main();
