@@ -10,13 +10,21 @@ const MONTH = {
 };
 
 const ACTION_WORDS = [
-  "BOT","SOLD","BTO","STC","STO","BTC",
-  "BUY TO OPEN","SELL TO CLOSE","SELL TO OPEN","BUY TO CLOSE"
+  "BOT", "SOLD", "BTO", "STC", "STO", "BTC",
+  "BUY TO OPEN", "SELL TO CLOSE", "SELL TO OPEN", "BUY TO CLOSE"
 ];
 
-function sha1(s) { return crypto.createHash("sha1").update(s).digest("hex"); }
-function pad2(n) { return String(n).padStart(2, "0"); }
-function readJson(fp) { return JSON.parse(fs.readFileSync(fp, "utf8")); }
+function sha1(s) {
+  return crypto.createHash("sha1").update(s).digest("hex");
+}
+
+function pad2(n) {
+  return String(n).padStart(2, "0");
+}
+
+function readJson(fp) {
+  return JSON.parse(fs.readFileSync(fp, "utf8"));
+}
 
 function writeJson(fp, obj) {
   fs.mkdirSync(path.dirname(fp), { recursive: true });
@@ -34,11 +42,13 @@ function listFiles(dir) {
 function walkJsonFiles(dir) {
   const out = [];
   if (!fs.existsSync(dir)) return out;
+
   for (const ent of fs.readdirSync(dir, { withFileTypes: true })) {
     const fp = path.join(dir, ent.name);
     if (ent.isDirectory()) out.push(...walkJsonFiles(fp));
     else if (ent.isFile() && ent.name.endsWith(".json")) out.push(fp);
   }
+
   return out;
 }
 
@@ -70,20 +80,21 @@ function normalize(raw) {
 
 function isExitAction(actionUpper) {
   const a = actionUpper.toUpperCase();
-  return ["SOLD","STC","SELL TO CLOSE","BTC","BUY TO CLOSE"].includes(a);
+  return ["SOLD", "STC", "SELL TO CLOSE", "BTC", "BUY TO CLOSE"].includes(a);
 }
 
 function classifyOptionAction(actionUpper) {
   const a = actionUpper.toUpperCase();
-  // long option
-  if (["BOT","BTO","BUY TO OPEN"].includes(a)) return { role: "open", pos_side: "long" };
-  if (["SOLD","STC","SELL TO CLOSE"].includes(a)) return { role: "close", pos_side: "long" };
-  // short option (premium selling)
-  if (["STO","SELL TO OPEN"].includes(a)) return { role: "open", pos_side: "short" };
-  if (["BTC","BUY TO CLOSE"].includes(a)) return { role: "close", pos_side: "short" };
-  // fallback: treat SOLD as close, BOT as open
+
+  if (["BOT", "BTO", "BUY TO OPEN"].includes(a)) return { role: "open", pos_side: "long" };
+  if (["SOLD", "STC", "SELL TO CLOSE"].includes(a)) return { role: "close", pos_side: "long" };
+
+  if (["STO", "SELL TO OPEN"].includes(a)) return { role: "open", pos_side: "short" };
+  if (["BTC", "BUY TO CLOSE"].includes(a)) return { role: "close", pos_side: "short" };
+
   if (a.includes("SELL")) return { role: "close", pos_side: "long" };
-  if (a.includes("BUY"))  return { role: "open",  pos_side: "long" };
+  if (a.includes("BUY")) return { role: "open", pos_side: "long" };
+
   return { role: "unknown", pos_side: "unknown" };
 }
 
@@ -98,13 +109,19 @@ function parseRaw(raw, now = new Date()) {
     qty: null,
     fill: null,
     option: null,
-    rdt: { matched: "none", text: text || "Trade alert received (no text found)." },
-    computed: { dte: -1, wiki_ok: false },
+    rdt: {
+      matched: "none",
+      text: text || "Trade alert received (no text found)."
+    },
+    computed: {
+      dte: -1,
+      wiki_ok: false
+    },
 
-    // for pairing
-    trade_role: "unknown",     // open / close / unknown
-    pos_side: "unknown",       // long / short (position side, not RDT bias)
-    contract_key: null,        // e.g. OPT|IBM|2026-03-06|260|P
+    // joining helpers
+    trade_role: "unknown", // open / close / unknown
+    pos_side: "unknown",   // actual position side
+    contract_key: null
   };
 
   const actionRe = `(${ACTION_WORDS.map(a => a.replace(/ /g, "\\s+")).join("|")})`;
@@ -114,7 +131,7 @@ function parseRaw(raw, now = new Date()) {
   const strikeRe = "(\\d+(?:\\.\\d+)?)\\s+(CALL|PUT)";
   const fillRe = "(?:@|\\bAT\\b)\\s*(\\d*\\.?\\d+)";
 
-  // OPTION
+  // OPTION TRADE
   let m = upper.match(new RegExp(
     `\\b${actionRe}\\b[\\s\\S]*?\\b${qtyRe}\\b[\\s\\S]*?\\b${symRe}\\b[\\s\\S]*?\\b${dateRe}\\b[\\s\\S]*?\\b${strikeRe}\\b[\\s\\S]*?${fillRe}`,
     "i"
@@ -139,13 +156,19 @@ function parseRaw(raw, now = new Date()) {
     out.symbol = symbol;
     out.qty = Number.isFinite(qty) ? qty : null;
     out.fill = Number.isFinite(fill) ? fill : null;
-    out.option = { expiry: expiryIso, strike, right };
+    out.option = {
+      expiry: expiryIso,
+      strike,
+      right
+    };
 
-    const expiryMmdd = expiryIso ? `${expiryIso.slice(5, 7)}/${expiryIso.slice(8, 10)}` : "??/??";
+    const expiryMmdd = expiryIso
+      ? `${expiryIso.slice(5, 7)}/${expiryIso.slice(8, 10)}`
+      : "??/??";
 
-    // RDT BIAS convention you asked for:
-    // - Calls = long
-    // - Long puts = "short"
+    // RDT-style bias text:
+    // Calls = long
+    // Long puts = short
     const bias = right === "C" ? "long" : "short";
     const prefix = isExitAction(action) ? "exit " : "";
     const typeWord = right === "C" ? "Call" : "Put";
@@ -157,7 +180,6 @@ function parseRaw(raw, now = new Date()) {
     out.computed.dte = dte;
     out.computed.wiki_ok = dte >= 8;
 
-    // pairing info
     const cls = classifyOptionAction(action);
     out.trade_role = cls.role;
     out.pos_side = cls.pos_side;
@@ -166,7 +188,7 @@ function parseRaw(raw, now = new Date()) {
     return out;
   }
 
-  // STOCK fallback
+  // STOCK TRADE
   m = upper.match(new RegExp(
     `\\b${actionRe}\\b[\\s\\S]*?\\b${qtyRe}\\b[\\s\\S]*?\\b${symRe}\\b[\\s\\S]*?${fillRe}`,
     "i"
@@ -188,7 +210,7 @@ function parseRaw(raw, now = new Date()) {
     out.rdt.matched = "stock";
     out.rdt.text = `${prefix}${symbol} at ${fill}`;
 
-    // pairing info (long-only for now)
+    // long-only stock pairing for now
     out.trade_role = isExitAction(action) ? "close" : "open";
     out.pos_side = "long";
     out.contract_key = `STK|${symbol}`;
@@ -199,10 +221,9 @@ function parseRaw(raw, now = new Date()) {
   return out;
 }
 
-function buildRoundtrips(events) {
-  // Deterministic round-trip joining from events (chronological FIFO per contract+pos_side)
-  const openQueues = new Map(); // key => [roundtripId1, roundtripId2,...]
-  const trips = new Map();      // roundtrip_id => trip object
+function buildCompletedTrades(events) {
+  const openQueues = new Map(); // key => [trade_id, ...]
+  const trades = new Map();     // trade_id => completed-trade object
 
   function qKey(e) {
     return `${e.contract_key}|${e.pos_side}`;
@@ -225,118 +246,94 @@ function buildRoundtrips(events) {
     const key = qKey(e);
 
     if (e.trade_role === "open") {
-      // One roundtrip per opening event (can have multiple exits if partials happen)
-      const roundtrip_id = e.trade_id;
-      const trip = {
+      const completed_trade_id = e.trade_id;
+
+      trades.set(completed_trade_id, {
         schema_version: 1,
-        roundtrip_id,
+        completed_trade_id,
         status: "open",
         contract_key: e.contract_key,
         instrument: e.instrument,
-        pos_side: e.pos_side,         // long/short position side
-        bias_text: e.rdt?.text ?? "", // the “long/short” RDT-style line for the entry
+        pos_side: e.pos_side,
         symbol: e.symbol,
         option: e.option ?? null,
+
         qty_opened: e.qty ?? null,
         qty_closed: 0,
+
         entry: {
           trade_id: e.trade_id,
           received_at: e.received_at,
           fill: e.fill,
-          rdt: e.rdt?.text ?? "",
+          rdt: e.rdt?.text ?? ""
         },
+
         exits: [],
-        pnl: null,
-      };
-      trips.set(roundtrip_id, trip);
-      enqueue(key, roundtrip_id);
+        pnl: null
+      });
+
+      enqueue(key, completed_trade_id);
     }
 
     if (e.trade_role === "close") {
       const openId = dequeue(key);
-
-      // If we can't find an opener (e.g., history missing), keep as orphan close
-      if (!openId || !trips.has(openId)) {
-        const orphanId = `orphan_${e.trade_id}`;
-        trips.set(orphanId, {
-          schema_version: 1,
-          roundtrip_id: orphanId,
-          status: "orphan_close",
-          contract_key: e.contract_key,
-          instrument: e.instrument,
-          pos_side: e.pos_side,
-          symbol: e.symbol,
-          option: e.option ?? null,
-          qty_opened: null,
-          qty_closed: e.qty ?? null,
-          entry: null,
-          exits: [{
-            trade_id: e.trade_id,
-            received_at: e.received_at,
-            fill: e.fill,
-            qty: e.qty ?? null,
-            rdt: e.rdt?.text ?? "",
-          }],
-          pnl: null,
-        });
+      if (!openId || !trades.has(openId)) {
         continue;
       }
 
-      const trip = trips.get(openId);
+      const t = trades.get(openId);
       const exitQty = e.qty ?? 0;
 
-      trip.exits.push({
+      t.exits.push({
         trade_id: e.trade_id,
         received_at: e.received_at,
         fill: e.fill,
         qty: exitQty || null,
-        rdt: e.rdt?.text ?? "",
+        rdt: e.rdt?.text ?? ""
       });
 
-      trip.qty_closed += (exitQty || 0);
+      t.qty_closed += (exitQty || 0);
 
-      // If we know qty_opened and we've closed it all, mark closed; otherwise keep open (supports partials)
-      if (trip.qty_opened != null && trip.qty_closed >= trip.qty_opened) {
-        trip.status = "closed";
+      if (t.qty_opened != null && t.qty_closed >= t.qty_opened) {
+        t.status = "closed";
       }
 
-      // Compute PnL if we have fills (simple; assumes same contract, ignores commissions)
-      if (trip.entry?.fill != null && trip.exits.length) {
-        const entryFill = Number(trip.entry.fill);
-        const mult = (trip.instrument === "option") ? 100 : 1;
+      if (t.entry?.fill != null && t.exits.length) {
+        const entryFill = Number(t.entry.fill);
+        const mult = t.instrument === "option" ? 100 : 1;
 
         let realized = 0;
-        for (const x of trip.exits) {
+        for (const x of t.exits) {
           if (x.fill == null || x.qty == null) continue;
           const q = Number(x.qty);
           const exitFill = Number(x.fill);
 
-          if (trip.pos_side === "long") realized += (exitFill - entryFill) * q * mult;
-          if (trip.pos_side === "short") realized += (entryFill - exitFill) * q * mult;
+          if (t.pos_side === "long") realized += (exitFill - entryFill) * q * mult;
+          if (t.pos_side === "short") realized += (entryFill - exitFill) * q * mult;
         }
 
-        trip.pnl = {
+        t.pnl = {
           realized: Number.isFinite(realized) ? realized : null,
-          currency: "USD",
+          currency: "USD"
         };
       }
     }
   }
 
-  // Return deterministic list (sort by entry time if present, else by first exit)
-  const arr = [...trips.values()];
-  arr.sort((a, b) => {
-    const ta = a.entry?.received_at ? new Date(a.entry.received_at).getTime() : (a.exits[0]?.received_at ? new Date(a.exits[0].received_at).getTime() : 0);
-    const tb = b.entry?.received_at ? new Date(b.entry.received_at).getTime() : (b.exits[0]?.received_at ? new Date(b.exits[0].received_at).getTime() : 0);
-    if (ta !== tb) return ta - tb;
-    return (a.roundtrip_id || "").localeCompare(b.roundtrip_id || "");
-  });
-  return arr;
+  return [...trades.values()]
+    .filter(t => t.status === "closed")
+    .sort((a, b) => {
+      const ta = new Date(a.entry?.received_at ?? 0).getTime();
+      const tb = new Date(b.entry?.received_at ?? 0).getTime();
+      if (ta !== tb) return ta - tb;
+      return (a.completed_trade_id || "").localeCompare(b.completed_trade_id || "");
+    });
 }
 
 function main() {
-  const inboxDir = path.join(ROOT, "trades", "inbox");
+  const inboxDir = path.join(ROOT, "inbox");
   const inboxFiles = listFiles(inboxDir);
+
   if (inboxFiles.length === 0) {
     console.log("No inbox files found.");
     return;
@@ -344,26 +341,61 @@ function main() {
 
   const now = new Date();
 
-  // inbox → events
+  // inbox -> entries-exits
   for (const inboxPath of inboxFiles) {
     const inbox = readJson(inboxPath);
 
-    const receivedAtRaw = inbox.received_at || inbox.receivedAt || inbox.date || now.toISOString();
-    const received_at = new Date(receivedAtRaw).toISOString();
+    const raw = String(
+      inbox.Trade ??
+      inbox.trade ??
+      inbox.raw ??
+      inbox.text ??
+      ""
+    ).trim();
 
-    const raw = (inbox.raw || inbox.text || "").trim();
-    const rawId = path.basename(inboxPath, ".json");
+    const tradeTimestampRaw =
+      inbox.Timestamp ??
+      inbox.timestamp ??
+      inbox["Time Received UTC (Github)"] ??
+      inbox["Time Received EST (Github)"] ??
+      inbox.received_at ??
+      inbox.receivedAt ??
+      inbox.date ??
+      null;
+
+    const received_at = tradeTimestampRaw
+      ? new Date(tradeTimestampRaw).toISOString()
+      : new Date().toISOString();
+
+    const ingested_at =
+      inbox["Time Received UTC (Github)"] ??
+      inbox["Time Received EST (Github)"] ??
+      null;
+
+    const rawId = String(
+      inbox["ID:"] ??
+      inbox.ID ??
+      inbox.id ??
+      path.basename(inboxPath, ".json")
+    );
 
     const trade_id = sha1(`${rawId}|${received_at}|${raw}`).slice(0, 12);
 
     const month = isoMonth(received_at);
     const year = month.slice(0, 4);
 
-    const eventPath = path.join(ROOT, "trades", "events", year, month, `${trade_id}.json`);
+    const entryExitPath = path.join(
+      ROOT,
+      "trades",
+      "entries-exits",
+      year,
+      month,
+      `${trade_id}.json`
+    );
 
     const parsed = parseRaw(raw, now);
 
-    const event = {
+    const cleaned = {
       schema_version: 1,
       trade_id,
       received_at,
@@ -371,6 +403,7 @@ function main() {
         system: "zapier_github_inbox",
         inbox_path: path.relative(ROOT, inboxPath).replace(/\\/g, "/"),
         raw_id: rawId,
+        ingested_at
       },
       raw: { text: raw },
 
@@ -385,109 +418,104 @@ function main() {
       computed: {
         month,
         dte: parsed.computed.dte,
-        wiki_ok: parsed.computed.wiki_ok,
+        wiki_ok: parsed.computed.wiki_ok
       },
 
       rdt: parsed.rdt,
 
-      // pairing helpers
       trade_role: parsed.trade_role,
       pos_side: parsed.pos_side,
-      contract_key: parsed.contract_key,
+      contract_key: parsed.contract_key
     };
 
-    writeJson(eventPath, event);
+    writeJson(entryExitPath, cleaned);
   }
 
-  // events → rollups
-  const eventsRoot = path.join(ROOT, "trades", "events");
-  let events = walkJsonFiles(eventsRoot).map(readJson);
+  // rebuild all cleaned entry-exit logs
+  const entriesExitsRoot = path.join(ROOT, "trades", "entries-exits");
+  let cleanedLogs = walkJsonFiles(entriesExitsRoot).map(readJson);
 
-  // Dedup by trade_id (keep latest received_at)
+  // dedupe by trade_id
   const byId = new Map();
-  for (const e of events) {
+  for (const e of cleanedLogs) {
     const prev = byId.get(e.trade_id);
     if (!prev) byId.set(e.trade_id, e);
     else if (new Date(e.received_at) >= new Date(prev.received_at)) byId.set(e.trade_id, e);
   }
-  events = [...byId.values()];
+  cleanedLogs = [...byId.values()];
 
-  // Deterministic sort
-  events.sort((a, b) => {
+  cleanedLogs.sort((a, b) => {
     const ta = new Date(a.received_at).getTime();
     const tb = new Date(b.received_at).getTime();
     if (ta !== tb) return ta - tb;
     return (a.trade_id || "").localeCompare(b.trade_id || "");
   });
 
-  // month rollups
-  const months = [...new Set(events.map(e => e.computed?.month).filter(Boolean))].sort();
-  writeJson(path.join(ROOT, "trades", "index.json"), {
+  const months = [...new Set(cleanedLogs.map(e => e.computed?.month).filter(Boolean))].sort();
+
+  writeJson(path.join(ROOT, "trades", "index-of-months.json"), {
     generated_at: new Date().toISOString(),
-    months,
+    months
   });
 
-  const monthsDir = path.join(ROOT, "trades", "months");
-  fs.mkdirSync(monthsDir, { recursive: true });
+  const monthlyLogsDir = path.join(ROOT, "trades", "monthly-logs");
+  fs.mkdirSync(monthlyLogsDir, { recursive: true });
+
   for (const m of months) {
-    writeJson(path.join(monthsDir, `${m}.json`), events.filter(e => e.computed?.month === m));
+    writeJson(
+      path.join(monthlyLogsDir, `${m}.json`),
+      cleanedLogs.filter(e => e.computed?.month === m)
+    );
   }
 
   const currentMonth = isoMonth(new Date().toISOString());
+
   writeJson(
-    path.join(ROOT, "trades", "this-month.json"),
-    events.filter(e => e.computed?.month === currentMonth)
+    path.join(ROOT, "trades", "month-to-date.json"),
+    cleanedLogs.filter(e => e.computed?.month === currentMonth)
   );
 
-  // -------- roundtrip joining --------
-  const roundtrips = buildRoundtrips(events);
+  // completed trades
+  const completedTrades = buildCompletedTrades(cleanedLogs);
 
-  const rtRoot = path.join(ROOT, "trades", "roundtrips");
-  fs.mkdirSync(rtRoot, { recursive: true });
+  const completedRoot = path.join(ROOT, "trades", "completed-trades");
+  fs.mkdirSync(completedRoot, { recursive: true });
 
-  // write per-trade files, stored under entry month when possible
-  for (const t of roundtrips) {
-    const anchorIso = t.entry?.received_at || t.exits?.[0]?.received_at || new Date().toISOString();
-    const ym = isoMonth(anchorIso);
+  for (const t of completedTrades) {
+    const ym = isoMonth(t.entry.received_at);
     const yy = ym.slice(0, 4);
-    const fp = path.join(rtRoot, yy, ym, `${t.roundtrip_id}.json`);
+    const fp = path.join(completedRoot, yy, ym, `${t.completed_trade_id}.json`);
     writeJson(fp, t);
   }
 
-  // rollups for roundtrips
-  const rtMonths = [...new Set(roundtrips.map(t => {
-    const anchorIso = t.entry?.received_at || t.exits?.[0]?.received_at;
-    return anchorIso ? isoMonth(anchorIso) : null;
-  }).filter(Boolean))].sort();
+  const completedMonths = [...new Set(
+    completedTrades.map(t => isoMonth(t.entry.received_at))
+  )].sort();
 
-  writeJson(path.join(rtRoot, "index.json"), {
+  writeJson(path.join(ROOT, "trades", "completed-index-of-months.json"), {
     generated_at: new Date().toISOString(),
-    months: rtMonths,
+    months: completedMonths
   });
 
-  const rtMonthsDir = path.join(rtRoot, "months");
-  fs.mkdirSync(rtMonthsDir, { recursive: true });
-  for (const m of rtMonths) {
-    const arr = roundtrips.filter(t => {
-      const anchorIso = t.entry?.received_at || t.exits?.[0]?.received_at;
-      return anchorIso ? isoMonth(anchorIso) === m : false;
-    });
-    writeJson(path.join(rtMonthsDir, `${m}.json`), arr);
+  const completedMonthlyLogsDir = path.join(ROOT, "trades", "completed-monthly-logs");
+  fs.mkdirSync(completedMonthlyLogsDir, { recursive: true });
+
+  for (const m of completedMonths) {
+    writeJson(
+      path.join(completedMonthlyLogsDir, `${m}.json`),
+      completedTrades.filter(t => isoMonth(t.entry.received_at) === m)
+    );
   }
 
   writeJson(
-    path.join(rtRoot, "this-month.json"),
-    roundtrips.filter(t => {
-      const anchorIso = t.entry?.received_at || t.exits?.[0]?.received_at;
-      return anchorIso ? isoMonth(anchorIso) === currentMonth : false;
-    })
+    path.join(ROOT, "trades", "completed-month-to-date.json"),
+    completedTrades.filter(t => isoMonth(t.entry.received_at) === currentMonth)
   );
 
-  console.log(`Inbox: ${inboxFiles.length}`);
-  console.log(`Events: ${events.length}`);
+  console.log(`Inbox files: ${inboxFiles.length}`);
+  console.log(`Cleaned entry/exit logs: ${cleanedLogs.length}`);
   console.log(`Months: ${months.length}`);
-  console.log(`This month (${currentMonth}) events: ${events.filter(e => e.computed?.month === currentMonth).length}`);
-  console.log(`Roundtrips: ${roundtrips.length}`);
+  console.log(`Completed trades: ${completedTrades.length}`);
 }
 
 main();
