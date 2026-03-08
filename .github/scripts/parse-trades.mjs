@@ -482,7 +482,7 @@ function main() {
     const month = isoMonth(received_at);
     const year = month.slice(0, 4);
 
-    const parsed = parseRaw(raw, now);
+    const parsed = parseRaw(raw, new Date(received_at));
     const entryExitFilename = makeEntryExitFilename(parsed, received_at, trade_id);
 
     const entryExitPath = path.join(
