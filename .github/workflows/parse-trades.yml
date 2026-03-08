@@ -1,0 +1,51 @@
+#This catches 'raw' inbox trades and parses them into 
+
+name: parse-trades
+
+permissions:
+  contents: write
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "trades/inbox/*.json"
+      - "scripts/parse_inbox.mjs"
+      - ".github/workflows/parse-trades.yml"
+  workflow_dispatch: {}
+
+concurrency:
+  group: parse-trades-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  parse:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Parse inbox → events + rollups
+        run: node scripts/parse_inbox.mjs
+
+      - name: Commit & push (if changed)
+        run: |
+          set -euo pipefail
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add trades/events trades/months trades/index.json trades/this-month.json
+          if git diff --cached --quiet; then
+            echo "No changes"
+            exit 0
+          fi
+
+          # Optional: add [skip ci] if you have other workflows you don't want to run on this bot commit
+          # GitHub supports skipping push/pull_request workflows via commit message keywords. :contentReference[oaicite:3]{index=3}
+          git commit -m "build: parse inbox trades"
+          git push origin HEAD:main
