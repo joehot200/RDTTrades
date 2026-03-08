@@ -1,6 +1,43 @@
 [
   {
     "schema_version": 1,
+    "trade_id": "462951d14c99",
+    "received_at": "2026-03-05T20:58:50.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-03-08T15:39:51+00:00--19cbfcbce5538743.json",
+      "raw_id": "19cbfcbce5538743",
+      "ingested_at": "2026-03-08T15:39:51.000Z"
+    },
+    "raw": {
+      "text": "#14728831397 PAPERMONEY SOLD -1 IBM 100 (Weeklys) 6 MAR 26 260 PUT @4.05, ACCOUNT D-******81"
+    },
+    "instrument": "option",
+    "paper": true,
+    "action": "SOLD",
+    "symbol": "IBM",
+    "qty": 1,
+    "fill": 4.05,
+    "option": {
+      "expiry": "2026-03-06",
+      "strike": 260,
+      "right": "P"
+    },
+    "computed": {
+      "month": "2026-03",
+      "dte": -2,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "exit short IBM $260 Put for 03/06 at 4.05"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "OPT|IBM|2026-03-06|260|P"
+  },
+  {
+    "schema_version": 1,
     "trade_id": "e3779378cfd2",
     "received_at": "2026-03-06T17:00:20.000Z",
     "source": {
