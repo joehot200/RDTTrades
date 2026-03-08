@@ -514,12 +514,12 @@ function main() {
     months
   });
 
-  const monthlyLogsDir = path.join(ROOT, "trades", "monthly-logs");
-  fs.mkdirSync(monthlyLogsDir, { recursive: true });
+  const monthlyEntryExitLogsDir = path.join(ROOT, "trades", "monthly-entryexit-logs");
+  fs.mkdirSync(monthlyEntryExitLogsDir, { recursive: true });
 
   for (const m of months) {
     writeJson(
-      path.join(monthlyLogsDir, `${m}.json`),
+      path.join(monthlyEntryExitLogsDir, `${m}.json`),
       cleanedLogs.filter(e => e.computed?.month === m)
     );
   }
@@ -548,12 +548,12 @@ function main() {
     completedTrades.map(t => isoMonth(t.entry.received_at))
   )].sort();
 
-  const completedMonthlyLogsDir = path.join(ROOT, "trades", "completed-monthly-logs");
-  fs.mkdirSync(completedMonthlyLogsDir, { recursive: true });
+  const completedTradesMonthlyLogDir = path.join(ROOT, "trades", "completed-trades-monthlylog");
+  fs.mkdirSync(completedTradesMonthlyLogDir, { recursive: true });
 
   for (const m of completedMonths) {
     writeJson(
-      path.join(completedMonthlyLogsDir, `${m}.json`),
+      path.join(completedTradesMonthlyLogDir, `${m}.json`),
       completedTrades.filter(t => isoMonth(t.entry.received_at) === m)
     );
   }
