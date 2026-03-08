@@ -45,7 +45,5 @@ jobs:
             exit 0
           fi
 
-          # Optional: add [skip ci] if you have other workflows you don't want to run on this bot commit
-          # GitHub supports skipping push/pull_request workflows via commit message keywords. :contentReference[oaicite:3]{index=3}
           git commit -m "build: parse inbox trades"
           git push origin HEAD:main
