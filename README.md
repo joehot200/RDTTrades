@@ -2,12 +2,7 @@
 
 Trade log. (Still slightly WIP)
 
-Workflow is: ToS -> Email -> Zapier -> Github (Inbox).
-
-The workflow is then:
-  Inbox -> month-to-date.json
-        -> trades/entries-exits/[trade].json -> trades/completed-trades/[trade-pair].json
-        -> (Or something like that, anyway.
+Workflow is: ToS -> Email -> Zapier -> Github ("Inbox" folder).
 
 Use the "Inbox" folder as the absolute truth (raw file from ToS) - everything else is just processing.
 
