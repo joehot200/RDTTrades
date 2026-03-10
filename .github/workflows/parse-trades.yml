@@ -9,6 +9,7 @@ on:
     paths:
       - "inbox/*.json"
       - ".github/scripts/parse-trades.mjs"
+      - ".github/scripts/post-discord.mjs"
       - ".github/workflows/parse-trades.yml"
   workflow_dispatch: {}
 
@@ -23,7 +24,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          fetch-depth: 1
+          fetch-depth: 2
 
       - uses: actions/setup-node@v4
         with:
@@ -32,17 +33,62 @@ jobs:
       - name: Parse inbox -> cleaned logs + completed trades
         run: node .github/scripts/parse-trades.mjs
 
-      - name: Commit & push (if changed)
+      - name: Detect whether this push included a new inbox file
+        id: inbox
+        shell: bash
         run: |
           set -euo pipefail
-          git config user.name  "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add -A trades month-to-date.json week-to-date.json
-          if git diff --cached --quiet; then
-            echo "No changes"
+          # Manual workflow runs should rebuild, but not auto-post to Discord
+          # unless you later decide you want that behaviour.
+          if [ "${{ github.event_name }}" != "push" ]; then
+            echo "should_post=false" >> "$GITHUB_OUTPUT"
             exit 0
           fi
+
+          BEFORE="${{ github.event.before }}"
+
+          if [ -z "$BEFORE" ] || [ "$BEFORE" = "0000000000000000000000000000000000000000" ]; then
+            CHANGED="$(git show --name-only --pretty='' "$GITHUB_SHA")"
+          else
+            CHANGED="$(git diff --name-only "$BEFORE" "$GITHUB_SHA")"
+          fi
+
+          echo "$CHANGED"
+
+          if echo "$CHANGED" | grep -Eq '^inbox/.*\.json$'; then
+            echo "should_post=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "should_post=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Stage generated files
+        id: stage
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          git add -A trades month-to-date.json week-to-date.json
+
+          if git diff --cached --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Post latest trade to Discord
+        if: steps.inbox.outputs.should_post == 'true' && steps.stage.outputs.changed == 'true'
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+        run: node .github/scripts/post-discord.mjs
+
+      - name: Commit & push (if changed)
+        if: steps.stage.outputs.changed == 'true'
+        run: |
+          set -euo pipefail
+
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
           COMMIT_MSG=$(node -e "const fs=require('fs'); const p='trades/_meta.json'; if (fs.existsSync(p)) { const j=JSON.parse(fs.readFileSync(p,'utf8')); console.log((j.latest_commit_message||'build: parse inbox trades').slice(0,120)); } else { console.log('build: parse inbox trades'); }")
           git commit -m "$COMMIT_MSG"
