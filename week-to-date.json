@@ -146,5 +146,42 @@
     "trade_role": "open",
     "pos_side": "long",
     "contract_key": "OPT|MU|2026-03-13|530|C"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "db441ce4d136",
+    "received_at": "2026-03-11T16:40:18.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-03-11T16:41:01+00:00--19cddc54a8874981.json",
+      "raw_id": "19cddc54a8874981",
+      "ingested_at": "2026-03-11T16:41:01.000Z"
+    },
+    "raw": {
+      "text": "#114118317372 BOT +1 SPY 100 (Weeklys) 27 MAR 26 530 CALL @1.6, ACCOUNT *****746SCHW"
+    },
+    "instrument": "option",
+    "paper": false,
+    "action": "BOT",
+    "symbol": "SPY",
+    "qty": 1,
+    "fill": 1.6,
+    "option": {
+      "expiry": "2026-03-27",
+      "strike": 530,
+      "right": "C"
+    },
+    "computed": {
+      "month": "2026-03",
+      "dte": 16,
+      "wiki_ok": true
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "long SPY $530 Call for 03/27 at 1.6"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "OPT|SPY|2026-03-27|530|C"
   }
 ]
