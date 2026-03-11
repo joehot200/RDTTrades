@@ -16,7 +16,8 @@
         "min_option_dte": 7,
         "min_option_contract_cost": 100,
         "require_posted_entry_for_exit": true,
-        "max_new_entries_per_day": 3
+        "max_new_entries_per_day": 3,
+        "suppress_round_trips_under_minutes": 15
       }
     }
   }
