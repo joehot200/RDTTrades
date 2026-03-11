@@ -5,6 +5,14 @@ import crypto from "crypto";
 const ROOT = process.cwd();
 const LOCAL_TZ = "Europe/London";
 
+function sortEventTimeValue(e) {
+  return new Date(
+    e?.source?.ingested_at ??
+    e?.received_at ??
+    0
+  ).getTime();
+}
+
 const MONTH = {
   JAN: "01", FEB: "02", MAR: "03", APR: "04", MAY: "05", JUN: "06",
   JUL: "07", AUG: "08", SEP: "09", OCT: "10", NOV: "11", DEC: "12",
@@ -439,7 +447,7 @@ function main() {
   }
 
   const now = new Date();
-
+  const processedThisRun = [];
   // inbox -> cleaned entry/exit logs
   for (const inboxPath of inboxFiles) {
     const inbox = readJson(inboxPath);
@@ -528,6 +536,7 @@ function main() {
     };
 
     writeJson(entryExitPath, cleaned);
+    processedThisRun.push(cleaned);
   }
 
   // rebuild cleaned logs
@@ -612,17 +621,33 @@ function main() {
   }
 
   // meta for pretty commit message
-  const latestTrade = cleanedLogs.length ? cleanedLogs[cleanedLogs.length - 1] : null;
+// meta for pretty commit message + exact trade processed this run
+const latestHistoricalTrade = cleanedLogs.length ? cleanedLogs[cleanedLogs.length - 1] : null;
 
-  let commitMessage = "build: parse inbox trades";
-  if (latestTrade?.rdt?.text) {
-    commitMessage = latestTrade.rdt.text;
-  }
+const latestProcessedTrade = processedThisRun.length
+  ? [...processedThisRun].sort((a, b) => {
+      const ta = sortEventTimeValue(a);
+      const tb = sortEventTimeValue(b);
+      if (ta !== tb) return ta - tb;
+      return String(a.trade_id || "").localeCompare(String(b.trade_id || ""));
+    })[processedThisRun.length - 1]
+  : null;
 
-  writeJson(path.join(ROOT, "trades", "_meta.json"), {
-    generated_at: new Date().toISOString(),
-    latest_commit_message: commitMessage
-  });
+let commitMessage = "build: parse inbox trades";
+if (latestProcessedTrade?.rdt?.text) {
+  commitMessage = latestProcessedTrade.rdt.text;
+} else if (latestHistoricalTrade?.rdt?.text) {
+  commitMessage = latestHistoricalTrade.rdt.text;
+}
+
+writeJson(path.join(ROOT, "trades", "_meta.json"), {
+  generated_at: new Date().toISOString(),
+  latest_commit_message: commitMessage,
+  latest_processed_trade_id: latestProcessedTrade?.trade_id ?? null,
+  latest_processed_inbox_path: latestProcessedTrade?.source?.inbox_path ?? null,
+  latest_processed_received_at: latestProcessedTrade?.received_at ?? null,
+  latest_processed_ingested_at: latestProcessedTrade?.source?.ingested_at ?? null
+});
 
   console.log(`Inbox files: ${inboxFiles.length}`);
   console.log(`Cleaned entry/exit logs: ${cleanedLogs.length}`);
