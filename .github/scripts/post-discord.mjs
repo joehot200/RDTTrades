@@ -10,6 +10,42 @@ function readJson(fp) {
   return JSON.parse(fs.readFileSync(fp, "utf8"));
 }
 
+function absNumberText(v) {
+  const n = Math.abs(Number(v));
+  if (!Number.isFinite(n)) return "?";
+  return n.toFixed(2);
+}
+
+function scratchThresholdForTrade(trade) {
+  // Adjust this if you want.
+  // For options this is per-contract price difference, not x100.
+  return trade.instrument === "option" ? 0.05 : 0.02;
+}
+
+function exitUnitPnl(trade, completedTrade) {
+  if (!completedTrade?.entry || trade.fill == null) return null;
+
+  const entryFill = Number(completedTrade.entry.fill);
+  const exitFill = Number(trade.fill);
+
+  if (!Number.isFinite(entryFill) || !Number.isFinite(exitFill)) return null;
+
+  // Your current use case is long stock / long calls / long puts.
+  // RDT may *display* long puts as "Short", but the actual trade is still a bought option.
+  return exitFill - entryFill;
+}
+
+function exitOutcome(trade, completedTrade) {
+  const unit = exitUnitPnl(trade, completedTrade);
+  if (unit == null) return { kind: "unknown", unit: null };
+
+  const scratchThreshold = scratchThresholdForTrade(trade);
+
+  if (unit > scratchThreshold) return { kind: "profit", unit };
+  if (unit < -scratchThreshold) return { kind: "loss", unit };
+  return { kind: "scratch", unit };
+}
+
 function walkJsonFiles(dir) {
   const out = [];
   if (!fs.existsSync(dir)) return out;
@@ -66,12 +102,6 @@ function mdFromIso(iso) {
   const month = String(Number(iso.slice(5, 7)));
   const day = String(Number(iso.slice(8, 10)));
   return `${month}/${day}`;
-}
-
-function stableVariantIndex(tradeId) {
-  const last = (tradeId || "0").slice(-1);
-  const n = parseInt(last, 16);
-  return Number.isFinite(n) ? n % 4 : 0;
 }
 
 function findCompletedTradeForExit(trade) {
@@ -159,70 +189,105 @@ function entryLine(trade) {
   return trade.rdt?.text || `Trade ${symbol}`;
 }
 
+function stableVariantIndex(tradeId) {
+  const last = (tradeId || "0").slice(-1);
+  const n = parseInt(last, 16);
+  return Number.isFinite(n) ? n % 6 : 0;
+}
+
 function exitLine(trade, completedTrade) {
   const symbol = trade.symbol || "UNKNOWN";
   const fill = priceCompact(trade.fill);
   const pnl = completedTrade?.pnl?.realized;
   const v = stableVariantIndex(trade.trade_id);
 
-  if (typeof pnl === "number") {
+  const outcome = exitOutcome(trade, completedTrade);
+  const unit = outcome.unit;
+  const amt = unit == null ? null : absNumberText(unit);
+
+  const isOption = trade.instrument === "option";
+  const unitLabel = isOption ? "per contract" : "per share";
+
+  // No completed-trade / no P&L -> generic exit wording only
+  if (typeof pnl !== "number") {
     if (!USE_MICRO_VARIATIONS) {
-      if (pnl > 5) return `Took profit $${symbol} at ${fill}`;
-      if (pnl < -5) return `Took loss $${symbol} at ${fill}`;
-      return `Exit $${symbol} for a scratch at ${fill}`;
-    }
-
-    if (pnl > 0) {
-      switch (v) {
-        case 1:
-          return `Took profit ${symbol} at ${fill}`;
-        case 2:
-          return `Took profits $${symbol} @${fill}`;
-        case 3:
-          return `TP $${symbol} @${fill}`;
-        default:
-          return `Took profit $${symbol} at ${fill}`;
-      }
-    }
-
-    if (pnl < 0) {
-      switch (v) {
-        case 1:
-          return `Took loss ${symbol} at ${fill}`;
-        case 2:
-          return `Exit $${symbol} for loss @${fill}`;
-        case 3:
-          return `Exited $${symbol} for a loss @${fill}`;
-        default:
-          return `Took loss $${symbol} at ${fill}`;
-      }
+      return `Exit $${symbol} at ${fill}`;
     }
 
     switch (v) {
       case 1:
-        return `Exit ${symbol} for a scratch at ${fill}`;
+        return `Exit ${symbol} at ${fill}`;
       case 2:
-        return `Scratched $${symbol} @${fill}`;
+        return `Exit $${symbol} @${fill}`;
       case 3:
-        return `Exit $${symbol} scratch @${fill}`;
+        return `Out $${symbol} at ${fill}`;
+      case 4:
+        return `Exited $${symbol} at ${fill}`;
+      case 5:
+        return `Exit ${symbol} @${fill}`;
       default:
-        return `Exit $${symbol} for a scratch at ${fill}`;
+        return `Exit $${symbol} at ${fill}`;
     }
   }
 
+  // Use your preferred TOTAL P/L thresholds:
+  // > +5 = profit
+  // < -5 = loss
+  // otherwise scratch
   if (!USE_MICRO_VARIATIONS) {
-    return `Exit $${symbol} at ${fill}`;
+    if (pnl > 5) return `Took profit $${symbol} at ${fill}`;
+    if (pnl < -5) return `Took loss $${symbol} at ${fill}`;
+    return `Exit $${symbol} for a scratch at ${fill}`;
   }
 
+  if (pnl > 5) {
+    switch (v) {
+      case 1:
+        return `Took profit ${symbol} at ${fill}`;
+      case 2:
+        return `TP $${symbol} @${fill}`;
+      case 3:
+        return amt ? `Exit $${symbol} @${fill} for ${amt} gain` : `Exit $${symbol} @${fill}`;
+      case 4:
+        return amt ? `Exit $${symbol} ${fill} with $${amt} profit ${unitLabel}` : `Exit $${symbol} at ${fill}`;
+      case 5:
+        return `Exit $${symbol} at ${fill}`;
+      default:
+        return `Took profit $${symbol} at ${fill}`;
+    }
+  }
+
+  if (pnl < -5) {
+    switch (v) {
+      case 1:
+        return `Took loss ${symbol} at ${fill}`;
+      case 2:
+        return `Exit $${symbol} for loss @${fill}`;
+      case 3:
+        return `Exited $${symbol} for a loss @${fill}`;
+      case 4:
+        return amt ? `Exit $${symbol} with $${amt} loss ${unitLabel}` : `Exit $${symbol} at ${fill}`;
+      case 5:
+        return `Exit $${symbol} at ${fill}`;
+      default:
+        return `Took loss $${symbol} at ${fill}`;
+    }
+  }
+
+  // Scratch bucket
   switch (v) {
     case 1:
-      return `Exit ${symbol} at ${fill}`;
+      return `Exit ${symbol} for a scratch at ${fill}`;
     case 2:
-      return `Exit $${symbol} @${fill}`;
+      return `Scratched $${symbol} @${fill}`;
     case 3:
-      return `Out $${symbol} at ${fill}`;
-    default:
+      return `Exit $${symbol} scratch @${fill}`;
+    case 4:
       return `Exit $${symbol} at ${fill}`;
+    case 5:
+      return `Scratch $${symbol} at ${fill}`;
+    default:
+      return `Exit $${symbol} for a scratch at ${fill}`;
   }
 }
 
