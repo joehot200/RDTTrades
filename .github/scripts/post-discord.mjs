@@ -177,7 +177,7 @@ function exitLine(trade, completedTrade) {
         case 1:
           return `Took profit ${symbol} at ${fill}`;
         case 2:
-          return `Exited $${symbol} TP @${fill}`;
+          return `Took profits $${symbol} @${fill}`;
         case 3:
           return `TP $${symbol} @${fill}`;
         default:
@@ -280,24 +280,19 @@ async function main() {
     return;
   }
 
-  const meta = readMeta();
+   const meta = readMeta();
   const targetTradeId = meta?.latest_processed_trade_id ?? null;
 
-  let latest = null;
-
-  if (targetTradeId) {
-    latest = cleaned.find(t => t.trade_id === targetTradeId) ?? null;
+  if (!targetTradeId) {
+    console.log("No latest_processed_trade_id for this run; skipping Discord post.");
+    return;
   }
 
-  if (!latest) {
-    cleaned.sort((a, b) => {
-      const ta = sortEventTimeValue(a);
-      const tb = sortEventTimeValue(b);
-      if (ta !== tb) return ta - tb;
-      return String(a.trade_id || "").localeCompare(String(b.trade_id || ""));
-    });
+  const latest = cleaned.find(t => t.trade_id === targetTradeId) ?? null;
 
-    latest = cleaned[cleaned.length - 1];
+  if (!latest) {
+    console.log(`Trade ${targetTradeId} not found in cleaned logs; skipping Discord post.`);
+    return;
   }
 
   const coreLine = baseTradeLine(latest);
