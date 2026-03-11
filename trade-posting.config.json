@@ -5,7 +5,8 @@
       "secret_env": "DISCORD_WEBHOOK_URL",
       "filters": {
         "post_all_entries": true,
-        "post_all_exits": true
+        "post_all_exits": true,
+        "max_messages_per_run": 5
       }
     },
     "rdt_filter": {
@@ -17,7 +18,8 @@
         "min_option_contract_cost": 100,
         "require_posted_entry_for_exit": true,
         "max_new_entries_per_day": 3,
-        "suppress_round_trips_under_minutes": 15
+        "suppress_round_trips_under_minutes": 15,
+        "max_messages_per_run": 3
       }
     }
   }
