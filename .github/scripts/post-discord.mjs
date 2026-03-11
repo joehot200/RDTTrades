@@ -190,10 +190,22 @@ function entryLine(trade) {
 }
 
 function stableVariantIndex(tradeId) {
-  const last = (tradeId || "0").slice(-1);
-  const n = parseInt(last, 16);
-  return Number.isFinite(n) ? n % 6 : 0;
+  const s = String(tradeId || "");
+  let hash = 0;
+
+  for (let i = 0; i < s.length; i++) {
+    hash = ((hash * 33) + s.charCodeAt(i)) >>> 0;
+  }
+
+  return hash % 6;
 }
+
+//Works but only uses1 char so... less reliable
+//function stableVariantIndex(tradeId) {
+//#  const last = (tradeId || "0").slice(-1);
+//#  const n = parseInt(last, 16);
+//#  return Number.isFinite(n) ? n % 6 : 0;
+//#}
 
 function exitLine(trade, completedTrade) {
   const symbol = trade.symbol || "UNKNOWN";
