@@ -11,6 +11,7 @@ on:
       - ".github/scripts/parse-trades.mjs"
       - ".github/scripts/post-discord.mjs"
       - ".github/workflows/parse-trades.yml"
+      - "trade-posting.config.json"
   workflow_dispatch: {}
 
 concurrency:
@@ -58,10 +59,11 @@ jobs:
       - name: Parse inbox -> cleaned logs + completed trades
         run: node .github/scripts/parse-trades.mjs
 
-      - name: Post latest trade to Discord
+      - name: Post trades to Discord
         if: steps.inbox.outputs.should_post == 'true'
         env:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          RDT_FILTER_DISCORD_WEBHOOK_URL: ${{ secrets.RDT_FILTER_DISCORD_WEBHOOK_URL }}
         run: node .github/scripts/post-discord.mjs
 
       - name: Commit & push (if changed)
