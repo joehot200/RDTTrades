@@ -2,6 +2,7 @@ import fs from "fs";
 import path from "path";
 
 const ROOT = process.cwd();
+const LOCAL_TZ = "Europe/London";
 
 // Turn this off if you want fully consistent wording.
 const USE_MICRO_VARIATIONS = true;
@@ -10,40 +11,23 @@ function readJson(fp) {
   return JSON.parse(fs.readFileSync(fp, "utf8"));
 }
 
-function absNumberText(v) {
-  const n = Math.abs(Number(v));
-  if (!Number.isFinite(n)) return "?";
-  return n.toFixed(2);
+function writeJson(fp, obj) {
+  fs.mkdirSync(path.dirname(fp), { recursive: true });
+  fs.writeFileSync(fp, JSON.stringify(obj, null, 2) + "\n", "utf8");
 }
 
-function scratchThresholdForTrade(trade) {
-  // Adjust this if you want.
-  // For options this is per-contract price difference, not x100.
-  return trade.instrument === "option" ? 0.05 : 0.02;
+function readPostingConfig() {
+  const fp = path.join(ROOT, "trade-posting.config.json");
+  if (!fs.existsSync(fp)) {
+    throw new Error("Missing trade-posting.config.json");
+  }
+  return readJson(fp);
 }
 
-function exitUnitPnl(trade, completedTrade) {
-  if (!completedTrade?.entry || trade.fill == null) return null;
-
-  const entryFill = Number(completedTrade.entry.fill);
-  const exitFill = Number(trade.fill);
-
-  if (!Number.isFinite(entryFill) || !Number.isFinite(exitFill)) return null;
-
-  // Your current use case is long stock / long calls / long puts.
-  // RDT may *display* long puts as "Short", but the actual trade is still a bought option.
-  return exitFill - entryFill;
-}
-
-function exitOutcome(trade, completedTrade) {
-  const unit = exitUnitPnl(trade, completedTrade);
-  if (unit == null) return { kind: "unknown", unit: null };
-
-  const scratchThreshold = scratchThresholdForTrade(trade);
-
-  if (unit > scratchThreshold) return { kind: "profit", unit };
-  if (unit < -scratchThreshold) return { kind: "loss", unit };
-  return { kind: "scratch", unit };
+function readMeta() {
+  const fp = path.join(ROOT, "trades", "_meta.json");
+  if (!fs.existsSync(fp)) return null;
+  return readJson(fp);
 }
 
 function walkJsonFiles(dir) {
@@ -59,18 +43,39 @@ function walkJsonFiles(dir) {
   return out;
 }
 
-function sortEventTimeValue(e) {
-  return new Date(
-    e?.source?.ingested_at ??
-    e?.received_at ??
-    0
-  ).getTime();
+function absNumberText(v) {
+  const n = Math.abs(Number(v));
+  if (!Number.isFinite(n)) return "?";
+  return n.toFixed(2);
 }
 
-function readMeta() {
-  const fp = path.join(ROOT, "trades", "_meta.json");
-  if (!fs.existsSync(fp)) return null;
-  return readJson(fp);
+function scratchThresholdForTrade(trade) {
+  // For options this is per-contract price difference, not x100.
+  return trade.instrument === "option" ? 0.05 : 0.02;
+}
+
+function exitUnitPnl(trade, completedTrade) {
+  if (!completedTrade?.entry || trade.fill == null) return null;
+
+  const entryFill = Number(completedTrade.entry.fill);
+  const exitFill = Number(trade.fill);
+
+  if (!Number.isFinite(entryFill) || !Number.isFinite(exitFill)) return null;
+
+  // Your current use case is long stock / long calls / long puts.
+  // RDT may display long puts as "Short", but the actual trade is still a bought option.
+  return exitFill - entryFill;
+}
+
+function exitOutcome(trade, completedTrade) {
+  const unit = exitUnitPnl(trade, completedTrade);
+  if (unit == null) return { kind: "unknown", unit: null };
+
+  const scratchThreshold = scratchThresholdForTrade(trade);
+
+  if (unit > scratchThreshold) return { kind: "profit", unit };
+  if (unit < -scratchThreshold) return { kind: "loss", unit };
+  return { kind: "scratch", unit };
 }
 
 function money(v) {
@@ -102,6 +107,17 @@ function mdFromIso(iso) {
   const month = String(Number(iso.slice(5, 7)));
   const day = String(Number(iso.slice(8, 10)));
   return `${month}/${day}`;
+}
+
+function stableVariantIndex(tradeId) {
+  const s = String(tradeId || "");
+  let hash = 0;
+
+  for (let i = 0; i < s.length; i++) {
+    hash = ((hash * 33) + s.charCodeAt(i)) >>> 0;
+  }
+
+  return hash % 6;
 }
 
 function findCompletedTradeForExit(trade) {
@@ -188,24 +204,6 @@ function entryLine(trade) {
 
   return trade.rdt?.text || `Trade ${symbol}`;
 }
-
-function stableVariantIndex(tradeId) {
-  const s = String(tradeId || "");
-  let hash = 0;
-
-  for (let i = 0; i < s.length; i++) {
-    hash = ((hash * 33) + s.charCodeAt(i)) >>> 0;
-  }
-
-  return hash % 6;
-}
-
-//Works but only uses1 char so... less reliable
-//function stableVariantIndex(tradeId) {
-//#  const last = (tradeId || "0").slice(-1);
-//#  const n = parseInt(last, 16);
-//#  return Number.isFinite(n) ? n % 6 : 0;
-//#}
 
 function exitLine(trade, completedTrade) {
   const symbol = trade.symbol || "UNKNOWN";
@@ -303,9 +301,7 @@ function exitLine(trade, completedTrade) {
   }
 }
 
-function baseTradeLine(trade) {
-  const completedTrade = findCompletedTradeForExit(trade);
-
+function baseTradeLine(trade, completedTrade) {
   if (trade.trade_role === "close") {
     return exitLine(trade, completedTrade);
   }
@@ -315,6 +311,161 @@ function baseTradeLine(trade) {
 
 function composeMessage(trade, coreLine) {
   return coreLine;
+}
+
+function statePathForDestination(name) {
+  return path.join(ROOT, "trades", "posting-state", `${name}.json`);
+}
+
+function readPostingState(name) {
+  const fp = statePathForDestination(name);
+  if (!fs.existsSync(fp)) {
+    return {
+      posted_trade_ids: [],
+      posted_entry_trade_ids: [],
+      posted_entry_dates: {}
+    };
+  }
+  return readJson(fp);
+}
+
+function writePostingState(name, state) {
+  writeJson(statePathForDestination(name), state);
+}
+
+function ymdInLocalTz(iso, timeZone = LOCAL_TZ) {
+  const d = new Date(iso);
+  const fmt = new Intl.DateTimeFormat("en-CA", {
+    timeZone,
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit"
+  });
+
+  const parts = Object.fromEntries(
+    fmt.formatToParts(d)
+      .filter(p => p.type !== "literal")
+      .map(p => [p.type, p.value])
+  );
+
+  return `${parts.year}-${parts.month}-${parts.day}`;
+}
+
+function countPostedEntriesForDay(state, ymd) {
+  return Array.isArray(state.posted_entry_dates?.[ymd])
+    ? state.posted_entry_dates[ymd].length
+    : 0;
+}
+
+function markEntryPosted(state, trade, ymd) {
+  if (!state.posted_trade_ids.includes(trade.trade_id)) {
+    state.posted_trade_ids.push(trade.trade_id);
+  }
+
+  if (!state.posted_entry_trade_ids.includes(trade.trade_id)) {
+    state.posted_entry_trade_ids.push(trade.trade_id);
+  }
+
+  if (!state.posted_entry_dates[ymd]) {
+    state.posted_entry_dates[ymd] = [];
+  }
+
+  if (!state.posted_entry_dates[ymd].includes(trade.trade_id)) {
+    state.posted_entry_dates[ymd].push(trade.trade_id);
+  }
+}
+
+function markExitPosted(state, trade) {
+  if (!state.posted_trade_ids.includes(trade.trade_id)) {
+    state.posted_trade_ids.push(trade.trade_id);
+  }
+}
+
+function alreadyPostedToDestination(state, trade) {
+  return Array.isArray(state.posted_trade_ids) && state.posted_trade_ids.includes(trade.trade_id);
+}
+
+function shouldPostEntryToDestination(trade, filters, state) {
+  if (filters.post_all_entries) {
+    return { ok: true, reason: "post_all_entries" };
+  }
+
+  if (trade.instrument === "stock") {
+    const minStockPrice = Number(filters.min_stock_price ?? 0);
+    if (trade.fill == null || Number(trade.fill) < minStockPrice) {
+      return { ok: false, reason: "stock_under_min_price" };
+    }
+  }
+
+  if (trade.instrument === "option") {
+    const minOptionDte = Number(filters.min_option_dte ?? 0);
+    const dte = Number(trade.computed?.dte ?? -1);
+    if (!Number.isFinite(dte) || dte < minOptionDte) {
+      return { ok: false, reason: "option_dte_too_short" };
+    }
+
+    const minContractCost = Number(filters.min_option_contract_cost ?? 0);
+    const contractCost = Number(trade.fill) * 100;
+    if (!Number.isFinite(contractCost) || contractCost < minContractCost) {
+      return { ok: false, reason: "option_contract_cost_too_low" };
+    }
+  }
+
+  const maxNewEntriesPerDay = Number(filters.max_new_entries_per_day ?? Infinity);
+  const ymd = ymdInLocalTz(trade.received_at);
+  const postedToday = countPostedEntriesForDay(state, ymd);
+
+  if (Number.isFinite(maxNewEntriesPerDay) && postedToday >= maxNewEntriesPerDay) {
+    return { ok: false, reason: "daily_entry_limit_reached" };
+  }
+
+  return { ok: true, reason: "entry_ok" };
+}
+
+function shouldPostExitToDestination(trade, completedTrade, filters, state) {
+  if (filters.post_all_exits) {
+    return { ok: true, reason: "post_all_exits" };
+  }
+
+  if (!filters.require_posted_entry_for_exit) {
+    return { ok: true, reason: "exit_ok_no_entry_requirement" };
+  }
+
+  const entryTradeId = completedTrade?.entry?.trade_id ?? null;
+  if (!entryTradeId) {
+    return { ok: false, reason: "no_entry_trade_id" };
+  }
+
+  const postedEntries = new Set(state.posted_entry_trade_ids || []);
+  if (!postedEntries.has(entryTradeId)) {
+    return { ok: false, reason: "entry_not_previously_posted" };
+  }
+
+  return { ok: true, reason: "exit_ok_entry_was_posted" };
+}
+
+function shouldPostTradeToDestination(trade, completedTrade, destination, state) {
+  if (alreadyPostedToDestination(state, trade)) {
+    return { ok: false, reason: "already_posted" };
+  }
+
+  const filters = destination.filters || {};
+
+  if (trade.trade_role === "close") {
+    return shouldPostExitToDestination(trade, completedTrade, filters, state);
+  }
+
+  return shouldPostEntryToDestination(trade, filters, state);
+}
+
+function updateStateAfterSuccessfulPost(state, trade) {
+  if (trade.trade_role === "close") {
+    markExitPosted(state, trade);
+    return;
+  }
+
+  const ymd = ymdInLocalTz(trade.received_at);
+  markEntryPosted(state, trade, ymd);
 }
 
 async function postToDiscord(webhookUrl, content) {
@@ -333,12 +484,7 @@ async function postToDiscord(webhookUrl, content) {
 }
 
 async function main() {
-  const webhookUrl = process.env.DISCORD_WEBHOOK_URL;
-
-  if (!webhookUrl) {
-    console.log("No DISCORD_WEBHOOK_URL set; skipping Discord post.");
-    return;
-  }
+  const config = readPostingConfig();
 
   const entriesRoot = path.join(ROOT, "trades", "entries-exits");
   const files = walkJsonFiles(entriesRoot);
@@ -357,7 +503,7 @@ async function main() {
     return;
   }
 
-   const meta = readMeta();
+  const meta = readMeta();
   const targetTradeId = meta?.latest_processed_trade_id ?? null;
 
   if (!targetTradeId) {
@@ -372,11 +518,49 @@ async function main() {
     return;
   }
 
-  const coreLine = baseTradeLine(latest);
+  const completedTrade = latest.trade_role === "close"
+    ? findCompletedTradeForExit(latest)
+    : null;
+
+  const coreLine = baseTradeLine(latest, completedTrade);
   const message = composeMessage(latest, coreLine);
 
-  await postToDiscord(webhookUrl, message);
-  console.log(`Posted to Discord: ${message}`);
+  const destinations = config?.destinations || {};
+  const destinationEntries = Object.entries(destinations);
+
+  if (!destinationEntries.length) {
+    console.log("No destinations configured; skipping Discord post.");
+    return;
+  }
+
+  for (const [destinationName, destination] of destinationEntries) {
+    if (!destination?.enabled) {
+      console.log(`[${destinationName}] disabled; skipping.`);
+      continue;
+    }
+
+    const secretEnv = destination.secret_env;
+    const webhookUrl = secretEnv ? process.env[secretEnv] : null;
+
+    if (!webhookUrl) {
+      console.log(`[${destinationName}] missing webhook env ${secretEnv}; skipping.`);
+      continue;
+    }
+
+    const state = readPostingState(destinationName);
+    const decision = shouldPostTradeToDestination(latest, completedTrade, destination, state);
+
+    if (!decision.ok) {
+      console.log(`[${destinationName}] skipped: ${decision.reason}`);
+      continue;
+    }
+
+    await postToDiscord(webhookUrl, message);
+    updateStateAfterSuccessfulPost(state, latest);
+    writePostingState(destinationName, state);
+
+    console.log(`[${destinationName}] posted: ${message}`);
+  }
 }
 
 main().catch(err => {
