@@ -3,6 +3,9 @@ import path from "path";
 
 const ROOT = process.cwd();
 
+// Turn this off if you want fully consistent wording.
+const USE_MICRO_VARIATIONS = true;
+
 function readJson(fp) {
   return JSON.parse(fs.readFileSync(fp, "utf8"));
 }
@@ -40,6 +43,19 @@ function money(v) {
   return `$${n.toFixed(2)}`;
 }
 
+function priceNoDollar(v) {
+  const n = Number(v);
+  if (!Number.isFinite(n)) return "?";
+  return n.toFixed(2);
+}
+
+function priceCompact(v) {
+  const n = Number(v);
+  if (!Number.isFinite(n)) return "?";
+  const s = n.toFixed(2);
+  return s.startsWith("0") ? s.slice(1) : s;
+}
+
 function strikeText(v) {
   if (v == null) return "?";
   return String(v).replace(/\.0$/, "");
@@ -50,6 +66,12 @@ function mdFromIso(iso) {
   const month = String(Number(iso.slice(5, 7)));
   const day = String(Number(iso.slice(8, 10)));
   return `${month}/${day}`;
+}
+
+function stableVariantIndex(tradeId) {
+  const last = (tradeId || "0").slice(-1);
+  const n = parseInt(last, 16);
+  return Number.isFinite(n) ? n % 4 : 0;
 }
 
 function findCompletedTradeForExit(trade) {
@@ -68,42 +90,140 @@ function findCompletedTradeForExit(trade) {
   return null;
 }
 
-function exitLine(trade, completedTrade) {
-  const symbol = trade.symbol || "UNKNOWN";
-  const pnl = completedTrade?.pnl?.realized;
-
-  if (typeof pnl === "number") {
-    if (pnl > 0) return `Took profit ${symbol}`;
-    if (pnl < 0) return `Took loss ${symbol}`;
-    return `Scratch ${symbol}`;
-  }
-
-  return `Exit ${symbol}`;
-}
-
 function entryLine(trade) {
   const symbol = trade.symbol || "UNKNOWN";
+  const v = stableVariantIndex(trade.trade_id);
 
   if (trade.instrument === "stock") {
     const side = trade.pos_side === "short" ? "Short" : "Long";
-    return `${side} ${symbol} ${money(trade.fill)}`;
+
+    if (!USE_MICRO_VARIATIONS) {
+      return `${side} $${symbol} @${priceNoDollar(trade.fill)}`;
+    }
+
+    switch (v) {
+      case 1:
+        return `${side.toLowerCase()} $${symbol} @${priceNoDollar(trade.fill)}`;
+      case 2:
+        return `${side} $${symbol} ${money(trade.fill)}`;
+      case 3:
+        return `${side} ${symbol} ${money(trade.fill)}`;
+      default:
+        return `${side} $${symbol} @${priceNoDollar(trade.fill)}`;
+    }
   }
 
   if (trade.instrument === "option" && trade.option) {
     const strike = strikeText(trade.option.strike);
     const exp = mdFromIso(trade.option.expiry);
-    const right = trade.option.right;
+    const right = (trade.option.right || "").toLowerCase();
 
-    if (right === "C") {
-      return `Long ${symbol} ${strike} Strike ${money(trade.fill)} ${exp}`;
+    // Your use case:
+    // Long calls => Long
+    // Long puts  => Short (RDT directional convention)
+    if (right === "c") {
+      if (!USE_MICRO_VARIATIONS) {
+        return `Long $${symbol} $${strike} Calls ${exp} for ${priceCompact(trade.fill)}`;
+      }
+
+      switch (v) {
+        case 1:
+          return `long $${symbol} $${strike} Calls ${exp} for ${priceCompact(trade.fill)}`;
+        case 2:
+          return `Long $${symbol} $${strike} Calls for ${priceCompact(trade.fill)} ${exp}`;
+        case 3:
+          return `Long ${symbol} $${strike} Calls ${exp} for ${priceCompact(trade.fill)}`;
+        default:
+          return `Long $${symbol} $${strike} Calls ${exp} for ${priceCompact(trade.fill)}`;
+      }
     }
 
-    if (right === "P") {
-      return `Short ${symbol} ${strike} Strike Puts ${money(trade.fill)} ${exp}`;
+    if (right === "p") {
+      if (!USE_MICRO_VARIATIONS) {
+        return `Short $${symbol} $${strike} Puts ${exp} for ${priceCompact(trade.fill)}`;
+      }
+
+      switch (v) {
+        case 1:
+          return `short $${symbol} $${strike} Puts ${exp} for ${priceCompact(trade.fill)}`;
+        case 2:
+          return `Short $${symbol} $${strike} Puts for ${priceCompact(trade.fill)} ${exp}`;
+        case 3:
+          return `Short ${symbol} $${strike} Puts ${exp} for ${priceCompact(trade.fill)}`;
+        default:
+          return `Short $${symbol} $${strike} Puts ${exp} for ${priceCompact(trade.fill)}`;
+      }
     }
   }
 
   return trade.rdt?.text || `Trade ${symbol}`;
+}
+
+function exitLine(trade, completedTrade) {
+  const symbol = trade.symbol || "UNKNOWN";
+  const fill = priceCompact(trade.fill);
+  const pnl = completedTrade?.pnl?.realized;
+  const v = stableVariantIndex(trade.trade_id);
+
+  if (typeof pnl === "number") {
+    if (!USE_MICRO_VARIATIONS) {
+      if (pnl > 0) return `Took profit $${symbol} at ${fill}`;
+      if (pnl < 0) return `Took loss $${symbol} at ${fill}`;
+      return `Exit $${symbol} for a scratch at ${fill}`;
+    }
+
+    if (pnl > 0) {
+      switch (v) {
+        case 1:
+          return `Took profit ${symbol} at ${fill}`;
+        case 2:
+          return `Exit $${symbol} TP @${fill}`;
+        case 3:
+          return `TP $${symbol} @${fill}`;
+        default:
+          return `Took profit $${symbol} at ${fill}`;
+      }
+    }
+
+    if (pnl < 0) {
+      switch (v) {
+        case 1:
+          return `Took loss ${symbol} at ${fill}`;
+        case 2:
+          return `Exit $${symbol} loss @${fill}`;
+        case 3:
+          return `Loss $${symbol} @${fill}`;
+        default:
+          return `Took loss $${symbol} at ${fill}`;
+      }
+    }
+
+    switch (v) {
+      case 1:
+        return `Exit ${symbol} for a scratch at ${fill}`;
+      case 2:
+        return `Scratch $${symbol} @${fill}`;
+      case 3:
+        return `Exit $${symbol} scratch @${fill}`;
+      default:
+        return `Exit $${symbol} for a scratch at ${fill}`;
+    }
+  }
+
+  if (!USE_MICRO_VARIATIONS) {
+    return `Exit $${symbol} at ${fill}`;
+  }
+
+  switch (v) {
+    case 1:
+      return `Exit ${symbol} at ${fill}`;
+    case 2:
+      return `Exit $${symbol} @${fill}`;
+    case 3:
+      return `Out $${symbol} at ${fill}`;
+    default:
+      return `Exit $${symbol} at ${fill}`;
+  }
 }
 
 function baseTradeLine(trade) {
