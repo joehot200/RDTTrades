@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-03-11T01:35:36.365Z",
-  "latest_commit_message": "exit long SPY $696 Call for 02/09 at 0.38",
-  "latest_processed_trade_id": "04c88f3bc16d",
-  "latest_processed_inbox_path": "inbox/2026-03-11T01:35:25+00:00--19c434b13a30d3ce.json",
-  "latest_processed_received_at": "2026-02-09T16:45:18.000Z",
-  "latest_processed_ingested_at": "2026-03-11T01:35:25.000Z"
+  "generated_at": "2026-03-11T01:35:51.379Z",
+  "latest_commit_message": "long SMCI $31.5 Call for 03/13 at 1.73",
+  "latest_processed_trade_id": "e3779378cfd2",
+  "latest_processed_inbox_path": "inbox/2026-03-11T01:35:40+00:00--19cc417d20f062cb.json",
+  "latest_processed_received_at": "2026-03-06T17:00:20.000Z",
+  "latest_processed_ingested_at": "2026-03-11T01:35:40.000Z"
 }
