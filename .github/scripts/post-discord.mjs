@@ -50,7 +50,6 @@ function absNumberText(v) {
 }
 
 function scratchThresholdForTrade(trade) {
-  // For options this is per-contract price difference, not x100.
   return trade.instrument === "option" ? 0.05 : 0.02;
 }
 
@@ -62,8 +61,6 @@ function exitUnitPnl(trade, completedTrade) {
 
   if (!Number.isFinite(entryFill) || !Number.isFinite(exitFill)) return null;
 
-  // Your current use case is long stock / long calls / long puts.
-  // RDT may display long puts as "Short", but the actual trade is still a bought option.
   return exitFill - entryFill;
 }
 
@@ -120,20 +117,90 @@ function stableVariantIndex(tradeId) {
   return hash % 6;
 }
 
-function findCompletedTradeForExit(trade) {
-  if (trade.trade_role !== "close") return null;
+function tradeRoleRank(trade) {
+  if (trade?.trade_role === "open") return 0;
+  if (trade?.trade_role === "close") return 1;
+  return 2;
+}
 
+function sortTradesForPosting(a, b) {
+  const ta = new Date(a?.received_at ?? 0).getTime();
+  const tb = new Date(b?.received_at ?? 0).getTime();
+
+  if (ta !== tb) return ta - tb;
+
+  const ra = tradeRoleRank(a);
+  const rb = tradeRoleRank(b);
+
+  if (ra !== rb) return ra - rb;
+
+  return String(a?.trade_id || "").localeCompare(String(b?.trade_id || ""));
+}
+
+function readAllCompletedTrades() {
   const completedRoot = path.join(ROOT, "trades", "completed-trades");
   const files = walkJsonFiles(completedRoot);
+  return files.map(readJson);
+}
 
-  for (const fp of files) {
-    const t = readJson(fp);
-    if (t?.exits?.some(x => x.trade_id === trade.trade_id)) {
-      return t;
+function buildCompletedTradeIndexes(completedTrades) {
+  const byEntryTradeId = new Map();
+  const byExitTradeId = new Map();
+
+  for (const t of completedTrades) {
+    const entryId = t?.entry?.trade_id;
+    if (entryId) {
+      byEntryTradeId.set(entryId, t);
+    }
+
+    for (const x of t?.exits || []) {
+      if (x?.trade_id) {
+        byExitTradeId.set(x.trade_id, t);
+      }
     }
   }
 
+  return { byEntryTradeId, byExitTradeId };
+}
+
+function findCompletedTradeForTrade(trade, indexes) {
+  if (!trade) return null;
+
+  if (trade.trade_role === "open") {
+    return indexes.byEntryTradeId.get(trade.trade_id) ?? null;
+  }
+
+  if (trade.trade_role === "close") {
+    return indexes.byExitTradeId.get(trade.trade_id) ?? null;
+  }
+
   return null;
+}
+
+function roundTripMinutes(completedTrade) {
+  if (!completedTrade?.entry?.received_at || !completedTrade?.exits?.length) return null;
+
+  const entryMs = new Date(completedTrade.entry.received_at).getTime();
+  const firstExitMs = Math.min(
+    ...completedTrade.exits
+      .map(x => new Date(x.received_at).getTime())
+      .filter(Number.isFinite)
+  );
+
+  if (!Number.isFinite(entryMs) || !Number.isFinite(firstExitMs)) return null;
+
+  return (firstExitMs - entryMs) / 60000;
+}
+
+function isSuppressedQuickRoundTrip(trade, completedTrade, filters) {
+  const minutesLimit = Number(filters?.suppress_round_trips_under_minutes ?? 0);
+  if (!Number.isFinite(minutesLimit) || minutesLimit <= 0) return false;
+  if (!completedTrade) return false;
+
+  const mins = roundTripMinutes(completedTrade);
+  if (!Number.isFinite(mins)) return false;
+
+  return mins <= minutesLimit;
 }
 
 function entryLine(trade) {
@@ -164,9 +231,6 @@ function entryLine(trade) {
     const exp = mdFromIso(trade.option.expiry);
     const right = (trade.option.right || "").toLowerCase();
 
-    // Your use case:
-    // Long calls => Long
-    // Long puts  => Short (RDT directional convention)
     if (right === "c") {
       if (!USE_MICRO_VARIATIONS) {
         return `Long $${symbol} $${strike} Call ${exp} for ${priceCompact(trade.fill)}`;
@@ -218,7 +282,6 @@ function exitLine(trade, completedTrade) {
   const isOption = trade.instrument === "option";
   const unitLabel = isOption ? "per contract" : "per share";
 
-  // No completed-trade / no P&L -> generic exit wording only
   if (typeof pnl !== "number") {
     if (!USE_MICRO_VARIATIONS) {
       return `Exit $${symbol} at ${fill}`;
@@ -240,10 +303,6 @@ function exitLine(trade, completedTrade) {
     }
   }
 
-  // Use your preferred TOTAL P/L thresholds:
-  // > +5 = profit
-  // < -5 = loss
-  // otherwise scratch
   if (!USE_MICRO_VARIATIONS) {
     if (pnl > 5) return `Took profit $${symbol} at ${fill}`;
     if (pnl < -5) return `Took loss $${symbol} at ${fill}`;
@@ -284,7 +343,6 @@ function exitLine(trade, completedTrade) {
     }
   }
 
-  // Scratch bucket
   switch (v) {
     case 1:
       return `Exit ${symbol} for a scratch at ${fill}`;
@@ -305,7 +363,6 @@ function baseTradeLine(trade, completedTrade) {
   if (trade.trade_role === "close") {
     return exitLine(trade, completedTrade);
   }
-
   return entryLine(trade);
 }
 
@@ -451,6 +508,10 @@ function shouldPostTradeToDestination(trade, completedTrade, destination, state)
 
   const filters = destination.filters || {};
 
+  if (isSuppressedQuickRoundTrip(trade, completedTrade, filters)) {
+    return { ok: false, reason: "suppressed_quick_round_trip" };
+  }
+
   if (trade.trade_role === "close") {
     return shouldPostExitToDestination(trade, completedTrade, filters, state);
   }
@@ -503,27 +564,30 @@ async function main() {
     return;
   }
 
+  const cleanedById = new Map(cleaned.map(t => [t.trade_id, t]));
+
   const meta = readMeta();
-  const targetTradeId = meta?.latest_processed_trade_id ?? null;
+  const processedIds = Array.isArray(meta?.processed_trade_ids_this_run)
+    ? meta.processed_trade_ids_this_run
+    : (meta?.latest_processed_trade_id ? [meta.latest_processed_trade_id] : []);
 
-  if (!targetTradeId) {
-    console.log("No latest_processed_trade_id for this run; skipping Discord post.");
+  if (!processedIds.length) {
+    console.log("No processed_trade_ids_this_run in _meta; skipping Discord post.");
     return;
   }
 
-  const latest = cleaned.find(t => t.trade_id === targetTradeId) ?? null;
+  const tradesThisRun = processedIds
+    .map(id => cleanedById.get(id))
+    .filter(Boolean)
+    .sort(sortTradesForPosting);
 
-  if (!latest) {
-    console.log(`Trade ${targetTradeId} not found in cleaned logs; skipping Discord post.`);
+  if (!tradesThisRun.length) {
+    console.log("No matching cleaned trades found for processed_trade_ids_this_run.");
     return;
   }
 
-  const completedTrade = latest.trade_role === "close"
-    ? findCompletedTradeForExit(latest)
-    : null;
-
-  const coreLine = baseTradeLine(latest, completedTrade);
-  const message = composeMessage(latest, coreLine);
+  const completedTrades = readAllCompletedTrades();
+  const completedIndexes = buildCompletedTradeIndexes(completedTrades);
 
   const destinations = config?.destinations || {};
   const destinationEntries = Object.entries(destinations);
@@ -548,18 +612,30 @@ async function main() {
     }
 
     const state = readPostingState(destinationName);
-    const decision = shouldPostTradeToDestination(latest, completedTrade, destination, state);
+    let stateChanged = false;
 
-    if (!decision.ok) {
-      console.log(`[${destinationName}] skipped: ${decision.reason}`);
-      continue;
+    for (const trade of tradesThisRun) {
+      const completedTrade = findCompletedTradeForTrade(trade, completedIndexes);
+      const decision = shouldPostTradeToDestination(trade, completedTrade, destination, state);
+
+      if (!decision.ok) {
+        console.log(`[${destinationName}] skipped ${trade.trade_id}: ${decision.reason}`);
+        continue;
+      }
+
+      const coreLine = baseTradeLine(trade, completedTrade);
+      const message = composeMessage(trade, coreLine);
+
+      await postToDiscord(webhookUrl, message);
+      updateStateAfterSuccessfulPost(state, trade);
+      stateChanged = true;
+
+      console.log(`[${destinationName}] posted ${trade.trade_id}: ${message}`);
     }
 
-    await postToDiscord(webhookUrl, message);
-    updateStateAfterSuccessfulPost(state, latest);
-    writePostingState(destinationName, state);
-
-    console.log(`[${destinationName}] posted: ${message}`);
+    if (stateChanged) {
+      writePostingState(destinationName, state);
+    }
   }
 }
 
