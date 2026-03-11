@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "trade_id": "272e56ab26ae",
+  "received_at": "2026-03-11T14:29:45.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-03-11T14:40:49+00:00--19cdd4dc806a8419.json",
+    "raw_id": "19cdd4dc806a8419",
+    "ingested_at": "2026-03-11T14:40:49.000Z"
+  },
+  "raw": {
+    "text": "#114090207751 SOLD -1 NFLX 100 (Weeklys) 13 MAR 26 96 PUT @1.24, ACCOUNT *****746SCHW"
+  },
+  "instrument": "option",
+  "paper": false,
+  "action": "SOLD",
+  "symbol": "NFLX",
+  "qty": 1,
+  "fill": 1.24,
+  "option": {
+    "expiry": "2026-03-13",
+    "strike": 96,
+    "right": "P"
+  },
+  "computed": {
+    "month": "2026-03",
+    "dte": 2,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "options",
+    "text": "exit short NFLX $96 Put for 03/13 at 1.24"
+  },
+  "trade_role": "close",
+  "pos_side": "long",
+  "contract_key": "OPT|NFLX|2026-03-13|96|P"
+}
