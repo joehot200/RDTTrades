@@ -11,20 +11,6 @@ function readJson(fp) {
   return JSON.parse(fs.readFileSync(fp, "utf8"));
 }
 
-function sortTradesForPosting(a, b) {
-  const ta = new Date(a?.received_at ?? 0).getTime();
-  const tb = new Date(b?.received_at ?? 0).getTime();
-
-  if (ta !== tb) return ta - tb;
-
-  const ra = a?.trade_role === "open" ? 0 : a?.trade_role === "close" ? 1 : 2;
-  const rb = b?.trade_role === "open" ? 0 : b?.trade_role === "close" ? 1 : 2;
-
-  if (ra !== rb) return ra - rb;
-
-  return String(a?.trade_id || "").localeCompare(String(b?.trade_id || ""));
-}
-
 function writeJson(fp, obj) {
   fs.mkdirSync(path.dirname(fp), { recursive: true });
   fs.writeFileSync(fp, JSON.stringify(obj, null, 2) + "\n", "utf8");
@@ -135,6 +121,20 @@ function tradeRoleRank(trade) {
   if (trade?.trade_role === "open") return 0;
   if (trade?.trade_role === "close") return 1;
   return 2;
+}
+
+function sortTradesForPosting(a, b) {
+  const ta = new Date(a?.received_at ?? 0).getTime();
+  const tb = new Date(b?.received_at ?? 0).getTime();
+
+  if (ta !== tb) return ta - tb;
+
+  const ra = tradeRoleRank(a);
+  const rb = tradeRoleRank(b);
+
+  if (ra !== rb) return ra - rb;
+
+  return String(a?.trade_id || "").localeCompare(String(b?.trade_id || ""));
 }
 
 function readAllCompletedTrades() {
@@ -442,32 +442,10 @@ function alreadyPostedToDestination(state, trade) {
   return Array.isArray(state.posted_trade_ids) && state.posted_trade_ids.includes(trade.trade_id);
 }
 
-function shouldPostTradeToDestination(trade, completedTrade, destination, state) {
-  if (alreadyPostedToDestination(state, trade)) {
-    return { ok: false, reason: "already_posted" };
+function shouldPostEntryToDestination(trade, filters, state) {
+  if (filters.post_all_entries) {
+    return { ok: true, reason: "post_all_entries" };
   }
-
-  const filters = destination.filters || {};
-
-  // EXITS: if the entry was already posted to this destination,
-  // always allow the exit through, even if the round trip was quick.
-  if (trade.trade_role === "close") {
-    const exitDecision = shouldPostExitToDestination(trade, completedTrade, filters, state);
-
-    if (!exitDecision.ok) {
-      return exitDecision;
-    }
-
-    return { ok: true, reason: "exit_ok" };
-  }
-
-  // ENTRIES: only suppress quick round trips at the entry side.
-  if (isSuppressedQuickRoundTrip(trade, completedTrade, filters)) {
-    return { ok: false, reason: "suppressed_quick_round_trip" };
-  }
-
-  return shouldPostEntryToDestination(trade, filters, state);
-}
 
   if (trade.instrument === "stock") {
     const minStockPrice = Number(filters.min_stock_price ?? 0);
@@ -530,12 +508,19 @@ function shouldPostTradeToDestination(trade, completedTrade, destination, state)
 
   const filters = destination.filters || {};
 
-  if (isSuppressedQuickRoundTrip(trade, completedTrade, filters)) {
-    return { ok: false, reason: "suppressed_quick_round_trip" };
+  // If an entry has already been posted to this destination,
+  // always allow the exit through.
+  if (trade.trade_role === "close") {
+    const exitDecision = shouldPostExitToDestination(trade, completedTrade, filters, state);
+    if (!exitDecision.ok) {
+      return exitDecision;
+    }
+    return { ok: true, reason: "exit_ok" };
   }
 
-  if (trade.trade_role === "close") {
-    return shouldPostExitToDestination(trade, completedTrade, filters, state);
+  // Entry-side suppression only.
+  if (isSuppressedQuickRoundTrip(trade, completedTrade, filters)) {
+    return { ok: false, reason: "suppressed_quick_round_trip" };
   }
 
   return shouldPostEntryToDestination(trade, filters, state);
