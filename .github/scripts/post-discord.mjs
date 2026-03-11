@@ -5,13 +5,27 @@ const ROOT = process.cwd();
 const LOCAL_TZ = "Europe/London";
 
 // Quiet output toggles
-const INCLUDE_QTY = true;
-const INCLUDE_TIME = true;
-const INCLUDE_RAW = true;
+const INCLUDE_QTY = false;
+const INCLUDE_TIME = false;
+const INCLUDE_RAW = false;
 
 // If true, same trade gets one of a few subtle stable styles.
 // If false, it always uses the same clean style.
-const USE_STABLE_VARIANTS = false;
+const USE_STABLE_VARIANTS = true;
+
+function sortEventTimeValue(e) {
+  return new Date(
+    e?.source?.ingested_at ??
+    e?.received_at ??
+    0
+  ).getTime();
+}
+
+function readMeta() {
+  const fp = path.join(ROOT, "trades", "_meta.json");
+  if (!fs.existsSync(fp)) return null;
+  return readJson(fp);
+}
 
 function readJson(fp) {
   return JSON.parse(fs.readFileSync(fp, "utf8"));
@@ -155,16 +169,18 @@ function stableVariantIndex(tradeId) {
 }
 
 function composeMessage(trade, coreLine) {
-  const extras = subtleExtras(trade);
-  const raw = rawSuffix(trade, coreLine);
+  const parts = [coreLine];
 
-  if (!USE_STABLE_VARIANTS) {
-    const tail = [];
-    if (extras.length) tail.push(extras.join(", "));
-    if (raw) tail.push(raw);
-
-    return tail.length ? `${coreLine} (${tail.join(" | ")})` : coreLine;
+  if (INCLUDE_QTY && trade.qty != null) {
+    parts.push(`x${trade.qty}`);
   }
+
+  if (INCLUDE_TIME && trade.received_at) {
+    parts.push(localTimeText(trade.received_at));
+  }
+
+  return parts.join(" — ");
+}
 
   switch (stableVariantIndex(trade.trade_id)) {
     case 0:
@@ -240,14 +256,25 @@ async function main() {
     return;
   }
 
+  const meta = readMeta();
+const targetTradeId = meta?.latest_processed_trade_id ?? null;
+
+let latest = null;
+
+if (targetTradeId) {
+  latest = cleaned.find(t => t.trade_id === targetTradeId) ?? null;
+}
+
+if (!latest) {
   cleaned.sort((a, b) => {
-    const ta = new Date(a.received_at).getTime();
-    const tb = new Date(b.received_at).getTime();
+    const ta = sortEventTimeValue(a);
+    const tb = sortEventTimeValue(b);
     if (ta !== tb) return ta - tb;
-    return String(a.trade_id).localeCompare(String(b.trade_id));
+    return String(a.trade_id || "").localeCompare(String(b.trade_id || ""));
   });
 
-  const latest = cleaned[cleaned.length - 1];
+  latest = cleaned[cleaned.length - 1];
+}
   const coreLine = baseTradeLine(latest);
   const message = composeMessage(latest, coreLine);
 
