@@ -167,8 +167,8 @@ function exitLine(trade, completedTrade) {
 
   if (typeof pnl === "number") {
     if (!USE_MICRO_VARIATIONS) {
-      if (pnl > 0) return `Took profit $${symbol} at ${fill}`;
-      if (pnl < 0) return `Took loss $${symbol} at ${fill}`;
+      if (pnl > 5) return `Took profit $${symbol} at ${fill}`;
+      if (pnl < -5) return `Took loss $${symbol} at ${fill}`;
       return `Exit $${symbol} for a scratch at ${fill}`;
     }
 
@@ -177,7 +177,7 @@ function exitLine(trade, completedTrade) {
         case 1:
           return `Took profit ${symbol} at ${fill}`;
         case 2:
-          return `Exit $${symbol} TP @${fill}`;
+          return `Exited $${symbol} TP @${fill}`;
         case 3:
           return `TP $${symbol} @${fill}`;
         default:
@@ -190,9 +190,9 @@ function exitLine(trade, completedTrade) {
         case 1:
           return `Took loss ${symbol} at ${fill}`;
         case 2:
-          return `Exit $${symbol} loss @${fill}`;
+          return `Exit $${symbol} for loss @${fill}`;
         case 3:
-          return `Loss $${symbol} @${fill}`;
+          return `Exited $${symbol} for a loss @${fill}`;
         default:
           return `Took loss $${symbol} at ${fill}`;
       }
@@ -202,7 +202,7 @@ function exitLine(trade, completedTrade) {
       case 1:
         return `Exit ${symbol} for a scratch at ${fill}`;
       case 2:
-        return `Scratch $${symbol} @${fill}`;
+        return `Scratched $${symbol} @${fill}`;
       case 3:
         return `Exit $${symbol} scratch @${fill}`;
       default:
