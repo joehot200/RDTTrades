@@ -12,3 +12,5 @@ Zapier may have a slight delay.
 
 week-to-date.json  = current week (Monday to Sunday) trades.
 month-to-date.json = current calendar month's trades (e.g. Jan 1 - Jan 31st).
+
+Note that on 11/03/2026 I did a few test trades (mostly using SPY) using arbritary numbers.
