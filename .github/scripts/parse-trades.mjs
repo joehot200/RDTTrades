@@ -5,14 +5,6 @@ import crypto from "crypto";
 const ROOT = process.cwd();
 const LOCAL_TZ = "Europe/London";
 
-function sortEventTimeValue(e) {
-  return new Date(
-    e?.source?.ingested_at ??
-    e?.received_at ??
-    0
-  ).getTime();
-}
-
 const MONTH = {
   JAN: "01", FEB: "02", MAR: "03", APR: "04", MAY: "05", JUN: "06",
   JUL: "07", AUG: "08", SEP: "09", OCT: "10", NOV: "11", DEC: "12",
@@ -168,6 +160,25 @@ function mondayOfWeekYmd(dateInput, timeZone = LOCAL_TZ) {
   const dow = d.getUTCDay();      // Sun=0 ... Sat=6
   const offset = (dow + 6) % 7;   // Mon=0 ... Sun=6
   return subtractDaysFromYmd(ymd, offset);
+}
+
+function tradeRoleRank(trade) {
+  if (trade?.trade_role === "open") return 0;
+  if (trade?.trade_role === "close") return 1;
+  return 2;
+}
+
+function sortTradesForPosting(a, b) {
+  const ta = new Date(a?.received_at ?? 0).getTime();
+  const tb = new Date(b?.received_at ?? 0).getTime();
+
+  if (ta !== tb) return ta - tb;
+
+  const ra = tradeRoleRank(a);
+  const rb = tradeRoleRank(b);
+  if (ra !== rb) return ra - rb;
+
+  return String(a?.trade_id || "").localeCompare(String(b?.trade_id || ""));
 }
 
 function parseRaw(raw, now = new Date()) {
@@ -448,6 +459,7 @@ function main() {
 
   const now = new Date();
   const processedThisRun = [];
+
   // inbox -> cleaned entry/exit logs
   for (const inboxPath of inboxFiles) {
     const inbox = readJson(inboxPath);
@@ -551,12 +563,7 @@ function main() {
   }
   cleanedLogs = [...byId.values()];
 
-  cleanedLogs.sort((a, b) => {
-    const ta = new Date(a.received_at).getTime();
-    const tb = new Date(b.received_at).getTime();
-    if (ta !== tb) return ta - tb;
-    return (a.trade_id || "").localeCompare(b.trade_id || "");
-  });
+  cleanedLogs.sort(sortTradesForPosting);
 
   const months = [...new Set(cleanedLogs.map(e => e.computed?.month).filter(Boolean))].sort();
 
@@ -620,39 +627,40 @@ function main() {
     );
   }
 
-  // meta for pretty commit message
-// meta for pretty commit message + exact trade processed this run
-const latestHistoricalTrade = cleanedLogs.length ? cleanedLogs[cleanedLogs.length - 1] : null;
+  // meta for commit message + current batch ordering
+  const latestHistoricalTrade = cleanedLogs.length ? cleanedLogs[cleanedLogs.length - 1] : null;
 
-const latestProcessedTrade = processedThisRun.length
-  ? [...processedThisRun].sort((a, b) => {
-      const ta = sortEventTimeValue(a);
-      const tb = sortEventTimeValue(b);
-      if (ta !== tb) return ta - tb;
-      return String(a.trade_id || "").localeCompare(String(b.trade_id || ""));
-    })[processedThisRun.length - 1]
-  : null;
+  const processedById = new Map();
+  for (const t of processedThisRun) {
+    const prev = processedById.get(t.trade_id);
+    if (!prev) processedById.set(t.trade_id, t);
+    else if (new Date(t.received_at) >= new Date(prev.received_at)) processedById.set(t.trade_id, t);
+  }
 
-let commitMessage = "build: parse inbox trades";
-if (latestProcessedTrade?.rdt?.text) {
-  commitMessage = latestProcessedTrade.rdt.text;
-} else if (latestHistoricalTrade?.rdt?.text) {
-  commitMessage = latestHistoricalTrade.rdt.text;
-}
+  const processedThisRunOrdered = [...processedById.values()].sort(sortTradesForPosting);
+  const latestProcessedTrade = processedThisRunOrdered.length
+    ? processedThisRunOrdered[processedThisRunOrdered.length - 1]
+    : null;
 
-writeJson(path.join(ROOT, "trades", "_meta.json"), {
-  generated_at: new Date().toISOString(),
-  latest_commit_message: commitMessage,
-  latest_processed_trade_id: latestProcessedTrade?.trade_id ?? null,
-  latest_processed_inbox_path: latestProcessedTrade?.source?.inbox_path ?? null,
-  latest_processed_received_at: latestProcessedTrade?.received_at ?? null,
-  latest_processed_ingested_at: latestProcessedTrade?.source?.ingested_at ?? null
-});
+  let commitMessage = "build: parse inbox trades";
+  if (latestProcessedTrade?.rdt?.text) {
+    commitMessage = latestProcessedTrade.rdt.text;
+  } else if (latestHistoricalTrade?.rdt?.text) {
+    commitMessage = latestHistoricalTrade.rdt.text;
+  }
+
+  writeJson(path.join(ROOT, "trades", "_meta.json"), {
+    generated_at: new Date().toISOString(),
+    latest_commit_message: commitMessage,
+    latest_processed_trade_id: latestProcessedTrade?.trade_id ?? null,
+    processed_trade_ids_this_run: processedThisRunOrdered.map(t => t.trade_id)
+  });
 
   console.log(`Inbox files: ${inboxFiles.length}`);
   console.log(`Cleaned entry/exit logs: ${cleanedLogs.length}`);
   console.log(`Months: ${months.length}`);
   console.log(`Completed trades: ${completedTrades.length}`);
+  console.log(`Processed this run: ${processedThisRunOrdered.length}`);
   console.log(`Week start (${LOCAL_TZ}): ${londonWeekStartYmd}`);
 }
 
