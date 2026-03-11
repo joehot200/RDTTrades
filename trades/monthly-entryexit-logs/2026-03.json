@@ -109,5 +109,42 @@
     "trade_role": "close",
     "pos_side": "long",
     "contract_key": "OPT|SMCI|2026-03-13|31.5|C"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "10f928d9906f",
+    "received_at": "2026-03-11T14:17:16.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-03-11T14:36:20+00:00--19cdd425390b3632.json",
+      "raw_id": "19cdd425390b3632",
+      "ingested_at": "2026-03-11T14:36:20.000Z"
+    },
+    "raw": {
+      "text": "#114082931674 SOLD -1 INTC 100 (Weeklys) 13 MAR 26 48.5 CALL @1.27, ACCOUNT *****746SCHW"
+    },
+    "instrument": "option",
+    "paper": false,
+    "action": "SOLD",
+    "symbol": "INTC",
+    "qty": 1,
+    "fill": 1.27,
+    "option": {
+      "expiry": "2026-03-13",
+      "strike": 48.5,
+      "right": "C"
+    },
+    "computed": {
+      "month": "2026-03",
+      "dte": 2,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "exit long INTC $48.5 Call for 03/13 at 1.27"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "OPT|INTC|2026-03-13|48.5|C"
   }
 ]
