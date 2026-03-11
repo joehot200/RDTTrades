@@ -146,5 +146,42 @@
     "trade_role": "close",
     "pos_side": "long",
     "contract_key": "OPT|INTC|2026-03-13|48.5|C"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "f8a3131846f3",
+    "received_at": "2026-03-11T14:22:44.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-03-11T14:37:05+00:00--19cdd4754faa4384.json",
+      "raw_id": "19cdd4754faa4384",
+      "ingested_at": "2026-03-11T14:37:05.000Z"
+    },
+    "raw": {
+      "text": "#114087093842 BOT +1 NFLX 100 (Weeklys) 13 MAR 26 96 PUT @1.23, ACCOUNT *****746SCHW"
+    },
+    "instrument": "option",
+    "paper": false,
+    "action": "BOT",
+    "symbol": "NFLX",
+    "qty": 1,
+    "fill": 1.23,
+    "option": {
+      "expiry": "2026-03-13",
+      "strike": 96,
+      "right": "P"
+    },
+    "computed": {
+      "month": "2026-03",
+      "dte": 2,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "short NFLX $96 Put for 03/13 at 1.23"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "OPT|NFLX|2026-03-13|96|P"
   }
 ]
