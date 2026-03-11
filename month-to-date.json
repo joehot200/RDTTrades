@@ -331,5 +331,79 @@
     "trade_role": "close",
     "pos_side": "long",
     "contract_key": "OPT|SPY|2026-03-27|530|C"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "85ac033d3d01",
+    "received_at": "2026-03-11T17:24:12.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-03-11T17:24:48+00:00--19cdded7cd39c165.json",
+      "raw_id": "19cdded7cd39c165",
+      "ingested_at": "2026-03-11T17:24:48.000Z"
+    },
+    "raw": {
+      "text": "#114118317372 SOLD -1 SPY 100 (Weeklys) 27 MAR 26 530 CALL @1.2, ACCOUNT *****746SCHW"
+    },
+    "instrument": "option",
+    "paper": false,
+    "action": "SOLD",
+    "symbol": "SPY",
+    "qty": 1,
+    "fill": 1.2,
+    "option": {
+      "expiry": "2026-03-27",
+      "strike": 530,
+      "right": "C"
+    },
+    "computed": {
+      "month": "2026-03",
+      "dte": 16,
+      "wiki_ok": true
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "exit long SPY $530 Call for 03/27 at 1.2"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "OPT|SPY|2026-03-27|530|C"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "4d5b96aec0fe",
+    "received_at": "2026-03-11T17:26:43.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-03-11T17:26:53+00:00--19cddefcd775d769.json",
+      "raw_id": "19cddefcd775d769",
+      "ingested_at": "2026-03-11T17:26:53.000Z"
+    },
+    "raw": {
+      "text": "#114118317372 SOLD -1 SPY 100 (Weeklys) 20 MAR 26 530 CALL @1.8, ACCOUNT *****746SCHW"
+    },
+    "instrument": "option",
+    "paper": false,
+    "action": "SOLD",
+    "symbol": "SPY",
+    "qty": 1,
+    "fill": 1.8,
+    "option": {
+      "expiry": "2026-03-20",
+      "strike": 530,
+      "right": "C"
+    },
+    "computed": {
+      "month": "2026-03",
+      "dte": 9,
+      "wiki_ok": true
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "exit long SPY $530 Call for 03/20 at 1.8"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "OPT|SPY|2026-03-20|530|C"
   }
 ]
