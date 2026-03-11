@@ -442,10 +442,32 @@ function alreadyPostedToDestination(state, trade) {
   return Array.isArray(state.posted_trade_ids) && state.posted_trade_ids.includes(trade.trade_id);
 }
 
-function shouldPostEntryToDestination(trade, filters, state) {
-  if (filters.post_all_entries) {
-    return { ok: true, reason: "post_all_entries" };
+function shouldPostTradeToDestination(trade, completedTrade, destination, state) {
+  if (alreadyPostedToDestination(state, trade)) {
+    return { ok: false, reason: "already_posted" };
   }
+
+  const filters = destination.filters || {};
+
+  // EXITS: if the entry was already posted to this destination,
+  // always allow the exit through, even if the round trip was quick.
+  if (trade.trade_role === "close") {
+    const exitDecision = shouldPostExitToDestination(trade, completedTrade, filters, state);
+
+    if (!exitDecision.ok) {
+      return exitDecision;
+    }
+
+    return { ok: true, reason: "exit_ok" };
+  }
+
+  // ENTRIES: only suppress quick round trips at the entry side.
+  if (isSuppressedQuickRoundTrip(trade, completedTrade, filters)) {
+    return { ok: false, reason: "suppressed_quick_round_trip" };
+  }
+
+  return shouldPostEntryToDestination(trade, filters, state);
+}
 
   if (trade.instrument === "stock") {
     const minStockPrice = Number(filters.min_stock_price ?? 0);
