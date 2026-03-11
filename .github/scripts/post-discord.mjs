@@ -153,35 +153,35 @@ function entryLine(trade) {
     // Long puts  => Short (RDT directional convention)
     if (right === "c") {
       if (!USE_MICRO_VARIATIONS) {
-        return `Long $${symbol} $${strike} Calls ${exp} for ${priceCompact(trade.fill)}`;
+        return `Long $${symbol} $${strike} Call ${exp} for ${priceCompact(trade.fill)}`;
       }
 
       switch (v) {
         case 1:
-          return `long $${symbol} $${strike} Calls ${exp} for ${priceCompact(trade.fill)}`;
+          return `long $${symbol} $${strike} Call ${exp} for ${priceCompact(trade.fill)}`;
         case 2:
-          return `Long $${symbol} $${strike} Calls for ${priceCompact(trade.fill)} ${exp}`;
+          return `Long $${symbol} $${strike} Call for ${priceCompact(trade.fill)} ${exp}`;
         case 3:
-          return `Long ${symbol} $${strike} Calls ${exp} for ${priceCompact(trade.fill)}`;
+          return `Long ${symbol} $${strike} Call ${exp} for ${priceCompact(trade.fill)}`;
         default:
-          return `Long $${symbol} $${strike} Calls ${exp} for ${priceCompact(trade.fill)}`;
+          return `Long $${symbol} $${strike} Call ${exp} for ${priceCompact(trade.fill)}`;
       }
     }
 
     if (right === "p") {
       if (!USE_MICRO_VARIATIONS) {
-        return `Short $${symbol} $${strike} Puts ${exp} for ${priceCompact(trade.fill)}`;
+        return `Short $${symbol} $${strike} Put ${exp} for ${priceCompact(trade.fill)}`;
       }
 
       switch (v) {
         case 1:
-          return `short $${symbol} $${strike} Puts ${exp} for ${priceCompact(trade.fill)}`;
+          return `short $${symbol} $${strike} Put ${exp} for ${priceCompact(trade.fill)}`;
         case 2:
-          return `Short $${symbol} $${strike} Puts for ${priceCompact(trade.fill)} ${exp}`;
+          return `Short $${symbol} $${strike} Put for ${priceCompact(trade.fill)} ${exp}`;
         case 3:
-          return `Short ${symbol} $${strike} Puts ${exp} for ${priceCompact(trade.fill)}`;
+          return `Short ${symbol} $${strike} Put ${exp} for ${priceCompact(trade.fill)}`;
         default:
-          return `Short $${symbol} $${strike} Puts ${exp} for ${priceCompact(trade.fill)}`;
+          return `Short $${symbol} $${strike} Put ${exp} for ${priceCompact(trade.fill)}`;
       }
     }
   }
