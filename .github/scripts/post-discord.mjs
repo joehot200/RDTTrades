@@ -2,30 +2,6 @@ import fs from "fs";
 import path from "path";
 
 const ROOT = process.cwd();
-const LOCAL_TZ = "Europe/London";
-
-// Quiet output toggles
-const INCLUDE_QTY = false;
-const INCLUDE_TIME = false;
-const INCLUDE_RAW = false;
-
-// If true, same trade gets one of a few subtle stable styles.
-// If false, it always uses the same clean style.
-const USE_STABLE_VARIANTS = true;
-
-function sortEventTimeValue(e) {
-  return new Date(
-    e?.source?.ingested_at ??
-    e?.received_at ??
-    0
-  ).getTime();
-}
-
-function readMeta() {
-  const fp = path.join(ROOT, "trades", "_meta.json");
-  if (!fs.existsSync(fp)) return null;
-  return readJson(fp);
-}
 
 function readJson(fp) {
   return JSON.parse(fs.readFileSync(fp, "utf8"));
@@ -44,6 +20,20 @@ function walkJsonFiles(dir) {
   return out;
 }
 
+function sortEventTimeValue(e) {
+  return new Date(
+    e?.source?.ingested_at ??
+    e?.received_at ??
+    0
+  ).getTime();
+}
+
+function readMeta() {
+  const fp = path.join(ROOT, "trades", "_meta.json");
+  if (!fs.existsSync(fp)) return null;
+  return readJson(fp);
+}
+
 function money(v) {
   const n = Number(v);
   if (!Number.isFinite(n)) return "$?";
@@ -55,21 +45,11 @@ function strikeText(v) {
   return String(v).replace(/\.0$/, "");
 }
 
-function mmddFromIso(iso) {
-  if (!iso) return "??/??";
-  return `${iso.slice(5, 7)}/${iso.slice(8, 10)}`;
-}
-
-function localTimeText(iso, timeZone = LOCAL_TZ) {
-  if (!iso) return null;
-  const d = new Date(iso);
-
-  return new Intl.DateTimeFormat("en-GB", {
-    timeZone,
-    hour: "2-digit",
-    minute: "2-digit",
-    hour12: false
-  }).format(d);
+function mdFromIso(iso) {
+  if (!iso) return "?/?";
+  const month = String(Number(iso.slice(5, 7)));
+  const day = String(Number(iso.slice(8, 10)));
+  return `${month}/${day}`;
 }
 
 function findCompletedTradeForExit(trade) {
@@ -98,7 +78,6 @@ function exitLine(trade, completedTrade) {
     return `Scratch ${symbol}`;
   }
 
-  // Fallback if completed-trade join does not find a P/L yet
   return `Exit ${symbol}`;
 }
 
@@ -112,22 +91,18 @@ function entryLine(trade) {
 
   if (trade.instrument === "option" && trade.option) {
     const strike = strikeText(trade.option.strike);
-    const exp = mmddFromIso(trade.option.expiry);
+    const exp = mdFromIso(trade.option.expiry);
     const right = trade.option.right;
 
-    // Calls
     if (right === "C") {
-      return `Long ${symbol} ${strike} Strike, ${money(trade.fill)}, ${exp} Expiration`;
+      return `Long ${symbol} ${strike} Strike ${money(trade.fill)} ${exp}`;
     }
 
-    // Puts
-    // I am assuming you want this cleaner version, not the literal duplicated "Short ... Long ..."
     if (right === "P") {
-      return `Short ${symbol} ${strike} Strike Puts, ${money(trade.fill)}, ${exp} Expiration`;
+      return `Short ${symbol} ${strike} Strike Puts ${money(trade.fill)} ${exp}`;
     }
   }
 
-  // Fallback
   return trade.rdt?.text || `Trade ${symbol}`;
 }
 
@@ -141,78 +116,8 @@ function baseTradeLine(trade) {
   return entryLine(trade);
 }
 
-function subtleExtras(trade) {
-  const extras = [];
-
-  if (INCLUDE_QTY && trade.qty != null) {
-    extras.push(`x${trade.qty}`);
-  }
-
-  if (INCLUDE_TIME && trade.received_at) {
-    extras.push(localTimeText(trade.received_at));
-  }
-
-  return extras;
-}
-
-function rawSuffix(trade, coreLine) {
-  if (!INCLUDE_RAW) return null;
-  if (!trade.raw?.text) return null;
-  if (trade.raw.text === coreLine) return null;
-  return `[${trade.raw.text}]`;
-}
-
-function stableVariantIndex(tradeId) {
-  const last = (tradeId || "0").slice(-1);
-  const n = parseInt(last, 16);
-  return Number.isFinite(n) ? n % 4 : 0;
-}
-
 function composeMessage(trade, coreLine) {
-  const parts = [coreLine];
-
-  if (INCLUDE_QTY && trade.qty != null) {
-    parts.push(`x${trade.qty}`);
-  }
-
-  if (INCLUDE_TIME && trade.received_at) {
-    parts.push(localTimeText(trade.received_at));
-  }
-
-  return parts.join(" — ");
-}
-
-  switch (stableVariantIndex(trade.trade_id)) {
-    case 0:
-      return [
-        coreLine,
-        extras.length ? `(${extras.join(", ")})` : null,
-        raw
-      ].filter(Boolean).join(" ");
-
-    case 1:
-      return [
-        coreLine,
-        ...extras,
-        raw
-      ].filter(Boolean).join(" — ");
-
-    case 2:
-      return [
-        extras[1] || null, // time first if available
-        coreLine,
-        extras[0] || null, // qty
-        raw
-      ].filter(Boolean).join(" | ");
-
-    case 3:
-    default:
-      return [
-        coreLine,
-        extras.length ? `[${extras.join(" @ ")}]` : null,
-        raw
-      ].filter(Boolean).join(" ");
-  }
+  return coreLine;
 }
 
 async function postToDiscord(webhookUrl, content) {
@@ -233,7 +138,6 @@ async function postToDiscord(webhookUrl, content) {
 async function main() {
   const webhookUrl = process.env.DISCORD_WEBHOOK_URL;
 
-  // Important: skip quietly if the secret is not set yet
   if (!webhookUrl) {
     console.log("No DISCORD_WEBHOOK_URL set; skipping Discord post.");
     return;
@@ -257,24 +161,25 @@ async function main() {
   }
 
   const meta = readMeta();
-const targetTradeId = meta?.latest_processed_trade_id ?? null;
+  const targetTradeId = meta?.latest_processed_trade_id ?? null;
 
-let latest = null;
+  let latest = null;
 
-if (targetTradeId) {
-  latest = cleaned.find(t => t.trade_id === targetTradeId) ?? null;
-}
+  if (targetTradeId) {
+    latest = cleaned.find(t => t.trade_id === targetTradeId) ?? null;
+  }
 
-if (!latest) {
-  cleaned.sort((a, b) => {
-    const ta = sortEventTimeValue(a);
-    const tb = sortEventTimeValue(b);
-    if (ta !== tb) return ta - tb;
-    return String(a.trade_id || "").localeCompare(String(b.trade_id || ""));
-  });
+  if (!latest) {
+    cleaned.sort((a, b) => {
+      const ta = sortEventTimeValue(a);
+      const tb = sortEventTimeValue(b);
+      if (ta !== tb) return ta - tb;
+      return String(a.trade_id || "").localeCompare(String(b.trade_id || ""));
+    });
 
-  latest = cleaned[cleaned.length - 1];
-}
+    latest = cleaned[cleaned.length - 1];
+  }
+
   const coreLine = baseTradeLine(latest);
   const message = composeMessage(latest, coreLine);
 
