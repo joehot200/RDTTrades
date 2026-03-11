@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-03-11T00:36:58.762Z",
-  "latest_commit_message": "long SMCI $31.5 Call for 03/13 at 1.73",
-  "latest_processed_trade_id": "e3779378cfd2",
-  "latest_processed_inbox_path": "inbox/2026-03-11T00:36:47+00:00--19cc417d20f062cb.json",
-  "latest_processed_received_at": "2026-03-06T17:00:20.000Z",
-  "latest_processed_ingested_at": "2026-03-11T00:36:47.000Z"
+  "generated_at": "2026-03-11T00:37:19.836Z",
+  "latest_commit_message": "exit long SMCI $31.5 Call for 03/13 at 1.79",
+  "latest_processed_trade_id": "ab6f4e05e3d6",
+  "latest_processed_inbox_path": "inbox/2026-03-11T00:37:08+00:00--19cc423926c1e356.json",
+  "latest_processed_received_at": "2026-03-06T17:13:10.000Z",
+  "latest_processed_ingested_at": "2026-03-11T00:37:08.000Z"
 }
