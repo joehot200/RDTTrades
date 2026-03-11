@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-03-11T08:55:35.447Z",
-  "latest_commit_message": "exit short IBM $260 Put for 03/06 at 4.05",
-  "latest_processed_trade_id": "462951d14c99",
-  "latest_processed_inbox_path": "inbox/2026-03-11T08:55:24+00:00--19cbfcbce5538743.json",
-  "latest_processed_received_at": "2026-03-05T20:58:50.000Z",
-  "latest_processed_ingested_at": "2026-03-11T08:55:24.000Z"
+  "generated_at": "2026-03-11T08:56:28.724Z",
+  "latest_commit_message": "long SMCI $31.5 Call for 03/13 at 1.73",
+  "latest_processed_trade_id": "e3779378cfd2",
+  "latest_processed_inbox_path": "inbox/2026-03-11T08:56:13+00:00--19cc417d20f062cb.json",
+  "latest_processed_received_at": "2026-03-06T17:00:20.000Z",
+  "latest_processed_ingested_at": "2026-03-11T08:56:13.000Z"
 }
