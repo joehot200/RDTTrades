@@ -220,5 +220,42 @@
     "trade_role": "close",
     "pos_side": "long",
     "contract_key": "OPT|NFLX|2026-03-13|96|P"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "2546267c9e66",
+    "received_at": "2026-03-11T16:31:42.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-03-11T16:33:26+00:00--19cddbd68506935d.json",
+      "raw_id": "19cddbd68506935d",
+      "ingested_at": "2026-03-11T16:33:26.000Z"
+    },
+    "raw": {
+      "text": "#114118317372 BOT +1 MU 100 (Weeklys) 13 MAR 26 530 CALL @.02, ACCOUNT *****746SCHW"
+    },
+    "instrument": "option",
+    "paper": false,
+    "action": "BOT",
+    "symbol": "MU",
+    "qty": 1,
+    "fill": 0.02,
+    "option": {
+      "expiry": "2026-03-13",
+      "strike": 530,
+      "right": "C"
+    },
+    "computed": {
+      "month": "2026-03",
+      "dte": 2,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "long MU $530 Call for 03/13 at 0.02"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "OPT|MU|2026-03-13|530|C"
   }
 ]
