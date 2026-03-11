@@ -11,6 +11,20 @@ function readJson(fp) {
   return JSON.parse(fs.readFileSync(fp, "utf8"));
 }
 
+function sortTradesForPosting(a, b) {
+  const ta = new Date(a?.received_at ?? 0).getTime();
+  const tb = new Date(b?.received_at ?? 0).getTime();
+
+  if (ta !== tb) return ta - tb;
+
+  const ra = a?.trade_role === "open" ? 0 : a?.trade_role === "close" ? 1 : 2;
+  const rb = b?.trade_role === "open" ? 0 : b?.trade_role === "close" ? 1 : 2;
+
+  if (ra !== rb) return ra - rb;
+
+  return String(a?.trade_id || "").localeCompare(String(b?.trade_id || ""));
+}
+
 function writeJson(fp, obj) {
   fs.mkdirSync(path.dirname(fp), { recursive: true });
   fs.writeFileSync(fp, JSON.stringify(obj, null, 2) + "\n", "utf8");
