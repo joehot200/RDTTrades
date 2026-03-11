@@ -24,7 +24,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          fetch-depth: 1
+          fetch-depth: 0
 
       - uses: actions/setup-node@v4
         with:
@@ -52,4 +52,5 @@ jobs:
 
           COMMIT_MSG=$(node -e "const fs=require('fs'); const p='trades/_meta.json'; if (fs.existsSync(p)) { const j=JSON.parse(fs.readFileSync(p,'utf8')); console.log((j.latest_commit_message||'build: parse inbox trades').slice(0,120)); } else { console.log('build: parse inbox trades'); }")
           git commit -m "$COMMIT_MSG"
+          git pull --rebase origin main
           git push origin HEAD:main
