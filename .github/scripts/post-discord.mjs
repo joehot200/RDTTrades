@@ -137,20 +137,6 @@ function tradeRoleRank(trade) {
   return 2;
 }
 
-function sortTradesForPosting(a, b) {
-  const ta = new Date(a?.received_at ?? 0).getTime();
-  const tb = new Date(b?.received_at ?? 0).getTime();
-
-  if (ta !== tb) return ta - tb;
-
-  const ra = tradeRoleRank(a);
-  const rb = tradeRoleRank(b);
-
-  if (ra !== rb) return ra - rb;
-
-  return String(a?.trade_id || "").localeCompare(String(b?.trade_id || ""));
-}
-
 function readAllCompletedTrades() {
   const completedRoot = path.join(ROOT, "trades", "completed-trades");
   const files = walkJsonFiles(completedRoot);
