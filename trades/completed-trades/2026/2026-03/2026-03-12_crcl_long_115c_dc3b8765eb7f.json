@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "completed_trade_id": "dc3b8765eb7f",
+  "status": "closed",
+  "contract_key": "OPT|CRCL|2026-03-13|115|C",
+  "instrument": "option",
+  "pos_side": "long",
+  "symbol": "CRCL",
+  "option": {
+    "expiry": "2026-03-13",
+    "strike": 115,
+    "right": "C"
+  },
+  "qty_opened": 1,
+  "qty_closed": 1,
+  "entry": {
+    "trade_id": "dc3b8765eb7f",
+    "received_at": "2026-03-12T15:49:32.000Z",
+    "fill": 3.1,
+    "rdt": "long CRCL $115 Call for 03/13 at 3.1"
+  },
+  "exits": [
+    {
+      "trade_id": "c142b7dbe4f8",
+      "received_at": "2026-03-12T16:03:04.000Z",
+      "fill": 2.66,
+      "qty": 1,
+      "rdt": "exit long CRCL $115 Call for 03/13 at 2.66"
+    }
+  ],
+  "pnl": {
+    "realized": -43.99999999999999,
+    "currency": "USD"
+  }
+}

@@ -479,5 +479,79 @@
     "trade_role": "close",
     "pos_side": "long",
     "contract_key": "OPT|SPY|2026-03-30|530|C"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "dc3b8765eb7f",
+    "received_at": "2026-03-12T15:49:32.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-03-12T15:50:13+00:00--19ce2bd2aa3bf6c8.json",
+      "raw_id": "19ce2bd2aa3bf6c8",
+      "ingested_at": "2026-03-12T15:50:13.000Z"
+    },
+    "raw": {
+      "text": "#114212840763 BOT +1 CRCL 100 (Weeklys) 13 MAR 26 115 CALL @3.10, ACCOUNT *****746SCHW"
+    },
+    "instrument": "option",
+    "paper": false,
+    "action": "BOT",
+    "symbol": "CRCL",
+    "qty": 1,
+    "fill": 3.1,
+    "option": {
+      "expiry": "2026-03-13",
+      "strike": 115,
+      "right": "C"
+    },
+    "computed": {
+      "month": "2026-03",
+      "dte": 1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "long CRCL $115 Call for 03/13 at 3.1"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "OPT|CRCL|2026-03-13|115|C"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "c142b7dbe4f8",
+    "received_at": "2026-03-12T16:03:04.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-03-12T16:03:53+00:00--19ce2c990b5c26d2.json",
+      "raw_id": "19ce2c990b5c26d2",
+      "ingested_at": "2026-03-12T16:03:53.000Z"
+    },
+    "raw": {
+      "text": "#114214986779 SOLD -1 CRCL 100 (Weeklys) 13 MAR 26 115 CALL @2.66, ACCOUNT *****746SCHW"
+    },
+    "instrument": "option",
+    "paper": false,
+    "action": "SOLD",
+    "symbol": "CRCL",
+    "qty": 1,
+    "fill": 2.66,
+    "option": {
+      "expiry": "2026-03-13",
+      "strike": 115,
+      "right": "C"
+    },
+    "computed": {
+      "month": "2026-03",
+      "dte": 1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "exit long CRCL $115 Call for 03/13 at 2.66"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "OPT|CRCL|2026-03-13|115|C"
   }
 ]
