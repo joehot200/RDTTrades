@@ -479,5 +479,42 @@
     "trade_role": "open",
     "pos_side": "long",
     "contract_key": "OPT|CVX|2026-03-13|202.5|C"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "f0f68c49d189",
+    "received_at": "2026-03-12T19:12:59.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-03-12T19:13:06+00:00--19ce3776e8d8ecea.json",
+      "raw_id": "19ce3776e8d8ecea",
+      "ingested_at": "2026-03-12T19:13:06.000Z"
+    },
+    "raw": {
+      "text": "#114249229992 SOLD -1 CVX 100 (Weeklys) 13 MAR 26 202.5 CALL @.46, ACCOUNT *****746SCHW"
+    },
+    "instrument": "option",
+    "paper": false,
+    "action": "SOLD",
+    "symbol": "CVX",
+    "qty": 1,
+    "fill": 0.46,
+    "option": {
+      "expiry": "2026-03-13",
+      "strike": 202.5,
+      "right": "C"
+    },
+    "computed": {
+      "month": "2026-03",
+      "dte": 1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "exit long CVX $202.5 Call for 03/13 at 0.46"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "OPT|CVX|2026-03-13|202.5|C"
   }
 ]

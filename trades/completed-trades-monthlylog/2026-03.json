@@ -138,5 +138,40 @@
       "realized": -43.99999999999999,
       "currency": "USD"
     }
+  },
+  {
+    "schema_version": 1,
+    "completed_trade_id": "7c3b6df2e5c5",
+    "status": "closed",
+    "contract_key": "OPT|CVX|2026-03-13|202.5|C",
+    "instrument": "option",
+    "pos_side": "long",
+    "symbol": "CVX",
+    "option": {
+      "expiry": "2026-03-13",
+      "strike": 202.5,
+      "right": "C"
+    },
+    "qty_opened": 1,
+    "qty_closed": 1,
+    "entry": {
+      "trade_id": "7c3b6df2e5c5",
+      "received_at": "2026-03-12T16:22:31.000Z",
+      "fill": 0.5,
+      "rdt": "long CVX $202.5 Call for 03/13 at 0.5"
+    },
+    "exits": [
+      {
+        "trade_id": "f0f68c49d189",
+        "received_at": "2026-03-12T19:12:59.000Z",
+        "fill": 0.46,
+        "qty": 1,
+        "rdt": "exit long CVX $202.5 Call for 03/13 at 0.46"
+      }
+    ],
+    "pnl": {
+      "realized": -3.9999999999999982,
+      "currency": "USD"
+    }
   }
 ]
