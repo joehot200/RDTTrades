@@ -516,5 +516,42 @@
     "trade_role": "close",
     "pos_side": "long",
     "contract_key": "OPT|CVX|2026-03-13|202.5|C"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "670ac785f144",
+    "received_at": "2026-03-13T14:57:49.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-03-13T14:59:36+00:00--19ce7b42c7746ad0.json",
+      "raw_id": "19ce7b42c7746ad0",
+      "ingested_at": "2026-03-13T14:59:36.000Z"
+    },
+    "raw": {
+      "text": "#114304426960 BOT +1 PLTR 100 (Weeklys) 13 MAR 26 149 PUT @.95, ACCOUNT *****746SCHW"
+    },
+    "instrument": "option",
+    "paper": false,
+    "action": "BOT",
+    "symbol": "PLTR",
+    "qty": 1,
+    "fill": 0.95,
+    "option": {
+      "expiry": "2026-03-13",
+      "strike": 149,
+      "right": "P"
+    },
+    "computed": {
+      "month": "2026-03",
+      "dte": 0,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "short PLTR $149 Put for 03/13 at 0.95"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "OPT|PLTR|2026-03-13|149|P"
   }
 ]
