@@ -553,5 +553,42 @@
     "trade_role": "open",
     "pos_side": "long",
     "contract_key": "OPT|PLTR|2026-03-13|149|P"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "2dc186e7f350",
+    "received_at": "2026-03-13T15:00:38.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-03-13T15:01:50+00:00--19ce7b6c38300b9f.json",
+      "raw_id": "19ce7b6c38300b9f",
+      "ingested_at": "2026-03-13T15:01:50.000Z"
+    },
+    "raw": {
+      "text": "#114306863117 SOLD -1 PLTR 100 (Weeklys) 13 MAR 26 149 PUT @1.10, ACCOUNT *****746SCHW"
+    },
+    "instrument": "option",
+    "paper": false,
+    "action": "SOLD",
+    "symbol": "PLTR",
+    "qty": 1,
+    "fill": 1.1,
+    "option": {
+      "expiry": "2026-03-13",
+      "strike": 149,
+      "right": "P"
+    },
+    "computed": {
+      "month": "2026-03",
+      "dte": 0,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "exit short PLTR $149 Put for 03/13 at 1.1"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "OPT|PLTR|2026-03-13|149|P"
   }
 ]
