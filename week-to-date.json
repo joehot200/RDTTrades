@@ -590,5 +590,42 @@
     "trade_role": "close",
     "pos_side": "long",
     "contract_key": "OPT|PLTR|2026-03-13|149|P"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "35fc577f0ae4",
+    "received_at": "2026-03-13T15:41:23.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-03-13T15:42:56+00:00--19ce7dc0f2f757c3.json",
+      "raw_id": "19ce7dc0f2f757c3",
+      "ingested_at": "2026-03-13T15:42:56.000Z"
+    },
+    "raw": {
+      "text": "#114316528421 SOLD -1 HOOD 100 (Weeklys) 13 MAR 26 74 PUT @.83, ACCOUNT *****746SCHW"
+    },
+    "instrument": "option",
+    "paper": false,
+    "action": "SOLD",
+    "symbol": "HOOD",
+    "qty": 1,
+    "fill": 0.83,
+    "option": {
+      "expiry": "2026-03-13",
+      "strike": 74,
+      "right": "P"
+    },
+    "computed": {
+      "month": "2026-03",
+      "dte": 0,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "exit short HOOD $74 Put for 03/13 at 0.83"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "OPT|HOOD|2026-03-13|74|P"
   }
 ]
