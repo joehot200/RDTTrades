@@ -593,6 +593,43 @@
   },
   {
     "schema_version": 1,
+    "trade_id": "7b0dbc732a9c",
+    "received_at": "2026-03-13T15:26:32.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-03-14T13:19:53+00:00--19ce7ce75fdc194b.json",
+      "raw_id": "19ce7ce75fdc194b",
+      "ingested_at": "2026-03-14T13:19:53.000Z"
+    },
+    "raw": {
+      "text": "#114312256581 BOT +1 HOOD 100 (Weeklys) 13 MAR 26 74 PUT @.81, ACCOUNT *****746SCHW"
+    },
+    "instrument": "option",
+    "paper": false,
+    "action": "BOT",
+    "symbol": "HOOD",
+    "qty": 1,
+    "fill": 0.81,
+    "option": {
+      "expiry": "2026-03-13",
+      "strike": 74,
+      "right": "P"
+    },
+    "computed": {
+      "month": "2026-03",
+      "dte": 0,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "short HOOD $74 Put for 03/13 at 0.81"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "OPT|HOOD|2026-03-13|74|P"
+  },
+  {
+    "schema_version": 1,
     "trade_id": "35fc577f0ae4",
     "received_at": "2026-03-13T15:41:23.000Z",
     "source": {
