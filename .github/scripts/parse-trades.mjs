@@ -27,6 +27,27 @@ function readJson(fp) {
   return JSON.parse(fs.readFileSync(fp, "utf8"));
 }
 
+function archiveInboxFile(inboxPath, received_at) {
+  const month = isoMonth(received_at);
+  const processedDir = path.join(ROOT, "inbox", "processed", month);
+
+  fs.mkdirSync(processedDir, { recursive: true });
+
+  const parsed = path.parse(path.basename(inboxPath));
+  let dest = path.join(processedDir, `${parsed.name}${parsed.ext}`);
+
+  if (fs.existsSync(dest)) {
+    dest = path.join(
+      processedDir,
+      `${parsed.name}__${Date.now()}${parsed.ext}`
+    );
+  }
+
+  fs.renameSync(inboxPath, dest);
+
+  return path.relative(ROOT, dest).replace(/\\/g, "/");
+}
+
 function writeJson(fp, obj) {
   fs.mkdirSync(path.dirname(fp), { recursive: true });
   fs.writeFileSync(fp, JSON.stringify(obj, null, 2) + "\n", "utf8");
@@ -514,13 +535,14 @@ function main() {
       entryExitFilename
     );
 
-    const cleaned = {
+        const cleaned = {
       schema_version: 1,
       trade_id,
       received_at,
       source: {
         system: "zapier_github_inbox",
         inbox_path: path.relative(ROOT, inboxPath).replace(/\\/g, "/"),
+        archived_path: null,
         raw_id: rawId,
         ingested_at
       },
@@ -548,8 +570,12 @@ function main() {
     };
 
     writeJson(entryExitPath, cleaned);
+
+    const archivedPath = archiveInboxFile(inboxPath, received_at);
+    cleaned.source.archived_path = archivedPath;
+
+    writeJson(entryExitPath, cleaned);
     processedThisRun.push(cleaned);
-  }
 
   // rebuild cleaned logs
   const entriesExitsRoot = path.join(ROOT, "trades", "entries-exits");
