@@ -366,24 +366,59 @@ function baseTradeLine(trade, completedTrade) {
   return entryLine(trade);
 }
 
-function composeMessage(trade, coreLine) {
-  return coreLine;
+function formatTimestampLocal(iso, timeZone = LOCAL_TZ) {
+  const d = new Date(iso);
+  const fmt = new Intl.DateTimeFormat("en-GB", {
+    timeZone,
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+    hour: "2-digit",
+    minute: "2-digit",
+    hour12: false
+  });
+
+  const parts = Object.fromEntries(
+    fmt.formatToParts(d)
+      .filter(p => p.type !== "literal")
+      .map(p => [p.type, p.value])
+  );
+
+  return `${parts.year}-${parts.month}-${parts.day} ${parts.hour}:${parts.minute}`;
+}
+
+function composeMessage(trade, coreLine, destination) {
+  if (!destination?.include_local_timestamp) {
+    return coreLine;
+  }
+
+  const timeZone = destination?.timestamp_time_zone || LOCAL_TZ;
+  const ts = formatTimestampLocal(trade.received_at, timeZone);
+  return `[${ts} ${timeZone}] ${coreLine}`;
 }
 
 function statePathForDestination(name) {
   return path.join(ROOT, "trades", "posting-state", `${name}.json`);
 }
 
-function readPostingState(name) {
+function readPostingStateEnvelope(name) {
   const fp = statePathForDestination(name);
+
   if (!fs.existsSync(fp)) {
     return {
-      posted_trade_ids: [],
-      posted_entry_trade_ids: [],
-      posted_entry_dates: {}
+      exists: false,
+      state: {
+        posted_trade_ids: [],
+        posted_entry_trade_ids: [],
+        posted_entry_dates: {}
+      }
     };
   }
-  return readJson(fp);
+
+  return {
+    exists: true,
+    state: readJson(fp)
+  };
 }
 
 function writePostingState(name, state) {
@@ -508,8 +543,6 @@ function shouldPostTradeToDestination(trade, completedTrade, destination, state)
 
   const filters = destination.filters || {};
 
-  // If an entry has already been posted to this destination,
-  // always allow the exit through.
   if (trade.trade_role === "close") {
     const exitDecision = shouldPostExitToDestination(trade, completedTrade, filters, state);
     if (!exitDecision.ok) {
@@ -518,7 +551,6 @@ function shouldPostTradeToDestination(trade, completedTrade, destination, state)
     return { ok: true, reason: "exit_ok" };
   }
 
-  // Entry-side suppression only.
   if (isSuppressedQuickRoundTrip(trade, completedTrade, filters)) {
     return { ok: false, reason: "suppressed_quick_round_trip" };
   }
@@ -618,10 +650,32 @@ async function main() {
       continue;
     }
 
-    const state = readPostingState(destinationName);
+    const { exists: stateExists, state } = readPostingStateEnvelope(destinationName);
+    const filters = destination.filters || {};
+    const maxPostsPerRun = Number(filters.max_posts_per_run ?? Infinity);
+    const blockIfStateMissingOverCount = Number(filters.block_if_state_missing_over_count ?? 0);
+
+    if (
+      !stateExists &&
+      Number.isFinite(blockIfStateMissingOverCount) &&
+      blockIfStateMissingOverCount > 0 &&
+      tradesThisRun.length > blockIfStateMissingOverCount
+    ) {
+      console.log(
+        `[${destinationName}] state file missing and batch size ${tradesThisRun.length} exceeds safeguard ${blockIfStateMissingOverCount}; refusing to post.`
+      );
+      continue;
+    }
+
     let stateChanged = false;
+    let postedCount = 0;
 
     for (const trade of tradesThisRun) {
+      if (Number.isFinite(maxPostsPerRun) && postedCount >= maxPostsPerRun) {
+        console.log(`[${destinationName}] reached max_posts_per_run=${maxPostsPerRun}; stopping.`);
+        break;
+      }
+
       const completedTrade = findCompletedTradeForTrade(trade, completedIndexes);
       const decision = shouldPostTradeToDestination(trade, completedTrade, destination, state);
 
@@ -631,11 +685,12 @@ async function main() {
       }
 
       const coreLine = baseTradeLine(trade, completedTrade);
-      const message = composeMessage(trade, coreLine);
+      const message = composeMessage(trade, coreLine, destination);
 
       await postToDiscord(webhookUrl, message);
       updateStateAfterSuccessfulPost(state, trade);
       stateChanged = true;
+      postedCount += 1;
 
       console.log(`[${destinationName}] posted ${trade.trade_id}: ${message}`);
     }
