@@ -11,7 +11,7 @@ on:
       - ".github/scripts/parse-trades.mjs"
       - ".github/scripts/post-discord.mjs"
       - ".github/workflows/parse-trades.yml"
-      - "trade-posting.config.json"
+      - ".github/trade-posting.config.json"
   workflow_dispatch: {}
 
 concurrency:
