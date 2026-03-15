@@ -4,10 +4,10 @@
   "received_at": "2026-03-11T14:17:16.000Z",
   "source": {
     "system": "zapier_github_inbox",
-    "inbox_path": "inbox/2026-03-11T14:36:20+00:00--19cdd425390b3632.json",
-    "archived_path": "inbox/processed/2026-03/2026-03-11T14:36:20+00:00--19cdd425390b3632.json",
+    "inbox_path": "inbox/2026-03-15T20:59:01+00:00--19cdd425390b3632.json",
+    "archived_path": "inbox/processed/2026-03/2026-03-15T20:59:01+00:00--19cdd425390b3632.json",
     "raw_id": "19cdd425390b3632",
-    "ingested_at": "2026-03-11T14:36:20.000Z"
+    "ingested_at": "2026-03-15T20:59:01.000Z"
   },
   "raw": {
     "text": "#114082931674 SOLD -1 INTC 100 (Weeklys) 13 MAR 26 48.5 CALL @1.27, ACCOUNT *****746SCHW"
