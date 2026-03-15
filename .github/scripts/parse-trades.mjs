@@ -27,6 +27,19 @@ function readJson(fp) {
   return JSON.parse(fs.readFileSync(fp, "utf8"));
 }
 
+function writeJson(fp, obj) {
+  fs.mkdirSync(path.dirname(fp), { recursive: true });
+  fs.writeFileSync(fp, JSON.stringify(obj, null, 2) + "\n", "utf8");
+}
+
+function listFiles(dir) {
+  if (!fs.existsSync(dir)) return [];
+  return fs.readdirSync(dir)
+    .filter(f => f.endsWith(".json"))
+    .map(f => path.join(dir, f))
+    .sort();
+}
+
 function archiveInboxFile(inboxPath, received_at) {
   const month = isoMonth(received_at);
   const processedDir = path.join(ROOT, "inbox", "processed", month);
@@ -46,19 +59,6 @@ function archiveInboxFile(inboxPath, received_at) {
   fs.renameSync(inboxPath, dest);
 
   return path.relative(ROOT, dest).replace(/\\/g, "/");
-}
-
-function writeJson(fp, obj) {
-  fs.mkdirSync(path.dirname(fp), { recursive: true });
-  fs.writeFileSync(fp, JSON.stringify(obj, null, 2) + "\n", "utf8");
-}
-
-function listFiles(dir) {
-  if (!fs.existsSync(dir)) return [];
-  return fs.readdirSync(dir)
-    .filter(f => f.endsWith(".json"))
-    .map(f => path.join(dir, f))
-    .sort();
 }
 
 function walkJsonFiles(dir) {
@@ -106,7 +106,7 @@ function tryParseDateToIso(raw) {
   const s = String(raw).trim();
   const candidates = [
     s,
-    s.replace(/\s+\([A-Z]{2,5}\)\s*$/, ""), // remove trailing "(EST)" etc
+    s.replace(/\s+\([A-Z]{2,5}\)\s*$/, ""),
   ];
 
   for (const c of candidates) {
@@ -136,7 +136,7 @@ function classifyOptionAction(actionUpper) {
   if (["BTC", "BUY TO CLOSE"].includes(a)) return { role: "close", pos_side: "short" };
 
   if (a.includes("SELL")) return { role: "close", pos_side: "long" };
-  if (a.includes("BUY"))  return { role: "open",  pos_side: "long" };
+  if (a.includes("BUY")) return { role: "open", pos_side: "long" };
 
   return { role: "unknown", pos_side: "unknown" };
 }
@@ -178,8 +178,8 @@ function subtractDaysFromYmd(ymd, days) {
 function mondayOfWeekYmd(dateInput, timeZone = LOCAL_TZ) {
   const { ymd } = getDatePartsInTimeZone(dateInput, timeZone);
   const d = ymdToUtcDate(ymd);
-  const dow = d.getUTCDay();      // Sun=0 ... Sat=6
-  const offset = (dow + 6) % 7;   // Mon=0 ... Sun=6
+  const dow = d.getUTCDay();
+  const offset = (dow + 6) % 7;
   return subtractDaysFromYmd(ymd, offset);
 }
 
@@ -221,8 +221,6 @@ function parseRaw(raw, now = new Date()) {
       dte: -1,
       wiki_ok: false
     },
-
-    // joining helpers
     trade_role: "unknown",
     pos_side: "unknown",
     contract_key: null
@@ -235,7 +233,6 @@ function parseRaw(raw, now = new Date()) {
   const strikeRe = "(\\d+(?:\\.\\d+)?)\\s+(CALL|PUT)";
   const fillRe = "(?:@|\\bAT\\b)\\s*(\\d*\\.?\\d+)";
 
-  // OPTION TRADE
   let m = upper.match(new RegExp(
     `\\b${actionRe}\\b[\\s\\S]*?\\b${qtyRe}\\b[\\s\\S]*?\\b${symRe}\\b[\\s\\S]*?\\b${dateRe}\\b[\\s\\S]*?\\b${strikeRe}\\b[\\s\\S]*?${fillRe}`,
     "i"
@@ -270,9 +267,6 @@ function parseRaw(raw, now = new Date()) {
       ? `${expiryIso.slice(5, 7)}/${expiryIso.slice(8, 10)}`
       : "??/??";
 
-    // RDT-style bias:
-    // Calls = long
-    // Long puts = short
     const bias = right === "C" ? "long" : "short";
     const prefix = isExitAction(action) ? "exit " : "";
     const typeWord = right === "C" ? "Call" : "Put";
@@ -292,7 +286,6 @@ function parseRaw(raw, now = new Date()) {
     return out;
   }
 
-  // STOCK TRADE
   m = upper.match(new RegExp(
     `\\b${actionRe}\\b[\\s\\S]*?\\b${qtyRe}\\b[\\s\\S]*?\\b${symRe}\\b[\\s\\S]*?${fillRe}`,
     "i"
@@ -397,17 +390,14 @@ function buildCompletedTrades(cleanedLogs) {
         pos_side: e.pos_side,
         symbol: e.symbol,
         option: e.option ?? null,
-
         qty_opened: e.qty ?? null,
         qty_closed: 0,
-
         entry: {
           trade_id: e.trade_id,
           received_at: e.received_at,
           fill: e.fill,
           rdt: e.rdt?.text ?? ""
         },
-
         exits: [],
         pnl: null
       });
@@ -481,7 +471,6 @@ function main() {
   const now = new Date();
   const processedThisRun = [];
 
-  // inbox -> cleaned entry/exit logs
   for (const inboxPath of inboxFiles) {
     const inbox = readJson(inboxPath);
 
@@ -535,7 +524,7 @@ function main() {
       entryExitFilename
     );
 
-        const cleaned = {
+    const cleaned = {
       schema_version: 1,
       trade_id,
       received_at,
@@ -563,7 +552,6 @@ function main() {
       },
 
       rdt: parsed.rdt,
-
       trade_role: parsed.trade_role,
       pos_side: parsed.pos_side,
       contract_key: parsed.contract_key
@@ -576,8 +564,8 @@ function main() {
 
     writeJson(entryExitPath, cleaned);
     processedThisRun.push(cleaned);
+  }
 
-  // rebuild cleaned logs
   const entriesExitsRoot = path.join(ROOT, "trades", "entries-exits");
   let cleanedLogs = walkJsonFiles(entriesExitsRoot).map(readJson);
 
@@ -594,7 +582,7 @@ function main() {
   const months = [...new Set(cleanedLogs.map(e => e.computed?.month).filter(Boolean))].sort();
 
   writeJson(path.join(ROOT, "trades", "index-of-months.json"), {
-    generated_at: new Date().toISOString(),
+    generated_at: now.toISOString(),
     months
   });
 
@@ -626,7 +614,6 @@ function main() {
     })
   );
 
-  // build completed trades
   const completedTrades = buildCompletedTrades(cleanedLogs);
   const completedRoot = path.join(ROOT, "trades", "completed-trades");
   fs.mkdirSync(completedRoot, { recursive: true });
@@ -653,7 +640,6 @@ function main() {
     );
   }
 
-  // meta for commit message + current batch ordering
   const latestHistoricalTrade = cleanedLogs.length ? cleanedLogs[cleanedLogs.length - 1] : null;
 
   const processedById = new Map();
