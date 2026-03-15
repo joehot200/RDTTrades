@@ -4,10 +4,10 @@
   "received_at": "2026-03-11T14:29:45.000Z",
   "source": {
     "system": "zapier_github_inbox",
-    "inbox_path": "inbox/2026-03-15T20:12:17+00:00--19cdd4dc806a8419.json",
-    "archived_path": "inbox/processed/2026-03/2026-03-15T20:12:17+00:00--19cdd4dc806a8419.json",
+    "inbox_path": "inbox/2026-03-15T20:57:21+00:00--19cdd4dc806a8419.json",
+    "archived_path": "inbox/processed/2026-03/2026-03-15T20:57:21+00:00--19cdd4dc806a8419.json",
     "raw_id": "19cdd4dc806a8419",
-    "ingested_at": "2026-03-15T20:12:17.000Z"
+    "ingested_at": "2026-03-15T20:57:21.000Z"
   },
   "raw": {
     "text": "#114090207751 SOLD -1 NFLX 100 (Weeklys) 13 MAR 26 96 PUT @1.24, ACCOUNT *****746SCHW"
