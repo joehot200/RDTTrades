@@ -5,6 +5,7 @@
   "source": {
     "system": "zapier_github_inbox",
     "inbox_path": "inbox/2026-03-13T15:42:56+00:00--19ce7dc0f2f757c3.json",
+    "archived_path": "inbox/processed/2026-03/2026-03-13T15:42:56+00:00--19ce7dc0f2f757c3.json",
     "raw_id": "19ce7dc0f2f757c3",
     "ingested_at": "2026-03-13T15:42:56.000Z"
   },
