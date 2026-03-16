@@ -150,5 +150,43 @@
     "trade_role": "open",
     "pos_side": "long",
     "contract_key": "OPT|INTC|2026-04-02|48|C"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "d7bbade9df08",
+    "received_at": "2026-03-16T17:30:48.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-03-16T17:32:09+00:00--19cf7b34d3f6d5c0.json",
+      "archived_path": "inbox/processed/2026-03/2026-03-16T17:32:09+00:00--19cf7b34d3f6d5c0.json",
+      "raw_id": "19cf7b34d3f6d5c0",
+      "ingested_at": "2026-03-16T17:32:09.000Z"
+    },
+    "raw": {
+      "text": "#114443742866 BOT +1 ADBE 100 20 MAR 26 225 PUT @.36, ACCOUNT *****746SCHW"
+    },
+    "instrument": "option",
+    "paper": false,
+    "action": "BOT",
+    "symbol": "ADBE",
+    "qty": 1,
+    "fill": 0.36,
+    "option": {
+      "expiry": "2026-03-20",
+      "strike": 225,
+      "right": "P"
+    },
+    "computed": {
+      "month": "2026-03",
+      "dte": 4,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "short ADBE $225 Put for 03/20 at 0.36"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "OPT|ADBE|2026-03-20|225|P"
   }
 ]
