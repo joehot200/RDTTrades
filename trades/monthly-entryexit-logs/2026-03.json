@@ -796,5 +796,43 @@
     "trade_role": "close",
     "pos_side": "long",
     "contract_key": "OPT|HOOD|2026-03-13|74|P"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "5671b95a1435",
+    "received_at": "2026-03-16T09:32:46.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-03-16T09:33:00+00:00--19cf5fdae0763aa5.json",
+      "archived_path": "inbox/processed/2026-03/2026-03-16T09:33:00+00:00--19cf5fdae0763aa5.json",
+      "raw_id": "19cf5fdae0763aa5",
+      "ingested_at": "2026-03-16T09:33:00.000Z"
+    },
+    "raw": {
+      "text": "#114304426960 BOT +1 TEST 100 (Weeklys) 13 MAR 26 149 PUT @.95, ACCOUNT *****746SCHW"
+    },
+    "instrument": "option",
+    "paper": false,
+    "action": "BOT",
+    "symbol": "TEST",
+    "qty": 1,
+    "fill": 0.95,
+    "option": {
+      "expiry": "2026-03-13",
+      "strike": 149,
+      "right": "P"
+    },
+    "computed": {
+      "month": "2026-03",
+      "dte": -3,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "short TEST $149 Put for 03/13 at 0.95"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "OPT|TEST|2026-03-13|149|P"
   }
 ]
