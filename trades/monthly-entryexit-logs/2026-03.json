@@ -910,5 +910,43 @@
     "trade_role": "open",
     "pos_side": "long",
     "contract_key": "OPT|TEST|2026-03-30|149|P"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "f945f626c796",
+    "received_at": "2026-03-16T15:25:42.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-03-16T15:26:28+00:00--19cf740c64ab9ced.json",
+      "archived_path": "inbox/processed/2026-03/2026-03-16T15:26:28+00:00--19cf740c64ab9ced.json",
+      "raw_id": "19cf740c64ab9ced",
+      "ingested_at": "2026-03-16T15:26:28.000Z"
+    },
+    "raw": {
+      "text": "#114419648831 BOT +1 INTC 100 (Weeklys) 2 APR 26 48 CALL @3.05, ACCOUNT *****746SCHW"
+    },
+    "instrument": "option",
+    "paper": false,
+    "action": "BOT",
+    "symbol": "INTC",
+    "qty": 1,
+    "fill": 3.05,
+    "option": {
+      "expiry": "2026-04-02",
+      "strike": 48,
+      "right": "C"
+    },
+    "computed": {
+      "month": "2026-03",
+      "dte": 17,
+      "wiki_ok": true
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "long INTC $48 Call for 04/02 at 3.05"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "OPT|INTC|2026-04-02|48|C"
   }
 ]

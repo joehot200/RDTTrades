@@ -1,14 +1,19 @@
 {
   "posted_trade_ids": [
     "db441ce4d136",
-    "e7b0ac1fbecb"
+    "e7b0ac1fbecb",
+    "f945f626c796"
   ],
   "posted_entry_trade_ids": [
-    "db441ce4d136"
+    "db441ce4d136",
+    "f945f626c796"
   ],
   "posted_entry_dates": {
     "2026-03-11": [
       "db441ce4d136"
+    ],
+    "2026-03-16": [
+      "f945f626c796"
     ]
   }
 }
