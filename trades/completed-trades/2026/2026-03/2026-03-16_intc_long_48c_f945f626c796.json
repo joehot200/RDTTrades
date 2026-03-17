@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "completed_trade_id": "f945f626c796",
+  "status": "closed",
+  "contract_key": "OPT|INTC|2026-04-02|48|C",
+  "instrument": "option",
+  "pos_side": "long",
+  "symbol": "INTC",
+  "option": {
+    "expiry": "2026-04-02",
+    "strike": 48,
+    "right": "C"
+  },
+  "qty_opened": 1,
+  "qty_closed": 1,
+  "entry": {
+    "trade_id": "f945f626c796",
+    "received_at": "2026-03-16T15:25:42.000Z",
+    "fill": 3.05,
+    "rdt": "long INTC $48 Call for 04/02 at 3.05"
+  },
+  "exits": [
+    {
+      "trade_id": "4ec0c29ed27e",
+      "received_at": "2026-03-17T15:20:08.000Z",
+      "fill": 1.13,
+      "qty": 1,
+      "rdt": "exit long INTC $48 Call for 04/02 at 1.13"
+    }
+  ],
+  "pnl": {
+    "realized": -192,
+    "currency": "USD"
+  }
+}

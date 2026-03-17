@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "trade_id": "4ec0c29ed27e",
+  "received_at": "2026-03-17T15:20:08.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-03-17T15:21:31+00:00--19cfc620900ce2c4.json",
+    "archived_path": "inbox/processed/2026-03/2026-03-17T15:21:31+00:00--19cfc620900ce2c4.json",
+    "raw_id": "19cfc620900ce2c4",
+    "ingested_at": "2026-03-17T15:21:31.000Z"
+  },
+  "raw": {
+    "text": "#114516616777 SOLD -1 INTC 100 (Weeklys) 2 APR 26 48 CALL @1.13, ACCOUNT *****746SCHW"
+  },
+  "instrument": "option",
+  "paper": false,
+  "action": "SOLD",
+  "symbol": "INTC",
+  "qty": 1,
+  "fill": 1.13,
+  "option": {
+    "expiry": "2026-04-02",
+    "strike": 48,
+    "right": "C"
+  },
+  "computed": {
+    "month": "2026-03",
+    "dte": 16,
+    "wiki_ok": true
+  },
+  "rdt": {
+    "matched": "options",
+    "text": "exit long INTC $48 Call for 04/02 at 1.13"
+  },
+  "trade_role": "close",
+  "pos_side": "long",
+  "contract_key": "OPT|INTC|2026-04-02|48|C"
+}
