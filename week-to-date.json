@@ -264,5 +264,43 @@
     "trade_role": "open",
     "pos_side": "long",
     "contract_key": "OPT|BAC|2026-03-20|47|P"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "c9d10c39827e",
+    "received_at": "2026-03-17T14:33:24.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-03-17T14:34:42+00:00--19cfc37419b765f8.json",
+      "archived_path": "inbox/processed/2026-03/2026-03-17T14:34:42+00:00--19cfc37419b765f8.json",
+      "raw_id": "19cfc37419b765f8",
+      "ingested_at": "2026-03-17T14:34:42.000Z"
+    },
+    "raw": {
+      "text": "#114506071852 SOLD -1 BAC 100 20 MAR 26 47 PUT @.42, ACCOUNT *****746SCHW"
+    },
+    "instrument": "option",
+    "paper": false,
+    "action": "SOLD",
+    "symbol": "BAC",
+    "qty": 1,
+    "fill": 0.42,
+    "option": {
+      "expiry": "2026-03-20",
+      "strike": 47,
+      "right": "P"
+    },
+    "computed": {
+      "month": "2026-03",
+      "dte": 3,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "exit short BAC $47 Put for 03/20 at 0.42"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "OPT|BAC|2026-03-20|47|P"
   }
 ]

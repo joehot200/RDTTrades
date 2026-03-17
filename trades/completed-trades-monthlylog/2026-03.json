@@ -278,5 +278,40 @@
       "realized": -6,
       "currency": "USD"
     }
+  },
+  {
+    "schema_version": 1,
+    "completed_trade_id": "df8b0f3880c4",
+    "status": "closed",
+    "contract_key": "OPT|BAC|2026-03-20|47|P",
+    "instrument": "option",
+    "pos_side": "long",
+    "symbol": "BAC",
+    "option": {
+      "expiry": "2026-03-20",
+      "strike": 47,
+      "right": "P"
+    },
+    "qty_opened": 1,
+    "qty_closed": 1,
+    "entry": {
+      "trade_id": "df8b0f3880c4",
+      "received_at": "2026-03-17T14:02:48.000Z",
+      "fill": 0.39,
+      "rdt": "short BAC $47 Put for 03/20 at 0.39"
+    },
+    "exits": [
+      {
+        "trade_id": "c9d10c39827e",
+        "received_at": "2026-03-17T14:33:24.000Z",
+        "fill": 0.42,
+        "qty": 1,
+        "rdt": "exit short BAC $47 Put for 03/20 at 0.42"
+      }
+    ],
+    "pnl": {
+      "realized": 2.9999999999999973,
+      "currency": "USD"
+    }
   }
 ]
