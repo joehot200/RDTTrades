@@ -1252,5 +1252,43 @@
     "trade_role": "open",
     "pos_side": "long",
     "contract_key": "OPT|FCX|2026-03-20|52|P"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "b4344a05c113",
+    "received_at": "2026-03-18T19:29:36.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-03-18T19:30:45+00:00--19d026ccb10dc733.json",
+      "archived_path": "inbox/processed/2026-03/2026-03-18T19:30:45+00:00--19d026ccb10dc733.json",
+      "raw_id": "19d026ccb10dc733",
+      "ingested_at": "2026-03-18T19:30:45.000Z"
+    },
+    "raw": {
+      "text": "#114656867165 SOLD -1 FCX 100 20 MAR 26 52 PUT @.23, ACCOUNT *****746SCHW"
+    },
+    "instrument": "option",
+    "paper": false,
+    "action": "SOLD",
+    "symbol": "FCX",
+    "qty": 1,
+    "fill": 0.23,
+    "option": {
+      "expiry": "2026-03-20",
+      "strike": 52,
+      "right": "P"
+    },
+    "computed": {
+      "month": "2026-03",
+      "dte": 2,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "exit short FCX $52 Put for 03/20 at 0.23"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "OPT|FCX|2026-03-20|52|P"
   }
 ]

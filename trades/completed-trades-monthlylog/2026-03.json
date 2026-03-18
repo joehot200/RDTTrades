@@ -383,5 +383,40 @@
       "realized": 4.0000000000000036,
       "currency": "USD"
     }
+  },
+  {
+    "schema_version": 1,
+    "completed_trade_id": "fa438c0df9d6",
+    "status": "closed",
+    "contract_key": "OPT|FCX|2026-03-20|52|P",
+    "instrument": "option",
+    "pos_side": "long",
+    "symbol": "FCX",
+    "option": {
+      "expiry": "2026-03-20",
+      "strike": 52,
+      "right": "P"
+    },
+    "qty_opened": 1,
+    "qty_closed": 1,
+    "entry": {
+      "trade_id": "fa438c0df9d6",
+      "received_at": "2026-03-18T19:25:57.000Z",
+      "fill": 0.21,
+      "rdt": "short FCX $52 Put for 03/20 at 0.21"
+    },
+    "exits": [
+      {
+        "trade_id": "b4344a05c113",
+        "received_at": "2026-03-18T19:29:36.000Z",
+        "fill": 0.23,
+        "qty": 1,
+        "rdt": "exit short FCX $52 Put for 03/20 at 0.23"
+      }
+    ],
+    "pnl": {
+      "realized": 2.0000000000000018,
+      "currency": "USD"
+    }
   }
 ]
