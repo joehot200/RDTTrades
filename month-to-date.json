@@ -1442,5 +1442,43 @@
     "trade_role": "open",
     "pos_side": "long",
     "contract_key": "OPT|XOM|2026-03-20|162.5|C"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "e3de63b3a601",
+    "received_at": "2026-03-19T15:51:05.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-03-19T15:51:39+00:00--19d06cb18a0ddb68.json",
+      "archived_path": "inbox/processed/2026-03/2026-03-19T15:51:39+00:00--19d06cb18a0ddb68.json",
+      "raw_id": "19d06cb18a0ddb68",
+      "ingested_at": "2026-03-19T15:51:39.000Z"
+    },
+    "raw": {
+      "text": "#114720149718 BOT +1 DVN 100 20 MAR 26 50 CALL @.44, ACCOUNT *****746SCHW"
+    },
+    "instrument": "option",
+    "paper": false,
+    "action": "BOT",
+    "symbol": "DVN",
+    "qty": 1,
+    "fill": 0.44,
+    "option": {
+      "expiry": "2026-03-20",
+      "strike": 50,
+      "right": "C"
+    },
+    "computed": {
+      "month": "2026-03",
+      "dte": 1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "long DVN $50 Call for 03/20 at 0.44"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "OPT|DVN|2026-03-20|50|C"
   }
 ]
