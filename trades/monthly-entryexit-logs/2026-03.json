@@ -1328,5 +1328,43 @@
     "trade_role": "open",
     "pos_side": "long",
     "contract_key": "OPT|INTC|2026-03-20|47|C"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "972ef31f1e35",
+    "received_at": "2026-03-19T14:29:41.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-03-19T14:30:52+00:00--19d0680928359178.json",
+      "archived_path": "inbox/processed/2026-03/2026-03-19T14:30:52+00:00--19d0680928359178.json",
+      "raw_id": "19d0680928359178",
+      "ingested_at": "2026-03-19T14:30:52.000Z"
+    },
+    "raw": {
+      "text": "#114701735949 SOLD -1 INTC 100 20 MAR 26 47 CALL @.31, ACCOUNT *****746SCHW"
+    },
+    "instrument": "option",
+    "paper": false,
+    "action": "SOLD",
+    "symbol": "INTC",
+    "qty": 1,
+    "fill": 0.31,
+    "option": {
+      "expiry": "2026-03-20",
+      "strike": 47,
+      "right": "C"
+    },
+    "computed": {
+      "month": "2026-03",
+      "dte": 1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "exit long INTC $47 Call for 03/20 at 0.31"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "OPT|INTC|2026-03-20|47|C"
   }
 ]
