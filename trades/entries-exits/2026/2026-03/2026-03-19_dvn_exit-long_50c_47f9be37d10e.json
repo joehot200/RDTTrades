@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "trade_id": "47f9be37d10e",
+  "received_at": "2026-03-19T15:59:30.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-03-19T16:01:09+00:00--19d06d2ce3cf0fb3.json",
+    "archived_path": "inbox/processed/2026-03/2026-03-19T16:01:09+00:00--19d06d2ce3cf0fb3.json",
+    "raw_id": "19d06d2ce3cf0fb3",
+    "ingested_at": "2026-03-19T16:01:09.000Z"
+  },
+  "raw": {
+    "text": "#114723302649 SOLD -1 DVN 100 20 MAR 26 50 CALL @.47, ACCOUNT *****746SCHW"
+  },
+  "instrument": "option",
+  "paper": false,
+  "action": "SOLD",
+  "symbol": "DVN",
+  "qty": 1,
+  "fill": 0.47,
+  "option": {
+    "expiry": "2026-03-20",
+    "strike": 50,
+    "right": "C"
+  },
+  "computed": {
+    "month": "2026-03",
+    "dte": 1,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "options",
+    "text": "exit long DVN $50 Call for 03/20 at 0.47"
+  },
+  "trade_role": "close",
+  "pos_side": "long",
+  "contract_key": "OPT|DVN|2026-03-20|50|C"
+}
