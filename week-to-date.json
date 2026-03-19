@@ -796,5 +796,43 @@
     "trade_role": "open",
     "pos_side": "long",
     "contract_key": "OPT|AMD|2026-03-20|212.5|C"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "c128d19847b3",
+    "received_at": "2026-03-19T17:54:59.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-03-19T17:55:55+00:00--19d073c8836d41f0.json",
+      "archived_path": "inbox/processed/2026-03/2026-03-19T17:55:55+00:00--19d073c8836d41f0.json",
+      "raw_id": "19d073c8836d41f0",
+      "ingested_at": "2026-03-19T17:55:55.000Z"
+    },
+    "raw": {
+      "text": "#114739911344 SOLD -1 AMD 100 20 MAR 26 212.5 CALL @.08, ACCOUNT *****746SCHW"
+    },
+    "instrument": "option",
+    "paper": false,
+    "action": "SOLD",
+    "symbol": "AMD",
+    "qty": 1,
+    "fill": 0.08,
+    "option": {
+      "expiry": "2026-03-20",
+      "strike": 212.5,
+      "right": "C"
+    },
+    "computed": {
+      "month": "2026-03",
+      "dte": 1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "exit long AMD $212.5 Call for 03/20 at 0.08"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "OPT|AMD|2026-03-20|212.5|C"
   }
 ]

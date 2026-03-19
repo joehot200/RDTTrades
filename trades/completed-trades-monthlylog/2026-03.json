@@ -523,5 +523,40 @@
       "realized": 2.9999999999999973,
       "currency": "USD"
     }
+  },
+  {
+    "schema_version": 1,
+    "completed_trade_id": "426ca3af7fbf",
+    "status": "closed",
+    "contract_key": "OPT|AMD|2026-03-20|212.5|C",
+    "instrument": "option",
+    "pos_side": "long",
+    "symbol": "AMD",
+    "option": {
+      "expiry": "2026-03-20",
+      "strike": 212.5,
+      "right": "C"
+    },
+    "qty_opened": 1,
+    "qty_closed": 1,
+    "entry": {
+      "trade_id": "426ca3af7fbf",
+      "received_at": "2026-03-19T17:32:07.000Z",
+      "fill": 0.07,
+      "rdt": "long AMD $212.5 Call for 03/20 at 0.07"
+    },
+    "exits": [
+      {
+        "trade_id": "c128d19847b3",
+        "received_at": "2026-03-19T17:54:59.000Z",
+        "fill": 0.08,
+        "qty": 1,
+        "rdt": "exit long AMD $212.5 Call for 03/20 at 0.08"
+      }
+    ],
+    "pnl": {
+      "realized": 0.9999999999999996,
+      "currency": "USD"
+    }
   }
 ]
