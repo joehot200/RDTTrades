@@ -1366,5 +1366,43 @@
     "trade_role": "close",
     "pos_side": "long",
     "contract_key": "OPT|INTC|2026-03-20|47|C"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "1db70c48c1f0",
+    "received_at": "2026-03-19T14:37:41.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-03-19T14:38:13+00:00--19d0687e3c951a0f.json",
+      "archived_path": "inbox/processed/2026-03/2026-03-19T14:38:13+00:00--19d0687e3c951a0f.json",
+      "raw_id": "19d0687e3c951a0f",
+      "ingested_at": "2026-03-19T14:38:13.000Z"
+    },
+    "raw": {
+      "text": "#114704009337 BOT +1 OXY 100 20 MAR 26 61 CALL @.48, ACCOUNT *****746SCHW"
+    },
+    "instrument": "option",
+    "paper": false,
+    "action": "BOT",
+    "symbol": "OXY",
+    "qty": 1,
+    "fill": 0.48,
+    "option": {
+      "expiry": "2026-03-20",
+      "strike": 61,
+      "right": "C"
+    },
+    "computed": {
+      "month": "2026-03",
+      "dte": 1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "long OXY $61 Call for 03/20 at 0.48"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "OPT|OXY|2026-03-20|61|C"
   }
 ]
