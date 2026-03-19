@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "trade_id": "3e6d1a5720c9",
+  "received_at": "2026-03-19T15:51:55.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-03-19T15:53:30+00:00--19d06cbda4978e68.json",
+    "archived_path": "inbox/processed/2026-03/2026-03-19T15:53:30+00:00--19d06cbda4978e68.json",
+    "raw_id": "19d06cbda4978e68",
+    "ingested_at": "2026-03-19T15:53:30.000Z"
+  },
+  "raw": {
+    "text": "#114720150133 SOLD -1 XOM 100 20 MAR 26 162.5 CALL @.37, ACCOUNT *****746SCHW"
+  },
+  "instrument": "option",
+  "paper": false,
+  "action": "SOLD",
+  "symbol": "XOM",
+  "qty": 1,
+  "fill": 0.37,
+  "option": {
+    "expiry": "2026-03-20",
+    "strike": 162.5,
+    "right": "C"
+  },
+  "computed": {
+    "month": "2026-03",
+    "dte": 1,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "options",
+    "text": "exit long XOM $162.5 Call for 03/20 at 0.37"
+  },
+  "trade_role": "close",
+  "pos_side": "long",
+  "contract_key": "OPT|XOM|2026-03-20|162.5|C"
+}
