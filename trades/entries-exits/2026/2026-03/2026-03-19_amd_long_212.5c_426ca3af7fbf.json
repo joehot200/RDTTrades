@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "trade_id": "426ca3af7fbf",
+  "received_at": "2026-03-19T17:32:07.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-03-19T17:33:25+00:00--19d0727944fdae45.json",
+    "archived_path": "inbox/processed/2026-03/2026-03-19T17:33:25+00:00--19d0727944fdae45.json",
+    "raw_id": "19d0727944fdae45",
+    "ingested_at": "2026-03-19T17:33:25.000Z"
+  },
+  "raw": {
+    "text": "#114737666995 BOT +1 AMD 100 20 MAR 26 212.5 CALL @.07, ACCOUNT *****746SCHW"
+  },
+  "instrument": "option",
+  "paper": false,
+  "action": "BOT",
+  "symbol": "AMD",
+  "qty": 1,
+  "fill": 0.07,
+  "option": {
+    "expiry": "2026-03-20",
+    "strike": 212.5,
+    "right": "C"
+  },
+  "computed": {
+    "month": "2026-03",
+    "dte": 1,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "options",
+    "text": "long AMD $212.5 Call for 03/20 at 0.07"
+  },
+  "trade_role": "open",
+  "pos_side": "long",
+  "contract_key": "OPT|AMD|2026-03-20|212.5|C"
+}
