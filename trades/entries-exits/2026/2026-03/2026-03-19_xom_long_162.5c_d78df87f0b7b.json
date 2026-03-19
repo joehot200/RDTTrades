@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "trade_id": "d78df87f0b7b",
+  "received_at": "2026-03-19T14:45:25.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-03-19T14:46:24+00:00--19d068ef9914bae6.json",
+    "archived_path": "inbox/processed/2026-03/2026-03-19T14:46:24+00:00--19d068ef9914bae6.json",
+    "raw_id": "19d068ef9914bae6",
+    "ingested_at": "2026-03-19T14:46:24.000Z"
+  },
+  "raw": {
+    "text": "#114707058322 BOT +1 XOM 100 20 MAR 26 162.5 CALL @.23, ACCOUNT *****746SCHW"
+  },
+  "instrument": "option",
+  "paper": false,
+  "action": "BOT",
+  "symbol": "XOM",
+  "qty": 1,
+  "fill": 0.23,
+  "option": {
+    "expiry": "2026-03-20",
+    "strike": 162.5,
+    "right": "C"
+  },
+  "computed": {
+    "month": "2026-03",
+    "dte": 1,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "options",
+    "text": "long XOM $162.5 Call for 03/20 at 0.23"
+  },
+  "trade_role": "open",
+  "pos_side": "long",
+  "contract_key": "OPT|XOM|2026-03-20|162.5|C"
+}
