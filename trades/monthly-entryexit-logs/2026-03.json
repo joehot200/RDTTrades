@@ -1670,5 +1670,43 @@
     "trade_role": "open",
     "pos_side": "long",
     "contract_key": "OPT|FCX|2026-03-20|52|P"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "54ecf08685cc",
+    "received_at": "2026-03-20T15:03:20.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-03-20T15:05:23+00:00--19d0bc5bdc579808.json",
+      "archived_path": "inbox/processed/2026-03/2026-03-20T15:05:23+00:00--19d0bc5bdc579808.json",
+      "raw_id": "19d0bc5bdc579808",
+      "ingested_at": "2026-03-20T15:05:23.000Z"
+    },
+    "raw": {
+      "text": "#114810683045 BOT +1 INTC 100 20 MAR 26 45 PUT @.32, ACCOUNT *****746SCHW"
+    },
+    "instrument": "option",
+    "paper": false,
+    "action": "BOT",
+    "symbol": "INTC",
+    "qty": 1,
+    "fill": 0.32,
+    "option": {
+      "expiry": "2026-03-20",
+      "strike": 45,
+      "right": "P"
+    },
+    "computed": {
+      "month": "2026-03",
+      "dte": 0,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "short INTC $45 Put for 03/20 at 0.32"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "OPT|INTC|2026-03-20|45|P"
   }
 ]
