@@ -910,5 +910,43 @@
     "trade_role": "open",
     "pos_side": "long",
     "contract_key": "OPT|INTC|2026-03-20|45|P"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "6b5774504aed",
+    "received_at": "2026-03-20T15:08:42.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-03-20T15:09:27+00:00--19d0bcaa6da988a1.json",
+      "archived_path": "inbox/processed/2026-03/2026-03-20T15:09:27+00:00--19d0bcaa6da988a1.json",
+      "raw_id": "19d0bcaa6da988a1",
+      "ingested_at": "2026-03-20T15:09:27.000Z"
+    },
+    "raw": {
+      "text": "#114810685693 BOT +1 INTC 100 (Weeklys) 27 MAR 26 40 PUT @.30, ACCOUNT *****746SCHW"
+    },
+    "instrument": "option",
+    "paper": false,
+    "action": "BOT",
+    "symbol": "INTC",
+    "qty": 1,
+    "fill": 0.3,
+    "option": {
+      "expiry": "2026-03-27",
+      "strike": 40,
+      "right": "P"
+    },
+    "computed": {
+      "month": "2026-03",
+      "dte": 7,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "short INTC $40 Put for 03/27 at 0.3"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "OPT|INTC|2026-03-27|40|P"
   }
 ]
