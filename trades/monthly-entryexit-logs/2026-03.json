@@ -1632,5 +1632,43 @@
     "trade_role": "close",
     "pos_side": "long",
     "contract_key": "OPT|AMD|2026-03-20|212.5|C"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "71bfcbb9e8df",
+    "received_at": "2026-03-20T14:51:25.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-03-20T14:53:00+00:00--19d0bbad5fd4b505.json",
+      "archived_path": "inbox/processed/2026-03/2026-03-20T14:53:00+00:00--19d0bbad5fd4b505.json",
+      "raw_id": "19d0bbad5fd4b505",
+      "ingested_at": "2026-03-20T14:53:00.000Z"
+    },
+    "raw": {
+      "text": "#114808312198 BOT +1 FCX 100 20 MAR 26 52 PUT @.29, ACCOUNT *****746SCHW"
+    },
+    "instrument": "option",
+    "paper": false,
+    "action": "BOT",
+    "symbol": "FCX",
+    "qty": 1,
+    "fill": 0.29,
+    "option": {
+      "expiry": "2026-03-20",
+      "strike": 52,
+      "right": "P"
+    },
+    "computed": {
+      "month": "2026-03",
+      "dte": 0,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "short FCX $52 Put for 03/20 at 0.29"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "OPT|FCX|2026-03-20|52|P"
   }
 ]
