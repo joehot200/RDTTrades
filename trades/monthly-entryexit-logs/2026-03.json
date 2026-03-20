@@ -1936,5 +1936,43 @@
     "trade_role": "close",
     "pos_side": "long",
     "contract_key": "OPT|SPY|2026-03-20|662|C"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "a72100cdab19",
+    "received_at": "2026-03-20T17:05:26.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-03-20T17:06:25+00:00--19d0c358663f937e.json",
+      "archived_path": "inbox/processed/2026-03/2026-03-20T17:06:25+00:00--19d0c358663f937e.json",
+      "raw_id": "19d0c358663f937e",
+      "ingested_at": "2026-03-20T17:06:25.000Z"
+    },
+    "raw": {
+      "text": "#114832706168 SOLD -1 INTC 100 20 MAR 26 45 PUT @.47, ACCOUNT *****746SCHW"
+    },
+    "instrument": "option",
+    "paper": false,
+    "action": "SOLD",
+    "symbol": "INTC",
+    "qty": 1,
+    "fill": 0.47,
+    "option": {
+      "expiry": "2026-03-20",
+      "strike": 45,
+      "right": "P"
+    },
+    "computed": {
+      "month": "2026-03",
+      "dte": 0,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "exit short INTC $45 Put for 03/20 at 0.47"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "OPT|INTC|2026-03-20|45|P"
   }
 ]
