@@ -1024,5 +1024,43 @@
     "trade_role": "open",
     "pos_side": "long",
     "contract_key": "OPT|INTC|2026-03-20|46|C"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "fa9f6c3efc78",
+    "received_at": "2026-03-20T15:39:55.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-03-20T15:40:49+00:00--19d0be73b9258abd.json",
+      "archived_path": "inbox/processed/2026-03/2026-03-20T15:40:49+00:00--19d0be73b9258abd.json",
+      "raw_id": "19d0be73b9258abd",
+      "ingested_at": "2026-03-20T15:40:49.000Z"
+    },
+    "raw": {
+      "text": "#114818702792 BOT +1 SPY 100 20 MAR 26 662 CALL @.06, ACCOUNT *****746SCHW"
+    },
+    "instrument": "option",
+    "paper": false,
+    "action": "BOT",
+    "symbol": "SPY",
+    "qty": 1,
+    "fill": 0.06,
+    "option": {
+      "expiry": "2026-03-20",
+      "strike": 662,
+      "right": "C"
+    },
+    "computed": {
+      "month": "2026-03",
+      "dte": 0,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "long SPY $662 Call for 03/20 at 0.06"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "OPT|SPY|2026-03-20|662|C"
   }
 ]
