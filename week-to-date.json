@@ -986,5 +986,43 @@
     "trade_role": "close",
     "pos_side": "long",
     "contract_key": "OPT|OXY|2026-03-20|61|C"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "4c2cda5e44f1",
+    "received_at": "2026-03-20T15:38:47.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-03-20T15:38:51+00:00--19d0be632249d7f2.json",
+      "archived_path": "inbox/processed/2026-03/2026-03-20T15:38:51+00:00--19d0be632249d7f2.json",
+      "raw_id": "19d0be632249d7f2",
+      "ingested_at": "2026-03-20T15:38:51.000Z"
+    },
+    "raw": {
+      "text": "#114818702256 BOT +1 INTC 100 20 MAR 26 46 CALL @.19, ACCOUNT *****746SCHW"
+    },
+    "instrument": "option",
+    "paper": false,
+    "action": "BOT",
+    "symbol": "INTC",
+    "qty": 1,
+    "fill": 0.19,
+    "option": {
+      "expiry": "2026-03-20",
+      "strike": 46,
+      "right": "C"
+    },
+    "computed": {
+      "month": "2026-03",
+      "dte": 0,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "long INTC $46 Call for 03/20 at 0.19"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "OPT|INTC|2026-03-20|46|C"
   }
 ]
