@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "completed_trade_id": "1db70c48c1f0",
+  "status": "closed",
+  "contract_key": "OPT|OXY|2026-03-20|61|C",
+  "instrument": "option",
+  "pos_side": "long",
+  "symbol": "OXY",
+  "option": {
+    "expiry": "2026-03-20",
+    "strike": 61,
+    "right": "C"
+  },
+  "qty_opened": 1,
+  "qty_closed": 1,
+  "entry": {
+    "trade_id": "1db70c48c1f0",
+    "received_at": "2026-03-19T14:37:41.000Z",
+    "fill": 0.48,
+    "rdt": "long OXY $61 Call for 03/20 at 0.48"
+  },
+  "exits": [
+    {
+      "trade_id": "7106d0b1e909",
+      "received_at": "2026-03-20T15:20:58.000Z",
+      "fill": 0.42,
+      "qty": 1,
+      "rdt": "exit long OXY $61 Call for 03/20 at 0.42"
+    }
+  ],
+  "pnl": {
+    "realized": -6,
+    "currency": "USD"
+  }
+}
