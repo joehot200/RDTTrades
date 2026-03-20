@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "completed_trade_id": "fa9f6c3efc78",
+  "status": "closed",
+  "contract_key": "OPT|SPY|2026-03-20|662|C",
+  "instrument": "option",
+  "pos_side": "long",
+  "symbol": "SPY",
+  "option": {
+    "expiry": "2026-03-20",
+    "strike": 662,
+    "right": "C"
+  },
+  "qty_opened": 1,
+  "qty_closed": 1,
+  "entry": {
+    "trade_id": "fa9f6c3efc78",
+    "received_at": "2026-03-20T15:39:55.000Z",
+    "fill": 0.06,
+    "rdt": "long SPY $662 Call for 03/20 at 0.06"
+  },
+  "exits": [
+    {
+      "trade_id": "1b54d6945abb",
+      "received_at": "2026-03-20T16:05:10.000Z",
+      "fill": 0.07,
+      "qty": 1,
+      "rdt": "exit long SPY $662 Call for 03/20 at 0.07"
+    }
+  ],
+  "pnl": {
+    "realized": 1.0000000000000009,
+    "currency": "USD"
+  }
+}
