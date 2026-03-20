@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "completed_trade_id": "6b5774504aed",
+  "status": "closed",
+  "contract_key": "OPT|INTC|2026-03-27|40|P",
+  "instrument": "option",
+  "pos_side": "long",
+  "symbol": "INTC",
+  "option": {
+    "expiry": "2026-03-27",
+    "strike": 40,
+    "right": "P"
+  },
+  "qty_opened": 1,
+  "qty_closed": 1,
+  "entry": {
+    "trade_id": "6b5774504aed",
+    "received_at": "2026-03-20T15:08:42.000Z",
+    "fill": 0.3,
+    "rdt": "short INTC $40 Put for 03/27 at 0.3"
+  },
+  "exits": [
+    {
+      "trade_id": "0c62c7fd716f",
+      "received_at": "2026-03-20T17:32:56.000Z",
+      "fill": 0.31,
+      "qty": 1,
+      "rdt": "exit short INTC $40 Put for 03/27 at 0.31"
+    }
+  ],
+  "pnl": {
+    "realized": 1.0000000000000009,
+    "currency": "USD"
+  }
+}
