@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "completed_trade_id": "7fe1ec13457b",
+  "status": "closed",
+  "contract_key": "OPT|PLTR|2026-03-27|172.5|C",
+  "instrument": "option",
+  "pos_side": "long",
+  "symbol": "PLTR",
+  "option": {
+    "expiry": "2026-03-27",
+    "strike": 172.5,
+    "right": "C"
+  },
+  "qty_opened": 1,
+  "qty_closed": 1,
+  "entry": {
+    "trade_id": "7fe1ec13457b",
+    "received_at": "2026-03-23T14:24:25.000Z",
+    "fill": 0.35,
+    "rdt": "long PLTR $172.5 Call for 03/27 at 0.35"
+  },
+  "exits": [
+    {
+      "trade_id": "b58bcd42a290",
+      "received_at": "2026-03-23T16:02:04.000Z",
+      "fill": 0.14,
+      "qty": 1,
+      "rdt": "exit long PLTR $172.5 Call for 03/27 at 0.14"
+    }
+  ],
+  "pnl": {
+    "realized": -20.999999999999996,
+    "currency": "USD"
+  }
+}
