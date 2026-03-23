@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "completed_trade_id": "fdf98ca46676",
+  "status": "closed",
+  "contract_key": "OPT|PLTR|2026-03-27|142|P",
+  "instrument": "option",
+  "pos_side": "long",
+  "symbol": "PLTR",
+  "option": {
+    "expiry": "2026-03-27",
+    "strike": 142,
+    "right": "P"
+  },
+  "qty_opened": 1,
+  "qty_closed": 1,
+  "entry": {
+    "trade_id": "fdf98ca46676",
+    "received_at": "2026-03-23T15:55:37.000Z",
+    "fill": 0.53,
+    "rdt": "short PLTR $142 Put for 03/27 at 0.53"
+  },
+  "exits": [
+    {
+      "trade_id": "00df171282fc",
+      "received_at": "2026-03-23T17:38:42.000Z",
+      "fill": 0.36,
+      "qty": 1,
+      "rdt": "exit short PLTR $142 Put for 03/27 at 0.36"
+    }
+  ],
+  "pnl": {
+    "realized": -17.000000000000004,
+    "currency": "USD"
+  }
+}
