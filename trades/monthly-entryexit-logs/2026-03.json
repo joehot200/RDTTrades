@@ -2012,5 +2012,43 @@
     "trade_role": "close",
     "pos_side": "long",
     "contract_key": "OPT|INTC|2026-03-27|40|P"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "7fe1ec13457b",
+    "received_at": "2026-03-23T14:24:25.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-03-23T14:25:13+00:00--19d1b1530401e376.json",
+      "archived_path": "inbox/processed/2026-03/2026-03-23T14:25:13+00:00--19d1b1530401e376.json",
+      "raw_id": "19d1b1530401e376",
+      "ingested_at": "2026-03-23T14:25:13.000Z"
+    },
+    "raw": {
+      "text": "#114912869306 BOT +1 PLTR 100 (Weeklys) 27 MAR 26 172.5 CALL @.35, ACCOUNT *****746SCHW"
+    },
+    "instrument": "option",
+    "paper": false,
+    "action": "BOT",
+    "symbol": "PLTR",
+    "qty": 1,
+    "fill": 0.35,
+    "option": {
+      "expiry": "2026-03-27",
+      "strike": 172.5,
+      "right": "C"
+    },
+    "computed": {
+      "month": "2026-03",
+      "dte": 4,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "long PLTR $172.5 Call for 03/27 at 0.35"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "OPT|PLTR|2026-03-27|172.5|C"
   }
 ]
