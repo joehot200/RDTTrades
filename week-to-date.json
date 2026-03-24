@@ -264,5 +264,43 @@
     "trade_role": "open",
     "pos_side": "long",
     "contract_key": "OPT|SLB|2026-03-27|53|C"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "d8324e084427",
+    "received_at": "2026-03-24T13:41:57.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-03-24T13:43:49+00:00--19d2014aacc163f0.json",
+      "archived_path": "inbox/processed/2026-03/2026-03-24T13:43:49+00:00--19d2014aacc163f0.json",
+      "raw_id": "19d2014aacc163f0",
+      "ingested_at": "2026-03-24T13:43:49.000Z"
+    },
+    "raw": {
+      "text": "#115006771198 SOLD -1 SLB 100 (Weeklys) 27 MAR 26 53 CALL @.15, ACCOUNT *****746SCHW"
+    },
+    "instrument": "option",
+    "paper": false,
+    "action": "SOLD",
+    "symbol": "SLB",
+    "qty": 1,
+    "fill": 0.15,
+    "option": {
+      "expiry": "2026-03-27",
+      "strike": 53,
+      "right": "C"
+    },
+    "computed": {
+      "month": "2026-03",
+      "dte": 3,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "exit long SLB $53 Call for 03/27 at 0.15"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "OPT|SLB|2026-03-27|53|C"
   }
 ]

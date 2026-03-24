@@ -803,5 +803,40 @@
       "realized": -17.000000000000004,
       "currency": "USD"
     }
+  },
+  {
+    "schema_version": 1,
+    "completed_trade_id": "b0aa601d4578",
+    "status": "closed",
+    "contract_key": "OPT|SLB|2026-03-27|53|C",
+    "instrument": "option",
+    "pos_side": "long",
+    "symbol": "SLB",
+    "option": {
+      "expiry": "2026-03-27",
+      "strike": 53,
+      "right": "C"
+    },
+    "qty_opened": 1,
+    "qty_closed": 1,
+    "entry": {
+      "trade_id": "b0aa601d4578",
+      "received_at": "2026-03-24T13:35:41.000Z",
+      "fill": 0.13,
+      "rdt": "long SLB $53 Call for 03/27 at 0.13"
+    },
+    "exits": [
+      {
+        "trade_id": "d8324e084427",
+        "received_at": "2026-03-24T13:41:57.000Z",
+        "fill": 0.15,
+        "qty": 1,
+        "rdt": "exit long SLB $53 Call for 03/27 at 0.15"
+      }
+    ],
+    "pnl": {
+      "realized": 1.9999999999999991,
+      "currency": "USD"
+    }
   }
 ]
