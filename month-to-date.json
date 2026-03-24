@@ -2202,5 +2202,43 @@
     "trade_role": "open",
     "pos_side": "long",
     "contract_key": "OPT|UNH|2026-03-27|250|P"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "da14728333a8",
+    "received_at": "2026-03-24T13:30:18.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-03-24T13:31:56+00:00--19d200a86d4ae105.json",
+      "archived_path": "inbox/processed/2026-03/2026-03-24T13:31:56+00:00--19d200a86d4ae105.json",
+      "raw_id": "19d200a86d4ae105",
+      "ingested_at": "2026-03-24T13:31:56.000Z"
+    },
+    "raw": {
+      "text": "#115001256850 BOT +1 UNH 100 (Weeklys) 27 MAR 26 250 PUT @.40, ACCOUNT *****746SCHW"
+    },
+    "instrument": "option",
+    "paper": false,
+    "action": "BOT",
+    "symbol": "UNH",
+    "qty": 1,
+    "fill": 0.4,
+    "option": {
+      "expiry": "2026-03-27",
+      "strike": 250,
+      "right": "P"
+    },
+    "computed": {
+      "month": "2026-03",
+      "dte": 3,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "short UNH $250 Put for 03/27 at 0.4"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "OPT|UNH|2026-03-27|250|P"
   }
 ]
