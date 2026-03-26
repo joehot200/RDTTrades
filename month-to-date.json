@@ -2430,5 +2430,43 @@
     "trade_role": "open",
     "pos_side": "long",
     "contract_key": "OPT|MSFT|2026-03-30|370|P"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "535867d6b5d9",
+    "received_at": "2026-03-26T16:46:24.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-03-26T16:58:29+00:00--19d2b0a3e7b881a2.json",
+      "archived_path": "inbox/processed/2026-03/2026-03-26T16:58:29+00:00--19d2b0a3e7b881a2.json",
+      "raw_id": "19d2b0a3e7b881a2",
+      "ingested_at": "2026-03-26T16:58:29.000Z"
+    },
+    "raw": {
+      "text": "#115261032225 SOLD -1 MSFT 100 (Weeklys) 27 MAR 26 360 PUT @.36, ACCOUNT *****746SCHW"
+    },
+    "instrument": "option",
+    "paper": false,
+    "action": "SOLD",
+    "symbol": "MSFT",
+    "qty": 1,
+    "fill": 0.36,
+    "option": {
+      "expiry": "2026-03-27",
+      "strike": 360,
+      "right": "P"
+    },
+    "computed": {
+      "month": "2026-03",
+      "dte": 1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "exit short MSFT $360 Put for 03/27 at 0.36"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "OPT|MSFT|2026-03-27|360|P"
   }
 ]
