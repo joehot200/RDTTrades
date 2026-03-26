@@ -454,5 +454,43 @@
     "trade_role": "close",
     "pos_side": "long",
     "contract_key": "OPT|MSFT|2026-03-27|360|P"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "409ed1617e0c",
+    "received_at": "2026-03-26T17:57:53.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-03-26T18:03:35+00:00--19d2b4bb3494df3f.json",
+      "archived_path": "inbox/processed/2026-03/2026-03-26T18:03:35+00:00--19d2b4bb3494df3f.json",
+      "raw_id": "19d2b4bb3494df3f",
+      "ingested_at": "2026-03-26T18:03:35.000Z"
+    },
+    "raw": {
+      "text": "#14783370977 PAPERMONEY SOLD -1 MSFT 100 (Weeklys) 30 MAR 26 370 PUT @5.90, ACCOUNT D-******81"
+    },
+    "instrument": "option",
+    "paper": true,
+    "action": "SOLD",
+    "symbol": "MSFT",
+    "qty": 1,
+    "fill": 5.9,
+    "option": {
+      "expiry": "2026-03-30",
+      "strike": 370,
+      "right": "P"
+    },
+    "computed": {
+      "month": "2026-03",
+      "dte": 4,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "exit short MSFT $370 Put for 03/30 at 5.9"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "OPT|MSFT|2026-03-30|370|P"
   }
 ]

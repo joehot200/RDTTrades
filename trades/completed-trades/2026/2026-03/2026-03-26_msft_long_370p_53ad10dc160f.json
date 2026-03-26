@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "completed_trade_id": "53ad10dc160f",
+  "status": "closed",
+  "contract_key": "OPT|MSFT|2026-03-30|370|P",
+  "instrument": "option",
+  "pos_side": "long",
+  "symbol": "MSFT",
+  "option": {
+    "expiry": "2026-03-30",
+    "strike": 370,
+    "right": "P"
+  },
+  "qty_opened": 1,
+  "qty_closed": 1,
+  "entry": {
+    "trade_id": "53ad10dc160f",
+    "received_at": "2026-03-26T15:49:40.000Z",
+    "fill": 4.95,
+    "rdt": "short MSFT $370 Put for 03/30 at 4.95"
+  },
+  "exits": [
+    {
+      "trade_id": "409ed1617e0c",
+      "received_at": "2026-03-26T17:57:53.000Z",
+      "fill": 5.9,
+      "qty": 1,
+      "rdt": "exit short MSFT $370 Put for 03/30 at 5.9"
+    }
+  ],
+  "pnl": {
+    "realized": 95.00000000000001,
+    "currency": "USD"
+  }
+}
