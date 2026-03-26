@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "trade_id": "dadfb07d41c9",
+  "received_at": "2026-03-26T15:47:53.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-03-26T15:55:05+00:00--19d2ad4ab2a5d74d.json",
+    "archived_path": "inbox/processed/2026-03/2026-03-26T15:55:05+00:00--19d2ad4ab2a5d74d.json",
+    "raw_id": "19d2ad4ab2a5d74d",
+    "ingested_at": "2026-03-26T15:55:05.000Z"
+  },
+  "raw": {
+    "text": "#115247469984 BOT +1 MSFT 100 (Weeklys) 27 MAR 26 360 PUT @.35, ACCOUNT *****746SCHW"
+  },
+  "instrument": "option",
+  "paper": false,
+  "action": "BOT",
+  "symbol": "MSFT",
+  "qty": 1,
+  "fill": 0.35,
+  "option": {
+    "expiry": "2026-03-27",
+    "strike": 360,
+    "right": "P"
+  },
+  "computed": {
+    "month": "2026-03",
+    "dte": 1,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "options",
+    "text": "short MSFT $360 Put for 03/27 at 0.35"
+  },
+  "trade_role": "open",
+  "pos_side": "long",
+  "contract_key": "OPT|MSFT|2026-03-27|360|P"
+}
