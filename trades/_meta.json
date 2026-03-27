@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-03-26T18:03:46.844Z",
-  "latest_commit_message": "exit short MSFT $370 Put for 03/30 at 5.9",
-  "latest_processed_trade_id": "409ed1617e0c",
+  "generated_at": "2026-03-27T14:07:45.000Z",
+  "latest_commit_message": "exit short MSFT $362.5 Put for 03/30 at 6.45",
+  "latest_processed_trade_id": "d3c0f1b609e2",
   "processed_trade_ids_this_run": [
-    "409ed1617e0c"
+    "d3c0f1b609e2"
   ]
 }
