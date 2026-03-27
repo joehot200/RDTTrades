@@ -1013,5 +1013,40 @@
       "realized": -39.99999999999994,
       "currency": "USD"
     }
+  },
+  {
+    "schema_version": 1,
+    "completed_trade_id": "c15e21693f8a",
+    "status": "closed",
+    "contract_key": "OPT|META|2026-03-30|525|P",
+    "instrument": "option",
+    "pos_side": "long",
+    "symbol": "META",
+    "option": {
+      "expiry": "2026-03-30",
+      "strike": 525,
+      "right": "P"
+    },
+    "qty_opened": 1,
+    "qty_closed": 1,
+    "entry": {
+      "trade_id": "c15e21693f8a",
+      "received_at": "2026-03-27T15:46:49.000Z",
+      "fill": 5.4,
+      "rdt": "short META $525 Put for 03/30 at 5.4"
+    },
+    "exits": [
+      {
+        "trade_id": "624447272a04",
+        "received_at": "2026-03-27T16:44:55.000Z",
+        "fill": 5.05,
+        "qty": 1,
+        "rdt": "exit short META $525 Put for 03/30 at 5.05"
+      }
+    ],
+    "pnl": {
+      "realized": -35.00000000000006,
+      "currency": "USD"
+    }
   }
 ]

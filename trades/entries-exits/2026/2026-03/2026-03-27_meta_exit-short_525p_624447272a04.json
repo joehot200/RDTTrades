@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "trade_id": "624447272a04",
+  "received_at": "2026-03-27T16:44:55.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-03-27T16:53:12+00:00--19d302f3f275da9b.json",
+    "archived_path": "inbox/processed/2026-03/2026-03-27T16:53:12+00:00--19d302f3f275da9b.json",
+    "raw_id": "19d302f3f275da9b",
+    "ingested_at": "2026-03-27T16:53:12.000Z"
+  },
+  "raw": {
+    "text": "#14783949645 PAPERMONEY SOLD -1 META 100 (Weeklys) 30 MAR 26 525 PUT @5.05, ACCOUNT D-******81"
+  },
+  "instrument": "option",
+  "paper": true,
+  "action": "SOLD",
+  "symbol": "META",
+  "qty": 1,
+  "fill": 5.05,
+  "option": {
+    "expiry": "2026-03-30",
+    "strike": 525,
+    "right": "P"
+  },
+  "computed": {
+    "month": "2026-03",
+    "dte": 3,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "options",
+    "text": "exit short META $525 Put for 03/30 at 5.05"
+  },
+  "trade_role": "close",
+  "pos_side": "long",
+  "contract_key": "OPT|META|2026-03-30|525|P"
+}
