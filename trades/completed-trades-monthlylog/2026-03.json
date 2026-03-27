@@ -978,5 +978,40 @@
       "realized": -35.00000000000006,
       "currency": "USD"
     }
+  },
+  {
+    "schema_version": 1,
+    "completed_trade_id": "42f3ded186a9",
+    "status": "closed",
+    "contract_key": "OPT|DELL|2026-04-02|175|C",
+    "instrument": "option",
+    "pos_side": "long",
+    "symbol": "DELL",
+    "option": {
+      "expiry": "2026-04-02",
+      "strike": 175,
+      "right": "C"
+    },
+    "qty_opened": 1,
+    "qty_closed": 1,
+    "entry": {
+      "trade_id": "42f3ded186a9",
+      "received_at": "2026-03-27T14:22:15.000Z",
+      "fill": 4.85,
+      "rdt": "long DELL $175 Call for 04/02 at 4.85"
+    },
+    "exits": [
+      {
+        "trade_id": "8dfac0349667",
+        "received_at": "2026-03-27T14:24:06.000Z",
+        "fill": 4.45,
+        "qty": 1,
+        "rdt": "exit long DELL $175 Call for 04/02 at 4.45"
+      }
+    ],
+    "pnl": {
+      "realized": -39.99999999999994,
+      "currency": "USD"
+    }
   }
 ]

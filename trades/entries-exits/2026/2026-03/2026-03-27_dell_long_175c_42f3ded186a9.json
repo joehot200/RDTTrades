@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "trade_id": "42f3ded186a9",
+  "received_at": "2026-03-27T14:22:15.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-03-27T14:35:21+00:00--19d2faca4624fc8d.json",
+    "archived_path": "inbox/processed/2026-03/2026-03-27T14:35:21+00:00--19d2faca4624fc8d.json",
+    "raw_id": "19d2faca4624fc8d",
+    "ingested_at": "2026-03-27T14:35:21.000Z"
+  },
+  "raw": {
+    "text": "#14783753564 PAPERMONEY BOT +1 DELL 100 (Weeklys) 2 APR 26 175 CALL @4.85, ACCOUNT D-******81"
+  },
+  "instrument": "option",
+  "paper": true,
+  "action": "BOT",
+  "symbol": "DELL",
+  "qty": 1,
+  "fill": 4.85,
+  "option": {
+    "expiry": "2026-04-02",
+    "strike": 175,
+    "right": "C"
+  },
+  "computed": {
+    "month": "2026-03",
+    "dte": 6,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "options",
+    "text": "long DELL $175 Call for 04/02 at 4.85"
+  },
+  "trade_role": "open",
+  "pos_side": "long",
+  "contract_key": "OPT|DELL|2026-04-02|175|C"
+}
