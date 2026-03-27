@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "trade_id": "eb7a20c3b8ca",
+  "received_at": "2026-03-27T14:19:58.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-03-27T14:22:02+00:00--19d2faa8ae39f1d1.json",
+    "archived_path": "inbox/processed/2026-03/2026-03-27T14:22:02+00:00--19d2faa8ae39f1d1.json",
+    "raw_id": "19d2faa8ae39f1d1",
+    "ingested_at": "2026-03-27T14:22:02.000Z"
+  },
+  "raw": {
+    "text": "#14783749405 PAPERMONEY SOLD -1 MSFT 100 (Weeklys) 30 MAR 26 362.5 PUT @6.35, ACCOUNT D-******81"
+  },
+  "instrument": "option",
+  "paper": true,
+  "action": "SOLD",
+  "symbol": "MSFT",
+  "qty": 1,
+  "fill": 6.35,
+  "option": {
+    "expiry": "2026-03-30",
+    "strike": 362.5,
+    "right": "P"
+  },
+  "computed": {
+    "month": "2026-03",
+    "dte": 3,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "options",
+    "text": "exit short MSFT $362.5 Put for 03/30 at 6.35"
+  },
+  "trade_role": "close",
+  "pos_side": "long",
+  "contract_key": "OPT|MSFT|2026-03-30|362.5|P"
+}
