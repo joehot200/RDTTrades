@@ -2886,5 +2886,43 @@
     "trade_role": "open",
     "pos_side": "long",
     "contract_key": "OPT|BX|2026-04-10|113|C"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "a4a040a4c927",
+    "received_at": "2026-03-30T17:18:02.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-03-30T17:30:10+00:00--19d3fc0a78503e98.json",
+      "archived_path": "inbox/processed/2026-03/2026-03-30T17:30:10+00:00--19d3fc0a78503e98.json",
+      "raw_id": "19d3fc0a78503e98",
+      "ingested_at": "2026-03-30T17:30:10.000Z"
+    },
+    "raw": {
+      "text": "#14784672731 PAPERMONEY SOLD -1 BX 100 (Weeklys) 10 APR 26 113 CALL @3.40, ACCOUNT D-******81"
+    },
+    "instrument": "option",
+    "paper": true,
+    "action": "SOLD",
+    "symbol": "BX",
+    "qty": 1,
+    "fill": 3.4,
+    "option": {
+      "expiry": "2026-04-10",
+      "strike": 113,
+      "right": "C"
+    },
+    "computed": {
+      "month": "2026-03",
+      "dte": 11,
+      "wiki_ok": true
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "exit long BX $113 Call for 04/10 at 3.4"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "OPT|BX|2026-04-10|113|C"
   }
 ]
