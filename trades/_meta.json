@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-03-27T16:53:41.873Z",
-  "latest_commit_message": "exit short META $525 Put for 03/30 at 5.05",
-  "latest_processed_trade_id": "624447272a04",
+  "generated_at": "2026-03-30T14:00:46.762Z",
+  "latest_commit_message": "short GOOGL $277.5 Put for 03/30 at 4.15",
+  "latest_processed_trade_id": "308adb5d0f28",
   "processed_trade_ids_this_run": [
-    "624447272a04"
+    "308adb5d0f28"
   ]
 }

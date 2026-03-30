@@ -2772,5 +2772,43 @@
     "trade_role": "close",
     "pos_side": "long",
     "contract_key": "OPT|META|2026-03-30|525|P"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "308adb5d0f28",
+    "received_at": "2026-03-30T14:00:11.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-03-30T14:00:26+00:00--19d3f0b85146d341.json",
+      "archived_path": "inbox/processed/2026-03/2026-03-30T14:00:26+00:00--19d3f0b85146d341.json",
+      "raw_id": "19d3f0b85146d341",
+      "ingested_at": "2026-03-30T14:00:26.000Z"
+    },
+    "raw": {
+      "text": "#14784373903 PAPERMONEY BOT +1 GOOGL 100 (Weeklys) 30 MAR 26 277.5 PUT @4.15, ACCOUNT D-******81"
+    },
+    "instrument": "option",
+    "paper": true,
+    "action": "BOT",
+    "symbol": "GOOGL",
+    "qty": 1,
+    "fill": 4.15,
+    "option": {
+      "expiry": "2026-03-30",
+      "strike": 277.5,
+      "right": "P"
+    },
+    "computed": {
+      "month": "2026-03",
+      "dte": 0,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "short GOOGL $277.5 Put for 03/30 at 4.15"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "OPT|GOOGL|2026-03-30|277.5|P"
   }
 ]
