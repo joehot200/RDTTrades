@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "trade_id": "b1385232ee2a",
+  "received_at": "2026-03-30T15:35:01.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-03-30T15:44:06+00:00--19d3f6257e71eb2f.json",
+    "archived_path": "inbox/processed/2026-03/2026-03-30T15:44:06+00:00--19d3f6257e71eb2f.json",
+    "raw_id": "19d3f6257e71eb2f",
+    "ingested_at": "2026-03-30T15:44:06.000Z"
+  },
+  "raw": {
+    "text": "#14784557563 PAPERMONEY SOLD -1 GOOGL 100 (Weeklys) 30 MAR 26 277.5 PUT @3.75, ACCOUNT D-******81"
+  },
+  "instrument": "option",
+  "paper": true,
+  "action": "SOLD",
+  "symbol": "GOOGL",
+  "qty": 1,
+  "fill": 3.75,
+  "option": {
+    "expiry": "2026-03-30",
+    "strike": 277.5,
+    "right": "P"
+  },
+  "computed": {
+    "month": "2026-03",
+    "dte": 0,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "options",
+    "text": "exit short GOOGL $277.5 Put for 03/30 at 3.75"
+  },
+  "trade_role": "close",
+  "pos_side": "long",
+  "contract_key": "OPT|GOOGL|2026-03-30|277.5|P"
+}
