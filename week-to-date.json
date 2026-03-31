@@ -188,5 +188,43 @@
     "trade_role": "open",
     "pos_side": "long",
     "contract_key": "OPT|CRH|2026-04-10|104|P"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "ae9739aa57c4",
+    "received_at": "2026-03-31T14:56:13.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-03-31T15:02:29+00:00--19d44652a4317611.json",
+      "archived_path": "inbox/processed/2026-03/2026-03-31T15:02:29+00:00--19d44652a4317611.json",
+      "raw_id": "19d44652a4317611",
+      "ingested_at": "2026-03-31T15:02:29.000Z"
+    },
+    "raw": {
+      "text": "#14785182417 PAPERMONEY BOT +1 HOOD 100 (Weeklys) 2 APR 26 63 PUT @.76, ACCOUNT D-******81"
+    },
+    "instrument": "option",
+    "paper": true,
+    "action": "BOT",
+    "symbol": "HOOD",
+    "qty": 1,
+    "fill": 0.76,
+    "option": {
+      "expiry": "2026-04-02",
+      "strike": 63,
+      "right": "P"
+    },
+    "computed": {
+      "month": "2026-03",
+      "dte": 2,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "short HOOD $63 Put for 04/02 at 0.76"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "OPT|HOOD|2026-04-02|63|P"
   }
 ]
