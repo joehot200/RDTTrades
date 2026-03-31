@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "trade_id": "7d1eeb62920c",
+  "received_at": "2026-03-31T16:40:03.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-03-31T16:40:51+00:00--19d44c43a45e59ec.json",
+    "archived_path": "inbox/processed/2026-03/2026-03-31T16:40:51+00:00--19d44c43a45e59ec.json",
+    "raw_id": "19d44c43a45e59ec",
+    "ingested_at": "2026-03-31T16:40:51.000Z"
+  },
+  "raw": {
+    "text": "#14785310862 PAPERMONEY SOLD -1 HOOD 100 (Weeklys) 2 APR 26 63 PUT @.39, ACCOUNT D-******81"
+  },
+  "instrument": "option",
+  "paper": true,
+  "action": "SOLD",
+  "symbol": "HOOD",
+  "qty": 1,
+  "fill": 0.39,
+  "option": {
+    "expiry": "2026-04-02",
+    "strike": 63,
+    "right": "P"
+  },
+  "computed": {
+    "month": "2026-03",
+    "dte": 2,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "options",
+    "text": "exit short HOOD $63 Put for 04/02 at 0.39"
+  },
+  "trade_role": "close",
+  "pos_side": "long",
+  "contract_key": "OPT|HOOD|2026-04-02|63|P"
+}

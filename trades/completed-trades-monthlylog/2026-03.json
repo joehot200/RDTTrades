@@ -1118,5 +1118,40 @@
       "realized": -89.99999999999999,
       "currency": "USD"
     }
+  },
+  {
+    "schema_version": 1,
+    "completed_trade_id": "ae9739aa57c4",
+    "status": "closed",
+    "contract_key": "OPT|HOOD|2026-04-02|63|P",
+    "instrument": "option",
+    "pos_side": "long",
+    "symbol": "HOOD",
+    "option": {
+      "expiry": "2026-04-02",
+      "strike": 63,
+      "right": "P"
+    },
+    "qty_opened": 1,
+    "qty_closed": 1,
+    "entry": {
+      "trade_id": "ae9739aa57c4",
+      "received_at": "2026-03-31T14:56:13.000Z",
+      "fill": 0.76,
+      "rdt": "short HOOD $63 Put for 04/02 at 0.76"
+    },
+    "exits": [
+      {
+        "trade_id": "7d1eeb62920c",
+        "received_at": "2026-03-31T16:40:03.000Z",
+        "fill": 0.39,
+        "qty": 1,
+        "rdt": "exit short HOOD $63 Put for 04/02 at 0.39"
+      }
+    ],
+    "pnl": {
+      "realized": -37,
+      "currency": "USD"
+    }
   }
 ]
