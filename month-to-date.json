@@ -2924,5 +2924,43 @@
     "trade_role": "close",
     "pos_side": "long",
     "contract_key": "OPT|BX|2026-04-10|113|C"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "0fa7d9385ff2",
+    "received_at": "2026-03-31T14:46:49.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-03-31T14:47:05+00:00--19d445c90318a676.json",
+      "archived_path": "inbox/processed/2026-03/2026-03-31T14:47:05+00:00--19d445c90318a676.json",
+      "raw_id": "19d445c90318a676",
+      "ingested_at": "2026-03-31T14:47:05.000Z"
+    },
+    "raw": {
+      "text": "#14785160459 PAPERMONEY BOT +1 CRH 100 (Weeklys) 10 APR 26 104 PUT @3.40, ACCOUNT D-******81"
+    },
+    "instrument": "option",
+    "paper": true,
+    "action": "BOT",
+    "symbol": "CRH",
+    "qty": 1,
+    "fill": 3.4,
+    "option": {
+      "expiry": "2026-04-10",
+      "strike": 104,
+      "right": "P"
+    },
+    "computed": {
+      "month": "2026-03",
+      "dte": 10,
+      "wiki_ok": true
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "short CRH $104 Put for 04/10 at 3.4"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "OPT|CRH|2026-04-10|104|P"
   }
 ]

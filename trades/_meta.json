@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-03-30T17:30:22.637Z",
-  "latest_commit_message": "exit long BX $113 Call for 04/10 at 3.4",
-  "latest_processed_trade_id": "a4a040a4c927",
+  "generated_at": "2026-03-31T14:47:17.889Z",
+  "latest_commit_message": "short CRH $104 Put for 04/10 at 3.4",
+  "latest_processed_trade_id": "0fa7d9385ff2",
   "processed_trade_ids_this_run": [
-    "a4a040a4c927"
+    "0fa7d9385ff2"
   ]
 }
