@@ -1121,6 +1121,41 @@
   },
   {
     "schema_version": 1,
+    "completed_trade_id": "0fa7d9385ff2",
+    "status": "closed",
+    "contract_key": "OPT|CRH|2026-04-10|104|P",
+    "instrument": "option",
+    "pos_side": "long",
+    "symbol": "CRH",
+    "option": {
+      "expiry": "2026-04-10",
+      "strike": 104,
+      "right": "P"
+    },
+    "qty_opened": 1,
+    "qty_closed": 1,
+    "entry": {
+      "trade_id": "0fa7d9385ff2",
+      "received_at": "2026-03-31T14:46:49.000Z",
+      "fill": 3.4,
+      "rdt": "short CRH $104 Put for 04/10 at 3.4"
+    },
+    "exits": [
+      {
+        "trade_id": "35c370556eb4",
+        "received_at": "2026-03-31T16:47:15.000Z",
+        "fill": 2.36,
+        "qty": 1,
+        "rdt": "exit short CRH $104 Put for 04/10 at 2.36"
+      }
+    ],
+    "pnl": {
+      "realized": -104,
+      "currency": "USD"
+    }
+  },
+  {
+    "schema_version": 1,
     "completed_trade_id": "ae9739aa57c4",
     "status": "closed",
     "contract_key": "OPT|HOOD|2026-04-02|63|P",

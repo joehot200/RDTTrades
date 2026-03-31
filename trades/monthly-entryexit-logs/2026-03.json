@@ -3038,5 +3038,43 @@
     "trade_role": "close",
     "pos_side": "long",
     "contract_key": "OPT|HOOD|2026-04-02|63|P"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "35c370556eb4",
+    "received_at": "2026-03-31T16:47:15.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-03-31T16:55:48+00:00--19d44cad5fbbe0de.json",
+      "archived_path": "inbox/processed/2026-03/2026-03-31T16:55:48+00:00--19d44cad5fbbe0de.json",
+      "raw_id": "19d44cad5fbbe0de",
+      "ingested_at": "2026-03-31T16:55:48.000Z"
+    },
+    "raw": {
+      "text": "#14785327402 PAPERMONEY SOLD -1 CRH 100 (Weeklys) 10 APR 26 104 PUT @2.36, ACCOUNT D-******81"
+    },
+    "instrument": "option",
+    "paper": true,
+    "action": "SOLD",
+    "symbol": "CRH",
+    "qty": 1,
+    "fill": 2.36,
+    "option": {
+      "expiry": "2026-04-10",
+      "strike": 104,
+      "right": "P"
+    },
+    "computed": {
+      "month": "2026-03",
+      "dte": 10,
+      "wiki_ok": true
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "exit short CRH $104 Put for 04/10 at 2.36"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "OPT|CRH|2026-04-10|104|P"
   }
 ]
