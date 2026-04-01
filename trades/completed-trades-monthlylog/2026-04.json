@@ -1,6 +1,41 @@
 [
   {
     "schema_version": 1,
+    "completed_trade_id": "c6b341a73ea8",
+    "status": "closed",
+    "contract_key": "OPT|FCX|2026-04-10|61|C",
+    "instrument": "option",
+    "pos_side": "long",
+    "symbol": "FCX",
+    "option": {
+      "expiry": "2026-04-10",
+      "strike": 61,
+      "right": "C"
+    },
+    "qty_opened": 1,
+    "qty_closed": 1,
+    "entry": {
+      "trade_id": "c6b341a73ea8",
+      "received_at": "2026-04-01T14:43:33.000Z",
+      "fill": 2.23,
+      "rdt": "long FCX $61 Call for 04/10 at 2.23"
+    },
+    "exits": [
+      {
+        "trade_id": "42ce4ec8a0b6",
+        "received_at": "2026-04-01T18:00:19.000Z",
+        "fill": 2.53,
+        "qty": 1,
+        "rdt": "exit long FCX $61 Call for 04/10 at 2.53"
+      }
+    ],
+    "pnl": {
+      "realized": 29.999999999999982,
+      "currency": "USD"
+    }
+  },
+  {
+    "schema_version": 1,
     "completed_trade_id": "99b7e4cacceb",
     "status": "closed",
     "contract_key": "OPT|NFLX|2026-04-02|97|C",

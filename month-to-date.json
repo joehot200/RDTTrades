@@ -150,5 +150,43 @@
     "trade_role": "close",
     "pos_side": "long",
     "contract_key": "OPT|NFLX|2026-04-02|97|C"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "42ce4ec8a0b6",
+    "received_at": "2026-04-01T18:00:19.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-04-01T18:13:04+00:00--19d4a3416885f208.json",
+      "archived_path": "inbox/processed/2026-04/2026-04-01T18:13:04+00:00--19d4a3416885f208.json",
+      "raw_id": "19d4a3416885f208",
+      "ingested_at": "2026-04-01T18:13:04.000Z"
+    },
+    "raw": {
+      "text": "#14786012819 PAPERMONEY SOLD -1 FCX 100 (Weeklys) 10 APR 26 61 CALL @2.53, ACCOUNT D-******81"
+    },
+    "instrument": "option",
+    "paper": true,
+    "action": "SOLD",
+    "symbol": "FCX",
+    "qty": 1,
+    "fill": 2.53,
+    "option": {
+      "expiry": "2026-04-10",
+      "strike": 61,
+      "right": "C"
+    },
+    "computed": {
+      "month": "2026-04",
+      "dte": 9,
+      "wiki_ok": true
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "exit long FCX $61 Call for 04/10 at 2.53"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "OPT|FCX|2026-04-10|61|C"
   }
 ]
