@@ -340,5 +340,43 @@
     "trade_role": "open",
     "pos_side": "long",
     "contract_key": "OPT|FCX|2026-04-10|61|C"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "a508c1d29668",
+    "received_at": "2026-04-01T15:44:16.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-04-01T15:58:00+00:00--19d49b784ca2fdba.json",
+      "archived_path": "inbox/processed/2026-04/2026-04-01T15:58:00+00:00--19d49b784ca2fdba.json",
+      "raw_id": "19d49b784ca2fdba",
+      "ingested_at": "2026-04-01T15:58:00.000Z"
+    },
+    "raw": {
+      "text": "#14785896594 PAPERMONEY BOT +1 AMZN 100 (Weeklys) 1 APR 26 215 CALL @.08, ACCOUNT D-******81"
+    },
+    "instrument": "option",
+    "paper": true,
+    "action": "BOT",
+    "symbol": "AMZN",
+    "qty": 1,
+    "fill": 0.08,
+    "option": {
+      "expiry": "2026-04-01",
+      "strike": 215,
+      "right": "C"
+    },
+    "computed": {
+      "month": "2026-04",
+      "dte": 0,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "long AMZN $215 Call for 04/01 at 0.08"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "OPT|AMZN|2026-04-01|215|C"
   }
 ]
