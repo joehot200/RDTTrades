@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "completed_trade_id": "99b7e4cacceb",
+  "status": "closed",
+  "contract_key": "OPT|NFLX|2026-04-02|97|C",
+  "instrument": "option",
+  "pos_side": "long",
+  "symbol": "NFLX",
+  "option": {
+    "expiry": "2026-04-02",
+    "strike": 97,
+    "right": "C"
+  },
+  "qty_opened": 1,
+  "qty_closed": 1,
+  "entry": {
+    "trade_id": "99b7e4cacceb",
+    "received_at": "2026-04-01T16:57:23.000Z",
+    "fill": 0.3,
+    "rdt": "long NFLX $97 Call for 04/02 at 0.3"
+  },
+  "exits": [
+    {
+      "trade_id": "3cf3f8154ec3",
+      "received_at": "2026-04-01T17:50:06.000Z",
+      "fill": 0.35,
+      "qty": 1,
+      "rdt": "exit long NFLX $97 Call for 04/02 at 0.35"
+    }
+  ],
+  "pnl": {
+    "realized": 4.999999999999999,
+    "currency": "USD"
+  }
+}

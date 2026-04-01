@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-04-01T17:00:34.524Z",
-  "latest_commit_message": "long NFLX $97 Call for 04/02 at 0.3",
-  "latest_processed_trade_id": "99b7e4cacceb",
+  "generated_at": "2026-04-01T17:56:33.303Z",
+  "latest_commit_message": "exit long NFLX $97 Call for 04/02 at 0.35",
+  "latest_processed_trade_id": "3cf3f8154ec3",
   "processed_trade_ids_this_run": [
-    "99b7e4cacceb"
+    "3cf3f8154ec3"
   ]
 }
