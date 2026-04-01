@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "trade_id": "c6b341a73ea8",
+  "received_at": "2026-04-01T14:43:33.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-04-01T14:44:34+00:00--19d497ff3dec6235.json",
+    "archived_path": "inbox/processed/2026-04/2026-04-01T14:44:34+00:00--19d497ff3dec6235.json",
+    "raw_id": "19d497ff3dec6235",
+    "ingested_at": "2026-04-01T14:44:34.000Z"
+  },
+  "raw": {
+    "text": "#14785812579 PAPERMONEY BOT +1 FCX 100 (Weeklys) 10 APR 26 61 CALL @2.23, ACCOUNT D-******81"
+  },
+  "instrument": "option",
+  "paper": true,
+  "action": "BOT",
+  "symbol": "FCX",
+  "qty": 1,
+  "fill": 2.23,
+  "option": {
+    "expiry": "2026-04-10",
+    "strike": 61,
+    "right": "C"
+  },
+  "computed": {
+    "month": "2026-04",
+    "dte": 9,
+    "wiki_ok": true
+  },
+  "rdt": {
+    "matched": "options",
+    "text": "long FCX $61 Call for 04/10 at 2.23"
+  },
+  "trade_role": "open",
+  "pos_side": "long",
+  "contract_key": "OPT|FCX|2026-04-10|61|C"
+}
