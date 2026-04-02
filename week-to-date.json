@@ -492,5 +492,43 @@
     "trade_role": "close",
     "pos_side": "long",
     "contract_key": "OPT|FCX|2026-04-10|61|C"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "bcf506d7a100",
+    "received_at": "2026-04-02T14:25:48.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-04-02T14:33:00+00:00--19d4e960b0dcece0.json",
+      "archived_path": "inbox/processed/2026-04/2026-04-02T14:33:00+00:00--19d4e960b0dcece0.json",
+      "raw_id": "19d4e960b0dcece0",
+      "ingested_at": "2026-04-02T14:33:00.000Z"
+    },
+    "raw": {
+      "text": "#14786427893 PAPERMONEY BOT +1 ARES 100 (Weeklys) 10 APR 26 100 PUT @2.97, ACCOUNT D-******81"
+    },
+    "instrument": "option",
+    "paper": true,
+    "action": "BOT",
+    "symbol": "ARES",
+    "qty": 1,
+    "fill": 2.97,
+    "option": {
+      "expiry": "2026-04-10",
+      "strike": 100,
+      "right": "P"
+    },
+    "computed": {
+      "month": "2026-04",
+      "dte": 8,
+      "wiki_ok": true
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "short ARES $100 Put for 04/10 at 2.97"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "OPT|ARES|2026-04-10|100|P"
   }
 ]

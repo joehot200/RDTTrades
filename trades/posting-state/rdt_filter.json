@@ -9,14 +9,16 @@
     "0fa7d9385ff2",
     "35c370556eb4",
     "c6b341a73ea8",
-    "42ce4ec8a0b6"
+    "42ce4ec8a0b6",
+    "bcf506d7a100"
   ],
   "posted_entry_trade_ids": [
     "db441ce4d136",
     "f945f626c796",
     "7a4ed8014da1",
     "0fa7d9385ff2",
-    "c6b341a73ea8"
+    "c6b341a73ea8",
+    "bcf506d7a100"
   ],
   "posted_entry_dates": {
     "2026-03-11": [
@@ -33,6 +35,9 @@
     ],
     "2026-04-01": [
       "c6b341a73ea8"
+    ],
+    "2026-04-02": [
+      "bcf506d7a100"
     ]
   }
 }
