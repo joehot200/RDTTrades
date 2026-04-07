@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "completed_trade_id": "bcf506d7a100",
+  "status": "closed",
+  "contract_key": "OPT|ARES|2026-04-10|100|P",
+  "instrument": "option",
+  "pos_side": "long",
+  "symbol": "ARES",
+  "option": {
+    "expiry": "2026-04-10",
+    "strike": 100,
+    "right": "P"
+  },
+  "qty_opened": 1,
+  "qty_closed": 1,
+  "entry": {
+    "trade_id": "bcf506d7a100",
+    "received_at": "2026-04-02T14:25:48.000Z",
+    "fill": 2.97,
+    "rdt": "short ARES $100 Put for 04/10 at 2.97"
+  },
+  "exits": [
+    {
+      "trade_id": "622daa08ed7e",
+      "received_at": "2026-04-07T17:10:38.000Z",
+      "fill": 1.5,
+      "qty": 1,
+      "rdt": "exit short ARES $100 Put for 04/10 at 1.5"
+    }
+  ],
+  "pnl": {
+    "realized": -147.00000000000003,
+    "currency": "USD"
+  }
+}
