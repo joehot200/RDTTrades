@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "trade_id": "e2e6302165d9",
+  "received_at": "2026-04-07T16:38:01.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-04-07T16:39:52+00:00--19d68cee6125bdca.json",
+    "archived_path": "inbox/processed/2026-04/2026-04-07T16:39:52+00:00--19d68cee6125bdca.json",
+    "raw_id": "19d68cee6125bdca",
+    "ingested_at": "2026-04-07T16:39:52.000Z"
+  },
+  "raw": {
+    "text": "#14787864772 PAPERMONEY BOT +1 AVGO 100 (Weeklys) 10 APR 26 342.5 CALL @2.26, ACCOUNT D-******81"
+  },
+  "instrument": "option",
+  "paper": true,
+  "action": "BOT",
+  "symbol": "AVGO",
+  "qty": 1,
+  "fill": 2.26,
+  "option": {
+    "expiry": "2026-04-10",
+    "strike": 342.5,
+    "right": "C"
+  },
+  "computed": {
+    "month": "2026-04",
+    "dte": 3,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "options",
+    "text": "long AVGO $342.5 Call for 04/10 at 2.26"
+  },
+  "trade_role": "open",
+  "pos_side": "long",
+  "contract_key": "OPT|AVGO|2026-04-10|342.5|C"
+}
