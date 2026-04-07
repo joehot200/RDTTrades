@@ -16,7 +16,7 @@ on:
 
 concurrency:
   group: parse-trades-${{ github.ref }}
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   parse:
@@ -57,31 +57,56 @@ jobs:
             echo "should_post=false" >> "$GITHUB_OUTPUT"
           fi
 
-      - name: Parse inbox -> cleaned logs + completed trades
-        run: node .github/scripts/parse-trades.mjs
+      - name: Parse inbox and push safely
+        id: parse_and_push
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          ATTEMPTS=6
+
+          for attempt in $(seq 1 "$ATTEMPTS"); do
+            echo "Attempt $attempt/$ATTEMPTS"
+
+            # Always rebuild from the latest remote main so we never force-overwrite
+            # a newer Zapier/manual commit.
+            git fetch --prune origin main
+            git reset --hard origin/main
+            git clean -fd
+
+            # Re-run the parser against the latest branch state.
+            node .github/scripts/parse-trades.mjs
+
+            git add -A inbox trades month-to-date.json week-to-date.json
+
+            if git diff --cached --quiet; then
+              echo "No changes"
+              echo "did_push=false" >> "$GITHUB_OUTPUT"
+              exit 0
+            fi
+
+            COMMIT_MSG=$(node -e "const fs=require('fs'); const p='trades/_meta.json'; if (fs.existsSync(p)) { const j=JSON.parse(fs.readFileSync(p,'utf8')); process.stdout.write(String(j.latest_commit_message || 'build: parse inbox trades').slice(0,120)); } else { process.stdout.write('build: parse inbox trades'); }")
+
+            git commit -m "$COMMIT_MSG"
+
+            if git push origin HEAD:main; then
+              echo "did_push=true" >> "$GITHUB_OUTPUT"
+              exit 0
+            fi
+
+            echo "Push lost a race to a newer commit. Retrying..."
+            sleep $((attempt * 2))
+          done
+
+          echo "Failed to push after $ATTEMPTS attempts" >&2
+          exit 1
 
       - name: Post trades to Discord
-        if: steps.inbox.outputs.should_post == 'true'
+        if: steps.inbox.outputs.should_post == 'true' && steps.parse_and_push.outputs.did_push == 'true'
         env:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
           RDT_FILTER_DISCORD_WEBHOOK_URL: ${{ secrets.RDT_FILTER_DISCORD_WEBHOOK_URL }}
         run: node .github/scripts/post-discord.mjs
-
-      - name: Commit & push (if changed)
-        shell: bash
-        run: |
-          set -euo pipefail
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-
-          git add -A inbox trades month-to-date.json week-to-date.json
-
-          if git diff --cached --quiet; then
-            echo "No changes"
-            exit 0
-          fi
-
-          COMMIT_MSG=$(node -e "const fs=require('fs'); const p='trades/_meta.json'; if (fs.existsSync(p)) { const j=JSON.parse(fs.readFileSync(p,'utf8')); process.stdout.write(String(j.latest_commit_message || 'build: parse inbox trades').slice(0,120)); } else { process.stdout.write('build: parse inbox trades'); }")
-
-          git commit -m "$COMMIT_MSG"
-          git push --force origin HEAD:main
