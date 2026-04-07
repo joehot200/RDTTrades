@@ -1,9 +1,6 @@
 {
-  "generated_at": "2026-04-07T20:06:01.457Z",
+  "generated_at": "2026-04-07T21:55:36.223Z",
   "latest_commit_message": "exit long SPY $658 Call for 04/07 at 1.36",
-  "latest_processed_trade_id": "118149d5967b",
-  "processed_trade_ids_this_run": [
-    "9a58adb761af",
-    "118149d5967b"
-  ]
+  "latest_processed_trade_id": null,
+  "processed_trade_ids_this_run": []
 }
