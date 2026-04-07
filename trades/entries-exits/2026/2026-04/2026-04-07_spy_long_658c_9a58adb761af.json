@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "trade_id": "9a58adb761af",
+  "received_at": "2026-04-07T19:50:45.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-04-07T20:05:48+00:00--19d697f582475dd3.json",
+    "archived_path": "inbox/processed/2026-04/2026-04-07T20:05:48+00:00--19d697f582475dd3.json",
+    "raw_id": "19d697f582475dd3",
+    "ingested_at": "2026-04-07T20:05:48.000Z"
+  },
+  "raw": {
+    "text": "#14788037022 PAPERMONEY BOT +1 SPY 100 (Weeklys) 7 APR 26 658 CALL @1.06, ACCOUNT D-******81"
+  },
+  "instrument": "option",
+  "paper": true,
+  "action": "BOT",
+  "symbol": "SPY",
+  "qty": 1,
+  "fill": 1.06,
+  "option": {
+    "expiry": "2026-04-07",
+    "strike": 658,
+    "right": "C"
+  },
+  "computed": {
+    "month": "2026-04",
+    "dte": 0,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "options",
+    "text": "long SPY $658 Call for 04/07 at 1.06"
+  },
+  "trade_role": "open",
+  "pos_side": "long",
+  "contract_key": "OPT|SPY|2026-04-07|658|C"
+}
