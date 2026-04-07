@@ -150,5 +150,43 @@
     "trade_role": "open",
     "pos_side": "long",
     "contract_key": "OPT|TSLA|2026-04-15|335|P"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "bca54151bee9",
+    "received_at": "2026-04-07T15:22:04.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-04-07T15:26:48+00:00--19d68895ba494ffc.json",
+      "archived_path": "inbox/processed/2026-04/2026-04-07T15:26:48+00:00--19d68895ba494ffc.json",
+      "raw_id": "19d68895ba494ffc",
+      "ingested_at": "2026-04-07T15:26:48.000Z"
+    },
+    "raw": {
+      "text": "#14787791392 PAPERMONEY SOLD -1 TSLA 100 (Weeklys) 15 APR 26 335 PUT @7.90, ACCOUNT D-******81"
+    },
+    "instrument": "option",
+    "paper": true,
+    "action": "SOLD",
+    "symbol": "TSLA",
+    "qty": 1,
+    "fill": 7.9,
+    "option": {
+      "expiry": "2026-04-15",
+      "strike": 335,
+      "right": "P"
+    },
+    "computed": {
+      "month": "2026-04",
+      "dte": 8,
+      "wiki_ok": true
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "exit short TSLA $335 Put for 04/15 at 7.9"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "OPT|TSLA|2026-04-15|335|P"
   }
 ]
