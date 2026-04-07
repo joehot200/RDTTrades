@@ -10,5 +10,7 @@ Zapier may have a slight delay. Trades include the gmail timestamp (trade receiv
 
 week-to-date.json  = current week (Monday to Sunday) trades.
 month-to-date.json = current calendar month's trades (e.g. Jan 1 - Jan 31st).
+Access past months = trades/completed-trades-monthlylog
 
 Note that on 11/03/2026 I did a few test trades (mostly using SPY) using arbritary numbers.
+Bug note: Trades sometimes fail to process if made at the same time due to concurency errors.
