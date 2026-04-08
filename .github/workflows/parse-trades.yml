@@ -71,13 +71,12 @@ jobs:
           for attempt in $(seq 1 "$ATTEMPTS"); do
             echo "Attempt $attempt/$ATTEMPTS"
 
-            # Always rebuild from the latest remote main so we never force-overwrite
-            # a newer Zapier/manual commit.
             git fetch --prune origin main
-            git reset --hard origin/main
+            git reset --hard FETCH_HEAD
             git clean -fd
 
-            # Re-run the parser against the latest branch state.
+            echo "Base commit after fetch/reset: $(git rev-parse --short HEAD)"
+
             node .github/scripts/parse-trades.mjs
 
             git add -A inbox trades month-to-date.json week-to-date.json
@@ -88,23 +87,15 @@ jobs:
               exit 0
             fi
 
-            COMMIT_MSG=$(node -e "
-            const fs=require('fs');
-            const p='trades/_meta.json';
-            let msg='build: parse inbox trades';
-            if (fs.existsSync(p)) {
-              const j=JSON.parse(fs.readFileSync(p,'utf8'));
-              const raw=String(j.latest_commit_message || msg);
-              msg = raw
-              .replace(/[\r\n]+/g, ' ')
-              .replace(/[\x00-\x1F\x7F]/g, ' ')
-               .trim()
-              .slice(0,120) || msg;
-              }
-               process.stdout.write(msg);
-               ")
-           printf '%s\n' "$COMMIT_MSG" > /tmp/commitmsg.txt
-           git commit -F /tmp/commitmsg.txt
+            COMMIT_MSG="$(node -e "const fs=require('fs'); const p='trades/_meta.json'; let msg='build: parse inbox trades'; if (fs.existsSync(p)) { const j=JSON.parse(fs.readFileSync(p,'utf8')); const raw=String(j.latest_commit_message || msg); msg=raw.replace(/[\\r\\n]+/g,' ').replace(/[\\x00-\\x1F\\x7F]/g,' ').trim().slice(0,120) || 'build: parse inbox trades'; } process.stdout.write(msg);")"
+
+            printf '%s\n' "$COMMIT_MSG" > /tmp/commitmsg.txt
+            git commit -F /tmp/commitmsg.txt
+
+            if git push origin HEAD:main; then
+              echo "did_push=true" >> "$GITHUB_OUTPUT"
+              exit 0
+            fi
 
             echo "Push lost a race to a newer commit. Retrying..."
             sleep $((attempt * 2))
