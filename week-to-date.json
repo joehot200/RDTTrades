@@ -644,5 +644,81 @@
     "trade_role": "close",
     "pos_side": "long",
     "contract_key": "OPT|HOOD|2026-04-17|75|P"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "aa718e440c93",
+    "received_at": "2026-04-08T17:40:23.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-04-08T17:44:15+00:00--19d6e2e57e8cfa84.json",
+      "archived_path": "inbox/processed/2026-04/2026-04-08T17:44:15+00:00--19d6e2e57e8cfa84.json",
+      "raw_id": "19d6e2e57e8cfa84",
+      "ingested_at": "2026-04-08T17:44:15.000Z"
+    },
+    "raw": {
+      "text": "#14788546738 PAPERMONEY BOT +1 SPY 100 (Weeklys) 8 APR 26 675 CALL @1.12, ACCOUNT D-******81"
+    },
+    "instrument": "option",
+    "paper": true,
+    "action": "BOT",
+    "symbol": "SPY",
+    "qty": 1,
+    "fill": 1.12,
+    "option": {
+      "expiry": "2026-04-08",
+      "strike": 675,
+      "right": "C"
+    },
+    "computed": {
+      "month": "2026-04",
+      "dte": 0,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "long SPY $675 Call for 04/08 at 1.12"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "OPT|SPY|2026-04-08|675|C"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "5072882dd67c",
+    "received_at": "2026-04-08T17:44:01.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-04-08T17:44:14+00:00--19d6e31ad9ee10af.json",
+      "archived_path": "inbox/processed/2026-04/2026-04-08T17:44:14+00:00--19d6e31ad9ee10af.json",
+      "raw_id": "19d6e31ad9ee10af",
+      "ingested_at": "2026-04-08T17:44:14.000Z"
+    },
+    "raw": {
+      "text": "#14788549136 PAPERMONEY SOLD -1 SPY 100 (Weeklys) 8 APR 26 675 CALL @1.24, ACCOUNT D-******81"
+    },
+    "instrument": "option",
+    "paper": true,
+    "action": "SOLD",
+    "symbol": "SPY",
+    "qty": 1,
+    "fill": 1.24,
+    "option": {
+      "expiry": "2026-04-08",
+      "strike": 675,
+      "right": "C"
+    },
+    "computed": {
+      "month": "2026-04",
+      "dte": 0,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "exit long SPY $675 Call for 04/08 at 1.24"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "OPT|SPY|2026-04-08|675|C"
   }
 ]
