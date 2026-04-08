@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "trade_id": "3c64822ff8ce",
+  "received_at": "2026-04-08T14:09:36.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-04-08T14:11:59+00:00--19d6d6d61c9ad665.json",
+    "archived_path": "inbox/processed/2026-04/2026-04-08T14:11:59+00:00--19d6d6d61c9ad665.json",
+    "raw_id": "19d6d6d61c9ad665",
+    "ingested_at": "2026-04-08T14:11:59.000Z"
+  },
+  "raw": {
+    "text": "#14788292188 PAPERMONEY SOLD -1 INTC 100 17 APR 26 57 CALL @2.91, ACCOUNT D-******81"
+  },
+  "instrument": "option",
+  "paper": true,
+  "action": "SOLD",
+  "symbol": "INTC",
+  "qty": 1,
+  "fill": 2.91,
+  "option": {
+    "expiry": "2026-04-17",
+    "strike": 57,
+    "right": "C"
+  },
+  "computed": {
+    "month": "2026-04",
+    "dte": 9,
+    "wiki_ok": true
+  },
+  "rdt": {
+    "matched": "options",
+    "text": "exit long INTC $57 Call for 04/17 at 2.91"
+  },
+  "trade_role": "close",
+  "pos_side": "long",
+  "contract_key": "OPT|INTC|2026-04-17|57|C"
+}
