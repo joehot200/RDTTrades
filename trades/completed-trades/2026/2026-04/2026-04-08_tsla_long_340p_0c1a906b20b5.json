@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "completed_trade_id": "0c1a906b20b5",
+  "status": "closed",
+  "contract_key": "OPT|TSLA|2026-04-17|340|P",
+  "instrument": "option",
+  "pos_side": "long",
+  "symbol": "TSLA",
+  "option": {
+    "expiry": "2026-04-17",
+    "strike": 340,
+    "right": "P"
+  },
+  "qty_opened": 1,
+  "qty_closed": 1,
+  "entry": {
+    "trade_id": "0c1a906b20b5",
+    "received_at": "2026-04-08T14:19:46.000Z",
+    "fill": 5.75,
+    "rdt": "short TSLA $340 Put for 04/17 at 5.75"
+  },
+  "exits": [
+    {
+      "trade_id": "0fc090332ea5",
+      "received_at": "2026-04-08T15:57:58.000Z",
+      "fill": 6.75,
+      "qty": 1,
+      "rdt": "exit short TSLA $340 Put for 04/17 at 6.75"
+    }
+  ],
+  "pnl": {
+    "realized": 100,
+    "currency": "USD"
+  }
+}

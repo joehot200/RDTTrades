@@ -758,5 +758,43 @@
     "trade_role": "open",
     "pos_side": "long",
     "contract_key": "OPT|TSLA|2026-04-17|340|P"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "0fc090332ea5",
+    "received_at": "2026-04-08T15:57:58.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-04-08T16:07:02+00:00--19d6dd0927cefaca.json",
+      "archived_path": "inbox/processed/2026-04/2026-04-08T16:07:02+00:00--19d6dd0927cefaca.json",
+      "raw_id": "19d6dd0927cefaca",
+      "ingested_at": "2026-04-08T16:07:02.000Z"
+    },
+    "raw": {
+      "text": "#14788455744 PAPERMONEY SOLD -1 TSLA 100 17 APR 26 340 PUT @6.75, ACCOUNT D-******81"
+    },
+    "instrument": "option",
+    "paper": true,
+    "action": "SOLD",
+    "symbol": "TSLA",
+    "qty": 1,
+    "fill": 6.75,
+    "option": {
+      "expiry": "2026-04-17",
+      "strike": 340,
+      "right": "P"
+    },
+    "computed": {
+      "month": "2026-04",
+      "dte": 9,
+      "wiki_ok": true
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "exit short TSLA $340 Put for 04/17 at 6.75"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "OPT|TSLA|2026-04-17|340|P"
   }
 ]
