@@ -727,10 +727,10 @@
     "received_at": "2026-04-08T14:15:06.000Z",
     "source": {
       "system": "zapier_github_inbox",
-      "inbox_path": "inbox/2026-04-08T17:21:17+00:00--19d6d726c2f700b0.json",
-      "archived_path": "inbox/processed/2026-04/2026-04-08T17:21:17+00:00--19d6d726c2f700b0.json",
+      "inbox_path": "inbox/2026-04-08T17:37:03+00:00--19d6d726c2f700b0.json",
+      "archived_path": "inbox/processed/2026-04/2026-04-08T17:37:03+00:00--19d6d726c2f700b0.json",
       "raw_id": "19d6d726c2f700b0",
-      "ingested_at": "2026-04-08T17:21:17.000Z"
+      "ingested_at": "2026-04-08T17:37:03.000Z"
     },
     "raw": {
       "text": "#14788302561 PAPERMONEY BOT +1 HOOD 100 17 APR 26 75 PUT @3.85, ACCOUNT D-******81"

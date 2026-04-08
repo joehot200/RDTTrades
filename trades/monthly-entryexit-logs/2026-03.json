@@ -81,10 +81,10 @@
     "received_at": "2026-03-06T17:13:10.000Z",
     "source": {
       "system": "zapier_github_inbox",
-      "inbox_path": "inbox/2026-03-11T11:43:01+00:00--19cc423926c1e356.json",
-      "archived_path": "inbox/processed/2026-03/2026-03-11T11:43:01+00:00--19cc423926c1e356.json",
+      "inbox_path": "inbox/2026-04-08T17:25:02+00:00--19cc423926c1e356.json",
+      "archived_path": "inbox/processed/2026-03/2026-04-08T17:25:02+00:00--19cc423926c1e356.json",
       "raw_id": "19cc423926c1e356",
-      "ingested_at": "2026-03-11T11:43:01.000Z"
+      "ingested_at": "2026-04-08T17:25:02.000Z"
     },
     "raw": {
       "text": "#14747921837 PAPERMONEY SOLD -1 SMCI 100 (Weeklys) 13 MAR 26 31.5 CALL @1.79, ACCOUNT D-******81"
