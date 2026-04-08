@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "trade_id": "0c1a906b20b5",
+  "received_at": "2026-04-08T14:19:46.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-04-08T14:25:03+00:00--19d6d76ae94db28e.json",
+    "archived_path": "inbox/processed/2026-04/2026-04-08T14:25:03+00:00--19d6d76ae94db28e.json",
+    "raw_id": "19d6d76ae94db28e",
+    "ingested_at": "2026-04-08T14:25:03.000Z"
+  },
+  "raw": {
+    "text": "#14788310191 PAPERMONEY BOT +1 TSLA 100 17 APR 26 340 PUT @5.75, ACCOUNT D-******81"
+  },
+  "instrument": "option",
+  "paper": true,
+  "action": "BOT",
+  "symbol": "TSLA",
+  "qty": 1,
+  "fill": 5.75,
+  "option": {
+    "expiry": "2026-04-17",
+    "strike": 340,
+    "right": "P"
+  },
+  "computed": {
+    "month": "2026-04",
+    "dte": 9,
+    "wiki_ok": true
+  },
+  "rdt": {
+    "matched": "options",
+    "text": "short TSLA $340 Put for 04/17 at 5.75"
+  },
+  "trade_role": "open",
+  "pos_side": "long",
+  "contract_key": "OPT|TSLA|2026-04-17|340|P"
+}
