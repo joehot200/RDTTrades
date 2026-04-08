@@ -281,6 +281,41 @@
   },
   {
     "schema_version": 1,
+    "completed_trade_id": "b47975d6c665",
+    "status": "closed",
+    "contract_key": "OPT|HOOD|2026-04-17|75|P",
+    "instrument": "option",
+    "pos_side": "long",
+    "symbol": "HOOD",
+    "option": {
+      "expiry": "2026-04-17",
+      "strike": 75,
+      "right": "P"
+    },
+    "qty_opened": 1,
+    "qty_closed": 1,
+    "entry": {
+      "trade_id": "b47975d6c665",
+      "received_at": "2026-04-08T14:15:06.000Z",
+      "fill": 3.85,
+      "rdt": "short HOOD $75 Put for 04/17 at 3.85"
+    },
+    "exits": [
+      {
+        "trade_id": "ccfe532f50e1",
+        "received_at": "2026-04-08T16:52:05.000Z",
+        "fill": 3.75,
+        "qty": 1,
+        "rdt": "exit short HOOD $75 Put for 04/17 at 3.75"
+      }
+    ],
+    "pnl": {
+      "realized": -10.000000000000009,
+      "currency": "USD"
+    }
+  },
+  {
+    "schema_version": 1,
     "completed_trade_id": "0c1a906b20b5",
     "status": "closed",
     "contract_key": "OPT|TSLA|2026-04-17|340|P",

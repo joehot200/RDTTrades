@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "trade_id": "b47975d6c665",
+  "received_at": "2026-04-08T14:15:06.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-04-08T17:21:17+00:00--19d6d726c2f700b0.json",
+    "archived_path": "inbox/processed/2026-04/2026-04-08T17:21:17+00:00--19d6d726c2f700b0.json",
+    "raw_id": "19d6d726c2f700b0",
+    "ingested_at": "2026-04-08T17:21:17.000Z"
+  },
+  "raw": {
+    "text": "#14788302561 PAPERMONEY BOT +1 HOOD 100 17 APR 26 75 PUT @3.85, ACCOUNT D-******81"
+  },
+  "instrument": "option",
+  "paper": true,
+  "action": "BOT",
+  "symbol": "HOOD",
+  "qty": 1,
+  "fill": 3.85,
+  "option": {
+    "expiry": "2026-04-17",
+    "strike": 75,
+    "right": "P"
+  },
+  "computed": {
+    "month": "2026-04",
+    "dte": 9,
+    "wiki_ok": true
+  },
+  "rdt": {
+    "matched": "options",
+    "text": "short HOOD $75 Put for 04/17 at 3.85"
+  },
+  "trade_role": "open",
+  "pos_side": "long",
+  "contract_key": "OPT|HOOD|2026-04-17|75|P"
+}
