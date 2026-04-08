@@ -88,14 +88,23 @@ jobs:
               exit 0
             fi
 
-            COMMIT_MSG=$(node -e "const fs=require('fs'); const p='trades/_meta.json'; if (fs.existsSync(p)) { const j=JSON.parse(fs.readFileSync(p,'utf8')); process.stdout.write(String(j.latest_commit_message || 'build: parse inbox trades').slice(0,120)); } else { process.stdout.write('build: parse inbox trades'); }")
-
-            git commit -m "$COMMIT_MSG"
-
-            if git push origin HEAD:main; then
-              echo "did_push=true" >> "$GITHUB_OUTPUT"
-              exit 0
-            fi
+            COMMIT_MSG=$(node -e "
+            const fs=require('fs');
+            const p='trades/_meta.json';
+            let msg='build: parse inbox trades';
+            if (fs.existsSync(p)) {
+              const j=JSON.parse(fs.readFileSync(p,'utf8'));
+              const raw=String(j.latest_commit_message || msg);
+              msg = raw
+              .replace(/[\r\n]+/g, ' ')
+              .replace(/[\x00-\x1F\x7F]/g, ' ')
+               .trim()
+              .slice(0,120) || msg;
+              }
+               process.stdout.write(msg);
+               ")
+           printf '%s\n' "$COMMIT_MSG" > /tmp/commitmsg.txt
+           git commit -F /tmp/commitmsg.txt
 
             echo "Push lost a race to a newer commit. Retrying..."
             sleep $((attempt * 2))
