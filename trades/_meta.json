@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-04-08T16:07:18.967Z",
-  "latest_commit_message": "exit short TSLA $340 Put for 04/17 at 6.75",
-  "latest_processed_trade_id": "0fc090332ea5",
+  "generated_at": "2026-04-08T17:01:06.527Z",
+  "latest_commit_message": "exit short HOOD $75 Put for 04/17 at 3.75",
+  "latest_processed_trade_id": "ccfe532f50e1",
   "processed_trade_ids_this_run": [
-    "0fc090332ea5"
+    "ccfe532f50e1"
   ]
 }

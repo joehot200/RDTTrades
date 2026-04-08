@@ -796,5 +796,43 @@
     "trade_role": "close",
     "pos_side": "long",
     "contract_key": "OPT|TSLA|2026-04-17|340|P"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "ccfe532f50e1",
+    "received_at": "2026-04-08T16:52:05.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-04-08T17:00:54+00:00--19d6e0222fc6269b.json",
+      "archived_path": "inbox/processed/2026-04/2026-04-08T17:00:54+00:00--19d6e0222fc6269b.json",
+      "raw_id": "19d6e0222fc6269b",
+      "ingested_at": "2026-04-08T17:00:54.000Z"
+    },
+    "raw": {
+      "text": "#14788506611 PAPERMONEY SOLD -1 HOOD 100 17 APR 26 75 PUT @3.75, ACCOUNT D-******81"
+    },
+    "instrument": "option",
+    "paper": true,
+    "action": "SOLD",
+    "symbol": "HOOD",
+    "qty": 1,
+    "fill": 3.75,
+    "option": {
+      "expiry": "2026-04-17",
+      "strike": 75,
+      "right": "P"
+    },
+    "computed": {
+      "month": "2026-04",
+      "dte": 9,
+      "wiki_ok": true
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "exit short HOOD $75 Put for 04/17 at 3.75"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "OPT|HOOD|2026-04-17|75|P"
   }
 ]
