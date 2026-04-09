@@ -1024,5 +1024,43 @@
     "trade_role": "close",
     "pos_side": "long",
     "contract_key": "OPT|CSX|2026-04-17|42.5|C"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "e876c10c40d0",
+    "received_at": "2026-04-09T18:36:38.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-04-09T18:41:47+00:00--19d738833b66469a.json",
+      "archived_path": "inbox/processed/2026-04/2026-04-09T18:41:47+00:00--19d738833b66469a.json",
+      "raw_id": "19d738833b66469a",
+      "ingested_at": "2026-04-09T18:41:47.000Z"
+    },
+    "raw": {
+      "text": "#14789222465 PAPERMONEY BOT +1 INTU 100 (Weeklys) 10 APR 26 360 PUT @7.25, ACCOUNT D-******81"
+    },
+    "instrument": "option",
+    "paper": true,
+    "action": "BOT",
+    "symbol": "INTU",
+    "qty": 1,
+    "fill": 7.25,
+    "option": {
+      "expiry": "2026-04-10",
+      "strike": 360,
+      "right": "P"
+    },
+    "computed": {
+      "month": "2026-04",
+      "dte": 1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "short INTU $360 Put for 04/10 at 7.25"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "OPT|INTU|2026-04-10|360|P"
   }
 ]
