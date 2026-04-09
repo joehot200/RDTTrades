@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "trade_id": "c60989daf772",
+  "received_at": "2026-04-09T18:57:23.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-04-09T18:57:55+00:00--19d739b34787189e.json",
+    "archived_path": "inbox/processed/2026-04/2026-04-09T18:57:55+00:00--19d739b34787189e.json",
+    "raw_id": "19d739b34787189e",
+    "ingested_at": "2026-04-09T18:57:55.000Z"
+  },
+  "raw": {
+    "text": "#14789236748 PAPERMONEY SOLD -1 INTU 100 (Weeklys) 10 APR 26 360 PUT @7.70, ACCOUNT D-******81"
+  },
+  "instrument": "option",
+  "paper": true,
+  "action": "SOLD",
+  "symbol": "INTU",
+  "qty": 1,
+  "fill": 7.7,
+  "option": {
+    "expiry": "2026-04-10",
+    "strike": 360,
+    "right": "P"
+  },
+  "computed": {
+    "month": "2026-04",
+    "dte": 1,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "options",
+    "text": "exit short INTU $360 Put for 04/10 at 7.7"
+  },
+  "trade_role": "close",
+  "pos_side": "long",
+  "contract_key": "OPT|INTU|2026-04-10|360|P"
+}

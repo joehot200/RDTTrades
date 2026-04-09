@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "completed_trade_id": "e876c10c40d0",
+  "status": "closed",
+  "contract_key": "OPT|INTU|2026-04-10|360|P",
+  "instrument": "option",
+  "pos_side": "long",
+  "symbol": "INTU",
+  "option": {
+    "expiry": "2026-04-10",
+    "strike": 360,
+    "right": "P"
+  },
+  "qty_opened": 1,
+  "qty_closed": 1,
+  "entry": {
+    "trade_id": "e876c10c40d0",
+    "received_at": "2026-04-09T18:36:38.000Z",
+    "fill": 7.25,
+    "rdt": "short INTU $360 Put for 04/10 at 7.25"
+  },
+  "exits": [
+    {
+      "trade_id": "c60989daf772",
+      "received_at": "2026-04-09T18:57:23.000Z",
+      "fill": 7.7,
+      "qty": 1,
+      "rdt": "exit short INTU $360 Put for 04/10 at 7.7"
+    }
+  ],
+  "pnl": {
+    "realized": 45.000000000000014,
+    "currency": "USD"
+  }
+}
