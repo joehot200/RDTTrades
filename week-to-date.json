@@ -758,5 +758,43 @@
     "trade_role": "open",
     "pos_side": "long",
     "contract_key": "OPT|CSX|2026-04-17|42.5|C"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "176e5770d74d",
+    "received_at": "2026-04-09T18:04:20.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-04-09T18:10:00+00:00--19d736aa5825367d.json",
+      "archived_path": "inbox/processed/2026-04/2026-04-09T18:10:00+00:00--19d736aa5825367d.json",
+      "raw_id": "19d736aa5825367d",
+      "ingested_at": "2026-04-09T18:10:00.000Z"
+    },
+    "raw": {
+      "text": "#14789194397 PAPERMONEY SOLD -1 CSX 100 17 APR 26 42.5 CALL @.77, ACCOUNT D-******81"
+    },
+    "instrument": "option",
+    "paper": true,
+    "action": "SOLD",
+    "symbol": "CSX",
+    "qty": 1,
+    "fill": 0.77,
+    "option": {
+      "expiry": "2026-04-17",
+      "strike": 42.5,
+      "right": "C"
+    },
+    "computed": {
+      "month": "2026-04",
+      "dte": 8,
+      "wiki_ok": true
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "exit long CSX $42.5 Call for 04/17 at 0.77"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "OPT|CSX|2026-04-17|42.5|C"
   }
 ]

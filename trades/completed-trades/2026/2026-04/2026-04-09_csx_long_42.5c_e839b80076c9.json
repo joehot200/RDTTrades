@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "completed_trade_id": "e839b80076c9",
+  "status": "closed",
+  "contract_key": "OPT|CSX|2026-04-17|42.5|C",
+  "instrument": "option",
+  "pos_side": "long",
+  "symbol": "CSX",
+  "option": {
+    "expiry": "2026-04-17",
+    "strike": 42.5,
+    "right": "C"
+  },
+  "qty_opened": 1,
+  "qty_closed": 1,
+  "entry": {
+    "trade_id": "e839b80076c9",
+    "received_at": "2026-04-09T17:08:41.000Z",
+    "fill": 0.85,
+    "rdt": "long CSX $42.5 Call for 04/17 at 0.85"
+  },
+  "exits": [
+    {
+      "trade_id": "176e5770d74d",
+      "received_at": "2026-04-09T18:04:20.000Z",
+      "fill": 0.77,
+      "qty": 1,
+      "rdt": "exit long CSX $42.5 Call for 04/17 at 0.77"
+    }
+  ],
+  "pnl": {
+    "realized": -7.9999999999999964,
+    "currency": "USD"
+  }
+}
