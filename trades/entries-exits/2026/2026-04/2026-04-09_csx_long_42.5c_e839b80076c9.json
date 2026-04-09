@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "trade_id": "e839b80076c9",
+  "received_at": "2026-04-09T17:08:41.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-04-09T17:12:52+00:00--19d7337b20d3a780.json",
+    "archived_path": "inbox/processed/2026-04/2026-04-09T17:12:52+00:00--19d7337b20d3a780.json",
+    "raw_id": "19d7337b20d3a780",
+    "ingested_at": "2026-04-09T17:12:52.000Z"
+  },
+  "raw": {
+    "text": "#14789148250 PAPERMONEY BOT +1 CSX 100 17 APR 26 42.5 CALL @.85, ACCOUNT D-******81"
+  },
+  "instrument": "option",
+  "paper": true,
+  "action": "BOT",
+  "symbol": "CSX",
+  "qty": 1,
+  "fill": 0.85,
+  "option": {
+    "expiry": "2026-04-17",
+    "strike": 42.5,
+    "right": "C"
+  },
+  "computed": {
+    "month": "2026-04",
+    "dte": 8,
+    "wiki_ok": true
+  },
+  "rdt": {
+    "matched": "options",
+    "text": "long CSX $42.5 Call for 04/17 at 0.85"
+  },
+  "trade_role": "open",
+  "pos_side": "long",
+  "contract_key": "OPT|CSX|2026-04-17|42.5|C"
+}
