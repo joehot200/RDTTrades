@@ -948,5 +948,43 @@
     "trade_role": "close",
     "pos_side": "long",
     "contract_key": "OPT|CRM|2026-04-10|167.5|P"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "7ae88ac9614f",
+    "received_at": "2026-04-10T14:32:28.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-04-10T14:44:38+00:00--19d77cf04f1d3668.json",
+      "archived_path": "inbox/processed/2026-04/2026-04-10T14:44:38+00:00--19d77cf04f1d3668.json",
+      "raw_id": "19d77cf04f1d3668",
+      "ingested_at": "2026-04-10T14:44:38.000Z"
+    },
+    "raw": {
+      "text": "#14789548294 PAPERMONEY BOT +1 AVGO 100 17 APR 26 375 CALL @9.50, ACCOUNT D-******81"
+    },
+    "instrument": "option",
+    "paper": true,
+    "action": "BOT",
+    "symbol": "AVGO",
+    "qty": 1,
+    "fill": 9.5,
+    "option": {
+      "expiry": "2026-04-17",
+      "strike": 375,
+      "right": "C"
+    },
+    "computed": {
+      "month": "2026-04",
+      "dte": 7,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "long AVGO $375 Call for 04/17 at 9.5"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "OPT|AVGO|2026-04-17|375|C"
   }
 ]
