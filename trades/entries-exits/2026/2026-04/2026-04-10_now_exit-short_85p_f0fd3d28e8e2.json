@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "trade_id": "f0fd3d28e8e2",
+  "received_at": "2026-04-10T19:59:49.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-04-10T20:00:48+00:00--19d78fabbf80d835.json",
+    "archived_path": "inbox/processed/2026-04/2026-04-10T20:00:48+00:00--19d78fabbf80d835.json",
+    "raw_id": "19d78fabbf80d835",
+    "ingested_at": "2026-04-10T20:00:48.000Z"
+  },
+  "raw": {
+    "text": "#14789886231 PAPERMONEY SOLD -1 NOW 100 17 APR 26 85 PUT @3.95, ACCOUNT D-******81"
+  },
+  "instrument": "option",
+  "paper": true,
+  "action": "SOLD",
+  "symbol": "NOW",
+  "qty": 1,
+  "fill": 3.95,
+  "option": {
+    "expiry": "2026-04-17",
+    "strike": 85,
+    "right": "P"
+  },
+  "computed": {
+    "month": "2026-04",
+    "dte": 7,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "options",
+    "text": "exit short NOW $85 Put for 04/17 at 3.95"
+  },
+  "trade_role": "close",
+  "pos_side": "long",
+  "contract_key": "OPT|NOW|2026-04-17|85|P"
+}

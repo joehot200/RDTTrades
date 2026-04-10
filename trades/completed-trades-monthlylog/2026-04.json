@@ -523,5 +523,40 @@
       "realized": -5.000000000000071,
       "currency": "USD"
     }
+  },
+  {
+    "schema_version": 1,
+    "completed_trade_id": "20d05cbba51d",
+    "status": "closed",
+    "contract_key": "OPT|NOW|2026-04-17|85|P",
+    "instrument": "option",
+    "pos_side": "long",
+    "symbol": "NOW",
+    "option": {
+      "expiry": "2026-04-17",
+      "strike": 85,
+      "right": "P"
+    },
+    "qty_opened": 1,
+    "qty_closed": 1,
+    "entry": {
+      "trade_id": "20d05cbba51d",
+      "received_at": "2026-04-10T19:40:21.000Z",
+      "fill": 4.45,
+      "rdt": "short NOW $85 Put for 04/17 at 4.45"
+    },
+    "exits": [
+      {
+        "trade_id": "f0fd3d28e8e2",
+        "received_at": "2026-04-10T19:59:49.000Z",
+        "fill": 3.95,
+        "qty": 1,
+        "rdt": "exit short NOW $85 Put for 04/17 at 3.95"
+      }
+    ],
+    "pnl": {
+      "realized": -50,
+      "currency": "USD"
+    }
   }
 ]
