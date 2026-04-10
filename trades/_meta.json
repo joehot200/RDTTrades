@@ -1,9 +1,6 @@
 {
-  "generated_at": "2026-04-10T13:56:56.730Z",
+  "generated_at": "2026-04-10T13:57:07.873Z",
   "latest_commit_message": "exit short CRM $167.5 Put for 04/10 at 2.57",
-  "latest_processed_trade_id": "e7207d795bf7",
-  "processed_trade_ids_this_run": [
-    "a0631816f870",
-    "e7207d795bf7"
-  ]
+  "latest_processed_trade_id": null,
+  "processed_trade_ids_this_run": []
 }
