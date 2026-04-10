@@ -1024,5 +1024,43 @@
     "trade_role": "close",
     "pos_side": "long",
     "contract_key": "OPT|AVGO|2026-04-17|375|C"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "20d05cbba51d",
+    "received_at": "2026-04-10T19:40:21.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-04-10T19:45:41+00:00--19d78e8e642864a6.json",
+      "archived_path": "inbox/processed/2026-04/2026-04-10T19:45:41+00:00--19d78e8e642864a6.json",
+      "raw_id": "19d78e8e642864a6",
+      "ingested_at": "2026-04-10T19:45:41.000Z"
+    },
+    "raw": {
+      "text": "#14789863133 PAPERMONEY BOT +1 NOW 100 17 APR 26 85 PUT @4.45, ACCOUNT D-******81"
+    },
+    "instrument": "option",
+    "paper": true,
+    "action": "BOT",
+    "symbol": "NOW",
+    "qty": 1,
+    "fill": 4.45,
+    "option": {
+      "expiry": "2026-04-17",
+      "strike": 85,
+      "right": "P"
+    },
+    "computed": {
+      "month": "2026-04",
+      "dte": 7,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "short NOW $85 Put for 04/17 at 4.45"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "OPT|NOW|2026-04-17|85|P"
   }
 ]
