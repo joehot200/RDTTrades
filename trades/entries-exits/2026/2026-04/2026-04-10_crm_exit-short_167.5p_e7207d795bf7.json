@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "trade_id": "e7207d795bf7",
+  "received_at": "2026-04-10T13:52:19.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-04-10T13:56:41+00:00--19d77aa473d96306.json",
+    "archived_path": "inbox/processed/2026-04/2026-04-10T13:56:41+00:00--19d77aa473d96306.json",
+    "raw_id": "19d77aa473d96306",
+    "ingested_at": "2026-04-10T13:56:41.000Z"
+  },
+  "raw": {
+    "text": "#14789457138 PAPERMONEY SOLD -1 CRM 100 (Weeklys) 10 APR 26 167.5 PUT @2.57, ACCOUNT D-******81"
+  },
+  "instrument": "option",
+  "paper": true,
+  "action": "SOLD",
+  "symbol": "CRM",
+  "qty": 1,
+  "fill": 2.57,
+  "option": {
+    "expiry": "2026-04-10",
+    "strike": 167.5,
+    "right": "P"
+  },
+  "computed": {
+    "month": "2026-04",
+    "dte": 0,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "options",
+    "text": "exit short CRM $167.5 Put for 04/10 at 2.57"
+  },
+  "trade_role": "close",
+  "pos_side": "long",
+  "contract_key": "OPT|CRM|2026-04-10|167.5|P"
+}

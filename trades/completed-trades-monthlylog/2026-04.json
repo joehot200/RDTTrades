@@ -453,5 +453,40 @@
       "realized": 45.000000000000014,
       "currency": "USD"
     }
+  },
+  {
+    "schema_version": 1,
+    "completed_trade_id": "a0631816f870",
+    "status": "closed",
+    "contract_key": "OPT|CRM|2026-04-10|167.5|P",
+    "instrument": "option",
+    "pos_side": "long",
+    "symbol": "CRM",
+    "option": {
+      "expiry": "2026-04-10",
+      "strike": 167.5,
+      "right": "P"
+    },
+    "qty_opened": 1,
+    "qty_closed": 1,
+    "entry": {
+      "trade_id": "a0631816f870",
+      "received_at": "2026-04-10T13:50:00.000Z",
+      "fill": 1.96,
+      "rdt": "short CRM $167.5 Put for 04/10 at 1.96"
+    },
+    "exits": [
+      {
+        "trade_id": "e7207d795bf7",
+        "received_at": "2026-04-10T13:52:19.000Z",
+        "fill": 2.57,
+        "qty": 1,
+        "rdt": "exit short CRM $167.5 Put for 04/10 at 2.57"
+      }
+    ],
+    "pnl": {
+      "realized": 60.999999999999986,
+      "currency": "USD"
+    }
   }
 ]
