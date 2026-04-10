@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "completed_trade_id": "7ae88ac9614f",
+  "status": "closed",
+  "contract_key": "OPT|AVGO|2026-04-17|375|C",
+  "instrument": "option",
+  "pos_side": "long",
+  "symbol": "AVGO",
+  "option": {
+    "expiry": "2026-04-17",
+    "strike": 375,
+    "right": "C"
+  },
+  "qty_opened": 1,
+  "qty_closed": 1,
+  "entry": {
+    "trade_id": "7ae88ac9614f",
+    "received_at": "2026-04-10T14:32:28.000Z",
+    "fill": 9.5,
+    "rdt": "long AVGO $375 Call for 04/17 at 9.5"
+  },
+  "exits": [
+    {
+      "trade_id": "f54d9923318d",
+      "received_at": "2026-04-10T15:40:21.000Z",
+      "fill": 9.45,
+      "qty": 1,
+      "rdt": "exit long AVGO $375 Call for 04/17 at 9.45"
+    }
+  ],
+  "pnl": {
+    "realized": -5.000000000000071,
+    "currency": "USD"
+  }
+}

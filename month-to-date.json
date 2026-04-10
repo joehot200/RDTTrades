@@ -1214,5 +1214,43 @@
     "trade_role": "open",
     "pos_side": "long",
     "contract_key": "OPT|AVGO|2026-04-17|375|C"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "f54d9923318d",
+    "received_at": "2026-04-10T15:40:21.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-04-10T15:43:36+00:00--19d780d2ccd24d19.json",
+      "archived_path": "inbox/processed/2026-04/2026-04-10T15:43:36+00:00--19d780d2ccd24d19.json",
+      "raw_id": "19d780d2ccd24d19",
+      "ingested_at": "2026-04-10T15:43:36.000Z"
+    },
+    "raw": {
+      "text": "#14789647474 PAPERMONEY SOLD -1 AVGO 100 17 APR 26 375 CALL @9.45, ACCOUNT D-******81"
+    },
+    "instrument": "option",
+    "paper": true,
+    "action": "SOLD",
+    "symbol": "AVGO",
+    "qty": 1,
+    "fill": 9.45,
+    "option": {
+      "expiry": "2026-04-17",
+      "strike": 375,
+      "right": "C"
+    },
+    "computed": {
+      "month": "2026-04",
+      "dte": 7,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "exit long AVGO $375 Call for 04/17 at 9.45"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "OPT|AVGO|2026-04-17|375|C"
   }
 ]
