@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "trade_id": "c96280064fa5",
+  "received_at": "2026-04-13T19:54:49.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-04-13T19:57:15+00:00--19d886939a452d4b.json",
+    "archived_path": "inbox/processed/2026-04/2026-04-13T19:57:15+00:00--19d886939a452d4b.json",
+    "raw_id": "19d886939a452d4b",
+    "ingested_at": "2026-04-13T19:57:15.000Z"
+  },
+  "raw": {
+    "text": "#14790477423 PAPERMONEY SOLD -1 NVDA 100 17 APR 26 187.5 CALL @3.80, ACCOUNT D-******81"
+  },
+  "instrument": "option",
+  "paper": true,
+  "action": "SOLD",
+  "symbol": "NVDA",
+  "qty": 1,
+  "fill": 3.8,
+  "option": {
+    "expiry": "2026-04-17",
+    "strike": 187.5,
+    "right": "C"
+  },
+  "computed": {
+    "month": "2026-04",
+    "dte": 4,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "options",
+    "text": "exit long NVDA $187.5 Call for 04/17 at 3.8"
+  },
+  "trade_role": "close",
+  "pos_side": "long",
+  "contract_key": "OPT|NVDA|2026-04-17|187.5|C"
+}
