@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "trade_id": "58271826c344",
+  "received_at": "2026-04-13T15:14:06.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-04-13T15:30:57+00:00--19d876839d47f564.json",
+    "archived_path": "inbox/processed/2026-04/2026-04-13T15:30:57+00:00--19d876839d47f564.json",
+    "raw_id": "19d876839d47f564",
+    "ingested_at": "2026-04-13T15:30:57.000Z"
+  },
+  "raw": {
+    "text": "#14790223643 PAPERMONEY BOT +1 NVDA 100 17 APR 26 187.5 CALL @4.05, ACCOUNT D-******81"
+  },
+  "instrument": "option",
+  "paper": true,
+  "action": "BOT",
+  "symbol": "NVDA",
+  "qty": 1,
+  "fill": 4.05,
+  "option": {
+    "expiry": "2026-04-17",
+    "strike": 187.5,
+    "right": "C"
+  },
+  "computed": {
+    "month": "2026-04",
+    "dte": 4,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "options",
+    "text": "long NVDA $187.5 Call for 04/17 at 4.05"
+  },
+  "trade_role": "open",
+  "pos_side": "long",
+  "contract_key": "OPT|NVDA|2026-04-17|187.5|C"
+}

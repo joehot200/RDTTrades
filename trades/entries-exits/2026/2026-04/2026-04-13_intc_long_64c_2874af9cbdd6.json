@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "trade_id": "2874af9cbdd6",
+  "received_at": "2026-04-13T15:14:39.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-04-13T15:30:56+00:00--19d8768b83faff0e.json",
+    "archived_path": "inbox/processed/2026-04/2026-04-13T15:30:56+00:00--19d8768b83faff0e.json",
+    "raw_id": "19d8768b83faff0e",
+    "ingested_at": "2026-04-13T15:30:56.000Z"
+  },
+  "raw": {
+    "text": "#14790224308 PAPERMONEY BOT +1 INTC 100 17 APR 26 64 CALL @2.32, ACCOUNT D-******81"
+  },
+  "instrument": "option",
+  "paper": true,
+  "action": "BOT",
+  "symbol": "INTC",
+  "qty": 1,
+  "fill": 2.32,
+  "option": {
+    "expiry": "2026-04-17",
+    "strike": 64,
+    "right": "C"
+  },
+  "computed": {
+    "month": "2026-04",
+    "dte": 4,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "options",
+    "text": "long INTC $64 Call for 04/17 at 2.32"
+  },
+  "trade_role": "open",
+  "pos_side": "long",
+  "contract_key": "OPT|INTC|2026-04-17|64|C"
+}
