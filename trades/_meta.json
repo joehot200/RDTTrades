@@ -1,9 +1,6 @@
 {
-  "generated_at": "2026-04-14T14:16:06.368Z",
+  "generated_at": "2026-04-14T14:16:19.067Z",
   "latest_commit_message": "long GOOGL $325 Call for 04/20 at 5.9",
-  "latest_processed_trade_id": "58203a35b7ca",
-  "processed_trade_ids_this_run": [
-    "25d996afa479",
-    "58203a35b7ca"
-  ]
+  "latest_processed_trade_id": null,
+  "processed_trade_ids_this_run": []
 }
