@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-04-14T14:46:53.015Z",
-  "latest_commit_message": "long SCHW $102 Call for 04/17 at 1.02",
-  "latest_processed_trade_id": "d5f910921cef",
+  "generated_at": "2026-04-14T18:36:43.590Z",
+  "latest_commit_message": "exit long AMZN $245 Call for 04/20 at 6.55",
+  "latest_processed_trade_id": "4861f01c8e1b",
   "processed_trade_ids_this_run": [
-    "d5f910921cef"
+    "4861f01c8e1b"
   ]
 }

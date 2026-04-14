@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "trade_id": "4861f01c8e1b",
+  "received_at": "2026-04-14T18:30:56.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-04-14T18:36:30+00:00--19d8d42cc14999b4.json",
+    "archived_path": "inbox/processed/2026-04/2026-04-14T18:36:30+00:00--19d8d42cc14999b4.json",
+    "raw_id": "19d8d42cc14999b4",
+    "ingested_at": "2026-04-14T18:36:30.000Z"
+  },
+  "raw": {
+    "text": "#14794990017 PAPERMONEY tAndroid SOLD -1 AMZN 100 (Weeklys) 20 APR 26 245 CALL @6.55, ACCOUNT D-******81"
+  },
+  "instrument": "option",
+  "paper": true,
+  "action": "SOLD",
+  "symbol": "AMZN",
+  "qty": 1,
+  "fill": 6.55,
+  "option": {
+    "expiry": "2026-04-20",
+    "strike": 245,
+    "right": "C"
+  },
+  "computed": {
+    "month": "2026-04",
+    "dte": 6,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "options",
+    "text": "exit long AMZN $245 Call for 04/20 at 6.55"
+  },
+  "trade_role": "close",
+  "pos_side": "long",
+  "contract_key": "OPT|AMZN|2026-04-20|245|C"
+}
