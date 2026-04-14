@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "trade_id": "25d996afa479",
+  "received_at": "2026-04-14T14:03:26.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-04-14T14:15:52+00:00--19d8c4de00d221fe.json",
+    "archived_path": "inbox/processed/2026-04/2026-04-14T14:15:52+00:00--19d8c4de00d221fe.json",
+    "raw_id": "19d8c4de00d221fe",
+    "ingested_at": "2026-04-14T14:15:52.000Z"
+  },
+  "raw": {
+    "text": "#14794684650 PAPERMONEY BOT +1 AMZN 100 (Weeklys) 20 APR 26 245 CALL @4.65, ACCOUNT D-******81"
+  },
+  "instrument": "option",
+  "paper": true,
+  "action": "BOT",
+  "symbol": "AMZN",
+  "qty": 1,
+  "fill": 4.65,
+  "option": {
+    "expiry": "2026-04-20",
+    "strike": 245,
+    "right": "C"
+  },
+  "computed": {
+    "month": "2026-04",
+    "dte": 6,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "options",
+    "text": "long AMZN $245 Call for 04/20 at 4.65"
+  },
+  "trade_role": "open",
+  "pos_side": "long",
+  "contract_key": "OPT|AMZN|2026-04-20|245|C"
+}
