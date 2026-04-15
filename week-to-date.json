@@ -568,5 +568,43 @@
     "trade_role": "close",
     "pos_side": "long",
     "contract_key": "OPT|MA|2026-04-24|527.5|C"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "dd0da7e81a7e",
+    "received_at": "2026-04-15T19:19:52.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-04-15T19:31:18+00:00--19d9295f10774b03.json",
+      "archived_path": "inbox/processed/2026-04/2026-04-15T19:31:18+00:00--19d9295f10774b03.json",
+      "raw_id": "19d9295f10774b03",
+      "ingested_at": "2026-04-15T19:31:18.000Z"
+    },
+    "raw": {
+      "text": "#14795625261 PAPERMONEY SOLD -1 GOOGL 100 17 APR 26 337.5 CALL @2.42, ACCOUNT D-******81"
+    },
+    "instrument": "option",
+    "paper": true,
+    "action": "SOLD",
+    "symbol": "GOOGL",
+    "qty": 1,
+    "fill": 2.42,
+    "option": {
+      "expiry": "2026-04-17",
+      "strike": 337.5,
+      "right": "C"
+    },
+    "computed": {
+      "month": "2026-04",
+      "dte": 2,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "exit long GOOGL $337.5 Call for 04/17 at 2.42"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "OPT|GOOGL|2026-04-17|337.5|C"
   }
 ]

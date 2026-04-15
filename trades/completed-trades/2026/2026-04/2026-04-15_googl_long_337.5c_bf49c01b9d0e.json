@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "completed_trade_id": "bf49c01b9d0e",
+  "status": "closed",
+  "contract_key": "OPT|GOOGL|2026-04-17|337.5|C",
+  "instrument": "option",
+  "pos_side": "long",
+  "symbol": "GOOGL",
+  "option": {
+    "expiry": "2026-04-17",
+    "strike": 337.5,
+    "right": "C"
+  },
+  "qty_opened": 1,
+  "qty_closed": 1,
+  "entry": {
+    "trade_id": "bf49c01b9d0e",
+    "received_at": "2026-04-15T17:39:29.000Z",
+    "fill": 2.38,
+    "rdt": "long GOOGL $337.5 Call for 04/17 at 2.38"
+  },
+  "exits": [
+    {
+      "trade_id": "dd0da7e81a7e",
+      "received_at": "2026-04-15T19:19:52.000Z",
+      "fill": 2.42,
+      "qty": 1,
+      "rdt": "exit long GOOGL $337.5 Call for 04/17 at 2.42"
+    }
+  ],
+  "pnl": {
+    "realized": 4.0000000000000036,
+    "currency": "USD"
+  }
+}
