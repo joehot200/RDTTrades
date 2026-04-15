@@ -1,9 +1,6 @@
 {
-  "generated_at": "2026-04-15T17:53:01.089Z",
+  "generated_at": "2026-04-15T17:53:12.123Z",
   "latest_commit_message": "exit long MA $527.5 Call for 04/24 at 4.8",
-  "latest_processed_trade_id": "f82e56ba9cea",
-  "processed_trade_ids_this_run": [
-    "bf49c01b9d0e",
-    "f82e56ba9cea"
-  ]
+  "latest_processed_trade_id": null,
+  "processed_trade_ids_this_run": []
 }
