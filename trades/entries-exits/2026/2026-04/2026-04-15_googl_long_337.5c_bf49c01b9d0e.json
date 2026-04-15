@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "trade_id": "bf49c01b9d0e",
+  "received_at": "2026-04-15T17:39:29.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-04-15T17:52:49+00:00--19d923a091856f0d.json",
+    "archived_path": "inbox/processed/2026-04/2026-04-15T17:52:49+00:00--19d923a091856f0d.json",
+    "raw_id": "19d923a091856f0d",
+    "ingested_at": "2026-04-15T17:52:49.000Z"
+  },
+  "raw": {
+    "text": "#14795541564 PAPERMONEY BOT +1 GOOGL 100 17 APR 26 337.5 CALL @2.38, ACCOUNT D-******81"
+  },
+  "instrument": "option",
+  "paper": true,
+  "action": "BOT",
+  "symbol": "GOOGL",
+  "qty": 1,
+  "fill": 2.38,
+  "option": {
+    "expiry": "2026-04-17",
+    "strike": 337.5,
+    "right": "C"
+  },
+  "computed": {
+    "month": "2026-04",
+    "dte": 2,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "options",
+    "text": "long GOOGL $337.5 Call for 04/17 at 2.38"
+  },
+  "trade_role": "open",
+  "pos_side": "long",
+  "contract_key": "OPT|GOOGL|2026-04-17|337.5|C"
+}

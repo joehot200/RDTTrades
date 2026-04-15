@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "trade_id": "f82e56ba9cea",
+  "received_at": "2026-04-15T17:50:42.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-04-15T17:52:48+00:00--19d924450cb20559.json",
+    "archived_path": "inbox/processed/2026-04/2026-04-15T17:52:48+00:00--19d924450cb20559.json",
+    "raw_id": "19d924450cb20559",
+    "ingested_at": "2026-04-15T17:52:48.000Z"
+  },
+  "raw": {
+    "text": "#14795550402 PAPERMONEY SOLD -1 MA 100 (Weeklys) 24 APR 26 527.5 CALL @4.80, ACCOUNT D-******81"
+  },
+  "instrument": "option",
+  "paper": true,
+  "action": "SOLD",
+  "symbol": "MA",
+  "qty": 1,
+  "fill": 4.8,
+  "option": {
+    "expiry": "2026-04-24",
+    "strike": 527.5,
+    "right": "C"
+  },
+  "computed": {
+    "month": "2026-04",
+    "dte": 9,
+    "wiki_ok": true
+  },
+  "rdt": {
+    "matched": "options",
+    "text": "exit long MA $527.5 Call for 04/24 at 4.8"
+  },
+  "trade_role": "close",
+  "pos_side": "long",
+  "contract_key": "OPT|MA|2026-04-24|527.5|C"
+}

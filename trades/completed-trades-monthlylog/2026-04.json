@@ -733,5 +733,40 @@
       "realized": 20.999999999999996,
       "currency": "USD"
     }
+  },
+  {
+    "schema_version": 1,
+    "completed_trade_id": "f48312637034",
+    "status": "closed",
+    "contract_key": "OPT|MA|2026-04-24|527.5|C",
+    "instrument": "option",
+    "pos_side": "long",
+    "symbol": "MA",
+    "option": {
+      "expiry": "2026-04-24",
+      "strike": 527.5,
+      "right": "C"
+    },
+    "qty_opened": 1,
+    "qty_closed": 1,
+    "entry": {
+      "trade_id": "f48312637034",
+      "received_at": "2026-04-15T17:22:18.000Z",
+      "fill": 4.85,
+      "rdt": "long MA $527.5 Call for 04/24 at 4.85"
+    },
+    "exits": [
+      {
+        "trade_id": "f82e56ba9cea",
+        "received_at": "2026-04-15T17:50:42.000Z",
+        "fill": 4.8,
+        "qty": 1,
+        "rdt": "exit long MA $527.5 Call for 04/24 at 4.8"
+      }
+    ],
+    "pnl": {
+      "realized": -4.999999999999982,
+      "currency": "USD"
+    }
   }
 ]
