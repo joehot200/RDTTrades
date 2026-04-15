@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "trade_id": "7b7833a1c38e",
+  "received_at": "2026-04-15T13:36:27.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-04-15T13:38:22+00:00--19d915b8a1c5dd8c.json",
+    "archived_path": "inbox/processed/2026-04/2026-04-15T13:38:22+00:00--19d915b8a1c5dd8c.json",
+    "raw_id": "19d915b8a1c5dd8c",
+    "ingested_at": "2026-04-15T13:38:22.000Z"
+  },
+  "raw": {
+    "text": "#14795175348 PAPERMONEY SOLD -1 GOOGL 100 (Weeklys) 20 APR 26 325 CALL @8.75, ACCOUNT D-******81"
+  },
+  "instrument": "option",
+  "paper": true,
+  "action": "SOLD",
+  "symbol": "GOOGL",
+  "qty": 1,
+  "fill": 8.75,
+  "option": {
+    "expiry": "2026-04-20",
+    "strike": 325,
+    "right": "C"
+  },
+  "computed": {
+    "month": "2026-04",
+    "dte": 5,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "options",
+    "text": "exit long GOOGL $325 Call for 04/20 at 8.75"
+  },
+  "trade_role": "close",
+  "pos_side": "long",
+  "contract_key": "OPT|GOOGL|2026-04-20|325|C"
+}

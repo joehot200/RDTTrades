@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "completed_trade_id": "d5f910921cef",
+  "status": "closed",
+  "contract_key": "OPT|SCHW|2026-04-17|102|C",
+  "instrument": "option",
+  "pos_side": "long",
+  "symbol": "SCHW",
+  "option": {
+    "expiry": "2026-04-17",
+    "strike": 102,
+    "right": "C"
+  },
+  "qty_opened": 1,
+  "qty_closed": 1,
+  "entry": {
+    "trade_id": "d5f910921cef",
+    "received_at": "2026-04-14T14:37:35.000Z",
+    "fill": 1.02,
+    "rdt": "long SCHW $102 Call for 04/17 at 1.02"
+  },
+  "exits": [
+    {
+      "trade_id": "3d8909957cfc",
+      "received_at": "2026-04-15T13:31:05.000Z",
+      "fill": 1.23,
+      "qty": 1,
+      "rdt": "exit long SCHW $102 Call for 04/17 at 1.23"
+    }
+  ],
+  "pnl": {
+    "realized": 20.999999999999996,
+    "currency": "USD"
+  }
+}
