@@ -1,8 +1,9 @@
 {
-  "generated_at": "2026-04-16T16:45:47.468Z",
-  "latest_commit_message": "exit long AMD $270 Call for 04/17 at 8.3",
-  "latest_processed_trade_id": "00628512264a",
+  "generated_at": "2026-04-16T17:58:07.724Z",
+  "latest_commit_message": "long AVGO $397.5 Call for 04/20 at 6.75",
+  "latest_processed_trade_id": "063593808439",
   "processed_trade_ids_this_run": [
-    "00628512264a"
+    "419cfd0edefd",
+    "063593808439"
   ]
 }
