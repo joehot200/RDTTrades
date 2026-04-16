@@ -1974,5 +1974,43 @@
     "trade_role": "close",
     "pos_side": "long",
     "contract_key": "OPT|AVGO|2026-04-17|392.5|C"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "d79eb8a58103",
+    "received_at": "2026-04-16T14:35:18.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-04-16T14:45:59+00:00--19d96b7c7dd1717c.json",
+      "archived_path": "inbox/processed/2026-04/2026-04-16T14:45:59+00:00--19d96b7c7dd1717c.json",
+      "raw_id": "19d96b7c7dd1717c",
+      "ingested_at": "2026-04-16T14:45:59.000Z"
+    },
+    "raw": {
+      "text": "#14795919938 PAPERMONEY BOT +1 AMD 100 17 APR 26 270 CALL @3.10, ACCOUNT D-******81"
+    },
+    "instrument": "option",
+    "paper": true,
+    "action": "BOT",
+    "symbol": "AMD",
+    "qty": 1,
+    "fill": 3.1,
+    "option": {
+      "expiry": "2026-04-17",
+      "strike": 270,
+      "right": "C"
+    },
+    "computed": {
+      "month": "2026-04",
+      "dte": 1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "long AMD $270 Call for 04/17 at 3.1"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "OPT|AMD|2026-04-17|270|C"
   }
 ]
