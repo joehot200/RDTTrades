@@ -682,5 +682,43 @@
     "trade_role": "open",
     "pos_side": "long",
     "contract_key": "OPT|AMD|2026-04-17|270|C"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "00628512264a",
+    "received_at": "2026-04-16T16:33:08.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-04-16T16:45:36+00:00--19d9723a7833476c.json",
+      "archived_path": "inbox/processed/2026-04/2026-04-16T16:45:36+00:00--19d9723a7833476c.json",
+      "raw_id": "19d9723a7833476c",
+      "ingested_at": "2026-04-16T16:45:36.000Z"
+    },
+    "raw": {
+      "text": "#14796072357 PAPERMONEY SOLD -1 AMD 100 17 APR 26 270 CALL @8.30, ACCOUNT D-******81"
+    },
+    "instrument": "option",
+    "paper": true,
+    "action": "SOLD",
+    "symbol": "AMD",
+    "qty": 1,
+    "fill": 8.3,
+    "option": {
+      "expiry": "2026-04-17",
+      "strike": 270,
+      "right": "C"
+    },
+    "computed": {
+      "month": "2026-04",
+      "dte": 1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "exit long AMD $270 Call for 04/17 at 8.3"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "OPT|AMD|2026-04-17|270|C"
   }
 ]
