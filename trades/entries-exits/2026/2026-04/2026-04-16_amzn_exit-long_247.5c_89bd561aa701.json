@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "trade_id": "89bd561aa701",
+  "received_at": "2026-04-16T17:58:13.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-04-16T18:10:58+00:00--19d97718f78621ea.json",
+    "archived_path": "inbox/processed/2026-04/2026-04-16T18:10:58+00:00--19d97718f78621ea.json",
+    "raw_id": "19d97718f78621ea",
+    "ingested_at": "2026-04-16T18:10:58.000Z"
+  },
+  "raw": {
+    "text": "#14796148179 PAPERMONEY SOLD -1 AMZN 100 (Weeklys) 20 APR 26 247.5 CALL @3.65, ACCOUNT D-******81"
+  },
+  "instrument": "option",
+  "paper": true,
+  "action": "SOLD",
+  "symbol": "AMZN",
+  "qty": 1,
+  "fill": 3.65,
+  "option": {
+    "expiry": "2026-04-20",
+    "strike": 247.5,
+    "right": "C"
+  },
+  "computed": {
+    "month": "2026-04",
+    "dte": 4,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "options",
+    "text": "exit long AMZN $247.5 Call for 04/20 at 3.65"
+  },
+  "trade_role": "close",
+  "pos_side": "long",
+  "contract_key": "OPT|AMZN|2026-04-20|247.5|C"
+}

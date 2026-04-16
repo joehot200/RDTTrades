@@ -873,5 +873,75 @@
       "realized": 520.0000000000001,
       "currency": "USD"
     }
+  },
+  {
+    "schema_version": 1,
+    "completed_trade_id": "419cfd0edefd",
+    "status": "closed",
+    "contract_key": "OPT|AMZN|2026-04-20|247.5|C",
+    "instrument": "option",
+    "pos_side": "long",
+    "symbol": "AMZN",
+    "option": {
+      "expiry": "2026-04-20",
+      "strike": 247.5,
+      "right": "C"
+    },
+    "qty_opened": 1,
+    "qty_closed": 1,
+    "entry": {
+      "trade_id": "419cfd0edefd",
+      "received_at": "2026-04-16T17:50:43.000Z",
+      "fill": 3.8,
+      "rdt": "long AMZN $247.5 Call for 04/20 at 3.8"
+    },
+    "exits": [
+      {
+        "trade_id": "89bd561aa701",
+        "received_at": "2026-04-16T17:58:13.000Z",
+        "fill": 3.65,
+        "qty": 1,
+        "rdt": "exit long AMZN $247.5 Call for 04/20 at 3.65"
+      }
+    ],
+    "pnl": {
+      "realized": -14.999999999999991,
+      "currency": "USD"
+    }
+  },
+  {
+    "schema_version": 1,
+    "completed_trade_id": "063593808439",
+    "status": "closed",
+    "contract_key": "OPT|AVGO|2026-04-20|397.5|C",
+    "instrument": "option",
+    "pos_side": "long",
+    "symbol": "AVGO",
+    "option": {
+      "expiry": "2026-04-20",
+      "strike": 397.5,
+      "right": "C"
+    },
+    "qty_opened": 1,
+    "qty_closed": 1,
+    "entry": {
+      "trade_id": "063593808439",
+      "received_at": "2026-04-16T17:52:04.000Z",
+      "fill": 6.75,
+      "rdt": "long AVGO $397.5 Call for 04/20 at 6.75"
+    },
+    "exits": [
+      {
+        "trade_id": "8cdc3e201571",
+        "received_at": "2026-04-16T17:59:53.000Z",
+        "fill": 6.25,
+        "qty": 1,
+        "rdt": "exit long AVGO $397.5 Call for 04/20 at 6.25"
+      }
+    ],
+    "pnl": {
+      "realized": -50,
+      "currency": "USD"
+    }
   }
 ]
