@@ -2202,5 +2202,43 @@
     "trade_role": "close",
     "pos_side": "long",
     "contract_key": "OPT|AVGO|2026-04-20|397.5|C"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "a1b948b5abcd",
+    "received_at": "2026-04-16T19:20:19.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-04-16T19:25:09+00:00--19d97bcb9c12ab7c.json",
+      "archived_path": "inbox/processed/2026-04/2026-04-16T19:25:09+00:00--19d97bcb9c12ab7c.json",
+      "raw_id": "19d97bcb9c12ab7c",
+      "ingested_at": "2026-04-16T19:25:09.000Z"
+    },
+    "raw": {
+      "text": "#14796217140 PAPERMONEY BOT +1 AMD 100 (Weeklys) 24 APR 26 275 CALL @9.05, ACCOUNT D-******81"
+    },
+    "instrument": "option",
+    "paper": true,
+    "action": "BOT",
+    "symbol": "AMD",
+    "qty": 1,
+    "fill": 9.05,
+    "option": {
+      "expiry": "2026-04-24",
+      "strike": 275,
+      "right": "C"
+    },
+    "computed": {
+      "month": "2026-04",
+      "dte": 8,
+      "wiki_ok": true
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "long AMD $275 Call for 04/24 at 9.05"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "OPT|AMD|2026-04-24|275|C"
   }
 ]
