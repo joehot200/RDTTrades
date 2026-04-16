@@ -1,9 +1,6 @@
 {
-  "generated_at": "2026-04-16T17:58:07.724Z",
+  "generated_at": "2026-04-16T17:58:17.616Z",
   "latest_commit_message": "long AVGO $397.5 Call for 04/20 at 6.75",
-  "latest_processed_trade_id": "063593808439",
-  "processed_trade_ids_this_run": [
-    "419cfd0edefd",
-    "063593808439"
-  ]
+  "latest_processed_trade_id": null,
+  "processed_trade_ids_this_run": []
 }
