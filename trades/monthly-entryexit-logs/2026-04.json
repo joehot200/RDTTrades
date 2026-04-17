@@ -2392,5 +2392,43 @@
     "trade_role": "open",
     "pos_side": "long",
     "contract_key": "OPT|SPY|2026-04-17|710|C"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "59c972334966",
+    "received_at": "2026-04-17T14:13:23.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-04-17T14:25:31+00:00--19d9bca18f9c8eae.json",
+      "archived_path": "inbox/processed/2026-04/2026-04-17T14:25:31+00:00--19d9bca18f9c8eae.json",
+      "raw_id": "19d9bca18f9c8eae",
+      "ingested_at": "2026-04-17T14:25:31.000Z"
+    },
+    "raw": {
+      "text": "#116861718007 SOLD -1 SPY 100 17 APR 26 710 CALL @.96, ACCOUNT *****746SCHW"
+    },
+    "instrument": "option",
+    "paper": false,
+    "action": "SOLD",
+    "symbol": "SPY",
+    "qty": 1,
+    "fill": 0.96,
+    "option": {
+      "expiry": "2026-04-17",
+      "strike": 710,
+      "right": "C"
+    },
+    "computed": {
+      "month": "2026-04",
+      "dte": 0,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "exit long SPY $710 Call for 04/17 at 0.96"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "OPT|SPY|2026-04-17|710|C"
   }
 ]
