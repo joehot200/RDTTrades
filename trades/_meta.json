@@ -1,8 +1,9 @@
 {
-  "generated_at": "2026-04-17T15:26:49.546Z",
-  "latest_commit_message": "exit long AMZN $255 Call for 04/20 at 1.39",
-  "latest_processed_trade_id": "1b25a1744c31",
+  "generated_at": "2026-04-17T16:49:32.286Z",
+  "latest_commit_message": "long AVGO $405 Call for 04/20 at 3.25",
+  "latest_processed_trade_id": "492c908009a3",
   "processed_trade_ids_this_run": [
-    "1b25a1744c31"
+    "fb23c0255677",
+    "492c908009a3"
   ]
 }

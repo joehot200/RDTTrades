@@ -2506,5 +2506,81 @@
     "trade_role": "close",
     "pos_side": "long",
     "contract_key": "OPT|AMZN|2026-04-20|255|C"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "fb23c0255677",
+    "received_at": "2026-04-17T16:38:12.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-04-17T16:49:21+00:00--19d9c4ea4b3c2660.json",
+      "archived_path": "inbox/processed/2026-04/2026-04-17T16:49:21+00:00--19d9c4ea4b3c2660.json",
+      "raw_id": "19d9c4ea4b3c2660",
+      "ingested_at": "2026-04-17T16:49:21.000Z"
+    },
+    "raw": {
+      "text": "#14796673172 PAPERMONEY BOT +1 AVGO 100 (Weeklys) 20 APR 26 405 CALL @3.25, ACCOUNT D-******81"
+    },
+    "instrument": "option",
+    "paper": true,
+    "action": "BOT",
+    "symbol": "AVGO",
+    "qty": 1,
+    "fill": 3.25,
+    "option": {
+      "expiry": "2026-04-20",
+      "strike": 405,
+      "right": "C"
+    },
+    "computed": {
+      "month": "2026-04",
+      "dte": 3,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "long AVGO $405 Call for 04/20 at 3.25"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "OPT|AVGO|2026-04-20|405|C"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "492c908009a3",
+    "received_at": "2026-04-17T16:38:17.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-04-17T16:49:20+00:00--19d9c4eb812bb234.json",
+      "archived_path": "inbox/processed/2026-04/2026-04-17T16:49:20+00:00--19d9c4eb812bb234.json",
+      "raw_id": "19d9c4eb812bb234",
+      "ingested_at": "2026-04-17T16:49:20.000Z"
+    },
+    "raw": {
+      "text": "#14796673326 PAPERMONEY BOT +1 AVGO 100 (Weeklys) 20 APR 26 405 CALL @3.25, ACCOUNT D-******81"
+    },
+    "instrument": "option",
+    "paper": true,
+    "action": "BOT",
+    "symbol": "AVGO",
+    "qty": 1,
+    "fill": 3.25,
+    "option": {
+      "expiry": "2026-04-20",
+      "strike": 405,
+      "right": "C"
+    },
+    "computed": {
+      "month": "2026-04",
+      "dte": 3,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "long AVGO $405 Call for 04/20 at 3.25"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "OPT|AVGO|2026-04-20|405|C"
   }
 ]
