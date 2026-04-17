@@ -1048,5 +1048,40 @@
       "realized": 0,
       "currency": "USD"
     }
+  },
+  {
+    "schema_version": 1,
+    "completed_trade_id": "6b00165fc1ea",
+    "status": "closed",
+    "contract_key": "OPT|AMZN|2026-04-20|255|C",
+    "instrument": "option",
+    "pos_side": "long",
+    "symbol": "AMZN",
+    "option": {
+      "expiry": "2026-04-20",
+      "strike": 255,
+      "right": "C"
+    },
+    "qty_opened": 1,
+    "qty_closed": 1,
+    "entry": {
+      "trade_id": "6b00165fc1ea",
+      "received_at": "2026-04-17T14:45:17.000Z",
+      "fill": 2.34,
+      "rdt": "long AMZN $255 Call for 04/20 at 2.34"
+    },
+    "exits": [
+      {
+        "trade_id": "1b25a1744c31",
+        "received_at": "2026-04-17T15:20:50.000Z",
+        "fill": 1.39,
+        "qty": 1,
+        "rdt": "exit long AMZN $255 Call for 04/20 at 1.39"
+      }
+    ],
+    "pnl": {
+      "realized": -95,
+      "currency": "USD"
+    }
   }
 ]

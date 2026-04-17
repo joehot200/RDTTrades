@@ -2468,5 +2468,43 @@
     "trade_role": "open",
     "pos_side": "long",
     "contract_key": "OPT|AMZN|2026-04-20|255|C"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "1b25a1744c31",
+    "received_at": "2026-04-17T15:20:50.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-04-17T15:26:37+00:00--19d9c07d2accc889.json",
+      "archived_path": "inbox/processed/2026-04/2026-04-17T15:26:37+00:00--19d9c07d2accc889.json",
+      "raw_id": "19d9c07d2accc889",
+      "ingested_at": "2026-04-17T15:26:37.000Z"
+    },
+    "raw": {
+      "text": "#116883449609 SOLD -1 AMZN 100 (Weeklys) 20 APR 26 255 CALL @1.39, ACCOUNT *****746SCHW"
+    },
+    "instrument": "option",
+    "paper": false,
+    "action": "SOLD",
+    "symbol": "AMZN",
+    "qty": 1,
+    "fill": 1.39,
+    "option": {
+      "expiry": "2026-04-20",
+      "strike": 255,
+      "right": "C"
+    },
+    "computed": {
+      "month": "2026-04",
+      "dte": 3,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "exit long AMZN $255 Call for 04/20 at 1.39"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "OPT|AMZN|2026-04-20|255|C"
   }
 ]
