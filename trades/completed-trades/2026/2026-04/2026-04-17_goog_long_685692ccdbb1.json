@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "completed_trade_id": "685692ccdbb1",
+  "status": "closed",
+  "contract_key": "STK|GOOG",
+  "instrument": "stock",
+  "pos_side": "long",
+  "symbol": "GOOG",
+  "option": null,
+  "qty_opened": 1,
+  "qty_closed": 1,
+  "entry": {
+    "trade_id": "685692ccdbb1",
+    "received_at": "2026-04-17T19:38:45.000Z",
+    "fill": 339.47,
+    "rdt": "long GOOG at 339.47"
+  },
+  "exits": [
+    {
+      "trade_id": "62f1dcef5080",
+      "received_at": "2026-04-17T19:55:00.000Z",
+      "fill": 339.48,
+      "qty": 1,
+      "rdt": "exit long GOOG at 339.48"
+    }
+  ],
+  "pnl": {
+    "realized": 0.009999999999990905,
+    "currency": "USD"
+  }
+}

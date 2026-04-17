@@ -2654,5 +2654,39 @@
     "trade_role": "open",
     "pos_side": "long",
     "contract_key": "STK|GOOG"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "62f1dcef5080",
+    "received_at": "2026-04-17T19:55:00.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-04-17T19:57:53+00:00--19d9d02d207e9e2f.json",
+      "archived_path": "inbox/processed/2026-04/2026-04-17T19:57:53+00:00--19d9d02d207e9e2f.json",
+      "raw_id": "19d9d02d207e9e2f",
+      "ingested_at": "2026-04-17T19:57:53.000Z"
+    },
+    "raw": {
+      "text": "#116942644208 SOLD -1 GOOG @339.48, ACCOUNT *****746SCHW"
+    },
+    "instrument": "stock",
+    "paper": false,
+    "action": "SOLD",
+    "symbol": "GOOG",
+    "qty": 1,
+    "fill": 339.48,
+    "option": null,
+    "computed": {
+      "month": "2026-04",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "stock",
+      "text": "exit long GOOG at 339.48"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "STK|GOOG"
   }
 ]
