@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "completed_trade_id": "a1b948b5abcd",
+  "status": "closed",
+  "contract_key": "OPT|AMD|2026-04-24|275|C",
+  "instrument": "option",
+  "pos_side": "long",
+  "symbol": "AMD",
+  "option": {
+    "expiry": "2026-04-24",
+    "strike": 275,
+    "right": "C"
+  },
+  "qty_opened": 1,
+  "qty_closed": 1,
+  "entry": {
+    "trade_id": "a1b948b5abcd",
+    "received_at": "2026-04-16T19:20:19.000Z",
+    "fill": 9.05,
+    "rdt": "long AMD $275 Call for 04/24 at 9.05"
+  },
+  "exits": [
+    {
+      "trade_id": "3b256f080de1",
+      "received_at": "2026-04-17T14:03:54.000Z",
+      "fill": 9.1,
+      "qty": 1,
+      "rdt": "exit long AMD $275 Call for 04/24 at 9.1"
+    }
+  ],
+  "pnl": {
+    "realized": 4.999999999999893,
+    "currency": "USD"
+  }
+}

@@ -2240,5 +2240,43 @@
     "trade_role": "open",
     "pos_side": "long",
     "contract_key": "OPT|AMD|2026-04-24|275|C"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "3b256f080de1",
+    "received_at": "2026-04-17T14:03:54.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-04-17T14:06:43+00:00--19d9bc165e9296f0.json",
+      "archived_path": "inbox/processed/2026-04/2026-04-17T14:06:43+00:00--19d9bc165e9296f0.json",
+      "raw_id": "19d9bc165e9296f0",
+      "ingested_at": "2026-04-17T14:06:43.000Z"
+    },
+    "raw": {
+      "text": "#14796450180 PAPERMONEY SOLD -1 AMD 100 (Weeklys) 24 APR 26 275 CALL @9.10, ACCOUNT D-******81"
+    },
+    "instrument": "option",
+    "paper": true,
+    "action": "SOLD",
+    "symbol": "AMD",
+    "qty": 1,
+    "fill": 9.1,
+    "option": {
+      "expiry": "2026-04-24",
+      "strike": 275,
+      "right": "C"
+    },
+    "computed": {
+      "month": "2026-04",
+      "dte": 7,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "exit long AMD $275 Call for 04/24 at 9.1"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "OPT|AMD|2026-04-24|275|C"
   }
 ]

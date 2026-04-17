@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-04-16T19:25:21.196Z",
-  "latest_commit_message": "long AMD $275 Call for 04/24 at 9.05",
-  "latest_processed_trade_id": "a1b948b5abcd",
+  "generated_at": "2026-04-17T14:07:00.807Z",
+  "latest_commit_message": "exit long AMD $275 Call for 04/24 at 9.1",
+  "latest_processed_trade_id": "3b256f080de1",
   "processed_trade_ids_this_run": [
-    "a1b948b5abcd"
+    "3b256f080de1"
   ]
 }
