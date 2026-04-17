@@ -2243,6 +2243,44 @@
   },
   {
     "schema_version": 1,
+    "trade_id": "a053961879fa",
+    "received_at": "2026-04-17T14:02:04.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-04-17T14:11:06+00:00--19d9bbfb846c3372.json",
+      "archived_path": "inbox/processed/2026-04/2026-04-17T14:11:06+00:00--19d9bbfb846c3372.json",
+      "raw_id": "19d9bbfb846c3372",
+      "ingested_at": "2026-04-17T14:11:06.000Z"
+    },
+    "raw": {
+      "text": "#116855581819 BOT +1 SPY 100 17 APR 26 709 CALL @1.23, ACCOUNT *****746SCHW"
+    },
+    "instrument": "option",
+    "paper": false,
+    "action": "BOT",
+    "symbol": "SPY",
+    "qty": 1,
+    "fill": 1.23,
+    "option": {
+      "expiry": "2026-04-17",
+      "strike": 709,
+      "right": "C"
+    },
+    "computed": {
+      "month": "2026-04",
+      "dte": 0,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "long SPY $709 Call for 04/17 at 1.23"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "OPT|SPY|2026-04-17|709|C"
+  },
+  {
+    "schema_version": 1,
     "trade_id": "3b256f080de1",
     "received_at": "2026-04-17T14:03:54.000Z",
     "source": {
@@ -2278,5 +2316,81 @@
     "trade_role": "close",
     "pos_side": "long",
     "contract_key": "OPT|AMD|2026-04-24|275|C"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "2376580e84f0",
+    "received_at": "2026-04-17T14:04:24.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-04-17T14:11:05+00:00--19d9bc1d8db3e230.json",
+      "archived_path": "inbox/processed/2026-04/2026-04-17T14:11:05+00:00--19d9bc1d8db3e230.json",
+      "raw_id": "19d9bc1d8db3e230",
+      "ingested_at": "2026-04-17T14:11:05.000Z"
+    },
+    "raw": {
+      "text": "#116857904435 SOLD -1 SPY 100 17 APR 26 709 CALL @1.33, ACCOUNT *****746SCHW"
+    },
+    "instrument": "option",
+    "paper": false,
+    "action": "SOLD",
+    "symbol": "SPY",
+    "qty": 1,
+    "fill": 1.33,
+    "option": {
+      "expiry": "2026-04-17",
+      "strike": 709,
+      "right": "C"
+    },
+    "computed": {
+      "month": "2026-04",
+      "dte": 0,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "exit long SPY $709 Call for 04/17 at 1.33"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "OPT|SPY|2026-04-17|709|C"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "a6a82525d5b1",
+    "received_at": "2026-04-17T14:05:55.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-04-17T14:11:04+00:00--19d9bc33b5f44271.json",
+      "archived_path": "inbox/processed/2026-04/2026-04-17T14:11:04+00:00--19d9bc33b5f44271.json",
+      "raw_id": "19d9bc33b5f44271",
+      "ingested_at": "2026-04-17T14:11:04.000Z"
+    },
+    "raw": {
+      "text": "#116857905811 BOT +1 SPY 100 17 APR 26 710 CALL @.96, ACCOUNT *****746SCHW"
+    },
+    "instrument": "option",
+    "paper": false,
+    "action": "BOT",
+    "symbol": "SPY",
+    "qty": 1,
+    "fill": 0.96,
+    "option": {
+      "expiry": "2026-04-17",
+      "strike": 710,
+      "right": "C"
+    },
+    "computed": {
+      "month": "2026-04",
+      "dte": 0,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "long SPY $710 Call for 04/17 at 0.96"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "OPT|SPY|2026-04-17|710|C"
   }
 ]
