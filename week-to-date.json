@@ -1100,5 +1100,43 @@
     "trade_role": "close",
     "pos_side": "long",
     "contract_key": "OPT|SPY|2026-04-17|710|C"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "6b00165fc1ea",
+    "received_at": "2026-04-17T14:45:17.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-04-17T14:54:37+00:00--19d9be74689bfaa7.json",
+      "archived_path": "inbox/processed/2026-04/2026-04-17T14:54:37+00:00--19d9be74689bfaa7.json",
+      "raw_id": "19d9be74689bfaa7",
+      "ingested_at": "2026-04-17T14:54:37.000Z"
+    },
+    "raw": {
+      "text": "#116873153021 BOT +1 AMZN 100 (Weeklys) 20 APR 26 255 CALL @2.34, ACCOUNT *****746SCHW"
+    },
+    "instrument": "option",
+    "paper": false,
+    "action": "BOT",
+    "symbol": "AMZN",
+    "qty": 1,
+    "fill": 2.34,
+    "option": {
+      "expiry": "2026-04-20",
+      "strike": 255,
+      "right": "C"
+    },
+    "computed": {
+      "month": "2026-04",
+      "dte": 3,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "long AMZN $255 Call for 04/20 at 2.34"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "OPT|AMZN|2026-04-20|255|C"
   }
 ]
