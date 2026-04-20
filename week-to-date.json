@@ -188,5 +188,81 @@
     "trade_role": "close",
     "pos_side": "long",
     "contract_key": "OPT|AAPL|2026-04-22|272.5|C"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "65d9e8fef153",
+    "received_at": "2026-04-20T14:36:34.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-04-20T14:47:36+00:00--19dab525d430e18d.json",
+      "archived_path": "inbox/processed/2026-04/2026-04-20T14:47:36+00:00--19dab525d430e18d.json",
+      "raw_id": "19dab525d430e18d",
+      "ingested_at": "2026-04-20T14:47:36.000Z"
+    },
+    "raw": {
+      "text": "#116989264624 BOT +1 NFLX 100 (Weeklys) 1 MAY 26 91 PUT @.58, ACCOUNT *****746SCHW"
+    },
+    "instrument": "option",
+    "paper": false,
+    "action": "BOT",
+    "symbol": "NFLX",
+    "qty": 1,
+    "fill": 0.58,
+    "option": {
+      "expiry": "2026-05-01",
+      "strike": 91,
+      "right": "P"
+    },
+    "computed": {
+      "month": "2026-04",
+      "dte": 11,
+      "wiki_ok": true
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "short NFLX $91 Put for 05/01 at 0.58"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "OPT|NFLX|2026-05-01|91|P"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "f54d182513da",
+    "received_at": "2026-04-20T14:43:50.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-04-20T14:47:35+00:00--19dab5904e35d057.json",
+      "archived_path": "inbox/processed/2026-04/2026-04-20T14:47:35+00:00--19dab5904e35d057.json",
+      "raw_id": "19dab5904e35d057",
+      "ingested_at": "2026-04-20T14:47:35.000Z"
+    },
+    "raw": {
+      "text": "#116991485338 BOT +1 NFLX 100 (Weeklys) 24 APR 26 90 PUT @.14, ACCOUNT *****746SCHW"
+    },
+    "instrument": "option",
+    "paper": false,
+    "action": "BOT",
+    "symbol": "NFLX",
+    "qty": 1,
+    "fill": 0.14,
+    "option": {
+      "expiry": "2026-04-24",
+      "strike": 90,
+      "right": "P"
+    },
+    "computed": {
+      "month": "2026-04",
+      "dte": 4,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "short NFLX $90 Put for 04/24 at 0.14"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "OPT|NFLX|2026-04-24|90|P"
   }
 ]
