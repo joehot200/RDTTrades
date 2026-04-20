@@ -1,9 +1,6 @@
 {
-  "generated_at": "2026-04-20T14:47:50.946Z",
+  "generated_at": "2026-04-20T14:48:02.462Z",
   "latest_commit_message": "short NFLX $90 Put for 04/24 at 0.14",
-  "latest_processed_trade_id": "f54d182513da",
-  "processed_trade_ids_this_run": [
-    "65d9e8fef153",
-    "f54d182513da"
-  ]
+  "latest_processed_trade_id": null,
+  "processed_trade_ids_this_run": []
 }
