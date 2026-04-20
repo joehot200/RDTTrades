@@ -150,5 +150,43 @@
     "trade_role": "open",
     "pos_side": "long",
     "contract_key": "OPT|AAPL|2026-04-22|272.5|C"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "03e798f826a1",
+    "received_at": "2026-04-20T14:12:35.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-04-20T14:17:58+00:00--19dab3c681a0538c.json",
+      "archived_path": "inbox/processed/2026-04/2026-04-20T14:17:58+00:00--19dab3c681a0538c.json",
+      "raw_id": "19dab3c681a0538c",
+      "ingested_at": "2026-04-20T14:17:58.000Z"
+    },
+    "raw": {
+      "text": "#116982578156 SOLD -1 AAPL 100 (Weeklys) 22 APR 26 272.5 CALL @3.15, ACCOUNT *****746SCHW"
+    },
+    "instrument": "option",
+    "paper": false,
+    "action": "SOLD",
+    "symbol": "AAPL",
+    "qty": 1,
+    "fill": 3.15,
+    "option": {
+      "expiry": "2026-04-22",
+      "strike": 272.5,
+      "right": "C"
+    },
+    "computed": {
+      "month": "2026-04",
+      "dte": 2,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "exit long AAPL $272.5 Call for 04/22 at 3.15"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "OPT|AAPL|2026-04-22|272.5|C"
   }
 ]

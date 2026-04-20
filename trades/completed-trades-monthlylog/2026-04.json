@@ -1184,5 +1184,40 @@
       "realized": 2.0000000000000018,
       "currency": "USD"
     }
+  },
+  {
+    "schema_version": 1,
+    "completed_trade_id": "17511b34e1b5",
+    "status": "closed",
+    "contract_key": "OPT|AAPL|2026-04-22|272.5|C",
+    "instrument": "option",
+    "pos_side": "long",
+    "symbol": "AAPL",
+    "option": {
+      "expiry": "2026-04-22",
+      "strike": 272.5,
+      "right": "C"
+    },
+    "qty_opened": 1,
+    "qty_closed": 1,
+    "entry": {
+      "trade_id": "17511b34e1b5",
+      "received_at": "2026-04-20T13:56:53.000Z",
+      "fill": 3.35,
+      "rdt": "long AAPL $272.5 Call for 04/22 at 3.35"
+    },
+    "exits": [
+      {
+        "trade_id": "03e798f826a1",
+        "received_at": "2026-04-20T14:12:35.000Z",
+        "fill": 3.15,
+        "qty": 1,
+        "rdt": "exit long AAPL $272.5 Call for 04/22 at 3.15"
+      }
+    ],
+    "pnl": {
+      "realized": -20.000000000000018,
+      "currency": "USD"
+    }
   }
 ]
