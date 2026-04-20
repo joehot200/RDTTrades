@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "trade_id": "5fe8f7b34b06",
+  "received_at": "2026-04-20T13:55:55.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-04-20T14:05:57+00:00--19dab2d2665854d7.json",
+    "archived_path": "inbox/processed/2026-04/2026-04-20T14:05:57+00:00--19dab2d2665854d7.json",
+    "raw_id": "19dab2d2665854d7",
+    "ingested_at": "2026-04-20T14:05:57.000Z"
+  },
+  "raw": {
+    "text": "#14797062184 PAPERMONEY BOT +1 AAPL 100 (Weeklys) 27 APR 26 272.5 CALL @4.55, ACCOUNT D-******81"
+  },
+  "instrument": "option",
+  "paper": true,
+  "action": "BOT",
+  "symbol": "AAPL",
+  "qty": 1,
+  "fill": 4.55,
+  "option": {
+    "expiry": "2026-04-27",
+    "strike": 272.5,
+    "right": "C"
+  },
+  "computed": {
+    "month": "2026-04",
+    "dte": 7,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "options",
+    "text": "long AAPL $272.5 Call for 04/27 at 4.55"
+  },
+  "trade_role": "open",
+  "pos_side": "long",
+  "contract_key": "OPT|AAPL|2026-04-27|272.5|C"
+}
