@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "trade_id": "17511b34e1b5",
+  "received_at": "2026-04-20T13:56:53.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-04-20T14:01:43+00:00--19dab2e0982abe13.json",
+    "archived_path": "inbox/processed/2026-04/2026-04-20T14:01:43+00:00--19dab2e0982abe13.json",
+    "raw_id": "19dab2e0982abe13",
+    "ingested_at": "2026-04-20T14:01:43.000Z"
+  },
+  "raw": {
+    "text": "#116975751130 BOT +1 AAPL 100 (Weeklys) 22 APR 26 272.5 CALL @3.35, ACCOUNT *****746SCHW"
+  },
+  "instrument": "option",
+  "paper": false,
+  "action": "BOT",
+  "symbol": "AAPL",
+  "qty": 1,
+  "fill": 3.35,
+  "option": {
+    "expiry": "2026-04-22",
+    "strike": 272.5,
+    "right": "C"
+  },
+  "computed": {
+    "month": "2026-04",
+    "dte": 2,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "options",
+    "text": "long AAPL $272.5 Call for 04/22 at 3.35"
+  },
+  "trade_role": "open",
+  "pos_side": "long",
+  "contract_key": "OPT|AAPL|2026-04-22|272.5|C"
+}
