@@ -1,10 +1,6 @@
 {
-  "generated_at": "2026-04-20T14:02:04.403Z",
+  "generated_at": "2026-04-20T14:02:17.303Z",
   "latest_commit_message": "long AAPL $272.5 Call for 04/22 at 3.35",
-  "latest_processed_trade_id": "17511b34e1b5",
-  "processed_trade_ids_this_run": [
-    "78e4cc017199",
-    "bd46f23f05ef",
-    "17511b34e1b5"
-  ]
+  "latest_processed_trade_id": null,
+  "processed_trade_ids_this_run": []
 }
