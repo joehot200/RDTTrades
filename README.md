@@ -12,5 +12,7 @@ week-to-date.json  = current week (Monday to Sunday) trades.
 month-to-date.json = current calendar month's trades (e.g. Jan 1 - Jan 31st).
 Access past months = trades/completed-trades-monthlylog
 
-Note that on 11/03/2026 I did a few test trades (mostly using SPY) using arbritary numbers.
 Bug note: Trades sometimes fail to process if made at the same time due to concurency errors.
+Bug note #2: Zapier free often hits the 100 message (1 per entry, 1 per exit) limit per month; near end-of-month trades may not be recorded.
+
+Note that on 11/03/2026 I did a few test trades (mostly using SPY) using arbritary numbers.
