@@ -1289,5 +1289,40 @@
       "realized": -43.99999999999999,
       "currency": "USD"
     }
+  },
+  {
+    "schema_version": 1,
+    "completed_trade_id": "e4785e700c36",
+    "status": "closed",
+    "contract_key": "OPT|NVDA|2026-04-27|212.5|C",
+    "instrument": "option",
+    "pos_side": "long",
+    "symbol": "NVDA",
+    "option": {
+      "expiry": "2026-04-27",
+      "strike": 212.5,
+      "right": "C"
+    },
+    "qty_opened": 1,
+    "qty_closed": 1,
+    "entry": {
+      "trade_id": "e4785e700c36",
+      "received_at": "2026-04-27T16:41:21.000Z",
+      "fill": 1.49,
+      "rdt": "long NVDA $212.5 Call for 04/27 at 1.49"
+    },
+    "exits": [
+      {
+        "trade_id": "0567aaaae1a0",
+        "received_at": "2026-04-27T17:55:20.000Z",
+        "fill": 2.74,
+        "qty": 1,
+        "rdt": "exit long NVDA $212.5 Call for 04/27 at 2.74"
+      }
+    ],
+    "pnl": {
+      "realized": 125.00000000000003,
+      "currency": "USD"
+    }
   }
 ]
