@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-04-27T14:07:09.823Z",
-  "latest_commit_message": "short ORCL $157.5 Put for 05/01 at 1.51",
-  "latest_processed_trade_id": "b29dd24ecb2a",
+  "generated_at": "2026-04-27T15:33:13.877Z",
+  "latest_commit_message": "long GOOGL $352.5 Call for 04/27 at 0.84",
+  "latest_processed_trade_id": "d6c589e56514",
   "processed_trade_ids_this_run": [
-    "b29dd24ecb2a"
+    "d6c589e56514"
   ]
 }
