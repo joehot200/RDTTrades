@@ -2992,5 +2992,43 @@
     "trade_role": "open",
     "pos_side": "long",
     "contract_key": "OPT|INTC|2026-05-01|84|C"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "9a2a031eb77b",
+    "received_at": "2026-04-27T13:42:22.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-04-27T13:53:08+00:00--19dcf2d45eaff692.json",
+      "archived_path": "inbox/processed/2026-04/2026-04-27T13:53:08+00:00--19dcf2d45eaff692.json",
+      "raw_id": "19dcf2d45eaff692",
+      "ingested_at": "2026-04-27T13:53:08.000Z"
+    },
+    "raw": {
+      "text": "#117538904684 SOLD -1 INTC 100 (Weeklys) 1 MAY 26 84 CALL @3.90, ACCOUNT *****746SCHW"
+    },
+    "instrument": "option",
+    "paper": false,
+    "action": "SOLD",
+    "symbol": "INTC",
+    "qty": 1,
+    "fill": 3.9,
+    "option": {
+      "expiry": "2026-05-01",
+      "strike": 84,
+      "right": "C"
+    },
+    "computed": {
+      "month": "2026-04",
+      "dte": 4,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "exit long INTC $84 Call for 05/01 at 3.9"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "OPT|INTC|2026-05-01|84|C"
   }
 ]
