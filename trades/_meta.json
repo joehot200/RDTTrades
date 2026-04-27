@@ -1,6 +1,8 @@
 {
-  "generated_at": "2026-04-20T14:48:02.462Z",
-  "latest_commit_message": "short NFLX $90 Put for 04/24 at 0.14",
-  "latest_processed_trade_id": null,
-  "processed_trade_ids_this_run": []
+  "generated_at": "2026-04-27T13:37:04.624Z",
+  "latest_commit_message": "long INTC $84 Call for 05/01 at 3.83",
+  "latest_processed_trade_id": "53335909e5c8",
+  "processed_trade_ids_this_run": [
+    "53335909e5c8"
+  ]
 }

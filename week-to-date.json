@@ -1,256 +1,28 @@
 [
   {
     "schema_version": 1,
-    "trade_id": "78e4cc017199",
-    "received_at": "2026-04-20T13:52:33.000Z",
+    "trade_id": "53335909e5c8",
+    "received_at": "2026-04-27T13:35:39.000Z",
     "source": {
       "system": "zapier_github_inbox",
-      "inbox_path": "inbox/2026-04-20T14:01:44+00:00--19dab2a13c431236.json",
-      "archived_path": "inbox/processed/2026-04/2026-04-20T14:01:44+00:00--19dab2a13c431236.json",
-      "raw_id": "19dab2a13c431236",
-      "ingested_at": "2026-04-20T14:01:44.000Z"
+      "inbox_path": "inbox/2026-04-27T13:36:46+00:00--19dcf2721efb24ce.json",
+      "archived_path": "inbox/processed/2026-04/2026-04-27T13:36:46+00:00--19dcf2721efb24ce.json",
+      "raw_id": "19dcf2721efb24ce",
+      "ingested_at": "2026-04-27T13:36:46.000Z"
     },
     "raw": {
-      "text": "#116975747351 BOT +1 AAPL 100 (Weeklys) 22 APR 26 272.5 CALL @2.93, ACCOUNT *****746SCHW"
+      "text": "#117536344213 BOT +1 INTC 100 (Weeklys) 1 MAY 26 84 CALL @3.83, ACCOUNT *****746SCHW"
     },
     "instrument": "option",
     "paper": false,
     "action": "BOT",
-    "symbol": "AAPL",
+    "symbol": "INTC",
     "qty": 1,
-    "fill": 2.93,
-    "option": {
-      "expiry": "2026-04-22",
-      "strike": 272.5,
-      "right": "C"
-    },
-    "computed": {
-      "month": "2026-04",
-      "dte": 2,
-      "wiki_ok": false
-    },
-    "rdt": {
-      "matched": "options",
-      "text": "long AAPL $272.5 Call for 04/22 at 2.93"
-    },
-    "trade_role": "open",
-    "pos_side": "long",
-    "contract_key": "OPT|AAPL|2026-04-22|272.5|C"
-  },
-  {
-    "schema_version": 1,
-    "trade_id": "bd46f23f05ef",
-    "received_at": "2026-04-20T13:52:52.000Z",
-    "source": {
-      "system": "zapier_github_inbox",
-      "inbox_path": "inbox/2026-04-20T14:01:42+00:00--19dab2a5d2b707db.json",
-      "archived_path": "inbox/processed/2026-04/2026-04-20T14:01:42+00:00--19dab2a5d2b707db.json",
-      "raw_id": "19dab2a5d2b707db",
-      "ingested_at": "2026-04-20T14:01:42.000Z"
-    },
-    "raw": {
-      "text": "#116975747646 SOLD -1 AAPL 100 (Weeklys) 22 APR 26 272.5 CALL @2.95, ACCOUNT *****746SCHW"
-    },
-    "instrument": "option",
-    "paper": false,
-    "action": "SOLD",
-    "symbol": "AAPL",
-    "qty": 1,
-    "fill": 2.95,
-    "option": {
-      "expiry": "2026-04-22",
-      "strike": 272.5,
-      "right": "C"
-    },
-    "computed": {
-      "month": "2026-04",
-      "dte": 2,
-      "wiki_ok": false
-    },
-    "rdt": {
-      "matched": "options",
-      "text": "exit long AAPL $272.5 Call for 04/22 at 2.95"
-    },
-    "trade_role": "close",
-    "pos_side": "long",
-    "contract_key": "OPT|AAPL|2026-04-22|272.5|C"
-  },
-  {
-    "schema_version": 1,
-    "trade_id": "5fe8f7b34b06",
-    "received_at": "2026-04-20T13:55:55.000Z",
-    "source": {
-      "system": "zapier_github_inbox",
-      "inbox_path": "inbox/2026-04-20T14:05:57+00:00--19dab2d2665854d7.json",
-      "archived_path": "inbox/processed/2026-04/2026-04-20T14:05:57+00:00--19dab2d2665854d7.json",
-      "raw_id": "19dab2d2665854d7",
-      "ingested_at": "2026-04-20T14:05:57.000Z"
-    },
-    "raw": {
-      "text": "#14797062184 PAPERMONEY BOT +1 AAPL 100 (Weeklys) 27 APR 26 272.5 CALL @4.55, ACCOUNT D-******81"
-    },
-    "instrument": "option",
-    "paper": true,
-    "action": "BOT",
-    "symbol": "AAPL",
-    "qty": 1,
-    "fill": 4.55,
-    "option": {
-      "expiry": "2026-04-27",
-      "strike": 272.5,
-      "right": "C"
-    },
-    "computed": {
-      "month": "2026-04",
-      "dte": 7,
-      "wiki_ok": false
-    },
-    "rdt": {
-      "matched": "options",
-      "text": "long AAPL $272.5 Call for 04/27 at 4.55"
-    },
-    "trade_role": "open",
-    "pos_side": "long",
-    "contract_key": "OPT|AAPL|2026-04-27|272.5|C"
-  },
-  {
-    "schema_version": 1,
-    "trade_id": "17511b34e1b5",
-    "received_at": "2026-04-20T13:56:53.000Z",
-    "source": {
-      "system": "zapier_github_inbox",
-      "inbox_path": "inbox/2026-04-20T14:01:43+00:00--19dab2e0982abe13.json",
-      "archived_path": "inbox/processed/2026-04/2026-04-20T14:01:43+00:00--19dab2e0982abe13.json",
-      "raw_id": "19dab2e0982abe13",
-      "ingested_at": "2026-04-20T14:01:43.000Z"
-    },
-    "raw": {
-      "text": "#116975751130 BOT +1 AAPL 100 (Weeklys) 22 APR 26 272.5 CALL @3.35, ACCOUNT *****746SCHW"
-    },
-    "instrument": "option",
-    "paper": false,
-    "action": "BOT",
-    "symbol": "AAPL",
-    "qty": 1,
-    "fill": 3.35,
-    "option": {
-      "expiry": "2026-04-22",
-      "strike": 272.5,
-      "right": "C"
-    },
-    "computed": {
-      "month": "2026-04",
-      "dte": 2,
-      "wiki_ok": false
-    },
-    "rdt": {
-      "matched": "options",
-      "text": "long AAPL $272.5 Call for 04/22 at 3.35"
-    },
-    "trade_role": "open",
-    "pos_side": "long",
-    "contract_key": "OPT|AAPL|2026-04-22|272.5|C"
-  },
-  {
-    "schema_version": 1,
-    "trade_id": "03e798f826a1",
-    "received_at": "2026-04-20T14:12:35.000Z",
-    "source": {
-      "system": "zapier_github_inbox",
-      "inbox_path": "inbox/2026-04-20T14:17:58+00:00--19dab3c681a0538c.json",
-      "archived_path": "inbox/processed/2026-04/2026-04-20T14:17:58+00:00--19dab3c681a0538c.json",
-      "raw_id": "19dab3c681a0538c",
-      "ingested_at": "2026-04-20T14:17:58.000Z"
-    },
-    "raw": {
-      "text": "#116982578156 SOLD -1 AAPL 100 (Weeklys) 22 APR 26 272.5 CALL @3.15, ACCOUNT *****746SCHW"
-    },
-    "instrument": "option",
-    "paper": false,
-    "action": "SOLD",
-    "symbol": "AAPL",
-    "qty": 1,
-    "fill": 3.15,
-    "option": {
-      "expiry": "2026-04-22",
-      "strike": 272.5,
-      "right": "C"
-    },
-    "computed": {
-      "month": "2026-04",
-      "dte": 2,
-      "wiki_ok": false
-    },
-    "rdt": {
-      "matched": "options",
-      "text": "exit long AAPL $272.5 Call for 04/22 at 3.15"
-    },
-    "trade_role": "close",
-    "pos_side": "long",
-    "contract_key": "OPT|AAPL|2026-04-22|272.5|C"
-  },
-  {
-    "schema_version": 1,
-    "trade_id": "65d9e8fef153",
-    "received_at": "2026-04-20T14:36:34.000Z",
-    "source": {
-      "system": "zapier_github_inbox",
-      "inbox_path": "inbox/2026-04-20T14:47:36+00:00--19dab525d430e18d.json",
-      "archived_path": "inbox/processed/2026-04/2026-04-20T14:47:36+00:00--19dab525d430e18d.json",
-      "raw_id": "19dab525d430e18d",
-      "ingested_at": "2026-04-20T14:47:36.000Z"
-    },
-    "raw": {
-      "text": "#116989264624 BOT +1 NFLX 100 (Weeklys) 1 MAY 26 91 PUT @.58, ACCOUNT *****746SCHW"
-    },
-    "instrument": "option",
-    "paper": false,
-    "action": "BOT",
-    "symbol": "NFLX",
-    "qty": 1,
-    "fill": 0.58,
+    "fill": 3.83,
     "option": {
       "expiry": "2026-05-01",
-      "strike": 91,
-      "right": "P"
-    },
-    "computed": {
-      "month": "2026-04",
-      "dte": 11,
-      "wiki_ok": true
-    },
-    "rdt": {
-      "matched": "options",
-      "text": "short NFLX $91 Put for 05/01 at 0.58"
-    },
-    "trade_role": "open",
-    "pos_side": "long",
-    "contract_key": "OPT|NFLX|2026-05-01|91|P"
-  },
-  {
-    "schema_version": 1,
-    "trade_id": "f54d182513da",
-    "received_at": "2026-04-20T14:43:50.000Z",
-    "source": {
-      "system": "zapier_github_inbox",
-      "inbox_path": "inbox/2026-04-20T14:47:35+00:00--19dab5904e35d057.json",
-      "archived_path": "inbox/processed/2026-04/2026-04-20T14:47:35+00:00--19dab5904e35d057.json",
-      "raw_id": "19dab5904e35d057",
-      "ingested_at": "2026-04-20T14:47:35.000Z"
-    },
-    "raw": {
-      "text": "#116991485338 BOT +1 NFLX 100 (Weeklys) 24 APR 26 90 PUT @.14, ACCOUNT *****746SCHW"
-    },
-    "instrument": "option",
-    "paper": false,
-    "action": "BOT",
-    "symbol": "NFLX",
-    "qty": 1,
-    "fill": 0.14,
-    "option": {
-      "expiry": "2026-04-24",
-      "strike": 90,
-      "right": "P"
+      "strike": 84,
+      "right": "C"
     },
     "computed": {
       "month": "2026-04",
@@ -259,10 +31,10 @@
     },
     "rdt": {
       "matched": "options",
-      "text": "short NFLX $90 Put for 04/24 at 0.14"
+      "text": "long INTC $84 Call for 05/01 at 3.83"
     },
     "trade_role": "open",
     "pos_side": "long",
-    "contract_key": "OPT|NFLX|2026-04-24|90|P"
+    "contract_key": "OPT|INTC|2026-05-01|84|C"
   }
 ]
