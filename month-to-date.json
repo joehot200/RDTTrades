@@ -3220,5 +3220,43 @@
     "trade_role": "close",
     "pos_side": "long",
     "contract_key": "OPT|NVDA|2026-04-27|212.5|C"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "385b723a661d",
+    "received_at": "2026-04-27T19:20:46.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-04-27T19:20:52+00:00--19dd063161c6dc5e.json",
+      "archived_path": "inbox/processed/2026-04/2026-04-27T19:20:52+00:00--19dd063161c6dc5e.json",
+      "raw_id": "19dd063161c6dc5e",
+      "ingested_at": "2026-04-27T19:20:52.000Z"
+    },
+    "raw": {
+      "text": "#117625398187 BOT +1 NFLX 100 (Weeklys) 8 MAY 26 89 PUT @.95, ACCOUNT *****746SCHW"
+    },
+    "instrument": "option",
+    "paper": false,
+    "action": "BOT",
+    "symbol": "NFLX",
+    "qty": 1,
+    "fill": 0.95,
+    "option": {
+      "expiry": "2026-05-08",
+      "strike": 89,
+      "right": "P"
+    },
+    "computed": {
+      "month": "2026-04",
+      "dte": 11,
+      "wiki_ok": true
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "short NFLX $89 Put for 05/08 at 0.95"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "OPT|NFLX|2026-05-08|89|P"
   }
 ]
