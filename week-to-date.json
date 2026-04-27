@@ -74,5 +74,43 @@
     "trade_role": "close",
     "pos_side": "long",
     "contract_key": "OPT|INTC|2026-05-01|84|C"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "b29dd24ecb2a",
+    "received_at": "2026-04-27T14:02:15.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-04-27T14:06:54+00:00--19dcf3f7b07edf5c.json",
+      "archived_path": "inbox/processed/2026-04/2026-04-27T14:06:54+00:00--19dcf3f7b07edf5c.json",
+      "raw_id": "19dcf3f7b07edf5c",
+      "ingested_at": "2026-04-27T14:06:54.000Z"
+    },
+    "raw": {
+      "text": "#117547589740 BOT +1 ORCL 100 (Weeklys) 1 MAY 26 157.5 PUT @1.51, ACCOUNT *****746SCHW"
+    },
+    "instrument": "option",
+    "paper": false,
+    "action": "BOT",
+    "symbol": "ORCL",
+    "qty": 1,
+    "fill": 1.51,
+    "option": {
+      "expiry": "2026-05-01",
+      "strike": 157.5,
+      "right": "P"
+    },
+    "computed": {
+      "month": "2026-04",
+      "dte": 4,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "short ORCL $157.5 Put for 05/01 at 1.51"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "OPT|ORCL|2026-05-01|157.5|P"
   }
 ]

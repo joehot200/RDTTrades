@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-04-27T13:53:21.607Z",
-  "latest_commit_message": "exit long INTC $84 Call for 05/01 at 3.9",
-  "latest_processed_trade_id": "9a2a031eb77b",
+  "generated_at": "2026-04-27T14:07:09.823Z",
+  "latest_commit_message": "short ORCL $157.5 Put for 05/01 at 1.51",
+  "latest_processed_trade_id": "b29dd24ecb2a",
   "processed_trade_ids_this_run": [
-    "9a2a031eb77b"
+    "b29dd24ecb2a"
   ]
 }
