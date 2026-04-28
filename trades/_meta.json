@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-04-27T19:21:04.231Z",
-  "latest_commit_message": "short NFLX $89 Put for 05/08 at 0.95",
-  "latest_processed_trade_id": "385b723a661d",
+  "generated_at": "2026-04-28T13:38:56.871Z",
+  "latest_commit_message": "exit short ORCL $157.5 Put for 05/01 at 2.3",
+  "latest_processed_trade_id": "93ed4fc26b7b",
   "processed_trade_ids_this_run": [
-    "385b723a661d"
+    "93ed4fc26b7b"
   ]
 }
