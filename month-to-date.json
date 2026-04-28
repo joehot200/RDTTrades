@@ -3486,5 +3486,43 @@
     "trade_role": "open",
     "pos_side": "long",
     "contract_key": "OPT|NOW|2026-05-01|81.5|P"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "9f691638f660",
+    "received_at": "2026-04-28T19:04:27.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-04-28T19:17:20+00:00--19dd57a803b83b5f.json",
+      "archived_path": "inbox/processed/2026-04/2026-04-28T19:17:20+00:00--19dd57a803b83b5f.json",
+      "raw_id": "19dd57a803b83b5f",
+      "ingested_at": "2026-04-28T19:17:20.000Z"
+    },
+    "raw": {
+      "text": "#117738287926 BOT +1 NVDA 100 (Weeklys) 4 MAY 26 220 CALL @2.54, ACCOUNT *****746SCHW"
+    },
+    "instrument": "option",
+    "paper": false,
+    "action": "BOT",
+    "symbol": "NVDA",
+    "qty": 1,
+    "fill": 2.54,
+    "option": {
+      "expiry": "2026-05-04",
+      "strike": 220,
+      "right": "C"
+    },
+    "computed": {
+      "month": "2026-04",
+      "dte": 6,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "long NVDA $220 Call for 05/04 at 2.54"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "OPT|NVDA|2026-05-04|220|C"
   }
 ]
