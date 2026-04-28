@@ -1359,5 +1359,40 @@
       "realized": 125.00000000000003,
       "currency": "USD"
     }
+  },
+  {
+    "schema_version": 1,
+    "completed_trade_id": "385b723a661d",
+    "status": "closed",
+    "contract_key": "OPT|NFLX|2026-05-08|89|P",
+    "instrument": "option",
+    "pos_side": "long",
+    "symbol": "NFLX",
+    "option": {
+      "expiry": "2026-05-08",
+      "strike": 89,
+      "right": "P"
+    },
+    "qty_opened": 1,
+    "qty_closed": 1,
+    "entry": {
+      "trade_id": "385b723a661d",
+      "received_at": "2026-04-27T19:20:46.000Z",
+      "fill": 0.95,
+      "rdt": "short NFLX $89 Put for 05/08 at 0.95"
+    },
+    "exits": [
+      {
+        "trade_id": "f19c3a3da33f",
+        "received_at": "2026-04-28T14:30:52.000Z",
+        "fill": 1.1,
+        "qty": 1,
+        "rdt": "exit short NFLX $89 Put for 05/08 at 1.1"
+      }
+    ],
+    "pnl": {
+      "realized": 15.000000000000014,
+      "currency": "USD"
+    }
   }
 ]

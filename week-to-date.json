@@ -340,5 +340,81 @@
     "trade_role": "close",
     "pos_side": "long",
     "contract_key": "OPT|ORCL|2026-05-01|157.5|P"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "f19c3a3da33f",
+    "received_at": "2026-04-28T14:30:52.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-04-28T14:34:31+00:00--19dd48009c7b690a.json",
+      "archived_path": "inbox/processed/2026-04/2026-04-28T14:34:31+00:00--19dd48009c7b690a.json",
+      "raw_id": "19dd48009c7b690a",
+      "ingested_at": "2026-04-28T14:34:31.000Z"
+    },
+    "raw": {
+      "text": "#117675499573 SOLD -1 NFLX 100 (Weeklys) 8 MAY 26 89 PUT @1.10, ACCOUNT *****746SCHW"
+    },
+    "instrument": "option",
+    "paper": false,
+    "action": "SOLD",
+    "symbol": "NFLX",
+    "qty": 1,
+    "fill": 1.1,
+    "option": {
+      "expiry": "2026-05-08",
+      "strike": 89,
+      "right": "P"
+    },
+    "computed": {
+      "month": "2026-04",
+      "dte": 10,
+      "wiki_ok": true
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "exit short NFLX $89 Put for 05/08 at 1.1"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "OPT|NFLX|2026-05-08|89|P"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "d9389e6f9755",
+    "received_at": "2026-04-28T14:31:54.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-04-28T14:34:30+00:00--19dd480f9658f4af.json",
+      "archived_path": "inbox/processed/2026-04/2026-04-28T14:34:30+00:00--19dd480f9658f4af.json",
+      "raw_id": "19dd480f9658f4af",
+      "ingested_at": "2026-04-28T14:34:30.000Z"
+    },
+    "raw": {
+      "text": "#117675500057 BOT +1 GOOG 100 15 MAY 26 380 CALL @3.40, ACCOUNT *****746SCHW"
+    },
+    "instrument": "option",
+    "paper": false,
+    "action": "BOT",
+    "symbol": "GOOG",
+    "qty": 1,
+    "fill": 3.4,
+    "option": {
+      "expiry": "2026-05-15",
+      "strike": 380,
+      "right": "C"
+    },
+    "computed": {
+      "month": "2026-04",
+      "dte": 17,
+      "wiki_ok": true
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "long GOOG $380 Call for 05/15 at 3.4"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "OPT|GOOG|2026-05-15|380|C"
   }
 ]
