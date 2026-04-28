@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "completed_trade_id": "9a2b40b905bc",
+  "status": "closed",
+  "contract_key": "OPT|GOOG|2026-05-01|322.5|P",
+  "instrument": "option",
+  "pos_side": "long",
+  "symbol": "GOOG",
+  "option": {
+    "expiry": "2026-05-01",
+    "strike": 322.5,
+    "right": "P"
+  },
+  "qty_opened": 1,
+  "qty_closed": 1,
+  "entry": {
+    "trade_id": "9a2b40b905bc",
+    "received_at": "2026-04-28T16:03:17.000Z",
+    "fill": 1.8,
+    "rdt": "short GOOG $322.5 Put for 05/01 at 1.8"
+  },
+  "exits": [
+    {
+      "trade_id": "f48fff434fd8",
+      "received_at": "2026-04-28T16:18:58.000Z",
+      "fill": 1.72,
+      "qty": 1,
+      "rdt": "exit short GOOG $322.5 Put for 05/01 at 1.72"
+    }
+  ],
+  "pnl": {
+    "realized": -8.000000000000007,
+    "currency": "USD"
+  }
+}

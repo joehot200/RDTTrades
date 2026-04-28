@@ -1,8 +1,9 @@
 {
-  "generated_at": "2026-04-28T16:14:20.976Z",
-  "latest_commit_message": "short GOOG $322.5 Put for 05/01 at 1.8",
-  "latest_processed_trade_id": "9a2b40b905bc",
+  "generated_at": "2026-04-28T16:36:36.278Z",
+  "latest_commit_message": "short NOW $81.5 Put for 05/01 at 0.18",
+  "latest_processed_trade_id": "5c39b450d5b2",
   "processed_trade_ids_this_run": [
-    "9a2b40b905bc"
+    "f48fff434fd8",
+    "5c39b450d5b2"
   ]
 }

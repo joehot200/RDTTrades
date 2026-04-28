@@ -3410,5 +3410,81 @@
     "trade_role": "open",
     "pos_side": "long",
     "contract_key": "OPT|GOOG|2026-05-01|322.5|P"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "f48fff434fd8",
+    "received_at": "2026-04-28T16:18:58.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-04-28T16:36:05+00:00--19dd4e2fc3769883.json",
+      "archived_path": "inbox/processed/2026-04/2026-04-28T16:36:05+00:00--19dd4e2fc3769883.json",
+      "raw_id": "19dd4e2fc3769883",
+      "ingested_at": "2026-04-28T16:36:05.000Z"
+    },
+    "raw": {
+      "text": "#117705254544 SOLD -1 GOOG 100 (Weeklys) 1 MAY 26 322.5 PUT @1.72, ACCOUNT *****746SCHW"
+    },
+    "instrument": "option",
+    "paper": false,
+    "action": "SOLD",
+    "symbol": "GOOG",
+    "qty": 1,
+    "fill": 1.72,
+    "option": {
+      "expiry": "2026-05-01",
+      "strike": 322.5,
+      "right": "P"
+    },
+    "computed": {
+      "month": "2026-04",
+      "dte": 3,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "exit short GOOG $322.5 Put for 05/01 at 1.72"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "OPT|GOOG|2026-05-01|322.5|P"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "5c39b450d5b2",
+    "received_at": "2026-04-28T16:35:50.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-04-28T16:36:04+00:00--19dd4f2733801f86.json",
+      "archived_path": "inbox/processed/2026-04/2026-04-28T16:36:04+00:00--19dd4f2733801f86.json",
+      "raw_id": "19dd4f2733801f86",
+      "ingested_at": "2026-04-28T16:36:04.000Z"
+    },
+    "raw": {
+      "text": "#117708471104 BOT +1 NOW 100 (Weeklys) 1 MAY 26 81.5 PUT @.18, ACCOUNT *****746SCHW"
+    },
+    "instrument": "option",
+    "paper": false,
+    "action": "BOT",
+    "symbol": "NOW",
+    "qty": 1,
+    "fill": 0.18,
+    "option": {
+      "expiry": "2026-05-01",
+      "strike": 81.5,
+      "right": "P"
+    },
+    "computed": {
+      "month": "2026-04",
+      "dte": 3,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "short NOW $81.5 Put for 05/01 at 0.18"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "OPT|NOW|2026-05-01|81.5|P"
   }
 ]
