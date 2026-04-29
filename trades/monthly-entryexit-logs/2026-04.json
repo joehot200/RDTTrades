@@ -3524,5 +3524,43 @@
     "trade_role": "open",
     "pos_side": "long",
     "contract_key": "OPT|NVDA|2026-05-04|220|C"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "f702856b624c",
+    "received_at": "2026-04-29T14:10:24.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-04-29T14:16:13+00:00--19dd993a95c4e00c.json",
+      "archived_path": "inbox/processed/2026-04/2026-04-29T14:16:13+00:00--19dd993a95c4e00c.json",
+      "raw_id": "19dd993a95c4e00c",
+      "ingested_at": "2026-04-29T14:16:13.000Z"
+    },
+    "raw": {
+      "text": "#117784383212 BOT +1 PLTR 100 (Weeklys) 1 MAY 26 133 PUT @2.07, ACCOUNT *****746SCHW"
+    },
+    "instrument": "option",
+    "paper": false,
+    "action": "BOT",
+    "symbol": "PLTR",
+    "qty": 1,
+    "fill": 2.07,
+    "option": {
+      "expiry": "2026-05-01",
+      "strike": 133,
+      "right": "P"
+    },
+    "computed": {
+      "month": "2026-04",
+      "dte": 2,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "short PLTR $133 Put for 05/01 at 2.07"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "OPT|PLTR|2026-05-01|133|P"
   }
 ]
