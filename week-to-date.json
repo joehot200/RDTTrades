@@ -606,5 +606,81 @@
     "trade_role": "open",
     "pos_side": "long",
     "contract_key": "OPT|PLTR|2026-05-01|133|P"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "1fdd39ad2b2a",
+    "received_at": "2026-04-29T14:47:42.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-04-29T15:03:35+00:00--19dd9b5d19f6e07d.json",
+      "archived_path": "inbox/processed/2026-04/2026-04-29T15:03:35+00:00--19dd9b5d19f6e07d.json",
+      "raw_id": "19dd9b5d19f6e07d",
+      "ingested_at": "2026-04-29T15:03:35.000Z"
+    },
+    "raw": {
+      "text": "#117795813582 SOLD -1 GOOG 100 15 MAY 26 380 CALL @3.56, ACCOUNT *****746SCHW"
+    },
+    "instrument": "option",
+    "paper": false,
+    "action": "SOLD",
+    "symbol": "GOOG",
+    "qty": 1,
+    "fill": 3.56,
+    "option": {
+      "expiry": "2026-05-15",
+      "strike": 380,
+      "right": "C"
+    },
+    "computed": {
+      "month": "2026-04",
+      "dte": 16,
+      "wiki_ok": true
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "exit long GOOG $380 Call for 05/15 at 3.56"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "OPT|GOOG|2026-05-15|380|C"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "4c85f30dee49",
+    "received_at": "2026-04-29T15:00:44.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-04-29T15:03:34+00:00--19dd9c1bc8ad8b20.json",
+      "archived_path": "inbox/processed/2026-04/2026-04-29T15:03:34+00:00--19dd9c1bc8ad8b20.json",
+      "raw_id": "19dd9c1bc8ad8b20",
+      "ingested_at": "2026-04-29T15:03:34.000Z"
+    },
+    "raw": {
+      "text": "#117799403852 SOLD -1 PLTR 100 (Weeklys) 1 MAY 26 133 PUT @1.36, ACCOUNT *****746SCHW"
+    },
+    "instrument": "option",
+    "paper": false,
+    "action": "SOLD",
+    "symbol": "PLTR",
+    "qty": 1,
+    "fill": 1.36,
+    "option": {
+      "expiry": "2026-05-01",
+      "strike": 133,
+      "right": "P"
+    },
+    "computed": {
+      "month": "2026-04",
+      "dte": 2,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "exit short PLTR $133 Put for 05/01 at 1.36"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "OPT|PLTR|2026-05-01|133|P"
   }
 ]

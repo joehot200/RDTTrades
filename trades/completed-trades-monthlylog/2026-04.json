@@ -1397,6 +1397,41 @@
   },
   {
     "schema_version": 1,
+    "completed_trade_id": "d9389e6f9755",
+    "status": "closed",
+    "contract_key": "OPT|GOOG|2026-05-15|380|C",
+    "instrument": "option",
+    "pos_side": "long",
+    "symbol": "GOOG",
+    "option": {
+      "expiry": "2026-05-15",
+      "strike": 380,
+      "right": "C"
+    },
+    "qty_opened": 1,
+    "qty_closed": 1,
+    "entry": {
+      "trade_id": "d9389e6f9755",
+      "received_at": "2026-04-28T14:31:54.000Z",
+      "fill": 3.4,
+      "rdt": "long GOOG $380 Call for 05/15 at 3.4"
+    },
+    "exits": [
+      {
+        "trade_id": "1fdd39ad2b2a",
+        "received_at": "2026-04-29T14:47:42.000Z",
+        "fill": 3.56,
+        "qty": 1,
+        "rdt": "exit long GOOG $380 Call for 05/15 at 3.56"
+      }
+    ],
+    "pnl": {
+      "realized": 16.000000000000014,
+      "currency": "USD"
+    }
+  },
+  {
+    "schema_version": 1,
     "completed_trade_id": "9a2b40b905bc",
     "status": "closed",
     "contract_key": "OPT|GOOG|2026-05-01|322.5|P",
@@ -1427,6 +1462,41 @@
     ],
     "pnl": {
       "realized": -8.000000000000007,
+      "currency": "USD"
+    }
+  },
+  {
+    "schema_version": 1,
+    "completed_trade_id": "f702856b624c",
+    "status": "closed",
+    "contract_key": "OPT|PLTR|2026-05-01|133|P",
+    "instrument": "option",
+    "pos_side": "long",
+    "symbol": "PLTR",
+    "option": {
+      "expiry": "2026-05-01",
+      "strike": 133,
+      "right": "P"
+    },
+    "qty_opened": 1,
+    "qty_closed": 1,
+    "entry": {
+      "trade_id": "f702856b624c",
+      "received_at": "2026-04-29T14:10:24.000Z",
+      "fill": 2.07,
+      "rdt": "short PLTR $133 Put for 05/01 at 2.07"
+    },
+    "exits": [
+      {
+        "trade_id": "4c85f30dee49",
+        "received_at": "2026-04-29T15:00:44.000Z",
+        "fill": 1.36,
+        "qty": 1,
+        "rdt": "exit short PLTR $133 Put for 05/01 at 1.36"
+      }
+    ],
+    "pnl": {
+      "realized": -70.99999999999997,
       "currency": "USD"
     }
   }

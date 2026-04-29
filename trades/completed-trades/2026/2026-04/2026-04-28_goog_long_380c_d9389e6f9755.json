@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "completed_trade_id": "d9389e6f9755",
+  "status": "closed",
+  "contract_key": "OPT|GOOG|2026-05-15|380|C",
+  "instrument": "option",
+  "pos_side": "long",
+  "symbol": "GOOG",
+  "option": {
+    "expiry": "2026-05-15",
+    "strike": 380,
+    "right": "C"
+  },
+  "qty_opened": 1,
+  "qty_closed": 1,
+  "entry": {
+    "trade_id": "d9389e6f9755",
+    "received_at": "2026-04-28T14:31:54.000Z",
+    "fill": 3.4,
+    "rdt": "long GOOG $380 Call for 05/15 at 3.4"
+  },
+  "exits": [
+    {
+      "trade_id": "1fdd39ad2b2a",
+      "received_at": "2026-04-29T14:47:42.000Z",
+      "fill": 3.56,
+      "qty": 1,
+      "rdt": "exit long GOOG $380 Call for 05/15 at 3.56"
+    }
+  ],
+  "pnl": {
+    "realized": 16.000000000000014,
+    "currency": "USD"
+  }
+}
