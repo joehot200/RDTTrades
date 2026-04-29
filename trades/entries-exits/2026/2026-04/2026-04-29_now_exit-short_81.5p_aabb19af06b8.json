@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "trade_id": "aabb19af06b8",
+  "received_at": "2026-04-29T17:31:09.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-04-29T17:32:24+00:00--19dda4b7251a1b11.json",
+    "archived_path": "inbox/processed/2026-04/2026-04-29T17:32:24+00:00--19dda4b7251a1b11.json",
+    "raw_id": "19dda4b7251a1b11",
+    "ingested_at": "2026-04-29T17:32:24.000Z"
+  },
+  "raw": {
+    "text": "#117831758772 SOLD -1 NOW 100 (Weeklys) 1 MAY 26 81.5 PUT @.34, ACCOUNT *****746SCHW"
+  },
+  "instrument": "option",
+  "paper": false,
+  "action": "SOLD",
+  "symbol": "NOW",
+  "qty": 1,
+  "fill": 0.34,
+  "option": {
+    "expiry": "2026-05-01",
+    "strike": 81.5,
+    "right": "P"
+  },
+  "computed": {
+    "month": "2026-04",
+    "dte": 2,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "options",
+    "text": "exit short NOW $81.5 Put for 05/01 at 0.34"
+  },
+  "trade_role": "close",
+  "pos_side": "long",
+  "contract_key": "OPT|NOW|2026-05-01|81.5|P"
+}

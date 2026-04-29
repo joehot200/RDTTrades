@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "completed_trade_id": "5c39b450d5b2",
+  "status": "closed",
+  "contract_key": "OPT|NOW|2026-05-01|81.5|P",
+  "instrument": "option",
+  "pos_side": "long",
+  "symbol": "NOW",
+  "option": {
+    "expiry": "2026-05-01",
+    "strike": 81.5,
+    "right": "P"
+  },
+  "qty_opened": 1,
+  "qty_closed": 1,
+  "entry": {
+    "trade_id": "5c39b450d5b2",
+    "received_at": "2026-04-28T16:35:50.000Z",
+    "fill": 0.18,
+    "rdt": "short NOW $81.5 Put for 05/01 at 0.18"
+  },
+  "exits": [
+    {
+      "trade_id": "aabb19af06b8",
+      "received_at": "2026-04-29T17:31:09.000Z",
+      "fill": 0.34,
+      "qty": 1,
+      "rdt": "exit short NOW $81.5 Put for 05/01 at 0.34"
+    }
+  ],
+  "pnl": {
+    "realized": 16.000000000000004,
+    "currency": "USD"
+  }
+}
