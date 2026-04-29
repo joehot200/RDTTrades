@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "trade_id": "990cf05f1460",
+  "received_at": "2026-04-29T17:42:12.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-04-29T17:46:26+00:00--19dda558c8015ad8.json",
+    "archived_path": "inbox/processed/2026-04/2026-04-29T17:46:26+00:00--19dda558c8015ad8.json",
+    "raw_id": "19dda558c8015ad8",
+    "ingested_at": "2026-04-29T17:46:26.000Z"
+  },
+  "raw": {
+    "text": "#117831760321 BOT +1 HOOD 100 (Weeklys) 8 MAY 26 70 PUT @2.74, ACCOUNT *****746SCHW"
+  },
+  "instrument": "option",
+  "paper": false,
+  "action": "BOT",
+  "symbol": "HOOD",
+  "qty": 1,
+  "fill": 2.74,
+  "option": {
+    "expiry": "2026-05-08",
+    "strike": 70,
+    "right": "P"
+  },
+  "computed": {
+    "month": "2026-04",
+    "dte": 9,
+    "wiki_ok": true
+  },
+  "rdt": {
+    "matched": "options",
+    "text": "short HOOD $70 Put for 05/08 at 2.74"
+  },
+  "trade_role": "open",
+  "pos_side": "long",
+  "contract_key": "OPT|HOOD|2026-05-08|70|P"
+}
