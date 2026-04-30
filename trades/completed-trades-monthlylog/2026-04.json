@@ -1572,6 +1572,41 @@
   },
   {
     "schema_version": 1,
+    "completed_trade_id": "28d3ff059a89",
+    "status": "closed",
+    "contract_key": "OPT|PLTR|2026-05-01|137|P",
+    "instrument": "option",
+    "pos_side": "long",
+    "symbol": "PLTR",
+    "option": {
+      "expiry": "2026-05-01",
+      "strike": 137,
+      "right": "P"
+    },
+    "qty_opened": 1,
+    "qty_closed": 1,
+    "entry": {
+      "trade_id": "28d3ff059a89",
+      "received_at": "2026-04-30T13:55:36.000Z",
+      "fill": 2.1,
+      "rdt": "short PLTR $137 Put for 05/01 at 2.1"
+    },
+    "exits": [
+      {
+        "trade_id": "fa6ef143daaa",
+        "received_at": "2026-04-30T14:45:19.000Z",
+        "fill": 0.91,
+        "qty": 1,
+        "rdt": "exit short PLTR $137 Put for 05/01 at 0.91"
+      }
+    ],
+    "pnl": {
+      "realized": -119,
+      "currency": "USD"
+    }
+  },
+  {
+    "schema_version": 1,
     "completed_trade_id": "961488663689",
     "status": "closed",
     "contract_key": "OPT|NVDA|2026-05-01|197.5|P",

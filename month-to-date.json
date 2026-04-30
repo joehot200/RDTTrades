@@ -3904,5 +3904,43 @@
     "trade_role": "open",
     "pos_side": "long",
     "contract_key": "OPT|ORCL|2026-05-01|150|P"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "fa6ef143daaa",
+    "received_at": "2026-04-30T14:45:19.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-04-30T15:00:26+00:00--19dded9fb6c27c4e.json",
+      "archived_path": "inbox/processed/2026-04/2026-04-30T15:00:26+00:00--19dded9fb6c27c4e.json",
+      "raw_id": "19dded9fb6c27c4e",
+      "ingested_at": "2026-04-30T15:00:26.000Z"
+    },
+    "raw": {
+      "text": "#117915995061 SOLD -1 PLTR 100 (Weeklys) 1 MAY 26 137 PUT @.91, ACCOUNT *****746SCHW"
+    },
+    "instrument": "option",
+    "paper": false,
+    "action": "SOLD",
+    "symbol": "PLTR",
+    "qty": 1,
+    "fill": 0.91,
+    "option": {
+      "expiry": "2026-05-01",
+      "strike": 137,
+      "right": "P"
+    },
+    "computed": {
+      "month": "2026-04",
+      "dte": 1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "exit short PLTR $137 Put for 05/01 at 0.91"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "OPT|PLTR|2026-05-01|137|P"
   }
 ]
