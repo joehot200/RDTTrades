@@ -3866,5 +3866,43 @@
     "trade_role": "close",
     "pos_side": "long",
     "contract_key": "OPT|NVDA|2026-05-01|197.5|P"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "6f2241d1d8b7",
+    "received_at": "2026-04-30T14:25:22.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-04-30T14:28:40+00:00--19ddec7b49af7329.json",
+      "archived_path": "inbox/processed/2026-04/2026-04-30T14:28:40+00:00--19ddec7b49af7329.json",
+      "raw_id": "19ddec7b49af7329",
+      "ingested_at": "2026-04-30T14:28:40.000Z"
+    },
+    "raw": {
+      "text": "#117910448817 BOT +1 ORCL 100 (Weeklys) 1 MAY 26 150 PUT @.16, ACCOUNT *****746SCHW"
+    },
+    "instrument": "option",
+    "paper": false,
+    "action": "BOT",
+    "symbol": "ORCL",
+    "qty": 1,
+    "fill": 0.16,
+    "option": {
+      "expiry": "2026-05-01",
+      "strike": 150,
+      "right": "P"
+    },
+    "computed": {
+      "month": "2026-04",
+      "dte": 1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "short ORCL $150 Put for 05/01 at 0.16"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "OPT|ORCL|2026-05-01|150|P"
   }
 ]
