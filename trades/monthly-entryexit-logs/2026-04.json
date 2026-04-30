@@ -3714,5 +3714,43 @@
     "trade_role": "open",
     "pos_side": "long",
     "contract_key": "OPT|HOOD|2026-05-08|70|P"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "acbe6a49392d",
+    "received_at": "2026-04-30T13:42:27.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-04-30T13:46:07+00:00--19ddea06a06889d4.json",
+      "archived_path": "inbox/processed/2026-04/2026-04-30T13:46:07+00:00--19ddea06a06889d4.json",
+      "raw_id": "19ddea06a06889d4",
+      "ingested_at": "2026-04-30T13:46:07.000Z"
+    },
+    "raw": {
+      "text": "#117891996433 SOLD -1 HOOD 100 (Weeklys) 8 MAY 26 70 PUT @1.49, ACCOUNT *****746SCHW"
+    },
+    "instrument": "option",
+    "paper": false,
+    "action": "SOLD",
+    "symbol": "HOOD",
+    "qty": 1,
+    "fill": 1.49,
+    "option": {
+      "expiry": "2026-05-08",
+      "strike": 70,
+      "right": "P"
+    },
+    "computed": {
+      "month": "2026-04",
+      "dte": 8,
+      "wiki_ok": true
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "exit short HOOD $70 Put for 05/08 at 1.49"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "OPT|HOOD|2026-05-08|70|P"
   }
 ]
