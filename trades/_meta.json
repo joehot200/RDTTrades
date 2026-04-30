@@ -1,9 +1,6 @@
 {
-  "generated_at": "2026-04-30T14:15:37.932Z",
+  "generated_at": "2026-04-30T14:16:02.965Z",
   "latest_commit_message": "exit short NVDA $197.5 Put for 05/01 at 0.94",
-  "latest_processed_trade_id": "fc8c95fae433",
-  "processed_trade_ids_this_run": [
-    "961488663689",
-    "fc8c95fae433"
-  ]
+  "latest_processed_trade_id": null,
+  "processed_trade_ids_this_run": []
 }
