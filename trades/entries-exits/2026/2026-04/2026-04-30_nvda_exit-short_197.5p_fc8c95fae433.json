@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "trade_id": "fc8c95fae433",
+  "received_at": "2026-04-30T14:14:42.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-04-30T14:15:17+00:00--19ddebdf412e467d.json",
+    "archived_path": "inbox/processed/2026-04/2026-04-30T14:15:17+00:00--19ddebdf412e467d.json",
+    "raw_id": "19ddebdf412e467d",
+    "ingested_at": "2026-04-30T14:15:17.000Z"
+  },
+  "raw": {
+    "text": "#117907157677 SOLD -1 NVDA 100 (Weeklys) 1 MAY 26 197.5 PUT @.94, ACCOUNT *****746SCHW"
+  },
+  "instrument": "option",
+  "paper": false,
+  "action": "SOLD",
+  "symbol": "NVDA",
+  "qty": 1,
+  "fill": 0.94,
+  "option": {
+    "expiry": "2026-05-01",
+    "strike": 197.5,
+    "right": "P"
+  },
+  "computed": {
+    "month": "2026-04",
+    "dte": 1,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "options",
+    "text": "exit short NVDA $197.5 Put for 05/01 at 0.94"
+  },
+  "trade_role": "close",
+  "pos_side": "long",
+  "contract_key": "OPT|NVDA|2026-05-01|197.5|P"
+}
