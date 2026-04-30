@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "trade_id": "fe989a77a18c",
+  "received_at": "2026-04-30T17:27:52.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-04-30T17:29:29+00:00--19ddf6ecca37227a.json",
+    "archived_path": "inbox/processed/2026-04/2026-04-30T17:29:29+00:00--19ddf6ecca37227a.json",
+    "raw_id": "19ddf6ecca37227a",
+    "ingested_at": "2026-04-30T17:29:29.000Z"
+  },
+  "raw": {
+    "text": "#117954896178 SOLD -1 ORCL 100 (Weeklys) 1 MAY 26 150 PUT @.08, ACCOUNT *****746SCHW"
+  },
+  "instrument": "option",
+  "paper": false,
+  "action": "SOLD",
+  "symbol": "ORCL",
+  "qty": 1,
+  "fill": 0.08,
+  "option": {
+    "expiry": "2026-05-01",
+    "strike": 150,
+    "right": "P"
+  },
+  "computed": {
+    "month": "2026-04",
+    "dte": 1,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "options",
+    "text": "exit short ORCL $150 Put for 05/01 at 0.08"
+  },
+  "trade_role": "close",
+  "pos_side": "long",
+  "contract_key": "OPT|ORCL|2026-05-01|150|P"
+}
