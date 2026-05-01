@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "trade_id": "aed2ac3a2858",
+  "received_at": "2026-05-01T19:08:10.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-05-01T19:14:07+00:00--19de4f0fa340e006.json",
+    "archived_path": "inbox/processed/2026-05/2026-05-01T19:14:07+00:00--19de4f0fa340e006.json",
+    "raw_id": "19de4f0fa340e006",
+    "ingested_at": "2026-05-01T19:14:07.000Z"
+  },
+  "raw": {
+    "text": "#118099767684 SOLD -1 NKE 100 (Weeklys) 1 MAY 26 44.5 PUT @.22, ACCOUNT *****746SCHW"
+  },
+  "instrument": "option",
+  "paper": false,
+  "action": "SOLD",
+  "symbol": "NKE",
+  "qty": 1,
+  "fill": 0.22,
+  "option": {
+    "expiry": "2026-05-01",
+    "strike": 44.5,
+    "right": "P"
+  },
+  "computed": {
+    "month": "2026-05",
+    "dte": 0,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "options",
+    "text": "exit short NKE $44.5 Put for 05/01 at 0.22"
+  },
+  "trade_role": "close",
+  "pos_side": "long",
+  "contract_key": "OPT|NKE|2026-05-01|44.5|P"
+}

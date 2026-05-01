@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "trade_id": "2ee082057c9b",
+  "received_at": "2026-05-01T19:13:06.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-05-01T19:14:06+00:00--19de4f57e7e6d70f.json",
+    "archived_path": "inbox/processed/2026-05/2026-05-01T19:14:06+00:00--19de4f57e7e6d70f.json",
+    "raw_id": "19de4f57e7e6d70f",
+    "ingested_at": "2026-05-01T19:14:06.000Z"
+  },
+  "raw": {
+    "text": "#118099768621 BOT +1 ON 100 (Weeklys) 1 MAY 26 103 CALL @.22, ACCOUNT *****746SCHW"
+  },
+  "instrument": "option",
+  "paper": false,
+  "action": "BOT",
+  "symbol": "ON",
+  "qty": 1,
+  "fill": 0.22,
+  "option": {
+    "expiry": "2026-05-01",
+    "strike": 103,
+    "right": "C"
+  },
+  "computed": {
+    "month": "2026-05",
+    "dte": 0,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "options",
+    "text": "long ON $103 Call for 05/01 at 0.22"
+  },
+  "trade_role": "open",
+  "pos_side": "long",
+  "contract_key": "OPT|ON|2026-05-01|103|C"
+}
