@@ -1328,5 +1328,81 @@
     "trade_role": "open",
     "pos_side": "long",
     "contract_key": "OPT|ON|2026-05-01|103|C"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "ee572d9196db",
+    "received_at": "2026-05-01T19:30:19.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-05-01T19:44:41+00:00--19de5054040f904b.json",
+      "archived_path": "inbox/processed/2026-05/2026-05-01T19:44:41+00:00--19de5054040f904b.json",
+      "raw_id": "19de5054040f904b",
+      "ingested_at": "2026-05-01T19:44:41.000Z"
+    },
+    "raw": {
+      "text": "#118104183372 SOLD -1 SMCI 100 (Weeklys) 1 MAY 26 27 PUT @.17, ACCOUNT *****746SCHW"
+    },
+    "instrument": "option",
+    "paper": false,
+    "action": "SOLD",
+    "symbol": "SMCI",
+    "qty": 1,
+    "fill": 0.17,
+    "option": {
+      "expiry": "2026-05-01",
+      "strike": 27,
+      "right": "P"
+    },
+    "computed": {
+      "month": "2026-05",
+      "dte": 0,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "exit short SMCI $27 Put for 05/01 at 0.17"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "OPT|SMCI|2026-05-01|27|P"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "a9c8d8ce21c9",
+    "received_at": "2026-05-01T19:31:36.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-05-01T19:44:39+00:00--19de5066f110b892.json",
+      "archived_path": "inbox/processed/2026-05/2026-05-01T19:44:39+00:00--19de5066f110b892.json",
+      "raw_id": "19de5066f110b892",
+      "ingested_at": "2026-05-01T19:44:39.000Z"
+    },
+    "raw": {
+      "text": "#118104183612 SOLD -1 MCD 100 (Weeklys) 1 MAY 26 285 PUT @.01, ACCOUNT *****746SCHW"
+    },
+    "instrument": "option",
+    "paper": false,
+    "action": "SOLD",
+    "symbol": "MCD",
+    "qty": 1,
+    "fill": 0.01,
+    "option": {
+      "expiry": "2026-05-01",
+      "strike": 285,
+      "right": "P"
+    },
+    "computed": {
+      "month": "2026-05",
+      "dte": 0,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "exit short MCD $285 Put for 05/01 at 0.01"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "OPT|MCD|2026-05-01|285|P"
   }
 ]
