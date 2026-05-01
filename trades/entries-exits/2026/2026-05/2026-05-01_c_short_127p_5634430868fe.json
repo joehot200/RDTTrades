@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "trade_id": "5634430868fe",
+  "received_at": "2026-05-01T18:55:45.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-05-01T18:59:28+00:00--19de4e5a101d4cca.json",
+    "archived_path": "inbox/processed/2026-05/2026-05-01T18:59:28+00:00--19de4e5a101d4cca.json",
+    "raw_id": "19de4e5a101d4cca",
+    "ingested_at": "2026-05-01T18:59:28.000Z"
+  },
+  "raw": {
+    "text": "#118093760605 BOT +1 C 100 (Weeklys) 1 MAY 26 127 PUT @.03, ACCOUNT *****746SCHW"
+  },
+  "instrument": "option",
+  "paper": false,
+  "action": "BOT",
+  "symbol": "C",
+  "qty": 1,
+  "fill": 0.03,
+  "option": {
+    "expiry": "2026-05-01",
+    "strike": 127,
+    "right": "P"
+  },
+  "computed": {
+    "month": "2026-05",
+    "dte": 0,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "options",
+    "text": "short C $127 Put for 05/01 at 0.03"
+  },
+  "trade_role": "open",
+  "pos_side": "long",
+  "contract_key": "OPT|C|2026-05-01|127|P"
+}
