@@ -1100,5 +1100,43 @@
     "trade_role": "close",
     "pos_side": "long",
     "contract_key": "OPT|SPY|2026-05-04|722|P"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "d23b45a7589d",
+    "received_at": "2026-05-01T18:25:48.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-05-01T18:25:55+00:00--19de4ca31a928cc3.json",
+      "archived_path": "inbox/processed/2026-05/2026-05-01T18:25:55+00:00--19de4ca31a928cc3.json",
+      "raw_id": "19de4ca31a928cc3",
+      "ingested_at": "2026-05-01T18:25:55.000Z"
+    },
+    "raw": {
+      "text": "#118087686383 BOT +1 MCD 100 (Weeklys) 1 MAY 26 285 PUT @.08, ACCOUNT *****746SCHW"
+    },
+    "instrument": "option",
+    "paper": false,
+    "action": "BOT",
+    "symbol": "MCD",
+    "qty": 1,
+    "fill": 0.08,
+    "option": {
+      "expiry": "2026-05-01",
+      "strike": 285,
+      "right": "P"
+    },
+    "computed": {
+      "month": "2026-05",
+      "dte": 0,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "short MCD $285 Put for 05/01 at 0.08"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "OPT|MCD|2026-05-01|285|P"
   }
 ]

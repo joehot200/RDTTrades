@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-05-01T17:10:34.818Z",
-  "latest_commit_message": "exit short SPY $722 Put for 05/04 at 2.19",
-  "latest_processed_trade_id": "a0d82e66584f",
+  "generated_at": "2026-05-01T18:26:13.022Z",
+  "latest_commit_message": "short MCD $285 Put for 05/01 at 0.08",
+  "latest_processed_trade_id": "d23b45a7589d",
   "processed_trade_ids_this_run": [
-    "a0d82e66584f"
+    "d23b45a7589d"
   ]
 }
