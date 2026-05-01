@@ -1024,5 +1024,43 @@
     "trade_role": "close",
     "pos_side": "long",
     "contract_key": "OPT|ORCL|2026-05-01|150|P"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "8cac270670f1",
+    "received_at": "2026-05-01T16:45:34.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-05-01T16:53:37+00:00--19de46e6c2bbdc47.json",
+      "archived_path": "inbox/processed/2026-05/2026-05-01T16:53:37+00:00--19de46e6c2bbdc47.json",
+      "raw_id": "19de46e6c2bbdc47",
+      "ingested_at": "2026-05-01T16:53:37.000Z"
+    },
+    "raw": {
+      "text": "#118070873655 BOT +1 SPY 100 (Weeklys) 4 MAY 26 722 PUT @2.46, ACCOUNT *****746SCHW"
+    },
+    "instrument": "option",
+    "paper": false,
+    "action": "BOT",
+    "symbol": "SPY",
+    "qty": 1,
+    "fill": 2.46,
+    "option": {
+      "expiry": "2026-05-04",
+      "strike": 722,
+      "right": "P"
+    },
+    "computed": {
+      "month": "2026-05",
+      "dte": 3,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "short SPY $722 Put for 05/04 at 2.46"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "OPT|SPY|2026-05-04|722|P"
   }
 ]
