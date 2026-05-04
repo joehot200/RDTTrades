@@ -1,9 +1,6 @@
 {
-  "generated_at": "2026-05-04T17:13:39.166Z",
+  "generated_at": "2026-05-04T17:13:56.983Z",
   "latest_commit_message": "short MCD $265 Put for 05/08 at 0.32",
-  "latest_processed_trade_id": "d0467fc71d45",
-  "processed_trade_ids_this_run": [
-    "40cb2f1f7c76",
-    "d0467fc71d45"
-  ]
+  "latest_processed_trade_id": null,
+  "processed_trade_ids_this_run": []
 }
