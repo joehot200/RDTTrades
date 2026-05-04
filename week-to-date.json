@@ -74,5 +74,81 @@
     "trade_role": "open",
     "pos_side": "long",
     "contract_key": "OPT|GOOGL|2026-05-04|387.5|C"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "40cb2f1f7c76",
+    "received_at": "2026-05-04T17:02:39.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-05-04T17:13:21+00:00--19df3f125c0d8225.json",
+      "archived_path": "inbox/processed/2026-05/2026-05-04T17:13:21+00:00--19df3f125c0d8225.json",
+      "raw_id": "19df3f125c0d8225",
+      "ingested_at": "2026-05-04T17:13:21.000Z"
+    },
+    "raw": {
+      "text": "#118195022204 BOT +1 GOOGL 100 (Weeklys) 4 MAY 26 387.5 CALL @.08, ACCOUNT *****746SCHW"
+    },
+    "instrument": "option",
+    "paper": false,
+    "action": "BOT",
+    "symbol": "GOOGL",
+    "qty": 1,
+    "fill": 0.08,
+    "option": {
+      "expiry": "2026-05-04",
+      "strike": 387.5,
+      "right": "C"
+    },
+    "computed": {
+      "month": "2026-05",
+      "dte": 0,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "long GOOGL $387.5 Call for 05/04 at 0.08"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "OPT|GOOGL|2026-05-04|387.5|C"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "d0467fc71d45",
+    "received_at": "2026-05-04T17:04:16.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-05-04T17:13:20+00:00--19df3f29fa530139.json",
+      "archived_path": "inbox/processed/2026-05/2026-05-04T17:13:20+00:00--19df3f29fa530139.json",
+      "raw_id": "19df3f29fa530139",
+      "ingested_at": "2026-05-04T17:13:20.000Z"
+    },
+    "raw": {
+      "text": "#118195022828 BOT +1 MCD 100 (Weeklys) 8 MAY 26 265 PUT @.32, ACCOUNT *****746SCHW"
+    },
+    "instrument": "option",
+    "paper": false,
+    "action": "BOT",
+    "symbol": "MCD",
+    "qty": 1,
+    "fill": 0.32,
+    "option": {
+      "expiry": "2026-05-08",
+      "strike": 265,
+      "right": "P"
+    },
+    "computed": {
+      "month": "2026-05",
+      "dte": 4,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "short MCD $265 Put for 05/08 at 0.32"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "OPT|MCD|2026-05-08|265|P"
   }
 ]
