@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "trade_id": "e2e0325598cb",
+  "received_at": "2026-05-04T16:26:37.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-05-04T16:42:01+00:00--19df3d0260b6c9a4.json",
+    "archived_path": "inbox/processed/2026-05/2026-05-04T16:42:01+00:00--19df3d0260b6c9a4.json",
+    "raw_id": "19df3d0260b6c9a4",
+    "ingested_at": "2026-05-04T16:42:01.000Z"
+  },
+  "raw": {
+    "text": "#118187752367 BOT +1 GOOGL 100 (Weeklys) 4 MAY 26 387.5 CALL @.10, ACCOUNT *****746SCHW"
+  },
+  "instrument": "option",
+  "paper": false,
+  "action": "BOT",
+  "symbol": "GOOGL",
+  "qty": 1,
+  "fill": 0.1,
+  "option": {
+    "expiry": "2026-05-04",
+    "strike": 387.5,
+    "right": "C"
+  },
+  "computed": {
+    "month": "2026-05",
+    "dte": 0,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "options",
+    "text": "long GOOGL $387.5 Call for 05/04 at 0.1"
+  },
+  "trade_role": "open",
+  "pos_side": "long",
+  "contract_key": "OPT|GOOGL|2026-05-04|387.5|C"
+}
