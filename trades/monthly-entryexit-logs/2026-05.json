@@ -568,5 +568,43 @@
     "trade_role": "close",
     "pos_side": "long",
     "contract_key": "OPT|MCD|2026-05-08|265|P"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "f0f891c74032",
+    "received_at": "2026-05-05T13:59:09.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-05-05T14:13:40+00:00--19df86f831cc3b1d.json",
+      "archived_path": "inbox/processed/2026-05/2026-05-05T14:13:40+00:00--19df86f831cc3b1d.json",
+      "raw_id": "19df86f831cc3b1d",
+      "ingested_at": "2026-05-05T14:13:40.000Z"
+    },
+    "raw": {
+      "text": "#118258896664 BOT +1 INTC 100 (Weeklys) 8 MAY 26 106 CALL @4.15, ACCOUNT *****746SCHW"
+    },
+    "instrument": "option",
+    "paper": false,
+    "action": "BOT",
+    "symbol": "INTC",
+    "qty": 1,
+    "fill": 4.15,
+    "option": {
+      "expiry": "2026-05-08",
+      "strike": 106,
+      "right": "C"
+    },
+    "computed": {
+      "month": "2026-05",
+      "dte": 3,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "long INTC $106 Call for 05/08 at 4.15"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "OPT|INTC|2026-05-08|106|C"
   }
 ]
