@@ -682,5 +682,43 @@
     "trade_role": "open",
     "pos_side": "long",
     "contract_key": "OPT|CSCO|2026-05-08|98|C"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "c4c17d2f7d6c",
+    "received_at": "2026-05-05T17:45:06.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-05-05T17:59:54+00:00--19df93e601bd5491.json",
+      "archived_path": "inbox/processed/2026-05/2026-05-05T17:59:54+00:00--19df93e601bd5491.json",
+      "raw_id": "19df93e601bd5491",
+      "ingested_at": "2026-05-05T17:59:54.000Z"
+    },
+    "raw": {
+      "text": "#118316089776 SOLD -1 CSCO 100 (Weeklys) 8 MAY 26 98 CALL @.24, ACCOUNT *****746SCHW"
+    },
+    "instrument": "option",
+    "paper": false,
+    "action": "SOLD",
+    "symbol": "CSCO",
+    "qty": 1,
+    "fill": 0.24,
+    "option": {
+      "expiry": "2026-05-08",
+      "strike": 98,
+      "right": "C"
+    },
+    "computed": {
+      "month": "2026-05",
+      "dte": 3,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "exit long CSCO $98 Call for 05/08 at 0.24"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "OPT|CSCO|2026-05-08|98|C"
   }
 ]

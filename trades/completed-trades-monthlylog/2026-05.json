@@ -208,5 +208,40 @@
       "realized": 69.99999999999993,
       "currency": "USD"
     }
+  },
+  {
+    "schema_version": 1,
+    "completed_trade_id": "6c803cf1bee8",
+    "status": "closed",
+    "contract_key": "OPT|CSCO|2026-05-08|98|C",
+    "instrument": "option",
+    "pos_side": "long",
+    "symbol": "CSCO",
+    "option": {
+      "expiry": "2026-05-08",
+      "strike": 98,
+      "right": "C"
+    },
+    "qty_opened": 1,
+    "qty_closed": 1,
+    "entry": {
+      "trade_id": "6c803cf1bee8",
+      "received_at": "2026-05-05T16:56:40.000Z",
+      "fill": 0.22,
+      "rdt": "long CSCO $98 Call for 05/08 at 0.22"
+    },
+    "exits": [
+      {
+        "trade_id": "c4c17d2f7d6c",
+        "received_at": "2026-05-05T17:45:06.000Z",
+        "fill": 0.24,
+        "qty": 1,
+        "rdt": "exit long CSCO $98 Call for 05/08 at 0.24"
+      }
+    ],
+    "pnl": {
+      "realized": 1.9999999999999991,
+      "currency": "USD"
+    }
   }
 ]
