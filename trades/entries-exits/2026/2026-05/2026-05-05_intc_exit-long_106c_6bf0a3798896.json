@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "trade_id": "6bf0a3798896",
+  "received_at": "2026-05-05T14:14:45.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-05-05T14:28:26+00:00--19df87dcbeb64bfa.json",
+    "archived_path": "inbox/processed/2026-05/2026-05-05T14:28:26+00:00--19df87dcbeb64bfa.json",
+    "raw_id": "19df87dcbeb64bfa",
+    "ingested_at": "2026-05-05T14:28:26.000Z"
+  },
+  "raw": {
+    "text": "#118264626386 SOLD -1 INTC 100 (Weeklys) 8 MAY 26 106 CALL @4.85, ACCOUNT *****746SCHW"
+  },
+  "instrument": "option",
+  "paper": false,
+  "action": "SOLD",
+  "symbol": "INTC",
+  "qty": 1,
+  "fill": 4.85,
+  "option": {
+    "expiry": "2026-05-08",
+    "strike": 106,
+    "right": "C"
+  },
+  "computed": {
+    "month": "2026-05",
+    "dte": 3,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "options",
+    "text": "exit long INTC $106 Call for 05/08 at 4.85"
+  },
+  "trade_role": "close",
+  "pos_side": "long",
+  "contract_key": "OPT|INTC|2026-05-08|106|C"
+}

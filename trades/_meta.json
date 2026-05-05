@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-05-05T14:14:05.260Z",
-  "latest_commit_message": "long INTC $106 Call for 05/08 at 4.15",
-  "latest_processed_trade_id": "f0f891c74032",
+  "generated_at": "2026-05-05T14:28:52.808Z",
+  "latest_commit_message": "exit long INTC $106 Call for 05/08 at 4.85",
+  "latest_processed_trade_id": "6bf0a3798896",
   "processed_trade_ids_this_run": [
-    "f0f891c74032"
+    "6bf0a3798896"
   ]
 }
