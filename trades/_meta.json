@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-05-06T13:56:28.205Z",
-  "latest_commit_message": "long INTC $114 Call for 05/08 at 3.6",
-  "latest_processed_trade_id": "ee54fd8310b4",
+  "generated_at": "2026-05-06T14:12:38.617Z",
+  "latest_commit_message": "short MCD $275 Put for 05/08 at 1.27",
+  "latest_processed_trade_id": "d2a938a6bfe4",
   "processed_trade_ids_this_run": [
-    "ee54fd8310b4"
+    "d2a938a6bfe4"
   ]
 }

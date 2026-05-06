@@ -758,5 +758,43 @@
     "trade_role": "open",
     "pos_side": "long",
     "contract_key": "OPT|INTC|2026-05-08|114|C"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "d2a938a6bfe4",
+    "received_at": "2026-05-06T14:00:57.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-05-06T14:12:17+00:00--19dfd9789a18aa47.json",
+      "archived_path": "inbox/processed/2026-05/2026-05-06T14:12:17+00:00--19dfd9789a18aa47.json",
+      "raw_id": "19dfd9789a18aa47",
+      "ingested_at": "2026-05-06T14:12:17.000Z"
+    },
+    "raw": {
+      "text": "#118381538471 BOT +1 MCD 100 (Weeklys) 8 MAY 26 275 PUT @1.27, ACCOUNT *****746SCHW"
+    },
+    "instrument": "option",
+    "paper": false,
+    "action": "BOT",
+    "symbol": "MCD",
+    "qty": 1,
+    "fill": 1.27,
+    "option": {
+      "expiry": "2026-05-08",
+      "strike": 275,
+      "right": "P"
+    },
+    "computed": {
+      "month": "2026-05",
+      "dte": 2,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "short MCD $275 Put for 05/08 at 1.27"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "OPT|MCD|2026-05-08|275|P"
   }
 ]
