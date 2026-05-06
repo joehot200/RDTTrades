@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "completed_trade_id": "9d5d80b4355c",
+  "status": "closed",
+  "contract_key": "OPT|COP|2026-05-08|111|P",
+  "instrument": "option",
+  "pos_side": "long",
+  "symbol": "COP",
+  "option": {
+    "expiry": "2026-05-08",
+    "strike": 111,
+    "right": "P"
+  },
+  "qty_opened": 1,
+  "qty_closed": 1,
+  "entry": {
+    "trade_id": "9d5d80b4355c",
+    "received_at": "2026-05-06T14:18:50.000Z",
+    "fill": 0.06,
+    "rdt": "short COP $111 Put for 05/08 at 0.06"
+  },
+  "exits": [
+    {
+      "trade_id": "2f1421f06dd3",
+      "received_at": "2026-05-06T16:47:03.000Z",
+      "fill": 0.08,
+      "qty": 1,
+      "rdt": "exit short COP $111 Put for 05/08 at 0.08"
+    }
+  ],
+  "pnl": {
+    "realized": 2.0000000000000004,
+    "currency": "USD"
+  }
+}

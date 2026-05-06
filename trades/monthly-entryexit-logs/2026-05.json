@@ -1024,5 +1024,43 @@
     "trade_role": "close",
     "pos_side": "long",
     "contract_key": "OPT|GOOGL|2026-05-06|405|C"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "2f1421f06dd3",
+    "received_at": "2026-05-06T16:47:03.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-05-06T16:53:44+00:00--19dfe2f95678c25c.json",
+      "archived_path": "inbox/processed/2026-05/2026-05-06T16:53:44+00:00--19dfe2f95678c25c.json",
+      "raw_id": "19dfe2f95678c25c",
+      "ingested_at": "2026-05-06T16:53:44.000Z"
+    },
+    "raw": {
+      "text": "#118428012587 SOLD -1 COP 100 (Weeklys) 8 MAY 26 111 PUT @.08, ACCOUNT *****746SCHW"
+    },
+    "instrument": "option",
+    "paper": false,
+    "action": "SOLD",
+    "symbol": "COP",
+    "qty": 1,
+    "fill": 0.08,
+    "option": {
+      "expiry": "2026-05-08",
+      "strike": 111,
+      "right": "P"
+    },
+    "computed": {
+      "month": "2026-05",
+      "dte": 2,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "exit short COP $111 Put for 05/08 at 0.08"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "OPT|COP|2026-05-08|111|P"
   }
 ]
