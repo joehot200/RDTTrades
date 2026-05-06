@@ -568,5 +568,43 @@
     "trade_role": "open",
     "pos_side": "long",
     "contract_key": "OPT|GOOGL|2026-05-06|405|C"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "5fc725d8de0a",
+    "received_at": "2026-05-06T16:06:23.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-05-06T16:08:49+00:00--19dfe0a583c88367.json",
+      "archived_path": "inbox/processed/2026-05/2026-05-06T16:08:49+00:00--19dfe0a583c88367.json",
+      "raw_id": "19dfe0a583c88367",
+      "ingested_at": "2026-05-06T16:08:49.000Z"
+    },
+    "raw": {
+      "text": "#118418091806 SOLD -1 CSCO 100 (Weeklys) 8 MAY 26 88 PUT @.12, ACCOUNT *****746SCHW"
+    },
+    "instrument": "option",
+    "paper": false,
+    "action": "SOLD",
+    "symbol": "CSCO",
+    "qty": 1,
+    "fill": 0.12,
+    "option": {
+      "expiry": "2026-05-08",
+      "strike": 88,
+      "right": "P"
+    },
+    "computed": {
+      "month": "2026-05",
+      "dte": 2,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "exit short CSCO $88 Put for 05/08 at 0.12"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "OPT|CSCO|2026-05-08|88|P"
   }
 ]

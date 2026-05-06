@@ -278,5 +278,40 @@
       "realized": -19.999999999999996,
       "currency": "USD"
     }
+  },
+  {
+    "schema_version": 1,
+    "completed_trade_id": "ae92c694f081",
+    "status": "closed",
+    "contract_key": "OPT|CSCO|2026-05-08|88|P",
+    "instrument": "option",
+    "pos_side": "long",
+    "symbol": "CSCO",
+    "option": {
+      "expiry": "2026-05-08",
+      "strike": 88,
+      "right": "P"
+    },
+    "qty_opened": 1,
+    "qty_closed": 1,
+    "entry": {
+      "trade_id": "ae92c694f081",
+      "received_at": "2026-05-06T14:16:28.000Z",
+      "fill": 0.09,
+      "rdt": "short CSCO $88 Put for 05/08 at 0.09"
+    },
+    "exits": [
+      {
+        "trade_id": "5fc725d8de0a",
+        "received_at": "2026-05-06T16:06:23.000Z",
+        "fill": 0.12,
+        "qty": 1,
+        "rdt": "exit short CSCO $88 Put for 05/08 at 0.12"
+      }
+    ],
+    "pnl": {
+      "realized": 3,
+      "currency": "USD"
+    }
   }
 ]
