@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "trade_id": "9d5d80b4355c",
+  "received_at": "2026-05-06T14:18:50.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-05-06T14:27:23+00:00--19dfda7e2eee2ca3.json",
+    "archived_path": "inbox/processed/2026-05/2026-05-06T14:27:23+00:00--19dfda7e2eee2ca3.json",
+    "raw_id": "19dfda7e2eee2ca3",
+    "ingested_at": "2026-05-06T14:27:23.000Z"
+  },
+  "raw": {
+    "text": "#118387564972 BOT +1 COP 100 (Weeklys) 8 MAY 26 111 PUT @.06, ACCOUNT *****746SCHW"
+  },
+  "instrument": "option",
+  "paper": false,
+  "action": "BOT",
+  "symbol": "COP",
+  "qty": 1,
+  "fill": 0.06,
+  "option": {
+    "expiry": "2026-05-08",
+    "strike": 111,
+    "right": "P"
+  },
+  "computed": {
+    "month": "2026-05",
+    "dte": 2,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "options",
+    "text": "short COP $111 Put for 05/08 at 0.06"
+  },
+  "trade_role": "open",
+  "pos_side": "long",
+  "contract_key": "OPT|COP|2026-05-08|111|P"
+}

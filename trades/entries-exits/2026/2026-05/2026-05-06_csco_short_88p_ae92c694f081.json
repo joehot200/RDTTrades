@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "trade_id": "ae92c694f081",
+  "received_at": "2026-05-06T14:16:28.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-05-06T14:27:22+00:00--19dfda5b5fe26840.json",
+    "archived_path": "inbox/processed/2026-05/2026-05-06T14:27:22+00:00--19dfda5b5fe26840.json",
+    "raw_id": "19dfda5b5fe26840",
+    "ingested_at": "2026-05-06T14:27:22.000Z"
+  },
+  "raw": {
+    "text": "#118387563399 BOT +1 CSCO 100 (Weeklys) 8 MAY 26 88 PUT @.09, ACCOUNT *****746SCHW"
+  },
+  "instrument": "option",
+  "paper": false,
+  "action": "BOT",
+  "symbol": "CSCO",
+  "qty": 1,
+  "fill": 0.09,
+  "option": {
+    "expiry": "2026-05-08",
+    "strike": 88,
+    "right": "P"
+  },
+  "computed": {
+    "month": "2026-05",
+    "dte": 2,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "options",
+    "text": "short CSCO $88 Put for 05/08 at 0.09"
+  },
+  "trade_role": "open",
+  "pos_side": "long",
+  "contract_key": "OPT|CSCO|2026-05-08|88|P"
+}

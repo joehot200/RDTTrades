@@ -796,5 +796,119 @@
     "trade_role": "open",
     "pos_side": "long",
     "contract_key": "OPT|MCD|2026-05-08|275|P"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "ae92c694f081",
+    "received_at": "2026-05-06T14:16:28.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-05-06T14:27:22+00:00--19dfda5b5fe26840.json",
+      "archived_path": "inbox/processed/2026-05/2026-05-06T14:27:22+00:00--19dfda5b5fe26840.json",
+      "raw_id": "19dfda5b5fe26840",
+      "ingested_at": "2026-05-06T14:27:22.000Z"
+    },
+    "raw": {
+      "text": "#118387563399 BOT +1 CSCO 100 (Weeklys) 8 MAY 26 88 PUT @.09, ACCOUNT *****746SCHW"
+    },
+    "instrument": "option",
+    "paper": false,
+    "action": "BOT",
+    "symbol": "CSCO",
+    "qty": 1,
+    "fill": 0.09,
+    "option": {
+      "expiry": "2026-05-08",
+      "strike": 88,
+      "right": "P"
+    },
+    "computed": {
+      "month": "2026-05",
+      "dte": 2,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "short CSCO $88 Put for 05/08 at 0.09"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "OPT|CSCO|2026-05-08|88|P"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "9d5d80b4355c",
+    "received_at": "2026-05-06T14:18:50.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-05-06T14:27:23+00:00--19dfda7e2eee2ca3.json",
+      "archived_path": "inbox/processed/2026-05/2026-05-06T14:27:23+00:00--19dfda7e2eee2ca3.json",
+      "raw_id": "19dfda7e2eee2ca3",
+      "ingested_at": "2026-05-06T14:27:23.000Z"
+    },
+    "raw": {
+      "text": "#118387564972 BOT +1 COP 100 (Weeklys) 8 MAY 26 111 PUT @.06, ACCOUNT *****746SCHW"
+    },
+    "instrument": "option",
+    "paper": false,
+    "action": "BOT",
+    "symbol": "COP",
+    "qty": 1,
+    "fill": 0.06,
+    "option": {
+      "expiry": "2026-05-08",
+      "strike": 111,
+      "right": "P"
+    },
+    "computed": {
+      "month": "2026-05",
+      "dte": 2,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "short COP $111 Put for 05/08 at 0.06"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "OPT|COP|2026-05-08|111|P"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "d26633068ecb",
+    "received_at": "2026-05-06T14:19:56.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-05-06T14:27:21+00:00--19dfda8e72373dce.json",
+      "archived_path": "inbox/processed/2026-05/2026-05-06T14:27:21+00:00--19dfda8e72373dce.json",
+      "raw_id": "19dfda8e72373dce",
+      "ingested_at": "2026-05-06T14:27:21.000Z"
+    },
+    "raw": {
+      "text": "#118387565912 SOLD -1 MCD 100 (Weeklys) 8 MAY 26 275 PUT @1.07, ACCOUNT *****746SCHW"
+    },
+    "instrument": "option",
+    "paper": false,
+    "action": "SOLD",
+    "symbol": "MCD",
+    "qty": 1,
+    "fill": 1.07,
+    "option": {
+      "expiry": "2026-05-08",
+      "strike": 275,
+      "right": "P"
+    },
+    "computed": {
+      "month": "2026-05",
+      "dte": 2,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "exit short MCD $275 Put for 05/08 at 1.07"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "OPT|MCD|2026-05-08|275|P"
   }
 ]

@@ -243,5 +243,40 @@
       "realized": 1.9999999999999991,
       "currency": "USD"
     }
+  },
+  {
+    "schema_version": 1,
+    "completed_trade_id": "d2a938a6bfe4",
+    "status": "closed",
+    "contract_key": "OPT|MCD|2026-05-08|275|P",
+    "instrument": "option",
+    "pos_side": "long",
+    "symbol": "MCD",
+    "option": {
+      "expiry": "2026-05-08",
+      "strike": 275,
+      "right": "P"
+    },
+    "qty_opened": 1,
+    "qty_closed": 1,
+    "entry": {
+      "trade_id": "d2a938a6bfe4",
+      "received_at": "2026-05-06T14:00:57.000Z",
+      "fill": 1.27,
+      "rdt": "short MCD $275 Put for 05/08 at 1.27"
+    },
+    "exits": [
+      {
+        "trade_id": "d26633068ecb",
+        "received_at": "2026-05-06T14:19:56.000Z",
+        "fill": 1.07,
+        "qty": 1,
+        "rdt": "exit short MCD $275 Put for 05/08 at 1.07"
+      }
+    ],
+    "pnl": {
+      "realized": -19.999999999999996,
+      "currency": "USD"
+    }
   }
 ]
