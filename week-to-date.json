@@ -340,5 +340,43 @@
     "trade_role": "close",
     "pos_side": "long",
     "contract_key": "OPT|CSCO|2026-05-08|98|C"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "ee54fd8310b4",
+    "received_at": "2026-05-06T13:46:16.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-05-06T13:56:11+00:00--19dfd8a158196bd8.json",
+      "archived_path": "inbox/processed/2026-05/2026-05-06T13:56:11+00:00--19dfd8a158196bd8.json",
+      "raw_id": "19dfd8a158196bd8",
+      "ingested_at": "2026-05-06T13:56:11.000Z"
+    },
+    "raw": {
+      "text": "#118375872890 BOT +1 INTC 100 (Weeklys) 8 MAY 26 114 CALL @3.60, ACCOUNT *****746SCHW"
+    },
+    "instrument": "option",
+    "paper": false,
+    "action": "BOT",
+    "symbol": "INTC",
+    "qty": 1,
+    "fill": 3.6,
+    "option": {
+      "expiry": "2026-05-08",
+      "strike": 114,
+      "right": "C"
+    },
+    "computed": {
+      "month": "2026-05",
+      "dte": 2,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "long INTC $114 Call for 05/08 at 3.6"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "OPT|INTC|2026-05-08|114|C"
   }
 ]

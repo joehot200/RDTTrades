@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-05-05T18:00:10.986Z",
-  "latest_commit_message": "exit long CSCO $98 Call for 05/08 at 0.24",
-  "latest_processed_trade_id": "c4c17d2f7d6c",
+  "generated_at": "2026-05-06T13:56:28.205Z",
+  "latest_commit_message": "long INTC $114 Call for 05/08 at 3.6",
+  "latest_processed_trade_id": "ee54fd8310b4",
   "processed_trade_ids_this_run": [
-    "c4c17d2f7d6c"
+    "ee54fd8310b4"
   ]
 }
