@@ -986,5 +986,43 @@
     "trade_role": "close",
     "pos_side": "long",
     "contract_key": "OPT|CSCO|2026-05-08|88|P"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "eda8e831b8f1",
+    "received_at": "2026-05-06T16:11:49.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-05-06T16:24:26+00:00--19dfe0f533af42be.json",
+      "archived_path": "inbox/processed/2026-05/2026-05-06T16:24:26+00:00--19dfe0f533af42be.json",
+      "raw_id": "19dfe0f533af42be",
+      "ingested_at": "2026-05-06T16:24:26.000Z"
+    },
+    "raw": {
+      "text": "#118419461209 SOLD -1 GOOGL 100 (Weeklys) 6 MAY 26 405 CALL @.04, ACCOUNT *****746SCHW"
+    },
+    "instrument": "option",
+    "paper": false,
+    "action": "SOLD",
+    "symbol": "GOOGL",
+    "qty": 1,
+    "fill": 0.04,
+    "option": {
+      "expiry": "2026-05-06",
+      "strike": 405,
+      "right": "C"
+    },
+    "computed": {
+      "month": "2026-05",
+      "dte": 0,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "exit long GOOGL $405 Call for 05/06 at 0.04"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "OPT|GOOGL|2026-05-06|405|C"
   }
 ]

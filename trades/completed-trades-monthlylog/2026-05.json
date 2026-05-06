@@ -313,5 +313,40 @@
       "realized": 3,
       "currency": "USD"
     }
+  },
+  {
+    "schema_version": 1,
+    "completed_trade_id": "8657dfe81c1b",
+    "status": "closed",
+    "contract_key": "OPT|GOOGL|2026-05-06|405|C",
+    "instrument": "option",
+    "pos_side": "long",
+    "symbol": "GOOGL",
+    "option": {
+      "expiry": "2026-05-06",
+      "strike": 405,
+      "right": "C"
+    },
+    "qty_opened": 1,
+    "qty_closed": 1,
+    "entry": {
+      "trade_id": "8657dfe81c1b",
+      "received_at": "2026-05-06T15:49:14.000Z",
+      "fill": 0.05,
+      "rdt": "long GOOGL $405 Call for 05/06 at 0.05"
+    },
+    "exits": [
+      {
+        "trade_id": "eda8e831b8f1",
+        "received_at": "2026-05-06T16:11:49.000Z",
+        "fill": 0.04,
+        "qty": 1,
+        "rdt": "exit long GOOGL $405 Call for 05/06 at 0.04"
+      }
+    ],
+    "pnl": {
+      "realized": -1.0000000000000002,
+      "currency": "USD"
+    }
   }
 ]
