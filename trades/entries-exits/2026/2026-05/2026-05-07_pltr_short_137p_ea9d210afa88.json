@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "trade_id": "ea9d210afa88",
+  "received_at": "2026-05-07T16:14:35.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-05-07T16:27:20+00:00--19e0338386bd2c61.json",
+    "archived_path": "inbox/processed/2026-05/2026-05-07T16:27:20+00:00--19e0338386bd2c61.json",
+    "raw_id": "19e0338386bd2c61",
+    "ingested_at": "2026-05-07T16:27:20.000Z"
+  },
+  "raw": {
+    "text": "#118541379985 BOT +1 PLTR 100 (Weeklys) 8 MAY 26 137 PUT @1.49, ACCOUNT *****746SCHW"
+  },
+  "instrument": "option",
+  "paper": false,
+  "action": "BOT",
+  "symbol": "PLTR",
+  "qty": 1,
+  "fill": 1.49,
+  "option": {
+    "expiry": "2026-05-08",
+    "strike": 137,
+    "right": "P"
+  },
+  "computed": {
+    "month": "2026-05",
+    "dte": 1,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "options",
+    "text": "short PLTR $137 Put for 05/08 at 1.49"
+  },
+  "trade_role": "open",
+  "pos_side": "long",
+  "contract_key": "OPT|PLTR|2026-05-08|137|P"
+}

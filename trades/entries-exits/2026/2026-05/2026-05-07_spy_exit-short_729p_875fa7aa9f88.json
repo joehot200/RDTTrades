@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "trade_id": "875fa7aa9f88",
+  "received_at": "2026-05-07T16:25:41.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-05-07T16:27:17+00:00--19e034263f19ee9d.json",
+    "archived_path": "inbox/processed/2026-05/2026-05-07T16:27:17+00:00--19e034263f19ee9d.json",
+    "raw_id": "19e034263f19ee9d",
+    "ingested_at": "2026-05-07T16:27:17.000Z"
+  },
+  "raw": {
+    "text": "#118545727121 SOLD -1 SPY 100 (Weeklys) 7 MAY 26 729 PUT @.25, ACCOUNT *****746SCHW"
+  },
+  "instrument": "option",
+  "paper": false,
+  "action": "SOLD",
+  "symbol": "SPY",
+  "qty": 1,
+  "fill": 0.25,
+  "option": {
+    "expiry": "2026-05-07",
+    "strike": 729,
+    "right": "P"
+  },
+  "computed": {
+    "month": "2026-05",
+    "dte": 0,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "options",
+    "text": "exit short SPY $729 Put for 05/07 at 0.25"
+  },
+  "trade_role": "close",
+  "pos_side": "long",
+  "contract_key": "OPT|SPY|2026-05-07|729|P"
+}
