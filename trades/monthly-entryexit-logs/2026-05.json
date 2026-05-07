@@ -1062,5 +1062,43 @@
     "trade_role": "close",
     "pos_side": "long",
     "contract_key": "OPT|COP|2026-05-08|111|P"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "aa8866ba1594",
+    "received_at": "2026-05-07T16:06:29.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-05-07T16:10:41+00:00--19e0330ce1155c03.json",
+      "archived_path": "inbox/processed/2026-05/2026-05-07T16:10:41+00:00--19e0330ce1155c03.json",
+      "raw_id": "19e0330ce1155c03",
+      "ingested_at": "2026-05-07T16:10:41.000Z"
+    },
+    "raw": {
+      "text": "#118539519603 BOT +1 SPY 100 (Weeklys) 7 MAY 26 730 PUT @.39, ACCOUNT *****746SCHW"
+    },
+    "instrument": "option",
+    "paper": false,
+    "action": "BOT",
+    "symbol": "SPY",
+    "qty": 1,
+    "fill": 0.39,
+    "option": {
+      "expiry": "2026-05-07",
+      "strike": 730,
+      "right": "P"
+    },
+    "computed": {
+      "month": "2026-05",
+      "dte": 0,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "short SPY $730 Put for 05/07 at 0.39"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "OPT|SPY|2026-05-07|730|P"
   }
 ]
