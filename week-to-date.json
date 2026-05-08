@@ -1062,5 +1062,43 @@
     "trade_role": "open",
     "pos_side": "long",
     "contract_key": "OPT|ABT|2026-05-08|84|P"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "5a9a8cc4e856",
+    "received_at": "2026-05-08T18:26:56.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-05-08T18:30:47+00:00--19e08d7bf624ed4b.json",
+      "archived_path": "inbox/processed/2026-05/2026-05-08T18:30:47+00:00--19e08d7bf624ed4b.json",
+      "raw_id": "19e08d7bf624ed4b",
+      "ingested_at": "2026-05-08T18:30:47.000Z"
+    },
+    "raw": {
+      "text": "#118689429263 SOLD -1 INTC 100 (Weeklys) 8 MAY 26 120 PUT @.13, ACCOUNT *****746SCHW"
+    },
+    "instrument": "option",
+    "paper": false,
+    "action": "SOLD",
+    "symbol": "INTC",
+    "qty": 1,
+    "fill": 0.13,
+    "option": {
+      "expiry": "2026-05-08",
+      "strike": 120,
+      "right": "P"
+    },
+    "computed": {
+      "month": "2026-05",
+      "dte": 0,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "exit short INTC $120 Put for 05/08 at 0.13"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "OPT|INTC|2026-05-08|120|P"
   }
 ]
