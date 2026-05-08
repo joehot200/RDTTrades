@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "trade_id": "1fd78fc17535",
+  "received_at": "2026-05-08T15:54:06.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-05-08T15:57:17+00:00--19e084bd2948bc22.json",
+    "archived_path": "inbox/processed/2026-05/2026-05-08T15:57:17+00:00--19e084bd2948bc22.json",
+    "raw_id": "19e084bd2948bc22",
+    "ingested_at": "2026-05-08T15:57:17.000Z"
+  },
+  "raw": {
+    "text": "#118657518810 BOT +1 INTC 100 (Weeklys) 8 MAY 26 122 CALL @.22, ACCOUNT *****746SCHW"
+  },
+  "instrument": "option",
+  "paper": false,
+  "action": "BOT",
+  "symbol": "INTC",
+  "qty": 1,
+  "fill": 0.22,
+  "option": {
+    "expiry": "2026-05-08",
+    "strike": 122,
+    "right": "C"
+  },
+  "computed": {
+    "month": "2026-05",
+    "dte": 0,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "options",
+    "text": "long INTC $122 Call for 05/08 at 0.22"
+  },
+  "trade_role": "open",
+  "pos_side": "long",
+  "contract_key": "OPT|INTC|2026-05-08|122|C"
+}
