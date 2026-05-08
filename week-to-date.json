@@ -986,5 +986,81 @@
     "trade_role": "open",
     "pos_side": "long",
     "contract_key": "OPT|BSX|2026-05-08|54|P"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "cd575101b112",
+    "received_at": "2026-05-08T17:24:21.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-05-08T17:34:42+00:00--19e089e74be480ff.json",
+      "archived_path": "inbox/processed/2026-05/2026-05-08T17:34:42+00:00--19e089e74be480ff.json",
+      "raw_id": "19e089e74be480ff",
+      "ingested_at": "2026-05-08T17:34:42.000Z"
+    },
+    "raw": {
+      "text": "#118677039588 SOLD -1 CVNA 100 (Weeklys) 8 MAY 26 76.5 PUT @.09, ACCOUNT *****746SCHW"
+    },
+    "instrument": "option",
+    "paper": false,
+    "action": "SOLD",
+    "symbol": "CVNA",
+    "qty": 1,
+    "fill": 0.09,
+    "option": {
+      "expiry": "2026-05-08",
+      "strike": 76.5,
+      "right": "P"
+    },
+    "computed": {
+      "month": "2026-05",
+      "dte": 0,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "exit short CVNA $76.5 Put for 05/08 at 0.09"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "OPT|CVNA|2026-05-08|76.5|P"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "1cc2e2c34693",
+    "received_at": "2026-05-08T17:26:09.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-05-08T17:34:41+00:00--19e08a018cf8a55e.json",
+      "archived_path": "inbox/processed/2026-05/2026-05-08T17:34:41+00:00--19e08a018cf8a55e.json",
+      "raw_id": "19e08a018cf8a55e",
+      "ingested_at": "2026-05-08T17:34:41.000Z"
+    },
+    "raw": {
+      "text": "#118677040400 BOT +1 ABT 100 (Weeklys) 8 MAY 26 84 PUT @.06, ACCOUNT *****746SCHW"
+    },
+    "instrument": "option",
+    "paper": false,
+    "action": "BOT",
+    "symbol": "ABT",
+    "qty": 1,
+    "fill": 0.06,
+    "option": {
+      "expiry": "2026-05-08",
+      "strike": 84,
+      "right": "P"
+    },
+    "computed": {
+      "month": "2026-05",
+      "dte": 0,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "short ABT $84 Put for 05/08 at 0.06"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "OPT|ABT|2026-05-08|84|P"
   }
 ]

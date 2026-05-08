@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "completed_trade_id": "9e528ba737f5",
+  "status": "closed",
+  "contract_key": "OPT|CVNA|2026-05-08|76.5|P",
+  "instrument": "option",
+  "pos_side": "long",
+  "symbol": "CVNA",
+  "option": {
+    "expiry": "2026-05-08",
+    "strike": 76.5,
+    "right": "P"
+  },
+  "qty_opened": 1,
+  "qty_closed": 1,
+  "entry": {
+    "trade_id": "9e528ba737f5",
+    "received_at": "2026-05-08T16:02:28.000Z",
+    "fill": 0.28,
+    "rdt": "short CVNA $76.5 Put for 05/08 at 0.28"
+  },
+  "exits": [
+    {
+      "trade_id": "cd575101b112",
+      "received_at": "2026-05-08T17:24:21.000Z",
+      "fill": 0.09,
+      "qty": 1,
+      "rdt": "exit short CVNA $76.5 Put for 05/08 at 0.09"
+    }
+  ],
+  "pnl": {
+    "realized": -19.000000000000004,
+    "currency": "USD"
+  }
+}
