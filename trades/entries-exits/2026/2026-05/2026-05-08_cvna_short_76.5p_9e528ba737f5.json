@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "trade_id": "9e528ba737f5",
+  "received_at": "2026-05-08T16:02:28.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-05-08T16:10:24+00:00--19e08537eb809775.json",
+    "archived_path": "inbox/processed/2026-05/2026-05-08T16:10:24+00:00--19e08537eb809775.json",
+    "raw_id": "19e08537eb809775",
+    "ingested_at": "2026-05-08T16:10:24.000Z"
+  },
+  "raw": {
+    "text": "#118659050563 BOT +1 CVNA 100 (Weeklys) 8 MAY 26 76.5 PUT @.28, ACCOUNT *****746SCHW"
+  },
+  "instrument": "option",
+  "paper": false,
+  "action": "BOT",
+  "symbol": "CVNA",
+  "qty": 1,
+  "fill": 0.28,
+  "option": {
+    "expiry": "2026-05-08",
+    "strike": 76.5,
+    "right": "P"
+  },
+  "computed": {
+    "month": "2026-05",
+    "dte": 0,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "options",
+    "text": "short CVNA $76.5 Put for 05/08 at 0.28"
+  },
+  "trade_role": "open",
+  "pos_side": "long",
+  "contract_key": "OPT|CVNA|2026-05-08|76.5|P"
+}
