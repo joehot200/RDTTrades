@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "trade_id": "944970993aff",
+  "received_at": "2026-05-08T16:50:43.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-05-08T16:53:22+00:00--19e087fa964eb870.json",
+    "archived_path": "inbox/processed/2026-05/2026-05-08T16:53:22+00:00--19e087fa964eb870.json",
+    "raw_id": "19e087fa964eb870",
+    "ingested_at": "2026-05-08T16:53:22.000Z"
+  },
+  "raw": {
+    "text": "#118668200836 BOT +1 BSX 100 (Weeklys) 8 MAY 26 54 PUT @.13, ACCOUNT *****746SCHW"
+  },
+  "instrument": "option",
+  "paper": false,
+  "action": "BOT",
+  "symbol": "BSX",
+  "qty": 1,
+  "fill": 0.13,
+  "option": {
+    "expiry": "2026-05-08",
+    "strike": 54,
+    "right": "P"
+  },
+  "computed": {
+    "month": "2026-05",
+    "dte": 0,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "options",
+    "text": "short BSX $54 Put for 05/08 at 0.13"
+  },
+  "trade_role": "open",
+  "pos_side": "long",
+  "contract_key": "OPT|BSX|2026-05-08|54|P"
+}
