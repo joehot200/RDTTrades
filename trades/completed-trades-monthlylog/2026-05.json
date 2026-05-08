@@ -523,5 +523,40 @@
       "realized": -2.0000000000000004,
       "currency": "USD"
     }
+  },
+  {
+    "schema_version": 1,
+    "completed_trade_id": "1cc2e2c34693",
+    "status": "closed",
+    "contract_key": "OPT|ABT|2026-05-08|84|P",
+    "instrument": "option",
+    "pos_side": "long",
+    "symbol": "ABT",
+    "option": {
+      "expiry": "2026-05-08",
+      "strike": 84,
+      "right": "P"
+    },
+    "qty_opened": 1,
+    "qty_closed": 1,
+    "entry": {
+      "trade_id": "1cc2e2c34693",
+      "received_at": "2026-05-08T17:26:09.000Z",
+      "fill": 0.06,
+      "rdt": "short ABT $84 Put for 05/08 at 0.06"
+    },
+    "exits": [
+      {
+        "trade_id": "e8fecf266926",
+        "received_at": "2026-05-08T19:07:02.000Z",
+        "fill": 0.04,
+        "qty": 1,
+        "rdt": "exit short ABT $84 Put for 05/08 at 0.04"
+      }
+    ],
+    "pnl": {
+      "realized": -1.9999999999999998,
+      "currency": "USD"
+    }
   }
 ]

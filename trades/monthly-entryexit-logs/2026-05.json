@@ -1518,5 +1518,43 @@
     "trade_role": "close",
     "pos_side": "long",
     "contract_key": "OPT|BSX|2026-05-08|54|P"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "e8fecf266926",
+    "received_at": "2026-05-08T19:07:02.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-05-08T19:14:35+00:00--19e08fc76dca7eaa.json",
+      "archived_path": "inbox/processed/2026-05/2026-05-08T19:14:35+00:00--19e08fc76dca7eaa.json",
+      "raw_id": "19e08fc76dca7eaa",
+      "ingested_at": "2026-05-08T19:14:35.000Z"
+    },
+    "raw": {
+      "text": "#118698042782 SOLD -1 ABT 100 (Weeklys) 8 MAY 26 84 PUT @.04, ACCOUNT *****746SCHW"
+    },
+    "instrument": "option",
+    "paper": false,
+    "action": "SOLD",
+    "symbol": "ABT",
+    "qty": 1,
+    "fill": 0.04,
+    "option": {
+      "expiry": "2026-05-08",
+      "strike": 84,
+      "right": "P"
+    },
+    "computed": {
+      "month": "2026-05",
+      "dte": 0,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "exit short ABT $84 Put for 05/08 at 0.04"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "OPT|ABT|2026-05-08|84|P"
   }
 ]
