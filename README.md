@@ -17,3 +17,5 @@ Bug note: Trades sometimes fail to process if made at the same time due to concu
 Bug note #2: Zapier free often hits the 100 message (1 per entry, 1 per exit) limit per month; near end-of-month trades may not be recorded (resets on the 4th of every month). As a workaround, I will upload CSV files to the inbox occasionally for the remaining trades; obviously these trades will not be recorded in real-time and are less verifiable.
 
 Note that on 11/03/2026 I did a few test trades (mostly using SPY) using arbritary numbers.
+
+Note that only ThinkorSwim trades are recorded automatically. The Trading212 CFDs may be recorded in the summary excel files, but there currently isn't a mechanism to record these live.
