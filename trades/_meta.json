@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-05-11T19:33:32.608Z",
-  "latest_commit_message": "exit short ABT $83 Put for 05/15 at 1.62",
-  "latest_processed_trade_id": "e665573dff33",
+  "generated_at": "2026-05-11T20:03:58.006Z",
+  "latest_commit_message": "short ABT $76 Put for 05/22 at 0.23",
+  "latest_processed_trade_id": "6b64ec3a332e",
   "processed_trade_ids_this_run": [
-    "e665573dff33"
+    "6b64ec3a332e"
   ]
 }

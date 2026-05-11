@@ -74,5 +74,43 @@
     "trade_role": "close",
     "pos_side": "long",
     "contract_key": "OPT|ABT|2026-05-15|83|P"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "6b64ec3a332e",
+    "received_at": "2026-05-11T19:59:57.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-05-11T20:03:35+00:00--19e189ffde3f6d33.json",
+      "archived_path": "inbox/processed/2026-05/2026-05-11T20:03:35+00:00--19e189ffde3f6d33.json",
+      "raw_id": "19e189ffde3f6d33",
+      "ingested_at": "2026-05-11T20:03:35.000Z"
+    },
+    "raw": {
+      "text": "#118848135180 BOT +1 ABT 100 (Weeklys) 22 MAY 26 76 PUT @.23, ACCOUNT *****746SCHW"
+    },
+    "instrument": "option",
+    "paper": false,
+    "action": "BOT",
+    "symbol": "ABT",
+    "qty": 1,
+    "fill": 0.23,
+    "option": {
+      "expiry": "2026-05-22",
+      "strike": 76,
+      "right": "P"
+    },
+    "computed": {
+      "month": "2026-05",
+      "dte": 11,
+      "wiki_ok": true
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "short ABT $76 Put for 05/22 at 0.23"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "OPT|ABT|2026-05-22|76|P"
   }
 ]
