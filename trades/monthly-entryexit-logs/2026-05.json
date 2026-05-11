@@ -1594,5 +1594,43 @@
     "trade_role": "open",
     "pos_side": "long",
     "contract_key": "OPT|ABT|2026-05-15|83|P"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "e665573dff33",
+    "received_at": "2026-05-11T19:28:36.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-05-11T19:33:18+00:00--19e188349775197f.json",
+      "archived_path": "inbox/processed/2026-05/2026-05-11T19:33:18+00:00--19e188349775197f.json",
+      "raw_id": "19e188349775197f",
+      "ingested_at": "2026-05-11T19:33:18.000Z"
+    },
+    "raw": {
+      "text": "#118841832925 SOLD -1 ABT 100 15 MAY 26 83 PUT @1.62, ACCOUNT *****746SCHW"
+    },
+    "instrument": "option",
+    "paper": false,
+    "action": "SOLD",
+    "symbol": "ABT",
+    "qty": 1,
+    "fill": 1.62,
+    "option": {
+      "expiry": "2026-05-15",
+      "strike": 83,
+      "right": "P"
+    },
+    "computed": {
+      "month": "2026-05",
+      "dte": 4,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "exit short ABT $83 Put for 05/15 at 1.62"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "OPT|ABT|2026-05-15|83|P"
   }
 ]

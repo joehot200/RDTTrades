@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "completed_trade_id": "c7a354e6b577",
+  "status": "closed",
+  "contract_key": "OPT|ABT|2026-05-15|83|P",
+  "instrument": "option",
+  "pos_side": "long",
+  "symbol": "ABT",
+  "option": {
+    "expiry": "2026-05-15",
+    "strike": 83,
+    "right": "P"
+  },
+  "qty_opened": 1,
+  "qty_closed": 1,
+  "entry": {
+    "trade_id": "c7a354e6b577",
+    "received_at": "2026-05-11T15:19:12.000Z",
+    "fill": 1.22,
+    "rdt": "short ABT $83 Put for 05/15 at 1.22"
+  },
+  "exits": [
+    {
+      "trade_id": "e665573dff33",
+      "received_at": "2026-05-11T19:28:36.000Z",
+      "fill": 1.62,
+      "qty": 1,
+      "rdt": "exit short ABT $83 Put for 05/15 at 1.62"
+    }
+  ],
+  "pnl": {
+    "realized": 40.000000000000014,
+    "currency": "USD"
+  }
+}
