@@ -1708,5 +1708,43 @@
     "trade_role": "open",
     "pos_side": "long",
     "contract_key": "OPT|SPY|2026-05-14|750|C"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "1f3294348397",
+    "received_at": "2026-05-14T17:30:34.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-05-14T17:42:45+00:00--19e278a4b8b6b4b3.json",
+      "archived_path": "inbox/processed/2026-05/2026-05-14T17:42:45+00:00--19e278a4b8b6b4b3.json",
+      "raw_id": "19e278a4b8b6b4b3",
+      "ingested_at": "2026-05-14T17:42:45.000Z"
+    },
+    "raw": {
+      "text": "#119200183134 SOLD -1 SPY 100 (Weeklys) 14 MAY 26 750 CALL @.10, ACCOUNT *****746SCHW"
+    },
+    "instrument": "option",
+    "paper": false,
+    "action": "SOLD",
+    "symbol": "SPY",
+    "qty": 1,
+    "fill": 0.1,
+    "option": {
+      "expiry": "2026-05-14",
+      "strike": 750,
+      "right": "C"
+    },
+    "computed": {
+      "month": "2026-05",
+      "dte": 0,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "exit long SPY $750 Call for 05/14 at 0.1"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "OPT|SPY|2026-05-14|750|C"
   }
 ]
