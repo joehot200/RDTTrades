@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "trade_id": "9c229227f54b",
+  "received_at": "2026-05-14T14:54:16.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-05-14T15:04:27+00:00--19e26fb339d9b9a7.json",
+    "archived_path": "inbox/processed/2026-05/2026-05-14T15:04:27+00:00--19e26fb339d9b9a7.json",
+    "raw_id": "19e26fb339d9b9a7",
+    "ingested_at": "2026-05-14T15:04:27.000Z"
+  },
+  "raw": {
+    "text": "#119158877240 BOT +1 SPY 100 (Weeklys) 14 MAY 26 750 CALL @.24, ACCOUNT *****746SCHW"
+  },
+  "instrument": "option",
+  "paper": false,
+  "action": "BOT",
+  "symbol": "SPY",
+  "qty": 1,
+  "fill": 0.24,
+  "option": {
+    "expiry": "2026-05-14",
+    "strike": 750,
+    "right": "C"
+  },
+  "computed": {
+    "month": "2026-05",
+    "dte": 0,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "options",
+    "text": "long SPY $750 Call for 05/14 at 0.24"
+  },
+  "trade_role": "open",
+  "pos_side": "long",
+  "contract_key": "OPT|SPY|2026-05-14|750|C"
+}
