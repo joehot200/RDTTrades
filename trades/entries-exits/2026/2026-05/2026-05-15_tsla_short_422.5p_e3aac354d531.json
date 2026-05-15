@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "trade_id": "e3aac354d531",
+  "received_at": "2026-05-15T13:39:45.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-05-15T13:48:28+00:00--19e2bdd59e1fce4a.json",
+    "archived_path": "inbox/processed/2026-05/2026-05-15T13:48:28+00:00--19e2bdd59e1fce4a.json",
+    "raw_id": "19e2bdd59e1fce4a",
+    "ingested_at": "2026-05-15T13:48:28.000Z"
+  },
+  "raw": {
+    "text": "#119258626912 BOT +1 TSLA 100 15 MAY 26 422.5 PUT @2.35, ACCOUNT *****746SCHW"
+  },
+  "instrument": "option",
+  "paper": false,
+  "action": "BOT",
+  "symbol": "TSLA",
+  "qty": 1,
+  "fill": 2.35,
+  "option": {
+    "expiry": "2026-05-15",
+    "strike": 422.5,
+    "right": "P"
+  },
+  "computed": {
+    "month": "2026-05",
+    "dte": 0,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "options",
+    "text": "short TSLA $422.5 Put for 05/15 at 2.35"
+  },
+  "trade_role": "open",
+  "pos_side": "long",
+  "contract_key": "OPT|TSLA|2026-05-15|422.5|P"
+}

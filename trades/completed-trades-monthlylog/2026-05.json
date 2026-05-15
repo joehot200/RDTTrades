@@ -628,5 +628,40 @@
       "realized": -13.999999999999998,
       "currency": "USD"
     }
+  },
+  {
+    "schema_version": 1,
+    "completed_trade_id": "e3aac354d531",
+    "status": "closed",
+    "contract_key": "OPT|TSLA|2026-05-15|422.5|P",
+    "instrument": "option",
+    "pos_side": "long",
+    "symbol": "TSLA",
+    "option": {
+      "expiry": "2026-05-15",
+      "strike": 422.5,
+      "right": "P"
+    },
+    "qty_opened": 1,
+    "qty_closed": 1,
+    "entry": {
+      "trade_id": "e3aac354d531",
+      "received_at": "2026-05-15T13:39:45.000Z",
+      "fill": 2.35,
+      "rdt": "short TSLA $422.5 Put for 05/15 at 2.35"
+    },
+    "exits": [
+      {
+        "trade_id": "79f9cf29eeef",
+        "received_at": "2026-05-15T13:41:01.000Z",
+        "fill": 2.42,
+        "qty": 1,
+        "rdt": "exit short TSLA $422.5 Put for 05/15 at 2.42"
+      }
+    ],
+    "pnl": {
+      "realized": 6.999999999999984,
+      "currency": "USD"
+    }
   }
 ]
