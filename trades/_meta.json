@@ -1,6 +1,8 @@
 {
-  "generated_at": "2026-05-18T14:34:37.604Z",
-  "latest_commit_message": "long GOOGL $412.5 Call for 05/20 at 4.75",
-  "latest_processed_trade_id": null,
-  "processed_trade_ids_this_run": []
+  "generated_at": "2026-05-18T16:02:21.618Z",
+  "latest_commit_message": "long NOW $101 Call for 05/29 at 4.9",
+  "latest_processed_trade_id": "ecb78c7df631",
+  "processed_trade_ids_this_run": [
+    "ecb78c7df631"
+  ]
 }

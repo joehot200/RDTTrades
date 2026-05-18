@@ -1898,5 +1898,43 @@
     "trade_role": "open",
     "pos_side": "long",
     "contract_key": "OPT|GOOGL|2026-05-20|412.5|C"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "ecb78c7df631",
+    "received_at": "2026-05-18T16:00:25.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-05-18T16:02:04+00:00--19e3bd132330441e.json",
+      "archived_path": "inbox/processed/2026-05/2026-05-18T16:02:04+00:00--19e3bd132330441e.json",
+      "raw_id": "19e3bd132330441e",
+      "ingested_at": "2026-05-18T16:02:04.000Z"
+    },
+    "raw": {
+      "text": "#14827414989 PAPERMONEY BOT +1 NOW 100 (Weeklys) 29 MAY 26 101 CALL @4.90, ACCOUNT D-******81"
+    },
+    "instrument": "option",
+    "paper": true,
+    "action": "BOT",
+    "symbol": "NOW",
+    "qty": 1,
+    "fill": 4.9,
+    "option": {
+      "expiry": "2026-05-29",
+      "strike": 101,
+      "right": "C"
+    },
+    "computed": {
+      "month": "2026-05",
+      "dte": 11,
+      "wiki_ok": true
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "long NOW $101 Call for 05/29 at 4.9"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "OPT|NOW|2026-05-29|101|C"
   }
 ]
