@@ -1,268 +1,78 @@
 [
   {
     "schema_version": 1,
-    "trade_id": "c7a354e6b577",
-    "received_at": "2026-05-11T15:19:12.000Z",
+    "trade_id": "e5aa421d16e5",
+    "received_at": "2026-05-18T14:23:04.000Z",
     "source": {
       "system": "zapier_github_inbox",
-      "inbox_path": "inbox/2026-05-11T15:23:38+00:00--19e179ef32e53f80.json",
-      "archived_path": "inbox/processed/2026-05/2026-05-11T15:23:38+00:00--19e179ef32e53f80.json",
-      "raw_id": "19e179ef32e53f80",
-      "ingested_at": "2026-05-11T15:23:38.000Z"
+      "inbox_path": "inbox/2026-05-18T14:33:59+00:00--19e3b7813f5739c6.json",
+      "archived_path": "inbox/processed/2026-05/2026-05-18T14:33:59+00:00--19e3b7813f5739c6.json",
+      "raw_id": "19e3b7813f5739c6",
+      "ingested_at": "2026-05-18T14:33:59.000Z"
     },
     "raw": {
-      "text": "#118778640843 BOT +1 ABT 100 15 MAY 26 83 PUT @1.22, ACCOUNT *****746SCHW"
+      "text": "#14827252297 PAPERMONEY BOT +1 GOOGL 100 (Weeklys) 20 MAY 26 412.5 CALL @4.75, ACCOUNT D-******81"
     },
     "instrument": "option",
-    "paper": false,
+    "paper": true,
     "action": "BOT",
-    "symbol": "ABT",
+    "symbol": "GOOGL",
     "qty": 1,
-    "fill": 1.22,
+    "fill": 4.75,
     "option": {
-      "expiry": "2026-05-15",
-      "strike": 83,
-      "right": "P"
-    },
-    "computed": {
-      "month": "2026-05",
-      "dte": 4,
-      "wiki_ok": false
-    },
-    "rdt": {
-      "matched": "options",
-      "text": "short ABT $83 Put for 05/15 at 1.22"
-    },
-    "trade_role": "open",
-    "pos_side": "long",
-    "contract_key": "OPT|ABT|2026-05-15|83|P"
-  },
-  {
-    "schema_version": 1,
-    "trade_id": "e665573dff33",
-    "received_at": "2026-05-11T19:28:36.000Z",
-    "source": {
-      "system": "zapier_github_inbox",
-      "inbox_path": "inbox/2026-05-11T19:33:18+00:00--19e188349775197f.json",
-      "archived_path": "inbox/processed/2026-05/2026-05-11T19:33:18+00:00--19e188349775197f.json",
-      "raw_id": "19e188349775197f",
-      "ingested_at": "2026-05-11T19:33:18.000Z"
-    },
-    "raw": {
-      "text": "#118841832925 SOLD -1 ABT 100 15 MAY 26 83 PUT @1.62, ACCOUNT *****746SCHW"
-    },
-    "instrument": "option",
-    "paper": false,
-    "action": "SOLD",
-    "symbol": "ABT",
-    "qty": 1,
-    "fill": 1.62,
-    "option": {
-      "expiry": "2026-05-15",
-      "strike": 83,
-      "right": "P"
-    },
-    "computed": {
-      "month": "2026-05",
-      "dte": 4,
-      "wiki_ok": false
-    },
-    "rdt": {
-      "matched": "options",
-      "text": "exit short ABT $83 Put for 05/15 at 1.62"
-    },
-    "trade_role": "close",
-    "pos_side": "long",
-    "contract_key": "OPT|ABT|2026-05-15|83|P"
-  },
-  {
-    "schema_version": 1,
-    "trade_id": "6b64ec3a332e",
-    "received_at": "2026-05-11T19:59:57.000Z",
-    "source": {
-      "system": "zapier_github_inbox",
-      "inbox_path": "inbox/2026-05-11T20:03:35+00:00--19e189ffde3f6d33.json",
-      "archived_path": "inbox/processed/2026-05/2026-05-11T20:03:35+00:00--19e189ffde3f6d33.json",
-      "raw_id": "19e189ffde3f6d33",
-      "ingested_at": "2026-05-11T20:03:35.000Z"
-    },
-    "raw": {
-      "text": "#118848135180 BOT +1 ABT 100 (Weeklys) 22 MAY 26 76 PUT @.23, ACCOUNT *****746SCHW"
-    },
-    "instrument": "option",
-    "paper": false,
-    "action": "BOT",
-    "symbol": "ABT",
-    "qty": 1,
-    "fill": 0.23,
-    "option": {
-      "expiry": "2026-05-22",
-      "strike": 76,
-      "right": "P"
-    },
-    "computed": {
-      "month": "2026-05",
-      "dte": 11,
-      "wiki_ok": true
-    },
-    "rdt": {
-      "matched": "options",
-      "text": "short ABT $76 Put for 05/22 at 0.23"
-    },
-    "trade_role": "open",
-    "pos_side": "long",
-    "contract_key": "OPT|ABT|2026-05-22|76|P"
-  },
-  {
-    "schema_version": 1,
-    "trade_id": "9c229227f54b",
-    "received_at": "2026-05-14T14:54:16.000Z",
-    "source": {
-      "system": "zapier_github_inbox",
-      "inbox_path": "inbox/2026-05-14T15:04:27+00:00--19e26fb339d9b9a7.json",
-      "archived_path": "inbox/processed/2026-05/2026-05-14T15:04:27+00:00--19e26fb339d9b9a7.json",
-      "raw_id": "19e26fb339d9b9a7",
-      "ingested_at": "2026-05-14T15:04:27.000Z"
-    },
-    "raw": {
-      "text": "#119158877240 BOT +1 SPY 100 (Weeklys) 14 MAY 26 750 CALL @.24, ACCOUNT *****746SCHW"
-    },
-    "instrument": "option",
-    "paper": false,
-    "action": "BOT",
-    "symbol": "SPY",
-    "qty": 1,
-    "fill": 0.24,
-    "option": {
-      "expiry": "2026-05-14",
-      "strike": 750,
+      "expiry": "2026-05-20",
+      "strike": 412.5,
       "right": "C"
     },
     "computed": {
       "month": "2026-05",
-      "dte": 0,
+      "dte": 2,
       "wiki_ok": false
     },
     "rdt": {
       "matched": "options",
-      "text": "long SPY $750 Call for 05/14 at 0.24"
+      "text": "long GOOGL $412.5 Call for 05/20 at 4.75"
     },
     "trade_role": "open",
     "pos_side": "long",
-    "contract_key": "OPT|SPY|2026-05-14|750|C"
+    "contract_key": "OPT|GOOGL|2026-05-20|412.5|C"
   },
   {
     "schema_version": 1,
-    "trade_id": "1f3294348397",
-    "received_at": "2026-05-14T17:30:34.000Z",
+    "trade_id": "700cf947decf",
+    "received_at": "2026-05-18T14:23:08.000Z",
     "source": {
       "system": "zapier_github_inbox",
-      "inbox_path": "inbox/2026-05-14T17:42:45+00:00--19e278a4b8b6b4b3.json",
-      "archived_path": "inbox/processed/2026-05/2026-05-14T17:42:45+00:00--19e278a4b8b6b4b3.json",
-      "raw_id": "19e278a4b8b6b4b3",
-      "ingested_at": "2026-05-14T17:42:45.000Z"
+      "inbox_path": "inbox/2026-05-18T14:34:01+00:00--19e3b7823ad252a4.json",
+      "archived_path": "inbox/processed/2026-05/2026-05-18T14:34:01+00:00--19e3b7823ad252a4.json",
+      "raw_id": "19e3b7823ad252a4",
+      "ingested_at": "2026-05-18T14:34:01.000Z"
     },
     "raw": {
-      "text": "#119200183134 SOLD -1 SPY 100 (Weeklys) 14 MAY 26 750 CALL @.10, ACCOUNT *****746SCHW"
+      "text": "#14827252432 PAPERMONEY BOT +1 GOOGL 100 (Weeklys) 20 MAY 26 412.5 CALL @4.75, ACCOUNT D-******81"
     },
     "instrument": "option",
-    "paper": false,
-    "action": "SOLD",
-    "symbol": "SPY",
+    "paper": true,
+    "action": "BOT",
+    "symbol": "GOOGL",
     "qty": 1,
-    "fill": 0.1,
+    "fill": 4.75,
     "option": {
-      "expiry": "2026-05-14",
-      "strike": 750,
+      "expiry": "2026-05-20",
+      "strike": 412.5,
       "right": "C"
     },
     "computed": {
       "month": "2026-05",
-      "dte": 0,
+      "dte": 2,
       "wiki_ok": false
     },
     "rdt": {
       "matched": "options",
-      "text": "exit long SPY $750 Call for 05/14 at 0.1"
-    },
-    "trade_role": "close",
-    "pos_side": "long",
-    "contract_key": "OPT|SPY|2026-05-14|750|C"
-  },
-  {
-    "schema_version": 1,
-    "trade_id": "e3aac354d531",
-    "received_at": "2026-05-15T13:39:45.000Z",
-    "source": {
-      "system": "zapier_github_inbox",
-      "inbox_path": "inbox/2026-05-15T13:48:28+00:00--19e2bdd59e1fce4a.json",
-      "archived_path": "inbox/processed/2026-05/2026-05-15T13:48:28+00:00--19e2bdd59e1fce4a.json",
-      "raw_id": "19e2bdd59e1fce4a",
-      "ingested_at": "2026-05-15T13:48:28.000Z"
-    },
-    "raw": {
-      "text": "#119258626912 BOT +1 TSLA 100 15 MAY 26 422.5 PUT @2.35, ACCOUNT *****746SCHW"
-    },
-    "instrument": "option",
-    "paper": false,
-    "action": "BOT",
-    "symbol": "TSLA",
-    "qty": 1,
-    "fill": 2.35,
-    "option": {
-      "expiry": "2026-05-15",
-      "strike": 422.5,
-      "right": "P"
-    },
-    "computed": {
-      "month": "2026-05",
-      "dte": 0,
-      "wiki_ok": false
-    },
-    "rdt": {
-      "matched": "options",
-      "text": "short TSLA $422.5 Put for 05/15 at 2.35"
+      "text": "long GOOGL $412.5 Call for 05/20 at 4.75"
     },
     "trade_role": "open",
     "pos_side": "long",
-    "contract_key": "OPT|TSLA|2026-05-15|422.5|P"
-  },
-  {
-    "schema_version": 1,
-    "trade_id": "79f9cf29eeef",
-    "received_at": "2026-05-15T13:41:01.000Z",
-    "source": {
-      "system": "zapier_github_inbox",
-      "inbox_path": "inbox/2026-05-15T13:48:27+00:00--19e2bde7eff93ed8.json",
-      "archived_path": "inbox/processed/2026-05/2026-05-15T13:48:27+00:00--19e2bde7eff93ed8.json",
-      "raw_id": "19e2bde7eff93ed8",
-      "ingested_at": "2026-05-15T13:48:27.000Z"
-    },
-    "raw": {
-      "text": "#119260848548 SOLD -1 TSLA 100 15 MAY 26 422.5 PUT @2.42, ACCOUNT *****746SCHW"
-    },
-    "instrument": "option",
-    "paper": false,
-    "action": "SOLD",
-    "symbol": "TSLA",
-    "qty": 1,
-    "fill": 2.42,
-    "option": {
-      "expiry": "2026-05-15",
-      "strike": 422.5,
-      "right": "P"
-    },
-    "computed": {
-      "month": "2026-05",
-      "dte": 0,
-      "wiki_ok": false
-    },
-    "rdt": {
-      "matched": "options",
-      "text": "exit short TSLA $422.5 Put for 05/15 at 2.42"
-    },
-    "trade_role": "close",
-    "pos_side": "long",
-    "contract_key": "OPT|TSLA|2026-05-15|422.5|P"
+    "contract_key": "OPT|GOOGL|2026-05-20|412.5|C"
   }
 ]

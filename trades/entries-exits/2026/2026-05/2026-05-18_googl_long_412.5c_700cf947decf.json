@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "trade_id": "700cf947decf",
+  "received_at": "2026-05-18T14:23:08.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-05-18T14:34:01+00:00--19e3b7823ad252a4.json",
+    "archived_path": "inbox/processed/2026-05/2026-05-18T14:34:01+00:00--19e3b7823ad252a4.json",
+    "raw_id": "19e3b7823ad252a4",
+    "ingested_at": "2026-05-18T14:34:01.000Z"
+  },
+  "raw": {
+    "text": "#14827252432 PAPERMONEY BOT +1 GOOGL 100 (Weeklys) 20 MAY 26 412.5 CALL @4.75, ACCOUNT D-******81"
+  },
+  "instrument": "option",
+  "paper": true,
+  "action": "BOT",
+  "symbol": "GOOGL",
+  "qty": 1,
+  "fill": 4.75,
+  "option": {
+    "expiry": "2026-05-20",
+    "strike": 412.5,
+    "right": "C"
+  },
+  "computed": {
+    "month": "2026-05",
+    "dte": 2,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "options",
+    "text": "long GOOGL $412.5 Call for 05/20 at 4.75"
+  },
+  "trade_role": "open",
+  "pos_side": "long",
+  "contract_key": "OPT|GOOGL|2026-05-20|412.5|C"
+}
