@@ -1936,5 +1936,43 @@
     "trade_role": "open",
     "pos_side": "long",
     "contract_key": "OPT|NOW|2026-05-29|101|C"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "b82bfdd7b17b",
+    "received_at": "2026-05-18T19:57:19.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-05-18T20:05:36+00:00--19e3caa177385254.json",
+      "archived_path": "inbox/processed/2026-05/2026-05-18T20:05:36+00:00--19e3caa177385254.json",
+      "raw_id": "19e3caa177385254",
+      "ingested_at": "2026-05-18T20:05:36.000Z"
+    },
+    "raw": {
+      "text": "#14827660938 PAPERMONEY SOLD -1 NOW 100 (Weeklys) 29 MAY 26 101 CALL @6.00, ACCOUNT D-******81"
+    },
+    "instrument": "option",
+    "paper": true,
+    "action": "SOLD",
+    "symbol": "NOW",
+    "qty": 1,
+    "fill": 6,
+    "option": {
+      "expiry": "2026-05-29",
+      "strike": 101,
+      "right": "C"
+    },
+    "computed": {
+      "month": "2026-05",
+      "dte": 11,
+      "wiki_ok": true
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "exit long NOW $101 Call for 05/29 at 6"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "OPT|NOW|2026-05-29|101|C"
   }
 ]
