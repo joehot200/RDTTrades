@@ -2278,5 +2278,81 @@
     "trade_role": "close",
     "pos_side": "long",
     "contract_key": "OPT|GOOGL|2026-05-20|412.5|C"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "cddb6980821c",
+    "received_at": "2026-05-19T18:59:49.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-05-19T19:02:44+00:00--19e419bce08b5e8d.json",
+      "archived_path": "inbox/processed/2026-05/2026-05-19T19:02:44+00:00--19e419bce08b5e8d.json",
+      "raw_id": "19e419bce08b5e8d",
+      "ingested_at": "2026-05-19T19:02:44.000Z"
+    },
+    "raw": {
+      "text": "#14828266971 PAPERMONEY SOLD -1 CMCSA 100 (Weeklys) 29 MAY 26 25 PUT @.62, ACCOUNT D-******81"
+    },
+    "instrument": "option",
+    "paper": true,
+    "action": "SOLD",
+    "symbol": "CMCSA",
+    "qty": 1,
+    "fill": 0.62,
+    "option": {
+      "expiry": "2026-05-29",
+      "strike": 25,
+      "right": "P"
+    },
+    "computed": {
+      "month": "2026-05",
+      "dte": 10,
+      "wiki_ok": true
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "exit short CMCSA $25 Put for 05/29 at 0.62"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "OPT|CMCSA|2026-05-29|25|P"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "0a8749b04da3",
+    "received_at": "2026-05-19T19:00:58.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-05-19T19:02:42+00:00--19e419cde04a7ee0.json",
+      "archived_path": "inbox/processed/2026-05/2026-05-19T19:02:42+00:00--19e419cde04a7ee0.json",
+      "raw_id": "19e419cde04a7ee0",
+      "ingested_at": "2026-05-19T19:02:42.000Z"
+    },
+    "raw": {
+      "text": "#14828267950 PAPERMONEY SOLD -1 CMCSA 100 (Weeklys) 29 MAY 26 25 PUT @.63, ACCOUNT D-******81"
+    },
+    "instrument": "option",
+    "paper": true,
+    "action": "SOLD",
+    "symbol": "CMCSA",
+    "qty": 1,
+    "fill": 0.63,
+    "option": {
+      "expiry": "2026-05-29",
+      "strike": 25,
+      "right": "P"
+    },
+    "computed": {
+      "month": "2026-05",
+      "dte": 10,
+      "wiki_ok": true
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "exit short CMCSA $25 Put for 05/29 at 0.63"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "OPT|CMCSA|2026-05-29|25|P"
   }
 ]

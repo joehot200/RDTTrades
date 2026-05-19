@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "completed_trade_id": "4870b31d4c2b",
+  "status": "closed",
+  "contract_key": "OPT|CMCSA|2026-05-29|25|P",
+  "instrument": "option",
+  "pos_side": "long",
+  "symbol": "CMCSA",
+  "option": {
+    "expiry": "2026-05-29",
+    "strike": 25,
+    "right": "P"
+  },
+  "qty_opened": 1,
+  "qty_closed": 1,
+  "entry": {
+    "trade_id": "4870b31d4c2b",
+    "received_at": "2026-05-19T15:52:20.000Z",
+    "fill": 0.56,
+    "rdt": "short CMCSA $25 Put for 05/29 at 0.56"
+  },
+  "exits": [
+    {
+      "trade_id": "0a8749b04da3",
+      "received_at": "2026-05-19T19:00:58.000Z",
+      "fill": 0.63,
+      "qty": 1,
+      "rdt": "exit short CMCSA $25 Put for 05/29 at 0.63"
+    }
+  ],
+  "pnl": {
+    "realized": 6.999999999999995,
+    "currency": "USD"
+  }
+}
