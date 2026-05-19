@@ -378,5 +378,81 @@
     "trade_role": "close",
     "pos_side": "long",
     "contract_key": "OPT|AMZN|2026-05-29|252.5|P"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "4f823b0a126f",
+    "received_at": "2026-05-19T16:13:51.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-05-19T16:21:38+00:00--19e4103de942984e.json",
+      "archived_path": "inbox/processed/2026-05/2026-05-19T16:21:38+00:00--19e4103de942984e.json",
+      "raw_id": "19e4103de942984e",
+      "ingested_at": "2026-05-19T16:21:38.000Z"
+    },
+    "raw": {
+      "text": "#14828107330 PAPERMONEY SOLD -1 GOOGL 100 (Weeklys) 20 MAY 26 412.5 CALL @.25, ACCOUNT D-******81"
+    },
+    "instrument": "option",
+    "paper": true,
+    "action": "SOLD",
+    "symbol": "GOOGL",
+    "qty": 1,
+    "fill": 0.25,
+    "option": {
+      "expiry": "2026-05-20",
+      "strike": 412.5,
+      "right": "C"
+    },
+    "computed": {
+      "month": "2026-05",
+      "dte": 1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "exit long GOOGL $412.5 Call for 05/20 at 0.25"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "OPT|GOOGL|2026-05-20|412.5|C"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "e85a413fb513",
+    "received_at": "2026-05-19T16:16:26.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-05-19T16:21:37+00:00--19e41063b28c373e.json",
+      "archived_path": "inbox/processed/2026-05/2026-05-19T16:21:37+00:00--19e41063b28c373e.json",
+      "raw_id": "19e41063b28c373e",
+      "ingested_at": "2026-05-19T16:21:37.000Z"
+    },
+    "raw": {
+      "text": "#14828110049 PAPERMONEY SOLD -1 GOOGL 100 (Weeklys) 20 MAY 26 412.5 CALL @.27, ACCOUNT D-******81"
+    },
+    "instrument": "option",
+    "paper": true,
+    "action": "SOLD",
+    "symbol": "GOOGL",
+    "qty": 1,
+    "fill": 0.27,
+    "option": {
+      "expiry": "2026-05-20",
+      "strike": 412.5,
+      "right": "C"
+    },
+    "computed": {
+      "month": "2026-05",
+      "dte": 1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "exit long GOOGL $412.5 Call for 05/20 at 0.27"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "OPT|GOOGL|2026-05-20|412.5|C"
   }
 ]

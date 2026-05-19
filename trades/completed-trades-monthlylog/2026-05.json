@@ -666,6 +666,76 @@
   },
   {
     "schema_version": 1,
+    "completed_trade_id": "e5aa421d16e5",
+    "status": "closed",
+    "contract_key": "OPT|GOOGL|2026-05-20|412.5|C",
+    "instrument": "option",
+    "pos_side": "long",
+    "symbol": "GOOGL",
+    "option": {
+      "expiry": "2026-05-20",
+      "strike": 412.5,
+      "right": "C"
+    },
+    "qty_opened": 1,
+    "qty_closed": 1,
+    "entry": {
+      "trade_id": "e5aa421d16e5",
+      "received_at": "2026-05-18T14:23:04.000Z",
+      "fill": 4.75,
+      "rdt": "long GOOGL $412.5 Call for 05/20 at 4.75"
+    },
+    "exits": [
+      {
+        "trade_id": "4f823b0a126f",
+        "received_at": "2026-05-19T16:13:51.000Z",
+        "fill": 0.25,
+        "qty": 1,
+        "rdt": "exit long GOOGL $412.5 Call for 05/20 at 0.25"
+      }
+    ],
+    "pnl": {
+      "realized": -450,
+      "currency": "USD"
+    }
+  },
+  {
+    "schema_version": 1,
+    "completed_trade_id": "700cf947decf",
+    "status": "closed",
+    "contract_key": "OPT|GOOGL|2026-05-20|412.5|C",
+    "instrument": "option",
+    "pos_side": "long",
+    "symbol": "GOOGL",
+    "option": {
+      "expiry": "2026-05-20",
+      "strike": 412.5,
+      "right": "C"
+    },
+    "qty_opened": 1,
+    "qty_closed": 1,
+    "entry": {
+      "trade_id": "700cf947decf",
+      "received_at": "2026-05-18T14:23:08.000Z",
+      "fill": 4.75,
+      "rdt": "long GOOGL $412.5 Call for 05/20 at 4.75"
+    },
+    "exits": [
+      {
+        "trade_id": "e85a413fb513",
+        "received_at": "2026-05-19T16:16:26.000Z",
+        "fill": 0.27,
+        "qty": 1,
+        "rdt": "exit long GOOGL $412.5 Call for 05/20 at 0.27"
+      }
+    ],
+    "pnl": {
+      "realized": -448.00000000000006,
+      "currency": "USD"
+    }
+  },
+  {
+    "schema_version": 1,
     "completed_trade_id": "ecb78c7df631",
     "status": "closed",
     "contract_key": "OPT|NOW|2026-05-29|101|C",
