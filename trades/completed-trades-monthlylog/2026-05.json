@@ -771,6 +771,41 @@
   },
   {
     "schema_version": 1,
+    "completed_trade_id": "1d954f5b4cf2",
+    "status": "closed",
+    "contract_key": "OPT|PYPL|2026-05-29|44.5|P",
+    "instrument": "option",
+    "pos_side": "long",
+    "symbol": "PYPL",
+    "option": {
+      "expiry": "2026-05-29",
+      "strike": 44.5,
+      "right": "P"
+    },
+    "qty_opened": 1,
+    "qty_closed": 1,
+    "entry": {
+      "trade_id": "1d954f5b4cf2",
+      "received_at": "2026-05-19T15:24:25.000Z",
+      "fill": 1.07,
+      "rdt": "short PYPL $44.5 Put for 05/29 at 1.07"
+    },
+    "exits": [
+      {
+        "trade_id": "9d93e87fe7ad",
+        "received_at": "2026-05-19T19:13:23.000Z",
+        "fill": 1.19,
+        "qty": 1,
+        "rdt": "exit short PYPL $44.5 Put for 05/29 at 1.19"
+      }
+    ],
+    "pnl": {
+      "realized": 11.99999999999999,
+      "currency": "USD"
+    }
+  },
+  {
+    "schema_version": 1,
     "completed_trade_id": "11979c603b80",
     "status": "closed",
     "contract_key": "OPT|AMZN|2026-05-29|252.5|P",

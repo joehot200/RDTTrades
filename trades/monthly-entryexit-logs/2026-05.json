@@ -2354,5 +2354,43 @@
     "trade_role": "close",
     "pos_side": "long",
     "contract_key": "OPT|CMCSA|2026-05-29|25|P"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "9d93e87fe7ad",
+    "received_at": "2026-05-19T19:13:23.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-05-19T19:16:43+00:00--19e41a8382c14c52.json",
+      "archived_path": "inbox/processed/2026-05/2026-05-19T19:16:43+00:00--19e41a8382c14c52.json",
+      "raw_id": "19e41a8382c14c52",
+      "ingested_at": "2026-05-19T19:16:43.000Z"
+    },
+    "raw": {
+      "text": "#14828279587 PAPERMONEY SOLD -1 PYPL 100 (Weeklys) 29 MAY 26 44.5 PUT @1.19, ACCOUNT D-******81"
+    },
+    "instrument": "option",
+    "paper": true,
+    "action": "SOLD",
+    "symbol": "PYPL",
+    "qty": 1,
+    "fill": 1.19,
+    "option": {
+      "expiry": "2026-05-29",
+      "strike": 44.5,
+      "right": "P"
+    },
+    "computed": {
+      "month": "2026-05",
+      "dte": 10,
+      "wiki_ok": true
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "exit short PYPL $44.5 Put for 05/29 at 1.19"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "OPT|PYPL|2026-05-29|44.5|P"
   }
 ]
