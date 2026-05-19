@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "trade_id": "e4ded014dac0",
+  "received_at": "2026-05-19T15:47:49.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-05-19T15:55:35+00:00--19e40ec05b3815a6.json",
+    "archived_path": "inbox/processed/2026-05/2026-05-19T15:55:35+00:00--19e40ec05b3815a6.json",
+    "raw_id": "19e40ec05b3815a6",
+    "ingested_at": "2026-05-19T15:55:35.000Z"
+  },
+  "raw": {
+    "text": "#14828079160 PAPERMONEY BOT +1 CMCSA 100 (Weeklys) 29 MAY 26 25 PUT @.59, ACCOUNT D-******81"
+  },
+  "instrument": "option",
+  "paper": true,
+  "action": "BOT",
+  "symbol": "CMCSA",
+  "qty": 1,
+  "fill": 0.59,
+  "option": {
+    "expiry": "2026-05-29",
+    "strike": 25,
+    "right": "P"
+  },
+  "computed": {
+    "month": "2026-05",
+    "dte": 10,
+    "wiki_ok": true
+  },
+  "rdt": {
+    "matched": "options",
+    "text": "short CMCSA $25 Put for 05/29 at 0.59"
+  },
+  "trade_role": "open",
+  "pos_side": "long",
+  "contract_key": "OPT|CMCSA|2026-05-29|25|P"
+}
