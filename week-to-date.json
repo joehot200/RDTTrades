@@ -758,5 +758,43 @@
     "trade_role": "close",
     "pos_side": "long",
     "contract_key": "OPT|NOW|2026-05-29|103|C"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "4dac215193ea",
+    "received_at": "2026-05-20T19:20:20.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-05-20T19:21:45+00:00--19e46d4f27a75f85.json",
+      "archived_path": "inbox/processed/2026-05/2026-05-20T19:21:45+00:00--19e46d4f27a75f85.json",
+      "raw_id": "19e46d4f27a75f85",
+      "ingested_at": "2026-05-20T19:21:45.000Z"
+    },
+    "raw": {
+      "text": "#14828937543 PAPERMONEY SOLD -1 QCOM 100 (Weeklys) 29 MAY 26 215 CALL @5.30, ACCOUNT D-******81"
+    },
+    "instrument": "option",
+    "paper": true,
+    "action": "SOLD",
+    "symbol": "QCOM",
+    "qty": 1,
+    "fill": 5.3,
+    "option": {
+      "expiry": "2026-05-29",
+      "strike": 215,
+      "right": "C"
+    },
+    "computed": {
+      "month": "2026-05",
+      "dte": 9,
+      "wiki_ok": true
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "exit long QCOM $215 Call for 05/29 at 5.3"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "OPT|QCOM|2026-05-29|215|C"
   }
 ]

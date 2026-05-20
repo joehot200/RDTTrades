@@ -978,5 +978,40 @@
       "realized": -45.000000000000014,
       "currency": "USD"
     }
+  },
+  {
+    "schema_version": 1,
+    "completed_trade_id": "f9c5cfcadfca",
+    "status": "closed",
+    "contract_key": "OPT|QCOM|2026-05-29|215|C",
+    "instrument": "option",
+    "pos_side": "long",
+    "symbol": "QCOM",
+    "option": {
+      "expiry": "2026-05-29",
+      "strike": 215,
+      "right": "C"
+    },
+    "qty_opened": 1,
+    "qty_closed": 1,
+    "entry": {
+      "trade_id": "f9c5cfcadfca",
+      "received_at": "2026-05-20T18:02:28.000Z",
+      "fill": 5.5,
+      "rdt": "long QCOM $215 Call for 05/29 at 5.5"
+    },
+    "exits": [
+      {
+        "trade_id": "4dac215193ea",
+        "received_at": "2026-05-20T19:20:20.000Z",
+        "fill": 5.3,
+        "qty": 1,
+        "rdt": "exit long QCOM $215 Call for 05/29 at 5.3"
+      }
+    ],
+    "pnl": {
+      "realized": -20.000000000000018,
+      "currency": "USD"
+    }
   }
 ]
