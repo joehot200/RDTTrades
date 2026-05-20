@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-05-20T14:54:36.611Z",
-  "latest_commit_message": "exit long SMCI $32 Call for 06/05 at 2.69",
-  "latest_processed_trade_id": "5d1978ccbcb9",
+  "generated_at": "2026-05-20T17:58:48.308Z",
+  "latest_commit_message": "long NOW $103 Call for 05/29 at 4.4",
+  "latest_processed_trade_id": "8f493877e378",
   "processed_trade_ids_this_run": [
-    "5d1978ccbcb9"
+    "8f493877e378"
   ]
 }
