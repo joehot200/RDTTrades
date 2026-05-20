@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "trade_id": "ff24d6903113",
+  "received_at": "2026-05-20T19:51:35.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-05-20T20:05:28+00:00--19e46f19b623c40d.json",
+    "archived_path": "inbox/processed/2026-05/2026-05-20T20:05:28+00:00--19e46f19b623c40d.json",
+    "raw_id": "19e46f19b623c40d",
+    "ingested_at": "2026-05-20T20:05:28.000Z"
+  },
+  "raw": {
+    "text": "#14828971687 PAPERMONEY BOT +1 CSCO 100 (Weeklys) 22 MAY 26 114 PUT @1.45, ACCOUNT D-******81"
+  },
+  "instrument": "option",
+  "paper": true,
+  "action": "BOT",
+  "symbol": "CSCO",
+  "qty": 1,
+  "fill": 1.45,
+  "option": {
+    "expiry": "2026-05-22",
+    "strike": 114,
+    "right": "P"
+  },
+  "computed": {
+    "month": "2026-05",
+    "dte": 2,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "options",
+    "text": "short CSCO $114 Put for 05/22 at 1.45"
+  },
+  "trade_role": "open",
+  "pos_side": "long",
+  "contract_key": "OPT|CSCO|2026-05-22|114|P"
+}

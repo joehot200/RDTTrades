@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "trade_id": "5ac2d6cea3e1",
+  "received_at": "2026-05-20T19:59:44.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-05-20T20:05:27+00:00--19e46f904efc0a5e.json",
+    "archived_path": "inbox/processed/2026-05/2026-05-20T20:05:27+00:00--19e46f904efc0a5e.json",
+    "raw_id": "19e46f904efc0a5e",
+    "ingested_at": "2026-05-20T20:05:27.000Z"
+  },
+  "raw": {
+    "text": "#14828984836 PAPERMONEY SOLD -1 CSCO 100 (Weeklys) 22 MAY 26 114 PUT @1.22, ACCOUNT D-******81"
+  },
+  "instrument": "option",
+  "paper": true,
+  "action": "SOLD",
+  "symbol": "CSCO",
+  "qty": 1,
+  "fill": 1.22,
+  "option": {
+    "expiry": "2026-05-22",
+    "strike": 114,
+    "right": "P"
+  },
+  "computed": {
+    "month": "2026-05",
+    "dte": 2,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "options",
+    "text": "exit short CSCO $114 Put for 05/22 at 1.22"
+  },
+  "trade_role": "close",
+  "pos_side": "long",
+  "contract_key": "OPT|CSCO|2026-05-22|114|P"
+}

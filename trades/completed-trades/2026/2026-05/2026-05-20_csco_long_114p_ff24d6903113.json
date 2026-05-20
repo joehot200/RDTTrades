@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "completed_trade_id": "ff24d6903113",
+  "status": "closed",
+  "contract_key": "OPT|CSCO|2026-05-22|114|P",
+  "instrument": "option",
+  "pos_side": "long",
+  "symbol": "CSCO",
+  "option": {
+    "expiry": "2026-05-22",
+    "strike": 114,
+    "right": "P"
+  },
+  "qty_opened": 1,
+  "qty_closed": 1,
+  "entry": {
+    "trade_id": "ff24d6903113",
+    "received_at": "2026-05-20T19:51:35.000Z",
+    "fill": 1.45,
+    "rdt": "short CSCO $114 Put for 05/22 at 1.45"
+  },
+  "exits": [
+    {
+      "trade_id": "5ac2d6cea3e1",
+      "received_at": "2026-05-20T19:59:44.000Z",
+      "fill": 1.22,
+      "qty": 1,
+      "rdt": "exit short CSCO $114 Put for 05/22 at 1.22"
+    }
+  ],
+  "pnl": {
+    "realized": -23,
+    "currency": "USD"
+  }
+}
