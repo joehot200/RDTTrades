@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-05-19T19:16:59.763Z",
-  "latest_commit_message": "exit short PYPL $44.5 Put for 05/29 at 1.19",
-  "latest_processed_trade_id": "9d93e87fe7ad",
+  "generated_at": "2026-05-20T14:06:40.140Z",
+  "latest_commit_message": "long SMCI $32 Call for 06/05 at 2.09",
+  "latest_processed_trade_id": "76e9115b2111",
   "processed_trade_ids_this_run": [
-    "9d93e87fe7ad"
+    "76e9115b2111"
   ]
 }

@@ -568,5 +568,43 @@
     "trade_role": "close",
     "pos_side": "long",
     "contract_key": "OPT|PYPL|2026-05-29|44.5|P"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "76e9115b2111",
+    "received_at": "2026-05-20T14:00:51.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-05-20T14:06:04+00:00--19e45b0769d96c68.json",
+      "archived_path": "inbox/processed/2026-05/2026-05-20T14:06:04+00:00--19e45b0769d96c68.json",
+      "raw_id": "19e45b0769d96c68",
+      "ingested_at": "2026-05-20T14:06:04.000Z"
+    },
+    "raw": {
+      "text": "#14828536830 PAPERMONEY BOT +1 SMCI 100 (Weeklys) 5 JUN 26 32 CALL @2.09, ACCOUNT D-******81"
+    },
+    "instrument": "option",
+    "paper": true,
+    "action": "BOT",
+    "symbol": "SMCI",
+    "qty": 1,
+    "fill": 2.09,
+    "option": {
+      "expiry": "2026-06-05",
+      "strike": 32,
+      "right": "C"
+    },
+    "computed": {
+      "month": "2026-05",
+      "dte": 16,
+      "wiki_ok": true
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "long SMCI $32 Call for 06/05 at 2.09"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "OPT|SMCI|2026-06-05|32|C"
   }
 ]
