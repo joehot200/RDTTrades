@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "trade_id": "4faccef8be94",
+  "received_at": "2026-05-20T18:10:04.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-05-20T18:11:36+00:00--19e46949d943a13d.json",
+    "archived_path": "inbox/processed/2026-05/2026-05-20T18:11:36+00:00--19e46949d943a13d.json",
+    "raw_id": "19e46949d943a13d",
+    "ingested_at": "2026-05-20T18:11:36.000Z"
+  },
+  "raw": {
+    "text": "#14828878971 PAPERMONEY SOLD -1 NOW 100 (Weeklys) 29 MAY 26 103 CALL @3.95, ACCOUNT D-******81"
+  },
+  "instrument": "option",
+  "paper": true,
+  "action": "SOLD",
+  "symbol": "NOW",
+  "qty": 1,
+  "fill": 3.95,
+  "option": {
+    "expiry": "2026-05-29",
+    "strike": 103,
+    "right": "C"
+  },
+  "computed": {
+    "month": "2026-05",
+    "dte": 9,
+    "wiki_ok": true
+  },
+  "rdt": {
+    "matched": "options",
+    "text": "exit long NOW $103 Call for 05/29 at 3.95"
+  },
+  "trade_role": "close",
+  "pos_side": "long",
+  "contract_key": "OPT|NOW|2026-05-29|103|C"
+}

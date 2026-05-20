@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "completed_trade_id": "8f493877e378",
+  "status": "closed",
+  "contract_key": "OPT|NOW|2026-05-29|103|C",
+  "instrument": "option",
+  "pos_side": "long",
+  "symbol": "NOW",
+  "option": {
+    "expiry": "2026-05-29",
+    "strike": 103,
+    "right": "C"
+  },
+  "qty_opened": 1,
+  "qty_closed": 1,
+  "entry": {
+    "trade_id": "8f493877e378",
+    "received_at": "2026-05-20T17:50:52.000Z",
+    "fill": 4.4,
+    "rdt": "long NOW $103 Call for 05/29 at 4.4"
+  },
+  "exits": [
+    {
+      "trade_id": "4faccef8be94",
+      "received_at": "2026-05-20T18:10:04.000Z",
+      "fill": 3.95,
+      "qty": 1,
+      "rdt": "exit long NOW $103 Call for 05/29 at 3.95"
+    }
+  ],
+  "pnl": {
+    "realized": -45.000000000000014,
+    "currency": "USD"
+  }
+}

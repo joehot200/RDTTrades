@@ -1,8 +1,9 @@
 {
-  "generated_at": "2026-05-20T17:58:48.308Z",
-  "latest_commit_message": "long NOW $103 Call for 05/29 at 4.4",
-  "latest_processed_trade_id": "8f493877e378",
+  "generated_at": "2026-05-20T18:11:50.108Z",
+  "latest_commit_message": "exit long NOW $103 Call for 05/29 at 3.95",
+  "latest_processed_trade_id": "4faccef8be94",
   "processed_trade_ids_this_run": [
-    "8f493877e378"
+    "f9c5cfcadfca",
+    "4faccef8be94"
   ]
 }

@@ -682,5 +682,81 @@
     "trade_role": "open",
     "pos_side": "long",
     "contract_key": "OPT|NOW|2026-05-29|103|C"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "f9c5cfcadfca",
+    "received_at": "2026-05-20T18:02:28.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-05-20T18:11:37+00:00--19e468da86f454b8.json",
+      "archived_path": "inbox/processed/2026-05/2026-05-20T18:11:37+00:00--19e468da86f454b8.json",
+      "raw_id": "19e468da86f454b8",
+      "ingested_at": "2026-05-20T18:11:37.000Z"
+    },
+    "raw": {
+      "text": "#14828872377 PAPERMONEY BOT +1 QCOM 100 (Weeklys) 29 MAY 26 215 CALL @5.50, ACCOUNT D-******81"
+    },
+    "instrument": "option",
+    "paper": true,
+    "action": "BOT",
+    "symbol": "QCOM",
+    "qty": 1,
+    "fill": 5.5,
+    "option": {
+      "expiry": "2026-05-29",
+      "strike": 215,
+      "right": "C"
+    },
+    "computed": {
+      "month": "2026-05",
+      "dte": 9,
+      "wiki_ok": true
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "long QCOM $215 Call for 05/29 at 5.5"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "OPT|QCOM|2026-05-29|215|C"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "4faccef8be94",
+    "received_at": "2026-05-20T18:10:04.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-05-20T18:11:36+00:00--19e46949d943a13d.json",
+      "archived_path": "inbox/processed/2026-05/2026-05-20T18:11:36+00:00--19e46949d943a13d.json",
+      "raw_id": "19e46949d943a13d",
+      "ingested_at": "2026-05-20T18:11:36.000Z"
+    },
+    "raw": {
+      "text": "#14828878971 PAPERMONEY SOLD -1 NOW 100 (Weeklys) 29 MAY 26 103 CALL @3.95, ACCOUNT D-******81"
+    },
+    "instrument": "option",
+    "paper": true,
+    "action": "SOLD",
+    "symbol": "NOW",
+    "qty": 1,
+    "fill": 3.95,
+    "option": {
+      "expiry": "2026-05-29",
+      "strike": 103,
+      "right": "C"
+    },
+    "computed": {
+      "month": "2026-05",
+      "dte": 9,
+      "wiki_ok": true
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "exit long NOW $103 Call for 05/29 at 3.95"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "OPT|NOW|2026-05-29|103|C"
   }
 ]
