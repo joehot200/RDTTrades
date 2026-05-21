@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "trade_id": "a046d22ea3d1",
+  "received_at": "2026-05-21T14:29:45.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-05-21T14:42:28+00:00--19e4af145eb5732e.json",
+    "archived_path": "inbox/processed/2026-05/2026-05-21T14:42:28+00:00--19e4af145eb5732e.json",
+    "raw_id": "19e4af145eb5732e",
+    "ingested_at": "2026-05-21T14:42:28.000Z"
+  },
+  "raw": {
+    "text": "#14829268770 PAPERMONEY SOLD -1 INTC 100 (Weeklys) 22 MAY 26 113 CALL @3.45, ACCOUNT D-******81"
+  },
+  "instrument": "option",
+  "paper": true,
+  "action": "SOLD",
+  "symbol": "INTC",
+  "qty": 1,
+  "fill": 3.45,
+  "option": {
+    "expiry": "2026-05-22",
+    "strike": 113,
+    "right": "C"
+  },
+  "computed": {
+    "month": "2026-05",
+    "dte": 1,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "options",
+    "text": "exit long INTC $113 Call for 05/22 at 3.45"
+  },
+  "trade_role": "close",
+  "pos_side": "long",
+  "contract_key": "OPT|INTC|2026-05-22|113|C"
+}
