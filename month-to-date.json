@@ -2696,5 +2696,43 @@
     "trade_role": "close",
     "pos_side": "long",
     "contract_key": "OPT|CSCO|2026-05-22|114|P"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "c756fb6135d6",
+    "received_at": "2026-05-21T14:23:47.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-05-21T14:26:43+00:00--19e4aebcc2f4c54d.json",
+      "archived_path": "inbox/processed/2026-05/2026-05-21T14:26:43+00:00--19e4aebcc2f4c54d.json",
+      "raw_id": "19e4aebcc2f4c54d",
+      "ingested_at": "2026-05-21T14:26:43.000Z"
+    },
+    "raw": {
+      "text": "#14829256368 PAPERMONEY BOT +1 CSCO 100 (Weeklys) 22 MAY 26 115 CALL @1.66, ACCOUNT D-******81"
+    },
+    "instrument": "option",
+    "paper": true,
+    "action": "BOT",
+    "symbol": "CSCO",
+    "qty": 1,
+    "fill": 1.66,
+    "option": {
+      "expiry": "2026-05-22",
+      "strike": 115,
+      "right": "C"
+    },
+    "computed": {
+      "month": "2026-05",
+      "dte": 1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "long CSCO $115 Call for 05/22 at 1.66"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "OPT|CSCO|2026-05-22|115|C"
   }
 ]
