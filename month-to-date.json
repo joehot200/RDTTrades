@@ -2962,5 +2962,81 @@
     "trade_role": "open",
     "pos_side": "long",
     "contract_key": "OPT|F|2026-05-29|16|C"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "9ffe5dc62ddc",
+    "received_at": "2026-05-27T14:40:05.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-05-27T14:48:04+00:00--19e69e0e538e1f19.json",
+      "archived_path": "inbox/processed/2026-05/2026-05-27T14:48:04+00:00--19e69e0e538e1f19.json",
+      "raw_id": "19e69e0e538e1f19",
+      "ingested_at": "2026-05-27T14:48:04.000Z"
+    },
+    "raw": {
+      "text": "#14831334317 PAPERMONEY SOLD -1 INTC 100 (Weeklys) 29 MAY 26 119 PUT @3.80, ACCOUNT D-******81"
+    },
+    "instrument": "option",
+    "paper": true,
+    "action": "SOLD",
+    "symbol": "INTC",
+    "qty": 1,
+    "fill": 3.8,
+    "option": {
+      "expiry": "2026-05-29",
+      "strike": 119,
+      "right": "P"
+    },
+    "computed": {
+      "month": "2026-05",
+      "dte": 2,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "exit short INTC $119 Put for 05/29 at 3.8"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "OPT|INTC|2026-05-29|119|P"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "8d750c8f99e9",
+    "received_at": "2026-05-27T14:44:57.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-05-27T14:48:01+00:00--19e69e5590fc894f.json",
+      "archived_path": "inbox/processed/2026-05/2026-05-27T14:48:01+00:00--19e69e5590fc894f.json",
+      "raw_id": "19e69e5590fc894f",
+      "ingested_at": "2026-05-27T14:48:01.000Z"
+    },
+    "raw": {
+      "text": "#14831344083 PAPERMONEY SOLD -1 CCL 100 (Weeklys) 5 JUN 26 28 CALL @1.06, ACCOUNT D-******81"
+    },
+    "instrument": "option",
+    "paper": true,
+    "action": "SOLD",
+    "symbol": "CCL",
+    "qty": 1,
+    "fill": 1.06,
+    "option": {
+      "expiry": "2026-06-05",
+      "strike": 28,
+      "right": "C"
+    },
+    "computed": {
+      "month": "2026-05",
+      "dte": 9,
+      "wiki_ok": true
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "exit long CCL $28 Call for 06/05 at 1.06"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "OPT|CCL|2026-06-05|28|C"
   }
 ]

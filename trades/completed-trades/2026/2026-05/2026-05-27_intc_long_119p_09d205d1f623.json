@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "completed_trade_id": "09d205d1f623",
+  "status": "closed",
+  "contract_key": "OPT|INTC|2026-05-29|119|P",
+  "instrument": "option",
+  "pos_side": "long",
+  "symbol": "INTC",
+  "option": {
+    "expiry": "2026-05-29",
+    "strike": 119,
+    "right": "P"
+  },
+  "qty_opened": 1,
+  "qty_closed": 1,
+  "entry": {
+    "trade_id": "09d205d1f623",
+    "received_at": "2026-05-27T13:38:59.000Z",
+    "fill": 3.9,
+    "rdt": "short INTC $119 Put for 05/29 at 3.9"
+  },
+  "exits": [
+    {
+      "trade_id": "9ffe5dc62ddc",
+      "received_at": "2026-05-27T14:40:05.000Z",
+      "fill": 3.8,
+      "qty": 1,
+      "rdt": "exit short INTC $119 Put for 05/29 at 3.8"
+    }
+  ],
+  "pnl": {
+    "realized": -10.000000000000009,
+    "currency": "USD"
+  }
+}

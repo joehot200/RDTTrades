@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "trade_id": "9ffe5dc62ddc",
+  "received_at": "2026-05-27T14:40:05.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-05-27T14:48:04+00:00--19e69e0e538e1f19.json",
+    "archived_path": "inbox/processed/2026-05/2026-05-27T14:48:04+00:00--19e69e0e538e1f19.json",
+    "raw_id": "19e69e0e538e1f19",
+    "ingested_at": "2026-05-27T14:48:04.000Z"
+  },
+  "raw": {
+    "text": "#14831334317 PAPERMONEY SOLD -1 INTC 100 (Weeklys) 29 MAY 26 119 PUT @3.80, ACCOUNT D-******81"
+  },
+  "instrument": "option",
+  "paper": true,
+  "action": "SOLD",
+  "symbol": "INTC",
+  "qty": 1,
+  "fill": 3.8,
+  "option": {
+    "expiry": "2026-05-29",
+    "strike": 119,
+    "right": "P"
+  },
+  "computed": {
+    "month": "2026-05",
+    "dte": 2,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "options",
+    "text": "exit short INTC $119 Put for 05/29 at 3.8"
+  },
+  "trade_role": "close",
+  "pos_side": "long",
+  "contract_key": "OPT|INTC|2026-05-29|119|P"
+}

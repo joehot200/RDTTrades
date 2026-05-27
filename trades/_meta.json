@@ -1,8 +1,9 @@
 {
-  "generated_at": "2026-05-27T14:15:50.654Z",
-  "latest_commit_message": "long F $16 Call for 05/29 at 0.33",
-  "latest_processed_trade_id": "4bc9e95e4529",
+  "generated_at": "2026-05-27T14:48:23.573Z",
+  "latest_commit_message": "exit long CCL $28 Call for 06/05 at 1.06",
+  "latest_processed_trade_id": "8d750c8f99e9",
   "processed_trade_ids_this_run": [
-    "4bc9e95e4529"
+    "9ffe5dc62ddc",
+    "8d750c8f99e9"
   ]
 }
