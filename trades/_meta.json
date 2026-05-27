@@ -1,9 +1,6 @@
 {
-  "generated_at": "2026-05-27T14:48:23.573Z",
+  "generated_at": "2026-05-27T14:48:39.683Z",
   "latest_commit_message": "exit long CCL $28 Call for 06/05 at 1.06",
-  "latest_processed_trade_id": "8d750c8f99e9",
-  "processed_trade_ids_this_run": [
-    "9ffe5dc62ddc",
-    "8d750c8f99e9"
-  ]
+  "latest_processed_trade_id": null,
+  "processed_trade_ids_this_run": []
 }
