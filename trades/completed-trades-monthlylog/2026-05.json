@@ -1153,5 +1153,40 @@
       "realized": -8.000000000000002,
       "currency": "USD"
     }
+  },
+  {
+    "schema_version": 1,
+    "completed_trade_id": "d35a25141f94",
+    "status": "closed",
+    "contract_key": "OPT|HPQ|2026-06-05|24.5|C",
+    "instrument": "option",
+    "pos_side": "long",
+    "symbol": "HPQ",
+    "option": {
+      "expiry": "2026-06-05",
+      "strike": 24.5,
+      "right": "C"
+    },
+    "qty_opened": 1,
+    "qty_closed": 1,
+    "entry": {
+      "trade_id": "d35a25141f94",
+      "received_at": "2026-05-27T16:35:18.000Z",
+      "fill": 1.57,
+      "rdt": "long HPQ $24.5 Call for 06/05 at 1.57"
+    },
+    "exits": [
+      {
+        "trade_id": "381fe2793967",
+        "received_at": "2026-05-27T19:09:23.000Z",
+        "fill": 1.63,
+        "qty": 1,
+        "rdt": "exit long HPQ $24.5 Call for 06/05 at 1.63"
+      }
+    ],
+    "pnl": {
+      "realized": 5.999999999999983,
+      "currency": "USD"
+    }
   }
 ]

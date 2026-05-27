@@ -3152,5 +3152,43 @@
     "trade_role": "close",
     "pos_side": "long",
     "contract_key": "OPT|GOOGL|2026-05-27|392.5|C"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "381fe2793967",
+    "received_at": "2026-05-27T19:09:23.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-05-27T19:19:45+00:00--19e6ad770085d552.json",
+      "archived_path": "inbox/processed/2026-05/2026-05-27T19:19:45+00:00--19e6ad770085d552.json",
+      "raw_id": "19e6ad770085d552",
+      "ingested_at": "2026-05-27T19:19:45.000Z"
+    },
+    "raw": {
+      "text": "#14831620020 PAPERMONEY SOLD -1 HPQ 100 (Weeklys) 5 JUN 26 24.5 CALL @1.63, ACCOUNT D-******81"
+    },
+    "instrument": "option",
+    "paper": true,
+    "action": "SOLD",
+    "symbol": "HPQ",
+    "qty": 1,
+    "fill": 1.63,
+    "option": {
+      "expiry": "2026-06-05",
+      "strike": 24.5,
+      "right": "C"
+    },
+    "computed": {
+      "month": "2026-05",
+      "dte": 9,
+      "wiki_ok": true
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "exit long HPQ $24.5 Call for 06/05 at 1.63"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "OPT|HPQ|2026-06-05|24.5|C"
   }
 ]
