@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "trade_id": "e2729137c971",
+  "received_at": "2026-05-27T13:38:07.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-05-27T13:41:27+00:00--19e69a827752c54d.json",
+    "archived_path": "inbox/processed/2026-05/2026-05-27T13:41:27+00:00--19e69a827752c54d.json",
+    "raw_id": "19e69a827752c54d",
+    "ingested_at": "2026-05-27T13:41:27.000Z"
+  },
+  "raw": {
+    "text": "#14831153665 PAPERMONEY BOT +1 ORLY 100 18 JUN 26 85 PUT @.78, ACCOUNT D-******81"
+  },
+  "instrument": "option",
+  "paper": true,
+  "action": "BOT",
+  "symbol": "ORLY",
+  "qty": 1,
+  "fill": 0.78,
+  "option": {
+    "expiry": "2026-06-18",
+    "strike": 85,
+    "right": "P"
+  },
+  "computed": {
+    "month": "2026-05",
+    "dte": 22,
+    "wiki_ok": true
+  },
+  "rdt": {
+    "matched": "options",
+    "text": "short ORLY $85 Put for 06/18 at 0.78"
+  },
+  "trade_role": "open",
+  "pos_side": "long",
+  "contract_key": "OPT|ORLY|2026-06-18|85|P"
+}

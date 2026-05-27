@@ -2810,5 +2810,81 @@
     "trade_role": "close",
     "pos_side": "long",
     "contract_key": "OPT|INTC|2026-05-22|113|C"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "e2729137c971",
+    "received_at": "2026-05-27T13:38:07.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-05-27T13:41:27+00:00--19e69a827752c54d.json",
+      "archived_path": "inbox/processed/2026-05/2026-05-27T13:41:27+00:00--19e69a827752c54d.json",
+      "raw_id": "19e69a827752c54d",
+      "ingested_at": "2026-05-27T13:41:27.000Z"
+    },
+    "raw": {
+      "text": "#14831153665 PAPERMONEY BOT +1 ORLY 100 18 JUN 26 85 PUT @.78, ACCOUNT D-******81"
+    },
+    "instrument": "option",
+    "paper": true,
+    "action": "BOT",
+    "symbol": "ORLY",
+    "qty": 1,
+    "fill": 0.78,
+    "option": {
+      "expiry": "2026-06-18",
+      "strike": 85,
+      "right": "P"
+    },
+    "computed": {
+      "month": "2026-05",
+      "dte": 22,
+      "wiki_ok": true
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "short ORLY $85 Put for 06/18 at 0.78"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "OPT|ORLY|2026-06-18|85|P"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "09d205d1f623",
+    "received_at": "2026-05-27T13:38:59.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-05-27T13:41:26+00:00--19e69a8f552741ab.json",
+      "archived_path": "inbox/processed/2026-05/2026-05-27T13:41:26+00:00--19e69a8f552741ab.json",
+      "raw_id": "19e69a8f552741ab",
+      "ingested_at": "2026-05-27T13:41:26.000Z"
+    },
+    "raw": {
+      "text": "#14831157197 PAPERMONEY BOT +1 INTC 100 (Weeklys) 29 MAY 26 119 PUT @3.90, ACCOUNT D-******81"
+    },
+    "instrument": "option",
+    "paper": true,
+    "action": "BOT",
+    "symbol": "INTC",
+    "qty": 1,
+    "fill": 3.9,
+    "option": {
+      "expiry": "2026-05-29",
+      "strike": 119,
+      "right": "P"
+    },
+    "computed": {
+      "month": "2026-05",
+      "dte": 2,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "short INTC $119 Put for 05/29 at 3.9"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "OPT|INTC|2026-05-29|119|P"
   }
 ]
