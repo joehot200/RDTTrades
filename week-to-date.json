@@ -112,5 +112,43 @@
     "trade_role": "close",
     "pos_side": "long",
     "contract_key": "OPT|ORLY|2026-06-18|85|P"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "4bc9e95e4529",
+    "received_at": "2026-05-27T14:07:49.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-05-27T14:15:24+00:00--19e69c35970816e4.json",
+      "archived_path": "inbox/processed/2026-05/2026-05-27T14:15:24+00:00--19e69c35970816e4.json",
+      "raw_id": "19e69c35970816e4",
+      "ingested_at": "2026-05-27T14:15:24.000Z"
+    },
+    "raw": {
+      "text": "#14831253220 PAPERMONEY BOT +1 F 100 (Weeklys) 29 MAY 26 16 CALL @.33, ACCOUNT D-******81"
+    },
+    "instrument": "option",
+    "paper": true,
+    "action": "BOT",
+    "symbol": "F",
+    "qty": 1,
+    "fill": 0.33,
+    "option": {
+      "expiry": "2026-05-29",
+      "strike": 16,
+      "right": "C"
+    },
+    "computed": {
+      "month": "2026-05",
+      "dte": 2,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "long F $16 Call for 05/29 at 0.33"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "OPT|F|2026-05-29|16|C"
   }
 ]
