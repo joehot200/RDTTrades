@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "trade_id": "d35a25141f94",
+  "received_at": "2026-05-27T16:35:18.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-05-27T16:49:21+00:00--19e6a4a60cbebaef.json",
+    "archived_path": "inbox/processed/2026-05/2026-05-27T16:49:21+00:00--19e6a4a60cbebaef.json",
+    "raw_id": "19e6a4a60cbebaef",
+    "ingested_at": "2026-05-27T16:49:21.000Z"
+  },
+  "raw": {
+    "text": "#14831480157 PAPERMONEY BOT +1 HPQ 100 (Weeklys) 5 JUN 26 24.5 CALL @1.57, ACCOUNT D-******81"
+  },
+  "instrument": "option",
+  "paper": true,
+  "action": "BOT",
+  "symbol": "HPQ",
+  "qty": 1,
+  "fill": 1.57,
+  "option": {
+    "expiry": "2026-06-05",
+    "strike": 24.5,
+    "right": "C"
+  },
+  "computed": {
+    "month": "2026-05",
+    "dte": 9,
+    "wiki_ok": true
+  },
+  "rdt": {
+    "matched": "options",
+    "text": "long HPQ $24.5 Call for 06/05 at 1.57"
+  },
+  "trade_role": "open",
+  "pos_side": "long",
+  "contract_key": "OPT|HPQ|2026-06-05|24.5|C"
+}
