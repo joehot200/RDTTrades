@@ -74,5 +74,43 @@
     "trade_role": "open",
     "pos_side": "long",
     "contract_key": "OPT|INTC|2026-05-29|119|P"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "15a7f68ad95e",
+    "received_at": "2026-05-27T13:47:54.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-05-27T13:58:27+00:00--19e69b11ded8e4b3.json",
+      "archived_path": "inbox/processed/2026-05/2026-05-27T13:58:27+00:00--19e69b11ded8e4b3.json",
+      "raw_id": "19e69b11ded8e4b3",
+      "ingested_at": "2026-05-27T13:58:27.000Z"
+    },
+    "raw": {
+      "text": "#14831189023 PAPERMONEY SOLD -1 ORLY 100 18 JUN 26 85 PUT @.84, ACCOUNT D-******81"
+    },
+    "instrument": "option",
+    "paper": true,
+    "action": "SOLD",
+    "symbol": "ORLY",
+    "qty": 1,
+    "fill": 0.84,
+    "option": {
+      "expiry": "2026-06-18",
+      "strike": 85,
+      "right": "P"
+    },
+    "computed": {
+      "month": "2026-05",
+      "dte": 22,
+      "wiki_ok": true
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "exit short ORLY $85 Put for 06/18 at 0.84"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "OPT|ORLY|2026-06-18|85|P"
   }
 ]

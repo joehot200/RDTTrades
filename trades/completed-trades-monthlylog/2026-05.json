@@ -1048,5 +1048,40 @@
       "realized": -23,
       "currency": "USD"
     }
+  },
+  {
+    "schema_version": 1,
+    "completed_trade_id": "e2729137c971",
+    "status": "closed",
+    "contract_key": "OPT|ORLY|2026-06-18|85|P",
+    "instrument": "option",
+    "pos_side": "long",
+    "symbol": "ORLY",
+    "option": {
+      "expiry": "2026-06-18",
+      "strike": 85,
+      "right": "P"
+    },
+    "qty_opened": 1,
+    "qty_closed": 1,
+    "entry": {
+      "trade_id": "e2729137c971",
+      "received_at": "2026-05-27T13:38:07.000Z",
+      "fill": 0.78,
+      "rdt": "short ORLY $85 Put for 06/18 at 0.78"
+    },
+    "exits": [
+      {
+        "trade_id": "15a7f68ad95e",
+        "received_at": "2026-05-27T13:47:54.000Z",
+        "fill": 0.84,
+        "qty": 1,
+        "rdt": "exit short ORLY $85 Put for 06/18 at 0.84"
+      }
+    ],
+    "pnl": {
+      "realized": 5.999999999999995,
+      "currency": "USD"
+    }
   }
 ]
