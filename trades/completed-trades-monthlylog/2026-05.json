@@ -1223,5 +1223,40 @@
       "realized": 35.00000000000001,
       "currency": "USD"
     }
+  },
+  {
+    "schema_version": 1,
+    "completed_trade_id": "38de453cecc6",
+    "status": "closed",
+    "contract_key": "OPT|PLTR|2026-05-29|141|C",
+    "instrument": "option",
+    "pos_side": "long",
+    "symbol": "PLTR",
+    "option": {
+      "expiry": "2026-05-29",
+      "strike": 141,
+      "right": "C"
+    },
+    "qty_opened": 1,
+    "qty_closed": 1,
+    "entry": {
+      "trade_id": "38de453cecc6",
+      "received_at": "2026-05-28T17:42:28.000Z",
+      "fill": 2.17,
+      "rdt": "long PLTR $141 Call for 05/29 at 2.17"
+    },
+    "exits": [
+      {
+        "trade_id": "df8e958bfb01",
+        "received_at": "2026-05-28T18:14:18.000Z",
+        "fill": 2.25,
+        "qty": 1,
+        "rdt": "exit long PLTR $141 Call for 05/29 at 2.25"
+      }
+    ],
+    "pnl": {
+      "realized": 8.000000000000007,
+      "currency": "USD"
+    }
   }
 ]

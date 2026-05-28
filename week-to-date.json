@@ -636,5 +636,81 @@
     "trade_role": "open",
     "pos_side": "long",
     "contract_key": "STK|GNS"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "df8e958bfb01",
+    "received_at": "2026-05-28T18:14:18.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-05-28T18:23:19+00:00--19e6fcb5c38664c2.json",
+      "archived_path": "inbox/processed/2026-05/2026-05-28T18:23:19+00:00--19e6fcb5c38664c2.json",
+      "raw_id": "19e6fcb5c38664c2",
+      "ingested_at": "2026-05-28T18:23:19.000Z"
+    },
+    "raw": {
+      "text": "#14832200221 PAPERMONEY SOLD -1 PLTR 100 (Weeklys) 29 MAY 26 141 CALL @2.25, ACCOUNT D-******81"
+    },
+    "instrument": "option",
+    "paper": true,
+    "action": "SOLD",
+    "symbol": "PLTR",
+    "qty": 1,
+    "fill": 2.25,
+    "option": {
+      "expiry": "2026-05-29",
+      "strike": 141,
+      "right": "C"
+    },
+    "computed": {
+      "month": "2026-05",
+      "dte": 1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "exit long PLTR $141 Call for 05/29 at 2.25"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "OPT|PLTR|2026-05-29|141|C"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "930020f2ddb2",
+    "received_at": "2026-05-28T18:18:54.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-05-28T18:23:18+00:00--19e6fcf9630e87c9.json",
+      "archived_path": "inbox/processed/2026-05/2026-05-28T18:23:18+00:00--19e6fcf9630e87c9.json",
+      "raw_id": "19e6fcf9630e87c9",
+      "ingested_at": "2026-05-28T18:23:18.000Z"
+    },
+    "raw": {
+      "text": "#14832204387 PAPERMONEY BOT +1 ORLY 100 18 JUN 26 85 PUT @1.12, ACCOUNT D-******81"
+    },
+    "instrument": "option",
+    "paper": true,
+    "action": "BOT",
+    "symbol": "ORLY",
+    "qty": 1,
+    "fill": 1.12,
+    "option": {
+      "expiry": "2026-06-18",
+      "strike": 85,
+      "right": "P"
+    },
+    "computed": {
+      "month": "2026-05",
+      "dte": 21,
+      "wiki_ok": true
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "short ORLY $85 Put for 06/18 at 1.12"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "OPT|ORLY|2026-06-18|85|P"
   }
 ]
