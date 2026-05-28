@@ -1,9 +1,6 @@
 {
-  "generated_at": "2026-05-28T18:07:59.144Z",
+  "generated_at": "2026-05-28T18:08:15.575Z",
   "latest_commit_message": "long GNS at 0.2849",
-  "latest_processed_trade_id": "a0539fabe172",
-  "processed_trade_ids_this_run": [
-    "9a1551e22e28",
-    "a0539fabe172"
-  ]
+  "latest_processed_trade_id": null,
+  "processed_trade_ids_this_run": []
 }
