@@ -1,9 +1,6 @@
 {
-  "generated_at": "2026-05-28T18:23:35.479Z",
+  "generated_at": "2026-05-28T18:23:52.721Z",
   "latest_commit_message": "short ORLY $85 Put for 06/18 at 1.12",
-  "latest_processed_trade_id": "930020f2ddb2",
-  "processed_trade_ids_this_run": [
-    "df8e958bfb01",
-    "930020f2ddb2"
-  ]
+  "latest_processed_trade_id": null,
+  "processed_trade_ids_this_run": []
 }
