@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "trade_id": "715c558214a8",
+  "received_at": "2026-05-28T19:10:17.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-05-28T19:10:45+00:00--19e6ffe9fb3abbef.json",
+    "archived_path": "inbox/processed/2026-05/2026-05-28T19:10:45+00:00--19e6ffe9fb3abbef.json",
+    "raw_id": "19e6ffe9fb3abbef",
+    "ingested_at": "2026-05-28T19:10:45.000Z"
+  },
+  "raw": {
+    "text": "#14832245328 PAPERMONEY BOT +1 U 100 (Weeklys) 5 JUN 26 29 CALL @1.50, ACCOUNT D-******81"
+  },
+  "instrument": "option",
+  "paper": true,
+  "action": "BOT",
+  "symbol": "U",
+  "qty": 1,
+  "fill": 1.5,
+  "option": {
+    "expiry": "2026-06-05",
+    "strike": 29,
+    "right": "C"
+  },
+  "computed": {
+    "month": "2026-05",
+    "dte": 8,
+    "wiki_ok": true
+  },
+  "rdt": {
+    "matched": "options",
+    "text": "long U $29 Call for 06/05 at 1.5"
+  },
+  "trade_role": "open",
+  "pos_side": "long",
+  "contract_key": "OPT|U|2026-06-05|29|C"
+}

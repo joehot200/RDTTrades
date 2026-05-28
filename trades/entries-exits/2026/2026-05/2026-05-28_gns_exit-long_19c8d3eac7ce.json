@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "trade_id": "19c8d3eac7ce",
+  "received_at": "2026-05-28T19:10:07.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-05-28T19:10:45+00:00--19e6ffe77c902c1d.json",
+    "archived_path": "inbox/processed/2026-05/2026-05-28T19:10:45+00:00--19e6ffe77c902c1d.json",
+    "raw_id": "19e6ffe77c902c1d",
+    "ingested_at": "2026-05-28T19:10:45.000Z"
+  },
+  "raw": {
+    "text": "#14832245205 PAPERMONEY SOLD -1 GNS @.2751, ACCOUNT D-******81"
+  },
+  "instrument": "stock",
+  "paper": true,
+  "action": "SOLD",
+  "symbol": "GNS",
+  "qty": 1,
+  "fill": 0.2751,
+  "option": null,
+  "computed": {
+    "month": "2026-05",
+    "dte": -1,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "stock",
+    "text": "exit long GNS at 0.2751"
+  },
+  "trade_role": "close",
+  "pos_side": "long",
+  "contract_key": "STK|GNS"
+}

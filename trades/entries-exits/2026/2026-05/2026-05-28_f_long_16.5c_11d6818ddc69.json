@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "trade_id": "11d6818ddc69",
+  "received_at": "2026-05-28T19:01:14.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-05-28T19:10:48+00:00--19e6ff65601fc6f2.json",
+    "archived_path": "inbox/processed/2026-05/2026-05-28T19:10:48+00:00--19e6ff65601fc6f2.json",
+    "raw_id": "19e6ff65601fc6f2",
+    "ingested_at": "2026-05-28T19:10:48.000Z"
+  },
+  "raw": {
+    "text": "#14832238183 PAPERMONEY BOT +1 F 100 (Weeklys) 5 JUN 26 16.5 CALL @.53, ACCOUNT D-******81"
+  },
+  "instrument": "option",
+  "paper": true,
+  "action": "BOT",
+  "symbol": "F",
+  "qty": 1,
+  "fill": 0.53,
+  "option": {
+    "expiry": "2026-06-05",
+    "strike": 16.5,
+    "right": "C"
+  },
+  "computed": {
+    "month": "2026-05",
+    "dte": 8,
+    "wiki_ok": true
+  },
+  "rdt": {
+    "matched": "options",
+    "text": "long F $16.5 Call for 06/05 at 0.53"
+  },
+  "trade_role": "open",
+  "pos_side": "long",
+  "contract_key": "OPT|F|2026-06-05|16.5|C"
+}

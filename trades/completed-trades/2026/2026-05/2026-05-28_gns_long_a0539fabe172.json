@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "completed_trade_id": "a0539fabe172",
+  "status": "closed",
+  "contract_key": "STK|GNS",
+  "instrument": "stock",
+  "pos_side": "long",
+  "symbol": "GNS",
+  "option": null,
+  "qty_opened": 1,
+  "qty_closed": 1,
+  "entry": {
+    "trade_id": "a0539fabe172",
+    "received_at": "2026-05-28T17:58:12.000Z",
+    "fill": 0.2849,
+    "rdt": "long GNS at 0.2849"
+  },
+  "exits": [
+    {
+      "trade_id": "19c8d3eac7ce",
+      "received_at": "2026-05-28T19:10:07.000Z",
+      "fill": 0.2751,
+      "qty": 1,
+      "rdt": "exit long GNS at 0.2751"
+    }
+  ],
+  "pnl": {
+    "realized": -0.009799999999999975,
+    "currency": "USD"
+  }
+}
