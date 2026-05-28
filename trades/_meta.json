@@ -1,11 +1,6 @@
 {
-  "generated_at": "2026-05-28T19:11:07.251Z",
+  "generated_at": "2026-05-28T19:11:25.545Z",
   "latest_commit_message": "long U $29 Call for 06/05 at 1.5",
-  "latest_processed_trade_id": "715c558214a8",
-  "processed_trade_ids_this_run": [
-    "11d6818ddc69",
-    "abd78ec8db01",
-    "19c8d3eac7ce",
-    "715c558214a8"
-  ]
+  "latest_processed_trade_id": null,
+  "processed_trade_ids_this_run": []
 }
