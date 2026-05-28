@@ -3190,5 +3190,43 @@
     "trade_role": "close",
     "pos_side": "long",
     "contract_key": "OPT|HPQ|2026-06-05|24.5|C"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "4e26c4c53ec7",
+    "received_at": "2026-05-28T16:56:07.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-05-28T17:04:53+00:00--19e6f83ccc5545e1.json",
+      "archived_path": "inbox/processed/2026-05/2026-05-28T17:04:53+00:00--19e6f83ccc5545e1.json",
+      "raw_id": "19e6f83ccc5545e1",
+      "ingested_at": "2026-05-28T17:04:53.000Z"
+    },
+    "raw": {
+      "text": "#14832135261 PAPERMONEY BOT +1 HOOD 100 (Weeklys) 5 JUN 26 80 CALL @3.30, ACCOUNT D-******81"
+    },
+    "instrument": "option",
+    "paper": true,
+    "action": "BOT",
+    "symbol": "HOOD",
+    "qty": 1,
+    "fill": 3.3,
+    "option": {
+      "expiry": "2026-06-05",
+      "strike": 80,
+      "right": "C"
+    },
+    "computed": {
+      "month": "2026-05",
+      "dte": 8,
+      "wiki_ok": true
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "long HOOD $80 Call for 06/05 at 3.3"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "OPT|HOOD|2026-06-05|80|C"
   }
 ]
