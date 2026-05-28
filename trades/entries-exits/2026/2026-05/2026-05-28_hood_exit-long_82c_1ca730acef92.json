@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "trade_id": "1ca730acef92",
+  "received_at": "2026-05-28T19:19:30.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-05-28T19:27:12+00:00--19e70070f7a11812.json",
+    "archived_path": "inbox/processed/2026-05/2026-05-28T19:27:12+00:00--19e70070f7a11812.json",
+    "raw_id": "19e70070f7a11812",
+    "ingested_at": "2026-05-28T19:27:12.000Z"
+  },
+  "raw": {
+    "text": "#14832252584 PAPERMONEY SOLD -1 HOOD 100 (Weeklys) 29 MAY 26 82 CALL @1.92, ACCOUNT D-******81"
+  },
+  "instrument": "option",
+  "paper": true,
+  "action": "SOLD",
+  "symbol": "HOOD",
+  "qty": 1,
+  "fill": 1.92,
+  "option": {
+    "expiry": "2026-05-29",
+    "strike": 82,
+    "right": "C"
+  },
+  "computed": {
+    "month": "2026-05",
+    "dte": 1,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "options",
+    "text": "exit long HOOD $82 Call for 05/29 at 1.92"
+  },
+  "trade_role": "close",
+  "pos_side": "long",
+  "contract_key": "OPT|HOOD|2026-05-29|82|C"
+}

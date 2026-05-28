@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "completed_trade_id": "a5bed341006c",
+  "status": "closed",
+  "contract_key": "OPT|HOOD|2026-05-29|82|C",
+  "instrument": "option",
+  "pos_side": "long",
+  "symbol": "HOOD",
+  "option": {
+    "expiry": "2026-05-29",
+    "strike": 82,
+    "right": "C"
+  },
+  "qty_opened": 1,
+  "qty_closed": 1,
+  "entry": {
+    "trade_id": "a5bed341006c",
+    "received_at": "2026-05-28T17:29:13.000Z",
+    "fill": 1.12,
+    "rdt": "long HOOD $82 Call for 05/29 at 1.12"
+  },
+  "exits": [
+    {
+      "trade_id": "1ca730acef92",
+      "received_at": "2026-05-28T19:19:30.000Z",
+      "fill": 1.92,
+      "qty": 1,
+      "rdt": "exit long HOOD $82 Call for 05/29 at 1.92"
+    }
+  ],
+  "pnl": {
+    "realized": 79.99999999999999,
+    "currency": "USD"
+  }
+}
