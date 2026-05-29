@@ -1,10 +1,6 @@
 {
-  "generated_at": "2026-05-29T13:53:08.930Z",
+  "generated_at": "2026-05-29T13:53:26.906Z",
   "latest_commit_message": "long ASTC at 43.66",
-  "latest_processed_trade_id": "e67176b00af7",
-  "processed_trade_ids_this_run": [
-    "467b112e48d5",
-    "47fe84cd01f9",
-    "e67176b00af7"
-  ]
+  "latest_processed_trade_id": null,
+  "processed_trade_ids_this_run": []
 }
