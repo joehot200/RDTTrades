@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "completed_trade_id": "11d6818ddc69",
+  "status": "closed",
+  "contract_key": "OPT|F|2026-06-05|16.5|C",
+  "instrument": "option",
+  "pos_side": "long",
+  "symbol": "F",
+  "option": {
+    "expiry": "2026-06-05",
+    "strike": 16.5,
+    "right": "C"
+  },
+  "qty_opened": 1,
+  "qty_closed": 1,
+  "entry": {
+    "trade_id": "11d6818ddc69",
+    "received_at": "2026-05-28T19:01:14.000Z",
+    "fill": 0.53,
+    "rdt": "long F $16.5 Call for 06/05 at 0.53"
+  },
+  "exits": [
+    {
+      "trade_id": "467b112e48d5",
+      "received_at": "2026-05-29T13:40:10.000Z",
+      "fill": 1.2,
+      "qty": 1,
+      "rdt": "exit long F $16.5 Call for 06/05 at 1.2"
+    }
+  ],
+  "pnl": {
+    "realized": 67,
+    "currency": "USD"
+  }
+}

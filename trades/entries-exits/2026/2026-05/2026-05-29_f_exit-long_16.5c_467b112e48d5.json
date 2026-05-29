@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "trade_id": "467b112e48d5",
+  "received_at": "2026-05-29T13:40:10.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-05-29T13:52:52+00:00--19e73f6c08924c69.json",
+    "archived_path": "inbox/processed/2026-05/2026-05-29T13:52:52+00:00--19e73f6c08924c69.json",
+    "raw_id": "19e73f6c08924c69",
+    "ingested_at": "2026-05-29T13:52:52.000Z"
+  },
+  "raw": {
+    "text": "#14832430197 PAPERMONEY SOLD -1 F 100 (Weeklys) 5 JUN 26 16.5 CALL @1.20, ACCOUNT D-******81"
+  },
+  "instrument": "option",
+  "paper": true,
+  "action": "SOLD",
+  "symbol": "F",
+  "qty": 1,
+  "fill": 1.2,
+  "option": {
+    "expiry": "2026-06-05",
+    "strike": 16.5,
+    "right": "C"
+  },
+  "computed": {
+    "month": "2026-05",
+    "dte": 7,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "options",
+    "text": "exit long F $16.5 Call for 06/05 at 1.2"
+  },
+  "trade_role": "close",
+  "pos_side": "long",
+  "contract_key": "OPT|F|2026-06-05|16.5|C"
+}
