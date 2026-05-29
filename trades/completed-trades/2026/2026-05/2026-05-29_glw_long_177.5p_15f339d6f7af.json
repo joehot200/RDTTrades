@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "completed_trade_id": "15f339d6f7af",
+  "status": "closed",
+  "contract_key": "OPT|GLW|2026-05-29|177.5|P",
+  "instrument": "option",
+  "pos_side": "long",
+  "symbol": "GLW",
+  "option": {
+    "expiry": "2026-05-29",
+    "strike": 177.5,
+    "right": "P"
+  },
+  "qty_opened": 1,
+  "qty_closed": 1,
+  "entry": {
+    "trade_id": "15f339d6f7af",
+    "received_at": "2026-05-29T14:18:51.000Z",
+    "fill": 2.51,
+    "rdt": "short GLW $177.5 Put for 05/29 at 2.51"
+  },
+  "exits": [
+    {
+      "trade_id": "55f44c6eb666",
+      "received_at": "2026-05-29T15:47:10.000Z",
+      "fill": 2.6,
+      "qty": 1,
+      "rdt": "exit short GLW $177.5 Put for 05/29 at 2.6"
+    }
+  ],
+  "pnl": {
+    "realized": 9.00000000000003,
+    "currency": "USD"
+  }
+}

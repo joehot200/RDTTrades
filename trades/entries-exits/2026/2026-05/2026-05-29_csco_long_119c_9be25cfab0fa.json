@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "trade_id": "9be25cfab0fa",
+  "received_at": "2026-05-29T15:51:30.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-05-29T15:56:52+00:00--19e746efc394b28b.json",
+    "archived_path": "inbox/processed/2026-05/2026-05-29T15:56:52+00:00--19e746efc394b28b.json",
+    "raw_id": "19e746efc394b28b",
+    "ingested_at": "2026-05-29T15:56:52.000Z"
+  },
+  "raw": {
+    "text": "#14832715164 PAPERMONEY BOT +1 CSCO 100 (Weeklys) 5 JUN 26 119 CALL @2.83, ACCOUNT D-******81"
+  },
+  "instrument": "option",
+  "paper": true,
+  "action": "BOT",
+  "symbol": "CSCO",
+  "qty": 1,
+  "fill": 2.83,
+  "option": {
+    "expiry": "2026-06-05",
+    "strike": 119,
+    "right": "C"
+  },
+  "computed": {
+    "month": "2026-05",
+    "dte": 7,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "options",
+    "text": "long CSCO $119 Call for 06/05 at 2.83"
+  },
+  "trade_role": "open",
+  "pos_side": "long",
+  "contract_key": "OPT|CSCO|2026-06-05|119|C"
+}
