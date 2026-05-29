@@ -1425,5 +1425,75 @@
       "realized": 13.99999999999999,
       "currency": "USD"
     }
+  },
+  {
+    "schema_version": 1,
+    "completed_trade_id": "47fe84cd01f9",
+    "status": "closed",
+    "contract_key": "OPT|SMCI|2026-06-05|47|C",
+    "instrument": "option",
+    "pos_side": "long",
+    "symbol": "SMCI",
+    "option": {
+      "expiry": "2026-06-05",
+      "strike": 47,
+      "right": "C"
+    },
+    "qty_opened": 1,
+    "qty_closed": 1,
+    "entry": {
+      "trade_id": "47fe84cd01f9",
+      "received_at": "2026-05-29T13:42:43.000Z",
+      "fill": 2.96,
+      "rdt": "long SMCI $47 Call for 06/05 at 2.96"
+    },
+    "exits": [
+      {
+        "trade_id": "1f13a9e4ee8a",
+        "received_at": "2026-05-29T14:44:33.000Z",
+        "fill": 2.25,
+        "qty": 1,
+        "rdt": "exit long SMCI $47 Call for 06/05 at 2.25"
+      }
+    ],
+    "pnl": {
+      "realized": -71,
+      "currency": "USD"
+    }
+  },
+  {
+    "schema_version": 1,
+    "completed_trade_id": "3e8f912664b0",
+    "status": "closed",
+    "contract_key": "OPT|PLTR|2026-05-29|155|C",
+    "instrument": "option",
+    "pos_side": "long",
+    "symbol": "PLTR",
+    "option": {
+      "expiry": "2026-05-29",
+      "strike": 155,
+      "right": "C"
+    },
+    "qty_opened": 1,
+    "qty_closed": 1,
+    "entry": {
+      "trade_id": "3e8f912664b0",
+      "received_at": "2026-05-29T14:04:52.000Z",
+      "fill": 1.71,
+      "rdt": "long PLTR $155 Call for 05/29 at 1.71"
+    },
+    "exits": [
+      {
+        "trade_id": "6d51c70c2d1d",
+        "received_at": "2026-05-29T14:43:02.000Z",
+        "fill": 2.6,
+        "qty": 1,
+        "rdt": "exit long PLTR $155 Call for 05/29 at 2.6"
+      }
+    ],
+    "pnl": {
+      "realized": 89.00000000000001,
+      "currency": "USD"
+    }
   }
 ]

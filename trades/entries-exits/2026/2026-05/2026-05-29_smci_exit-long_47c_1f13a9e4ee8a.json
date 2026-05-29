@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "trade_id": "1f13a9e4ee8a",
+  "received_at": "2026-05-29T14:44:33.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-05-29T14:55:41+00:00--19e7431b32247371.json",
+    "archived_path": "inbox/processed/2026-05/2026-05-29T14:55:41+00:00--19e7431b32247371.json",
+    "raw_id": "19e7431b32247371",
+    "ingested_at": "2026-05-29T14:55:41.000Z"
+  },
+  "raw": {
+    "text": "#14832615467 PAPERMONEY SOLD -1 SMCI 100 (Weeklys) 5 JUN 26 47 CALL @2.25, ACCOUNT D-******81"
+  },
+  "instrument": "option",
+  "paper": true,
+  "action": "SOLD",
+  "symbol": "SMCI",
+  "qty": 1,
+  "fill": 2.25,
+  "option": {
+    "expiry": "2026-06-05",
+    "strike": 47,
+    "right": "C"
+  },
+  "computed": {
+    "month": "2026-05",
+    "dte": 7,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "options",
+    "text": "exit long SMCI $47 Call for 06/05 at 2.25"
+  },
+  "trade_role": "close",
+  "pos_side": "long",
+  "contract_key": "OPT|SMCI|2026-06-05|47|C"
+}
