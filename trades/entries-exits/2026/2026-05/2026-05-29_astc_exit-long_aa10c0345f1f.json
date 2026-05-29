@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "trade_id": "aa10c0345f1f",
+  "received_at": "2026-05-29T17:58:44.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-05-29T18:11:43+00:00--19e74e37d575681b.json",
+    "archived_path": "inbox/processed/2026-05/2026-05-29T18:11:43+00:00--19e74e37d575681b.json",
+    "raw_id": "19e74e37d575681b",
+    "ingested_at": "2026-05-29T18:11:43.000Z"
+  },
+  "raw": {
+    "text": "#14832821587 PAPERMONEY SOLD -1 ASTC @55.46, ACCOUNT D-******81"
+  },
+  "instrument": "stock",
+  "paper": true,
+  "action": "SOLD",
+  "symbol": "ASTC",
+  "qty": 1,
+  "fill": 55.46,
+  "option": null,
+  "computed": {
+    "month": "2026-05",
+    "dte": -1,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "stock",
+    "text": "exit long ASTC at 55.46"
+  },
+  "trade_role": "close",
+  "pos_side": "long",
+  "contract_key": "STK|ASTC"
+}
