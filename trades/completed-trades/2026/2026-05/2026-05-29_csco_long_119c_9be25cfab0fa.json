@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "completed_trade_id": "9be25cfab0fa",
+  "status": "closed",
+  "contract_key": "OPT|CSCO|2026-06-05|119|C",
+  "instrument": "option",
+  "pos_side": "long",
+  "symbol": "CSCO",
+  "option": {
+    "expiry": "2026-06-05",
+    "strike": 119,
+    "right": "C"
+  },
+  "qty_opened": 1,
+  "qty_closed": 1,
+  "entry": {
+    "trade_id": "9be25cfab0fa",
+    "received_at": "2026-05-29T15:51:30.000Z",
+    "fill": 2.83,
+    "rdt": "long CSCO $119 Call for 06/05 at 2.83"
+  },
+  "exits": [
+    {
+      "trade_id": "db7d6a0ea7c6",
+      "received_at": "2026-05-29T17:21:08.000Z",
+      "fill": 2.96,
+      "qty": 1,
+      "rdt": "exit long CSCO $119 Call for 06/05 at 2.96"
+    }
+  ],
+  "pnl": {
+    "realized": 12.99999999999999,
+    "currency": "USD"
+  }
+}

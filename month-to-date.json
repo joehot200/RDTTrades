@@ -4082,5 +4082,43 @@
     "trade_role": "open",
     "pos_side": "long",
     "contract_key": "OPT|CSCO|2026-06-05|119|C"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "db7d6a0ea7c6",
+    "received_at": "2026-05-29T17:21:08.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-05-29T17:26:19+00:00--19e74c10df575f90.json",
+      "archived_path": "inbox/processed/2026-05/2026-05-29T17:26:19+00:00--19e74c10df575f90.json",
+      "raw_id": "19e74c10df575f90",
+      "ingested_at": "2026-05-29T17:26:19.000Z"
+    },
+    "raw": {
+      "text": "#14832790984 PAPERMONEY SOLD -1 CSCO 100 (Weeklys) 5 JUN 26 119 CALL @2.96, ACCOUNT D-******81"
+    },
+    "instrument": "option",
+    "paper": true,
+    "action": "SOLD",
+    "symbol": "CSCO",
+    "qty": 1,
+    "fill": 2.96,
+    "option": {
+      "expiry": "2026-06-05",
+      "strike": 119,
+      "right": "C"
+    },
+    "computed": {
+      "month": "2026-05",
+      "dte": 7,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "exit long CSCO $119 Call for 06/05 at 2.96"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "OPT|CSCO|2026-06-05|119|C"
   }
 ]
