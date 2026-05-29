@@ -1004,5 +1004,81 @@
     "trade_role": "open",
     "pos_side": "long",
     "contract_key": "STK|ASTC"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "64f0b0098cda",
+    "received_at": "2026-05-29T13:53:54.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-05-29T14:09:56+00:00--19e7403504c6e5e3.json",
+      "archived_path": "inbox/processed/2026-05/2026-05-29T14:09:56+00:00--19e7403504c6e5e3.json",
+      "raw_id": "19e7403504c6e5e3",
+      "ingested_at": "2026-05-29T14:09:56.000Z"
+    },
+    "raw": {
+      "text": "#14832478675 PAPERMONEY SOLD -1 U 100 (Weeklys) 5 JUN 26 29 CALL @1.64, ACCOUNT D-******81"
+    },
+    "instrument": "option",
+    "paper": true,
+    "action": "SOLD",
+    "symbol": "U",
+    "qty": 1,
+    "fill": 1.64,
+    "option": {
+      "expiry": "2026-06-05",
+      "strike": 29,
+      "right": "C"
+    },
+    "computed": {
+      "month": "2026-05",
+      "dte": 7,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "exit long U $29 Call for 06/05 at 1.64"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "OPT|U|2026-06-05|29|C"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "3e8f912664b0",
+    "received_at": "2026-05-29T14:04:52.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-05-29T14:09:55+00:00--19e740d5e75bb2b1.json",
+      "archived_path": "inbox/processed/2026-05/2026-05-29T14:09:55+00:00--19e740d5e75bb2b1.json",
+      "raw_id": "19e740d5e75bb2b1",
+      "ingested_at": "2026-05-29T14:09:55.000Z"
+    },
+    "raw": {
+      "text": "#14832509483 PAPERMONEY BOT +1 PLTR 100 (Weeklys) 29 MAY 26 155 CALL @1.71, ACCOUNT D-******81"
+    },
+    "instrument": "option",
+    "paper": true,
+    "action": "BOT",
+    "symbol": "PLTR",
+    "qty": 1,
+    "fill": 1.71,
+    "option": {
+      "expiry": "2026-05-29",
+      "strike": 155,
+      "right": "C"
+    },
+    "computed": {
+      "month": "2026-05",
+      "dte": 0,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "long PLTR $155 Call for 05/29 at 1.71"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "OPT|PLTR|2026-05-29|155|C"
   }
 ]
