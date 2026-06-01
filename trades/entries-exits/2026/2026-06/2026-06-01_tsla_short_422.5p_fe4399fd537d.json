@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "trade_id": "fe4399fd537d",
+  "received_at": "2026-06-01T14:37:32.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-06-01T14:39:00+00:00--19e839e5800ffb4e.json",
+    "archived_path": "inbox/processed/2026-06/2026-06-01T14:39:00+00:00--19e839e5800ffb4e.json",
+    "raw_id": "19e839e5800ffb4e",
+    "ingested_at": "2026-06-01T14:39:00.000Z"
+  },
+  "raw": {
+    "text": "#14833239761 PAPERMONEY BOT +1 TSLA 100 (Weeklys) 1 JUN 26 422.5 PUT @3.75, ACCOUNT D-******81"
+  },
+  "instrument": "option",
+  "paper": true,
+  "action": "BOT",
+  "symbol": "TSLA",
+  "qty": 1,
+  "fill": 3.75,
+  "option": {
+    "expiry": "2026-06-01",
+    "strike": 422.5,
+    "right": "P"
+  },
+  "computed": {
+    "month": "2026-06",
+    "dte": 0,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "options",
+    "text": "short TSLA $422.5 Put for 06/01 at 3.75"
+  },
+  "trade_role": "open",
+  "pos_side": "long",
+  "contract_key": "OPT|TSLA|2026-06-01|422.5|P"
+}

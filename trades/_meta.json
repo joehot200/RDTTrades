@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-05-29T18:11:59.844Z",
-  "latest_commit_message": "exit long ASTC at 55.46",
-  "latest_processed_trade_id": "aa10c0345f1f",
+  "generated_at": "2026-06-01T14:39:23.016Z",
+  "latest_commit_message": "short TSLA $422.5 Put for 06/01 at 3.75",
+  "latest_processed_trade_id": "fe4399fd537d",
   "processed_trade_ids_this_run": [
-    "aa10c0345f1f"
+    "fe4399fd537d"
   ]
 }
