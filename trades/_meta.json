@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-06-01T15:41:20.699Z",
-  "latest_commit_message": "exit short TSLA $422.5 Put for 06/01 at 1.98",
-  "latest_processed_trade_id": "2486bc063676",
+  "generated_at": "2026-06-01T17:24:35.986Z",
+  "latest_commit_message": "short AMZN $260 Put for 06/03 at 2.11",
+  "latest_processed_trade_id": "c9e45f6a8025",
   "processed_trade_ids_this_run": [
-    "2486bc063676"
+    "c9e45f6a8025"
   ]
 }

@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "trade_id": "c9e45f6a8025",
+  "received_at": "2026-06-01T17:09:45.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-06-01T17:24:15+00:00--19e8429b643d57ba.json",
+    "archived_path": "inbox/processed/2026-06/2026-06-01T17:24:15+00:00--19e8429b643d57ba.json",
+    "raw_id": "19e8429b643d57ba",
+    "ingested_at": "2026-06-01T17:24:15.000Z"
+  },
+  "raw": {
+    "text": "#14833443477 PAPERMONEY BOT +1 AMZN 100 (Weeklys) 3 JUN 26 260 PUT @2.11, ACCOUNT D-******81"
+  },
+  "instrument": "option",
+  "paper": true,
+  "action": "BOT",
+  "symbol": "AMZN",
+  "qty": 1,
+  "fill": 2.11,
+  "option": {
+    "expiry": "2026-06-03",
+    "strike": 260,
+    "right": "P"
+  },
+  "computed": {
+    "month": "2026-06",
+    "dte": 2,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "options",
+    "text": "short AMZN $260 Put for 06/03 at 2.11"
+  },
+  "trade_role": "open",
+  "pos_side": "long",
+  "contract_key": "OPT|AMZN|2026-06-03|260|P"
+}
