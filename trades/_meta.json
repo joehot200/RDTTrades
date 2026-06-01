@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-06-01T14:53:23.865Z",
-  "latest_commit_message": "short AMZN $262.5 Put for 06/01 at 0.75",
-  "latest_processed_trade_id": "4a7dde418a64",
+  "generated_at": "2026-06-01T15:10:35.802Z",
+  "latest_commit_message": "long RIVN $16.5 Call for 06/05 at 0.8",
+  "latest_processed_trade_id": "80beb5742d7a",
   "processed_trade_ids_this_run": [
-    "4a7dde418a64"
+    "80beb5742d7a"
   ]
 }
