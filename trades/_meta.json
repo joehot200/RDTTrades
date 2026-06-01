@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-06-01T15:10:35.802Z",
-  "latest_commit_message": "long RIVN $16.5 Call for 06/05 at 0.8",
-  "latest_processed_trade_id": "80beb5742d7a",
+  "generated_at": "2026-06-01T15:41:20.699Z",
+  "latest_commit_message": "exit short TSLA $422.5 Put for 06/01 at 1.98",
+  "latest_processed_trade_id": "2486bc063676",
   "processed_trade_ids_this_run": [
-    "80beb5742d7a"
+    "2486bc063676"
   ]
 }
