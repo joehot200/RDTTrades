@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "trade_id": "a94147749020",
+  "received_at": "2026-06-02T18:20:20.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-06-02T18:23:15+00:00--19e8990b3eddb693.json",
+    "archived_path": "inbox/processed/2026-06/2026-06-02T18:23:15+00:00--19e8990b3eddb693.json",
+    "raw_id": "19e8990b3eddb693",
+    "ingested_at": "2026-06-02T18:23:15.000Z"
+  },
+  "raw": {
+    "text": "#14834127098 PAPERMONEY SOLD -1 CMG 100 (Weeklys) 12 JUN 26 31.5 PUT @2.50, ACCOUNT D-******81"
+  },
+  "instrument": "option",
+  "paper": true,
+  "action": "SOLD",
+  "symbol": "CMG",
+  "qty": 1,
+  "fill": 2.5,
+  "option": {
+    "expiry": "2026-06-12",
+    "strike": 31.5,
+    "right": "P"
+  },
+  "computed": {
+    "month": "2026-06",
+    "dte": 10,
+    "wiki_ok": true
+  },
+  "rdt": {
+    "matched": "options",
+    "text": "exit short CMG $31.5 Put for 06/12 at 2.5"
+  },
+  "trade_role": "close",
+  "pos_side": "long",
+  "contract_key": "OPT|CMG|2026-06-12|31.5|P"
+}

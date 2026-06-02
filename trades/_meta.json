@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-06-02T18:06:33.630Z",
-  "latest_commit_message": "exit short INTC $102 Put for 06/12 at 3.9",
-  "latest_processed_trade_id": "57c11c611a2f",
+  "generated_at": "2026-06-02T18:23:36.972Z",
+  "latest_commit_message": "exit short CMG $31.5 Put for 06/12 at 2.5",
+  "latest_processed_trade_id": "a94147749020",
   "processed_trade_ids_this_run": [
-    "57c11c611a2f"
+    "a94147749020"
   ]
 }
