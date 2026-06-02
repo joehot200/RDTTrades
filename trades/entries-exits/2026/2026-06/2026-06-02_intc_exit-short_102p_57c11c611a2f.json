@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "trade_id": "57c11c611a2f",
+  "received_at": "2026-06-02T17:52:31.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-06-02T18:06:07+00:00--19e89773ad37e71b.json",
+    "archived_path": "inbox/processed/2026-06/2026-06-02T18:06:07+00:00--19e89773ad37e71b.json",
+    "raw_id": "19e89773ad37e71b",
+    "ingested_at": "2026-06-02T18:06:07.000Z"
+  },
+  "raw": {
+    "text": "#14834106782 PAPERMONEY SOLD -1 INTC 100 (Weeklys) 12 JUN 26 102 PUT @3.90, ACCOUNT D-******81"
+  },
+  "instrument": "option",
+  "paper": true,
+  "action": "SOLD",
+  "symbol": "INTC",
+  "qty": 1,
+  "fill": 3.9,
+  "option": {
+    "expiry": "2026-06-12",
+    "strike": 102,
+    "right": "P"
+  },
+  "computed": {
+    "month": "2026-06",
+    "dte": 10,
+    "wiki_ok": true
+  },
+  "rdt": {
+    "matched": "options",
+    "text": "exit short INTC $102 Put for 06/12 at 3.9"
+  },
+  "trade_role": "close",
+  "pos_side": "long",
+  "contract_key": "OPT|INTC|2026-06-12|102|P"
+}
