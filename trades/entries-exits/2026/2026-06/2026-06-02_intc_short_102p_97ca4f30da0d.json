@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "trade_id": "97ca4f30da0d",
+  "received_at": "2026-06-02T17:26:44.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-06-02T17:34:37+00:00--19e895f9db5afa1b.json",
+    "archived_path": "inbox/processed/2026-06/2026-06-02T17:34:37+00:00--19e895f9db5afa1b.json",
+    "raw_id": "19e895f9db5afa1b",
+    "ingested_at": "2026-06-02T17:34:37.000Z"
+  },
+  "raw": {
+    "text": "#14834085895 PAPERMONEY BOT +1 INTC 100 (Weeklys) 12 JUN 26 102 PUT @3.90, ACCOUNT D-******81"
+  },
+  "instrument": "option",
+  "paper": true,
+  "action": "BOT",
+  "symbol": "INTC",
+  "qty": 1,
+  "fill": 3.9,
+  "option": {
+    "expiry": "2026-06-12",
+    "strike": 102,
+    "right": "P"
+  },
+  "computed": {
+    "month": "2026-06",
+    "dte": 10,
+    "wiki_ok": true
+  },
+  "rdt": {
+    "matched": "options",
+    "text": "short INTC $102 Put for 06/12 at 3.9"
+  },
+  "trade_role": "open",
+  "pos_side": "long",
+  "contract_key": "OPT|INTC|2026-06-12|102|P"
+}

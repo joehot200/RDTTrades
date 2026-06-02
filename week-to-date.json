@@ -340,5 +340,81 @@
     "trade_role": "close",
     "pos_side": "long",
     "contract_key": "OPT|RIVN|2026-06-05|16.5|C"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "97ca4f30da0d",
+    "received_at": "2026-06-02T17:26:44.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-06-02T17:34:37+00:00--19e895f9db5afa1b.json",
+      "archived_path": "inbox/processed/2026-06/2026-06-02T17:34:37+00:00--19e895f9db5afa1b.json",
+      "raw_id": "19e895f9db5afa1b",
+      "ingested_at": "2026-06-02T17:34:37.000Z"
+    },
+    "raw": {
+      "text": "#14834085895 PAPERMONEY BOT +1 INTC 100 (Weeklys) 12 JUN 26 102 PUT @3.90, ACCOUNT D-******81"
+    },
+    "instrument": "option",
+    "paper": true,
+    "action": "BOT",
+    "symbol": "INTC",
+    "qty": 1,
+    "fill": 3.9,
+    "option": {
+      "expiry": "2026-06-12",
+      "strike": 102,
+      "right": "P"
+    },
+    "computed": {
+      "month": "2026-06",
+      "dte": 10,
+      "wiki_ok": true
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "short INTC $102 Put for 06/12 at 3.9"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "OPT|INTC|2026-06-12|102|P"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "fa04fb9df84c",
+    "received_at": "2026-06-02T17:27:08.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-06-02T17:34:36+00:00--19e89600223401b8.json",
+      "archived_path": "inbox/processed/2026-06/2026-06-02T17:34:36+00:00--19e89600223401b8.json",
+      "raw_id": "19e89600223401b8",
+      "ingested_at": "2026-06-02T17:34:36.000Z"
+    },
+    "raw": {
+      "text": "#14834086259 PAPERMONEY BOT +1 CMG 100 (Weeklys) 12 JUN 26 31.5 PUT @2.55, ACCOUNT D-******81"
+    },
+    "instrument": "option",
+    "paper": true,
+    "action": "BOT",
+    "symbol": "CMG",
+    "qty": 1,
+    "fill": 2.55,
+    "option": {
+      "expiry": "2026-06-12",
+      "strike": 31.5,
+      "right": "P"
+    },
+    "computed": {
+      "month": "2026-06",
+      "dte": 10,
+      "wiki_ok": true
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "short CMG $31.5 Put for 06/12 at 2.55"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "OPT|CMG|2026-06-12|31.5|P"
   }
 ]
