@@ -33,5 +33,40 @@
       "realized": -177,
       "currency": "USD"
     }
+  },
+  {
+    "schema_version": 1,
+    "completed_trade_id": "9435e9e4b454",
+    "status": "closed",
+    "contract_key": "OPT|RIVN|2026-06-18|15.5|P",
+    "instrument": "option",
+    "pos_side": "long",
+    "symbol": "RIVN",
+    "option": {
+      "expiry": "2026-06-18",
+      "strike": 15.5,
+      "right": "P"
+    },
+    "qty_opened": 1,
+    "qty_closed": 1,
+    "entry": {
+      "trade_id": "9435e9e4b454",
+      "received_at": "2026-06-01T19:32:00.000Z",
+      "fill": 0.44,
+      "rdt": "short RIVN $15.5 Put for 06/18 at 0.44"
+    },
+    "exits": [
+      {
+        "trade_id": "e584c668310d",
+        "received_at": "2026-06-02T15:32:26.000Z",
+        "fill": 0.29,
+        "qty": 1,
+        "rdt": "exit short RIVN $15.5 Put for 06/18 at 0.29"
+      }
+    ],
+    "pnl": {
+      "realized": -15.000000000000002,
+      "currency": "USD"
+    }
   }
 ]

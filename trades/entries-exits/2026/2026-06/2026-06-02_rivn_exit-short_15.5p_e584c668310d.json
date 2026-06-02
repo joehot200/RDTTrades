@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "trade_id": "e584c668310d",
+  "received_at": "2026-06-02T15:32:26.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-06-02T15:39:52+00:00--19e88f6fbcffb216.json",
+    "archived_path": "inbox/processed/2026-06/2026-06-02T15:39:52+00:00--19e88f6fbcffb216.json",
+    "raw_id": "19e88f6fbcffb216",
+    "ingested_at": "2026-06-02T15:39:52.000Z"
+  },
+  "raw": {
+    "text": "#14833981849 PAPERMONEY SOLD -1 RIVN 100 18 JUN 26 15.5 PUT @.29, ACCOUNT D-******81"
+  },
+  "instrument": "option",
+  "paper": true,
+  "action": "SOLD",
+  "symbol": "RIVN",
+  "qty": 1,
+  "fill": 0.29,
+  "option": {
+    "expiry": "2026-06-18",
+    "strike": 15.5,
+    "right": "P"
+  },
+  "computed": {
+    "month": "2026-06",
+    "dte": 16,
+    "wiki_ok": true
+  },
+  "rdt": {
+    "matched": "options",
+    "text": "exit short RIVN $15.5 Put for 06/18 at 0.29"
+  },
+  "trade_role": "close",
+  "pos_side": "long",
+  "contract_key": "OPT|RIVN|2026-06-18|15.5|P"
+}
