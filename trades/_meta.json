@@ -1,9 +1,6 @@
 {
-  "generated_at": "2026-06-02T17:05:53.000Z",
+  "generated_at": "2026-06-02T17:06:07.513Z",
   "latest_commit_message": "exit long RIVN $16.5 Call for 06/05 at 0.98",
-  "latest_processed_trade_id": "4c192be44cef",
-  "processed_trade_ids_this_run": [
-    "b8e987497c12",
-    "4c192be44cef"
-  ]
+  "latest_processed_trade_id": null,
+  "processed_trade_ids_this_run": []
 }
