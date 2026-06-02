@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "trade_id": "ddd19bb4a167",
+  "received_at": "2026-06-02T19:59:30.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-06-02T20:09:35+00:00--19e89eb786967c03.json",
+    "archived_path": "inbox/processed/2026-06/2026-06-02T20:09:35+00:00--19e89eb786967c03.json",
+    "raw_id": "19e89eb786967c03",
+    "ingested_at": "2026-06-02T20:09:35.000Z"
+  },
+  "raw": {
+    "text": "#14834211592 PAPERMONEY SOLD -1 RBLX 100 (Weeklys) 12 JUN 26 44.5 PUT @1.79, ACCOUNT D-******81"
+  },
+  "instrument": "option",
+  "paper": true,
+  "action": "SOLD",
+  "symbol": "RBLX",
+  "qty": 1,
+  "fill": 1.79,
+  "option": {
+    "expiry": "2026-06-12",
+    "strike": 44.5,
+    "right": "P"
+  },
+  "computed": {
+    "month": "2026-06",
+    "dte": 10,
+    "wiki_ok": true
+  },
+  "rdt": {
+    "matched": "options",
+    "text": "exit short RBLX $44.5 Put for 06/12 at 1.79"
+  },
+  "trade_role": "close",
+  "pos_side": "long",
+  "contract_key": "OPT|RBLX|2026-06-12|44.5|P"
+}
