@@ -568,5 +568,43 @@
     "trade_role": "open",
     "pos_side": "long",
     "contract_key": "OPT|CVNA|2026-06-05|64.5|P"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "2726a5883c3a",
+    "received_at": "2026-06-02T19:12:21.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-06-02T19:26:02+00:00--19e89c04e38eebb8.json",
+      "archived_path": "inbox/processed/2026-06/2026-06-02T19:26:02+00:00--19e89c04e38eebb8.json",
+      "raw_id": "19e89c04e38eebb8",
+      "ingested_at": "2026-06-02T19:26:02.000Z"
+    },
+    "raw": {
+      "text": "#14834166759 PAPERMONEY BOT +1 RBLX 100 (Weeklys) 12 JUN 26 44.5 PUT @2.09, ACCOUNT D-******81"
+    },
+    "instrument": "option",
+    "paper": true,
+    "action": "BOT",
+    "symbol": "RBLX",
+    "qty": 1,
+    "fill": 2.09,
+    "option": {
+      "expiry": "2026-06-12",
+      "strike": 44.5,
+      "right": "P"
+    },
+    "computed": {
+      "month": "2026-06",
+      "dte": 10,
+      "wiki_ok": true
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "short RBLX $44.5 Put for 06/12 at 2.09"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "OPT|RBLX|2026-06-12|44.5|P"
   }
 ]
