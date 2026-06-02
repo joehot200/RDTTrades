@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "completed_trade_id": "80beb5742d7a",
+  "status": "closed",
+  "contract_key": "OPT|RIVN|2026-06-05|16.5|C",
+  "instrument": "option",
+  "pos_side": "long",
+  "symbol": "RIVN",
+  "option": {
+    "expiry": "2026-06-05",
+    "strike": 16.5,
+    "right": "C"
+  },
+  "qty_opened": 1,
+  "qty_closed": 1,
+  "entry": {
+    "trade_id": "80beb5742d7a",
+    "received_at": "2026-06-01T15:09:33.000Z",
+    "fill": 0.8,
+    "rdt": "long RIVN $16.5 Call for 06/05 at 0.8"
+  },
+  "exits": [
+    {
+      "trade_id": "4c192be44cef",
+      "received_at": "2026-06-02T16:52:39.000Z",
+      "fill": 0.98,
+      "qty": 1,
+      "rdt": "exit long RIVN $16.5 Call for 06/05 at 0.98"
+    }
+  ],
+  "pnl": {
+    "realized": 17.999999999999993,
+    "currency": "USD"
+  }
+}

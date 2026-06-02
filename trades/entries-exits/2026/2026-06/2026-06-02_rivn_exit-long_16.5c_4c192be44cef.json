@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "trade_id": "4c192be44cef",
+  "received_at": "2026-06-02T16:52:39.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-06-02T17:05:33+00:00--19e89406a49d1499.json",
+    "archived_path": "inbox/processed/2026-06/2026-06-02T17:05:33+00:00--19e89406a49d1499.json",
+    "raw_id": "19e89406a49d1499",
+    "ingested_at": "2026-06-02T17:05:33.000Z"
+  },
+  "raw": {
+    "text": "#14834057215 PAPERMONEY SOLD -1 RIVN 100 (Weeklys) 5 JUN 26 16.5 CALL @.98, ACCOUNT D-******81"
+  },
+  "instrument": "option",
+  "paper": true,
+  "action": "SOLD",
+  "symbol": "RIVN",
+  "qty": 1,
+  "fill": 0.98,
+  "option": {
+    "expiry": "2026-06-05",
+    "strike": 16.5,
+    "right": "C"
+  },
+  "computed": {
+    "month": "2026-06",
+    "dte": 3,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "options",
+    "text": "exit long RIVN $16.5 Call for 06/05 at 0.98"
+  },
+  "trade_role": "close",
+  "pos_side": "long",
+  "contract_key": "OPT|RIVN|2026-06-05|16.5|C"
+}
