@@ -530,5 +530,43 @@
     "trade_role": "open",
     "pos_side": "long",
     "contract_key": "OPT|GOOG|2026-06-05|362.5|P"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "95d814aad3b6",
+    "received_at": "2026-06-02T19:11:06.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-06-02T19:12:01+00:00--19e89bf2d0a49b41.json",
+      "archived_path": "inbox/processed/2026-06/2026-06-02T19:12:01+00:00--19e89bf2d0a49b41.json",
+      "raw_id": "19e89bf2d0a49b41",
+      "ingested_at": "2026-06-02T19:12:01.000Z"
+    },
+    "raw": {
+      "text": "#14834164933 PAPERMONEY BOT +1 CVNA 100 (Weeklys) 5 JUN 26 64.5 PUT @1.94, ACCOUNT D-******81"
+    },
+    "instrument": "option",
+    "paper": true,
+    "action": "BOT",
+    "symbol": "CVNA",
+    "qty": 1,
+    "fill": 1.94,
+    "option": {
+      "expiry": "2026-06-05",
+      "strike": 64.5,
+      "right": "P"
+    },
+    "computed": {
+      "month": "2026-06",
+      "dte": 3,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "short CVNA $64.5 Put for 06/05 at 1.94"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "OPT|CVNA|2026-06-05|64.5|P"
   }
 ]
