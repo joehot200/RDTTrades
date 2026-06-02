@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "trade_id": "74e98380bc80",
+  "received_at": "2026-06-02T18:54:57.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-06-02T18:55:38+00:00--19e89b06467798c8.json",
+    "archived_path": "inbox/processed/2026-06/2026-06-02T18:55:38+00:00--19e89b06467798c8.json",
+    "raw_id": "19e89b06467798c8",
+    "ingested_at": "2026-06-02T18:55:38.000Z"
+  },
+  "raw": {
+    "text": "#14834152470 PAPERMONEY BOT +1 GOOG 100 (Weeklys) 5 JUN 26 362.5 PUT @5.45, ACCOUNT D-******81"
+  },
+  "instrument": "option",
+  "paper": true,
+  "action": "BOT",
+  "symbol": "GOOG",
+  "qty": 1,
+  "fill": 5.45,
+  "option": {
+    "expiry": "2026-06-05",
+    "strike": 362.5,
+    "right": "P"
+  },
+  "computed": {
+    "month": "2026-06",
+    "dte": 3,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "options",
+    "text": "short GOOG $362.5 Put for 06/05 at 5.45"
+  },
+  "trade_role": "open",
+  "pos_side": "long",
+  "contract_key": "OPT|GOOG|2026-06-05|362.5|P"
+}
