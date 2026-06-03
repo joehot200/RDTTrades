@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "trade_id": "d2010092f891",
+  "received_at": "2026-06-03T14:58:45.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-06-03T15:10:41+00:00--19e8dfe7f9d2fa01.json",
+    "archived_path": "inbox/processed/2026-06/2026-06-03T15:10:41+00:00--19e8dfe7f9d2fa01.json",
+    "raw_id": "19e8dfe7f9d2fa01",
+    "ingested_at": "2026-06-03T15:10:41.000Z"
+  },
+  "raw": {
+    "text": "#14834541744 PAPERMONEY SOLD -1 CSCO 100 (Weeklys) 12 JUN 26 127 CALL @3.90, ACCOUNT D-******81"
+  },
+  "instrument": "option",
+  "paper": true,
+  "action": "SOLD",
+  "symbol": "CSCO",
+  "qty": 1,
+  "fill": 3.9,
+  "option": {
+    "expiry": "2026-06-12",
+    "strike": 127,
+    "right": "C"
+  },
+  "computed": {
+    "month": "2026-06",
+    "dte": 9,
+    "wiki_ok": true
+  },
+  "rdt": {
+    "matched": "options",
+    "text": "exit long CSCO $127 Call for 06/12 at 3.9"
+  },
+  "trade_role": "close",
+  "pos_side": "long",
+  "contract_key": "OPT|CSCO|2026-06-12|127|C"
+}
