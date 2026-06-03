@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "trade_id": "24843e180359",
+  "received_at": "2026-06-03T14:51:23.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-06-03T14:57:16+00:00--19e8df7c0b4c549a.json",
+    "archived_path": "inbox/processed/2026-06/2026-06-03T14:57:16+00:00--19e8df7c0b4c549a.json",
+    "raw_id": "19e8df7c0b4c549a",
+    "ingested_at": "2026-06-03T14:57:16.000Z"
+  },
+  "raw": {
+    "text": "#14834529654 PAPERMONEY SOLD -1 CSCO 100 18 JUN 26 127 CALL @4.60, ACCOUNT D-******81"
+  },
+  "instrument": "option",
+  "paper": true,
+  "action": "SOLD",
+  "symbol": "CSCO",
+  "qty": 1,
+  "fill": 4.6,
+  "option": {
+    "expiry": "2026-06-18",
+    "strike": 127,
+    "right": "C"
+  },
+  "computed": {
+    "month": "2026-06",
+    "dte": 15,
+    "wiki_ok": true
+  },
+  "rdt": {
+    "matched": "options",
+    "text": "exit long CSCO $127 Call for 06/18 at 4.6"
+  },
+  "trade_role": "close",
+  "pos_side": "long",
+  "contract_key": "OPT|CSCO|2026-06-18|127|C"
+}

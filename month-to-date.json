@@ -720,5 +720,157 @@
     "trade_role": "close",
     "pos_side": "long",
     "contract_key": "OPT|CVNA|2026-06-05|64.5|P"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "5553087de833",
+    "received_at": "2026-06-03T14:45:07.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-06-03T14:57:18+00:00--19e8df204d46912d.json",
+      "archived_path": "inbox/processed/2026-06/2026-06-03T14:57:18+00:00--19e8df204d46912d.json",
+      "raw_id": "19e8df204d46912d",
+      "ingested_at": "2026-06-03T14:57:18.000Z"
+    },
+    "raw": {
+      "text": "#14834517650 PAPERMONEY BOT +1 CSCO 100 18 JUN 26 127 CALL @4.55, ACCOUNT D-******81"
+    },
+    "instrument": "option",
+    "paper": true,
+    "action": "BOT",
+    "symbol": "CSCO",
+    "qty": 1,
+    "fill": 4.55,
+    "option": {
+      "expiry": "2026-06-18",
+      "strike": 127,
+      "right": "C"
+    },
+    "computed": {
+      "month": "2026-06",
+      "dte": 15,
+      "wiki_ok": true
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "long CSCO $127 Call for 06/18 at 4.55"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "OPT|CSCO|2026-06-18|127|C"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "f3e3674b57ef",
+    "received_at": "2026-06-03T14:51:06.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-06-03T14:57:15+00:00--19e8df780e2c0a2c.json",
+      "archived_path": "inbox/processed/2026-06/2026-06-03T14:57:15+00:00--19e8df780e2c0a2c.json",
+      "raw_id": "19e8df780e2c0a2c",
+      "ingested_at": "2026-06-03T14:57:15.000Z"
+    },
+    "raw": {
+      "text": "#14834528840 PAPERMONEY BOT +1 NFLX 100 18 JUN 26 82 PUT @2.32, ACCOUNT D-******81"
+    },
+    "instrument": "option",
+    "paper": true,
+    "action": "BOT",
+    "symbol": "NFLX",
+    "qty": 1,
+    "fill": 2.32,
+    "option": {
+      "expiry": "2026-06-18",
+      "strike": 82,
+      "right": "P"
+    },
+    "computed": {
+      "month": "2026-06",
+      "dte": 15,
+      "wiki_ok": true
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "short NFLX $82 Put for 06/18 at 2.32"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "OPT|NFLX|2026-06-18|82|P"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "24843e180359",
+    "received_at": "2026-06-03T14:51:23.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-06-03T14:57:16+00:00--19e8df7c0b4c549a.json",
+      "archived_path": "inbox/processed/2026-06/2026-06-03T14:57:16+00:00--19e8df7c0b4c549a.json",
+      "raw_id": "19e8df7c0b4c549a",
+      "ingested_at": "2026-06-03T14:57:16.000Z"
+    },
+    "raw": {
+      "text": "#14834529654 PAPERMONEY SOLD -1 CSCO 100 18 JUN 26 127 CALL @4.60, ACCOUNT D-******81"
+    },
+    "instrument": "option",
+    "paper": true,
+    "action": "SOLD",
+    "symbol": "CSCO",
+    "qty": 1,
+    "fill": 4.6,
+    "option": {
+      "expiry": "2026-06-18",
+      "strike": 127,
+      "right": "C"
+    },
+    "computed": {
+      "month": "2026-06",
+      "dte": 15,
+      "wiki_ok": true
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "exit long CSCO $127 Call for 06/18 at 4.6"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "OPT|CSCO|2026-06-18|127|C"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "ccd9f062c20a",
+    "received_at": "2026-06-03T14:51:44.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-06-03T14:57:11+00:00--19e8df81211513e1.json",
+      "archived_path": "inbox/processed/2026-06/2026-06-03T14:57:11+00:00--19e8df81211513e1.json",
+      "raw_id": "19e8df81211513e1",
+      "ingested_at": "2026-06-03T14:57:11.000Z"
+    },
+    "raw": {
+      "text": "#14834530460 PAPERMONEY BOT +1 CSCO 100 (Weeklys) 12 JUN 26 127 CALL @3.70, ACCOUNT D-******81"
+    },
+    "instrument": "option",
+    "paper": true,
+    "action": "BOT",
+    "symbol": "CSCO",
+    "qty": 1,
+    "fill": 3.7,
+    "option": {
+      "expiry": "2026-06-12",
+      "strike": 127,
+      "right": "C"
+    },
+    "computed": {
+      "month": "2026-06",
+      "dte": 9,
+      "wiki_ok": true
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "long CSCO $127 Call for 06/12 at 3.7"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "OPT|CSCO|2026-06-12|127|C"
   }
 ]
