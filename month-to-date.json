@@ -986,5 +986,43 @@
     "trade_role": "open",
     "pos_side": "long",
     "contract_key": "OPT|CSCO|2026-06-12|128|C"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "362cc751fc4a",
+    "received_at": "2026-06-03T17:04:06.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-06-03T17:10:28+00:00--19e8e713fcb29161.json",
+      "archived_path": "inbox/processed/2026-06/2026-06-03T17:10:28+00:00--19e8e713fcb29161.json",
+      "raw_id": "19e8e713fcb29161",
+      "ingested_at": "2026-06-03T17:10:28.000Z"
+    },
+    "raw": {
+      "text": "#14834682000 PAPERMONEY SOLD -1 MSTR 100 (Weeklys) 12 JUN 26 121 PUT @3.50, ACCOUNT D-******81"
+    },
+    "instrument": "option",
+    "paper": true,
+    "action": "SOLD",
+    "symbol": "MSTR",
+    "qty": 1,
+    "fill": 3.5,
+    "option": {
+      "expiry": "2026-06-12",
+      "strike": 121,
+      "right": "P"
+    },
+    "computed": {
+      "month": "2026-06",
+      "dte": 9,
+      "wiki_ok": true
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "exit short MSTR $121 Put for 06/12 at 3.5"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "OPT|MSTR|2026-06-12|121|P"
   }
 ]
