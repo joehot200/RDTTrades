@@ -1,10 +1,6 @@
 {
-  "generated_at": "2026-06-04T15:42:42.547Z",
+  "generated_at": "2026-06-04T15:42:57.050Z",
   "latest_commit_message": "exit long NFLX $87 Call for 06/18 at 0.64",
-  "latest_processed_trade_id": "639268924adb",
-  "processed_trade_ids_this_run": [
-    "9849979fedad",
-    "9e10cc718813",
-    "639268924adb"
-  ]
+  "latest_processed_trade_id": null,
+  "processed_trade_ids_this_run": []
 }
