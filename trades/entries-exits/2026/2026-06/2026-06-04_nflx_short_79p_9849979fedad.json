@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "trade_id": "9849979fedad",
+  "received_at": "2026-06-04T15:31:22.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-06-04T15:42:23+00:00--19e9342b75268887.json",
+    "archived_path": "inbox/processed/2026-06/2026-06-04T15:42:23+00:00--19e9342b75268887.json",
+    "raw_id": "19e9342b75268887",
+    "ingested_at": "2026-06-04T15:42:23.000Z"
+  },
+  "raw": {
+    "text": "#14835233679 PAPERMONEY BOT +1 NFLX 100 18 JUN 26 79 PUT @.72, ACCOUNT D-******81"
+  },
+  "instrument": "option",
+  "paper": true,
+  "action": "BOT",
+  "symbol": "NFLX",
+  "qty": 1,
+  "fill": 0.72,
+  "option": {
+    "expiry": "2026-06-18",
+    "strike": 79,
+    "right": "P"
+  },
+  "computed": {
+    "month": "2026-06",
+    "dte": 14,
+    "wiki_ok": true
+  },
+  "rdt": {
+    "matched": "options",
+    "text": "short NFLX $79 Put for 06/18 at 0.72"
+  },
+  "trade_role": "open",
+  "pos_side": "long",
+  "contract_key": "OPT|NFLX|2026-06-18|79|P"
+}
