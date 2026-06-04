@@ -1,8 +1,9 @@
 {
-  "generated_at": "2026-06-03T17:10:49.214Z",
-  "latest_commit_message": "exit short MSTR $121 Put for 06/12 at 3.5",
-  "latest_processed_trade_id": "362cc751fc4a",
+  "generated_at": "2026-06-04T15:12:18.122Z",
+  "latest_commit_message": "exit long SMCI $47 Call for 06/12 at 2.73",
+  "latest_processed_trade_id": "9004ee5a3746",
   "processed_trade_ids_this_run": [
-    "362cc751fc4a"
+    "6825a8eacef7",
+    "9004ee5a3746"
   ]
 }

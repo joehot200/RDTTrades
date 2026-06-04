@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "completed_trade_id": "6825a8eacef7",
+  "status": "closed",
+  "contract_key": "OPT|SMCI|2026-06-12|47|C",
+  "instrument": "option",
+  "pos_side": "long",
+  "symbol": "SMCI",
+  "option": {
+    "expiry": "2026-06-12",
+    "strike": 47,
+    "right": "C"
+  },
+  "qty_opened": 1,
+  "qty_closed": 1,
+  "entry": {
+    "trade_id": "6825a8eacef7",
+    "received_at": "2026-06-04T14:56:28.000Z",
+    "fill": 2.66,
+    "rdt": "long SMCI $47 Call for 06/12 at 2.66"
+  },
+  "exits": [
+    {
+      "trade_id": "9004ee5a3746",
+      "received_at": "2026-06-04T15:00:01.000Z",
+      "fill": 2.73,
+      "qty": 1,
+      "rdt": "exit long SMCI $47 Call for 06/12 at 2.73"
+    }
+  ],
+  "pnl": {
+    "realized": 6.999999999999984,
+    "currency": "USD"
+  }
+}

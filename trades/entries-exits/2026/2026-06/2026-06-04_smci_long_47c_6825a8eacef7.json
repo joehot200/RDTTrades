@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "trade_id": "6825a8eacef7",
+  "received_at": "2026-06-04T14:56:28.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-06-04T15:11:56+00:00--19e9322c5f4cd5f0.json",
+    "archived_path": "inbox/processed/2026-06/2026-06-04T15:11:56+00:00--19e9322c5f4cd5f0.json",
+    "raw_id": "19e9322c5f4cd5f0",
+    "ingested_at": "2026-06-04T15:11:56.000Z"
+  },
+  "raw": {
+    "text": "#14835177136 PAPERMONEY BOT +1 SMCI 100 (Weeklys) 12 JUN 26 47 CALL @2.66, ACCOUNT D-******81"
+  },
+  "instrument": "option",
+  "paper": true,
+  "action": "BOT",
+  "symbol": "SMCI",
+  "qty": 1,
+  "fill": 2.66,
+  "option": {
+    "expiry": "2026-06-12",
+    "strike": 47,
+    "right": "C"
+  },
+  "computed": {
+    "month": "2026-06",
+    "dte": 8,
+    "wiki_ok": true
+  },
+  "rdt": {
+    "matched": "options",
+    "text": "long SMCI $47 Call for 06/12 at 2.66"
+  },
+  "trade_role": "open",
+  "pos_side": "long",
+  "contract_key": "OPT|SMCI|2026-06-12|47|C"
+}
