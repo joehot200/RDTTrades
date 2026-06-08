@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "trade_id": "3fb273a27393",
+  "received_at": "2026-06-08T15:35:30.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-06-08T15:44:20+00:00--19ea7dff13ff1411.json",
+    "archived_path": "inbox/processed/2026-06/2026-06-08T15:44:20+00:00--19ea7dff13ff1411.json",
+    "raw_id": "19ea7dff13ff1411",
+    "ingested_at": "2026-06-08T15:44:20.000Z"
+  },
+  "raw": {
+    "text": "#14836546730 PAPERMONEY BOT +1 PLTR 100 (Weeklys) 12 JUN 26 133 PUT @1.95, ACCOUNT D-******81"
+  },
+  "instrument": "option",
+  "paper": true,
+  "action": "BOT",
+  "symbol": "PLTR",
+  "qty": 1,
+  "fill": 1.95,
+  "option": {
+    "expiry": "2026-06-12",
+    "strike": 133,
+    "right": "P"
+  },
+  "computed": {
+    "month": "2026-06",
+    "dte": 4,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "options",
+    "text": "short PLTR $133 Put for 06/12 at 1.95"
+  },
+  "trade_role": "open",
+  "pos_side": "long",
+  "contract_key": "OPT|PLTR|2026-06-12|133|P"
+}
