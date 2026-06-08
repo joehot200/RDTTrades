@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "trade_id": "c35ed457e130",
+  "received_at": "2026-06-08T17:04:05.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-06-08T17:15:19+00:00--19ea8310ab33bf8b.json",
+    "archived_path": "inbox/processed/2026-06/2026-06-08T17:15:19+00:00--19ea8310ab33bf8b.json",
+    "raw_id": "19ea8310ab33bf8b",
+    "ingested_at": "2026-06-08T17:15:19.000Z"
+  },
+  "raw": {
+    "text": "#14836640005 PAPERMONEY SOLD -1 SMCI 100 18 JUN 26 43.5 CALL @2.70, ACCOUNT D-******81"
+  },
+  "instrument": "option",
+  "paper": true,
+  "action": "SOLD",
+  "symbol": "SMCI",
+  "qty": 1,
+  "fill": 2.7,
+  "option": {
+    "expiry": "2026-06-18",
+    "strike": 43.5,
+    "right": "C"
+  },
+  "computed": {
+    "month": "2026-06",
+    "dte": 10,
+    "wiki_ok": true
+  },
+  "rdt": {
+    "matched": "options",
+    "text": "exit long SMCI $43.5 Call for 06/18 at 2.7"
+  },
+  "trade_role": "close",
+  "pos_side": "long",
+  "contract_key": "OPT|SMCI|2026-06-18|43.5|C"
+}
