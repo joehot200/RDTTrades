@@ -1290,5 +1290,43 @@
     "trade_role": "close",
     "pos_side": "long",
     "contract_key": "OPT|CSCO|2026-06-12|128|C"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "6aacb39761cc",
+    "received_at": "2026-06-08T14:28:50.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-06-08T14:29:28+00:00--19ea7a2e5a379c08.json",
+      "archived_path": "inbox/processed/2026-06/2026-06-08T14:29:28+00:00--19ea7a2e5a379c08.json",
+      "raw_id": "19ea7a2e5a379c08",
+      "ingested_at": "2026-06-08T14:29:28.000Z"
+    },
+    "raw": {
+      "text": "#14836429747 PAPERMONEY BOT +1 CSCO 100 (Weeklys) 12 JUN 26 131 CALL @.56, ACCOUNT D-******81"
+    },
+    "instrument": "option",
+    "paper": true,
+    "action": "BOT",
+    "symbol": "CSCO",
+    "qty": 1,
+    "fill": 0.56,
+    "option": {
+      "expiry": "2026-06-12",
+      "strike": 131,
+      "right": "C"
+    },
+    "computed": {
+      "month": "2026-06",
+      "dte": 4,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "long CSCO $131 Call for 06/12 at 0.56"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "OPT|CSCO|2026-06-12|131|C"
   }
 ]
