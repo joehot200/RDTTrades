@@ -450,5 +450,81 @@
     "trade_role": "open",
     "pos_side": "long",
     "contract_key": "OPT|SMCI|2026-06-18|43.5|C"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "ea6ee75190c8",
+    "received_at": "2026-06-08T18:04:49.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-06-08T18:15:38+00:00--19ea868a4a192212.json",
+      "archived_path": "inbox/processed/2026-06/2026-06-08T18:15:38+00:00--19ea868a4a192212.json",
+      "raw_id": "19ea868a4a192212",
+      "ingested_at": "2026-06-08T18:15:38.000Z"
+    },
+    "raw": {
+      "text": "#14836701956 PAPERMONEY BOT +1 PLTR 100 (Weeklys) 12 JUN 26 133 PUT @1.94, ACCOUNT D-******81"
+    },
+    "instrument": "option",
+    "paper": true,
+    "action": "BOT",
+    "symbol": "PLTR",
+    "qty": 1,
+    "fill": 1.94,
+    "option": {
+      "expiry": "2026-06-12",
+      "strike": 133,
+      "right": "P"
+    },
+    "computed": {
+      "month": "2026-06",
+      "dte": 4,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "short PLTR $133 Put for 06/12 at 1.94"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "OPT|PLTR|2026-06-12|133|P"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "b0334d71ede0",
+    "received_at": "2026-06-08T18:12:14.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-06-08T18:15:36+00:00--19ea86f6d02f6b49.json",
+      "archived_path": "inbox/processed/2026-06/2026-06-08T18:15:36+00:00--19ea86f6d02f6b49.json",
+      "raw_id": "19ea86f6d02f6b49",
+      "ingested_at": "2026-06-08T18:15:36.000Z"
+    },
+    "raw": {
+      "text": "#14836709628 PAPERMONEY SOLD -1 PLTR 100 (Weeklys) 12 JUN 26 133 PUT @1.86, ACCOUNT D-******81"
+    },
+    "instrument": "option",
+    "paper": true,
+    "action": "SOLD",
+    "symbol": "PLTR",
+    "qty": 1,
+    "fill": 1.86,
+    "option": {
+      "expiry": "2026-06-12",
+      "strike": 133,
+      "right": "P"
+    },
+    "computed": {
+      "month": "2026-06",
+      "dte": 4,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "exit short PLTR $133 Put for 06/12 at 1.86"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "OPT|PLTR|2026-06-12|133|P"
   }
 ]
