@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "trade_id": "2ea7c0401403",
+  "received_at": "2026-06-08T19:08:38.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-06-08T19:18:22+00:00--19ea8a313401fbf6.json",
+    "archived_path": "inbox/processed/2026-06/2026-06-08T19:18:22+00:00--19ea8a313401fbf6.json",
+    "raw_id": "19ea8a313401fbf6",
+    "ingested_at": "2026-06-08T19:18:22.000Z"
+  },
+  "raw": {
+    "text": "#14836758322 PAPERMONEY BOT +1 MCHP 100 (Weeklys) 12 JUN 26 92 PUT @3.15, ACCOUNT D-******81"
+  },
+  "instrument": "option",
+  "paper": true,
+  "action": "BOT",
+  "symbol": "MCHP",
+  "qty": 1,
+  "fill": 3.15,
+  "option": {
+    "expiry": "2026-06-12",
+    "strike": 92,
+    "right": "P"
+  },
+  "computed": {
+    "month": "2026-06",
+    "dte": 4,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "options",
+    "text": "short MCHP $92 Put for 06/12 at 3.15"
+  },
+  "trade_role": "open",
+  "pos_side": "long",
+  "contract_key": "OPT|MCHP|2026-06-12|92|P"
+}
