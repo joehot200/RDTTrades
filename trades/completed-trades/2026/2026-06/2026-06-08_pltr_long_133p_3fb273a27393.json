@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "completed_trade_id": "3fb273a27393",
+  "status": "closed",
+  "contract_key": "OPT|PLTR|2026-06-12|133|P",
+  "instrument": "option",
+  "pos_side": "long",
+  "symbol": "PLTR",
+  "option": {
+    "expiry": "2026-06-12",
+    "strike": 133,
+    "right": "P"
+  },
+  "qty_opened": 1,
+  "qty_closed": 1,
+  "entry": {
+    "trade_id": "3fb273a27393",
+    "received_at": "2026-06-08T15:35:30.000Z",
+    "fill": 1.95,
+    "rdt": "short PLTR $133 Put for 06/12 at 1.95"
+  },
+  "exits": [
+    {
+      "trade_id": "9f004612e83c",
+      "received_at": "2026-06-08T16:39:33.000Z",
+      "fill": 2.02,
+      "qty": 1,
+      "rdt": "exit short PLTR $133 Put for 06/12 at 2.02"
+    }
+  ],
+  "pnl": {
+    "realized": 7.000000000000006,
+    "currency": "USD"
+  }
+}

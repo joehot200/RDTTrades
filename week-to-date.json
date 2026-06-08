@@ -184,5 +184,119 @@
     "trade_role": "open",
     "pos_side": "long",
     "contract_key": "OPT|PLTR|2026-06-12|133|P"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "60fde0ae5489",
+    "received_at": "2026-06-08T16:32:20.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-06-08T16:46:06+00:00--19ea813f83dd2523.json",
+      "archived_path": "inbox/processed/2026-06/2026-06-08T16:46:06+00:00--19ea813f83dd2523.json",
+      "raw_id": "19ea813f83dd2523",
+      "ingested_at": "2026-06-08T16:46:06.000Z"
+    },
+    "raw": {
+      "text": "#14836610026 PAPERMONEY SOLD -1 CSCO 100 (Weeklys) 12 JUN 26 131 CALL @.61, ACCOUNT D-******81"
+    },
+    "instrument": "option",
+    "paper": true,
+    "action": "SOLD",
+    "symbol": "CSCO",
+    "qty": 1,
+    "fill": 0.61,
+    "option": {
+      "expiry": "2026-06-12",
+      "strike": 131,
+      "right": "C"
+    },
+    "computed": {
+      "month": "2026-06",
+      "dte": 4,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "exit long CSCO $131 Call for 06/12 at 0.61"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "OPT|CSCO|2026-06-12|131|C"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "9f004612e83c",
+    "received_at": "2026-06-08T16:39:33.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-06-08T16:46:05+00:00--19ea81a9595255d6.json",
+      "archived_path": "inbox/processed/2026-06/2026-06-08T16:46:05+00:00--19ea81a9595255d6.json",
+      "raw_id": "19ea81a9595255d6",
+      "ingested_at": "2026-06-08T16:46:05.000Z"
+    },
+    "raw": {
+      "text": "#14836617960 PAPERMONEY SOLD -1 PLTR 100 (Weeklys) 12 JUN 26 133 PUT @2.02, ACCOUNT D-******81"
+    },
+    "instrument": "option",
+    "paper": true,
+    "action": "SOLD",
+    "symbol": "PLTR",
+    "qty": 1,
+    "fill": 2.02,
+    "option": {
+      "expiry": "2026-06-12",
+      "strike": 133,
+      "right": "P"
+    },
+    "computed": {
+      "month": "2026-06",
+      "dte": 4,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "exit short PLTR $133 Put for 06/12 at 2.02"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "OPT|PLTR|2026-06-12|133|P"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "6df06195e147",
+    "received_at": "2026-06-08T16:44:49.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-06-08T16:46:04+00:00--19ea81f6af565acd.json",
+      "archived_path": "inbox/processed/2026-06/2026-06-08T16:46:04+00:00--19ea81f6af565acd.json",
+      "raw_id": "19ea81f6af565acd",
+      "ingested_at": "2026-06-08T16:46:04.000Z"
+    },
+    "raw": {
+      "text": "#14836622872 PAPERMONEY BOT +1 PLTR 100 (Weeklys) 12 JUN 26 133 PUT @1.99, ACCOUNT D-******81"
+    },
+    "instrument": "option",
+    "paper": true,
+    "action": "BOT",
+    "symbol": "PLTR",
+    "qty": 1,
+    "fill": 1.99,
+    "option": {
+      "expiry": "2026-06-12",
+      "strike": 133,
+      "right": "P"
+    },
+    "computed": {
+      "month": "2026-06",
+      "dte": 4,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "short PLTR $133 Put for 06/12 at 1.99"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "OPT|PLTR|2026-06-12|133|P"
   }
 ]
