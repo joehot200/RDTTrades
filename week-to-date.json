@@ -36,5 +36,39 @@
     "trade_role": "open",
     "pos_side": "long",
     "contract_key": "OPT|CSCO|2026-06-12|131|C"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "09f84ee13ad7",
+    "received_at": "2026-06-08T14:52:04.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-06-08T15:07:22+00:00--19ea7b82a62a26c7.json",
+      "archived_path": "inbox/processed/2026-06/2026-06-08T15:07:22+00:00--19ea7b82a62a26c7.json",
+      "raw_id": "19ea7b82a62a26c7",
+      "ingested_at": "2026-06-08T15:07:22.000Z"
+    },
+    "raw": {
+      "text": "#121273577202 BOT +1 CSCO @125.70, ACCOUNT *****746SCHW"
+    },
+    "instrument": "stock",
+    "paper": false,
+    "action": "BOT",
+    "symbol": "CSCO",
+    "qty": 1,
+    "fill": 125.7,
+    "option": null,
+    "computed": {
+      "month": "2026-06",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "stock",
+      "text": "long CSCO at 125.7"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "STK|CSCO"
   }
 ]
