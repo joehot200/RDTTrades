@@ -523,5 +523,40 @@
       "realized": 0,
       "currency": "USD"
     }
+  },
+  {
+    "schema_version": 1,
+    "completed_trade_id": "f0995662e7a0",
+    "status": "closed",
+    "contract_key": "OPT|V|2026-06-18|335|C",
+    "instrument": "option",
+    "pos_side": "long",
+    "symbol": "V",
+    "option": {
+      "expiry": "2026-06-18",
+      "strike": 335,
+      "right": "C"
+    },
+    "qty_opened": 1,
+    "qty_closed": 1,
+    "entry": {
+      "trade_id": "f0995662e7a0",
+      "received_at": "2026-06-08T15:19:42.000Z",
+      "fill": 1.06,
+      "rdt": "long V $335 Call for 06/18 at 1.06"
+    },
+    "exits": [
+      {
+        "trade_id": "b8f1200b2964",
+        "received_at": "2026-06-08T15:21:22.000Z",
+        "fill": 1.08,
+        "qty": 1,
+        "rdt": "exit long V $335 Call for 06/18 at 1.08"
+      }
+    ],
+    "pnl": {
+      "realized": 2.0000000000000018,
+      "currency": "USD"
+    }
   }
 ]

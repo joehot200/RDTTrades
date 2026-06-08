@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "trade_id": "f0995662e7a0",
+  "received_at": "2026-06-08T15:19:42.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-06-08T15:23:17+00:00--19ea7d178d4b6180.json",
+    "archived_path": "inbox/processed/2026-06/2026-06-08T15:23:17+00:00--19ea7d178d4b6180.json",
+    "raw_id": "19ea7d178d4b6180",
+    "ingested_at": "2026-06-08T15:23:17.000Z"
+  },
+  "raw": {
+    "text": "#121282566078 BOT +1 V 100 18 JUN 26 335 CALL @1.06, ACCOUNT *****746SCHW"
+  },
+  "instrument": "option",
+  "paper": false,
+  "action": "BOT",
+  "symbol": "V",
+  "qty": 1,
+  "fill": 1.06,
+  "option": {
+    "expiry": "2026-06-18",
+    "strike": 335,
+    "right": "C"
+  },
+  "computed": {
+    "month": "2026-06",
+    "dte": 10,
+    "wiki_ok": true
+  },
+  "rdt": {
+    "matched": "options",
+    "text": "long V $335 Call for 06/18 at 1.06"
+  },
+  "trade_role": "open",
+  "pos_side": "long",
+  "contract_key": "OPT|V|2026-06-18|335|C"
+}

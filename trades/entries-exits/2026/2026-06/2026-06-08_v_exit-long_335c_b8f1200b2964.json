@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "trade_id": "b8f1200b2964",
+  "received_at": "2026-06-08T15:21:22.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-06-08T15:23:16+00:00--19ea7d3013cc7738.json",
+    "archived_path": "inbox/processed/2026-06/2026-06-08T15:23:16+00:00--19ea7d3013cc7738.json",
+    "raw_id": "19ea7d3013cc7738",
+    "ingested_at": "2026-06-08T15:23:16.000Z"
+  },
+  "raw": {
+    "text": "#121284312710 SOLD -1 V 100 18 JUN 26 335 CALL @1.08, ACCOUNT *****746SCHW"
+  },
+  "instrument": "option",
+  "paper": false,
+  "action": "SOLD",
+  "symbol": "V",
+  "qty": 1,
+  "fill": 1.08,
+  "option": {
+    "expiry": "2026-06-18",
+    "strike": 335,
+    "right": "C"
+  },
+  "computed": {
+    "month": "2026-06",
+    "dte": 10,
+    "wiki_ok": true
+  },
+  "rdt": {
+    "matched": "options",
+    "text": "exit long V $335 Call for 06/18 at 1.08"
+  },
+  "trade_role": "close",
+  "pos_side": "long",
+  "contract_key": "OPT|V|2026-06-18|335|C"
+}
