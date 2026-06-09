@@ -564,5 +564,43 @@
     "trade_role": "open",
     "pos_side": "long",
     "contract_key": "OPT|MCHP|2026-06-12|92|P"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "c72ba12777ff",
+    "received_at": "2026-06-09T14:37:34.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-06-09T14:49:24+00:00--19eacd141ecd5e46.json",
+      "archived_path": "inbox/processed/2026-06/2026-06-09T14:49:24+00:00--19eacd141ecd5e46.json",
+      "raw_id": "19eacd141ecd5e46",
+      "ingested_at": "2026-06-09T14:49:24.000Z"
+    },
+    "raw": {
+      "text": "#14837122426 PAPERMONEY BOT +1 CRM 100 (Weeklys) 12 JUN 26 175 PUT @2.33, ACCOUNT D-******81"
+    },
+    "instrument": "option",
+    "paper": true,
+    "action": "BOT",
+    "symbol": "CRM",
+    "qty": 1,
+    "fill": 2.33,
+    "option": {
+      "expiry": "2026-06-12",
+      "strike": 175,
+      "right": "P"
+    },
+    "computed": {
+      "month": "2026-06",
+      "dte": 3,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "short CRM $175 Put for 06/12 at 2.33"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "OPT|CRM|2026-06-12|175|P"
   }
 ]

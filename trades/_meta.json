@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-06-08T19:18:38.571Z",
-  "latest_commit_message": "short MCHP $92 Put for 06/12 at 3.15",
-  "latest_processed_trade_id": "2ea7c0401403",
+  "generated_at": "2026-06-09T14:49:51.622Z",
+  "latest_commit_message": "short CRM $175 Put for 06/12 at 2.33",
+  "latest_processed_trade_id": "c72ba12777ff",
   "processed_trade_ids_this_run": [
-    "2ea7c0401403"
+    "c72ba12777ff"
   ]
 }
