@@ -771,6 +771,41 @@
   },
   {
     "schema_version": 1,
+    "completed_trade_id": "82a2c51b356a",
+    "status": "closed",
+    "contract_key": "OPT|MSTR|2026-06-12|120|P",
+    "instrument": "option",
+    "pos_side": "long",
+    "symbol": "MSTR",
+    "option": {
+      "expiry": "2026-06-12",
+      "strike": 120,
+      "right": "P"
+    },
+    "qty_opened": 1,
+    "qty_closed": 1,
+    "entry": {
+      "trade_id": "82a2c51b356a",
+      "received_at": "2026-06-09T15:20:01.000Z",
+      "fill": 4.55,
+      "rdt": "short MSTR $120 Put for 06/12 at 4.55"
+    },
+    "exits": [
+      {
+        "trade_id": "5f0909d92e56",
+        "received_at": "2026-06-09T16:25:24.000Z",
+        "fill": 6.75,
+        "qty": 1,
+        "rdt": "exit short MSTR $120 Put for 06/12 at 6.75"
+      }
+    ],
+    "pnl": {
+      "realized": 220.00000000000003,
+      "currency": "USD"
+    }
+  },
+  {
+    "schema_version": 1,
     "completed_trade_id": "ea06e347ffc8",
     "status": "closed",
     "contract_key": "OPT|SPY|2026-06-09|739|C",

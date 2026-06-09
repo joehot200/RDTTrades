@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "trade_id": "5f0909d92e56",
+  "received_at": "2026-06-09T16:25:24.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-06-09T16:37:21+00:00--19ead33fe08e8665.json",
+    "archived_path": "inbox/processed/2026-06/2026-06-09T16:37:21+00:00--19ead33fe08e8665.json",
+    "raw_id": "19ead33fe08e8665",
+    "ingested_at": "2026-06-09T16:37:21.000Z"
+  },
+  "raw": {
+    "text": "#14837289338 PAPERMONEY SOLD -1 MSTR 100 (Weeklys) 12 JUN 26 120 PUT @6.75, ACCOUNT D-******81"
+  },
+  "instrument": "option",
+  "paper": true,
+  "action": "SOLD",
+  "symbol": "MSTR",
+  "qty": 1,
+  "fill": 6.75,
+  "option": {
+    "expiry": "2026-06-12",
+    "strike": 120,
+    "right": "P"
+  },
+  "computed": {
+    "month": "2026-06",
+    "dte": 3,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "options",
+    "text": "exit short MSTR $120 Put for 06/12 at 6.75"
+  },
+  "trade_role": "close",
+  "pos_side": "long",
+  "contract_key": "OPT|MSTR|2026-06-12|120|P"
+}
