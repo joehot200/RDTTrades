@@ -2198,5 +2198,43 @@
     "trade_role": "open",
     "pos_side": "long",
     "contract_key": "OPT|APH|2026-06-18|160|C"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "4ca07434be2c",
+    "received_at": "2026-06-09T19:50:20.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-06-09T20:02:57+00:00--19eadef99d730555.json",
+      "archived_path": "inbox/processed/2026-06/2026-06-09T20:02:57+00:00--19eadef99d730555.json",
+      "raw_id": "19eadef99d730555",
+      "ingested_at": "2026-06-09T20:02:57.000Z"
+    },
+    "raw": {
+      "text": "#14837481581 PAPERMONEY SOLD -1 APH 100 18 JUN 26 160 CALL @2.87, ACCOUNT D-******81"
+    },
+    "instrument": "option",
+    "paper": true,
+    "action": "SOLD",
+    "symbol": "APH",
+    "qty": 1,
+    "fill": 2.87,
+    "option": {
+      "expiry": "2026-06-18",
+      "strike": 160,
+      "right": "C"
+    },
+    "computed": {
+      "month": "2026-06",
+      "dte": 9,
+      "wiki_ok": true
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "exit long APH $160 Call for 06/18 at 2.87"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "OPT|APH|2026-06-18|160|C"
   }
 ]

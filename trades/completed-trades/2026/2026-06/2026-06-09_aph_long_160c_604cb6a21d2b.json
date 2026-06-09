@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "completed_trade_id": "604cb6a21d2b",
+  "status": "closed",
+  "contract_key": "OPT|APH|2026-06-18|160|C",
+  "instrument": "option",
+  "pos_side": "long",
+  "symbol": "APH",
+  "option": {
+    "expiry": "2026-06-18",
+    "strike": 160,
+    "right": "C"
+  },
+  "qty_opened": 1,
+  "qty_closed": 1,
+  "entry": {
+    "trade_id": "604cb6a21d2b",
+    "received_at": "2026-06-09T18:23:37.000Z",
+    "fill": 2.6,
+    "rdt": "long APH $160 Call for 06/18 at 2.6"
+  },
+  "exits": [
+    {
+      "trade_id": "4ca07434be2c",
+      "received_at": "2026-06-09T19:50:20.000Z",
+      "fill": 2.87,
+      "qty": 1,
+      "rdt": "exit long APH $160 Call for 06/18 at 2.87"
+    }
+  ],
+  "pnl": {
+    "realized": 27,
+    "currency": "USD"
+  }
+}
