@@ -1932,5 +1932,43 @@
     "trade_role": "close",
     "pos_side": "long",
     "contract_key": "OPT|MCHP|2026-06-12|92|P"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "dc8caed5f0db",
+    "received_at": "2026-06-09T15:07:10.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-06-09T15:19:34+00:00--19eacec5847d5f59.json",
+      "archived_path": "inbox/processed/2026-06/2026-06-09T15:19:34+00:00--19eacec5847d5f59.json",
+      "raw_id": "19eacec5847d5f59",
+      "ingested_at": "2026-06-09T15:19:34.000Z"
+    },
+    "raw": {
+      "text": "#14837180953 PAPERMONEY SOLD -1 NFLX 100 18 JUN 26 82 PUT @1.53, ACCOUNT D-******81"
+    },
+    "instrument": "option",
+    "paper": true,
+    "action": "SOLD",
+    "symbol": "NFLX",
+    "qty": 1,
+    "fill": 1.53,
+    "option": {
+      "expiry": "2026-06-18",
+      "strike": 82,
+      "right": "P"
+    },
+    "computed": {
+      "month": "2026-06",
+      "dte": 9,
+      "wiki_ok": true
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "exit short NFLX $82 Put for 06/18 at 1.53"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "OPT|NFLX|2026-06-18|82|P"
   }
 ]
