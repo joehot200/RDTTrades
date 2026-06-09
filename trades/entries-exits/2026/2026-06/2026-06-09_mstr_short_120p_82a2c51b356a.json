@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "trade_id": "82a2c51b356a",
+  "received_at": "2026-06-09T15:20:01.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-06-09T15:33:09+00:00--19eacf81ffc5c340.json",
+    "archived_path": "inbox/processed/2026-06/2026-06-09T15:33:09+00:00--19eacf81ffc5c340.json",
+    "raw_id": "19eacf81ffc5c340",
+    "ingested_at": "2026-06-09T15:33:09.000Z"
+  },
+  "raw": {
+    "text": "#14837197628 PAPERMONEY BOT +1 MSTR 100 (Weeklys) 12 JUN 26 120 PUT @4.55, ACCOUNT D-******81"
+  },
+  "instrument": "option",
+  "paper": true,
+  "action": "BOT",
+  "symbol": "MSTR",
+  "qty": 1,
+  "fill": 4.55,
+  "option": {
+    "expiry": "2026-06-12",
+    "strike": 120,
+    "right": "P"
+  },
+  "computed": {
+    "month": "2026-06",
+    "dte": 3,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "options",
+    "text": "short MSTR $120 Put for 06/12 at 4.55"
+  },
+  "trade_role": "open",
+  "pos_side": "long",
+  "contract_key": "OPT|MSTR|2026-06-12|120|P"
+}

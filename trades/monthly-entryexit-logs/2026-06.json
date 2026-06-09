@@ -1970,5 +1970,119 @@
     "trade_role": "close",
     "pos_side": "long",
     "contract_key": "OPT|NFLX|2026-06-18|82|P"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "82a2c51b356a",
+    "received_at": "2026-06-09T15:20:01.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-06-09T15:33:09+00:00--19eacf81ffc5c340.json",
+      "archived_path": "inbox/processed/2026-06/2026-06-09T15:33:09+00:00--19eacf81ffc5c340.json",
+      "raw_id": "19eacf81ffc5c340",
+      "ingested_at": "2026-06-09T15:33:09.000Z"
+    },
+    "raw": {
+      "text": "#14837197628 PAPERMONEY BOT +1 MSTR 100 (Weeklys) 12 JUN 26 120 PUT @4.55, ACCOUNT D-******81"
+    },
+    "instrument": "option",
+    "paper": true,
+    "action": "BOT",
+    "symbol": "MSTR",
+    "qty": 1,
+    "fill": 4.55,
+    "option": {
+      "expiry": "2026-06-12",
+      "strike": 120,
+      "right": "P"
+    },
+    "computed": {
+      "month": "2026-06",
+      "dte": 3,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "short MSTR $120 Put for 06/12 at 4.55"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "OPT|MSTR|2026-06-12|120|P"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "ea06e347ffc8",
+    "received_at": "2026-06-09T15:21:38.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-06-09T15:33:08+00:00--19eacf99749b0013.json",
+      "archived_path": "inbox/processed/2026-06/2026-06-09T15:33:08+00:00--19eacf99749b0013.json",
+      "raw_id": "19eacf99749b0013",
+      "ingested_at": "2026-06-09T15:33:08.000Z"
+    },
+    "raw": {
+      "text": "#14837199658 PAPERMONEY BOT +1 SPY 100 (Weeklys) 9 JUN 26 739 CALL @.90, ACCOUNT D-******81"
+    },
+    "instrument": "option",
+    "paper": true,
+    "action": "BOT",
+    "symbol": "SPY",
+    "qty": 1,
+    "fill": 0.9,
+    "option": {
+      "expiry": "2026-06-09",
+      "strike": 739,
+      "right": "C"
+    },
+    "computed": {
+      "month": "2026-06",
+      "dte": 0,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "long SPY $739 Call for 06/09 at 0.9"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "OPT|SPY|2026-06-09|739|C"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "bf11801a3c60",
+    "received_at": "2026-06-09T15:21:54.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-06-09T15:33:07+00:00--19eacf9d967a8a3a.json",
+      "archived_path": "inbox/processed/2026-06/2026-06-09T15:33:07+00:00--19eacf9d967a8a3a.json",
+      "raw_id": "19eacf9d967a8a3a",
+      "ingested_at": "2026-06-09T15:33:07.000Z"
+    },
+    "raw": {
+      "text": "#14837199890 PAPERMONEY SOLD -1 SPY 100 (Weeklys) 9 JUN 26 739 CALL @.91, ACCOUNT D-******81"
+    },
+    "instrument": "option",
+    "paper": true,
+    "action": "SOLD",
+    "symbol": "SPY",
+    "qty": 1,
+    "fill": 0.91,
+    "option": {
+      "expiry": "2026-06-09",
+      "strike": 739,
+      "right": "C"
+    },
+    "computed": {
+      "month": "2026-06",
+      "dte": 0,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "exit long SPY $739 Call for 06/09 at 0.91"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "OPT|SPY|2026-06-09|739|C"
   }
 ]
