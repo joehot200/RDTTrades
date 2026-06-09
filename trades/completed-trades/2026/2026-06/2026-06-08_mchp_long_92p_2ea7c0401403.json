@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "completed_trade_id": "2ea7c0401403",
+  "status": "closed",
+  "contract_key": "OPT|MCHP|2026-06-12|92|P",
+  "instrument": "option",
+  "pos_side": "long",
+  "symbol": "MCHP",
+  "option": {
+    "expiry": "2026-06-12",
+    "strike": 92,
+    "right": "P"
+  },
+  "qty_opened": 1,
+  "qty_closed": 1,
+  "entry": {
+    "trade_id": "2ea7c0401403",
+    "received_at": "2026-06-08T19:08:38.000Z",
+    "fill": 3.15,
+    "rdt": "short MCHP $92 Put for 06/12 at 3.15"
+  },
+  "exits": [
+    {
+      "trade_id": "4d12529b7012",
+      "received_at": "2026-06-09T14:53:49.000Z",
+      "fill": 2.93,
+      "qty": 1,
+      "rdt": "exit short MCHP $92 Put for 06/12 at 2.93"
+    }
+  ],
+  "pnl": {
+    "realized": -21.999999999999975,
+    "currency": "USD"
+  }
+}

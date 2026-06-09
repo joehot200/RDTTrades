@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "trade_id": "4d12529b7012",
+  "received_at": "2026-06-09T14:53:49.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-06-09T15:06:12+00:00--19eace023fd93682.json",
+    "archived_path": "inbox/processed/2026-06/2026-06-09T15:06:12+00:00--19eace023fd93682.json",
+    "raw_id": "19eace023fd93682",
+    "ingested_at": "2026-06-09T15:06:12.000Z"
+  },
+  "raw": {
+    "text": "#14837159669 PAPERMONEY SOLD -1 MCHP 100 (Weeklys) 12 JUN 26 92 PUT @2.93, ACCOUNT D-******81"
+  },
+  "instrument": "option",
+  "paper": true,
+  "action": "SOLD",
+  "symbol": "MCHP",
+  "qty": 1,
+  "fill": 2.93,
+  "option": {
+    "expiry": "2026-06-12",
+    "strike": 92,
+    "right": "P"
+  },
+  "computed": {
+    "month": "2026-06",
+    "dte": 3,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "options",
+    "text": "exit short MCHP $92 Put for 06/12 at 2.93"
+  },
+  "trade_role": "close",
+  "pos_side": "long",
+  "contract_key": "OPT|MCHP|2026-06-12|92|P"
+}
