@@ -771,6 +771,41 @@
   },
   {
     "schema_version": 1,
+    "completed_trade_id": "c72ba12777ff",
+    "status": "closed",
+    "contract_key": "OPT|CRM|2026-06-12|175|P",
+    "instrument": "option",
+    "pos_side": "long",
+    "symbol": "CRM",
+    "option": {
+      "expiry": "2026-06-12",
+      "strike": 175,
+      "right": "P"
+    },
+    "qty_opened": 1,
+    "qty_closed": 1,
+    "entry": {
+      "trade_id": "c72ba12777ff",
+      "received_at": "2026-06-09T14:37:34.000Z",
+      "fill": 2.33,
+      "rdt": "short CRM $175 Put for 06/12 at 2.33"
+    },
+    "exits": [
+      {
+        "trade_id": "2d84ee748687",
+        "received_at": "2026-06-09T17:04:53.000Z",
+        "fill": 5.1,
+        "qty": 1,
+        "rdt": "exit short CRM $175 Put for 06/12 at 5.1"
+      }
+    ],
+    "pnl": {
+      "realized": 276.99999999999994,
+      "currency": "USD"
+    }
+  },
+  {
+    "schema_version": 1,
     "completed_trade_id": "82a2c51b356a",
     "status": "closed",
     "contract_key": "OPT|MSTR|2026-06-12|120|P",

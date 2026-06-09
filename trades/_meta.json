@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-06-09T16:37:42.986Z",
-  "latest_commit_message": "exit short MSTR $120 Put for 06/12 at 6.75",
-  "latest_processed_trade_id": "5f0909d92e56",
+  "generated_at": "2026-06-09T17:07:02.541Z",
+  "latest_commit_message": "exit short CRM $175 Put for 06/12 at 5.1",
+  "latest_processed_trade_id": "2d84ee748687",
   "processed_trade_ids_this_run": [
-    "5f0909d92e56"
+    "2d84ee748687"
   ]
 }
