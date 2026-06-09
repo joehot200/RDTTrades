@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "trade_id": "604cb6a21d2b",
+  "received_at": "2026-06-09T18:23:37.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-06-09T18:37:41+00:00--19eada03553ee4b9.json",
+    "archived_path": "inbox/processed/2026-06/2026-06-09T18:37:41+00:00--19eada03553ee4b9.json",
+    "raw_id": "19eada03553ee4b9",
+    "ingested_at": "2026-06-09T18:37:41.000Z"
+  },
+  "raw": {
+    "text": "#14837403393 PAPERMONEY BOT +1 APH 100 18 JUN 26 160 CALL @2.60, ACCOUNT D-******81"
+  },
+  "instrument": "option",
+  "paper": true,
+  "action": "BOT",
+  "symbol": "APH",
+  "qty": 1,
+  "fill": 2.6,
+  "option": {
+    "expiry": "2026-06-18",
+    "strike": 160,
+    "right": "C"
+  },
+  "computed": {
+    "month": "2026-06",
+    "dte": 9,
+    "wiki_ok": true
+  },
+  "rdt": {
+    "matched": "options",
+    "text": "long APH $160 Call for 06/18 at 2.6"
+  },
+  "trade_role": "open",
+  "pos_side": "long",
+  "contract_key": "OPT|APH|2026-06-18|160|C"
+}
