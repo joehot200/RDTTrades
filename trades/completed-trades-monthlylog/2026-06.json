@@ -908,5 +908,40 @@
       "realized": 27,
       "currency": "USD"
     }
+  },
+  {
+    "schema_version": 1,
+    "completed_trade_id": "9d2706649061",
+    "status": "closed",
+    "contract_key": "OPT|TXN|2026-06-12|277.5|P",
+    "instrument": "option",
+    "pos_side": "long",
+    "symbol": "TXN",
+    "option": {
+      "expiry": "2026-06-12",
+      "strike": 277.5,
+      "right": "P"
+    },
+    "qty_opened": 1,
+    "qty_closed": 1,
+    "entry": {
+      "trade_id": "9d2706649061",
+      "received_at": "2026-06-10T16:21:30.000Z",
+      "fill": 3.8,
+      "rdt": "short TXN $277.5 Put for 06/12 at 3.8"
+    },
+    "exits": [
+      {
+        "trade_id": "1e0e7955b028",
+        "received_at": "2026-06-10T17:55:21.000Z",
+        "fill": 2.8,
+        "qty": 1,
+        "rdt": "exit short TXN $277.5 Put for 06/12 at 2.8"
+      }
+    ],
+    "pnl": {
+      "realized": -100,
+      "currency": "USD"
+    }
   }
 ]

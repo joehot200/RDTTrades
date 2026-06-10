@@ -1020,5 +1020,43 @@
     "trade_role": "close",
     "pos_side": "long",
     "contract_key": "OPT|INTC|2026-06-18|101|P"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "1e0e7955b028",
+    "received_at": "2026-06-10T17:55:21.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-06-10T18:05:48+00:00--19eb2acb13c5edb7.json",
+      "archived_path": "inbox/processed/2026-06/2026-06-10T18:05:48+00:00--19eb2acb13c5edb7.json",
+      "raw_id": "19eb2acb13c5edb7",
+      "ingested_at": "2026-06-10T18:05:48.000Z"
+    },
+    "raw": {
+      "text": "#14838017144 PAPERMONEY SOLD -1 TXN 100 (Weeklys) 12 JUN 26 277.5 PUT @2.80, ACCOUNT D-******81"
+    },
+    "instrument": "option",
+    "paper": true,
+    "action": "SOLD",
+    "symbol": "TXN",
+    "qty": 1,
+    "fill": 2.8,
+    "option": {
+      "expiry": "2026-06-12",
+      "strike": 277.5,
+      "right": "P"
+    },
+    "computed": {
+      "month": "2026-06",
+      "dte": 2,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "exit short TXN $277.5 Put for 06/12 at 2.8"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "OPT|TXN|2026-06-12|277.5|P"
   }
 ]
