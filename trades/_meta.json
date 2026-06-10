@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-06-09T20:03:20.555Z",
-  "latest_commit_message": "exit long APH $160 Call for 06/18 at 2.87",
-  "latest_processed_trade_id": "4ca07434be2c",
+  "generated_at": "2026-06-10T16:24:01.835Z",
+  "latest_commit_message": "short TXN $277.5 Put for 06/12 at 3.8",
+  "latest_processed_trade_id": "9d2706649061",
   "processed_trade_ids_this_run": [
-    "4ca07434be2c"
+    "9d2706649061"
   ]
 }

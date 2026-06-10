@@ -2236,5 +2236,43 @@
     "trade_role": "close",
     "pos_side": "long",
     "contract_key": "OPT|APH|2026-06-18|160|C"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "9d2706649061",
+    "received_at": "2026-06-10T16:21:30.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-06-10T16:23:39+00:00--19eb256c558267e2.json",
+      "archived_path": "inbox/processed/2026-06/2026-06-10T16:23:39+00:00--19eb256c558267e2.json",
+      "raw_id": "19eb256c558267e2",
+      "ingested_at": "2026-06-10T16:23:39.000Z"
+    },
+    "raw": {
+      "text": "#14837929832 PAPERMONEY BOT +1 TXN 100 (Weeklys) 12 JUN 26 277.5 PUT @3.80, ACCOUNT D-******81"
+    },
+    "instrument": "option",
+    "paper": true,
+    "action": "BOT",
+    "symbol": "TXN",
+    "qty": 1,
+    "fill": 3.8,
+    "option": {
+      "expiry": "2026-06-12",
+      "strike": 277.5,
+      "right": "P"
+    },
+    "computed": {
+      "month": "2026-06",
+      "dte": 2,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "short TXN $277.5 Put for 06/12 at 3.8"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "OPT|TXN|2026-06-12|277.5|P"
   }
 ]
