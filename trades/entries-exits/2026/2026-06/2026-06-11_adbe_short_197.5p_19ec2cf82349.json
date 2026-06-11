@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "trade_id": "19ec2cf82349",
+  "received_at": "2026-06-11T14:54:21.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-06-11T14:54:45+00:00--19eb72d56f5e9ab8.json",
+    "archived_path": "inbox/processed/2026-06/2026-06-11T14:54:45+00:00--19eb72d56f5e9ab8.json",
+    "raw_id": "19eb72d56f5e9ab8",
+    "ingested_at": "2026-06-11T14:54:45.000Z"
+  },
+  "raw": {
+    "text": "#14838474123 PAPERMONEY BOT +1 ADBE 100 18 JUN 26 197.5 PUT @3.05, ACCOUNT D-******81"
+  },
+  "instrument": "option",
+  "paper": true,
+  "action": "BOT",
+  "symbol": "ADBE",
+  "qty": 1,
+  "fill": 3.05,
+  "option": {
+    "expiry": "2026-06-18",
+    "strike": 197.5,
+    "right": "P"
+  },
+  "computed": {
+    "month": "2026-06",
+    "dte": 7,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "options",
+    "text": "short ADBE $197.5 Put for 06/18 at 3.05"
+  },
+  "trade_role": "open",
+  "pos_side": "long",
+  "contract_key": "OPT|ADBE|2026-06-18|197.5|P"
+}
