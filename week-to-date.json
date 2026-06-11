@@ -1058,5 +1058,43 @@
     "trade_role": "close",
     "pos_side": "long",
     "contract_key": "OPT|TXN|2026-06-12|277.5|P"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "576ef051b803",
+    "received_at": "2026-06-11T13:53:33.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-06-11T13:59:18+00:00--19eb6f5ac102b6a0.json",
+      "archived_path": "inbox/processed/2026-06/2026-06-11T13:59:18+00:00--19eb6f5ac102b6a0.json",
+      "raw_id": "19eb6f5ac102b6a0",
+      "ingested_at": "2026-06-11T13:59:18.000Z"
+    },
+    "raw": {
+      "text": "#14838338215 PAPERMONEY BOT +1 INTC 100 (Weeklys) 12 JUN 26 117 CALL @4.05, ACCOUNT D-******81"
+    },
+    "instrument": "option",
+    "paper": true,
+    "action": "BOT",
+    "symbol": "INTC",
+    "qty": 1,
+    "fill": 4.05,
+    "option": {
+      "expiry": "2026-06-12",
+      "strike": 117,
+      "right": "C"
+    },
+    "computed": {
+      "month": "2026-06",
+      "dte": 1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "long INTC $117 Call for 06/12 at 4.05"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "OPT|INTC|2026-06-12|117|C"
   }
 ]

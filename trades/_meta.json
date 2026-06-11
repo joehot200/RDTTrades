@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-06-10T18:06:06.342Z",
-  "latest_commit_message": "exit short TXN $277.5 Put for 06/12 at 2.8",
-  "latest_processed_trade_id": "1e0e7955b028",
+  "generated_at": "2026-06-11T13:59:39.645Z",
+  "latest_commit_message": "long INTC $117 Call for 06/12 at 4.05",
+  "latest_processed_trade_id": "576ef051b803",
   "processed_trade_ids_this_run": [
-    "1e0e7955b028"
+    "576ef051b803"
   ]
 }
