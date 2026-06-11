@@ -943,5 +943,40 @@
       "realized": -100,
       "currency": "USD"
     }
+  },
+  {
+    "schema_version": 1,
+    "completed_trade_id": "576ef051b803",
+    "status": "closed",
+    "contract_key": "OPT|INTC|2026-06-12|117|C",
+    "instrument": "option",
+    "pos_side": "long",
+    "symbol": "INTC",
+    "option": {
+      "expiry": "2026-06-12",
+      "strike": 117,
+      "right": "C"
+    },
+    "qty_opened": 1,
+    "qty_closed": 1,
+    "entry": {
+      "trade_id": "576ef051b803",
+      "received_at": "2026-06-11T13:53:33.000Z",
+      "fill": 4.05,
+      "rdt": "long INTC $117 Call for 06/12 at 4.05"
+    },
+    "exits": [
+      {
+        "trade_id": "521b96adeb78",
+        "received_at": "2026-06-11T14:18:22.000Z",
+        "fill": 2.4,
+        "qty": 1,
+        "rdt": "exit long INTC $117 Call for 06/12 at 2.4"
+      }
+    ],
+    "pnl": {
+      "realized": -165,
+      "currency": "USD"
+    }
   }
 ]

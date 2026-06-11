@@ -1096,5 +1096,43 @@
     "trade_role": "open",
     "pos_side": "long",
     "contract_key": "OPT|INTC|2026-06-12|117|C"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "521b96adeb78",
+    "received_at": "2026-06-11T14:18:22.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-06-11T14:27:42+00:00--19eb70c66ba35642.json",
+      "archived_path": "inbox/processed/2026-06/2026-06-11T14:27:42+00:00--19eb70c66ba35642.json",
+      "raw_id": "19eb70c66ba35642",
+      "ingested_at": "2026-06-11T14:27:42.000Z"
+    },
+    "raw": {
+      "text": "#14838409552 PAPERMONEY SOLD -1 INTC 100 (Weeklys) 12 JUN 26 117 CALL @2.40, ACCOUNT D-******81"
+    },
+    "instrument": "option",
+    "paper": true,
+    "action": "SOLD",
+    "symbol": "INTC",
+    "qty": 1,
+    "fill": 2.4,
+    "option": {
+      "expiry": "2026-06-12",
+      "strike": 117,
+      "right": "C"
+    },
+    "computed": {
+      "month": "2026-06",
+      "dte": 1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "exit long INTC $117 Call for 06/12 at 2.4"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "OPT|INTC|2026-06-12|117|C"
   }
 ]
