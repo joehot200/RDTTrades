@@ -978,5 +978,40 @@
       "realized": -165,
       "currency": "USD"
     }
+  },
+  {
+    "schema_version": 1,
+    "completed_trade_id": "2f0aa8c3c7fd",
+    "status": "closed",
+    "contract_key": "OPT|TEAM|2026-06-26|77|P",
+    "instrument": "option",
+    "pos_side": "long",
+    "symbol": "TEAM",
+    "option": {
+      "expiry": "2026-06-26",
+      "strike": 77,
+      "right": "P"
+    },
+    "qty_opened": 1,
+    "qty_closed": 1,
+    "entry": {
+      "trade_id": "2f0aa8c3c7fd",
+      "received_at": "2026-06-25T14:50:42.000Z",
+      "fill": 1.45,
+      "rdt": "short TEAM $77 Put for 06/26 at 1.45"
+    },
+    "exits": [
+      {
+        "trade_id": "497767088b3e",
+        "received_at": "2026-06-25T15:39:19.000Z",
+        "fill": 1.32,
+        "qty": 1,
+        "rdt": "exit short TEAM $77 Put for 06/26 at 1.32"
+      }
+    ],
+    "pnl": {
+      "realized": -12.99999999999999,
+      "currency": "USD"
+    }
   }
 ]
