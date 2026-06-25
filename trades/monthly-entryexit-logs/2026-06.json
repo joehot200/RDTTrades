@@ -2464,5 +2464,43 @@
     "trade_role": "open",
     "pos_side": "long",
     "contract_key": "OPT|ADBE|2026-06-18|197.5|P"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "2f0aa8c3c7fd",
+    "received_at": "2026-06-25T14:50:42.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-06-25T15:00:19+00:00--19eff4306f429538.json",
+      "archived_path": "inbox/processed/2026-06/2026-06-25T15:00:19+00:00--19eff4306f429538.json",
+      "raw_id": "19eff4306f429538",
+      "ingested_at": "2026-06-25T15:00:19.000Z"
+    },
+    "raw": {
+      "text": "#14845711098 PAPERMONEY BOT +1 TEAM 100 (Weeklys) 26 JUN 26 77 PUT @1.45, ACCOUNT D-******81"
+    },
+    "instrument": "option",
+    "paper": true,
+    "action": "BOT",
+    "symbol": "TEAM",
+    "qty": 1,
+    "fill": 1.45,
+    "option": {
+      "expiry": "2026-06-26",
+      "strike": 77,
+      "right": "P"
+    },
+    "computed": {
+      "month": "2026-06",
+      "dte": 1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "short TEAM $77 Put for 06/26 at 1.45"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "OPT|TEAM|2026-06-26|77|P"
   }
 ]
