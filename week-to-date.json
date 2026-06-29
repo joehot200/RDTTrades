@@ -1,78 +1,70 @@
 [
   {
     "schema_version": 1,
-    "trade_id": "2f0aa8c3c7fd",
-    "received_at": "2026-06-25T14:50:42.000Z",
+    "trade_id": "c85b8d9fde24",
+    "received_at": "2026-06-29T15:13:30.000Z",
     "source": {
       "system": "zapier_github_inbox",
-      "inbox_path": "inbox/2026-06-25T15:00:19+00:00--19eff4306f429538.json",
-      "archived_path": "inbox/processed/2026-06/2026-06-25T15:00:19+00:00--19eff4306f429538.json",
-      "raw_id": "19eff4306f429538",
-      "ingested_at": "2026-06-25T15:00:19.000Z"
+      "inbox_path": "inbox/2026-06-29T15:14:28+00:00--19f13f15be22886a.json",
+      "archived_path": "inbox/processed/2026-06/2026-06-29T15:14:28+00:00--19f13f15be22886a.json",
+      "raw_id": "19f13f15be22886a",
+      "ingested_at": "2026-06-29T15:14:28.000Z"
     },
     "raw": {
-      "text": "#14845711098 PAPERMONEY BOT +1 TEAM 100 (Weeklys) 26 JUN 26 77 PUT @1.45, ACCOUNT D-******81"
+      "text": "#14848224469 PAPERMONEY BOT +1 SPY @736.93, ACCOUNT D-******81"
     },
-    "instrument": "option",
+    "instrument": "stock",
     "paper": true,
     "action": "BOT",
-    "symbol": "TEAM",
+    "symbol": "SPY",
     "qty": 1,
-    "fill": 1.45,
-    "option": {
-      "expiry": "2026-06-26",
-      "strike": 77,
-      "right": "P"
-    },
+    "fill": 736.93,
+    "option": null,
     "computed": {
       "month": "2026-06",
-      "dte": 1,
+      "dte": -1,
       "wiki_ok": false
     },
     "rdt": {
-      "matched": "options",
-      "text": "short TEAM $77 Put for 06/26 at 1.45"
+      "matched": "stock",
+      "text": "long SPY at 736.93"
     },
     "trade_role": "open",
     "pos_side": "long",
-    "contract_key": "OPT|TEAM|2026-06-26|77|P"
+    "contract_key": "STK|SPY"
   },
   {
     "schema_version": 1,
-    "trade_id": "497767088b3e",
-    "received_at": "2026-06-25T15:39:19.000Z",
+    "trade_id": "d42a8394ddee",
+    "received_at": "2026-06-29T15:13:49.000Z",
     "source": {
       "system": "zapier_github_inbox",
-      "inbox_path": "inbox/2026-06-25T15:46:50+00:00--19eff6f867e38f38.json",
-      "archived_path": "inbox/processed/2026-06/2026-06-25T15:46:50+00:00--19eff6f867e38f38.json",
-      "raw_id": "19eff6f867e38f38",
-      "ingested_at": "2026-06-25T15:46:50.000Z"
+      "inbox_path": "inbox/2026-06-29T15:14:27+00:00--19f13f19ef37d2c4.json",
+      "archived_path": "inbox/processed/2026-06/2026-06-29T15:14:27+00:00--19f13f19ef37d2c4.json",
+      "raw_id": "19f13f19ef37d2c4",
+      "ingested_at": "2026-06-29T15:14:27.000Z"
     },
     "raw": {
-      "text": "#14845780297 PAPERMONEY SOLD -1 TEAM 100 (Weeklys) 26 JUN 26 77 PUT @1.32, ACCOUNT D-******81"
+      "text": "#14848228664 PAPERMONEY SOLD -1 SPY @737.04, ACCOUNT D-******81"
     },
-    "instrument": "option",
+    "instrument": "stock",
     "paper": true,
     "action": "SOLD",
-    "symbol": "TEAM",
+    "symbol": "SPY",
     "qty": 1,
-    "fill": 1.32,
-    "option": {
-      "expiry": "2026-06-26",
-      "strike": 77,
-      "right": "P"
-    },
+    "fill": 737.04,
+    "option": null,
     "computed": {
       "month": "2026-06",
-      "dte": 1,
+      "dte": -1,
       "wiki_ok": false
     },
     "rdt": {
-      "matched": "options",
-      "text": "exit short TEAM $77 Put for 06/26 at 1.32"
+      "matched": "stock",
+      "text": "exit long SPY at 737.04"
     },
     "trade_role": "close",
     "pos_side": "long",
-    "contract_key": "OPT|TEAM|2026-06-26|77|P"
+    "contract_key": "STK|SPY"
   }
 ]

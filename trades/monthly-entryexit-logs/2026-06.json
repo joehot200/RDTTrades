@@ -2540,5 +2540,73 @@
     "trade_role": "close",
     "pos_side": "long",
     "contract_key": "OPT|TEAM|2026-06-26|77|P"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "c85b8d9fde24",
+    "received_at": "2026-06-29T15:13:30.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-06-29T15:14:28+00:00--19f13f15be22886a.json",
+      "archived_path": "inbox/processed/2026-06/2026-06-29T15:14:28+00:00--19f13f15be22886a.json",
+      "raw_id": "19f13f15be22886a",
+      "ingested_at": "2026-06-29T15:14:28.000Z"
+    },
+    "raw": {
+      "text": "#14848224469 PAPERMONEY BOT +1 SPY @736.93, ACCOUNT D-******81"
+    },
+    "instrument": "stock",
+    "paper": true,
+    "action": "BOT",
+    "symbol": "SPY",
+    "qty": 1,
+    "fill": 736.93,
+    "option": null,
+    "computed": {
+      "month": "2026-06",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "stock",
+      "text": "long SPY at 736.93"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "STK|SPY"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "d42a8394ddee",
+    "received_at": "2026-06-29T15:13:49.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-06-29T15:14:27+00:00--19f13f19ef37d2c4.json",
+      "archived_path": "inbox/processed/2026-06/2026-06-29T15:14:27+00:00--19f13f19ef37d2c4.json",
+      "raw_id": "19f13f19ef37d2c4",
+      "ingested_at": "2026-06-29T15:14:27.000Z"
+    },
+    "raw": {
+      "text": "#14848228664 PAPERMONEY SOLD -1 SPY @737.04, ACCOUNT D-******81"
+    },
+    "instrument": "stock",
+    "paper": true,
+    "action": "SOLD",
+    "symbol": "SPY",
+    "qty": 1,
+    "fill": 737.04,
+    "option": null,
+    "computed": {
+      "month": "2026-06",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "stock",
+      "text": "exit long SPY at 737.04"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "STK|SPY"
   }
 ]

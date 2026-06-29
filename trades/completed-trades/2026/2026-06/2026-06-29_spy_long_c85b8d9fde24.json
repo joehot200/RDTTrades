@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "completed_trade_id": "c85b8d9fde24",
+  "status": "closed",
+  "contract_key": "STK|SPY",
+  "instrument": "stock",
+  "pos_side": "long",
+  "symbol": "SPY",
+  "option": null,
+  "qty_opened": 1,
+  "qty_closed": 1,
+  "entry": {
+    "trade_id": "c85b8d9fde24",
+    "received_at": "2026-06-29T15:13:30.000Z",
+    "fill": 736.93,
+    "rdt": "long SPY at 736.93"
+  },
+  "exits": [
+    {
+      "trade_id": "d42a8394ddee",
+      "received_at": "2026-06-29T15:13:49.000Z",
+      "fill": 737.04,
+      "qty": 1,
+      "rdt": "exit long SPY at 737.04"
+    }
+  ],
+  "pnl": {
+    "realized": 0.11000000000001364,
+    "currency": "USD"
+  }
+}
