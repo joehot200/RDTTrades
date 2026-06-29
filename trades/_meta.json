@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-06-29T17:31:51.481Z",
-  "latest_commit_message": "long ALGM $80 Call for 07/17 at 1.44",
-  "latest_processed_trade_id": "4f81541a9ce1",
+  "generated_at": "2026-06-29T18:29:20.088Z",
+  "latest_commit_message": "exit long ALGM $80 Call for 07/17 at 1.5",
+  "latest_processed_trade_id": "533b9421aa16",
   "processed_trade_ids_this_run": [
-    "4f81541a9ce1"
+    "533b9421aa16"
   ]
 }

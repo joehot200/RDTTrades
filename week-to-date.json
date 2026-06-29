@@ -218,5 +218,43 @@
     "trade_role": "open",
     "pos_side": "long",
     "contract_key": "OPT|ALGM|2026-07-17|80|C"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "533b9421aa16",
+    "received_at": "2026-06-29T18:21:17.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-06-29T18:29:03+00:00--19f149d439b22532.json",
+      "archived_path": "inbox/processed/2026-06/2026-06-29T18:29:03+00:00--19f149d439b22532.json",
+      "raw_id": "19f149d439b22532",
+      "ingested_at": "2026-06-29T18:29:03.000Z"
+    },
+    "raw": {
+      "text": "#14850313154 PAPERMONEY SOLD -1 ALGM 100 17 JUL 26 80 CALL @1.50, ACCOUNT D-******81"
+    },
+    "instrument": "option",
+    "paper": true,
+    "action": "SOLD",
+    "symbol": "ALGM",
+    "qty": 1,
+    "fill": 1.5,
+    "option": {
+      "expiry": "2026-07-17",
+      "strike": 80,
+      "right": "C"
+    },
+    "computed": {
+      "month": "2026-06",
+      "dte": 18,
+      "wiki_ok": true
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "exit long ALGM $80 Call for 07/17 at 1.5"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "OPT|ALGM|2026-07-17|80|C"
   }
 ]
