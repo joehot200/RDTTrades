@@ -1044,5 +1044,40 @@
       "realized": 0.11000000000001364,
       "currency": "USD"
     }
+  },
+  {
+    "schema_version": 1,
+    "completed_trade_id": "a754742a1fbd",
+    "status": "closed",
+    "contract_key": "OPT|ANET|2026-07-02|165|C",
+    "instrument": "option",
+    "pos_side": "long",
+    "symbol": "ANET",
+    "option": {
+      "expiry": "2026-07-02",
+      "strike": 165,
+      "right": "C"
+    },
+    "qty_opened": 1,
+    "qty_closed": 1,
+    "entry": {
+      "trade_id": "a754742a1fbd",
+      "received_at": "2026-06-29T15:16:29.000Z",
+      "fill": 3.1,
+      "rdt": "long ANET $165 Call for 07/02 at 3.1"
+    },
+    "exits": [
+      {
+        "trade_id": "fa403f8996d5",
+        "received_at": "2026-06-29T17:07:20.000Z",
+        "fill": 2.94,
+        "qty": 1,
+        "rdt": "exit long ANET $165 Call for 07/02 at 2.94"
+      }
+    ],
+    "pnl": {
+      "realized": -16.000000000000014,
+      "currency": "USD"
+    }
   }
 ]

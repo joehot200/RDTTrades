@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "trade_id": "fa403f8996d5",
+  "received_at": "2026-06-29T17:07:20.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-06-29T17:16:54+00:00--19f145990722df7e.json",
+    "archived_path": "inbox/processed/2026-06/2026-06-29T17:16:54+00:00--19f145990722df7e.json",
+    "raw_id": "19f145990722df7e",
+    "ingested_at": "2026-06-29T17:16:54.000Z"
+  },
+  "raw": {
+    "text": "#14849567317 PAPERMONEY SOLD -1 ANET 100 (Weeklys) 2 JUL 26 165 CALL @2.94, ACCOUNT D-******81"
+  },
+  "instrument": "option",
+  "paper": true,
+  "action": "SOLD",
+  "symbol": "ANET",
+  "qty": 1,
+  "fill": 2.94,
+  "option": {
+    "expiry": "2026-07-02",
+    "strike": 165,
+    "right": "C"
+  },
+  "computed": {
+    "month": "2026-06",
+    "dte": 3,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "options",
+    "text": "exit long ANET $165 Call for 07/02 at 2.94"
+  },
+  "trade_role": "close",
+  "pos_side": "long",
+  "contract_key": "OPT|ANET|2026-07-02|165|C"
+}

@@ -2646,5 +2646,81 @@
     "trade_role": "open",
     "pos_side": "long",
     "contract_key": "OPT|ANET|2026-07-02|165|C"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "fa403f8996d5",
+    "received_at": "2026-06-29T17:07:20.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-06-29T17:16:54+00:00--19f145990722df7e.json",
+      "archived_path": "inbox/processed/2026-06/2026-06-29T17:16:54+00:00--19f145990722df7e.json",
+      "raw_id": "19f145990722df7e",
+      "ingested_at": "2026-06-29T17:16:54.000Z"
+    },
+    "raw": {
+      "text": "#14849567317 PAPERMONEY SOLD -1 ANET 100 (Weeklys) 2 JUL 26 165 CALL @2.94, ACCOUNT D-******81"
+    },
+    "instrument": "option",
+    "paper": true,
+    "action": "SOLD",
+    "symbol": "ANET",
+    "qty": 1,
+    "fill": 2.94,
+    "option": {
+      "expiry": "2026-07-02",
+      "strike": 165,
+      "right": "C"
+    },
+    "computed": {
+      "month": "2026-06",
+      "dte": 3,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "exit long ANET $165 Call for 07/02 at 2.94"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "OPT|ANET|2026-07-02|165|C"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "4dd291dcef71",
+    "received_at": "2026-06-29T17:12:30.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-06-29T17:16:53+00:00--19f145e4bea41590.json",
+      "archived_path": "inbox/processed/2026-06/2026-06-29T17:16:53+00:00--19f145e4bea41590.json",
+      "raw_id": "19f145e4bea41590",
+      "ingested_at": "2026-06-29T17:16:53.000Z"
+    },
+    "raw": {
+      "text": "#14849619113 PAPERMONEY SOLD -1 CTSH 100 17 JUL 26 37.5 PUT @.90, ACCOUNT D-******81"
+    },
+    "instrument": "option",
+    "paper": true,
+    "action": "SOLD",
+    "symbol": "CTSH",
+    "qty": 1,
+    "fill": 0.9,
+    "option": {
+      "expiry": "2026-07-17",
+      "strike": 37.5,
+      "right": "P"
+    },
+    "computed": {
+      "month": "2026-06",
+      "dte": 18,
+      "wiki_ok": true
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "exit short CTSH $37.5 Put for 07/17 at 0.9"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "OPT|CTSH|2026-07-17|37.5|P"
   }
 ]
