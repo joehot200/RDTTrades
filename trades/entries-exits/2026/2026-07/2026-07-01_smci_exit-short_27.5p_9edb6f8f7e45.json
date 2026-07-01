@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "trade_id": "9edb6f8f7e45",
+  "received_at": "2026-07-01T19:57:13.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-07-01T20:04:44+00:00--19f1f41cf555314d.json",
+    "archived_path": "inbox/processed/2026-07/2026-07-01T20:04:44+00:00--19f1f41cf555314d.json",
+    "raw_id": "19f1f41cf555314d",
+    "ingested_at": "2026-07-01T20:04:44.000Z"
+  },
+  "raw": {
+    "text": "#14892257452 PAPERMONEY SOLD -1 SMCI 100 (Weeklys) 2 JUL 26 27.5 PUT @.43, ACCOUNT D-******81"
+  },
+  "instrument": "option",
+  "paper": true,
+  "action": "SOLD",
+  "symbol": "SMCI",
+  "qty": 1,
+  "fill": 0.43,
+  "option": {
+    "expiry": "2026-07-02",
+    "strike": 27.5,
+    "right": "P"
+  },
+  "computed": {
+    "month": "2026-07",
+    "dte": 1,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "options",
+    "text": "exit short SMCI $27.5 Put for 07/02 at 0.43"
+  },
+  "trade_role": "close",
+  "pos_side": "long",
+  "contract_key": "OPT|SMCI|2026-07-02|27.5|P"
+}
