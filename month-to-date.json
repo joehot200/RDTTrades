@@ -150,5 +150,43 @@
     "trade_role": "close",
     "pos_side": "long",
     "contract_key": "OPT|ORCL|2026-07-02|144|P"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "b95edb6a5b86",
+    "received_at": "2026-07-01T19:43:38.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-07-01T19:50:02+00:00--19f1f355ce56fda1.json",
+      "archived_path": "inbox/processed/2026-07/2026-07-01T19:50:02+00:00--19f1f355ce56fda1.json",
+      "raw_id": "19f1f355ce56fda1",
+      "ingested_at": "2026-07-01T19:50:02.000Z"
+    },
+    "raw": {
+      "text": "#14891979827 PAPERMONEY BOT +1 SMCI 100 (Weeklys) 2 JUL 26 27.5 PUT @.34, ACCOUNT D-******81"
+    },
+    "instrument": "option",
+    "paper": true,
+    "action": "BOT",
+    "symbol": "SMCI",
+    "qty": 1,
+    "fill": 0.34,
+    "option": {
+      "expiry": "2026-07-02",
+      "strike": 27.5,
+      "right": "P"
+    },
+    "computed": {
+      "month": "2026-07",
+      "dte": 1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "short SMCI $27.5 Put for 07/02 at 0.34"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "OPT|SMCI|2026-07-02|27.5|P"
   }
 ]

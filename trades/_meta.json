@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-07-01T19:36:58.045Z",
-  "latest_commit_message": "exit short ORCL $144 Put for 07/02 at 1.95",
-  "latest_processed_trade_id": "173896d63abb",
+  "generated_at": "2026-07-01T19:50:17.908Z",
+  "latest_commit_message": "short SMCI $27.5 Put for 07/02 at 0.34",
+  "latest_processed_trade_id": "b95edb6a5b86",
   "processed_trade_ids_this_run": [
-    "173896d63abb"
+    "b95edb6a5b86"
   ]
 }
