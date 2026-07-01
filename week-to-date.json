@@ -332,5 +332,43 @@
     "trade_role": "open",
     "pos_side": "long",
     "contract_key": "OPT|ORCL|2026-07-02|144|P"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "0072ce21d933",
+    "received_at": "2026-07-01T18:49:14.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-07-01T18:49:21+00:00--19f1f0392e4aa013.json",
+      "archived_path": "inbox/processed/2026-07/2026-07-01T18:49:21+00:00--19f1f0392e4aa013.json",
+      "raw_id": "19f1f0392e4aa013",
+      "ingested_at": "2026-07-01T18:49:21.000Z"
+    },
+    "raw": {
+      "text": "#14890887444 PAPERMONEY SOLD -1 OKTA 100 (Weeklys) 2 JUL 26 145 CALL @.80, ACCOUNT D-******81"
+    },
+    "instrument": "option",
+    "paper": true,
+    "action": "SOLD",
+    "symbol": "OKTA",
+    "qty": 1,
+    "fill": 0.8,
+    "option": {
+      "expiry": "2026-07-02",
+      "strike": 145,
+      "right": "C"
+    },
+    "computed": {
+      "month": "2026-07",
+      "dte": 1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "exit long OKTA $145 Call for 07/02 at 0.8"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "OPT|OKTA|2026-07-02|145|C"
   }
 ]
