@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-07-01T18:49:42.726Z",
-  "latest_commit_message": "exit long OKTA $145 Call for 07/02 at 0.8",
-  "latest_processed_trade_id": "0072ce21d933",
+  "generated_at": "2026-07-01T19:36:58.045Z",
+  "latest_commit_message": "exit short ORCL $144 Put for 07/02 at 1.95",
+  "latest_processed_trade_id": "173896d63abb",
   "processed_trade_ids_this_run": [
-    "0072ce21d933"
+    "173896d63abb"
   ]
 }
