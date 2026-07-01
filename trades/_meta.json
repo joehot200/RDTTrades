@@ -1,8 +1,9 @@
 {
-  "generated_at": "2026-06-29T18:29:20.088Z",
-  "latest_commit_message": "exit long ALGM $80 Call for 07/17 at 1.5",
-  "latest_processed_trade_id": "533b9421aa16",
+  "generated_at": "2026-07-01T17:20:30.133Z",
+  "latest_commit_message": "short ORCL $144 Put for 07/02 at 1.69",
+  "latest_processed_trade_id": "d9754f147c50",
   "processed_trade_ids_this_run": [
-    "533b9421aa16"
+    "3819d08191b4",
+    "d9754f147c50"
   ]
 }

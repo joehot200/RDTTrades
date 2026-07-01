@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "trade_id": "d9754f147c50",
+  "received_at": "2026-07-01T17:19:35.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-07-01T17:20:14+00:00--19f1eb17f96c62d3.json",
+    "archived_path": "inbox/processed/2026-07/2026-07-01T17:20:14+00:00--19f1eb17f96c62d3.json",
+    "raw_id": "19f1eb17f96c62d3",
+    "ingested_at": "2026-07-01T17:20:14.000Z"
+  },
+  "raw": {
+    "text": "#14889105414 PAPERMONEY BOT +1 ORCL 100 (Weeklys) 2 JUL 26 144 PUT @1.69, ACCOUNT D-******81"
+  },
+  "instrument": "option",
+  "paper": true,
+  "action": "BOT",
+  "symbol": "ORCL",
+  "qty": 1,
+  "fill": 1.69,
+  "option": {
+    "expiry": "2026-07-02",
+    "strike": 144,
+    "right": "P"
+  },
+  "computed": {
+    "month": "2026-07",
+    "dte": 1,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "options",
+    "text": "short ORCL $144 Put for 07/02 at 1.69"
+  },
+  "trade_role": "open",
+  "pos_side": "long",
+  "contract_key": "OPT|ORCL|2026-07-02|144|P"
+}
