@@ -1,10 +1,6 @@
 {
-  "generated_at": "2026-07-02T13:50:45.657Z",
+  "generated_at": "2026-07-02T13:51:03.030Z",
   "latest_commit_message": "exit long CTSH $42.5 Call for 07/17 at 1.47",
-  "latest_processed_trade_id": "fe2618f7a37b",
-  "processed_trade_ids_this_run": [
-    "a312f157a1b6",
-    "b189ac2e59e7",
-    "fe2618f7a37b"
-  ]
+  "latest_processed_trade_id": null,
+  "processed_trade_ids_this_run": []
 }
