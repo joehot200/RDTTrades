@@ -1,9 +1,6 @@
 {
-  "generated_at": "2026-07-02T18:28:44.372Z",
+  "generated_at": "2026-07-02T18:28:59.213Z",
   "latest_commit_message": "exit long PANW $355 Call for 07/02 at 0.65",
-  "latest_processed_trade_id": "28d628c2703e",
-  "processed_trade_ids_this_run": [
-    "c0408c75611e",
-    "28d628c2703e"
-  ]
+  "latest_processed_trade_id": null,
+  "processed_trade_ids_this_run": []
 }
