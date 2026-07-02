@@ -343,6 +343,44 @@
   },
   {
     "schema_version": 1,
+    "trade_id": "907b1fdf81cc",
+    "received_at": "2026-07-02T14:06:27.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-07-02T14:20:44+00:00--19f23270b8244ed4.json",
+      "archived_path": "inbox/processed/2026-07/2026-07-02T14:20:44+00:00--19f23270b8244ed4.json",
+      "raw_id": "19f23270b8244ed4",
+      "ingested_at": "2026-07-02T14:20:44.000Z"
+    },
+    "raw": {
+      "text": "#14914821755 PAPERMONEY SOLD -1 OKTA 100 (Weeklys) 10 JUL 26 150 CALL @2.82, ACCOUNT D-******81"
+    },
+    "instrument": "option",
+    "paper": true,
+    "action": "SOLD",
+    "symbol": "OKTA",
+    "qty": 1,
+    "fill": 2.82,
+    "option": {
+      "expiry": "2026-07-10",
+      "strike": 150,
+      "right": "C"
+    },
+    "computed": {
+      "month": "2026-07",
+      "dte": 8,
+      "wiki_ok": true
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "exit long OKTA $150 Call for 07/10 at 2.82"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "OPT|OKTA|2026-07-10|150|C"
+  },
+  {
+    "schema_version": 1,
     "trade_id": "5a6a31f51746",
     "received_at": "2026-07-02T14:07:48.000Z",
     "source": {

@@ -138,5 +138,40 @@
       "realized": 1.0000000000000009,
       "currency": "USD"
     }
+  },
+  {
+    "schema_version": 1,
+    "completed_trade_id": "b189ac2e59e7",
+    "status": "closed",
+    "contract_key": "OPT|OKTA|2026-07-10|150|C",
+    "instrument": "option",
+    "pos_side": "long",
+    "symbol": "OKTA",
+    "option": {
+      "expiry": "2026-07-10",
+      "strike": 150,
+      "right": "C"
+    },
+    "qty_opened": 1,
+    "qty_closed": 1,
+    "entry": {
+      "trade_id": "b189ac2e59e7",
+      "received_at": "2026-07-02T13:46:30.000Z",
+      "fill": 2.36,
+      "rdt": "long OKTA $150 Call for 07/10 at 2.36"
+    },
+    "exits": [
+      {
+        "trade_id": "907b1fdf81cc",
+        "received_at": "2026-07-02T14:06:27.000Z",
+        "fill": 2.82,
+        "qty": 1,
+        "rdt": "exit long OKTA $150 Call for 07/10 at 2.82"
+      }
+    ],
+    "pnl": {
+      "realized": 46,
+      "currency": "USD"
+    }
   }
 ]
