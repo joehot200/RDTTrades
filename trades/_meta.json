@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-07-02T15:07:55.240Z",
-  "latest_commit_message": "short SMCI $27.5 Put for 07/10 at 1.33",
-  "latest_processed_trade_id": "96affac7c108",
+  "generated_at": "2026-07-02T16:48:39.511Z",
+  "latest_commit_message": "exit short SMCI $27.5 Put for 07/10 at 1.49",
+  "latest_processed_trade_id": "88e66759a233",
   "processed_trade_ids_this_run": [
-    "96affac7c108"
+    "88e66759a233"
   ]
 }

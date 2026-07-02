@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "completed_trade_id": "96affac7c108",
+  "status": "closed",
+  "contract_key": "OPT|SMCI|2026-07-10|27.5|P",
+  "instrument": "option",
+  "pos_side": "long",
+  "symbol": "SMCI",
+  "option": {
+    "expiry": "2026-07-10",
+    "strike": 27.5,
+    "right": "P"
+  },
+  "qty_opened": 1,
+  "qty_closed": 1,
+  "entry": {
+    "trade_id": "96affac7c108",
+    "received_at": "2026-07-02T15:05:09.000Z",
+    "fill": 1.33,
+    "rdt": "short SMCI $27.5 Put for 07/10 at 1.33"
+  },
+  "exits": [
+    {
+      "trade_id": "88e66759a233",
+      "received_at": "2026-07-02T16:43:22.000Z",
+      "fill": 1.49,
+      "qty": 1,
+      "rdt": "exit short SMCI $27.5 Put for 07/10 at 1.49"
+    }
+  ],
+  "pnl": {
+    "realized": 15.999999999999993,
+    "currency": "USD"
+  }
+}
