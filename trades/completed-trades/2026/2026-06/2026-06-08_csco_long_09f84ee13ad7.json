@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "completed_trade_id": "09f84ee13ad7",
+  "status": "closed",
+  "contract_key": "STK|CSCO",
+  "instrument": "stock",
+  "pos_side": "long",
+  "symbol": "CSCO",
+  "option": null,
+  "qty_opened": 1,
+  "qty_closed": 1,
+  "entry": {
+    "trade_id": "09f84ee13ad7",
+    "received_at": "2026-06-08T14:52:04.000Z",
+    "fill": 125.7,
+    "rdt": "long CSCO at 125.7"
+  },
+  "exits": [
+    {
+      "trade_id": "5a6a31f51746",
+      "received_at": "2026-07-02T14:07:48.000Z",
+      "fill": 115.2412,
+      "qty": 1,
+      "rdt": "exit long CSCO at 115.2412"
+    }
+  ],
+  "pnl": {
+    "realized": -10.458799999999997,
+    "currency": "USD"
+  }
+}

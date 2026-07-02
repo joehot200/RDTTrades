@@ -598,5 +598,39 @@
     "trade_role": "close",
     "pos_side": "long",
     "contract_key": "OPT|CTSH|2026-07-17|42.5|C"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "5a6a31f51746",
+    "received_at": "2026-07-02T14:07:48.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-07-02T14:09:56+00:00--19f232846493af43.json",
+      "archived_path": "inbox/processed/2026-07/2026-07-02T14:09:56+00:00--19f232846493af43.json",
+      "raw_id": "19f232846493af43",
+      "ingested_at": "2026-07-02T14:09:56.000Z"
+    },
+    "raw": {
+      "text": "#123909899653 SOLD -1 CSCO @115.2412, ACCOUNT *****746SCHW"
+    },
+    "instrument": "stock",
+    "paper": false,
+    "action": "SOLD",
+    "symbol": "CSCO",
+    "qty": 1,
+    "fill": 115.2412,
+    "option": null,
+    "computed": {
+      "month": "2026-07",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "stock",
+      "text": "exit long CSCO at 115.2412"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "STK|CSCO"
   }
 ]
