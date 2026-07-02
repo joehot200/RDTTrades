@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "completed_trade_id": "c0408c75611e",
+  "status": "closed",
+  "contract_key": "OPT|PANW|2026-07-02|355|C",
+  "instrument": "option",
+  "pos_side": "long",
+  "symbol": "PANW",
+  "option": {
+    "expiry": "2026-07-02",
+    "strike": 355,
+    "right": "C"
+  },
+  "qty_opened": 1,
+  "qty_closed": 1,
+  "entry": {
+    "trade_id": "c0408c75611e",
+    "received_at": "2026-07-02T18:13:15.000Z",
+    "fill": 0.76,
+    "rdt": "long PANW $355 Call for 07/02 at 0.76"
+  },
+  "exits": [
+    {
+      "trade_id": "28d628c2703e",
+      "received_at": "2026-07-02T18:18:37.000Z",
+      "fill": 0.65,
+      "qty": 1,
+      "rdt": "exit long PANW $355 Call for 07/02 at 0.65"
+    }
+  ],
+  "pnl": {
+    "realized": -10.999999999999998,
+    "currency": "USD"
+  }
+}

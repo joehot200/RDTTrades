@@ -564,5 +564,81 @@
     "trade_role": "close",
     "pos_side": "long",
     "contract_key": "OPT|IREN|2026-07-02|38|P"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "c0408c75611e",
+    "received_at": "2026-07-02T18:13:15.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-07-02T18:28:27+00:00--19f2408fc41dfd24.json",
+      "archived_path": "inbox/processed/2026-07/2026-07-02T18:28:27+00:00--19f2408fc41dfd24.json",
+      "raw_id": "19f2408fc41dfd24",
+      "ingested_at": "2026-07-02T18:28:27.000Z"
+    },
+    "raw": {
+      "text": "#123998512271 BOT +1 PANW 100 (Weeklys) 2 JUL 26 355 CALL @.76, ACCOUNT *****746SCHW"
+    },
+    "instrument": "option",
+    "paper": false,
+    "action": "BOT",
+    "symbol": "PANW",
+    "qty": 1,
+    "fill": 0.76,
+    "option": {
+      "expiry": "2026-07-02",
+      "strike": 355,
+      "right": "C"
+    },
+    "computed": {
+      "month": "2026-07",
+      "dte": 0,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "long PANW $355 Call for 07/02 at 0.76"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "OPT|PANW|2026-07-02|355|C"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "28d628c2703e",
+    "received_at": "2026-07-02T18:18:37.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-07-02T18:28:26+00:00--19f240de7fccae34.json",
+      "archived_path": "inbox/processed/2026-07/2026-07-02T18:28:26+00:00--19f240de7fccae34.json",
+      "raw_id": "19f240de7fccae34",
+      "ingested_at": "2026-07-02T18:28:26.000Z"
+    },
+    "raw": {
+      "text": "#123998514055 SOLD -1 PANW 100 (Weeklys) 2 JUL 26 355 CALL @.65, ACCOUNT *****746SCHW"
+    },
+    "instrument": "option",
+    "paper": false,
+    "action": "SOLD",
+    "symbol": "PANW",
+    "qty": 1,
+    "fill": 0.65,
+    "option": {
+      "expiry": "2026-07-02",
+      "strike": 355,
+      "right": "C"
+    },
+    "computed": {
+      "month": "2026-07",
+      "dte": 0,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "exit long PANW $355 Call for 07/02 at 0.65"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "OPT|PANW|2026-07-02|355|C"
   }
 ]
