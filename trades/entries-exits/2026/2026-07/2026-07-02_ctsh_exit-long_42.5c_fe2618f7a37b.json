@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "trade_id": "fe2618f7a37b",
+  "received_at": "2026-07-02T13:48:45.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-07-02T13:50:26+00:00--19f2316d207de115.json",
+    "archived_path": "inbox/processed/2026-07/2026-07-02T13:50:26+00:00--19f2316d207de115.json",
+    "raw_id": "19f2316d207de115",
+    "ingested_at": "2026-07-02T13:50:26.000Z"
+  },
+  "raw": {
+    "text": "#14914374968 PAPERMONEY SOLD -1 CTSH 100 17 JUL 26 42.5 CALL @1.47, ACCOUNT D-******81"
+  },
+  "instrument": "option",
+  "paper": true,
+  "action": "SOLD",
+  "symbol": "CTSH",
+  "qty": 1,
+  "fill": 1.47,
+  "option": {
+    "expiry": "2026-07-17",
+    "strike": 42.5,
+    "right": "C"
+  },
+  "computed": {
+    "month": "2026-07",
+    "dte": 15,
+    "wiki_ok": true
+  },
+  "rdt": {
+    "matched": "options",
+    "text": "exit long CTSH $42.5 Call for 07/17 at 1.47"
+  },
+  "trade_role": "close",
+  "pos_side": "long",
+  "contract_key": "OPT|CTSH|2026-07-17|42.5|C"
+}

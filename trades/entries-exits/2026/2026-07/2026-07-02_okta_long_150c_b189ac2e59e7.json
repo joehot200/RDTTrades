@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "trade_id": "b189ac2e59e7",
+  "received_at": "2026-07-02T13:46:30.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-07-02T13:50:27+00:00--19f2314c74c8d066.json",
+    "archived_path": "inbox/processed/2026-07/2026-07-02T13:50:27+00:00--19f2314c74c8d066.json",
+    "raw_id": "19f2314c74c8d066",
+    "ingested_at": "2026-07-02T13:50:27.000Z"
+  },
+  "raw": {
+    "text": "#14914318986 PAPERMONEY BOT +1 OKTA 100 (Weeklys) 10 JUL 26 150 CALL @2.36, ACCOUNT D-******81"
+  },
+  "instrument": "option",
+  "paper": true,
+  "action": "BOT",
+  "symbol": "OKTA",
+  "qty": 1,
+  "fill": 2.36,
+  "option": {
+    "expiry": "2026-07-10",
+    "strike": 150,
+    "right": "C"
+  },
+  "computed": {
+    "month": "2026-07",
+    "dte": 8,
+    "wiki_ok": true
+  },
+  "rdt": {
+    "matched": "options",
+    "text": "long OKTA $150 Call for 07/10 at 2.36"
+  },
+  "trade_role": "open",
+  "pos_side": "long",
+  "contract_key": "OPT|OKTA|2026-07-10|150|C"
+}

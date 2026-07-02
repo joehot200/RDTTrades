@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "completed_trade_id": "a312f157a1b6",
+  "status": "closed",
+  "contract_key": "OPT|CTSH|2026-07-17|42.5|C",
+  "instrument": "option",
+  "pos_side": "long",
+  "symbol": "CTSH",
+  "option": {
+    "expiry": "2026-07-17",
+    "strike": 42.5,
+    "right": "C"
+  },
+  "qty_opened": 1,
+  "qty_closed": 1,
+  "entry": {
+    "trade_id": "a312f157a1b6",
+    "received_at": "2026-07-02T13:37:17.000Z",
+    "fill": 1.46,
+    "rdt": "long CTSH $42.5 Call for 07/17 at 1.46"
+  },
+  "exits": [
+    {
+      "trade_id": "fe2618f7a37b",
+      "received_at": "2026-07-02T13:48:45.000Z",
+      "fill": 1.47,
+      "qty": 1,
+      "rdt": "exit long CTSH $42.5 Call for 07/17 at 1.47"
+    }
+  ],
+  "pnl": {
+    "realized": 1.0000000000000009,
+    "currency": "USD"
+  }
+}

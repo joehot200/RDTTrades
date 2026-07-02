@@ -484,5 +484,119 @@
     "trade_role": "close",
     "pos_side": "long",
     "contract_key": "OPT|SMCI|2026-07-02|27.5|P"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "a312f157a1b6",
+    "received_at": "2026-07-02T13:37:17.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-07-02T13:50:28+00:00--19f230c53e9d98ba.json",
+      "archived_path": "inbox/processed/2026-07/2026-07-02T13:50:28+00:00--19f230c53e9d98ba.json",
+      "raw_id": "19f230c53e9d98ba",
+      "ingested_at": "2026-07-02T13:50:28.000Z"
+    },
+    "raw": {
+      "text": "#14914079387 PAPERMONEY BOT +1 CTSH 100 17 JUL 26 42.5 CALL @1.46, ACCOUNT D-******81"
+    },
+    "instrument": "option",
+    "paper": true,
+    "action": "BOT",
+    "symbol": "CTSH",
+    "qty": 1,
+    "fill": 1.46,
+    "option": {
+      "expiry": "2026-07-17",
+      "strike": 42.5,
+      "right": "C"
+    },
+    "computed": {
+      "month": "2026-07",
+      "dte": 15,
+      "wiki_ok": true
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "long CTSH $42.5 Call for 07/17 at 1.46"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "OPT|CTSH|2026-07-17|42.5|C"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "b189ac2e59e7",
+    "received_at": "2026-07-02T13:46:30.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-07-02T13:50:27+00:00--19f2314c74c8d066.json",
+      "archived_path": "inbox/processed/2026-07/2026-07-02T13:50:27+00:00--19f2314c74c8d066.json",
+      "raw_id": "19f2314c74c8d066",
+      "ingested_at": "2026-07-02T13:50:27.000Z"
+    },
+    "raw": {
+      "text": "#14914318986 PAPERMONEY BOT +1 OKTA 100 (Weeklys) 10 JUL 26 150 CALL @2.36, ACCOUNT D-******81"
+    },
+    "instrument": "option",
+    "paper": true,
+    "action": "BOT",
+    "symbol": "OKTA",
+    "qty": 1,
+    "fill": 2.36,
+    "option": {
+      "expiry": "2026-07-10",
+      "strike": 150,
+      "right": "C"
+    },
+    "computed": {
+      "month": "2026-07",
+      "dte": 8,
+      "wiki_ok": true
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "long OKTA $150 Call for 07/10 at 2.36"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "OPT|OKTA|2026-07-10|150|C"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "fe2618f7a37b",
+    "received_at": "2026-07-02T13:48:45.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-07-02T13:50:26+00:00--19f2316d207de115.json",
+      "archived_path": "inbox/processed/2026-07/2026-07-02T13:50:26+00:00--19f2316d207de115.json",
+      "raw_id": "19f2316d207de115",
+      "ingested_at": "2026-07-02T13:50:26.000Z"
+    },
+    "raw": {
+      "text": "#14914374968 PAPERMONEY SOLD -1 CTSH 100 17 JUL 26 42.5 CALL @1.47, ACCOUNT D-******81"
+    },
+    "instrument": "option",
+    "paper": true,
+    "action": "SOLD",
+    "symbol": "CTSH",
+    "qty": 1,
+    "fill": 1.47,
+    "option": {
+      "expiry": "2026-07-17",
+      "strike": 42.5,
+      "right": "C"
+    },
+    "computed": {
+      "month": "2026-07",
+      "dte": 15,
+      "wiki_ok": true
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "exit long CTSH $42.5 Call for 07/17 at 1.47"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "OPT|CTSH|2026-07-17|42.5|C"
   }
 ]
