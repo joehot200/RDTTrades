@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-07-02T17:56:42.123Z",
-  "latest_commit_message": "short IREN $38 Put for 07/02 at 0.16",
-  "latest_processed_trade_id": "f2bbc3b582e5",
+  "generated_at": "2026-07-02T18:11:35.821Z",
+  "latest_commit_message": "exit short IREN $38 Put for 07/02 at 0.08",
+  "latest_processed_trade_id": "e765d2e9daf7",
   "processed_trade_ids_this_run": [
-    "f2bbc3b582e5"
+    "e765d2e9daf7"
   ]
 }

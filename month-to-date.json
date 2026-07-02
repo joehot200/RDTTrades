@@ -526,5 +526,43 @@
     "trade_role": "open",
     "pos_side": "long",
     "contract_key": "OPT|IREN|2026-07-02|38|P"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "e765d2e9daf7",
+    "received_at": "2026-07-02T18:07:33.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-07-02T18:11:15+00:00--19f2403c29cc0335.json",
+      "archived_path": "inbox/processed/2026-07/2026-07-02T18:11:15+00:00--19f2403c29cc0335.json",
+      "raw_id": "19f2403c29cc0335",
+      "ingested_at": "2026-07-02T18:11:15.000Z"
+    },
+    "raw": {
+      "text": "#123995859571 SOLD -1 IREN 100 (Weeklys) 2 JUL 26 38 PUT @.08, ACCOUNT *****746SCHW"
+    },
+    "instrument": "option",
+    "paper": false,
+    "action": "SOLD",
+    "symbol": "IREN",
+    "qty": 1,
+    "fill": 0.08,
+    "option": {
+      "expiry": "2026-07-02",
+      "strike": 38,
+      "right": "P"
+    },
+    "computed": {
+      "month": "2026-07",
+      "dte": 0,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "exit short IREN $38 Put for 07/02 at 0.08"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "OPT|IREN|2026-07-02|38|P"
   }
 ]

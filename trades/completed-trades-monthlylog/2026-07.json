@@ -208,5 +208,40 @@
       "realized": 15.999999999999993,
       "currency": "USD"
     }
+  },
+  {
+    "schema_version": 1,
+    "completed_trade_id": "f2bbc3b582e5",
+    "status": "closed",
+    "contract_key": "OPT|IREN|2026-07-02|38|P",
+    "instrument": "option",
+    "pos_side": "long",
+    "symbol": "IREN",
+    "option": {
+      "expiry": "2026-07-02",
+      "strike": 38,
+      "right": "P"
+    },
+    "qty_opened": 1,
+    "qty_closed": 1,
+    "entry": {
+      "trade_id": "f2bbc3b582e5",
+      "received_at": "2026-07-02T17:51:16.000Z",
+      "fill": 0.16,
+      "rdt": "short IREN $38 Put for 07/02 at 0.16"
+    },
+    "exits": [
+      {
+        "trade_id": "e765d2e9daf7",
+        "received_at": "2026-07-02T18:07:33.000Z",
+        "fill": 0.08,
+        "qty": 1,
+        "rdt": "exit short IREN $38 Put for 07/02 at 0.08"
+      }
+    ],
+    "pnl": {
+      "realized": -8,
+      "currency": "USD"
+    }
   }
 ]
