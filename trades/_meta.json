@@ -1,9 +1,6 @@
 {
-  "generated_at": "2026-07-07T16:54:52.983Z",
+  "generated_at": "2026-07-07T16:55:08.793Z",
   "latest_commit_message": "long FTNT $167.5 Call for 07/10 at 1.37",
-  "latest_processed_trade_id": "1830bf35b475",
-  "processed_trade_ids_this_run": [
-    "f08aab4c1933",
-    "1830bf35b475"
-  ]
+  "latest_processed_trade_id": null,
+  "processed_trade_ids_this_run": []
 }
