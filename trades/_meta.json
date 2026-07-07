@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-07-07T14:49:49.703Z",
-  "latest_commit_message": "short GFS $55 Put for 07/17 at 1.08",
-  "latest_processed_trade_id": "663cb2fc67d5",
+  "generated_at": "2026-07-07T15:18:06.165Z",
+  "latest_commit_message": "long FTNT $165 Call for 07/10 at 1.49",
+  "latest_processed_trade_id": "b1c4e197f7cd",
   "processed_trade_ids_this_run": [
-    "663cb2fc67d5"
+    "b1c4e197f7cd"
   ]
 }
