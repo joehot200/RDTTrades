@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "completed_trade_id": "79574ffb00e7",
+  "status": "closed",
+  "contract_key": "OPT|IREN|2026-07-10|40.5|P",
+  "instrument": "option",
+  "pos_side": "long",
+  "symbol": "IREN",
+  "option": {
+    "expiry": "2026-07-10",
+    "strike": 40.5,
+    "right": "P"
+  },
+  "qty_opened": 1,
+  "qty_closed": 1,
+  "entry": {
+    "trade_id": "79574ffb00e7",
+    "received_at": "2026-07-07T14:06:03.000Z",
+    "fill": 2.06,
+    "rdt": "short IREN $40.5 Put for 07/10 at 2.06"
+  },
+  "exits": [
+    {
+      "trade_id": "00bcbb25f594",
+      "received_at": "2026-07-07T14:16:44.000Z",
+      "fill": 2.47,
+      "qty": 1,
+      "rdt": "exit short IREN $40.5 Put for 07/10 at 2.47"
+    }
+  ],
+  "pnl": {
+    "realized": 41.000000000000014,
+    "currency": "USD"
+  }
+}
