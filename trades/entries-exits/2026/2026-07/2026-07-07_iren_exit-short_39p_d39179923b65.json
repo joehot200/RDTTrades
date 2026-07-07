@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "trade_id": "d39179923b65",
+  "received_at": "2026-07-07T14:30:28.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-07-07T14:33:57+00:00--19f3cfcd1de978bb.json",
+    "archived_path": "inbox/processed/2026-07/2026-07-07T14:33:57+00:00--19f3cfcd1de978bb.json",
+    "raw_id": "19f3cfcd1de978bb",
+    "ingested_at": "2026-07-07T14:33:57.000Z"
+  },
+  "raw": {
+    "text": "#124244397433 SOLD -1 IREN 100 (Weeklys) 10 JUL 26 39 PUT @1.69, ACCOUNT *****746SCHW"
+  },
+  "instrument": "option",
+  "paper": false,
+  "action": "SOLD",
+  "symbol": "IREN",
+  "qty": 1,
+  "fill": 1.69,
+  "option": {
+    "expiry": "2026-07-10",
+    "strike": 39,
+    "right": "P"
+  },
+  "computed": {
+    "month": "2026-07",
+    "dte": 3,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "options",
+    "text": "exit short IREN $39 Put for 07/10 at 1.69"
+  },
+  "trade_role": "close",
+  "pos_side": "long",
+  "contract_key": "OPT|IREN|2026-07-10|39|P"
+}

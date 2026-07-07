@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "trade_id": "2dd7d750be1d",
+  "received_at": "2026-07-07T14:26:48.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-07-07T14:33:58+00:00--19f3cf9757a30a0a.json",
+    "archived_path": "inbox/processed/2026-07/2026-07-07T14:33:58+00:00--19f3cf9757a30a0a.json",
+    "raw_id": "19f3cf9757a30a0a",
+    "ingested_at": "2026-07-07T14:33:58.000Z"
+  },
+  "raw": {
+    "text": "#124242003652 BOT +1 IREN 100 (Weeklys) 10 JUL 26 39 PUT @1.86, ACCOUNT *****746SCHW"
+  },
+  "instrument": "option",
+  "paper": false,
+  "action": "BOT",
+  "symbol": "IREN",
+  "qty": 1,
+  "fill": 1.86,
+  "option": {
+    "expiry": "2026-07-10",
+    "strike": 39,
+    "right": "P"
+  },
+  "computed": {
+    "month": "2026-07",
+    "dte": 3,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "options",
+    "text": "short IREN $39 Put for 07/10 at 1.86"
+  },
+  "trade_role": "open",
+  "pos_side": "long",
+  "contract_key": "OPT|IREN|2026-07-10|39|P"
+}
