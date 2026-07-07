@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "trade_id": "8e692f890a92",
+  "received_at": "2026-07-07T15:59:14.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-07-07T16:03:02+00:00--19f3d4e16705f295.json",
+    "archived_path": "inbox/processed/2026-07/2026-07-07T16:03:02+00:00--19f3d4e16705f295.json",
+    "raw_id": "19f3d4e16705f295",
+    "ingested_at": "2026-07-07T16:03:02.000Z"
+  },
+  "raw": {
+    "text": "#124279797553 BOT +1 ADBE 100 (Weeklys) 10 JUL 26 240 CALL @2.28, ACCOUNT *****746SCHW"
+  },
+  "instrument": "option",
+  "paper": false,
+  "action": "BOT",
+  "symbol": "ADBE",
+  "qty": 1,
+  "fill": 2.28,
+  "option": {
+    "expiry": "2026-07-10",
+    "strike": 240,
+    "right": "C"
+  },
+  "computed": {
+    "month": "2026-07",
+    "dte": 3,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "options",
+    "text": "long ADBE $240 Call for 07/10 at 2.28"
+  },
+  "trade_role": "open",
+  "pos_side": "long",
+  "contract_key": "OPT|ADBE|2026-07-10|240|C"
+}

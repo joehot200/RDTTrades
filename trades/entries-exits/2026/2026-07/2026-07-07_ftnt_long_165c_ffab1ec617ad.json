@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "trade_id": "ffab1ec617ad",
+  "received_at": "2026-07-07T15:51:53.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-07-07T16:03:07+00:00--19f3d475807f1e2c.json",
+    "archived_path": "inbox/processed/2026-07/2026-07-07T16:03:07+00:00--19f3d475807f1e2c.json",
+    "raw_id": "19f3d475807f1e2c",
+    "ingested_at": "2026-07-07T16:03:07.000Z"
+  },
+  "raw": {
+    "text": "#124277202641 BOT +1 FTNT 100 (Weeklys) 10 JUL 26 165 CALL @1.83, ACCOUNT *****746SCHW"
+  },
+  "instrument": "option",
+  "paper": false,
+  "action": "BOT",
+  "symbol": "FTNT",
+  "qty": 1,
+  "fill": 1.83,
+  "option": {
+    "expiry": "2026-07-10",
+    "strike": 165,
+    "right": "C"
+  },
+  "computed": {
+    "month": "2026-07",
+    "dte": 3,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "options",
+    "text": "long FTNT $165 Call for 07/10 at 1.83"
+  },
+  "trade_role": "open",
+  "pos_side": "long",
+  "contract_key": "OPT|FTNT|2026-07-10|165|C"
+}

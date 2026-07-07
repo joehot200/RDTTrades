@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "trade_id": "a83ac6265737",
+  "received_at": "2026-07-07T15:51:33.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-07-07T16:03:07+00:00--19f3d470d014f239.json",
+    "archived_path": "inbox/processed/2026-07/2026-07-07T16:03:07+00:00--19f3d470d014f239.json",
+    "raw_id": "19f3d470d014f239",
+    "ingested_at": "2026-07-07T16:03:07.000Z"
+  },
+  "raw": {
+    "text": "#124277202412 SOLD -1 GFS 100 17 JUL 26 55 PUT @.68, ACCOUNT *****746SCHW"
+  },
+  "instrument": "option",
+  "paper": false,
+  "action": "SOLD",
+  "symbol": "GFS",
+  "qty": 1,
+  "fill": 0.68,
+  "option": {
+    "expiry": "2026-07-17",
+    "strike": 55,
+    "right": "P"
+  },
+  "computed": {
+    "month": "2026-07",
+    "dte": 10,
+    "wiki_ok": true
+  },
+  "rdt": {
+    "matched": "options",
+    "text": "exit short GFS $55 Put for 07/17 at 0.68"
+  },
+  "trade_role": "close",
+  "pos_side": "long",
+  "contract_key": "OPT|GFS|2026-07-17|55|P"
+}

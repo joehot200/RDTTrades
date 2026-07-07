@@ -351,6 +351,41 @@
   },
   {
     "schema_version": 1,
+    "completed_trade_id": "663cb2fc67d5",
+    "status": "closed",
+    "contract_key": "OPT|GFS|2026-07-17|55|P",
+    "instrument": "option",
+    "pos_side": "long",
+    "symbol": "GFS",
+    "option": {
+      "expiry": "2026-07-17",
+      "strike": 55,
+      "right": "P"
+    },
+    "qty_opened": 1,
+    "qty_closed": 1,
+    "entry": {
+      "trade_id": "663cb2fc67d5",
+      "received_at": "2026-07-07T14:36:38.000Z",
+      "fill": 1.08,
+      "rdt": "short GFS $55 Put for 07/17 at 1.08"
+    },
+    "exits": [
+      {
+        "trade_id": "a83ac6265737",
+        "received_at": "2026-07-07T15:51:33.000Z",
+        "fill": 0.68,
+        "qty": 1,
+        "rdt": "exit short GFS $55 Put for 07/17 at 0.68"
+      }
+    ],
+    "pnl": {
+      "realized": -40,
+      "currency": "USD"
+    }
+  },
+  {
+    "schema_version": 1,
     "completed_trade_id": "b1c4e197f7cd",
     "status": "closed",
     "contract_key": "OPT|FTNT|2026-07-10|165|C",
