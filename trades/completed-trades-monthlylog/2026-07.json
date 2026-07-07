@@ -418,5 +418,40 @@
       "realized": 13.99999999999999,
       "currency": "USD"
     }
+  },
+  {
+    "schema_version": 1,
+    "completed_trade_id": "8e692f890a92",
+    "status": "closed",
+    "contract_key": "OPT|ADBE|2026-07-10|240|C",
+    "instrument": "option",
+    "pos_side": "long",
+    "symbol": "ADBE",
+    "option": {
+      "expiry": "2026-07-10",
+      "strike": 240,
+      "right": "C"
+    },
+    "qty_opened": 1,
+    "qty_closed": 1,
+    "entry": {
+      "trade_id": "8e692f890a92",
+      "received_at": "2026-07-07T15:59:14.000Z",
+      "fill": 2.28,
+      "rdt": "long ADBE $240 Call for 07/10 at 2.28"
+    },
+    "exits": [
+      {
+        "trade_id": "f08aab4c1933",
+        "received_at": "2026-07-07T16:48:34.000Z",
+        "fill": 1.62,
+        "qty": 1,
+        "rdt": "exit long ADBE $240 Call for 07/10 at 1.62"
+      }
+    ],
+    "pnl": {
+      "realized": -65.99999999999997,
+      "currency": "USD"
+    }
   }
 ]
