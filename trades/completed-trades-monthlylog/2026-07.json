@@ -488,5 +488,36 @@
       "realized": -3.0000000000000027,
       "currency": "USD"
     }
+  },
+  {
+    "schema_version": 1,
+    "completed_trade_id": "eee2fb4ebceb",
+    "status": "closed",
+    "contract_key": "STK|DELL",
+    "instrument": "stock",
+    "pos_side": "long",
+    "symbol": "DELL",
+    "option": null,
+    "qty_opened": 1,
+    "qty_closed": 1,
+    "entry": {
+      "trade_id": "eee2fb4ebceb",
+      "received_at": "2026-07-09T13:59:02.000Z",
+      "fill": 447.29,
+      "rdt": "long DELL at 447.29"
+    },
+    "exits": [
+      {
+        "trade_id": "400f0a18e595",
+        "received_at": "2026-07-09T15:01:48.000Z",
+        "fill": 448.6101,
+        "qty": 1,
+        "rdt": "exit long DELL at 448.6101"
+      }
+    ],
+    "pnl": {
+      "realized": 1.320099999999968,
+      "currency": "USD"
+    }
   }
 ]

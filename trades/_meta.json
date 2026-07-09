@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-07-09T14:44:12.813Z",
-  "latest_commit_message": "long IREN at 42.83",
-  "latest_processed_trade_id": "2c35d9af2f7a",
+  "generated_at": "2026-07-09T15:11:12.859Z",
+  "latest_commit_message": "exit long DELL at 448.6101",
+  "latest_processed_trade_id": "400f0a18e595",
   "processed_trade_ids_this_run": [
-    "2c35d9af2f7a"
+    "400f0a18e595"
   ]
 }
