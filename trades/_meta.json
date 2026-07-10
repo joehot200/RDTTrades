@@ -1,9 +1,6 @@
 {
-  "generated_at": "2026-07-10T16:26:45.104Z",
+  "generated_at": "2026-07-10T16:27:03.759Z",
   "latest_commit_message": "exit long TXN at 311.8",
-  "latest_processed_trade_id": "27b1c6e1265c",
-  "processed_trade_ids_this_run": [
-    "4932697c0721",
-    "27b1c6e1265c"
-  ]
+  "latest_processed_trade_id": null,
+  "processed_trade_ids_this_run": []
 }
