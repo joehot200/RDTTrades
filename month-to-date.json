@@ -1304,5 +1304,39 @@
     "trade_role": "close",
     "pos_side": "long",
     "contract_key": "STK|DOCN"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "6e2f271f67bf",
+    "received_at": "2026-07-10T15:29:55.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-07-10T15:43:19+00:00--19f4ca6544b1bbb6.json",
+      "archived_path": "inbox/processed/2026-07/2026-07-10T15:43:19+00:00--19f4ca6544b1bbb6.json",
+      "raw_id": "19f4ca6544b1bbb6",
+      "ingested_at": "2026-07-10T15:43:19.000Z"
+    },
+    "raw": {
+      "text": "#124718044825 BOT +1 TXN @311.67, ACCOUNT *****746SCHW"
+    },
+    "instrument": "stock",
+    "paper": false,
+    "action": "BOT",
+    "symbol": "TXN",
+    "qty": 1,
+    "fill": 311.67,
+    "option": null,
+    "computed": {
+      "month": "2026-07",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "stock",
+      "text": "long TXN at 311.67"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "STK|TXN"
   }
 ]

@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-07-10T15:11:57.519Z",
-  "latest_commit_message": "exit long DOCN at 130.76",
-  "latest_processed_trade_id": "12873e7792a7",
+  "generated_at": "2026-07-10T15:43:38.154Z",
+  "latest_commit_message": "long TXN at 311.67",
+  "latest_processed_trade_id": "6e2f271f67bf",
   "processed_trade_ids_this_run": [
-    "12873e7792a7"
+    "6e2f271f67bf"
   ]
 }
