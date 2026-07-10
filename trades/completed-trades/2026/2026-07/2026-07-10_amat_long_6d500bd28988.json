@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "completed_trade_id": "6d500bd28988",
+  "status": "closed",
+  "contract_key": "STK|AMAT",
+  "instrument": "stock",
+  "pos_side": "long",
+  "symbol": "AMAT",
+  "option": null,
+  "qty_opened": 1,
+  "qty_closed": 1,
+  "entry": {
+    "trade_id": "6d500bd28988",
+    "received_at": "2026-07-10T17:27:10.000Z",
+    "fill": 605.76,
+    "rdt": "long AMAT at 605.76"
+  },
+  "exits": [
+    {
+      "trade_id": "879caa90faff",
+      "received_at": "2026-07-10T17:55:02.000Z",
+      "fill": 606.14,
+      "qty": 1,
+      "rdt": "exit long AMAT at 606.14"
+    }
+  ],
+  "pnl": {
+    "realized": 0.37999999999999545,
+    "currency": "USD"
+  }
+}
