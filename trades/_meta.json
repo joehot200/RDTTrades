@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-07-10T19:00:59.713Z",
-  "latest_commit_message": "long AAPL at 315.33",
-  "latest_processed_trade_id": "0ff83184d097",
+  "generated_at": "2026-07-10T19:47:23.370Z",
+  "latest_commit_message": "exit long AAPL at 316.795",
+  "latest_processed_trade_id": "d322fdc7bdea",
   "processed_trade_ids_this_run": [
-    "0ff83184d097"
+    "d322fdc7bdea"
   ]
 }

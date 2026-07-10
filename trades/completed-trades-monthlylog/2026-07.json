@@ -612,5 +612,36 @@
       "realized": 0.37999999999999545,
       "currency": "USD"
     }
+  },
+  {
+    "schema_version": 1,
+    "completed_trade_id": "0ff83184d097",
+    "status": "closed",
+    "contract_key": "STK|AAPL",
+    "instrument": "stock",
+    "pos_side": "long",
+    "symbol": "AAPL",
+    "option": null,
+    "qty_opened": 1,
+    "qty_closed": 1,
+    "entry": {
+      "trade_id": "0ff83184d097",
+      "received_at": "2026-07-10T18:55:28.000Z",
+      "fill": 315.33,
+      "rdt": "long AAPL at 315.33"
+    },
+    "exits": [
+      {
+        "trade_id": "d322fdc7bdea",
+        "received_at": "2026-07-10T19:42:13.000Z",
+        "fill": 316.795,
+        "qty": 1,
+        "rdt": "exit long AAPL at 316.795"
+      }
+    ],
+    "pnl": {
+      "realized": 1.4650000000000318,
+      "currency": "USD"
+    }
   }
 ]
