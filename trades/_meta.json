@@ -1,9 +1,6 @@
 {
-  "generated_at": "2026-07-10T17:58:55.214Z",
+  "generated_at": "2026-07-10T17:59:10.894Z",
   "latest_commit_message": "exit long AMAT at 606.14",
-  "latest_processed_trade_id": "879caa90faff",
-  "processed_trade_ids_this_run": [
-    "70066ef9f539",
-    "879caa90faff"
-  ]
+  "latest_processed_trade_id": null,
+  "processed_trade_ids_this_run": []
 }
