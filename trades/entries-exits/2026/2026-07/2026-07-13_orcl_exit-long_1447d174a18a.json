@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "trade_id": "1447d174a18a",
+  "received_at": "2026-07-13T14:24:48.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-07-13T14:39:13+00:00--19f5bddca0b8fa78.json",
+    "archived_path": "inbox/processed/2026-07/2026-07-13T14:39:13+00:00--19f5bddca0b8fa78.json",
+    "raw_id": "19f5bddca0b8fa78",
+    "ingested_at": "2026-07-13T14:39:13.000Z"
+  },
+  "raw": {
+    "text": "#124836986840 SOLD -1 ORCL @135.86, ACCOUNT *****746SCHW"
+  },
+  "instrument": "stock",
+  "paper": false,
+  "action": "SOLD",
+  "symbol": "ORCL",
+  "qty": 1,
+  "fill": 135.86,
+  "option": null,
+  "computed": {
+    "month": "2026-07",
+    "dte": -1,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "stock",
+    "text": "exit long ORCL at 135.86"
+  },
+  "trade_role": "close",
+  "pos_side": "long",
+  "contract_key": "STK|ORCL"
+}
