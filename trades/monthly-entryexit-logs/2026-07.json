@@ -1678,5 +1678,39 @@
     "trade_role": "open",
     "pos_side": "long",
     "contract_key": "STK|PLTR"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "04f9aab121c7",
+    "received_at": "2026-07-13T15:43:28.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-07-13T15:44:27+00:00--19f5c25cded632fe.json",
+      "archived_path": "inbox/processed/2026-07/2026-07-13T15:44:27+00:00--19f5c25cded632fe.json",
+      "raw_id": "19f5c25cded632fe",
+      "ingested_at": "2026-07-13T15:44:27.000Z"
+    },
+    "raw": {
+      "text": "#124865240830 SOLD -1 IONQ @39.78, ACCOUNT *****746SCHW"
+    },
+    "instrument": "stock",
+    "paper": false,
+    "action": "SOLD",
+    "symbol": "IONQ",
+    "qty": 1,
+    "fill": 39.78,
+    "option": null,
+    "computed": {
+      "month": "2026-07",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "stock",
+      "text": "exit long IONQ at 39.78"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "STK|IONQ"
   }
 ]
