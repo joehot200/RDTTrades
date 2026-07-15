@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "trade_id": "0c53ece8be43",
+  "received_at": "2026-07-15T16:55:19.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-07-15T17:02:08+00:00--19f66b44cffc715c.json",
+    "archived_path": "inbox/processed/2026-07/2026-07-15T17:02:08+00:00--19f66b44cffc715c.json",
+    "raw_id": "19f66b44cffc715c",
+    "ingested_at": "2026-07-15T17:02:08.000Z"
+  },
+  "raw": {
+    "text": "#125180930205 BOT +4 WDC @502.41, ACCOUNT *****746SCHW"
+  },
+  "instrument": "stock",
+  "paper": false,
+  "action": "BOT",
+  "symbol": "WDC",
+  "qty": 4,
+  "fill": 502.41,
+  "option": null,
+  "computed": {
+    "month": "2026-07",
+    "dte": -1,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "stock",
+    "text": "long WDC at 502.41"
+  },
+  "trade_role": "open",
+  "pos_side": "long",
+  "contract_key": "STK|WDC"
+}
