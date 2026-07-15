@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "completed_trade_id": "53fd9991bfa3",
+  "status": "closed",
+  "contract_key": "STK|MRVL",
+  "instrument": "stock",
+  "pos_side": "long",
+  "symbol": "MRVL",
+  "option": null,
+  "qty_opened": 1,
+  "qty_closed": 10,
+  "entry": {
+    "trade_id": "53fd9991bfa3",
+    "received_at": "2026-07-13T19:05:02.000Z",
+    "fill": 218.35,
+    "rdt": "long MRVL at 218.35"
+  },
+  "exits": [
+    {
+      "trade_id": "34ff9aabbd51",
+      "received_at": "2026-07-15T14:37:37.000Z",
+      "fill": 207.01,
+      "qty": 10,
+      "rdt": "exit long MRVL at 207.01"
+    }
+  ],
+  "pnl": {
+    "realized": -113.40000000000003,
+    "currency": "USD"
+  }
+}

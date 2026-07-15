@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-07-15T13:54:42.649Z",
-  "latest_commit_message": "exit long HPQ at 24.6",
-  "latest_processed_trade_id": "f6bf5cf29c71",
+  "generated_at": "2026-07-15T14:43:05.717Z",
+  "latest_commit_message": "exit long MRVL at 207.01",
+  "latest_processed_trade_id": "34ff9aabbd51",
   "processed_trade_ids_this_run": [
-    "f6bf5cf29c71"
+    "34ff9aabbd51"
   ]
 }
