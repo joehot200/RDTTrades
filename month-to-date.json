@@ -1950,5 +1950,39 @@
     "trade_role": "close",
     "pos_side": "long",
     "contract_key": "STK|MRVL"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "d09163604967",
+    "received_at": "2026-07-15T15:35:01.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-07-15T15:44:12+00:00--19f666acdf0dc1fe.json",
+      "archived_path": "inbox/processed/2026-07/2026-07-15T15:44:12+00:00--19f666acdf0dc1fe.json",
+      "raw_id": "19f666acdf0dc1fe",
+      "ingested_at": "2026-07-15T15:44:12.000Z"
+    },
+    "raw": {
+      "text": "#125154808962 BOT +1 AAPL @326.01, ACCOUNT *****746SCHW"
+    },
+    "instrument": "stock",
+    "paper": false,
+    "action": "BOT",
+    "symbol": "AAPL",
+    "qty": 1,
+    "fill": 326.01,
+    "option": null,
+    "computed": {
+      "month": "2026-07",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "stock",
+      "text": "long AAPL at 326.01"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "STK|AAPL"
   }
 ]
