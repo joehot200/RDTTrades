@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "trade_id": "f6bf5cf29c71",
+  "received_at": "2026-07-15T13:40:36.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-07-15T13:54:23+00:00--19f66020b5c7ff73.json",
+    "archived_path": "inbox/processed/2026-07/2026-07-15T13:54:23+00:00--19f66020b5c7ff73.json",
+    "raw_id": "19f66020b5c7ff73",
+    "ingested_at": "2026-07-15T13:54:23.000Z"
+  },
+  "raw": {
+    "text": "#125106320225 SOLD -1 HPQ @24.60, ACCOUNT *****746SCHW"
+  },
+  "instrument": "stock",
+  "paper": false,
+  "action": "SOLD",
+  "symbol": "HPQ",
+  "qty": 1,
+  "fill": 24.6,
+  "option": null,
+  "computed": {
+    "month": "2026-07",
+    "dte": -1,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "stock",
+    "text": "exit long HPQ at 24.6"
+  },
+  "trade_role": "close",
+  "pos_side": "long",
+  "contract_key": "STK|HPQ"
+}
