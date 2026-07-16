@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "trade_id": "749f7ecc2df3",
+  "received_at": "2026-07-16T14:41:11.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-07-16T14:48:17+00:00--19f6b5fdad6877ea.json",
+    "archived_path": "inbox/processed/2026-07/2026-07-16T14:48:17+00:00--19f6b5fdad6877ea.json",
+    "raw_id": "19f6b5fdad6877ea",
+    "ingested_at": "2026-07-16T14:48:17.000Z"
+  },
+  "raw": {
+    "text": "#125284263914 SOLD -2 IREN @35.4274, ACCOUNT *****746SCHW"
+  },
+  "instrument": "stock",
+  "paper": false,
+  "action": "SOLD",
+  "symbol": "IREN",
+  "qty": 2,
+  "fill": 35.4274,
+  "option": null,
+  "computed": {
+    "month": "2026-07",
+    "dte": -1,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "stock",
+    "text": "exit long IREN at 35.4274"
+  },
+  "trade_role": "close",
+  "pos_side": "long",
+  "contract_key": "STK|IREN"
+}

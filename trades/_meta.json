@@ -1,8 +1,11 @@
 {
-  "generated_at": "2026-07-16T14:18:39.549Z",
-  "latest_commit_message": "long IREN at 36.36",
-  "latest_processed_trade_id": "039c335cfca4",
+  "generated_at": "2026-07-16T14:48:33.206Z",
+  "latest_commit_message": "exit long IREN at 35.43",
+  "latest_processed_trade_id": "6d92a799262a",
   "processed_trade_ids_this_run": [
-    "039c335cfca4"
+    "6adf1527f156",
+    "d722768da21c",
+    "749f7ecc2df3",
+    "6d92a799262a"
   ]
 }

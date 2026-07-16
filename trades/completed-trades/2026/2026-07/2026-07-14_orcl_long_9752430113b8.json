@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "completed_trade_id": "9752430113b8",
+  "status": "closed",
+  "contract_key": "STK|ORCL",
+  "instrument": "stock",
+  "pos_side": "long",
+  "symbol": "ORCL",
+  "option": null,
+  "qty_opened": 1,
+  "qty_closed": 2,
+  "entry": {
+    "trade_id": "9752430113b8",
+    "received_at": "2026-07-14T18:56:34.000Z",
+    "fill": 129.635,
+    "rdt": "long ORCL at 129.635"
+  },
+  "exits": [
+    {
+      "trade_id": "6adf1527f156",
+      "received_at": "2026-07-16T14:36:26.000Z",
+      "fill": 126.78,
+      "qty": 2,
+      "rdt": "exit long ORCL at 126.78"
+    }
+  ],
+  "pnl": {
+    "realized": -5.7099999999999795,
+    "currency": "USD"
+  }
+}
