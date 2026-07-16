@@ -2426,5 +2426,175 @@
     "trade_role": "open",
     "pos_side": "long",
     "contract_key": "STK|ORCL"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "e219fce0add2",
+    "received_at": "2026-07-16T15:57:45.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-07-16T16:04:23+00:00--19f6ba5f68af16bb.json",
+      "archived_path": "inbox/processed/2026-07/2026-07-16T16:04:23+00:00--19f6ba5f68af16bb.json",
+      "raw_id": "19f6ba5f68af16bb",
+      "ingested_at": "2026-07-16T16:04:23.000Z"
+    },
+    "raw": {
+      "text": "#125312432603 BOT +3 STOCK AAPL @331.92, ACCOUNT *****746SCHW"
+    },
+    "instrument": "stock",
+    "paper": false,
+    "action": "BOT",
+    "symbol": "STOCK",
+    "qty": 3,
+    "fill": 331.92,
+    "option": null,
+    "computed": {
+      "month": "2026-07",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "stock",
+      "text": "long STOCK at 331.92"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "STK|STOCK"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "2fc0cf2b4377",
+    "received_at": "2026-07-16T15:59:12.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-07-16T16:04:22+00:00--19f6ba749de750db.json",
+      "archived_path": "inbox/processed/2026-07/2026-07-16T16:04:22+00:00--19f6ba749de750db.json",
+      "raw_id": "19f6ba749de750db",
+      "ingested_at": "2026-07-16T16:04:22.000Z"
+    },
+    "raw": {
+      "text": "#125312433529 BOT +2 INTU @288.76, ACCOUNT *****746SCHW"
+    },
+    "instrument": "stock",
+    "paper": false,
+    "action": "BOT",
+    "symbol": "INTU",
+    "qty": 2,
+    "fill": 288.76,
+    "option": null,
+    "computed": {
+      "month": "2026-07",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "stock",
+      "text": "long INTU at 288.76"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "STK|INTU"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "3965b5fad63b",
+    "received_at": "2026-07-16T16:00:17.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-07-16T16:04:21+00:00--19f6ba8475dca477.json",
+      "archived_path": "inbox/processed/2026-07/2026-07-16T16:04:21+00:00--19f6ba8475dca477.json",
+      "raw_id": "19f6ba8475dca477",
+      "ingested_at": "2026-07-16T16:04:21.000Z"
+    },
+    "raw": {
+      "text": "#125312434432 SOLD -2 IREN @35.10, ACCOUNT *****746SCHW"
+    },
+    "instrument": "stock",
+    "paper": false,
+    "action": "SOLD",
+    "symbol": "IREN",
+    "qty": 2,
+    "fill": 35.1,
+    "option": null,
+    "computed": {
+      "month": "2026-07",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "stock",
+      "text": "exit long IREN at 35.1"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "STK|IREN"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "a9127b99a69d",
+    "received_at": "2026-07-16T16:00:46.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-07-16T16:04:20+00:00--19f6ba8bb297f1fa.json",
+      "archived_path": "inbox/processed/2026-07/2026-07-16T16:04:20+00:00--19f6ba8bb297f1fa.json",
+      "raw_id": "19f6ba8bb297f1fa",
+      "ingested_at": "2026-07-16T16:04:20.000Z"
+    },
+    "raw": {
+      "text": "#125312434901 SOLD -5 IREN @35.10, ACCOUNT *****746SCHW"
+    },
+    "instrument": "stock",
+    "paper": false,
+    "action": "SOLD",
+    "symbol": "IREN",
+    "qty": 5,
+    "fill": 35.1,
+    "option": null,
+    "computed": {
+      "month": "2026-07",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "stock",
+      "text": "exit long IREN at 35.1"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "STK|IREN"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "7415644c5f25",
+    "received_at": "2026-07-16T16:02:35.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-07-16T16:04:19+00:00--19f6baa638b4c546.json",
+      "archived_path": "inbox/processed/2026-07/2026-07-16T16:04:19+00:00--19f6baa638b4c546.json",
+      "raw_id": "19f6baa638b4c546",
+      "ingested_at": "2026-07-16T16:04:19.000Z"
+    },
+    "raw": {
+      "text": "#125312436029 SOLD -20 IREN @34.95, ACCOUNT *****746SCHW"
+    },
+    "instrument": "stock",
+    "paper": false,
+    "action": "SOLD",
+    "symbol": "IREN",
+    "qty": 20,
+    "fill": 34.95,
+    "option": null,
+    "computed": {
+      "month": "2026-07",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "stock",
+      "text": "exit long IREN at 34.95"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "STK|IREN"
   }
 ]
