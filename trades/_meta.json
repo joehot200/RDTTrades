@@ -1,9 +1,6 @@
 {
-  "generated_at": "2026-07-20T16:21:00.336Z",
+  "generated_at": "2026-07-20T16:21:18.084Z",
   "latest_commit_message": "long IONQ at 35.1693",
-  "latest_processed_trade_id": "19d4b8c4413e",
-  "processed_trade_ids_this_run": [
-    "0702e2cc1656",
-    "19d4b8c4413e"
-  ]
+  "latest_processed_trade_id": null,
+  "processed_trade_ids_this_run": []
 }
