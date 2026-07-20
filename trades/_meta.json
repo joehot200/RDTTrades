@@ -1,11 +1,6 @@
 {
-  "generated_at": "2026-07-20T15:34:01.670Z",
+  "generated_at": "2026-07-20T15:34:18.880Z",
   "latest_commit_message": "long IOT at 38.94",
-  "latest_processed_trade_id": "438744743a76",
-  "processed_trade_ids_this_run": [
-    "b1cd4851932d",
-    "e02341d326fc",
-    "f9772eca78ee",
-    "438744743a76"
-  ]
+  "latest_processed_trade_id": null,
+  "processed_trade_ids_this_run": []
 }
