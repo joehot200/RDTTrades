@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-07-20T16:53:31.381Z",
-  "latest_commit_message": "exit long IREN at 40.205",
-  "latest_processed_trade_id": "ecbb22e9a64c",
+  "generated_at": "2026-07-20T17:23:15.084Z",
+  "latest_commit_message": "exit long IOT at 38.88",
+  "latest_processed_trade_id": "2cb0939fd45e",
   "processed_trade_ids_this_run": [
-    "ecbb22e9a64c"
+    "2cb0939fd45e"
   ]
 }

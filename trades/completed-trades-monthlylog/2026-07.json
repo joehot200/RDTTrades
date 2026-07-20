@@ -953,5 +953,36 @@
       "realized": -0.23999999999999488,
       "currency": "USD"
     }
+  },
+  {
+    "schema_version": 1,
+    "completed_trade_id": "f9772eca78ee",
+    "status": "closed",
+    "contract_key": "STK|IOT",
+    "instrument": "stock",
+    "pos_side": "long",
+    "symbol": "IOT",
+    "option": null,
+    "qty_opened": 2,
+    "qty_closed": 6,
+    "entry": {
+      "trade_id": "f9772eca78ee",
+      "received_at": "2026-07-20T15:30:15.000Z",
+      "fill": 38.88,
+      "rdt": "long IOT at 38.88"
+    },
+    "exits": [
+      {
+        "trade_id": "2cb0939fd45e",
+        "received_at": "2026-07-20T17:21:52.000Z",
+        "fill": 38.88,
+        "qty": 6,
+        "rdt": "exit long IOT at 38.88"
+      }
+    ],
+    "pnl": {
+      "realized": 0,
+      "currency": "USD"
+    }
   }
 ]
