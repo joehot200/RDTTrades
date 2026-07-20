@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "completed_trade_id": "a6ff342db73e",
+  "status": "closed",
+  "contract_key": "STK|IONQ",
+  "instrument": "stock",
+  "pos_side": "long",
+  "symbol": "IONQ",
+  "option": null,
+  "qty_opened": 1,
+  "qty_closed": 2,
+  "entry": {
+    "trade_id": "a6ff342db73e",
+    "received_at": "2026-07-13T17:00:01.000Z",
+    "fill": 39.27,
+    "rdt": "long IONQ at 39.27"
+  },
+  "exits": [
+    {
+      "trade_id": "5e73a165a9d8",
+      "received_at": "2026-07-20T15:10:03.000Z",
+      "fill": 34.7,
+      "qty": 2,
+      "rdt": "exit long IONQ at 34.7"
+    }
+  ],
+  "pnl": {
+    "realized": -9.14,
+    "currency": "USD"
+  }
+}
