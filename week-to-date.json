@@ -32,5 +32,141 @@
     "trade_role": "close",
     "pos_side": "long",
     "contract_key": "STK|IONQ"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "b1cd4851932d",
+    "received_at": "2026-07-20T15:25:23.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-07-20T15:33:47+00:00--19f8021c292edad0.json",
+      "archived_path": "inbox/processed/2026-07/2026-07-20T15:33:47+00:00--19f8021c292edad0.json",
+      "raw_id": "19f8021c292edad0",
+      "ingested_at": "2026-07-20T15:33:47.000Z"
+    },
+    "raw": {
+      "text": "#125595027091 BOT +2 IONQ @34.83, ACCOUNT *****746SCHW"
+    },
+    "instrument": "stock",
+    "paper": false,
+    "action": "BOT",
+    "symbol": "IONQ",
+    "qty": 2,
+    "fill": 34.83,
+    "option": null,
+    "computed": {
+      "month": "2026-07",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "stock",
+      "text": "long IONQ at 34.83"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "STK|IONQ"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "e02341d326fc",
+    "received_at": "2026-07-20T15:28:46.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-07-20T15:33:46+00:00--19f8024e0f49b8bf.json",
+      "archived_path": "inbox/processed/2026-07/2026-07-20T15:33:46+00:00--19f8024e0f49b8bf.json",
+      "raw_id": "19f8024e0f49b8bf",
+      "ingested_at": "2026-07-20T15:33:46.000Z"
+    },
+    "raw": {
+      "text": "#125595029506 SOLD -2 IONQ @34.71, ACCOUNT *****746SCHW"
+    },
+    "instrument": "stock",
+    "paper": false,
+    "action": "SOLD",
+    "symbol": "IONQ",
+    "qty": 2,
+    "fill": 34.71,
+    "option": null,
+    "computed": {
+      "month": "2026-07",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "stock",
+      "text": "exit long IONQ at 34.71"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "STK|IONQ"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "f9772eca78ee",
+    "received_at": "2026-07-20T15:30:15.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-07-20T15:33:44+00:00--19f8026382256ec0.json",
+      "archived_path": "inbox/processed/2026-07/2026-07-20T15:33:44+00:00--19f8026382256ec0.json",
+      "raw_id": "19f8026382256ec0",
+      "ingested_at": "2026-07-20T15:33:44.000Z"
+    },
+    "raw": {
+      "text": "#125595030344 BOT +2 IOT @38.88, ACCOUNT *****746SCHW"
+    },
+    "instrument": "stock",
+    "paper": false,
+    "action": "BOT",
+    "symbol": "IOT",
+    "qty": 2,
+    "fill": 38.88,
+    "option": null,
+    "computed": {
+      "month": "2026-07",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "stock",
+      "text": "long IOT at 38.88"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "STK|IOT"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "438744743a76",
+    "received_at": "2026-07-20T15:31:07.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-07-20T15:33:43+00:00--19f802705d401b23.json",
+      "archived_path": "inbox/processed/2026-07/2026-07-20T15:33:43+00:00--19f802705d401b23.json",
+      "raw_id": "19f802705d401b23",
+      "ingested_at": "2026-07-20T15:33:43.000Z"
+    },
+    "raw": {
+      "text": "#125595030890 BOT +2 IOT @38.94, ACCOUNT *****746SCHW"
+    },
+    "instrument": "stock",
+    "paper": false,
+    "action": "BOT",
+    "symbol": "IOT",
+    "qty": 2,
+    "fill": 38.94,
+    "option": null,
+    "computed": {
+      "month": "2026-07",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "stock",
+      "text": "long IOT at 38.94"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "STK|IOT"
   }
 ]

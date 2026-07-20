@@ -1,8 +1,11 @@
 {
-  "generated_at": "2026-07-20T15:19:18.829Z",
-  "latest_commit_message": "exit long IONQ at 34.7",
-  "latest_processed_trade_id": "5e73a165a9d8",
+  "generated_at": "2026-07-20T15:34:01.670Z",
+  "latest_commit_message": "long IOT at 38.94",
+  "latest_processed_trade_id": "438744743a76",
   "processed_trade_ids_this_run": [
-    "5e73a165a9d8"
+    "b1cd4851932d",
+    "e02341d326fc",
+    "f9772eca78ee",
+    "438744743a76"
   ]
 }
