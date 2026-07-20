@@ -3208,5 +3208,39 @@
     "trade_role": "open",
     "pos_side": "long",
     "contract_key": "STK|ADBE"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "3177afa2d1a6",
+    "received_at": "2026-07-20T18:45:03.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-07-20T18:55:46+00:00--19f80d893ab75f12.json",
+      "archived_path": "inbox/processed/2026-07/2026-07-20T18:55:46+00:00--19f80d893ab75f12.json",
+      "raw_id": "19f80d893ab75f12",
+      "ingested_at": "2026-07-20T18:55:46.000Z"
+    },
+    "raw": {
+      "text": "#125652432349 SOLD -2 ADBE @235.28, ACCOUNT *****746SCHW"
+    },
+    "instrument": "stock",
+    "paper": false,
+    "action": "SOLD",
+    "symbol": "ADBE",
+    "qty": 2,
+    "fill": 235.28,
+    "option": null,
+    "computed": {
+      "month": "2026-07",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "stock",
+      "text": "exit long ADBE at 235.28"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "STK|ADBE"
   }
 ]
