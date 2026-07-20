@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "trade_id": "04d8c10ff556",
+  "received_at": "2026-07-20T18:23:02.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-07-20T18:38:45+00:00--19f80c469215a440.json",
+    "archived_path": "inbox/processed/2026-07/2026-07-20T18:38:45+00:00--19f80c469215a440.json",
+    "raw_id": "19f80c469215a440",
+    "ingested_at": "2026-07-20T18:38:45.000Z"
+  },
+  "raw": {
+    "text": "#125646473953 BOT +2 ADBE @235.97, ACCOUNT *****746SCHW"
+  },
+  "instrument": "stock",
+  "paper": false,
+  "action": "BOT",
+  "symbol": "ADBE",
+  "qty": 2,
+  "fill": 235.97,
+  "option": null,
+  "computed": {
+    "month": "2026-07",
+    "dte": -1,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "stock",
+    "text": "long ADBE at 235.97"
+  },
+  "trade_role": "open",
+  "pos_side": "long",
+  "contract_key": "STK|ADBE"
+}
