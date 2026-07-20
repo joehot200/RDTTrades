@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "trade_id": "0702e2cc1656",
+  "received_at": "2026-07-20T16:08:16.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-07-20T16:20:46+00:00--19f8049092f3894c.json",
+    "archived_path": "inbox/processed/2026-07/2026-07-20T16:20:46+00:00--19f8049092f3894c.json",
+    "raw_id": "19f8049092f3894c",
+    "ingested_at": "2026-07-20T16:20:46.000Z"
+  },
+  "raw": {
+    "text": "#125607146137 BOT +2 IREN @40.1099, ACCOUNT *****746SCHW"
+  },
+  "instrument": "stock",
+  "paper": false,
+  "action": "BOT",
+  "symbol": "IREN",
+  "qty": 2,
+  "fill": 40.1099,
+  "option": null,
+  "computed": {
+    "month": "2026-07",
+    "dte": -1,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "stock",
+    "text": "long IREN at 40.1099"
+  },
+  "trade_role": "open",
+  "pos_side": "long",
+  "contract_key": "STK|IREN"
+}
