@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-07-20T18:56:02.607Z",
-  "latest_commit_message": "exit long ADBE at 235.28",
-  "latest_processed_trade_id": "3177afa2d1a6",
+  "generated_at": "2026-07-27T14:04:35.332Z",
+  "latest_commit_message": "exit long INTC at 92.26",
+  "latest_processed_trade_id": "e77b26d45d27",
   "processed_trade_ids_this_run": [
-    "3177afa2d1a6"
+    "e77b26d45d27"
   ]
 }
