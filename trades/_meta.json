@@ -1,9 +1,6 @@
 {
-  "generated_at": "2026-07-28T18:39:43.468Z",
+  "generated_at": "2026-07-28T18:40:00.100Z",
   "latest_commit_message": "exit long INTC at 86.14",
-  "latest_processed_trade_id": "902b3cd4010e",
-  "processed_trade_ids_this_run": [
-    "9bf640ae84e3",
-    "902b3cd4010e"
-  ]
+  "latest_processed_trade_id": null,
+  "processed_trade_ids_this_run": []
 }
