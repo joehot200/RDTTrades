@@ -576,5 +576,39 @@
     "trade_role": "open",
     "pos_side": "long",
     "contract_key": "STK|GFS"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "b78165bafe5d",
+    "received_at": "2026-07-28T22:33:05.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-07-28T22:41:04+00:00--19faadc388da7064.json",
+      "archived_path": "inbox/processed/2026-07/2026-07-28T22:41:04+00:00--19faadc388da7064.json",
+      "raw_id": "19faadc388da7064",
+      "ingested_at": "2026-07-28T22:41:04.000Z"
+    },
+    "raw": {
+      "text": "#126493061012 BOT +2 GFS @48.87, ACCOUNT *****746SCHW"
+    },
+    "instrument": "stock",
+    "paper": false,
+    "action": "BOT",
+    "symbol": "GFS",
+    "qty": 2,
+    "fill": 48.87,
+    "option": null,
+    "computed": {
+      "month": "2026-07",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "stock",
+      "text": "long GFS at 48.87"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "STK|GFS"
   }
 ]
