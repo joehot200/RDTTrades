@@ -1,8 +1,10 @@
 {
-  "generated_at": "2026-07-28T16:38:19.663Z",
-  "latest_commit_message": "exit long INTC at 86.575",
-  "latest_processed_trade_id": "075f05197e5b",
+  "generated_at": "2026-07-28T18:06:19.179Z",
+  "latest_commit_message": "long GFS at 49.3",
+  "latest_processed_trade_id": "9e9d8e420a8d",
   "processed_trade_ids_this_run": [
-    "075f05197e5b"
+    "77876ff08fb3",
+    "b622156f3099",
+    "9e9d8e420a8d"
   ]
 }
