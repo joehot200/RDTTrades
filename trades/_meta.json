@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-07-29T20:04:04.996Z",
-  "latest_commit_message": "exit long HPQ at 28.41",
-  "latest_processed_trade_id": "a6c7af472ab3",
+  "generated_at": "2026-07-29T23:21:33.138Z",
+  "latest_commit_message": "long INTC at 80.97",
+  "latest_processed_trade_id": "f3515d2c4e68",
   "processed_trade_ids_this_run": [
-    "a6c7af472ab3"
+    "f3515d2c4e68"
   ]
 }
