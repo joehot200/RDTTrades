@@ -1108,5 +1108,36 @@
       "realized": -4.939999999999998,
       "currency": "USD"
     }
+  },
+  {
+    "schema_version": 1,
+    "completed_trade_id": "85a4c530c4af",
+    "status": "closed",
+    "contract_key": "STK|HPQ",
+    "instrument": "stock",
+    "pos_side": "long",
+    "symbol": "HPQ",
+    "option": null,
+    "qty_opened": 17,
+    "qty_closed": 17,
+    "entry": {
+      "trade_id": "85a4c530c4af",
+      "received_at": "2026-07-29T14:01:23.000Z",
+      "fill": 28.49,
+      "rdt": "long HPQ at 28.49"
+    },
+    "exits": [
+      {
+        "trade_id": "701ff73ebc81",
+        "received_at": "2026-07-29T16:05:57.000Z",
+        "fill": 28.22,
+        "qty": 17,
+        "rdt": "exit long HPQ at 28.22"
+      }
+    ],
+    "pnl": {
+      "realized": -4.589999999999993,
+      "currency": "USD"
+    }
   }
 ]

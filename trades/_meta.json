@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-07-29T14:21:34.507Z",
-  "latest_commit_message": "long GFS at 48.16",
-  "latest_processed_trade_id": "2ef3b85b770a",
+  "generated_at": "2026-07-29T16:07:19.547Z",
+  "latest_commit_message": "exit long HPQ at 28.22",
+  "latest_processed_trade_id": "701ff73ebc81",
   "processed_trade_ids_this_run": [
-    "2ef3b85b770a"
+    "701ff73ebc81"
   ]
 }
