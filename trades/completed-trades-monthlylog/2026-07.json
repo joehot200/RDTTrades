@@ -987,6 +987,37 @@
   },
   {
     "schema_version": 1,
+    "completed_trade_id": "19d4b8c4413e",
+    "status": "closed",
+    "contract_key": "STK|IONQ",
+    "instrument": "stock",
+    "pos_side": "long",
+    "symbol": "IONQ",
+    "option": null,
+    "qty_opened": 2,
+    "qty_closed": 12,
+    "entry": {
+      "trade_id": "19d4b8c4413e",
+      "received_at": "2026-07-20T16:09:39.000Z",
+      "fill": 35.1693,
+      "rdt": "long IONQ at 35.1693"
+    },
+    "exits": [
+      {
+        "trade_id": "1d5b277392a0",
+        "received_at": "2026-07-29T14:00:48.000Z",
+        "fill": 33.12,
+        "qty": 12,
+        "rdt": "exit long IONQ at 33.12"
+      }
+    ],
+    "pnl": {
+      "realized": -24.591600000000028,
+      "currency": "USD"
+    }
+  },
+  {
+    "schema_version": 1,
     "completed_trade_id": "04d8c10ff556",
     "status": "closed",
     "contract_key": "STK|ADBE",
@@ -1044,6 +1075,37 @@
     ],
     "pnl": {
       "realized": -1.8899999999999437,
+      "currency": "USD"
+    }
+  },
+  {
+    "schema_version": 1,
+    "completed_trade_id": "831f3d86bd6b",
+    "status": "closed",
+    "contract_key": "STK|INTC",
+    "instrument": "stock",
+    "pos_side": "long",
+    "symbol": "INTC",
+    "option": null,
+    "qty_opened": 2,
+    "qty_closed": 4,
+    "entry": {
+      "trade_id": "831f3d86bd6b",
+      "received_at": "2026-07-28T20:12:50.000Z",
+      "fill": 86.21,
+      "rdt": "long INTC at 86.21"
+    },
+    "exits": [
+      {
+        "trade_id": "f524c673a0ef",
+        "received_at": "2026-07-29T14:00:13.000Z",
+        "fill": 84.975,
+        "qty": 4,
+        "rdt": "exit long INTC at 84.975"
+      }
+    ],
+    "pnl": {
+      "realized": -4.939999999999998,
       "currency": "USD"
     }
   }
