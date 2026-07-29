@@ -1,10 +1,6 @@
 {
-  "generated_at": "2026-07-29T14:05:53.387Z",
+  "generated_at": "2026-07-29T14:06:09.428Z",
   "latest_commit_message": "long HPQ at 28.49",
-  "latest_processed_trade_id": "85a4c530c4af",
-  "processed_trade_ids_this_run": [
-    "f524c673a0ef",
-    "1d5b277392a0",
-    "85a4c530c4af"
-  ]
+  "latest_processed_trade_id": null,
+  "processed_trade_ids_this_run": []
 }
