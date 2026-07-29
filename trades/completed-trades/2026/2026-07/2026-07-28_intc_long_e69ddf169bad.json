@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "completed_trade_id": "e69ddf169bad",
+  "status": "closed",
+  "contract_key": "STK|INTC",
+  "instrument": "stock",
+  "pos_side": "long",
+  "symbol": "INTC",
+  "option": null,
+  "qty_opened": 2,
+  "qty_closed": 3,
+  "entry": {
+    "trade_id": "e69ddf169bad",
+    "received_at": "2026-07-28T20:12:50.000Z",
+    "fill": 86.2,
+    "rdt": "long INTC at 86.2"
+  },
+  "exits": [
+    {
+      "trade_id": "58c5f405b492",
+      "received_at": "2026-07-29T19:18:49.000Z",
+      "fill": 85.18,
+      "qty": 3,
+      "rdt": "exit long INTC at 85.18"
+    }
+  ],
+  "pnl": {
+    "realized": -3.059999999999988,
+    "currency": "USD"
+  }
+}
