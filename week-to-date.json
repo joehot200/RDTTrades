@@ -1630,5 +1630,39 @@
     "trade_role": "open",
     "pos_side": "long",
     "contract_key": "STK|INTC"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "8aa2ba67bd29",
+    "received_at": "2026-07-30T14:22:20.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-07-30T14:33:58+00:00--19fb367a35330f50.json",
+      "archived_path": "inbox/processed/2026-07/2026-07-30T14:33:58+00:00--19fb367a35330f50.json",
+      "raw_id": "19fb367a35330f50",
+      "ingested_at": "2026-07-30T14:33:58.000Z"
+    },
+    "raw": {
+      "text": "#126677374226 BOT +1 DELL @408.16, ACCOUNT *****746SCHW"
+    },
+    "instrument": "stock",
+    "paper": false,
+    "action": "BOT",
+    "symbol": "DELL",
+    "qty": 1,
+    "fill": 408.16,
+    "option": null,
+    "computed": {
+      "month": "2026-07",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "stock",
+      "text": "long DELL at 408.16"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "STK|DELL"
   }
 ]
