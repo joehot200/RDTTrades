@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "completed_trade_id": "0bc10ee97888",
+  "status": "closed",
+  "contract_key": "STK|IREN",
+  "instrument": "stock",
+  "pos_side": "long",
+  "symbol": "IREN",
+  "option": null,
+  "qty_opened": 5,
+  "qty_closed": 10,
+  "entry": {
+    "trade_id": "0bc10ee97888",
+    "received_at": "2026-07-16T18:16:45.000Z",
+    "fill": 35.05,
+    "rdt": "long IREN at 35.05"
+  },
+  "exits": [
+    {
+      "trade_id": "0beb9c5fa170",
+      "received_at": "2026-07-30T14:10:21.000Z",
+      "fill": 36.64,
+      "qty": 10,
+      "rdt": "exit long IREN at 36.64"
+    }
+  ],
+  "pnl": {
+    "realized": 15.900000000000034,
+    "currency": "USD"
+  }
+}
