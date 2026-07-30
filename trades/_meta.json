@@ -1,11 +1,6 @@
 {
-  "generated_at": "2026-07-30T14:04:11.518Z",
+  "generated_at": "2026-07-30T14:04:34.500Z",
   "latest_commit_message": "long IREN at 37.225",
-  "latest_processed_trade_id": "7876be1264a3",
-  "processed_trade_ids_this_run": [
-    "e27fd5eca954",
-    "63d9dfad16f4",
-    "d21580caaa29",
-    "7876be1264a3"
-  ]
+  "latest_processed_trade_id": null,
+  "processed_trade_ids_this_run": []
 }
