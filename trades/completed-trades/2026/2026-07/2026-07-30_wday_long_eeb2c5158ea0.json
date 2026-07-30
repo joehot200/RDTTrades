@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "completed_trade_id": "eeb2c5158ea0",
+  "status": "closed",
+  "contract_key": "STK|WDAY",
+  "instrument": "stock",
+  "pos_side": "long",
+  "symbol": "WDAY",
+  "option": null,
+  "qty_opened": 3,
+  "qty_closed": 3,
+  "entry": {
+    "trade_id": "eeb2c5158ea0",
+    "received_at": "2026-07-30T14:40:39.000Z",
+    "fill": 151.12,
+    "rdt": "long WDAY at 151.12"
+  },
+  "exits": [
+    {
+      "trade_id": "577cff1a8afd",
+      "received_at": "2026-07-30T15:41:50.000Z",
+      "fill": 153.92,
+      "qty": 3,
+      "rdt": "exit long WDAY at 153.92"
+    }
+  ],
+  "pnl": {
+    "realized": 8.399999999999949,
+    "currency": "USD"
+  }
+}
