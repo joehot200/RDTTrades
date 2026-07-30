@@ -4908,5 +4908,107 @@
     "trade_role": "open",
     "pos_side": "long",
     "contract_key": "STK|DELL"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "173270bc58d9",
+    "received_at": "2026-07-30T14:34:09.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-07-30T14:48:11+00:00--19fb3727470a58b1.json",
+      "archived_path": "inbox/processed/2026-07/2026-07-30T14:48:11+00:00--19fb3727470a58b1.json",
+      "raw_id": "19fb3727470a58b1",
+      "ingested_at": "2026-07-30T14:48:11.000Z"
+    },
+    "raw": {
+      "text": "#126681574958 BOT +1 APP @398.73, ACCOUNT *****746SCHW"
+    },
+    "instrument": "stock",
+    "paper": false,
+    "action": "BOT",
+    "symbol": "APP",
+    "qty": 1,
+    "fill": 398.73,
+    "option": null,
+    "computed": {
+      "month": "2026-07",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "stock",
+      "text": "long APP at 398.73"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "STK|APP"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "af8d05bfdd52",
+    "received_at": "2026-07-30T14:36:30.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-07-30T14:48:10+00:00--19fb3749c490d77a.json",
+      "archived_path": "inbox/processed/2026-07/2026-07-30T14:48:10+00:00--19fb3749c490d77a.json",
+      "raw_id": "19fb3749c490d77a",
+      "ingested_at": "2026-07-30T14:48:10.000Z"
+    },
+    "raw": {
+      "text": "#126681576846 SOLD -4 NOW @106.535, ACCOUNT *****746SCHW"
+    },
+    "instrument": "stock",
+    "paper": false,
+    "action": "SOLD",
+    "symbol": "NOW",
+    "qty": 4,
+    "fill": 106.535,
+    "option": null,
+    "computed": {
+      "month": "2026-07",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "stock",
+      "text": "exit long NOW at 106.535"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "STK|NOW"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "eeb2c5158ea0",
+    "received_at": "2026-07-30T14:40:39.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-07-30T14:48:09+00:00--19fb3786793c388f.json",
+      "archived_path": "inbox/processed/2026-07/2026-07-30T14:48:09+00:00--19fb3786793c388f.json",
+      "raw_id": "19fb3786793c388f",
+      "ingested_at": "2026-07-30T14:48:09.000Z"
+    },
+    "raw": {
+      "text": "#126684044670 BOT +3 WDAY @151.12, ACCOUNT *****746SCHW"
+    },
+    "instrument": "stock",
+    "paper": false,
+    "action": "BOT",
+    "symbol": "WDAY",
+    "qty": 3,
+    "fill": 151.12,
+    "option": null,
+    "computed": {
+      "month": "2026-07",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "stock",
+      "text": "long WDAY at 151.12"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "STK|WDAY"
   }
 ]
