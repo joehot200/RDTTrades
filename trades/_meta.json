@@ -1,9 +1,6 @@
 {
-  "generated_at": "2026-07-30T15:44:37.782Z",
+  "generated_at": "2026-07-30T15:44:52.073Z",
   "latest_commit_message": "exit long WDAY at 153.92",
-  "latest_processed_trade_id": "577cff1a8afd",
-  "processed_trade_ids_this_run": [
-    "5b5766c75e0d",
-    "577cff1a8afd"
-  ]
+  "latest_processed_trade_id": null,
+  "processed_trade_ids_this_run": []
 }
