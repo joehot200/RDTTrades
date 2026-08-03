@@ -1,9 +1,6 @@
 {
-  "generated_at": "2026-08-03T18:10:15.663Z",
+  "generated_at": "2026-08-03T18:10:40.583Z",
   "latest_commit_message": "long HPE at 50.15",
-  "latest_processed_trade_id": "636672394705",
-  "processed_trade_ids_this_run": [
-    "7448f108ea61",
-    "636672394705"
-  ]
+  "latest_processed_trade_id": null,
+  "processed_trade_ids_this_run": []
 }
