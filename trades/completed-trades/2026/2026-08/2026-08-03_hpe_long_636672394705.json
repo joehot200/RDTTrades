@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "completed_trade_id": "636672394705",
+  "status": "closed",
+  "contract_key": "STK|HPE",
+  "instrument": "stock",
+  "pos_side": "long",
+  "symbol": "HPE",
+  "option": null,
+  "qty_opened": 9,
+  "qty_closed": 9,
+  "entry": {
+    "trade_id": "636672394705",
+    "received_at": "2026-08-03T18:09:51.000Z",
+    "fill": 50.15,
+    "rdt": "long HPE at 50.15"
+  },
+  "exits": [
+    {
+      "trade_id": "dd9198ee9ee2",
+      "received_at": "2026-08-03T19:40:01.000Z",
+      "fill": 50.04,
+      "qty": 9,
+      "rdt": "exit long HPE at 50.04"
+    }
+  ],
+  "pnl": {
+    "realized": -0.9899999999999949,
+    "currency": "USD"
+  }
+}
