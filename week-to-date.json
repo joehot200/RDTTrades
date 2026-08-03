@@ -66,5 +66,243 @@
     "trade_role": "open",
     "pos_side": "long",
     "contract_key": "STK|HPE"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "0dee3d3ddd31",
+    "received_at": "2026-08-03T18:10:53.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-08-03T18:25:51+00:00--19fc8d24e20c706a.json",
+      "archived_path": "inbox/processed/2026-08/2026-08-03T18:25:51+00:00--19fc8d24e20c706a.json",
+      "raw_id": "19fc8d24e20c706a",
+      "ingested_at": "2026-08-03T18:25:51.000Z"
+    },
+    "raw": {
+      "text": "#127034264848 BOT +1 COHR @292.50, ACCOUNT *****746SCHW"
+    },
+    "instrument": "stock",
+    "paper": false,
+    "action": "BOT",
+    "symbol": "COHR",
+    "qty": 1,
+    "fill": 292.5,
+    "option": null,
+    "computed": {
+      "month": "2026-08",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "stock",
+      "text": "long COHR at 292.5"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "STK|COHR"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "17e7ba9208c4",
+    "received_at": "2026-08-03T18:13:43.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-08-03T18:25:50+00:00--19fc8d4ee079bcfe.json",
+      "archived_path": "inbox/processed/2026-08/2026-08-03T18:25:50+00:00--19fc8d4ee079bcfe.json",
+      "raw_id": "19fc8d4ee079bcfe",
+      "ingested_at": "2026-08-03T18:25:50.000Z"
+    },
+    "raw": {
+      "text": "#127035547954 BOT +1 DELL @428.00, ACCOUNT *****746SCHW"
+    },
+    "instrument": "stock",
+    "paper": false,
+    "action": "BOT",
+    "symbol": "DELL",
+    "qty": 1,
+    "fill": 428,
+    "option": null,
+    "computed": {
+      "month": "2026-08",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "stock",
+      "text": "long DELL at 428"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "STK|DELL"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "1b8346683dba",
+    "received_at": "2026-08-03T18:15:52.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-08-03T18:25:48+00:00--19fc8d6e01afd78e.json",
+      "archived_path": "inbox/processed/2026-08/2026-08-03T18:25:48+00:00--19fc8d6e01afd78e.json",
+      "raw_id": "19fc8d6e01afd78e",
+      "ingested_at": "2026-08-03T18:25:48.000Z"
+    },
+    "raw": {
+      "text": "#127035550415 BOT +1 WDC @538.72, ACCOUNT *****746SCHW"
+    },
+    "instrument": "stock",
+    "paper": false,
+    "action": "BOT",
+    "symbol": "WDC",
+    "qty": 1,
+    "fill": 538.72,
+    "option": null,
+    "computed": {
+      "month": "2026-08",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "stock",
+      "text": "long WDC at 538.72"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "STK|WDC"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "6f03c611473c",
+    "received_at": "2026-08-03T18:19:58.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-08-03T18:25:47+00:00--19fc8daa3191ebb6.json",
+      "archived_path": "inbox/processed/2026-08/2026-08-03T18:25:47+00:00--19fc8daa3191ebb6.json",
+      "raw_id": "19fc8daa3191ebb6",
+      "ingested_at": "2026-08-03T18:25:47.000Z"
+    },
+    "raw": {
+      "text": "#127036675293 BOT +9 HPE @50.20, ACCOUNT *****746SCHW"
+    },
+    "instrument": "stock",
+    "paper": false,
+    "action": "BOT",
+    "symbol": "HPE",
+    "qty": 9,
+    "fill": 50.2,
+    "option": null,
+    "computed": {
+      "month": "2026-08",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "stock",
+      "text": "long HPE at 50.2"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "STK|HPE"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "eb40168beb84",
+    "received_at": "2026-08-03T18:21:06.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-08-03T18:25:46+00:00--19fc8dbad93a3508.json",
+      "archived_path": "inbox/processed/2026-08/2026-08-03T18:25:46+00:00--19fc8dbad93a3508.json",
+      "raw_id": "19fc8dbad93a3508",
+      "ingested_at": "2026-08-03T18:25:46.000Z"
+    },
+    "raw": {
+      "text": "#127036676607 SOLD -1 WDC @535.375, ACCOUNT *****746SCHW"
+    },
+    "instrument": "stock",
+    "paper": false,
+    "action": "SOLD",
+    "symbol": "WDC",
+    "qty": 1,
+    "fill": 535.375,
+    "option": null,
+    "computed": {
+      "month": "2026-08",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "stock",
+      "text": "exit long WDC at 535.375"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "STK|WDC"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "f228790ed554",
+    "received_at": "2026-08-03T18:25:02.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-08-03T18:25:45+00:00--19fc8df442cf65e2.json",
+      "archived_path": "inbox/processed/2026-08/2026-08-03T18:25:45+00:00--19fc8df442cf65e2.json",
+      "raw_id": "19fc8df442cf65e2",
+      "ingested_at": "2026-08-03T18:25:45.000Z"
+    },
+    "raw": {
+      "text": "#127037716169 SOLD -1 WDC @534.26, ACCOUNT *****746SCHW"
+    },
+    "instrument": "stock",
+    "paper": false,
+    "action": "SOLD",
+    "symbol": "WDC",
+    "qty": 1,
+    "fill": 534.26,
+    "option": null,
+    "computed": {
+      "month": "2026-08",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "stock",
+      "text": "exit long WDC at 534.26"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "STK|WDC"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "f7bcf49f339e",
+    "received_at": "2026-08-03T18:25:03.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-08-03T18:25:44+00:00--19fc8df4adaa086b.json",
+      "archived_path": "inbox/processed/2026-08/2026-08-03T18:25:44+00:00--19fc8df4adaa086b.json",
+      "raw_id": "19fc8df4adaa086b",
+      "ingested_at": "2026-08-03T18:25:44.000Z"
+    },
+    "raw": {
+      "text": "#127037716191 SOLD -1 DELL @426.80, ACCOUNT *****746SCHW"
+    },
+    "instrument": "stock",
+    "paper": false,
+    "action": "SOLD",
+    "symbol": "DELL",
+    "qty": 1,
+    "fill": 426.8,
+    "option": null,
+    "computed": {
+      "month": "2026-08",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "stock",
+      "text": "exit long DELL at 426.8"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "STK|DELL"
   }
 ]

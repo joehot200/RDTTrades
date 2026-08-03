@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "trade_id": "f228790ed554",
+  "received_at": "2026-08-03T18:25:02.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-08-03T18:25:45+00:00--19fc8df442cf65e2.json",
+    "archived_path": "inbox/processed/2026-08/2026-08-03T18:25:45+00:00--19fc8df442cf65e2.json",
+    "raw_id": "19fc8df442cf65e2",
+    "ingested_at": "2026-08-03T18:25:45.000Z"
+  },
+  "raw": {
+    "text": "#127037716169 SOLD -1 WDC @534.26, ACCOUNT *****746SCHW"
+  },
+  "instrument": "stock",
+  "paper": false,
+  "action": "SOLD",
+  "symbol": "WDC",
+  "qty": 1,
+  "fill": 534.26,
+  "option": null,
+  "computed": {
+    "month": "2026-08",
+    "dte": -1,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "stock",
+    "text": "exit long WDC at 534.26"
+  },
+  "trade_role": "close",
+  "pos_side": "long",
+  "contract_key": "STK|WDC"
+}

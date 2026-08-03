@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "trade_id": "f7bcf49f339e",
+  "received_at": "2026-08-03T18:25:03.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-08-03T18:25:44+00:00--19fc8df4adaa086b.json",
+    "archived_path": "inbox/processed/2026-08/2026-08-03T18:25:44+00:00--19fc8df4adaa086b.json",
+    "raw_id": "19fc8df4adaa086b",
+    "ingested_at": "2026-08-03T18:25:44.000Z"
+  },
+  "raw": {
+    "text": "#127037716191 SOLD -1 DELL @426.80, ACCOUNT *****746SCHW"
+  },
+  "instrument": "stock",
+  "paper": false,
+  "action": "SOLD",
+  "symbol": "DELL",
+  "qty": 1,
+  "fill": 426.8,
+  "option": null,
+  "computed": {
+    "month": "2026-08",
+    "dte": -1,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "stock",
+    "text": "exit long DELL at 426.8"
+  },
+  "trade_role": "close",
+  "pos_side": "long",
+  "contract_key": "STK|DELL"
+}
