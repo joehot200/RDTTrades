@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "completed_trade_id": "0dee3d3ddd31",
+  "status": "closed",
+  "contract_key": "STK|COHR",
+  "instrument": "stock",
+  "pos_side": "long",
+  "symbol": "COHR",
+  "option": null,
+  "qty_opened": 1,
+  "qty_closed": 1,
+  "entry": {
+    "trade_id": "0dee3d3ddd31",
+    "received_at": "2026-08-03T18:10:53.000Z",
+    "fill": 292.5,
+    "rdt": "long COHR at 292.5"
+  },
+  "exits": [
+    {
+      "trade_id": "ae67933b65cf",
+      "received_at": "2026-08-03T18:40:04.000Z",
+      "fill": 289.54,
+      "qty": 1,
+      "rdt": "exit long COHR at 289.54"
+    }
+  ],
+  "pnl": {
+    "realized": -2.9599999999999795,
+    "currency": "USD"
+  }
+}

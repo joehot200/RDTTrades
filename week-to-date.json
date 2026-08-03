@@ -304,5 +304,39 @@
     "trade_role": "close",
     "pos_side": "long",
     "contract_key": "STK|DELL"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "ae67933b65cf",
+    "received_at": "2026-08-03T18:40:04.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-08-03T18:40:58+00:00--19fc8ed069de0079.json",
+      "archived_path": "inbox/processed/2026-08/2026-08-03T18:40:58+00:00--19fc8ed069de0079.json",
+      "raw_id": "19fc8ed069de0079",
+      "ingested_at": "2026-08-03T18:40:58.000Z"
+    },
+    "raw": {
+      "text": "#127041903999 SOLD -1 COHR @289.54, ACCOUNT *****746SCHW"
+    },
+    "instrument": "stock",
+    "paper": false,
+    "action": "SOLD",
+    "symbol": "COHR",
+    "qty": 1,
+    "fill": 289.54,
+    "option": null,
+    "computed": {
+      "month": "2026-08",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "stock",
+      "text": "exit long COHR at 289.54"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "STK|COHR"
   }
 ]

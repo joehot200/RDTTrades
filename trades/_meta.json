@@ -1,6 +1,8 @@
 {
-  "generated_at": "2026-08-03T18:26:24.742Z",
-  "latest_commit_message": "exit long DELL at 426.8",
-  "latest_processed_trade_id": null,
-  "processed_trade_ids_this_run": []
+  "generated_at": "2026-08-03T18:41:19.703Z",
+  "latest_commit_message": "exit long COHR at 289.54",
+  "latest_processed_trade_id": "ae67933b65cf",
+  "processed_trade_ids_this_run": [
+    "ae67933b65cf"
+  ]
 }
