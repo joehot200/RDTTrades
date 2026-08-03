@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "trade_id": "7448f108ea61",
+  "received_at": "2026-08-03T18:07:25.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-08-03T18:09:58+00:00--19fc8cf234b78127.json",
+    "archived_path": "inbox/processed/2026-08/2026-08-03T18:09:58+00:00--19fc8cf234b78127.json",
+    "raw_id": "19fc8cf234b78127",
+    "ingested_at": "2026-08-03T18:09:58.000Z"
+  },
+  "raw": {
+    "text": "#127033071411 BOT +1 WDC @537.30, ACCOUNT *****746SCHW"
+  },
+  "instrument": "stock",
+  "paper": false,
+  "action": "BOT",
+  "symbol": "WDC",
+  "qty": 1,
+  "fill": 537.3,
+  "option": null,
+  "computed": {
+    "month": "2026-08",
+    "dte": -1,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "stock",
+    "text": "long WDC at 537.3"
+  },
+  "trade_role": "open",
+  "pos_side": "long",
+  "contract_key": "STK|WDC"
+}
