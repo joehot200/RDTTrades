@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "trade_id": "d9c99a5fa8bb",
+  "received_at": "2026-08-03T21:01:55.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-08-03T21:13:26+00:00--19fc96ee494d9d26.json",
+    "archived_path": "inbox/processed/2026-08/2026-08-03T21:13:26+00:00--19fc96ee494d9d26.json",
+    "raw_id": "19fc96ee494d9d26",
+    "ingested_at": "2026-08-03T21:13:26.000Z"
+  },
+  "raw": {
+    "text": "#127062835137 SOLD -3 HPE @51.32, ACCOUNT *****746SCHW"
+  },
+  "instrument": "stock",
+  "paper": false,
+  "action": "SOLD",
+  "symbol": "HPE",
+  "qty": 3,
+  "fill": 51.32,
+  "option": null,
+  "computed": {
+    "month": "2026-08",
+    "dte": -1,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "stock",
+    "text": "exit long HPE at 51.32"
+  },
+  "trade_role": "close",
+  "pos_side": "long",
+  "contract_key": "STK|HPE"
+}
