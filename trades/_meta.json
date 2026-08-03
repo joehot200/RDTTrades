@@ -1,9 +1,6 @@
 {
-  "generated_at": "2026-08-03T22:43:25.131Z",
+  "generated_at": "2026-08-03T22:43:41.309Z",
   "latest_commit_message": "exit long GFS at 50.67",
-  "latest_processed_trade_id": "fbf9de403d80",
-  "processed_trade_ids_this_run": [
-    "0f4919f33682",
-    "fbf9de403d80"
-  ]
+  "latest_processed_trade_id": null,
+  "processed_trade_ids_this_run": []
 }
