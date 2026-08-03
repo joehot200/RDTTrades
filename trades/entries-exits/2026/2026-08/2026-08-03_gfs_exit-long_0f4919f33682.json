@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "trade_id": "0f4919f33682",
+  "received_at": "2026-08-03T22:42:05.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-08-03T22:43:10+00:00--19fc9ca9b124726b.json",
+    "archived_path": "inbox/processed/2026-08/2026-08-03T22:43:10+00:00--19fc9ca9b124726b.json",
+    "raw_id": "19fc9ca9b124726b",
+    "ingested_at": "2026-08-03T22:43:10.000Z"
+  },
+  "raw": {
+    "text": "#127064758513 SOLD -1 GFS @50.57, ACCOUNT *****746SCHW"
+  },
+  "instrument": "stock",
+  "paper": false,
+  "action": "SOLD",
+  "symbol": "GFS",
+  "qty": 1,
+  "fill": 50.57,
+  "option": null,
+  "computed": {
+    "month": "2026-08",
+    "dte": -1,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "stock",
+    "text": "exit long GFS at 50.57"
+  },
+  "trade_role": "close",
+  "pos_side": "long",
+  "contract_key": "STK|GFS"
+}
