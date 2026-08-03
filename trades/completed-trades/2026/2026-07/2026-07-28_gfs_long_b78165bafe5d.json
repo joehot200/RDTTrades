@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "completed_trade_id": "b78165bafe5d",
+  "status": "closed",
+  "contract_key": "STK|GFS",
+  "instrument": "stock",
+  "pos_side": "long",
+  "symbol": "GFS",
+  "option": null,
+  "qty_opened": 2,
+  "qty_closed": 2,
+  "entry": {
+    "trade_id": "b78165bafe5d",
+    "received_at": "2026-07-28T22:33:05.000Z",
+    "fill": 48.87,
+    "rdt": "long GFS at 48.87"
+  },
+  "exits": [
+    {
+      "trade_id": "bce0a7d9fd0f",
+      "received_at": "2026-08-03T19:56:49.000Z",
+      "fill": 49.86,
+      "qty": 2,
+      "rdt": "exit long GFS at 49.86"
+    }
+  ],
+  "pnl": {
+    "realized": 1.980000000000004,
+    "currency": "USD"
+  }
+}
