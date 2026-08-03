@@ -542,5 +542,107 @@
     "trade_role": "close",
     "pos_side": "long",
     "contract_key": "STK|HPE"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "245c80e9ee38",
+    "received_at": "2026-08-03T22:14:47.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-08-03T22:26:43+00:00--19fc9b19cf13a18b.json",
+      "archived_path": "inbox/processed/2026-08/2026-08-03T22:26:43+00:00--19fc9b19cf13a18b.json",
+      "raw_id": "19fc9b19cf13a18b",
+      "ingested_at": "2026-08-03T22:26:43.000Z"
+    },
+    "raw": {
+      "text": "#127064757645 BOT +1 ZM @98.25, ACCOUNT *****746SCHW"
+    },
+    "instrument": "stock",
+    "paper": false,
+    "action": "BOT",
+    "symbol": "ZM",
+    "qty": 1,
+    "fill": 98.25,
+    "option": null,
+    "computed": {
+      "month": "2026-08",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "stock",
+      "text": "long ZM at 98.25"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "STK|ZM"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "65ce0fdb506e",
+    "received_at": "2026-08-03T22:15:26.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-08-03T22:26:42+00:00--19fc9b2371306f76.json",
+      "archived_path": "inbox/processed/2026-08/2026-08-03T22:26:42+00:00--19fc9b2371306f76.json",
+      "raw_id": "19fc9b2371306f76",
+      "ingested_at": "2026-08-03T22:26:42.000Z"
+    },
+    "raw": {
+      "text": "#127064757692 BOT +1 ZM @97.96, ACCOUNT *****746SCHW"
+    },
+    "instrument": "stock",
+    "paper": false,
+    "action": "BOT",
+    "symbol": "ZM",
+    "qty": 1,
+    "fill": 97.96,
+    "option": null,
+    "computed": {
+      "month": "2026-08",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "stock",
+      "text": "long ZM at 97.96"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "STK|ZM"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "fd9cff26ad81",
+    "received_at": "2026-08-03T22:20:45.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-08-03T22:26:42+00:00--19fc9b7120b871bc.json",
+      "archived_path": "inbox/processed/2026-08/2026-08-03T22:26:42+00:00--19fc9b7120b871bc.json",
+      "raw_id": "19fc9b7120b871bc",
+      "ingested_at": "2026-08-03T22:26:42.000Z"
+    },
+    "raw": {
+      "text": "#127064757910 BOT +1 WDAY @164.30, ACCOUNT *****746SCHW"
+    },
+    "instrument": "stock",
+    "paper": false,
+    "action": "BOT",
+    "symbol": "WDAY",
+    "qty": 1,
+    "fill": 164.3,
+    "option": null,
+    "computed": {
+      "month": "2026-08",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "stock",
+      "text": "long WDAY at 164.3"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "STK|WDAY"
   }
 ]
