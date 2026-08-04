@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "trade_id": "eaba2518f7d3",
+  "received_at": "2026-08-04T14:38:11.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-08-04T14:38:48+00:00--19fcd35f0c71a936.json",
+    "archived_path": "inbox/processed/2026-08/2026-08-04T14:38:48+00:00--19fcd35f0c71a936.json",
+    "raw_id": "19fcd35f0c71a936",
+    "ingested_at": "2026-08-04T14:38:48.000Z"
+  },
+  "raw": {
+    "text": "#127118923256 BOT +9 ZM @100.70, ACCOUNT *****746SCHW"
+  },
+  "instrument": "stock",
+  "paper": false,
+  "action": "BOT",
+  "symbol": "ZM",
+  "qty": 9,
+  "fill": 100.7,
+  "option": null,
+  "computed": {
+    "month": "2026-08",
+    "dte": -1,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "stock",
+    "text": "long ZM at 100.7"
+  },
+  "trade_role": "open",
+  "pos_side": "long",
+  "contract_key": "STK|ZM"
+}

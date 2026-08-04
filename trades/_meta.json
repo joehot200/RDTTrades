@@ -1,8 +1,11 @@
 {
-  "generated_at": "2026-08-04T00:03:02.170Z",
-  "latest_commit_message": "exit long GFS at 50.94",
-  "latest_processed_trade_id": "224525689915",
+  "generated_at": "2026-08-04T14:39:07.186Z",
+  "latest_commit_message": "long ZM at 100.7",
+  "latest_processed_trade_id": "eaba2518f7d3",
   "processed_trade_ids_this_run": [
-    "224525689915"
+    "d48d18b9cbb2",
+    "936bbbc340db",
+    "5c0eb3c7519d",
+    "eaba2518f7d3"
   ]
 }
