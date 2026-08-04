@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "completed_trade_id": "65ce0fdb506e",
+  "status": "closed",
+  "contract_key": "STK|ZM",
+  "instrument": "stock",
+  "pos_side": "long",
+  "symbol": "ZM",
+  "option": null,
+  "qty_opened": 1,
+  "qty_closed": 8,
+  "entry": {
+    "trade_id": "65ce0fdb506e",
+    "received_at": "2026-08-03T22:15:26.000Z",
+    "fill": 97.96,
+    "rdt": "long ZM at 97.96"
+  },
+  "exits": [
+    {
+      "trade_id": "2d6fecf12489",
+      "received_at": "2026-08-04T14:59:37.000Z",
+      "fill": 100.72,
+      "qty": 8,
+      "rdt": "exit long ZM at 100.72"
+    }
+  ],
+  "pnl": {
+    "realized": 22.08000000000004,
+    "currency": "USD"
+  }
+}

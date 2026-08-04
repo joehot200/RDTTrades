@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "trade_id": "1bca3f54cabe",
+  "received_at": "2026-08-04T15:04:32.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-08-04T15:05:41+00:00--19fcd4e1369a23a4.json",
+    "archived_path": "inbox/processed/2026-08/2026-08-04T15:05:41+00:00--19fcd4e1369a23a4.json",
+    "raw_id": "19fcd4e1369a23a4",
+    "ingested_at": "2026-08-04T15:05:41.000Z"
+  },
+  "raw": {
+    "text": "#127128241664 BOT +1 TER @403.67, ACCOUNT *****746SCHW"
+  },
+  "instrument": "stock",
+  "paper": false,
+  "action": "BOT",
+  "symbol": "TER",
+  "qty": 1,
+  "fill": 403.67,
+  "option": null,
+  "computed": {
+    "month": "2026-08",
+    "dte": -1,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "stock",
+    "text": "long TER at 403.67"
+  },
+  "trade_role": "open",
+  "pos_side": "long",
+  "contract_key": "STK|TER"
+}

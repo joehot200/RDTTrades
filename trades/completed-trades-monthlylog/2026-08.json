@@ -122,5 +122,67 @@
       "realized": 2.2099999999999937,
       "currency": "USD"
     }
+  },
+  {
+    "schema_version": 1,
+    "completed_trade_id": "65ce0fdb506e",
+    "status": "closed",
+    "contract_key": "STK|ZM",
+    "instrument": "stock",
+    "pos_side": "long",
+    "symbol": "ZM",
+    "option": null,
+    "qty_opened": 1,
+    "qty_closed": 8,
+    "entry": {
+      "trade_id": "65ce0fdb506e",
+      "received_at": "2026-08-03T22:15:26.000Z",
+      "fill": 97.96,
+      "rdt": "long ZM at 97.96"
+    },
+    "exits": [
+      {
+        "trade_id": "2d6fecf12489",
+        "received_at": "2026-08-04T14:59:37.000Z",
+        "fill": 100.72,
+        "qty": 8,
+        "rdt": "exit long ZM at 100.72"
+      }
+    ],
+    "pnl": {
+      "realized": 22.08000000000004,
+      "currency": "USD"
+    }
+  },
+  {
+    "schema_version": 1,
+    "completed_trade_id": "5c0eb3c7519d",
+    "status": "closed",
+    "contract_key": "STK|PLTR",
+    "instrument": "stock",
+    "pos_side": "long",
+    "symbol": "PLTR",
+    "option": null,
+    "qty_opened": 2,
+    "qty_closed": 20,
+    "entry": {
+      "trade_id": "5c0eb3c7519d",
+      "received_at": "2026-08-04T14:35:32.000Z",
+      "fill": 158.195,
+      "rdt": "long PLTR at 158.195"
+    },
+    "exits": [
+      {
+        "trade_id": "7af756ee1837",
+        "received_at": "2026-08-04T14:54:58.000Z",
+        "fill": 159.725,
+        "qty": 20,
+        "rdt": "exit long PLTR at 159.725"
+      }
+    ],
+    "pnl": {
+      "realized": 30.600000000000023,
+      "currency": "USD"
+    }
   }
 ]

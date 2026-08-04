@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "trade_id": "ab12fa4ea766",
+  "received_at": "2026-08-04T14:59:50.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-08-04T15:05:45+00:00--19fcd49c20be82c6.json",
+    "archived_path": "inbox/processed/2026-08/2026-08-04T15:05:45+00:00--19fcd49c20be82c6.json",
+    "raw_id": "19fcd49c20be82c6",
+    "ingested_at": "2026-08-04T15:05:45.000Z"
+  },
+  "raw": {
+    "text": "#127127168351 BOT +8 HPQ @27.5718, ACCOUNT *****746SCHW"
+  },
+  "instrument": "stock",
+  "paper": false,
+  "action": "BOT",
+  "symbol": "HPQ",
+  "qty": 8,
+  "fill": 27.5718,
+  "option": null,
+  "computed": {
+    "month": "2026-08",
+    "dte": -1,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "stock",
+    "text": "long HPQ at 27.5718"
+  },
+  "trade_role": "open",
+  "pos_side": "long",
+  "contract_key": "STK|HPQ"
+}

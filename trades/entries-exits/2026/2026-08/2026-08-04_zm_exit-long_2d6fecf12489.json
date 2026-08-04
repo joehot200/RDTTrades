@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "trade_id": "2d6fecf12489",
+  "received_at": "2026-08-04T14:59:37.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-08-04T15:05:48+00:00--19fcd4992510b76d.json",
+    "archived_path": "inbox/processed/2026-08/2026-08-04T15:05:48+00:00--19fcd4992510b76d.json",
+    "raw_id": "19fcd4992510b76d",
+    "ingested_at": "2026-08-04T15:05:48.000Z"
+  },
+  "raw": {
+    "text": "#127127167954 SOLD -8 ZM @100.72, ACCOUNT *****746SCHW"
+  },
+  "instrument": "stock",
+  "paper": false,
+  "action": "SOLD",
+  "symbol": "ZM",
+  "qty": 8,
+  "fill": 100.72,
+  "option": null,
+  "computed": {
+    "month": "2026-08",
+    "dte": -1,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "stock",
+    "text": "exit long ZM at 100.72"
+  },
+  "trade_role": "close",
+  "pos_side": "long",
+  "contract_key": "STK|ZM"
+}
