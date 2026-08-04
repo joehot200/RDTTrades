@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "trade_id": "253f22b8d9d5",
+  "received_at": "2026-08-04T14:42:17.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-08-04T14:51:43+00:00--19fcd39b66a87c64.json",
+    "archived_path": "inbox/processed/2026-08/2026-08-04T14:51:43+00:00--19fcd39b66a87c64.json",
+    "raw_id": "19fcd39b66a87c64",
+    "ingested_at": "2026-08-04T14:51:43.000Z"
+  },
+  "raw": {
+    "text": "#127120169973 BOT +20 PLTR @159.215, ACCOUNT *****746SCHW"
+  },
+  "instrument": "stock",
+  "paper": false,
+  "action": "BOT",
+  "symbol": "PLTR",
+  "qty": 20,
+  "fill": 159.215,
+  "option": null,
+  "computed": {
+    "month": "2026-08",
+    "dte": -1,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "stock",
+    "text": "long PLTR at 159.215"
+  },
+  "trade_role": "open",
+  "pos_side": "long",
+  "contract_key": "STK|PLTR"
+}
