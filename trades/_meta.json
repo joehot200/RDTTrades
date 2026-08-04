@@ -1,11 +1,6 @@
 {
-  "generated_at": "2026-08-04T14:39:07.186Z",
+  "generated_at": "2026-08-04T14:39:33.045Z",
   "latest_commit_message": "long ZM at 100.7",
-  "latest_processed_trade_id": "eaba2518f7d3",
-  "processed_trade_ids_this_run": [
-    "d48d18b9cbb2",
-    "936bbbc340db",
-    "5c0eb3c7519d",
-    "eaba2518f7d3"
-  ]
+  "latest_processed_trade_id": null,
+  "processed_trade_ids_this_run": []
 }
