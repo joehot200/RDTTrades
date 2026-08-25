@@ -1256,5 +1256,39 @@
     "trade_role": "open",
     "pos_side": "long",
     "contract_key": "STK|TER"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "4dfe82859cba",
+    "received_at": "2026-08-25T14:30:21.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-08-25T14:37:08+00:00--1a03954529ded93a.json",
+      "archived_path": "inbox/processed/2026-08/2026-08-25T14:37:08+00:00--1a03954529ded93a.json",
+      "raw_id": "1a03954529ded93a",
+      "ingested_at": "2026-08-25T14:37:08.000Z"
+    },
+    "raw": {
+      "text": "#128993477894 SOLD -1 TEAM @168.05, ACCOUNT *****746SCHW"
+    },
+    "instrument": "stock",
+    "paper": false,
+    "action": "SOLD",
+    "symbol": "TEAM",
+    "qty": 1,
+    "fill": 168.05,
+    "option": null,
+    "computed": {
+      "month": "2026-08",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "stock",
+      "text": "exit long TEAM at 168.05"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "STK|TEAM"
   }
 ]

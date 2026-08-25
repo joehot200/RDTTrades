@@ -1,6 +1,8 @@
 {
-  "generated_at": "2026-08-04T15:06:26.172Z",
-  "latest_commit_message": "long TER at 403.67",
-  "latest_processed_trade_id": null,
-  "processed_trade_ids_this_run": []
+  "generated_at": "2026-08-25T14:37:28.517Z",
+  "latest_commit_message": "exit long TEAM at 168.05",
+  "latest_processed_trade_id": "4dfe82859cba",
+  "processed_trade_ids_this_run": [
+    "4dfe82859cba"
+  ]
 }
