@@ -1426,5 +1426,73 @@
     "trade_role": "open",
     "pos_side": "long",
     "contract_key": "STK|ZS"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "1b2c3710a3b4",
+    "received_at": "2026-08-26T14:23:47.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-08-26T14:35:50+00:00--1a03e74aa5afb7a3.json",
+      "archived_path": "inbox/processed/2026-08/2026-08-26T14:35:50+00:00--1a03e74aa5afb7a3.json",
+      "raw_id": "1a03e74aa5afb7a3",
+      "ingested_at": "2026-08-26T14:35:50.000Z"
+    },
+    "raw": {
+      "text": "#129103943488 SOLD -5 ON @73.00, ACCOUNT *****746SCHW"
+    },
+    "instrument": "stock",
+    "paper": false,
+    "action": "SOLD",
+    "symbol": "ON",
+    "qty": 5,
+    "fill": 73,
+    "option": null,
+    "computed": {
+      "month": "2026-08",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "stock",
+      "text": "exit long ON at 73"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "STK|ON"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "948ed5a121b9",
+    "received_at": "2026-08-26T14:24:35.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-08-26T14:35:49+00:00--1a03e7566ce8128f.json",
+      "archived_path": "inbox/processed/2026-08/2026-08-26T14:35:49+00:00--1a03e7566ce8128f.json",
+      "raw_id": "1a03e7566ce8128f",
+      "ingested_at": "2026-08-26T14:35:49.000Z"
+    },
+    "raw": {
+      "text": "#129103944091 BOT +3 GEN @29.3587, ACCOUNT *****746SCHW"
+    },
+    "instrument": "stock",
+    "paper": false,
+    "action": "BOT",
+    "symbol": "GEN",
+    "qty": 3,
+    "fill": 29.3587,
+    "option": null,
+    "computed": {
+      "month": "2026-08",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "stock",
+      "text": "long GEN at 29.3587"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "STK|GEN"
   }
 ]
