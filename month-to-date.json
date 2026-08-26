@@ -1494,5 +1494,73 @@
     "trade_role": "open",
     "pos_side": "long",
     "contract_key": "STK|GEN"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "8a6cd6170c1b",
+    "received_at": "2026-08-26T14:39:31.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-08-26T14:49:27+00:00--1a03e8310f1b664d.json",
+      "archived_path": "inbox/processed/2026-08/2026-08-26T14:49:27+00:00--1a03e8310f1b664d.json",
+      "raw_id": "1a03e8310f1b664d",
+      "ingested_at": "2026-08-26T14:49:27.000Z"
+    },
+    "raw": {
+      "text": "#129108753577 SOLD -2 ZS @167.20, ACCOUNT *****746SCHW"
+    },
+    "instrument": "stock",
+    "paper": false,
+    "action": "SOLD",
+    "symbol": "ZS",
+    "qty": 2,
+    "fill": 167.2,
+    "option": null,
+    "computed": {
+      "month": "2026-08",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "stock",
+      "text": "exit long ZS at 167.2"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "STK|ZS"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "61ce522fca36",
+    "received_at": "2026-08-26T14:41:12.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-08-26T14:49:25+00:00--1a03e849c3fabbd2.json",
+      "archived_path": "inbox/processed/2026-08/2026-08-26T14:49:25+00:00--1a03e849c3fabbd2.json",
+      "raw_id": "1a03e849c3fabbd2",
+      "ingested_at": "2026-08-26T14:49:25.000Z"
+    },
+    "raw": {
+      "text": "#129108754824 BOT +2 ZS @167.16, ACCOUNT *****746SCHW"
+    },
+    "instrument": "stock",
+    "paper": false,
+    "action": "BOT",
+    "symbol": "ZS",
+    "qty": 2,
+    "fill": 167.16,
+    "option": null,
+    "computed": {
+      "month": "2026-08",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "stock",
+      "text": "long ZS at 167.16"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "STK|ZS"
   }
 ]

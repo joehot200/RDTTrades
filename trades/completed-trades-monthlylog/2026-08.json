@@ -215,5 +215,36 @@
       "realized": -1.4551999999999907,
       "currency": "USD"
     }
+  },
+  {
+    "schema_version": 1,
+    "completed_trade_id": "b32ce70c6b15",
+    "status": "closed",
+    "contract_key": "STK|ZS",
+    "instrument": "stock",
+    "pos_side": "long",
+    "symbol": "ZS",
+    "option": null,
+    "qty_opened": 2,
+    "qty_closed": 2,
+    "entry": {
+      "trade_id": "b32ce70c6b15",
+      "received_at": "2026-08-26T13:55:22.000Z",
+      "fill": 169.28,
+      "rdt": "long ZS at 169.28"
+    },
+    "exits": [
+      {
+        "trade_id": "8a6cd6170c1b",
+        "received_at": "2026-08-26T14:39:31.000Z",
+        "fill": 167.2,
+        "qty": 2,
+        "rdt": "exit long ZS at 167.2"
+      }
+    ],
+    "pnl": {
+      "realized": -4.160000000000025,
+      "currency": "USD"
+    }
   }
 ]
