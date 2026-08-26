@@ -1,8 +1,9 @@
 {
-  "generated_at": "2026-08-25T14:37:28.517Z",
-  "latest_commit_message": "exit long TEAM at 168.05",
-  "latest_processed_trade_id": "4dfe82859cba",
+  "generated_at": "2026-08-26T13:50:04.863Z",
+  "latest_commit_message": "exit long INTU at 347.19",
+  "latest_processed_trade_id": "d91b341ae906",
   "processed_trade_ids_this_run": [
-    "4dfe82859cba"
+    "32f00ce11e3e",
+    "d91b341ae906"
   ]
 }

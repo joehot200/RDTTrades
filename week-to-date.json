@@ -32,5 +32,73 @@
     "trade_role": "close",
     "pos_side": "long",
     "contract_key": "STK|TEAM"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "32f00ce11e3e",
+    "received_at": "2026-08-26T13:42:17.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-08-26T13:49:47+00:00--1a03e4eab76f70d4.json",
+      "archived_path": "inbox/processed/2026-08/2026-08-26T13:49:47+00:00--1a03e4eab76f70d4.json",
+      "raw_id": "1a03e4eab76f70d4",
+      "ingested_at": "2026-08-26T13:49:47.000Z"
+    },
+    "raw": {
+      "text": "#129089332408 BOT +0.5 INTU @348.6452, ACCOUNT *****746SCHW"
+    },
+    "instrument": "stock",
+    "paper": false,
+    "action": "BOT",
+    "symbol": "INTU",
+    "qty": 0,
+    "fill": 348.6452,
+    "option": null,
+    "computed": {
+      "month": "2026-08",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "stock",
+      "text": "long INTU at 348.6452"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "STK|INTU"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "d91b341ae906",
+    "received_at": "2026-08-26T13:47:00.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-08-26T13:49:46+00:00--1a03e52fd0a32c3a.json",
+      "archived_path": "inbox/processed/2026-08/2026-08-26T13:49:46+00:00--1a03e52fd0a32c3a.json",
+      "raw_id": "1a03e52fd0a32c3a",
+      "ingested_at": "2026-08-26T13:49:46.000Z"
+    },
+    "raw": {
+      "text": "#129089336496 SOLD -1 INTU @347.19, ACCOUNT *****746SCHW"
+    },
+    "instrument": "stock",
+    "paper": false,
+    "action": "SOLD",
+    "symbol": "INTU",
+    "qty": 1,
+    "fill": 347.19,
+    "option": null,
+    "computed": {
+      "month": "2026-08",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "stock",
+      "text": "exit long INTU at 347.19"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "STK|INTU"
   }
 ]
