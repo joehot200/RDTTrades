@@ -1,6 +1,8 @@
 {
-  "generated_at": "2026-08-26T16:09:19.179Z",
-  "latest_commit_message": "exit long APLD at 27.645",
-  "latest_processed_trade_id": null,
-  "processed_trade_ids_this_run": []
+  "generated_at": "2026-08-26T16:55:55.395Z",
+  "latest_commit_message": "long IONQ at 40.37",
+  "latest_processed_trade_id": "d281da6b70e6",
+  "processed_trade_ids_this_run": [
+    "d281da6b70e6"
+  ]
 }
