@@ -1,9 +1,6 @@
 {
-  "generated_at": "2026-08-26T14:50:03.827Z",
+  "generated_at": "2026-08-26T14:50:23.906Z",
   "latest_commit_message": "long ZS at 167.16",
-  "latest_processed_trade_id": "61ce522fca36",
-  "processed_trade_ids_this_run": [
-    "8a6cd6170c1b",
-    "61ce522fca36"
-  ]
+  "latest_processed_trade_id": null,
+  "processed_trade_ids_this_run": []
 }
