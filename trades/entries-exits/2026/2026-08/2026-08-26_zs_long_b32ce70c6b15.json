@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "trade_id": "b32ce70c6b15",
+  "received_at": "2026-08-26T13:55:22.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-08-26T14:04:52+00:00--1a03e5aa788c31a4.json",
+    "archived_path": "inbox/processed/2026-08/2026-08-26T14:04:52+00:00--1a03e5aa788c31a4.json",
+    "raw_id": "1a03e5aa788c31a4",
+    "ingested_at": "2026-08-26T14:04:52.000Z"
+  },
+  "raw": {
+    "text": "#129094847116 BOT +2 ZS @169.28, ACCOUNT *****746SCHW"
+  },
+  "instrument": "stock",
+  "paper": false,
+  "action": "BOT",
+  "symbol": "ZS",
+  "qty": 2,
+  "fill": 169.28,
+  "option": null,
+  "computed": {
+    "month": "2026-08",
+    "dte": -1,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "stock",
+    "text": "long ZS at 169.28"
+  },
+  "trade_role": "open",
+  "pos_side": "long",
+  "contract_key": "STK|ZS"
+}

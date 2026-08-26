@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "trade_id": "56fd4f0e6362",
+  "received_at": "2026-08-26T13:51:36.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-08-26T14:04:53+00:00--1a03e57348979d77.json",
+    "archived_path": "inbox/processed/2026-08/2026-08-26T14:04:53+00:00--1a03e57348979d77.json",
+    "raw_id": "1a03e57348979d77",
+    "ingested_at": "2026-08-26T14:04:53.000Z"
+  },
+  "raw": {
+    "text": "#129091979170 SOLD -3 MANH @215.01, ACCOUNT *****746SCHW"
+  },
+  "instrument": "stock",
+  "paper": false,
+  "action": "SOLD",
+  "symbol": "MANH",
+  "qty": 3,
+  "fill": 215.01,
+  "option": null,
+  "computed": {
+    "month": "2026-08",
+    "dte": -1,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "stock",
+    "text": "exit long MANH at 215.01"
+  },
+  "trade_role": "close",
+  "pos_side": "long",
+  "contract_key": "STK|MANH"
+}
