@@ -1328,6 +1328,37 @@
   },
   {
     "schema_version": 1,
+    "completed_trade_id": "8f93f9ced32a",
+    "status": "closed",
+    "contract_key": "STK|IONQ",
+    "instrument": "stock",
+    "pos_side": "long",
+    "symbol": "IONQ",
+    "option": null,
+    "qty_opened": 12,
+    "qty_closed": 24,
+    "entry": {
+      "trade_id": "8f93f9ced32a",
+      "received_at": "2026-07-29T18:45:00.000Z",
+      "fill": 33.4293,
+      "rdt": "long IONQ at 33.4293"
+    },
+    "exits": [
+      {
+        "trade_id": "b02a3174c53d",
+        "received_at": "2026-08-26T15:17:55.000Z",
+        "fill": 40.66,
+        "qty": 24,
+        "rdt": "exit long IONQ at 40.66"
+      }
+    ],
+    "pnl": {
+      "realized": 173.53679999999997,
+      "currency": "USD"
+    }
+  },
+  {
+    "schema_version": 1,
     "completed_trade_id": "8aa2ba67bd29",
     "status": "closed",
     "contract_key": "STK|DELL",

@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "trade_id": "3a32d9b796c2",
+  "received_at": "2026-08-26T15:35:03.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-08-26T15:48:34+00:00--1a03eb5eaabca178.json",
+    "archived_path": "inbox/processed/2026-08/2026-08-26T15:48:34+00:00--1a03eb5eaabca178.json",
+    "raw_id": "1a03eb5eaabca178",
+    "ingested_at": "2026-08-26T15:48:34.000Z"
+  },
+  "raw": {
+    "text": "#129123792393 SOLD -1 ANET @197.18, ACCOUNT *****746SCHW"
+  },
+  "instrument": "stock",
+  "paper": false,
+  "action": "SOLD",
+  "symbol": "ANET",
+  "qty": 1,
+  "fill": 197.18,
+  "option": null,
+  "computed": {
+    "month": "2026-08",
+    "dte": -1,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "stock",
+    "text": "exit long ANET at 197.18"
+  },
+  "trade_role": "close",
+  "pos_side": "long",
+  "contract_key": "STK|ANET"
+}

@@ -1,6 +1,11 @@
 {
-  "generated_at": "2026-08-26T14:50:23.906Z",
-  "latest_commit_message": "long ZS at 167.16",
-  "latest_processed_trade_id": null,
-  "processed_trade_ids_this_run": []
+  "generated_at": "2026-08-26T16:08:59.873Z",
+  "latest_commit_message": "exit long APLD at 27.645",
+  "latest_processed_trade_id": "508ca43fe861",
+  "processed_trade_ids_this_run": [
+    "b02a3174c53d",
+    "a8ccd14a7fd5",
+    "3a32d9b796c2",
+    "508ca43fe861"
+  ]
 }

@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "trade_id": "508ca43fe861",
+  "received_at": "2026-08-26T15:35:47.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-08-26T15:48:33+00:00--1a03eb694705174a.json",
+    "archived_path": "inbox/processed/2026-08/2026-08-26T15:48:33+00:00--1a03eb694705174a.json",
+    "raw_id": "1a03eb694705174a",
+    "ingested_at": "2026-08-26T15:48:33.000Z"
+  },
+  "raw": {
+    "text": "#129123792687 SOLD -17 APLD @27.645, ACCOUNT *****746SCHW"
+  },
+  "instrument": "stock",
+  "paper": false,
+  "action": "SOLD",
+  "symbol": "APLD",
+  "qty": 17,
+  "fill": 27.645,
+  "option": null,
+  "computed": {
+    "month": "2026-08",
+    "dte": -1,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "stock",
+    "text": "exit long APLD at 27.645"
+  },
+  "trade_role": "close",
+  "pos_side": "long",
+  "contract_key": "STK|APLD"
+}
