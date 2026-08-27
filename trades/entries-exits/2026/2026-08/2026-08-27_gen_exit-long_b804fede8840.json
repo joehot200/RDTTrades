@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "trade_id": "b804fede8840",
+  "received_at": "2026-08-27T21:40:01.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-08-27T21:49:37+00:00--1a0452a68398a18c.json",
+    "archived_path": "inbox/processed/2026-08/2026-08-27T21:49:37+00:00--1a0452a68398a18c.json",
+    "raw_id": "1a0452a68398a18c",
+    "ingested_at": "2026-08-27T21:49:37.000Z"
+  },
+  "raw": {
+    "text": "#129304680109 SOLD -3 GEN @30.50, ACCOUNT *****746SCHW"
+  },
+  "instrument": "stock",
+  "paper": false,
+  "action": "SOLD",
+  "symbol": "GEN",
+  "qty": 3,
+  "fill": 30.5,
+  "option": null,
+  "computed": {
+    "month": "2026-08",
+    "dte": -1,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "stock",
+    "text": "exit long GEN at 30.5"
+  },
+  "trade_role": "close",
+  "pos_side": "long",
+  "contract_key": "STK|GEN"
+}

@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-27T21:37:01.738Z",
+  "generated_at": "2026-08-27T21:49:56.333Z",
   "latest_commit_message": "exit long GEN at 30.5",
-  "latest_processed_trade_id": "f61011465425",
+  "latest_processed_trade_id": "b804fede8840",
   "processed_trade_ids_this_run": [
-    "f61011465425"
+    "b804fede8840"
   ]
 }
