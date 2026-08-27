@@ -610,5 +610,39 @@
     "trade_role": "open",
     "pos_side": "long",
     "contract_key": "STK|AKAM"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "f1a2764635e7",
+    "received_at": "2026-08-27T14:31:42.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-08-27T14:37:35+00:00--1a043a24588dbf16.json",
+      "archived_path": "inbox/processed/2026-08/2026-08-27T14:37:35+00:00--1a043a24588dbf16.json",
+      "raw_id": "1a043a24588dbf16",
+      "ingested_at": "2026-08-27T14:37:35.000Z"
+    },
+    "raw": {
+      "text": "#129228022019 SOLD -1 FN @433.87, ACCOUNT *****746SCHW"
+    },
+    "instrument": "stock",
+    "paper": false,
+    "action": "SOLD",
+    "symbol": "FN",
+    "qty": 1,
+    "fill": 433.87,
+    "option": null,
+    "computed": {
+      "month": "2026-08",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "stock",
+      "text": "exit long FN at 433.87"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "STK|FN"
   }
 ]
