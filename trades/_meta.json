@@ -1,10 +1,6 @@
 {
-  "generated_at": "2026-08-27T14:22:54.517Z",
+  "generated_at": "2026-08-27T14:23:12.582Z",
   "latest_commit_message": "long AKAM at 111.145",
-  "latest_processed_trade_id": "d9231f6f336b",
-  "processed_trade_ids_this_run": [
-    "8aa39c5b99d5",
-    "b59902df160a",
-    "d9231f6f336b"
-  ]
+  "latest_processed_trade_id": null,
+  "processed_trade_ids_this_run": []
 }
