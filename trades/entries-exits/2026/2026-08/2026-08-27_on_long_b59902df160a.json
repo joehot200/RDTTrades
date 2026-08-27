@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "trade_id": "b59902df160a",
+  "received_at": "2026-08-27T14:09:48.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-08-27T14:22:30+00:00--1a0438e381e52486.json",
+    "archived_path": "inbox/processed/2026-08/2026-08-27T14:22:30+00:00--1a0438e381e52486.json",
+    "raw_id": "1a0438e381e52486",
+    "ingested_at": "2026-08-27T14:22:30.000Z"
+  },
+  "raw": {
+    "text": "#129218924691 BOT +15 ON @73.795, ACCOUNT *****746SCHW"
+  },
+  "instrument": "stock",
+  "paper": false,
+  "action": "BOT",
+  "symbol": "ON",
+  "qty": 15,
+  "fill": 73.795,
+  "option": null,
+  "computed": {
+    "month": "2026-08",
+    "dte": -1,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "stock",
+    "text": "long ON at 73.795"
+  },
+  "trade_role": "open",
+  "pos_side": "long",
+  "contract_key": "STK|ON"
+}

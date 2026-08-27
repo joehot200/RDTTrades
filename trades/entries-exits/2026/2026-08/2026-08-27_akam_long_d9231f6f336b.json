@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "trade_id": "d9231f6f336b",
+  "received_at": "2026-08-27T14:16:09.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-08-27T14:22:28+00:00--1a04394082509eb1.json",
+    "archived_path": "inbox/processed/2026-08/2026-08-27T14:22:28+00:00--1a04394082509eb1.json",
+    "raw_id": "1a04394082509eb1",
+    "ingested_at": "2026-08-27T14:22:28.000Z"
+  },
+  "raw": {
+    "text": "#129220700530 BOT +4 AKAM @111.145, ACCOUNT *****746SCHW"
+  },
+  "instrument": "stock",
+  "paper": false,
+  "action": "BOT",
+  "symbol": "AKAM",
+  "qty": 4,
+  "fill": 111.145,
+  "option": null,
+  "computed": {
+    "month": "2026-08",
+    "dte": -1,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "stock",
+    "text": "long AKAM at 111.145"
+  },
+  "trade_role": "open",
+  "pos_side": "long",
+  "contract_key": "STK|AKAM"
+}
