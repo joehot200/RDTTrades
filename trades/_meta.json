@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-27T16:38:56.198Z",
-  "latest_commit_message": "long GTLB at 43.86",
-  "latest_processed_trade_id": "0cb01820f612",
+  "generated_at": "2026-08-27T19:32:03.447Z",
+  "latest_commit_message": "exit long GTLB at 44.54",
+  "latest_processed_trade_id": "6b683087e73d",
   "processed_trade_ids_this_run": [
-    "0cb01820f612"
+    "6b683087e73d"
   ]
 }

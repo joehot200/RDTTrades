@@ -1970,5 +1970,39 @@
     "trade_role": "open",
     "pos_side": "long",
     "contract_key": "STK|GTLB"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "6b683087e73d",
+    "received_at": "2026-08-27T19:20:00.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-08-27T19:31:44+00:00--1a044aa397af7085.json",
+      "archived_path": "inbox/processed/2026-08/2026-08-27T19:31:44+00:00--1a044aa397af7085.json",
+      "raw_id": "1a044aa397af7085",
+      "ingested_at": "2026-08-27T19:31:44.000Z"
+    },
+    "raw": {
+      "text": "#129292216787 SOLD -1 GTLB @44.54, ACCOUNT *****746SCHW"
+    },
+    "instrument": "stock",
+    "paper": false,
+    "action": "SOLD",
+    "symbol": "GTLB",
+    "qty": 1,
+    "fill": 44.54,
+    "option": null,
+    "computed": {
+      "month": "2026-08",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "stock",
+      "text": "exit long GTLB at 44.54"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "STK|GTLB"
   }
 ]
