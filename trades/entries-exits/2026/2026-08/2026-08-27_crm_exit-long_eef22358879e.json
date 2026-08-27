@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "trade_id": "eef22358879e",
+  "received_at": "2026-08-27T16:14:33.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-08-27T16:25:45+00:00--1a044006e521ef28.json",
+    "archived_path": "inbox/processed/2026-08/2026-08-27T16:25:45+00:00--1a044006e521ef28.json",
+    "raw_id": "1a044006e521ef28",
+    "ingested_at": "2026-08-27T16:25:45.000Z"
+  },
+  "raw": {
+    "text": "#129256115048 SOLD -2 CRM @245.88, ACCOUNT *****746SCHW"
+  },
+  "instrument": "stock",
+  "paper": false,
+  "action": "SOLD",
+  "symbol": "CRM",
+  "qty": 2,
+  "fill": 245.88,
+  "option": null,
+  "computed": {
+    "month": "2026-08",
+    "dte": -1,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "stock",
+    "text": "exit long CRM at 245.88"
+  },
+  "trade_role": "close",
+  "pos_side": "long",
+  "contract_key": "STK|CRM"
+}

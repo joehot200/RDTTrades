@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-27T14:37:52.359Z",
-  "latest_commit_message": "exit long FN at 433.87",
-  "latest_processed_trade_id": "f1a2764635e7",
+  "generated_at": "2026-08-27T16:26:03.509Z",
+  "latest_commit_message": "exit long CRM at 245.88",
+  "latest_processed_trade_id": "eef22358879e",
   "processed_trade_ids_this_run": [
-    "f1a2764635e7"
+    "eef22358879e"
   ]
 }
