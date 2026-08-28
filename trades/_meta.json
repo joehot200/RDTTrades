@@ -1,6 +1,8 @@
 {
-  "generated_at": "2026-08-28T17:03:48.662Z",
-  "latest_commit_message": "long NOW at 143.57",
-  "latest_processed_trade_id": null,
-  "processed_trade_ids_this_run": []
+  "generated_at": "2026-08-28T18:05:01.897Z",
+  "latest_commit_message": "exit long ALGM at 35.86",
+  "latest_processed_trade_id": "861e634682cc",
+  "processed_trade_ids_this_run": [
+    "861e634682cc"
+  ]
 }

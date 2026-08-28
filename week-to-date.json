@@ -1120,5 +1120,39 @@
     "trade_role": "open",
     "pos_side": "long",
     "contract_key": "STK|NOW"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "861e634682cc",
+    "received_at": "2026-08-28T17:54:11.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-08-28T18:04:38+00:00--1a049820313f2db2.json",
+      "archived_path": "inbox/processed/2026-08/2026-08-28T18:04:38+00:00--1a049820313f2db2.json",
+      "raw_id": "1a049820313f2db2",
+      "ingested_at": "2026-08-28T18:04:38.000Z"
+    },
+    "raw": {
+      "text": "#129402646940 SOLD -7 ALGM @35.86, ACCOUNT *****746SCHW"
+    },
+    "instrument": "stock",
+    "paper": false,
+    "action": "SOLD",
+    "symbol": "ALGM",
+    "qty": 7,
+    "fill": 35.86,
+    "option": null,
+    "computed": {
+      "month": "2026-08",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "stock",
+      "text": "exit long ALGM at 35.86"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "STK|ALGM"
   }
 ]
