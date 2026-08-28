@@ -1,9 +1,6 @@
 {
-  "generated_at": "2026-08-28T17:03:26.645Z",
+  "generated_at": "2026-08-28T17:03:48.662Z",
   "latest_commit_message": "long NOW at 143.57",
-  "latest_processed_trade_id": "831322cc919f",
-  "processed_trade_ids_this_run": [
-    "fc01818b877d",
-    "831322cc919f"
-  ]
+  "latest_processed_trade_id": null,
+  "processed_trade_ids_this_run": []
 }
