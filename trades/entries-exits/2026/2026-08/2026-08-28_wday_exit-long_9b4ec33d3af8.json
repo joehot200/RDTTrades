@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "trade_id": "9b4ec33d3af8",
+  "received_at": "2026-08-28T16:40:36.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-08-28T16:47:15+00:00--1a0493ea5e09a674.json",
+    "archived_path": "inbox/processed/2026-08/2026-08-28T16:47:15+00:00--1a0493ea5e09a674.json",
+    "raw_id": "1a0493ea5e09a674",
+    "ingested_at": "2026-08-28T16:47:15.000Z"
+  },
+  "raw": {
+    "text": "#129388444450 SOLD -1 WDAY @205.90, ACCOUNT *****746SCHW"
+  },
+  "instrument": "stock",
+  "paper": false,
+  "action": "SOLD",
+  "symbol": "WDAY",
+  "qty": 1,
+  "fill": 205.9,
+  "option": null,
+  "computed": {
+    "month": "2026-08",
+    "dte": -1,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "stock",
+    "text": "exit long WDAY at 205.9"
+  },
+  "trade_role": "close",
+  "pos_side": "long",
+  "contract_key": "STK|WDAY"
+}

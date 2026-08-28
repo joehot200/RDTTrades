@@ -2242,5 +2242,73 @@
     "trade_role": "open",
     "pos_side": "long",
     "contract_key": "STK|WDAY"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "9b4ec33d3af8",
+    "received_at": "2026-08-28T16:40:36.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-08-28T16:47:15+00:00--1a0493ea5e09a674.json",
+      "archived_path": "inbox/processed/2026-08/2026-08-28T16:47:15+00:00--1a0493ea5e09a674.json",
+      "raw_id": "1a0493ea5e09a674",
+      "ingested_at": "2026-08-28T16:47:15.000Z"
+    },
+    "raw": {
+      "text": "#129388444450 SOLD -1 WDAY @205.90, ACCOUNT *****746SCHW"
+    },
+    "instrument": "stock",
+    "paper": false,
+    "action": "SOLD",
+    "symbol": "WDAY",
+    "qty": 1,
+    "fill": 205.9,
+    "option": null,
+    "computed": {
+      "month": "2026-08",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "stock",
+      "text": "exit long WDAY at 205.9"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "STK|WDAY"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "48a702da8541",
+    "received_at": "2026-08-28T16:41:23.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-08-28T16:47:13+00:00--1a0493f5d86d8cbf.json",
+      "archived_path": "inbox/processed/2026-08/2026-08-28T16:47:13+00:00--1a0493f5d86d8cbf.json",
+      "raw_id": "1a0493f5d86d8cbf",
+      "ingested_at": "2026-08-28T16:47:13.000Z"
+    },
+    "raw": {
+      "text": "#129388444955 SOLD -1 KLAC @175.475, ACCOUNT *****746SCHW"
+    },
+    "instrument": "stock",
+    "paper": false,
+    "action": "SOLD",
+    "symbol": "KLAC",
+    "qty": 1,
+    "fill": 175.475,
+    "option": null,
+    "computed": {
+      "month": "2026-08",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "stock",
+      "text": "exit long KLAC at 175.475"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "STK|KLAC"
   }
 ]
