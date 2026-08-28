@@ -2310,5 +2310,73 @@
     "trade_role": "close",
     "pos_side": "long",
     "contract_key": "STK|KLAC"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "fc01818b877d",
+    "received_at": "2026-08-28T16:48:30.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-08-28T17:03:10+00:00--1a04945e139a45d5.json",
+      "archived_path": "inbox/processed/2026-08/2026-08-28T17:03:10+00:00--1a04945e139a45d5.json",
+      "raw_id": "1a04945e139a45d5",
+      "ingested_at": "2026-08-28T17:03:10.000Z"
+    },
+    "raw": {
+      "text": "#129390888535 BOT +1 KLAC @176.49, ACCOUNT *****746SCHW"
+    },
+    "instrument": "stock",
+    "paper": false,
+    "action": "BOT",
+    "symbol": "KLAC",
+    "qty": 1,
+    "fill": 176.49,
+    "option": null,
+    "computed": {
+      "month": "2026-08",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "stock",
+      "text": "long KLAC at 176.49"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "STK|KLAC"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "831322cc919f",
+    "received_at": "2026-08-28T16:53:36.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-08-28T17:03:09+00:00--1a0494a8ee383ffb.json",
+      "archived_path": "inbox/processed/2026-08/2026-08-28T17:03:09+00:00--1a0494a8ee383ffb.json",
+      "raw_id": "1a0494a8ee383ffb",
+      "ingested_at": "2026-08-28T17:03:09.000Z"
+    },
+    "raw": {
+      "text": "#129390891150 BOT +1 NOW @143.57, ACCOUNT *****746SCHW"
+    },
+    "instrument": "stock",
+    "paper": false,
+    "action": "BOT",
+    "symbol": "NOW",
+    "qty": 1,
+    "fill": 143.57,
+    "option": null,
+    "computed": {
+      "month": "2026-08",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "stock",
+      "text": "long NOW at 143.57"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "STK|NOW"
   }
 ]

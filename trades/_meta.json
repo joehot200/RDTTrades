@@ -1,6 +1,9 @@
 {
-  "generated_at": "2026-08-28T16:47:47.764Z",
-  "latest_commit_message": "exit long KLAC at 175.475",
-  "latest_processed_trade_id": null,
-  "processed_trade_ids_this_run": []
+  "generated_at": "2026-08-28T17:03:26.645Z",
+  "latest_commit_message": "long NOW at 143.57",
+  "latest_processed_trade_id": "831322cc919f",
+  "processed_trade_ids_this_run": [
+    "fc01818b877d",
+    "831322cc919f"
+  ]
 }
