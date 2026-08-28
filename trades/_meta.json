@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-28T18:05:01.897Z",
-  "latest_commit_message": "exit long ALGM at 35.86",
-  "latest_processed_trade_id": "861e634682cc",
+  "generated_at": "2026-08-28T18:20:30.024Z",
+  "latest_commit_message": "long ALGM at 35.875",
+  "latest_processed_trade_id": "ddd97be570e0",
   "processed_trade_ids_this_run": [
-    "861e634682cc"
+    "ddd97be570e0"
   ]
 }
