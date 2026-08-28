@@ -2106,5 +2106,39 @@
     "trade_role": "open",
     "pos_side": "long",
     "contract_key": "STK|FN"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "ae9cc31e6401",
+    "received_at": "2026-08-28T15:10:45.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-08-28T15:18:45+00:00--1a048ec631f34045.json",
+      "archived_path": "inbox/processed/2026-08/2026-08-28T15:18:45+00:00--1a048ec631f34045.json",
+      "raw_id": "1a048ec631f34045",
+      "ingested_at": "2026-08-28T15:18:45.000Z"
+    },
+    "raw": {
+      "text": "#129364059066 BOT +1 GWRE @205.06, ACCOUNT *****746SCHW"
+    },
+    "instrument": "stock",
+    "paper": false,
+    "action": "BOT",
+    "symbol": "GWRE",
+    "qty": 1,
+    "fill": 205.06,
+    "option": null,
+    "computed": {
+      "month": "2026-08",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "stock",
+      "text": "long GWRE at 205.06"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "STK|GWRE"
   }
 ]
