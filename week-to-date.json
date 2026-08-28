@@ -950,5 +950,39 @@
     "trade_role": "close",
     "pos_side": "long",
     "contract_key": "STK|GWRE"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "a999ea2162e9",
+    "received_at": "2026-08-28T16:31:12.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-08-28T16:33:02+00:00--1a049360d828c91a.json",
+      "archived_path": "inbox/processed/2026-08/2026-08-28T16:33:02+00:00--1a049360d828c91a.json",
+      "raw_id": "1a049360d828c91a",
+      "ingested_at": "2026-08-28T16:33:02.000Z"
+    },
+    "raw": {
+      "text": "#129386390450 BOT +1 WDAY @206.50, ACCOUNT *****746SCHW"
+    },
+    "instrument": "stock",
+    "paper": false,
+    "action": "BOT",
+    "symbol": "WDAY",
+    "qty": 1,
+    "fill": 206.5,
+    "option": null,
+    "computed": {
+      "month": "2026-08",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "stock",
+      "text": "long WDAY at 206.5"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "STK|WDAY"
   }
 ]
