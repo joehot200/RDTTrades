@@ -277,5 +277,36 @@
       "realized": 0.6799999999999997,
       "currency": "USD"
     }
+  },
+  {
+    "schema_version": 1,
+    "completed_trade_id": "ae9cc31e6401",
+    "status": "closed",
+    "contract_key": "STK|GWRE",
+    "instrument": "stock",
+    "pos_side": "long",
+    "symbol": "GWRE",
+    "option": null,
+    "qty_opened": 1,
+    "qty_closed": 1,
+    "entry": {
+      "trade_id": "ae9cc31e6401",
+      "received_at": "2026-08-28T15:10:45.000Z",
+      "fill": 205.06,
+      "rdt": "long GWRE at 205.06"
+    },
+    "exits": [
+      {
+        "trade_id": "d6491a11dd01",
+        "received_at": "2026-08-28T16:02:49.000Z",
+        "fill": 206.645,
+        "qty": 1,
+        "rdt": "exit long GWRE at 206.645"
+      }
+    ],
+    "pnl": {
+      "realized": 1.585000000000008,
+      "currency": "USD"
+    }
   }
 ]

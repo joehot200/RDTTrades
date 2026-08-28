@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-28T15:47:44.357Z",
-  "latest_commit_message": "long GWRE at 206.485",
-  "latest_processed_trade_id": "f7e948a8c06f",
+  "generated_at": "2026-08-28T16:18:15.560Z",
+  "latest_commit_message": "exit long GWRE at 206.645",
+  "latest_processed_trade_id": "d6491a11dd01",
   "processed_trade_ids_this_run": [
-    "f7e948a8c06f"
+    "d6491a11dd01"
   ]
 }

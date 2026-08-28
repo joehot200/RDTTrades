@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "trade_id": "d6491a11dd01",
+  "received_at": "2026-08-28T16:02:49.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-08-28T16:17:59+00:00--1a0491c0e69c52ef.json",
+    "archived_path": "inbox/processed/2026-08/2026-08-28T16:17:59+00:00--1a0491c0e69c52ef.json",
+    "raw_id": "1a0491c0e69c52ef",
+    "ingested_at": "2026-08-28T16:17:59.000Z"
+  },
+  "raw": {
+    "text": "#129378814391 SOLD -1 GWRE @206.645, ACCOUNT *****746SCHW"
+  },
+  "instrument": "stock",
+  "paper": false,
+  "action": "SOLD",
+  "symbol": "GWRE",
+  "qty": 1,
+  "fill": 206.645,
+  "option": null,
+  "computed": {
+    "month": "2026-08",
+    "dte": -1,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "stock",
+    "text": "exit long GWRE at 206.645"
+  },
+  "trade_role": "close",
+  "pos_side": "long",
+  "contract_key": "STK|GWRE"
+}
