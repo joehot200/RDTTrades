@@ -1,9 +1,6 @@
 {
-  "generated_at": "2026-08-31T17:52:58.112Z",
+  "generated_at": "2026-08-31T17:53:16.351Z",
   "latest_commit_message": "long DOCU at 65.47",
-  "latest_processed_trade_id": "ea5a8812e992",
-  "processed_trade_ids_this_run": [
-    "d6c34076ed2b",
-    "ea5a8812e992"
-  ]
+  "latest_processed_trade_id": null,
+  "processed_trade_ids_this_run": []
 }
