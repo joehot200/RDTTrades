@@ -202,5 +202,39 @@
     "trade_role": "open",
     "pos_side": "long",
     "contract_key": "STK|CTSH"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "f31e8826278f",
+    "received_at": "2026-08-31T19:25:04.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-08-31T19:38:28+00:00--1a059484cdfdb83a.json",
+      "archived_path": "inbox/processed/2026-08/2026-08-31T19:38:28+00:00--1a059484cdfdb83a.json",
+      "raw_id": "1a059484cdfdb83a",
+      "ingested_at": "2026-08-31T19:38:28.000Z"
+    },
+    "raw": {
+      "text": "#129540045196 SOLD -7 DOCU @65.95, ACCOUNT *****746SCHW"
+    },
+    "instrument": "stock",
+    "paper": false,
+    "action": "SOLD",
+    "symbol": "DOCU",
+    "qty": 7,
+    "fill": 65.95,
+    "option": null,
+    "computed": {
+      "month": "2026-08",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "stock",
+      "text": "exit long DOCU at 65.95"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "STK|DOCU"
   }
 ]

@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "completed_trade_id": "214997bc0f12",
+  "status": "closed",
+  "contract_key": "STK|DOCU",
+  "instrument": "stock",
+  "pos_side": "long",
+  "symbol": "DOCU",
+  "option": null,
+  "qty_opened": 1,
+  "qty_closed": 7,
+  "entry": {
+    "trade_id": "214997bc0f12",
+    "received_at": "2026-08-31T17:15:54.000Z",
+    "fill": 65.4,
+    "rdt": "long DOCU at 65.4"
+  },
+  "exits": [
+    {
+      "trade_id": "f31e8826278f",
+      "received_at": "2026-08-31T19:25:04.000Z",
+      "fill": 65.95,
+      "qty": 7,
+      "rdt": "exit long DOCU at 65.95"
+    }
+  ],
+  "pnl": {
+    "realized": 3.84999999999998,
+    "currency": "USD"
+  }
+}
