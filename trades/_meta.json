@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-28T18:20:30.024Z",
-  "latest_commit_message": "long ALGM at 35.875",
-  "latest_processed_trade_id": "ddd97be570e0",
+  "generated_at": "2026-08-31T17:13:10.547Z",
+  "latest_commit_message": "exit long FSLR at 202.32",
+  "latest_processed_trade_id": "29d335269dc5",
   "processed_trade_ids_this_run": [
-    "ddd97be570e0"
+    "29d335269dc5"
   ]
 }
