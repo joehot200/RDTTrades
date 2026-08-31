@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "completed_trade_id": "f58cb6e242ec",
+  "status": "closed",
+  "contract_key": "STK|CRCL",
+  "instrument": "stock",
+  "pos_side": "long",
+  "symbol": "CRCL",
+  "option": null,
+  "qty_opened": 1,
+  "qty_closed": 1,
+  "entry": {
+    "trade_id": "f58cb6e242ec",
+    "received_at": "2026-08-31T17:14:18.000Z",
+    "fill": 93.54,
+    "rdt": "long CRCL at 93.54"
+  },
+  "exits": [
+    {
+      "trade_id": "c927ead06843",
+      "received_at": "2026-08-31T19:40:01.000Z",
+      "fill": 95.7901,
+      "qty": 1,
+      "rdt": "exit long CRCL at 95.7901"
+    }
+  ],
+  "pnl": {
+    "realized": 2.250099999999989,
+    "currency": "USD"
+  }
+}
