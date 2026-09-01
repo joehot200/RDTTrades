@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "trade_id": "bad73d520e98",
+  "received_at": "2026-09-01T13:30:15.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-09-01T13:32:24+00:00--1a05d2a8be92a73b.json",
+    "archived_path": "inbox/processed/2026-09/2026-09-01T13:32:24+00:00--1a05d2a8be92a73b.json",
+    "raw_id": "1a05d2a8be92a73b",
+    "ingested_at": "2026-09-01T13:32:24.000Z"
+  },
+  "raw": {
+    "text": "#129575462484 SOLD -28 CTSH @64.26, ACCOUNT *****746SCHW"
+  },
+  "instrument": "stock",
+  "paper": false,
+  "action": "SOLD",
+  "symbol": "CTSH",
+  "qty": 28,
+  "fill": 64.26,
+  "option": null,
+  "computed": {
+    "month": "2026-09",
+    "dte": -1,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "stock",
+    "text": "exit long CTSH at 64.26"
+  },
+  "trade_role": "close",
+  "pos_side": "long",
+  "contract_key": "STK|CTSH"
+}
