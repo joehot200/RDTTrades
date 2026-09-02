@@ -202,5 +202,107 @@
     "trade_role": "close",
     "pos_side": "long",
     "contract_key": "STK|AMAT"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "6e06f2eae8d2",
+    "received_at": "2026-09-02T13:59:46.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-09-02T14:15:06+00:00--1a0626b30b2cc7ea.json",
+      "archived_path": "inbox/processed/2026-09/2026-09-02T14:15:06+00:00--1a0626b30b2cc7ea.json",
+      "raw_id": "1a0626b30b2cc7ea",
+      "ingested_at": "2026-09-02T14:15:06.000Z"
+    },
+    "raw": {
+      "text": "#129704755771 BOT +1 CRM @262.56, ACCOUNT *****746SCHW"
+    },
+    "instrument": "stock",
+    "paper": false,
+    "action": "BOT",
+    "symbol": "CRM",
+    "qty": 1,
+    "fill": 262.56,
+    "option": null,
+    "computed": {
+      "month": "2026-09",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "stock",
+      "text": "long CRM at 262.56"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "STK|CRM"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "8b28ac89912c",
+    "received_at": "2026-09-02T14:06:00.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-09-02T14:15:05+00:00--1a06270e6209fa14.json",
+      "archived_path": "inbox/processed/2026-09/2026-09-02T14:15:05+00:00--1a06270e6209fa14.json",
+      "raw_id": "1a06270e6209fa14",
+      "ingested_at": "2026-09-02T14:15:05.000Z"
+    },
+    "raw": {
+      "text": "#129708588229 SOLD -1 AMAT @436.97, ACCOUNT *****746SCHW"
+    },
+    "instrument": "stock",
+    "paper": false,
+    "action": "SOLD",
+    "symbol": "AMAT",
+    "qty": 1,
+    "fill": 436.97,
+    "option": null,
+    "computed": {
+      "month": "2026-09",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "stock",
+      "text": "exit long AMAT at 436.97"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "STK|AMAT"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "09331698a0e4",
+    "received_at": "2026-09-02T14:06:49.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-09-02T14:15:02+00:00--1a06271a6a37ca19.json",
+      "archived_path": "inbox/processed/2026-09/2026-09-02T14:15:02+00:00--1a06271a6a37ca19.json",
+      "raw_id": "1a06271a6a37ca19",
+      "ingested_at": "2026-09-02T14:15:02.000Z"
+    },
+    "raw": {
+      "text": "#129708589242 BOT +1 FSLR @199.895, ACCOUNT *****746SCHW"
+    },
+    "instrument": "stock",
+    "paper": false,
+    "action": "BOT",
+    "symbol": "FSLR",
+    "qty": 1,
+    "fill": 199.895,
+    "option": null,
+    "computed": {
+      "month": "2026-09",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "stock",
+      "text": "long FSLR at 199.895"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "STK|FSLR"
   }
 ]
