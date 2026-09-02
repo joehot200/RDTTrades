@@ -1,0 +1,33 @@
+[
+  {
+    "schema_version": 1,
+    "completed_trade_id": "6e06f2eae8d2",
+    "status": "closed",
+    "contract_key": "STK|CRM",
+    "instrument": "stock",
+    "pos_side": "long",
+    "symbol": "CRM",
+    "option": null,
+    "qty_opened": 1,
+    "qty_closed": 2,
+    "entry": {
+      "trade_id": "6e06f2eae8d2",
+      "received_at": "2026-09-02T13:59:46.000Z",
+      "fill": 262.56,
+      "rdt": "long CRM at 262.56"
+    },
+    "exits": [
+      {
+        "trade_id": "58ea6189efe9",
+        "received_at": "2026-09-02T17:09:40.000Z",
+        "fill": 254.145,
+        "qty": 2,
+        "rdt": "exit long CRM at 254.145"
+      }
+    ],
+    "pnl": {
+      "realized": -16.829999999999984,
+      "currency": "USD"
+    }
+  }
+]

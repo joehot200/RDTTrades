@@ -372,5 +372,73 @@
     "trade_role": "open",
     "pos_side": "long",
     "contract_key": "STK|HPQ"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "57c808ed3082",
+    "received_at": "2026-09-02T17:04:30.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-09-02T17:18:21+00:00--1a06314519da9f3f.json",
+      "archived_path": "inbox/processed/2026-09/2026-09-02T17:18:21+00:00--1a06314519da9f3f.json",
+      "raw_id": "1a06314519da9f3f",
+      "ingested_at": "2026-09-02T17:18:21.000Z"
+    },
+    "raw": {
+      "text": "#129754609467 BOT +40 HPQ @32.2731, ACCOUNT *****746SCHW"
+    },
+    "instrument": "stock",
+    "paper": false,
+    "action": "BOT",
+    "symbol": "HPQ",
+    "qty": 40,
+    "fill": 32.2731,
+    "option": null,
+    "computed": {
+      "month": "2026-09",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "stock",
+      "text": "long HPQ at 32.2731"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "STK|HPQ"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "58ea6189efe9",
+    "received_at": "2026-09-02T17:09:40.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-09-02T17:18:19+00:00--1a063190cb693348.json",
+      "archived_path": "inbox/processed/2026-09/2026-09-02T17:18:19+00:00--1a063190cb693348.json",
+      "raw_id": "1a063190cb693348",
+      "ingested_at": "2026-09-02T17:18:19.000Z"
+    },
+    "raw": {
+      "text": "#129756712190 SOLD -2 CRM @254.145, ACCOUNT *****746SCHW"
+    },
+    "instrument": "stock",
+    "paper": false,
+    "action": "SOLD",
+    "symbol": "CRM",
+    "qty": 2,
+    "fill": 254.145,
+    "option": null,
+    "computed": {
+      "month": "2026-09",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "stock",
+      "text": "exit long CRM at 254.145"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "STK|CRM"
   }
 ]
