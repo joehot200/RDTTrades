@@ -1,9 +1,6 @@
 {
-  "generated_at": "2026-09-02T17:18:35.144Z",
+  "generated_at": "2026-09-02T17:18:55.450Z",
   "latest_commit_message": "exit long CRM at 254.145",
-  "latest_processed_trade_id": "58ea6189efe9",
-  "processed_trade_ids_this_run": [
-    "57c808ed3082",
-    "58ea6189efe9"
-  ]
+  "latest_processed_trade_id": null,
+  "processed_trade_ids_this_run": []
 }
