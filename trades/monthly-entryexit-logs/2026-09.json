@@ -32,5 +32,141 @@
     "trade_role": "close",
     "pos_side": "long",
     "contract_key": "STK|CTSH"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "821f3eaf1398",
+    "received_at": "2026-09-02T13:34:56.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-09-02T13:41:33+00:00--1a06254721d8378c.json",
+      "archived_path": "inbox/processed/2026-09/2026-09-02T13:41:33+00:00--1a06254721d8378c.json",
+      "raw_id": "1a06254721d8378c",
+      "ingested_at": "2026-09-02T13:41:33.000Z"
+    },
+    "raw": {
+      "text": "#129695206445 SOLD -1 FSLR @203.30, ACCOUNT *****746SCHW"
+    },
+    "instrument": "stock",
+    "paper": false,
+    "action": "SOLD",
+    "symbol": "FSLR",
+    "qty": 1,
+    "fill": 203.3,
+    "option": null,
+    "computed": {
+      "month": "2026-09",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "stock",
+      "text": "exit long FSLR at 203.3"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "STK|FSLR"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "4ae6ba2b8acf",
+    "received_at": "2026-09-02T13:36:16.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-09-02T13:41:32+00:00--1a06255ab2d7fe2a.json",
+      "archived_path": "inbox/processed/2026-09/2026-09-02T13:41:32+00:00--1a06255ab2d7fe2a.json",
+      "raw_id": "1a06255ab2d7fe2a",
+      "ingested_at": "2026-09-02T13:41:32.000Z"
+    },
+    "raw": {
+      "text": "#129696923126 BOT +3 FSLR @202.55, ACCOUNT *****746SCHW"
+    },
+    "instrument": "stock",
+    "paper": false,
+    "action": "BOT",
+    "symbol": "FSLR",
+    "qty": 3,
+    "fill": 202.55,
+    "option": null,
+    "computed": {
+      "month": "2026-09",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "stock",
+      "text": "long FSLR at 202.55"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "STK|FSLR"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "bd5d86cc60e9",
+    "received_at": "2026-09-02T13:37:36.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-09-02T13:41:31+00:00--1a06256e4f32781b.json",
+      "archived_path": "inbox/processed/2026-09/2026-09-02T13:41:31+00:00--1a06256e4f32781b.json",
+      "raw_id": "1a06256e4f32781b",
+      "ingested_at": "2026-09-02T13:41:31.000Z"
+    },
+    "raw": {
+      "text": "#129696924455 SOLD -1 FSLR @203.025, ACCOUNT *****746SCHW"
+    },
+    "instrument": "stock",
+    "paper": false,
+    "action": "SOLD",
+    "symbol": "FSLR",
+    "qty": 1,
+    "fill": 203.025,
+    "option": null,
+    "computed": {
+      "month": "2026-09",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "stock",
+      "text": "exit long FSLR at 203.025"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "STK|FSLR"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "d9cb62e0aba2",
+    "received_at": "2026-09-02T13:38:29.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-09-02T13:41:30+00:00--1a06257b32c5daa7.json",
+      "archived_path": "inbox/processed/2026-09/2026-09-02T13:41:30+00:00--1a06257b32c5daa7.json",
+      "raw_id": "1a06257b32c5daa7",
+      "ingested_at": "2026-09-02T13:41:30.000Z"
+    },
+    "raw": {
+      "text": "#129696925014 SOLD -7 IONQ @36.96, ACCOUNT *****746SCHW"
+    },
+    "instrument": "stock",
+    "paper": false,
+    "action": "SOLD",
+    "symbol": "IONQ",
+    "qty": 7,
+    "fill": 36.96,
+    "option": null,
+    "computed": {
+      "month": "2026-09",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "stock",
+      "text": "exit long IONQ at 36.96"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "STK|IONQ"
   }
 ]

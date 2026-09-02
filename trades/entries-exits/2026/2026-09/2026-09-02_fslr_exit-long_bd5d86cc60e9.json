@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "trade_id": "bd5d86cc60e9",
+  "received_at": "2026-09-02T13:37:36.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-09-02T13:41:31+00:00--1a06256e4f32781b.json",
+    "archived_path": "inbox/processed/2026-09/2026-09-02T13:41:31+00:00--1a06256e4f32781b.json",
+    "raw_id": "1a06256e4f32781b",
+    "ingested_at": "2026-09-02T13:41:31.000Z"
+  },
+  "raw": {
+    "text": "#129696924455 SOLD -1 FSLR @203.025, ACCOUNT *****746SCHW"
+  },
+  "instrument": "stock",
+  "paper": false,
+  "action": "SOLD",
+  "symbol": "FSLR",
+  "qty": 1,
+  "fill": 203.025,
+  "option": null,
+  "computed": {
+    "month": "2026-09",
+    "dte": -1,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "stock",
+    "text": "exit long FSLR at 203.025"
+  },
+  "trade_role": "close",
+  "pos_side": "long",
+  "contract_key": "STK|FSLR"
+}

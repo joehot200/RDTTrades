@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "trade_id": "4ae6ba2b8acf",
+  "received_at": "2026-09-02T13:36:16.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-09-02T13:41:32+00:00--1a06255ab2d7fe2a.json",
+    "archived_path": "inbox/processed/2026-09/2026-09-02T13:41:32+00:00--1a06255ab2d7fe2a.json",
+    "raw_id": "1a06255ab2d7fe2a",
+    "ingested_at": "2026-09-02T13:41:32.000Z"
+  },
+  "raw": {
+    "text": "#129696923126 BOT +3 FSLR @202.55, ACCOUNT *****746SCHW"
+  },
+  "instrument": "stock",
+  "paper": false,
+  "action": "BOT",
+  "symbol": "FSLR",
+  "qty": 3,
+  "fill": 202.55,
+  "option": null,
+  "computed": {
+    "month": "2026-09",
+    "dte": -1,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "stock",
+    "text": "long FSLR at 202.55"
+  },
+  "trade_role": "open",
+  "pos_side": "long",
+  "contract_key": "STK|FSLR"
+}
