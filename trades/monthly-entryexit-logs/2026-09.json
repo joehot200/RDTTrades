@@ -850,5 +850,43 @@
     "trade_role": "open",
     "pos_side": "long",
     "contract_key": "OPT|QQQ|2026-09-08|717|C"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "6fc8b8aa0d86",
+    "received_at": "2026-09-04T16:36:54.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-09-04T16:40:44+00:00--1a06d47c4737fc8e.json",
+      "archived_path": "inbox/processed/2026-09/2026-09-04T16:40:44+00:00--1a06d47c4737fc8e.json",
+      "raw_id": "1a06d47c4737fc8e",
+      "ingested_at": "2026-09-04T16:40:44.000Z"
+    },
+    "raw": {
+      "text": "#15105908659 PAPERMONEY SOLD -1 QQQ 100 (Weeklys) 8 SEP 26 717 CALL @3.98, ACCOUNT D-******81"
+    },
+    "instrument": "option",
+    "paper": true,
+    "action": "SOLD",
+    "symbol": "QQQ",
+    "qty": 1,
+    "fill": 3.98,
+    "option": {
+      "expiry": "2026-09-08",
+      "strike": 717,
+      "right": "C"
+    },
+    "computed": {
+      "month": "2026-09",
+      "dte": 4,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "exit long QQQ $717 Call for 09/08 at 3.98"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "OPT|QQQ|2026-09-08|717|C"
   }
 ]
