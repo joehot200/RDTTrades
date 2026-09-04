@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "trade_id": "6b43d428934b",
+  "received_at": "2026-09-04T17:03:17.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-09-04T17:10:17+00:00--1a06d5ff86b1698e.json",
+    "archived_path": "inbox/processed/2026-09/2026-09-04T17:10:17+00:00--1a06d5ff86b1698e.json",
+    "raw_id": "1a06d5ff86b1698e",
+    "ingested_at": "2026-09-04T17:10:17.000Z"
+  },
+  "raw": {
+    "text": "#15105941108 PAPERMONEY BOT +1 QQQ 100 (Weeklys) 8 SEP 26 719 PUT @2.97, ACCOUNT D-******81"
+  },
+  "instrument": "option",
+  "paper": true,
+  "action": "BOT",
+  "symbol": "QQQ",
+  "qty": 1,
+  "fill": 2.97,
+  "option": {
+    "expiry": "2026-09-08",
+    "strike": 719,
+    "right": "P"
+  },
+  "computed": {
+    "month": "2026-09",
+    "dte": 4,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "options",
+    "text": "short QQQ $719 Put for 09/08 at 2.97"
+  },
+  "trade_role": "open",
+  "pos_side": "long",
+  "contract_key": "OPT|QQQ|2026-09-08|719|P"
+}
