@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "completed_trade_id": "8f977ea43be3",
+  "status": "closed",
+  "contract_key": "OPT|QQQ|2026-09-08|717|C",
+  "instrument": "option",
+  "pos_side": "long",
+  "symbol": "QQQ",
+  "option": {
+    "expiry": "2026-09-08",
+    "strike": 717,
+    "right": "C"
+  },
+  "qty_opened": 1,
+  "qty_closed": 1,
+  "entry": {
+    "trade_id": "8f977ea43be3",
+    "received_at": "2026-09-04T16:47:10.000Z",
+    "fill": 4.02,
+    "rdt": "long QQQ $717 Call for 09/08 at 4.02"
+  },
+  "exits": [
+    {
+      "trade_id": "e314b45f4269",
+      "received_at": "2026-09-04T18:58:49.000Z",
+      "fill": 3.34,
+      "qty": 1,
+      "rdt": "exit long QQQ $717 Call for 09/08 at 3.34"
+    }
+  ],
+  "pnl": {
+    "realized": -67.99999999999997,
+    "currency": "USD"
+  }
+}
