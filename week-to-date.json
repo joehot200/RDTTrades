@@ -1312,5 +1312,43 @@
     "trade_role": "close",
     "pos_side": "long",
     "contract_key": "OPT|QQQ|2026-09-08|719|P"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "f555ac1a07c9",
+    "received_at": "2026-09-04T18:21:55.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-09-04T18:25:23+00:00--1a06da7ec32d6cba.json",
+      "archived_path": "inbox/processed/2026-09/2026-09-04T18:25:23+00:00--1a06da7ec32d6cba.json",
+      "raw_id": "1a06da7ec32d6cba",
+      "ingested_at": "2026-09-04T18:25:23.000Z"
+    },
+    "raw": {
+      "text": "#15105999077 PAPERMONEY BOT +1 QQQ 100 (Weeklys) 8 SEP 26 717 CALL @3.05, ACCOUNT D-******81"
+    },
+    "instrument": "option",
+    "paper": true,
+    "action": "BOT",
+    "symbol": "QQQ",
+    "qty": 1,
+    "fill": 3.05,
+    "option": {
+      "expiry": "2026-09-08",
+      "strike": 717,
+      "right": "C"
+    },
+    "computed": {
+      "month": "2026-09",
+      "dte": 4,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "long QQQ $717 Call for 09/08 at 3.05"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "OPT|QQQ|2026-09-08|717|C"
   }
 ]
