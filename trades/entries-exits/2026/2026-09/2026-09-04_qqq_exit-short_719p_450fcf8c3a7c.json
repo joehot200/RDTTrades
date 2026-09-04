@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "trade_id": "450fcf8c3a7c",
+  "received_at": "2026-09-04T17:10:27.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-09-04T17:24:30+00:00--1a06d667d5c107af.json",
+    "archived_path": "inbox/processed/2026-09/2026-09-04T17:24:30+00:00--1a06d667d5c107af.json",
+    "raw_id": "1a06d667d5c107af",
+    "ingested_at": "2026-09-04T17:24:30.000Z"
+  },
+  "raw": {
+    "text": "#15105950794 PAPERMONEY SOLD -1 QQQ 100 (Weeklys) 8 SEP 26 719 PUT @3.08, ACCOUNT D-******81"
+  },
+  "instrument": "option",
+  "paper": true,
+  "action": "SOLD",
+  "symbol": "QQQ",
+  "qty": 1,
+  "fill": 3.08,
+  "option": {
+    "expiry": "2026-09-08",
+    "strike": 719,
+    "right": "P"
+  },
+  "computed": {
+    "month": "2026-09",
+    "dte": 4,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "options",
+    "text": "exit short QQQ $719 Put for 09/08 at 3.08"
+  },
+  "trade_role": "close",
+  "pos_side": "long",
+  "contract_key": "OPT|QQQ|2026-09-08|719|P"
+}
