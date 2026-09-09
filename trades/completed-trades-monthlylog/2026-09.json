@@ -554,5 +554,40 @@
       "realized": 18.000000000000014,
       "currency": "USD"
     }
+  },
+  {
+    "schema_version": 1,
+    "completed_trade_id": "42533ddb64af",
+    "status": "closed",
+    "contract_key": "OPT|QQQ|2026-09-14|720|C",
+    "instrument": "option",
+    "pos_side": "long",
+    "symbol": "QQQ",
+    "option": {
+      "expiry": "2026-09-14",
+      "strike": 720,
+      "right": "C"
+    },
+    "qty_opened": 1,
+    "qty_closed": 1,
+    "entry": {
+      "trade_id": "42533ddb64af",
+      "received_at": "2026-09-09T16:44:39.000Z",
+      "fill": 3.84,
+      "rdt": "long QQQ $720 Call for 09/14 at 3.84"
+    },
+    "exits": [
+      {
+        "trade_id": "0e609835d48a",
+        "received_at": "2026-09-09T16:48:33.000Z",
+        "fill": 3.97,
+        "qty": 1,
+        "rdt": "exit long QQQ $720 Call for 09/14 at 3.97"
+      }
+    ],
+    "pnl": {
+      "realized": 13.000000000000034,
+      "currency": "USD"
+    }
   }
 ]
