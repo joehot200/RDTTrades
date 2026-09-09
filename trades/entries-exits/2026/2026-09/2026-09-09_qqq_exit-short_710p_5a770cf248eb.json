@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "trade_id": "5a770cf248eb",
+  "received_at": "2026-09-09T15:18:32.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-09-09T15:32:10+00:00--1a086bfd274989e8.json",
+    "archived_path": "inbox/processed/2026-09/2026-09-09T15:32:10+00:00--1a086bfd274989e8.json",
+    "raw_id": "1a086bfd274989e8",
+    "ingested_at": "2026-09-09T15:32:10.000Z"
+  },
+  "raw": {
+    "text": "#130220418015 SOLD -1 QQQ 100 (Weeklys) 14 SEP 26 710 PUT @3.49, ACCOUNT *****746SCHW"
+  },
+  "instrument": "option",
+  "paper": false,
+  "action": "SOLD",
+  "symbol": "QQQ",
+  "qty": 1,
+  "fill": 3.49,
+  "option": {
+    "expiry": "2026-09-14",
+    "strike": 710,
+    "right": "P"
+  },
+  "computed": {
+    "month": "2026-09",
+    "dte": 5,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "options",
+    "text": "exit short QQQ $710 Put for 09/14 at 3.49"
+  },
+  "trade_role": "close",
+  "pos_side": "long",
+  "contract_key": "OPT|QQQ|2026-09-14|710|P"
+}
