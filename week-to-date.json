@@ -298,5 +298,153 @@
     "trade_role": "close",
     "pos_side": "long",
     "contract_key": "OPT|QQQ|2026-09-14|715|P"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "2ad472474cd7",
+    "received_at": "2026-09-09T14:52:44.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-09-09T15:03:06+00:00--1a086a8329900c90.json",
+      "archived_path": "inbox/processed/2026-09/2026-09-09T15:03:06+00:00--1a086a8329900c90.json",
+      "raw_id": "1a086a8329900c90",
+      "ingested_at": "2026-09-09T15:03:06.000Z"
+    },
+    "raw": {
+      "text": "#130211786163 SOLD -1 QQQ 100 (Weeklys) 14 SEP 26 720 CALL @4.70, ACCOUNT *****746SCHW"
+    },
+    "instrument": "option",
+    "paper": false,
+    "action": "SOLD",
+    "symbol": "QQQ",
+    "qty": 1,
+    "fill": 4.7,
+    "option": {
+      "expiry": "2026-09-14",
+      "strike": 720,
+      "right": "C"
+    },
+    "computed": {
+      "month": "2026-09",
+      "dte": 5,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "exit long QQQ $720 Call for 09/14 at 4.7"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "OPT|QQQ|2026-09-14|720|C"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "a91ea3a04941",
+    "received_at": "2026-09-09T14:55:01.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-09-09T15:03:03+00:00--1a086aa4b3ba09f2.json",
+      "archived_path": "inbox/processed/2026-09/2026-09-09T15:03:03+00:00--1a086aa4b3ba09f2.json",
+      "raw_id": "1a086aa4b3ba09f2",
+      "ingested_at": "2026-09-09T15:03:03.000Z"
+    },
+    "raw": {
+      "text": "#130213103349 SOLD -2 INTC @105.55, ACCOUNT *****746SCHW"
+    },
+    "instrument": "stock",
+    "paper": false,
+    "action": "SOLD",
+    "symbol": "INTC",
+    "qty": 2,
+    "fill": 105.55,
+    "option": null,
+    "computed": {
+      "month": "2026-09",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "stock",
+      "text": "exit long INTC at 105.55"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "STK|INTC"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "9ce3f347ff3f",
+    "received_at": "2026-09-09T14:58:44.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-09-09T15:03:04+00:00--1a086adb71b007a1.json",
+      "archived_path": "inbox/processed/2026-09/2026-09-09T15:03:04+00:00--1a086adb71b007a1.json",
+      "raw_id": "1a086adb71b007a1",
+      "ingested_at": "2026-09-09T15:03:04.000Z"
+    },
+    "raw": {
+      "text": "#130213105743 BOT +1 QQQ 100 (Weeklys) 14 SEP 26 720 CALL @4.78, ACCOUNT *****746SCHW"
+    },
+    "instrument": "option",
+    "paper": false,
+    "action": "BOT",
+    "symbol": "QQQ",
+    "qty": 1,
+    "fill": 4.78,
+    "option": {
+      "expiry": "2026-09-14",
+      "strike": 720,
+      "right": "C"
+    },
+    "computed": {
+      "month": "2026-09",
+      "dte": 5,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "long QQQ $720 Call for 09/14 at 4.78"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "OPT|QQQ|2026-09-14|720|C"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "8ca38a4df256",
+    "received_at": "2026-09-09T15:01:35.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-09-09T15:03:03+00:00--1a086b04e72f8cdb.json",
+      "archived_path": "inbox/processed/2026-09/2026-09-09T15:03:03+00:00--1a086b04e72f8cdb.json",
+      "raw_id": "1a086b04e72f8cdb",
+      "ingested_at": "2026-09-09T15:03:03.000Z"
+    },
+    "raw": {
+      "text": "#130215052829 SOLD -1 QQQ 100 (Weeklys) 14 SEP 26 720 CALL @4.55, ACCOUNT *****746SCHW"
+    },
+    "instrument": "option",
+    "paper": false,
+    "action": "SOLD",
+    "symbol": "QQQ",
+    "qty": 1,
+    "fill": 4.55,
+    "option": {
+      "expiry": "2026-09-14",
+      "strike": 720,
+      "right": "C"
+    },
+    "computed": {
+      "month": "2026-09",
+      "dte": 5,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "exit long QQQ $720 Call for 09/14 at 4.55"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "OPT|QQQ|2026-09-14|720|C"
   }
 ]

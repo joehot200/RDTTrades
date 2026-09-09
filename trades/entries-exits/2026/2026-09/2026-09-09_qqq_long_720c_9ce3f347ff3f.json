@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "trade_id": "9ce3f347ff3f",
+  "received_at": "2026-09-09T14:58:44.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-09-09T15:03:04+00:00--1a086adb71b007a1.json",
+    "archived_path": "inbox/processed/2026-09/2026-09-09T15:03:04+00:00--1a086adb71b007a1.json",
+    "raw_id": "1a086adb71b007a1",
+    "ingested_at": "2026-09-09T15:03:04.000Z"
+  },
+  "raw": {
+    "text": "#130213105743 BOT +1 QQQ 100 (Weeklys) 14 SEP 26 720 CALL @4.78, ACCOUNT *****746SCHW"
+  },
+  "instrument": "option",
+  "paper": false,
+  "action": "BOT",
+  "symbol": "QQQ",
+  "qty": 1,
+  "fill": 4.78,
+  "option": {
+    "expiry": "2026-09-14",
+    "strike": 720,
+    "right": "C"
+  },
+  "computed": {
+    "month": "2026-09",
+    "dte": 5,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "options",
+    "text": "long QQQ $720 Call for 09/14 at 4.78"
+  },
+  "trade_role": "open",
+  "pos_side": "long",
+  "contract_key": "OPT|QQQ|2026-09-14|720|C"
+}
