@@ -1268,5 +1268,77 @@
     "trade_role": "close",
     "pos_side": "long",
     "contract_key": "OPT|QQQ|2026-09-14|720|C"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "850616e4d37a",
+    "received_at": "2026-09-09T14:05:32.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-09-09T14:18:48+00:00--1a0867d0032cae80.json",
+      "archived_path": "inbox/processed/2026-09/2026-09-09T14:18:48+00:00--1a0867d0032cae80.json",
+      "raw_id": "1a0867d0032cae80",
+      "ingested_at": "2026-09-09T14:18:48.000Z"
+    },
+    "raw": {
+      "text": "#130196270311 BOT +2 INTC @105.945, ACCOUNT *****746SCHW"
+    },
+    "instrument": "stock",
+    "paper": false,
+    "action": "BOT",
+    "symbol": "INTC",
+    "qty": 2,
+    "fill": 105.945,
+    "option": null,
+    "computed": {
+      "month": "2026-09",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "stock",
+      "text": "long INTC at 105.945"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "STK|INTC"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "bf8e23dc5dbb",
+    "received_at": "2026-09-09T14:09:42.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-09-09T14:18:47+00:00--1a08680cc4addf8a.json",
+      "archived_path": "inbox/processed/2026-09/2026-09-09T14:18:47+00:00--1a08680cc4addf8a.json",
+      "raw_id": "1a08680cc4addf8a",
+      "ingested_at": "2026-09-09T14:18:47.000Z"
+    },
+    "raw": {
+      "text": "#130198039103 BOT +1 QQQ 100 (Weeklys) 14 SEP 26 715 PUT @3.86, ACCOUNT *****746SCHW"
+    },
+    "instrument": "option",
+    "paper": false,
+    "action": "BOT",
+    "symbol": "QQQ",
+    "qty": 1,
+    "fill": 3.86,
+    "option": {
+      "expiry": "2026-09-14",
+      "strike": 715,
+      "right": "P"
+    },
+    "computed": {
+      "month": "2026-09",
+      "dte": 5,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "short QQQ $715 Put for 09/14 at 3.86"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "OPT|QQQ|2026-09-14|715|P"
   }
 ]
