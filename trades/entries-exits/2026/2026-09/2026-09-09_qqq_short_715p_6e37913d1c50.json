@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "trade_id": "6e37913d1c50",
+  "received_at": "2026-09-09T15:06:35.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-09-09T15:17:31+00:00--1a086b4e151b2d2b.json",
+    "archived_path": "inbox/processed/2026-09/2026-09-09T15:17:31+00:00--1a086b4e151b2d2b.json",
+    "raw_id": "1a086b4e151b2d2b",
+    "ingested_at": "2026-09-09T15:17:31.000Z"
+  },
+  "raw": {
+    "text": "#130216952066 BOT +1 QQQ 100 (Weeklys) 14 SEP 26 715 PUT @4.78, ACCOUNT *****746SCHW"
+  },
+  "instrument": "option",
+  "paper": false,
+  "action": "BOT",
+  "symbol": "QQQ",
+  "qty": 1,
+  "fill": 4.78,
+  "option": {
+    "expiry": "2026-09-14",
+    "strike": 715,
+    "right": "P"
+  },
+  "computed": {
+    "month": "2026-09",
+    "dte": 5,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "options",
+    "text": "short QQQ $715 Put for 09/14 at 4.78"
+  },
+  "trade_role": "open",
+  "pos_side": "long",
+  "contract_key": "OPT|QQQ|2026-09-14|715|P"
+}
