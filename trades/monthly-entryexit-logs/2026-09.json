@@ -1416,5 +1416,81 @@
     "trade_role": "close",
     "pos_side": "long",
     "contract_key": "OPT|QQQ|2026-09-14|720|C"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "2ce01cf1fd8b",
+    "received_at": "2026-09-09T14:38:58.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-09-09T14:49:27+00:00--1a0869b98641bf1e.json",
+      "archived_path": "inbox/processed/2026-09/2026-09-09T14:49:27+00:00--1a0869b98641bf1e.json",
+      "raw_id": "1a0869b98641bf1e",
+      "ingested_at": "2026-09-09T14:49:27.000Z"
+    },
+    "raw": {
+      "text": "#130208767295 BOT +1 QQQ 100 (Weeklys) 14 SEP 26 715 PUT @4.51, ACCOUNT *****746SCHW"
+    },
+    "instrument": "option",
+    "paper": false,
+    "action": "BOT",
+    "symbol": "QQQ",
+    "qty": 1,
+    "fill": 4.51,
+    "option": {
+      "expiry": "2026-09-14",
+      "strike": 715,
+      "right": "P"
+    },
+    "computed": {
+      "month": "2026-09",
+      "dte": 5,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "short QQQ $715 Put for 09/14 at 4.51"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "OPT|QQQ|2026-09-14|715|P"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "671993070dc9",
+    "received_at": "2026-09-09T14:41:07.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-09-09T14:49:26+00:00--1a0869d9011204eb.json",
+      "archived_path": "inbox/processed/2026-09/2026-09-09T14:49:26+00:00--1a0869d9011204eb.json",
+      "raw_id": "1a0869d9011204eb",
+      "ingested_at": "2026-09-09T14:49:26.000Z"
+    },
+    "raw": {
+      "text": "#130208769793 SOLD -1 QQQ 100 (Weeklys) 14 SEP 26 715 PUT @4.29, ACCOUNT *****746SCHW"
+    },
+    "instrument": "option",
+    "paper": false,
+    "action": "SOLD",
+    "symbol": "QQQ",
+    "qty": 1,
+    "fill": 4.29,
+    "option": {
+      "expiry": "2026-09-14",
+      "strike": 715,
+      "right": "P"
+    },
+    "computed": {
+      "month": "2026-09",
+      "dte": 5,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "exit short QQQ $715 Put for 09/14 at 4.29"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "OPT|QQQ|2026-09-14|715|P"
   }
 ]
