@@ -1,9 +1,6 @@
 {
-  "generated_at": "2026-09-09T16:46:33.936Z",
+  "generated_at": "2026-09-09T16:46:52.211Z",
   "latest_commit_message": "long QQQ $720 Call for 09/14 at 3.84",
-  "latest_processed_trade_id": "42533ddb64af",
-  "processed_trade_ids_this_run": [
-    "306ab5357be0",
-    "42533ddb64af"
-  ]
+  "latest_processed_trade_id": null,
+  "processed_trade_ids_this_run": []
 }
