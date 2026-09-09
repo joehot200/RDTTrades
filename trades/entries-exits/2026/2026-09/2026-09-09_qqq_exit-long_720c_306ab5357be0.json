@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "trade_id": "306ab5357be0",
+  "received_at": "2026-09-09T16:37:16.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-09-09T16:46:16+00:00--1a08707e6076bb5f.json",
+    "archived_path": "inbox/processed/2026-09/2026-09-09T16:46:16+00:00--1a08707e6076bb5f.json",
+    "raw_id": "1a08707e6076bb5f",
+    "ingested_at": "2026-09-09T16:46:16.000Z"
+  },
+  "raw": {
+    "text": "#130239367306 SOLD -1 QQQ 100 (Weeklys) 14 SEP 26 720 CALL @3.66, ACCOUNT *****746SCHW"
+  },
+  "instrument": "option",
+  "paper": false,
+  "action": "SOLD",
+  "symbol": "QQQ",
+  "qty": 1,
+  "fill": 3.66,
+  "option": {
+    "expiry": "2026-09-14",
+    "strike": 720,
+    "right": "C"
+  },
+  "computed": {
+    "month": "2026-09",
+    "dte": 5,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "options",
+    "text": "exit long QQQ $720 Call for 09/14 at 3.66"
+  },
+  "trade_role": "close",
+  "pos_side": "long",
+  "contract_key": "OPT|QQQ|2026-09-14|720|C"
+}
