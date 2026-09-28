@@ -2210,5 +2210,43 @@
     "trade_role": "open",
     "pos_side": "long",
     "contract_key": "OPT|QQQ|2026-10-02|737|P"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "45c0e97a6d2b",
+    "received_at": "2026-09-28T19:54:06.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-09-28T20:05:38+00:00--1a0e994f252c827d.json",
+      "archived_path": "inbox/processed/2026-09/2026-09-28T20:05:38+00:00--1a0e994f252c827d.json",
+      "raw_id": "1a0e994f252c827d",
+      "ingested_at": "2026-09-28T20:05:38.000Z"
+    },
+    "raw": {
+      "text": "#15116910773 PAPERMONEY SOLD -1 QQQ 100 (Weeklys) 2 OCT 26 737 PUT @6.52, ACCOUNT D-******81"
+    },
+    "instrument": "option",
+    "paper": true,
+    "action": "SOLD",
+    "symbol": "QQQ",
+    "qty": 1,
+    "fill": 6.52,
+    "option": {
+      "expiry": "2026-10-02",
+      "strike": 737,
+      "right": "P"
+    },
+    "computed": {
+      "month": "2026-09",
+      "dte": 4,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "exit short QQQ $737 Put for 10/02 at 6.52"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "OPT|QQQ|2026-10-02|737|P"
   }
 ]
