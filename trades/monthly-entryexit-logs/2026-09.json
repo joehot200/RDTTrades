@@ -2320,5 +2320,43 @@
     "trade_role": "open",
     "pos_side": "long",
     "contract_key": "OPT|QQQ|2026-10-02|744|P"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "3a829b38dc29",
+    "received_at": "2026-09-30T16:43:57.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-09-30T16:57:15+00:00--1a0f3339018cbf2c.json",
+      "archived_path": "inbox/processed/2026-09/2026-09-30T16:57:15+00:00--1a0f3339018cbf2c.json",
+      "raw_id": "1a0f3339018cbf2c",
+      "ingested_at": "2026-09-30T16:57:15.000Z"
+    },
+    "raw": {
+      "text": "#15119376645 PAPERMONEY SOLD -1 QQQ 100 (Weeklys) 2 OCT 26 744 PUT @4.41, ACCOUNT D-******81"
+    },
+    "instrument": "option",
+    "paper": true,
+    "action": "SOLD",
+    "symbol": "QQQ",
+    "qty": 1,
+    "fill": 4.41,
+    "option": {
+      "expiry": "2026-10-02",
+      "strike": 744,
+      "right": "P"
+    },
+    "computed": {
+      "month": "2026-09",
+      "dte": 2,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "exit short QQQ $744 Put for 10/02 at 4.41"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "OPT|QQQ|2026-10-02|744|P"
   }
 ]
