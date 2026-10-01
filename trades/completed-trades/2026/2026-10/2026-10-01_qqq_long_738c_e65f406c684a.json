@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "completed_trade_id": "e65f406c684a",
+  "status": "closed",
+  "contract_key": "OPT|QQQ|2026-10-05|738|C",
+  "instrument": "option",
+  "pos_side": "long",
+  "symbol": "QQQ",
+  "option": {
+    "expiry": "2026-10-05",
+    "strike": 738,
+    "right": "C"
+  },
+  "qty_opened": 1,
+  "qty_closed": 1,
+  "entry": {
+    "trade_id": "e65f406c684a",
+    "received_at": "2026-10-01T15:25:07.000Z",
+    "fill": 6.1,
+    "rdt": "long QQQ $738 Call for 10/05 at 6.1"
+  },
+  "exits": [
+    {
+      "trade_id": "a87376d6417c",
+      "received_at": "2026-10-01T15:28:30.000Z",
+      "fill": 6.47,
+      "qty": 1,
+      "rdt": "exit long QQQ $738 Call for 10/05 at 6.47"
+    }
+  ],
+  "pnl": {
+    "realized": 37.000000000000014,
+    "currency": "USD"
+  }
+}
