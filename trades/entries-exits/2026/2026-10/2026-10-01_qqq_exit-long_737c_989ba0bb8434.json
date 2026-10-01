@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "trade_id": "989ba0bb8434",
+  "received_at": "2026-10-01T15:44:11.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-10-01T15:53:23+00:00--1a0f82336eb7a2d4.json",
+    "archived_path": "inbox/processed/2026-10/2026-10-01T15:53:23+00:00--1a0f82336eb7a2d4.json",
+    "raw_id": "1a0f82336eb7a2d4",
+    "ingested_at": "2026-10-01T15:53:23.000Z"
+  },
+  "raw": {
+    "text": "#15120555800 PAPERMONEY SOLD -1 QQQ 100 (Weeklys) 5 OCT 26 737 CALL @5.50, ACCOUNT D-******81"
+  },
+  "instrument": "option",
+  "paper": true,
+  "action": "SOLD",
+  "symbol": "QQQ",
+  "qty": 1,
+  "fill": 5.5,
+  "option": {
+    "expiry": "2026-10-05",
+    "strike": 737,
+    "right": "C"
+  },
+  "computed": {
+    "month": "2026-10",
+    "dte": 4,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "options",
+    "text": "exit long QQQ $737 Call for 10/05 at 5.5"
+  },
+  "trade_role": "close",
+  "pos_side": "long",
+  "contract_key": "OPT|QQQ|2026-10-05|737|C"
+}
