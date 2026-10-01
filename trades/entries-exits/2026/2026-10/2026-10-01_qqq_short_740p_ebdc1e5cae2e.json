@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "trade_id": "ebdc1e5cae2e",
+  "received_at": "2026-10-01T14:59:56.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-10-01T15:05:38+00:00--1a0f7fab0c37a68c.json",
+    "archived_path": "inbox/processed/2026-10/2026-10-01T15:05:38+00:00--1a0f7fab0c37a68c.json",
+    "raw_id": "1a0f7fab0c37a68c",
+    "ingested_at": "2026-10-01T15:05:38.000Z"
+  },
+  "raw": {
+    "text": "#15120474085 PAPERMONEY BOT +1 QQQ 100 (Weeklys) 5 OCT 26 740 PUT @5.95, ACCOUNT D-******81"
+  },
+  "instrument": "option",
+  "paper": true,
+  "action": "BOT",
+  "symbol": "QQQ",
+  "qty": 1,
+  "fill": 5.95,
+  "option": {
+    "expiry": "2026-10-05",
+    "strike": 740,
+    "right": "P"
+  },
+  "computed": {
+    "month": "2026-10",
+    "dte": 4,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "options",
+    "text": "short QQQ $740 Put for 10/05 at 5.95"
+  },
+  "trade_role": "open",
+  "pos_side": "long",
+  "contract_key": "OPT|QQQ|2026-10-05|740|P"
+}
