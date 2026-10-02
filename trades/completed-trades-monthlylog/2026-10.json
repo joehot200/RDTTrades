@@ -173,5 +173,40 @@
       "realized": 45.000000000000014,
       "currency": "USD"
     }
+  },
+  {
+    "schema_version": 1,
+    "completed_trade_id": "e01747c0119d",
+    "status": "closed",
+    "contract_key": "OPT|QQQ|2026-10-06|751|P",
+    "instrument": "option",
+    "pos_side": "long",
+    "symbol": "QQQ",
+    "option": {
+      "expiry": "2026-10-06",
+      "strike": 751,
+      "right": "P"
+    },
+    "qty_opened": 1,
+    "qty_closed": 1,
+    "entry": {
+      "trade_id": "e01747c0119d",
+      "received_at": "2026-10-02T15:46:59.000Z",
+      "fill": 4.79,
+      "rdt": "short QQQ $751 Put for 10/06 at 4.79"
+    },
+    "exits": [
+      {
+        "trade_id": "771e92fc94cb",
+        "received_at": "2026-10-02T16:01:21.000Z",
+        "fill": 4.69,
+        "qty": 1,
+        "rdt": "exit short QQQ $751 Put for 10/06 at 4.69"
+      }
+    ],
+    "pnl": {
+      "realized": -9.999999999999964,
+      "currency": "USD"
+    }
   }
 ]
