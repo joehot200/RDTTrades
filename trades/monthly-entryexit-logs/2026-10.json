@@ -568,5 +568,43 @@
     "trade_role": "open",
     "pos_side": "long",
     "contract_key": "OPT|QQQ|2026-10-09|754|P"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "3f70fab4ed91",
+    "received_at": "2026-10-05T16:43:48.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-10-05T16:48:27+00:00--1a10cf33b29db48d.json",
+      "archived_path": "inbox/processed/2026-10/2026-10-05T16:48:27+00:00--1a10cf33b29db48d.json",
+      "raw_id": "1a10cf33b29db48d",
+      "ingested_at": "2026-10-05T16:48:27.000Z"
+    },
+    "raw": {
+      "text": "#15122641459 PAPERMONEY BOT +1 QQQ 100 (Weeklys) 9 OCT 26 754 CALL @5.77, ACCOUNT D-******81"
+    },
+    "instrument": "option",
+    "paper": true,
+    "action": "BOT",
+    "symbol": "QQQ",
+    "qty": 1,
+    "fill": 5.77,
+    "option": {
+      "expiry": "2026-10-09",
+      "strike": 754,
+      "right": "C"
+    },
+    "computed": {
+      "month": "2026-10",
+      "dte": 4,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "long QQQ $754 Call for 10/09 at 5.77"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "OPT|QQQ|2026-10-09|754|C"
   }
 ]
