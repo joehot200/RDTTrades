@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "trade_id": "9c7879d0625c",
+  "received_at": "2026-10-05T18:57:27.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-10-05T19:09:55+00:00--1a10d6d98cfb8459.json",
+    "archived_path": "inbox/processed/2026-10/2026-10-05T19:09:55+00:00--1a10d6d98cfb8459.json",
+    "raw_id": "1a10d6d98cfb8459",
+    "ingested_at": "2026-10-05T19:09:55.000Z"
+  },
+  "raw": {
+    "text": "#15122752860 PAPERMONEY SOLD -1 QQQ 100 (Weeklys) 7 OCT 26 757 PUT @4.24, ACCOUNT D-******81"
+  },
+  "instrument": "option",
+  "paper": true,
+  "action": "SOLD",
+  "symbol": "QQQ",
+  "qty": 1,
+  "fill": 4.24,
+  "option": {
+    "expiry": "2026-10-07",
+    "strike": 757,
+    "right": "P"
+  },
+  "computed": {
+    "month": "2026-10",
+    "dte": 2,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "options",
+    "text": "exit short QQQ $757 Put for 10/07 at 4.24"
+  },
+  "trade_role": "close",
+  "pos_side": "long",
+  "contract_key": "OPT|QQQ|2026-10-07|757|P"
+}
