@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "completed_trade_id": "40de27f08eae",
+  "status": "closed",
+  "contract_key": "OPT|QQQ|2026-10-07|755|C",
+  "instrument": "option",
+  "pos_side": "long",
+  "symbol": "QQQ",
+  "option": {
+    "expiry": "2026-10-07",
+    "strike": 755,
+    "right": "C"
+  },
+  "qty_opened": 1,
+  "qty_closed": 1,
+  "entry": {
+    "trade_id": "40de27f08eae",
+    "received_at": "2026-10-05T19:19:22.000Z",
+    "fill": 4.85,
+    "rdt": "long QQQ $755 Call for 10/07 at 4.85"
+  },
+  "exits": [
+    {
+      "trade_id": "c56aa45f20de",
+      "received_at": "2026-10-05T19:32:29.000Z",
+      "fill": 4.69,
+      "qty": 1,
+      "rdt": "exit long QQQ $755 Call for 10/07 at 4.69"
+    }
+  ],
+  "pnl": {
+    "realized": -15.999999999999925,
+    "currency": "USD"
+  }
+}
