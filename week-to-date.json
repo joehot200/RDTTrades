@@ -416,5 +416,43 @@
     "trade_role": "open",
     "pos_side": "long",
     "contract_key": "OPT|QQQ|2026-10-12|762|P"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "7a14ad65f97b",
+    "received_at": "2026-10-06T18:03:52.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-10-06T18:05:24+00:00--1a11262e54861de5.json",
+      "archived_path": "inbox/processed/2026-10/2026-10-06T18:05:24+00:00--1a11262e54861de5.json",
+      "raw_id": "1a11262e54861de5",
+      "ingested_at": "2026-10-06T18:05:24.000Z"
+    },
+    "raw": {
+      "text": "#15123336180 PAPERMONEY SOLD -1 QQQ 100 (Weeklys) 12 OCT 26 762 PUT @5.34, ACCOUNT D-******81"
+    },
+    "instrument": "option",
+    "paper": true,
+    "action": "SOLD",
+    "symbol": "QQQ",
+    "qty": 1,
+    "fill": 5.34,
+    "option": {
+      "expiry": "2026-10-12",
+      "strike": 762,
+      "right": "P"
+    },
+    "computed": {
+      "month": "2026-10",
+      "dte": 6,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "exit short QQQ $762 Put for 10/12 at 5.34"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "OPT|QQQ|2026-10-12|762|P"
   }
 ]
