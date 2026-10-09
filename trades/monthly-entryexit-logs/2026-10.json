@@ -986,5 +986,43 @@
     "trade_role": "open",
     "pos_side": "long",
     "contract_key": "OPT|QQQ|2026-10-12|750|P"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "88fedac4721d",
+    "received_at": "2026-10-09T14:25:14.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-10-09T14:36:44+00:00--1a1210dcf41869ad.json",
+      "archived_path": "inbox/processed/2026-10/2026-10-09T14:36:44+00:00--1a1210dcf41869ad.json",
+      "raw_id": "1a1210dcf41869ad",
+      "ingested_at": "2026-10-09T14:36:44.000Z"
+    },
+    "raw": {
+      "text": "#15124957890 PAPERMONEY SOLD -1 QQQ 100 (Weeklys) 12 OCT 26 750 PUT @3.09, ACCOUNT D-******81"
+    },
+    "instrument": "option",
+    "paper": true,
+    "action": "SOLD",
+    "symbol": "QQQ",
+    "qty": 1,
+    "fill": 3.09,
+    "option": {
+      "expiry": "2026-10-12",
+      "strike": 750,
+      "right": "P"
+    },
+    "computed": {
+      "month": "2026-10",
+      "dte": 3,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "options",
+      "text": "exit short QQQ $750 Put for 10/12 at 3.09"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "OPT|QQQ|2026-10-12|750|P"
   }
 ]
