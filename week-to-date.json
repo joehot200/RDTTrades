@@ -530,5 +530,39 @@
     "trade_role": "close",
     "pos_side": "long",
     "contract_key": "OPT|QQQ|2026-10-12|750|P"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "24aed9a1c4e9",
+    "received_at": "2026-10-09T15:33:08.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-10-09T15:40:19+00:00--1a1214bf901e0cca.json",
+      "archived_path": "inbox/processed/2026-10/2026-10-09T15:40:19+00:00--1a1214bf901e0cca.json",
+      "raw_id": "1a1214bf901e0cca",
+      "ingested_at": "2026-10-09T15:40:19.000Z"
+    },
+    "raw": {
+      "text": "#15125088339 PAPERMONEY BOT +1 CIEN @443.80, ACCOUNT D-******81"
+    },
+    "instrument": "stock",
+    "paper": true,
+    "action": "BOT",
+    "symbol": "CIEN",
+    "qty": 1,
+    "fill": 443.8,
+    "option": null,
+    "computed": {
+      "month": "2026-10",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "stock",
+      "text": "long CIEN at 443.8"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "STK|CIEN"
   }
 ]
