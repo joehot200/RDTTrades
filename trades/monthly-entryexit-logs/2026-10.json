@@ -1058,5 +1058,39 @@
     "trade_role": "open",
     "pos_side": "long",
     "contract_key": "STK|CIEN"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "c1bb9f9a2145",
+    "received_at": "2026-10-09T15:46:57.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-10-09T15:54:31+00:00--1a121589e87bffdd.json",
+      "archived_path": "inbox/processed/2026-10/2026-10-09T15:54:31+00:00--1a121589e87bffdd.json",
+      "raw_id": "1a121589e87bffdd",
+      "ingested_at": "2026-10-09T15:54:31.000Z"
+    },
+    "raw": {
+      "text": "#15125108311 PAPERMONEY SOLD -1 CIEN @441.26, ACCOUNT D-******81"
+    },
+    "instrument": "stock",
+    "paper": true,
+    "action": "SOLD",
+    "symbol": "CIEN",
+    "qty": 1,
+    "fill": 441.26,
+    "option": null,
+    "computed": {
+      "month": "2026-10",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "stock",
+      "text": "exit long CIEN at 441.26"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "STK|CIEN"
   }
 ]

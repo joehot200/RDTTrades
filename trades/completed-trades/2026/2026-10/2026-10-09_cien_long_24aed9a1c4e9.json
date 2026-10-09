@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "completed_trade_id": "24aed9a1c4e9",
+  "status": "closed",
+  "contract_key": "STK|CIEN",
+  "instrument": "stock",
+  "pos_side": "long",
+  "symbol": "CIEN",
+  "option": null,
+  "qty_opened": 1,
+  "qty_closed": 1,
+  "entry": {
+    "trade_id": "24aed9a1c4e9",
+    "received_at": "2026-10-09T15:33:08.000Z",
+    "fill": 443.8,
+    "rdt": "long CIEN at 443.8"
+  },
+  "exits": [
+    {
+      "trade_id": "c1bb9f9a2145",
+      "received_at": "2026-10-09T15:46:57.000Z",
+      "fill": 441.26,
+      "qty": 1,
+      "rdt": "exit long CIEN at 441.26"
+    }
+  ],
+  "pnl": {
+    "realized": -2.5400000000000205,
+    "currency": "USD"
+  }
+}
