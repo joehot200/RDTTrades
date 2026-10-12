@@ -1,9 +1,6 @@
 {
-  "generated_at": "2026-10-12T16:41:38.574Z",
+  "generated_at": "2026-10-12T16:41:55.882Z",
   "latest_commit_message": "long SHOP at 176.44",
-  "latest_processed_trade_id": "ce6da1544b09",
-  "processed_trade_ids_this_run": [
-    "6d11ef0f9fad",
-    "ce6da1544b09"
-  ]
+  "latest_processed_trade_id": null,
+  "processed_trade_ids_this_run": []
 }
