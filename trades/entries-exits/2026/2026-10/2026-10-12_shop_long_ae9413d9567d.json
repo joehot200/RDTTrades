@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "trade_id": "ae9413d9567d",
+  "received_at": "2026-10-12T18:26:07.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-10-12T18:30:11+00:00--1a1315d693753a9f.json",
+    "archived_path": "inbox/processed/2026-10/2026-10-12T18:30:11+00:00--1a1315d693753a9f.json",
+    "raw_id": "1a1315d693753a9f",
+    "ingested_at": "2026-10-12T18:30:11.000Z"
+  },
+  "raw": {
+    "text": "#133241484387 BOT +1 SHOP @177.37, ACCOUNT *****746SCHW"
+  },
+  "instrument": "stock",
+  "paper": false,
+  "action": "BOT",
+  "symbol": "SHOP",
+  "qty": 1,
+  "fill": 177.37,
+  "option": null,
+  "computed": {
+    "month": "2026-10",
+    "dte": -1,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "stock",
+    "text": "long SHOP at 177.37"
+  },
+  "trade_role": "open",
+  "pos_side": "long",
+  "contract_key": "STK|SHOP"
+}

@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "trade_id": "67fd123c1587",
+  "received_at": "2026-10-12T18:22:59.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-10-12T18:30:12+00:00--1a1315a8eb0c7186.json",
+    "archived_path": "inbox/processed/2026-10/2026-10-12T18:30:12+00:00--1a1315a8eb0c7186.json",
+    "raw_id": "1a1315a8eb0c7186",
+    "ingested_at": "2026-10-12T18:30:12.000Z"
+  },
+  "raw": {
+    "text": "#133241483269 SOLD -1 CPRT @26.635, ACCOUNT *****746SCHW"
+  },
+  "instrument": "stock",
+  "paper": false,
+  "action": "SOLD",
+  "symbol": "CPRT",
+  "qty": 1,
+  "fill": 26.635,
+  "option": null,
+  "computed": {
+    "month": "2026-10",
+    "dte": -1,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "stock",
+    "text": "exit long CPRT at 26.635"
+  },
+  "trade_role": "close",
+  "pos_side": "long",
+  "contract_key": "STK|CPRT"
+}

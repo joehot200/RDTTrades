@@ -202,5 +202,107 @@
     "trade_role": "close",
     "pos_side": "long",
     "contract_key": "STK|SHOP"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "67fd123c1587",
+    "received_at": "2026-10-12T18:22:59.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-10-12T18:30:12+00:00--1a1315a8eb0c7186.json",
+      "archived_path": "inbox/processed/2026-10/2026-10-12T18:30:12+00:00--1a1315a8eb0c7186.json",
+      "raw_id": "1a1315a8eb0c7186",
+      "ingested_at": "2026-10-12T18:30:12.000Z"
+    },
+    "raw": {
+      "text": "#133241483269 SOLD -1 CPRT @26.635, ACCOUNT *****746SCHW"
+    },
+    "instrument": "stock",
+    "paper": false,
+    "action": "SOLD",
+    "symbol": "CPRT",
+    "qty": 1,
+    "fill": 26.635,
+    "option": null,
+    "computed": {
+      "month": "2026-10",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "stock",
+      "text": "exit long CPRT at 26.635"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "STK|CPRT"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "ae9413d9567d",
+    "received_at": "2026-10-12T18:26:07.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-10-12T18:30:11+00:00--1a1315d693753a9f.json",
+      "archived_path": "inbox/processed/2026-10/2026-10-12T18:30:11+00:00--1a1315d693753a9f.json",
+      "raw_id": "1a1315d693753a9f",
+      "ingested_at": "2026-10-12T18:30:11.000Z"
+    },
+    "raw": {
+      "text": "#133241484387 BOT +1 SHOP @177.37, ACCOUNT *****746SCHW"
+    },
+    "instrument": "stock",
+    "paper": false,
+    "action": "BOT",
+    "symbol": "SHOP",
+    "qty": 1,
+    "fill": 177.37,
+    "option": null,
+    "computed": {
+      "month": "2026-10",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "stock",
+      "text": "long SHOP at 177.37"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "STK|SHOP"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "a9dabba0c39b",
+    "received_at": "2026-10-12T18:27:33.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-10-12T18:30:10+00:00--1a1315ebb3fb12ff.json",
+      "archived_path": "inbox/processed/2026-10/2026-10-12T18:30:10+00:00--1a1315ebb3fb12ff.json",
+      "raw_id": "1a1315ebb3fb12ff",
+      "ingested_at": "2026-10-12T18:30:10.000Z"
+    },
+    "raw": {
+      "text": "#133241484815 SOLD -1 APP @272.09, ACCOUNT *****746SCHW"
+    },
+    "instrument": "stock",
+    "paper": false,
+    "action": "SOLD",
+    "symbol": "APP",
+    "qty": 1,
+    "fill": 272.09,
+    "option": null,
+    "computed": {
+      "month": "2026-10",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "stock",
+      "text": "exit long APP at 272.09"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "STK|APP"
   }
 ]

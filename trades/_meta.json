@@ -1,6 +1,10 @@
 {
-  "generated_at": "2026-10-12T17:28:19.743Z",
-  "latest_commit_message": "exit long SHOP at 176.431",
-  "latest_processed_trade_id": null,
-  "processed_trade_ids_this_run": []
+  "generated_at": "2026-10-12T18:30:27.043Z",
+  "latest_commit_message": "exit long APP at 272.09",
+  "latest_processed_trade_id": "a9dabba0c39b",
+  "processed_trade_ids_this_run": [
+    "67fd123c1587",
+    "ae9413d9567d",
+    "a9dabba0c39b"
+  ]
 }

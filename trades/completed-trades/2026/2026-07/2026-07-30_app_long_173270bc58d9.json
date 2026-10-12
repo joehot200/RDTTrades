@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "completed_trade_id": "173270bc58d9",
+  "status": "closed",
+  "contract_key": "STK|APP",
+  "instrument": "stock",
+  "pos_side": "long",
+  "symbol": "APP",
+  "option": null,
+  "qty_opened": 1,
+  "qty_closed": 1,
+  "entry": {
+    "trade_id": "173270bc58d9",
+    "received_at": "2026-07-30T14:34:09.000Z",
+    "fill": 398.73,
+    "rdt": "long APP at 398.73"
+  },
+  "exits": [
+    {
+      "trade_id": "a9dabba0c39b",
+      "received_at": "2026-10-12T18:27:33.000Z",
+      "fill": 272.09,
+      "qty": 1,
+      "rdt": "exit long APP at 272.09"
+    }
+  ],
+  "pnl": {
+    "realized": -126.64000000000004,
+    "currency": "USD"
+  }
+}
