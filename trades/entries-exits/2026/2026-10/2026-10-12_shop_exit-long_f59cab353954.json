@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "trade_id": "f59cab353954",
+  "received_at": "2026-10-12T16:53:53.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-10-12T16:54:52+00:00--1a13108fb487827f.json",
+    "archived_path": "inbox/processed/2026-10/2026-10-12T16:54:52+00:00--1a13108fb487827f.json",
+    "raw_id": "1a13108fb487827f",
+    "ingested_at": "2026-10-12T16:54:52.000Z"
+  },
+  "raw": {
+    "text": "#133223409842 SOLD -1 SHOP @176.2301, ACCOUNT *****746SCHW"
+  },
+  "instrument": "stock",
+  "paper": false,
+  "action": "SOLD",
+  "symbol": "SHOP",
+  "qty": 1,
+  "fill": 176.2301,
+  "option": null,
+  "computed": {
+    "month": "2026-10",
+    "dte": -1,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "stock",
+    "text": "exit long SHOP at 176.2301"
+  },
+  "trade_role": "close",
+  "pos_side": "long",
+  "contract_key": "STK|SHOP"
+}
