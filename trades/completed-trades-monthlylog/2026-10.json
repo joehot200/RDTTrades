@@ -511,5 +511,36 @@
       "realized": -0.15089999999997872,
       "currency": "USD"
     }
+  },
+  {
+    "schema_version": 1,
+    "completed_trade_id": "ae9413d9567d",
+    "status": "closed",
+    "contract_key": "STK|SHOP",
+    "instrument": "stock",
+    "pos_side": "long",
+    "symbol": "SHOP",
+    "option": null,
+    "qty_opened": 1,
+    "qty_closed": 1,
+    "entry": {
+      "trade_id": "ae9413d9567d",
+      "received_at": "2026-10-12T18:26:07.000Z",
+      "fill": 177.37,
+      "rdt": "long SHOP at 177.37"
+    },
+    "exits": [
+      {
+        "trade_id": "5a7bc8d47b25",
+        "received_at": "2026-10-12T18:53:22.000Z",
+        "fill": 177.218,
+        "qty": 1,
+        "rdt": "exit long SHOP at 177.218"
+      }
+    ],
+    "pnl": {
+      "realized": -0.15200000000001523,
+      "currency": "USD"
+    }
   }
 ]
