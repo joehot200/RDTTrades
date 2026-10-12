@@ -406,5 +406,73 @@
     "trade_role": "close",
     "pos_side": "long",
     "contract_key": "STK|INTC"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "0b904e59ee01",
+    "received_at": "2026-10-12T19:02:27.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-10-12T19:12:47+00:00--1a1317eaca1e4f68.json",
+      "archived_path": "inbox/processed/2026-10/2026-10-12T19:12:47+00:00--1a1317eaca1e4f68.json",
+      "raw_id": "1a1317eaca1e4f68",
+      "ingested_at": "2026-10-12T19:12:47.000Z"
+    },
+    "raw": {
+      "text": "#133247409162 BOT +1 KDP @32.6862, ACCOUNT *****746SCHW"
+    },
+    "instrument": "stock",
+    "paper": false,
+    "action": "BOT",
+    "symbol": "KDP",
+    "qty": 1,
+    "fill": 32.6862,
+    "option": null,
+    "computed": {
+      "month": "2026-10",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "stock",
+      "text": "long KDP at 32.6862"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "STK|KDP"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "1a19719df21c",
+    "received_at": "2026-10-12T19:12:30.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-10-12T19:12:46+00:00--1a13187e38f50d79.json",
+      "archived_path": "inbox/processed/2026-10/2026-10-12T19:12:46+00:00--1a13187e38f50d79.json",
+      "raw_id": "1a13187e38f50d79",
+      "ingested_at": "2026-10-12T19:12:46.000Z"
+    },
+    "raw": {
+      "text": "#133250842916 BOT +1 APP @271.93, ACCOUNT *****746SCHW"
+    },
+    "instrument": "stock",
+    "paper": false,
+    "action": "BOT",
+    "symbol": "APP",
+    "qty": 1,
+    "fill": 271.93,
+    "option": null,
+    "computed": {
+      "month": "2026-10",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "stock",
+      "text": "long APP at 271.93"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "STK|APP"
   }
 ]
