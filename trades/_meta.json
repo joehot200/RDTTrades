@@ -1,6 +1,8 @@
 {
-  "generated_at": "2026-10-12T18:30:44.586Z",
-  "latest_commit_message": "exit long APP at 272.09",
-  "latest_processed_trade_id": null,
-  "processed_trade_ids_this_run": []
+  "generated_at": "2026-10-12T18:44:57.306Z",
+  "latest_commit_message": "long CPRT at 26.6067",
+  "latest_processed_trade_id": "696300fe0537",
+  "processed_trade_ids_this_run": [
+    "696300fe0537"
+  ]
 }
