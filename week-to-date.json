@@ -1,556 +1,24 @@
 [
   {
     "schema_version": 1,
-    "trade_id": "0217c2c8e8cb",
-    "received_at": "2026-10-05T16:15:23.000Z",
+    "trade_id": "6d11ef0f9fad",
+    "received_at": "2026-10-12T16:32:33.000Z",
     "source": {
       "system": "zapier_github_inbox",
-      "inbox_path": "inbox/2026-10-05T16:18:53+00:00--1a10cd9371517c98.json",
-      "archived_path": "inbox/processed/2026-10/2026-10-05T16:18:53+00:00--1a10cd9371517c98.json",
-      "raw_id": "1a10cd9371517c98",
-      "ingested_at": "2026-10-05T16:18:53.000Z"
+      "inbox_path": "inbox/2026-10-12T16:41:20+00:00--1a130f57143439b3.json",
+      "archived_path": "inbox/processed/2026-10/2026-10-12T16:41:20+00:00--1a130f57143439b3.json",
+      "raw_id": "1a130f57143439b3",
+      "ingested_at": "2026-10-12T16:41:20.000Z"
     },
     "raw": {
-      "text": "#15122606866 PAPERMONEY BOT +1 QQQ 100 (Weeklys) 9 OCT 26 754 PUT @5.48, ACCOUNT D-******81"
-    },
-    "instrument": "option",
-    "paper": true,
-    "action": "BOT",
-    "symbol": "QQQ",
-    "qty": 1,
-    "fill": 5.48,
-    "option": {
-      "expiry": "2026-10-09",
-      "strike": 754,
-      "right": "P"
-    },
-    "computed": {
-      "month": "2026-10",
-      "dte": 4,
-      "wiki_ok": false
-    },
-    "rdt": {
-      "matched": "options",
-      "text": "short QQQ $754 Put for 10/09 at 5.48"
-    },
-    "trade_role": "open",
-    "pos_side": "long",
-    "contract_key": "OPT|QQQ|2026-10-09|754|P"
-  },
-  {
-    "schema_version": 1,
-    "trade_id": "f82832918a39",
-    "received_at": "2026-10-05T16:31:09.000Z",
-    "source": {
-      "system": "zapier_github_inbox",
-      "inbox_path": "inbox/2026-10-05T16:32:33+00:00--1a10ce7a517987aa.json",
-      "archived_path": "inbox/processed/2026-10/2026-10-05T16:32:33+00:00--1a10ce7a517987aa.json",
-      "raw_id": "1a10ce7a517987aa",
-      "ingested_at": "2026-10-05T16:32:33.000Z"
-    },
-    "raw": {
-      "text": "#15122623529 PAPERMONEY BOT +1 QQQ 100 (Weeklys) 9 OCT 26 754 PUT @5.13, ACCOUNT D-******81"
-    },
-    "instrument": "option",
-    "paper": true,
-    "action": "BOT",
-    "symbol": "QQQ",
-    "qty": 1,
-    "fill": 5.13,
-    "option": {
-      "expiry": "2026-10-09",
-      "strike": 754,
-      "right": "P"
-    },
-    "computed": {
-      "month": "2026-10",
-      "dte": 4,
-      "wiki_ok": false
-    },
-    "rdt": {
-      "matched": "options",
-      "text": "short QQQ $754 Put for 10/09 at 5.13"
-    },
-    "trade_role": "open",
-    "pos_side": "long",
-    "contract_key": "OPT|QQQ|2026-10-09|754|P"
-  },
-  {
-    "schema_version": 1,
-    "trade_id": "3f70fab4ed91",
-    "received_at": "2026-10-05T16:43:48.000Z",
-    "source": {
-      "system": "zapier_github_inbox",
-      "inbox_path": "inbox/2026-10-05T16:48:27+00:00--1a10cf33b29db48d.json",
-      "archived_path": "inbox/processed/2026-10/2026-10-05T16:48:27+00:00--1a10cf33b29db48d.json",
-      "raw_id": "1a10cf33b29db48d",
-      "ingested_at": "2026-10-05T16:48:27.000Z"
-    },
-    "raw": {
-      "text": "#15122641459 PAPERMONEY BOT +1 QQQ 100 (Weeklys) 9 OCT 26 754 CALL @5.77, ACCOUNT D-******81"
-    },
-    "instrument": "option",
-    "paper": true,
-    "action": "BOT",
-    "symbol": "QQQ",
-    "qty": 1,
-    "fill": 5.77,
-    "option": {
-      "expiry": "2026-10-09",
-      "strike": 754,
-      "right": "C"
-    },
-    "computed": {
-      "month": "2026-10",
-      "dte": 4,
-      "wiki_ok": false
-    },
-    "rdt": {
-      "matched": "options",
-      "text": "long QQQ $754 Call for 10/09 at 5.77"
-    },
-    "trade_role": "open",
-    "pos_side": "long",
-    "contract_key": "OPT|QQQ|2026-10-09|754|C"
-  },
-  {
-    "schema_version": 1,
-    "trade_id": "59402fe06b60",
-    "received_at": "2026-10-05T17:00:28.000Z",
-    "source": {
-      "system": "zapier_github_inbox",
-      "inbox_path": "inbox/2026-10-05T17:01:30+00:00--1a10d027d790dab1.json",
-      "archived_path": "inbox/processed/2026-10/2026-10-05T17:01:30+00:00--1a10d027d790dab1.json",
-      "raw_id": "1a10d027d790dab1",
-      "ingested_at": "2026-10-05T17:01:30.000Z"
-    },
-    "raw": {
-      "text": "#15122658308 PAPERMONEY SOLD -1 QQQ 100 (Weeklys) 9 OCT 26 754 CALL @5.46, ACCOUNT D-******81"
-    },
-    "instrument": "option",
-    "paper": true,
-    "action": "SOLD",
-    "symbol": "QQQ",
-    "qty": 1,
-    "fill": 5.46,
-    "option": {
-      "expiry": "2026-10-09",
-      "strike": 754,
-      "right": "C"
-    },
-    "computed": {
-      "month": "2026-10",
-      "dte": 4,
-      "wiki_ok": false
-    },
-    "rdt": {
-      "matched": "options",
-      "text": "exit long QQQ $754 Call for 10/09 at 5.46"
-    },
-    "trade_role": "close",
-    "pos_side": "long",
-    "contract_key": "OPT|QQQ|2026-10-09|754|C"
-  },
-  {
-    "schema_version": 1,
-    "trade_id": "d38c825c4bad",
-    "received_at": "2026-10-05T18:46:15.000Z",
-    "source": {
-      "system": "zapier_github_inbox",
-      "inbox_path": "inbox/2026-10-05T18:56:43+00:00--1a10d635925e4483.json",
-      "archived_path": "inbox/processed/2026-10/2026-10-05T18:56:43+00:00--1a10d635925e4483.json",
-      "raw_id": "1a10d635925e4483",
-      "ingested_at": "2026-10-05T18:56:43.000Z"
-    },
-    "raw": {
-      "text": "#15122744343 PAPERMONEY BOT +1 QQQ 100 (Weeklys) 7 OCT 26 757 PUT @4.29, ACCOUNT D-******81"
-    },
-    "instrument": "option",
-    "paper": true,
-    "action": "BOT",
-    "symbol": "QQQ",
-    "qty": 1,
-    "fill": 4.29,
-    "option": {
-      "expiry": "2026-10-07",
-      "strike": 757,
-      "right": "P"
-    },
-    "computed": {
-      "month": "2026-10",
-      "dte": 2,
-      "wiki_ok": false
-    },
-    "rdt": {
-      "matched": "options",
-      "text": "short QQQ $757 Put for 10/07 at 4.29"
-    },
-    "trade_role": "open",
-    "pos_side": "long",
-    "contract_key": "OPT|QQQ|2026-10-07|757|P"
-  },
-  {
-    "schema_version": 1,
-    "trade_id": "9c7879d0625c",
-    "received_at": "2026-10-05T18:57:27.000Z",
-    "source": {
-      "system": "zapier_github_inbox",
-      "inbox_path": "inbox/2026-10-05T19:09:55+00:00--1a10d6d98cfb8459.json",
-      "archived_path": "inbox/processed/2026-10/2026-10-05T19:09:55+00:00--1a10d6d98cfb8459.json",
-      "raw_id": "1a10d6d98cfb8459",
-      "ingested_at": "2026-10-05T19:09:55.000Z"
-    },
-    "raw": {
-      "text": "#15122752860 PAPERMONEY SOLD -1 QQQ 100 (Weeklys) 7 OCT 26 757 PUT @4.24, ACCOUNT D-******81"
-    },
-    "instrument": "option",
-    "paper": true,
-    "action": "SOLD",
-    "symbol": "QQQ",
-    "qty": 1,
-    "fill": 4.24,
-    "option": {
-      "expiry": "2026-10-07",
-      "strike": 757,
-      "right": "P"
-    },
-    "computed": {
-      "month": "2026-10",
-      "dte": 2,
-      "wiki_ok": false
-    },
-    "rdt": {
-      "matched": "options",
-      "text": "exit short QQQ $757 Put for 10/07 at 4.24"
-    },
-    "trade_role": "close",
-    "pos_side": "long",
-    "contract_key": "OPT|QQQ|2026-10-07|757|P"
-  },
-  {
-    "schema_version": 1,
-    "trade_id": "77ddc2f509a8",
-    "received_at": "2026-10-05T18:57:50.000Z",
-    "source": {
-      "system": "zapier_github_inbox",
-      "inbox_path": "inbox/2026-10-05T19:09:54+00:00--1a10d6df1d57585d.json",
-      "archived_path": "inbox/processed/2026-10/2026-10-05T19:09:54+00:00--1a10d6df1d57585d.json",
-      "raw_id": "1a10d6df1d57585d",
-      "ingested_at": "2026-10-05T19:09:54.000Z"
-    },
-    "raw": {
-      "text": "#15122753201 PAPERMONEY BOT +1 QQQ 100 (Weeklys) 7 OCT 26 754 CALL @4.69, ACCOUNT D-******81"
-    },
-    "instrument": "option",
-    "paper": true,
-    "action": "BOT",
-    "symbol": "QQQ",
-    "qty": 1,
-    "fill": 4.69,
-    "option": {
-      "expiry": "2026-10-07",
-      "strike": 754,
-      "right": "C"
-    },
-    "computed": {
-      "month": "2026-10",
-      "dte": 2,
-      "wiki_ok": false
-    },
-    "rdt": {
-      "matched": "options",
-      "text": "long QQQ $754 Call for 10/07 at 4.69"
-    },
-    "trade_role": "open",
-    "pos_side": "long",
-    "contract_key": "OPT|QQQ|2026-10-07|754|C"
-  },
-  {
-    "schema_version": 1,
-    "trade_id": "17ac61ffd3d5",
-    "received_at": "2026-10-05T19:05:05.000Z",
-    "source": {
-      "system": "zapier_github_inbox",
-      "inbox_path": "inbox/2026-10-05T19:09:53+00:00--1a10d7493fbdc601.json",
-      "archived_path": "inbox/processed/2026-10/2026-10-05T19:09:53+00:00--1a10d7493fbdc601.json",
-      "raw_id": "1a10d7493fbdc601",
-      "ingested_at": "2026-10-05T19:09:53.000Z"
-    },
-    "raw": {
-      "text": "#15122761977 PAPERMONEY SOLD -1 QQQ 100 (Weeklys) 7 OCT 26 754 CALL @4.99, ACCOUNT D-******81"
-    },
-    "instrument": "option",
-    "paper": true,
-    "action": "SOLD",
-    "symbol": "QQQ",
-    "qty": 1,
-    "fill": 4.99,
-    "option": {
-      "expiry": "2026-10-07",
-      "strike": 754,
-      "right": "C"
-    },
-    "computed": {
-      "month": "2026-10",
-      "dte": 2,
-      "wiki_ok": false
-    },
-    "rdt": {
-      "matched": "options",
-      "text": "exit long QQQ $754 Call for 10/07 at 4.99"
-    },
-    "trade_role": "close",
-    "pos_side": "long",
-    "contract_key": "OPT|QQQ|2026-10-07|754|C"
-  },
-  {
-    "schema_version": 1,
-    "trade_id": "40de27f08eae",
-    "received_at": "2026-10-05T19:19:22.000Z",
-    "source": {
-      "system": "zapier_github_inbox",
-      "inbox_path": "inbox/2026-10-05T19:22:49+00:00--1a10d81a8b302d39.json",
-      "archived_path": "inbox/processed/2026-10/2026-10-05T19:22:49+00:00--1a10d81a8b302d39.json",
-      "raw_id": "1a10d81a8b302d39",
-      "ingested_at": "2026-10-05T19:22:49.000Z"
-    },
-    "raw": {
-      "text": "#15122775550 PAPERMONEY BOT +1 QQQ 100 (Weeklys) 7 OCT 26 755 CALL @4.85, ACCOUNT D-******81"
-    },
-    "instrument": "option",
-    "paper": true,
-    "action": "BOT",
-    "symbol": "QQQ",
-    "qty": 1,
-    "fill": 4.85,
-    "option": {
-      "expiry": "2026-10-07",
-      "strike": 755,
-      "right": "C"
-    },
-    "computed": {
-      "month": "2026-10",
-      "dte": 2,
-      "wiki_ok": false
-    },
-    "rdt": {
-      "matched": "options",
-      "text": "long QQQ $755 Call for 10/07 at 4.85"
-    },
-    "trade_role": "open",
-    "pos_side": "long",
-    "contract_key": "OPT|QQQ|2026-10-07|755|C"
-  },
-  {
-    "schema_version": 1,
-    "trade_id": "c56aa45f20de",
-    "received_at": "2026-10-05T19:32:29.000Z",
-    "source": {
-      "system": "zapier_github_inbox",
-      "inbox_path": "inbox/2026-10-05T19:38:14+00:00--1a10d8dac847e037.json",
-      "archived_path": "inbox/processed/2026-10/2026-10-05T19:38:14+00:00--1a10d8dac847e037.json",
-      "raw_id": "1a10d8dac847e037",
-      "ingested_at": "2026-10-05T19:38:14.000Z"
-    },
-    "raw": {
-      "text": "#15122787347 PAPERMONEY SOLD -1 QQQ 100 (Weeklys) 7 OCT 26 755 CALL @4.69, ACCOUNT D-******81"
-    },
-    "instrument": "option",
-    "paper": true,
-    "action": "SOLD",
-    "symbol": "QQQ",
-    "qty": 1,
-    "fill": 4.69,
-    "option": {
-      "expiry": "2026-10-07",
-      "strike": 755,
-      "right": "C"
-    },
-    "computed": {
-      "month": "2026-10",
-      "dte": 2,
-      "wiki_ok": false
-    },
-    "rdt": {
-      "matched": "options",
-      "text": "exit long QQQ $755 Call for 10/07 at 4.69"
-    },
-    "trade_role": "close",
-    "pos_side": "long",
-    "contract_key": "OPT|QQQ|2026-10-07|755|C"
-  },
-  {
-    "schema_version": 1,
-    "trade_id": "9775c3187471",
-    "received_at": "2026-10-06T17:38:04.000Z",
-    "source": {
-      "system": "zapier_github_inbox",
-      "inbox_path": "inbox/2026-10-06T17:49:00+00:00--1a1124b495d085d7.json",
-      "archived_path": "inbox/processed/2026-10/2026-10-06T17:49:00+00:00--1a1124b495d085d7.json",
-      "raw_id": "1a1124b495d085d7",
-      "ingested_at": "2026-10-06T17:49:00.000Z"
-    },
-    "raw": {
-      "text": "#15123319208 PAPERMONEY BOT +1 QQQ 100 (Weeklys) 12 OCT 26 762 PUT @5.57, ACCOUNT D-******81"
-    },
-    "instrument": "option",
-    "paper": true,
-    "action": "BOT",
-    "symbol": "QQQ",
-    "qty": 1,
-    "fill": 5.57,
-    "option": {
-      "expiry": "2026-10-12",
-      "strike": 762,
-      "right": "P"
-    },
-    "computed": {
-      "month": "2026-10",
-      "dte": 6,
-      "wiki_ok": false
-    },
-    "rdt": {
-      "matched": "options",
-      "text": "short QQQ $762 Put for 10/12 at 5.57"
-    },
-    "trade_role": "open",
-    "pos_side": "long",
-    "contract_key": "OPT|QQQ|2026-10-12|762|P"
-  },
-  {
-    "schema_version": 1,
-    "trade_id": "7a14ad65f97b",
-    "received_at": "2026-10-06T18:03:52.000Z",
-    "source": {
-      "system": "zapier_github_inbox",
-      "inbox_path": "inbox/2026-10-06T18:05:24+00:00--1a11262e54861de5.json",
-      "archived_path": "inbox/processed/2026-10/2026-10-06T18:05:24+00:00--1a11262e54861de5.json",
-      "raw_id": "1a11262e54861de5",
-      "ingested_at": "2026-10-06T18:05:24.000Z"
-    },
-    "raw": {
-      "text": "#15123336180 PAPERMONEY SOLD -1 QQQ 100 (Weeklys) 12 OCT 26 762 PUT @5.34, ACCOUNT D-******81"
-    },
-    "instrument": "option",
-    "paper": true,
-    "action": "SOLD",
-    "symbol": "QQQ",
-    "qty": 1,
-    "fill": 5.34,
-    "option": {
-      "expiry": "2026-10-12",
-      "strike": 762,
-      "right": "P"
-    },
-    "computed": {
-      "month": "2026-10",
-      "dte": 6,
-      "wiki_ok": false
-    },
-    "rdt": {
-      "matched": "options",
-      "text": "exit short QQQ $762 Put for 10/12 at 5.34"
-    },
-    "trade_role": "close",
-    "pos_side": "long",
-    "contract_key": "OPT|QQQ|2026-10-12|762|P"
-  },
-  {
-    "schema_version": 1,
-    "trade_id": "251d4995ca71",
-    "received_at": "2026-10-09T13:47:26.000Z",
-    "source": {
-      "system": "zapier_github_inbox",
-      "inbox_path": "inbox/2026-10-09T13:54:34+00:00--1a120eb3ad8234c0.json",
-      "archived_path": "inbox/processed/2026-10/2026-10-09T13:54:34+00:00--1a120eb3ad8234c0.json",
-      "raw_id": "1a120eb3ad8234c0",
-      "ingested_at": "2026-10-09T13:54:34.000Z"
-    },
-    "raw": {
-      "text": "#15124865716 PAPERMONEY BOT +1 QQQ 100 (Weeklys) 12 OCT 26 750 PUT @3.76, ACCOUNT D-******81"
-    },
-    "instrument": "option",
-    "paper": true,
-    "action": "BOT",
-    "symbol": "QQQ",
-    "qty": 1,
-    "fill": 3.76,
-    "option": {
-      "expiry": "2026-10-12",
-      "strike": 750,
-      "right": "P"
-    },
-    "computed": {
-      "month": "2026-10",
-      "dte": 3,
-      "wiki_ok": false
-    },
-    "rdt": {
-      "matched": "options",
-      "text": "short QQQ $750 Put for 10/12 at 3.76"
-    },
-    "trade_role": "open",
-    "pos_side": "long",
-    "contract_key": "OPT|QQQ|2026-10-12|750|P"
-  },
-  {
-    "schema_version": 1,
-    "trade_id": "88fedac4721d",
-    "received_at": "2026-10-09T14:25:14.000Z",
-    "source": {
-      "system": "zapier_github_inbox",
-      "inbox_path": "inbox/2026-10-09T14:36:44+00:00--1a1210dcf41869ad.json",
-      "archived_path": "inbox/processed/2026-10/2026-10-09T14:36:44+00:00--1a1210dcf41869ad.json",
-      "raw_id": "1a1210dcf41869ad",
-      "ingested_at": "2026-10-09T14:36:44.000Z"
-    },
-    "raw": {
-      "text": "#15124957890 PAPERMONEY SOLD -1 QQQ 100 (Weeklys) 12 OCT 26 750 PUT @3.09, ACCOUNT D-******81"
-    },
-    "instrument": "option",
-    "paper": true,
-    "action": "SOLD",
-    "symbol": "QQQ",
-    "qty": 1,
-    "fill": 3.09,
-    "option": {
-      "expiry": "2026-10-12",
-      "strike": 750,
-      "right": "P"
-    },
-    "computed": {
-      "month": "2026-10",
-      "dte": 3,
-      "wiki_ok": false
-    },
-    "rdt": {
-      "matched": "options",
-      "text": "exit short QQQ $750 Put for 10/12 at 3.09"
-    },
-    "trade_role": "close",
-    "pos_side": "long",
-    "contract_key": "OPT|QQQ|2026-10-12|750|P"
-  },
-  {
-    "schema_version": 1,
-    "trade_id": "24aed9a1c4e9",
-    "received_at": "2026-10-09T15:33:08.000Z",
-    "source": {
-      "system": "zapier_github_inbox",
-      "inbox_path": "inbox/2026-10-09T15:40:19+00:00--1a1214bf901e0cca.json",
-      "archived_path": "inbox/processed/2026-10/2026-10-09T15:40:19+00:00--1a1214bf901e0cca.json",
-      "raw_id": "1a1214bf901e0cca",
-      "ingested_at": "2026-10-09T15:40:19.000Z"
-    },
-    "raw": {
-      "text": "#15125088339 PAPERMONEY BOT +1 CIEN @443.80, ACCOUNT D-******81"
+      "text": "#133218885820 BOT +1 INTC @101.26, ACCOUNT *****746SCHW"
     },
     "instrument": "stock",
-    "paper": true,
+    "paper": false,
     "action": "BOT",
-    "symbol": "CIEN",
+    "symbol": "INTC",
     "qty": 1,
-    "fill": 443.8,
+    "fill": 101.26,
     "option": null,
     "computed": {
       "month": "2026-10",
@@ -559,32 +27,32 @@
     },
     "rdt": {
       "matched": "stock",
-      "text": "long CIEN at 443.8"
+      "text": "long INTC at 101.26"
     },
     "trade_role": "open",
     "pos_side": "long",
-    "contract_key": "STK|CIEN"
+    "contract_key": "STK|INTC"
   },
   {
     "schema_version": 1,
-    "trade_id": "c1bb9f9a2145",
-    "received_at": "2026-10-09T15:46:57.000Z",
+    "trade_id": "ce6da1544b09",
+    "received_at": "2026-10-12T16:33:06.000Z",
     "source": {
       "system": "zapier_github_inbox",
-      "inbox_path": "inbox/2026-10-09T15:54:31+00:00--1a121589e87bffdd.json",
-      "archived_path": "inbox/processed/2026-10/2026-10-09T15:54:31+00:00--1a121589e87bffdd.json",
-      "raw_id": "1a121589e87bffdd",
-      "ingested_at": "2026-10-09T15:54:31.000Z"
+      "inbox_path": "inbox/2026-10-12T16:41:19+00:00--1a130f5f3e243432.json",
+      "archived_path": "inbox/processed/2026-10/2026-10-12T16:41:19+00:00--1a130f5f3e243432.json",
+      "raw_id": "1a130f5f3e243432",
+      "ingested_at": "2026-10-12T16:41:19.000Z"
     },
     "raw": {
-      "text": "#15125108311 PAPERMONEY SOLD -1 CIEN @441.26, ACCOUNT D-******81"
+      "text": "#133218886066 BOT +1 SHOP @176.44, ACCOUNT *****746SCHW"
     },
     "instrument": "stock",
-    "paper": true,
-    "action": "SOLD",
-    "symbol": "CIEN",
+    "paper": false,
+    "action": "BOT",
+    "symbol": "SHOP",
     "qty": 1,
-    "fill": 441.26,
+    "fill": 176.44,
     "option": null,
     "computed": {
       "month": "2026-10",
@@ -593,10 +61,10 @@
     },
     "rdt": {
       "matched": "stock",
-      "text": "exit long CIEN at 441.26"
+      "text": "long SHOP at 176.44"
     },
-    "trade_role": "close",
+    "trade_role": "open",
     "pos_side": "long",
-    "contract_key": "STK|CIEN"
+    "contract_key": "STK|SHOP"
   }
 ]

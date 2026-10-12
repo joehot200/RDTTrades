@@ -1092,5 +1092,73 @@
     "trade_role": "close",
     "pos_side": "long",
     "contract_key": "STK|CIEN"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "6d11ef0f9fad",
+    "received_at": "2026-10-12T16:32:33.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-10-12T16:41:20+00:00--1a130f57143439b3.json",
+      "archived_path": "inbox/processed/2026-10/2026-10-12T16:41:20+00:00--1a130f57143439b3.json",
+      "raw_id": "1a130f57143439b3",
+      "ingested_at": "2026-10-12T16:41:20.000Z"
+    },
+    "raw": {
+      "text": "#133218885820 BOT +1 INTC @101.26, ACCOUNT *****746SCHW"
+    },
+    "instrument": "stock",
+    "paper": false,
+    "action": "BOT",
+    "symbol": "INTC",
+    "qty": 1,
+    "fill": 101.26,
+    "option": null,
+    "computed": {
+      "month": "2026-10",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "stock",
+      "text": "long INTC at 101.26"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "STK|INTC"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "ce6da1544b09",
+    "received_at": "2026-10-12T16:33:06.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-10-12T16:41:19+00:00--1a130f5f3e243432.json",
+      "archived_path": "inbox/processed/2026-10/2026-10-12T16:41:19+00:00--1a130f5f3e243432.json",
+      "raw_id": "1a130f5f3e243432",
+      "ingested_at": "2026-10-12T16:41:19.000Z"
+    },
+    "raw": {
+      "text": "#133218886066 BOT +1 SHOP @176.44, ACCOUNT *****746SCHW"
+    },
+    "instrument": "stock",
+    "paper": false,
+    "action": "BOT",
+    "symbol": "SHOP",
+    "qty": 1,
+    "fill": 176.44,
+    "option": null,
+    "computed": {
+      "month": "2026-10",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "stock",
+      "text": "long SHOP at 176.44"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "STK|SHOP"
   }
 ]
