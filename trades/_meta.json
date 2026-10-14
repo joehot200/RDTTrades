@@ -1,9 +1,6 @@
 {
-  "generated_at": "2026-10-14T17:25:21.648Z",
+  "generated_at": "2026-10-14T17:25:38.166Z",
   "latest_commit_message": "long TSLA at 367.255",
-  "latest_processed_trade_id": "83b95a7c7f04",
-  "processed_trade_ids_this_run": [
-    "92edcc3c5c71",
-    "83b95a7c7f04"
-  ]
+  "latest_processed_trade_id": null,
+  "processed_trade_ids_this_run": []
 }
