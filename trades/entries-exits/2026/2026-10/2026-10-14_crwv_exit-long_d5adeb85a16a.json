@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "trade_id": "d5adeb85a16a",
+  "received_at": "2026-10-14T19:35:10.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-10-14T19:41:13+00:00--1a13be9591cb1290.json",
+    "archived_path": "inbox/processed/2026-10/2026-10-14T19:41:13+00:00--1a13be9591cb1290.json",
+    "raw_id": "1a13be9591cb1290",
+    "ingested_at": "2026-10-14T19:41:13.000Z"
+  },
+  "raw": {
+    "text": "#133512410155 SOLD -1 CRWV @65.515, ACCOUNT *****746SCHW"
+  },
+  "instrument": "stock",
+  "paper": false,
+  "action": "SOLD",
+  "symbol": "CRWV",
+  "qty": 1,
+  "fill": 65.515,
+  "option": null,
+  "computed": {
+    "month": "2026-10",
+    "dte": -1,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "stock",
+    "text": "exit long CRWV at 65.515"
+  },
+  "trade_role": "close",
+  "pos_side": "long",
+  "contract_key": "STK|CRWV"
+}
