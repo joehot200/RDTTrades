@@ -678,5 +678,39 @@
     "trade_role": "open",
     "pos_side": "long",
     "contract_key": "STK|WDC"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "b0b11cba2a69",
+    "received_at": "2026-10-14T17:46:24.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-10-14T17:57:26+00:00--1a13b85c96b7ef7e.json",
+      "archived_path": "inbox/processed/2026-10/2026-10-14T17:57:26+00:00--1a13b85c96b7ef7e.json",
+      "raw_id": "1a13b85c96b7ef7e",
+      "ingested_at": "2026-10-14T17:57:26.000Z"
+    },
+    "raw": {
+      "text": "#133487581595 BOT +1 NFLX @70.295, ACCOUNT *****746SCHW"
+    },
+    "instrument": "stock",
+    "paper": false,
+    "action": "BOT",
+    "symbol": "NFLX",
+    "qty": 1,
+    "fill": 70.295,
+    "option": null,
+    "computed": {
+      "month": "2026-10",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "stock",
+      "text": "long NFLX at 70.295"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "STK|NFLX"
   }
 ]
