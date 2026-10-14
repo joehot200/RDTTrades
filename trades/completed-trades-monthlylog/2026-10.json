@@ -573,5 +573,36 @@
       "realized": 0.05389999999999873,
       "currency": "USD"
     }
+  },
+  {
+    "schema_version": 1,
+    "completed_trade_id": "83b95a7c7f04",
+    "status": "closed",
+    "contract_key": "STK|TSLA",
+    "instrument": "stock",
+    "pos_side": "long",
+    "symbol": "TSLA",
+    "option": null,
+    "qty_opened": 1,
+    "qty_closed": 1,
+    "entry": {
+      "trade_id": "83b95a7c7f04",
+      "received_at": "2026-10-14T17:24:07.000Z",
+      "fill": 367.255,
+      "rdt": "long TSLA at 367.255"
+    },
+    "exits": [
+      {
+        "trade_id": "462b8e2d8be2",
+        "received_at": "2026-10-14T17:27:38.000Z",
+        "fill": 366.595,
+        "qty": 1,
+        "rdt": "exit long TSLA at 366.595"
+      }
+    ],
+    "pnl": {
+      "realized": -0.6599999999999682,
+      "currency": "USD"
+    }
   }
 ]

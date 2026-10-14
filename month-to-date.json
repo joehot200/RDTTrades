@@ -1704,5 +1704,73 @@
     "trade_role": "open",
     "pos_side": "long",
     "contract_key": "STK|TSLA"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "462b8e2d8be2",
+    "received_at": "2026-10-14T17:27:38.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-10-14T17:41:31+00:00--1a13b7496b4908a1.json",
+      "archived_path": "inbox/processed/2026-10/2026-10-14T17:41:31+00:00--1a13b7496b4908a1.json",
+      "raw_id": "1a13b7496b4908a1",
+      "ingested_at": "2026-10-14T17:41:31.000Z"
+    },
+    "raw": {
+      "text": "#133485188124 SOLD -1 TSLA @366.595, ACCOUNT *****746SCHW"
+    },
+    "instrument": "stock",
+    "paper": false,
+    "action": "SOLD",
+    "symbol": "TSLA",
+    "qty": 1,
+    "fill": 366.595,
+    "option": null,
+    "computed": {
+      "month": "2026-10",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "stock",
+      "text": "exit long TSLA at 366.595"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "STK|TSLA"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "b44f48b9b9c1",
+    "received_at": "2026-10-14T17:32:16.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-10-14T17:41:30+00:00--1a13b78d6018c0af.json",
+      "archived_path": "inbox/processed/2026-10/2026-10-14T17:41:30+00:00--1a13b78d6018c0af.json",
+      "raw_id": "1a13b78d6018c0af",
+      "ingested_at": "2026-10-14T17:41:30.000Z"
+    },
+    "raw": {
+      "text": "#133485190359 BOT +1 WDC @363.7374, ACCOUNT *****746SCHW"
+    },
+    "instrument": "stock",
+    "paper": false,
+    "action": "BOT",
+    "symbol": "WDC",
+    "qty": 1,
+    "fill": 363.7374,
+    "option": null,
+    "computed": {
+      "month": "2026-10",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "stock",
+      "text": "long WDC at 363.7374"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "STK|WDC"
   }
 ]
