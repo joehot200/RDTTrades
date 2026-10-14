@@ -746,5 +746,39 @@
     "trade_role": "open",
     "pos_side": "long",
     "contract_key": "STK|STX"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "dc82684dbb35",
+    "received_at": "2026-10-14T18:26:20.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-10-14T18:27:45+00:00--1a13baa54b531d16.json",
+      "archived_path": "inbox/processed/2026-10/2026-10-14T18:27:45+00:00--1a13baa54b531d16.json",
+      "raw_id": "1a13baa54b531d16",
+      "ingested_at": "2026-10-14T18:27:45.000Z"
+    },
+    "raw": {
+      "text": "#133497291086 SOLD -1 STX @717.34, ACCOUNT *****746SCHW"
+    },
+    "instrument": "stock",
+    "paper": false,
+    "action": "SOLD",
+    "symbol": "STX",
+    "qty": 1,
+    "fill": 717.34,
+    "option": null,
+    "computed": {
+      "month": "2026-10",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "stock",
+      "text": "exit long STX at 717.34"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "STK|STX"
   }
 ]

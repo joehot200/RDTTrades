@@ -604,5 +604,36 @@
       "realized": -0.6599999999999682,
       "currency": "USD"
     }
+  },
+  {
+    "schema_version": 1,
+    "completed_trade_id": "ece1a1b540f4",
+    "status": "closed",
+    "contract_key": "STK|STX",
+    "instrument": "stock",
+    "pos_side": "long",
+    "symbol": "STX",
+    "option": null,
+    "qty_opened": 1,
+    "qty_closed": 1,
+    "entry": {
+      "trade_id": "ece1a1b540f4",
+      "received_at": "2026-10-14T18:05:31.000Z",
+      "fill": 718.765,
+      "rdt": "long STX at 718.765"
+    },
+    "exits": [
+      {
+        "trade_id": "dc82684dbb35",
+        "received_at": "2026-10-14T18:26:20.000Z",
+        "fill": 717.34,
+        "qty": 1,
+        "rdt": "exit long STX at 717.34"
+      }
+    ],
+    "pnl": {
+      "realized": -1.4249999999999545,
+      "currency": "USD"
+    }
   }
 ]
