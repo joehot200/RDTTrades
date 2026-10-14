@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "completed_trade_id": "b0b11cba2a69",
+  "status": "closed",
+  "contract_key": "STK|NFLX",
+  "instrument": "stock",
+  "pos_side": "long",
+  "symbol": "NFLX",
+  "option": null,
+  "qty_opened": 1,
+  "qty_closed": 1,
+  "entry": {
+    "trade_id": "b0b11cba2a69",
+    "received_at": "2026-10-14T17:46:24.000Z",
+    "fill": 70.295,
+    "rdt": "long NFLX at 70.295"
+  },
+  "exits": [
+    {
+      "trade_id": "597a843f625f",
+      "received_at": "2026-10-14T18:58:02.000Z",
+      "fill": 70.2791,
+      "qty": 1,
+      "rdt": "exit long NFLX at 70.2791"
+    }
+  ],
+  "pnl": {
+    "realized": -0.015900000000002024,
+    "currency": "USD"
+  }
+}

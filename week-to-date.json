@@ -780,5 +780,39 @@
     "trade_role": "close",
     "pos_side": "long",
     "contract_key": "STK|STX"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "597a843f625f",
+    "received_at": "2026-10-14T18:58:02.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-10-14T19:13:24+00:00--1a13bc75dfb5fdb1.json",
+      "archived_path": "inbox/processed/2026-10/2026-10-14T19:13:24+00:00--1a13bc75dfb5fdb1.json",
+      "raw_id": "1a13bc75dfb5fdb1",
+      "ingested_at": "2026-10-14T19:13:24.000Z"
+    },
+    "raw": {
+      "text": "#133504833227 SOLD -1 NFLX @70.2791, ACCOUNT *****746SCHW"
+    },
+    "instrument": "stock",
+    "paper": false,
+    "action": "SOLD",
+    "symbol": "NFLX",
+    "qty": 1,
+    "fill": 70.2791,
+    "option": null,
+    "computed": {
+      "month": "2026-10",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "stock",
+      "text": "exit long NFLX at 70.2791"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "STK|NFLX"
   }
 ]
