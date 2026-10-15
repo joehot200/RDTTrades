@@ -1018,5 +1018,39 @@
     "trade_role": "open",
     "pos_side": "long",
     "contract_key": "STK|CRCL"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "031bcb7da1a3",
+    "received_at": "2026-10-15T13:45:00.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-10-15T13:55:48+00:00--1a13fcf233a11fda.json",
+      "archived_path": "inbox/processed/2026-10/2026-10-15T13:55:48+00:00--1a13fcf233a11fda.json",
+      "raw_id": "1a13fcf233a11fda",
+      "ingested_at": "2026-10-15T13:55:48.000Z"
+    },
+    "raw": {
+      "text": "#133553934994 SOLD -5 CRCL @78.8238, ACCOUNT *****746SCHW"
+    },
+    "instrument": "stock",
+    "paper": false,
+    "action": "SOLD",
+    "symbol": "CRCL",
+    "qty": 5,
+    "fill": 78.8238,
+    "option": null,
+    "computed": {
+      "month": "2026-10",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "stock",
+      "text": "exit long CRCL at 78.8238"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "STK|CRCL"
   }
 ]
