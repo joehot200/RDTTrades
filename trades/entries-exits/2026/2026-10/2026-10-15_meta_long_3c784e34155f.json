@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "trade_id": "3c784e34155f",
+  "received_at": "2026-10-15T19:39:32.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-10-15T19:42:50+00:00--1a14113b61e9f967.json",
+    "archived_path": "inbox/processed/2026-10/2026-10-15T19:42:50+00:00--1a14113b61e9f967.json",
+    "raw_id": "1a14113b61e9f967",
+    "ingested_at": "2026-10-15T19:42:50.000Z"
+  },
+  "raw": {
+    "text": "#133649833637 BOT +1 META @737.655, ACCOUNT *****746SCHW"
+  },
+  "instrument": "stock",
+  "paper": false,
+  "action": "BOT",
+  "symbol": "META",
+  "qty": 1,
+  "fill": 737.655,
+  "option": null,
+  "computed": {
+    "month": "2026-10",
+    "dte": -1,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "stock",
+    "text": "long META at 737.655"
+  },
+  "trade_role": "open",
+  "pos_side": "long",
+  "contract_key": "STK|META"
+}
