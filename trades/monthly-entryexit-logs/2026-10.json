@@ -2180,5 +2180,39 @@
     "trade_role": "open",
     "pos_side": "long",
     "contract_key": "STK|RKLB"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "e153f00627e6",
+    "received_at": "2026-10-15T15:12:43.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-10-15T15:25:15+00:00--1a1401f6df3eb9f3.json",
+      "archived_path": "inbox/processed/2026-10/2026-10-15T15:25:15+00:00--1a1401f6df3eb9f3.json",
+      "raw_id": "1a1401f6df3eb9f3",
+      "ingested_at": "2026-10-15T15:25:15.000Z"
+    },
+    "raw": {
+      "text": "#133586671857 SOLD -1 RKLB @53.6878, ACCOUNT *****746SCHW"
+    },
+    "instrument": "stock",
+    "paper": false,
+    "action": "SOLD",
+    "symbol": "RKLB",
+    "qty": 1,
+    "fill": 53.6878,
+    "option": null,
+    "computed": {
+      "month": "2026-10",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "stock",
+      "text": "exit long RKLB at 53.6878"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "STK|RKLB"
   }
 ]
