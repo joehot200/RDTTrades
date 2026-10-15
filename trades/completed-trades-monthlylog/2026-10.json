@@ -759,5 +759,36 @@
       "realized": 4.819000000000031,
       "currency": "USD"
     }
+  },
+  {
+    "schema_version": 1,
+    "completed_trade_id": "a9259dc836fa",
+    "status": "closed",
+    "contract_key": "STK|RKLB",
+    "instrument": "stock",
+    "pos_side": "long",
+    "symbol": "RKLB",
+    "option": null,
+    "qty_opened": 1,
+    "qty_closed": 13,
+    "entry": {
+      "trade_id": "a9259dc836fa",
+      "received_at": "2026-10-15T14:47:40.000Z",
+      "fill": 53.2677,
+      "rdt": "long RKLB at 53.2677"
+    },
+    "exits": [
+      {
+        "trade_id": "9d25f31dc63d",
+        "received_at": "2026-10-15T18:21:39.000Z",
+        "fill": 53.185,
+        "qty": 13,
+        "rdt": "exit long RKLB at 53.185"
+      }
+    ],
+    "pnl": {
+      "realized": -1.0750999999999422,
+      "currency": "USD"
+    }
   }
 ]

@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "trade_id": "cd88100534e5",
+  "received_at": "2026-10-15T18:15:22.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-10-15T18:27:50+00:00--1a140c6a9637a09e.json",
+    "archived_path": "inbox/processed/2026-10/2026-10-15T18:27:50+00:00--1a140c6a9637a09e.json",
+    "raw_id": "1a140c6a9637a09e",
+    "ingested_at": "2026-10-15T18:27:50.000Z"
+  },
+  "raw": {
+    "text": "#133630350205 SOLD -1 MRVL @235.96, ACCOUNT *****746SCHW"
+  },
+  "instrument": "stock",
+  "paper": false,
+  "action": "SOLD",
+  "symbol": "MRVL",
+  "qty": 1,
+  "fill": 235.96,
+  "option": null,
+  "computed": {
+    "month": "2026-10",
+    "dte": -1,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "stock",
+    "text": "exit long MRVL at 235.96"
+  },
+  "trade_role": "close",
+  "pos_side": "long",
+  "contract_key": "STK|MRVL"
+}

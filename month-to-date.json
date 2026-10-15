@@ -2214,5 +2214,107 @@
     "trade_role": "close",
     "pos_side": "long",
     "contract_key": "STK|RKLB"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "cd88100534e5",
+    "received_at": "2026-10-15T18:15:22.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-10-15T18:27:50+00:00--1a140c6a9637a09e.json",
+      "archived_path": "inbox/processed/2026-10/2026-10-15T18:27:50+00:00--1a140c6a9637a09e.json",
+      "raw_id": "1a140c6a9637a09e",
+      "ingested_at": "2026-10-15T18:27:50.000Z"
+    },
+    "raw": {
+      "text": "#133630350205 SOLD -1 MRVL @235.96, ACCOUNT *****746SCHW"
+    },
+    "instrument": "stock",
+    "paper": false,
+    "action": "SOLD",
+    "symbol": "MRVL",
+    "qty": 1,
+    "fill": 235.96,
+    "option": null,
+    "computed": {
+      "month": "2026-10",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "stock",
+      "text": "exit long MRVL at 235.96"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "STK|MRVL"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "1917ea0e01b5",
+    "received_at": "2026-10-15T18:19:25.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-10-15T18:27:47+00:00--1a140ca5cd70ff48.json",
+      "archived_path": "inbox/processed/2026-10/2026-10-15T18:27:47+00:00--1a140ca5cd70ff48.json",
+      "raw_id": "1a140ca5cd70ff48",
+      "ingested_at": "2026-10-15T18:27:47.000Z"
+    },
+    "raw": {
+      "text": "#133633297118 BOT +5 RKLB @53.465, ACCOUNT *****746SCHW"
+    },
+    "instrument": "stock",
+    "paper": false,
+    "action": "BOT",
+    "symbol": "RKLB",
+    "qty": 5,
+    "fill": 53.465,
+    "option": null,
+    "computed": {
+      "month": "2026-10",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "stock",
+      "text": "long RKLB at 53.465"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "STK|RKLB"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "9d25f31dc63d",
+    "received_at": "2026-10-15T18:21:39.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-10-15T18:27:45+00:00--1a140cc67ee62fdf.json",
+      "archived_path": "inbox/processed/2026-10/2026-10-15T18:27:45+00:00--1a140cc67ee62fdf.json",
+      "raw_id": "1a140cc67ee62fdf",
+      "ingested_at": "2026-10-15T18:27:45.000Z"
+    },
+    "raw": {
+      "text": "#133633297881 SOLD -13 RKLB @53.185, ACCOUNT *****746SCHW"
+    },
+    "instrument": "stock",
+    "paper": false,
+    "action": "SOLD",
+    "symbol": "RKLB",
+    "qty": 13,
+    "fill": 53.185,
+    "option": null,
+    "computed": {
+      "month": "2026-10",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "stock",
+      "text": "exit long RKLB at 53.185"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "STK|RKLB"
   }
 ]
