@@ -1494,5 +1494,107 @@
     "trade_role": "open",
     "pos_side": "long",
     "contract_key": "STK|META"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "71046a19c4d9",
+    "received_at": "2026-10-15T19:50:05.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-10-15T19:59:59+00:00--1a1411d5e1b9ab3c.json",
+      "archived_path": "inbox/processed/2026-10/2026-10-15T19:59:59+00:00--1a1411d5e1b9ab3c.json",
+      "raw_id": "1a1411d5e1b9ab3c",
+      "ingested_at": "2026-10-15T19:59:59.000Z"
+    },
+    "raw": {
+      "text": "#133652692211 SOLD -5 INTC @95.93, ACCOUNT *****746SCHW"
+    },
+    "instrument": "stock",
+    "paper": false,
+    "action": "SOLD",
+    "symbol": "INTC",
+    "qty": 5,
+    "fill": 95.93,
+    "option": null,
+    "computed": {
+      "month": "2026-10",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "stock",
+      "text": "exit long INTC at 95.93"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "STK|INTC"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "24bb18dae7cf",
+    "received_at": "2026-10-15T19:50:07.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-10-15T19:59:58+00:00--1a1411d666de266f.json",
+      "archived_path": "inbox/processed/2026-10/2026-10-15T19:59:58+00:00--1a1411d666de266f.json",
+      "raw_id": "1a1411d666de266f",
+      "ingested_at": "2026-10-15T19:59:58.000Z"
+    },
+    "raw": {
+      "text": "#133652692223 SOLD -1 AMD @563.73, ACCOUNT *****746SCHW"
+    },
+    "instrument": "stock",
+    "paper": false,
+    "action": "SOLD",
+    "symbol": "AMD",
+    "qty": 1,
+    "fill": 563.73,
+    "option": null,
+    "computed": {
+      "month": "2026-10",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "stock",
+      "text": "exit long AMD at 563.73"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "STK|AMD"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "32f24e88bbd8",
+    "received_at": "2026-10-15T19:54:01.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-10-15T19:59:57+00:00--1a14120f8a27208f.json",
+      "archived_path": "inbox/processed/2026-10/2026-10-15T19:59:57+00:00--1a14120f8a27208f.json",
+      "raw_id": "1a14120f8a27208f",
+      "ingested_at": "2026-10-15T19:59:57.000Z"
+    },
+    "raw": {
+      "text": "#133652693889 SOLD -1 ALAB @300.56, ACCOUNT *****746SCHW"
+    },
+    "instrument": "stock",
+    "paper": false,
+    "action": "SOLD",
+    "symbol": "ALAB",
+    "qty": 1,
+    "fill": 300.56,
+    "option": null,
+    "computed": {
+      "month": "2026-10",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "stock",
+      "text": "exit long ALAB at 300.56"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "STK|ALAB"
   }
 ]

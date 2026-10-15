@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "trade_id": "32f24e88bbd8",
+  "received_at": "2026-10-15T19:54:01.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-10-15T19:59:57+00:00--1a14120f8a27208f.json",
+    "archived_path": "inbox/processed/2026-10/2026-10-15T19:59:57+00:00--1a14120f8a27208f.json",
+    "raw_id": "1a14120f8a27208f",
+    "ingested_at": "2026-10-15T19:59:57.000Z"
+  },
+  "raw": {
+    "text": "#133652693889 SOLD -1 ALAB @300.56, ACCOUNT *****746SCHW"
+  },
+  "instrument": "stock",
+  "paper": false,
+  "action": "SOLD",
+  "symbol": "ALAB",
+  "qty": 1,
+  "fill": 300.56,
+  "option": null,
+  "computed": {
+    "month": "2026-10",
+    "dte": -1,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "stock",
+    "text": "exit long ALAB at 300.56"
+  },
+  "trade_role": "close",
+  "pos_side": "long",
+  "contract_key": "STK|ALAB"
+}

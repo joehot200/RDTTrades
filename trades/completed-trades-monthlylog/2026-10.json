@@ -821,5 +821,36 @@
       "realized": 6.97499999999998,
       "currency": "USD"
     }
+  },
+  {
+    "schema_version": 1,
+    "completed_trade_id": "4b6da1c9dbf5",
+    "status": "closed",
+    "contract_key": "STK|ALAB",
+    "instrument": "stock",
+    "pos_side": "long",
+    "symbol": "ALAB",
+    "option": null,
+    "qty_opened": 1,
+    "qty_closed": 1,
+    "entry": {
+      "trade_id": "4b6da1c9dbf5",
+      "received_at": "2026-10-15T19:12:52.000Z",
+      "fill": 293.59,
+      "rdt": "long ALAB at 293.59"
+    },
+    "exits": [
+      {
+        "trade_id": "32f24e88bbd8",
+        "received_at": "2026-10-15T19:54:01.000Z",
+        "fill": 300.56,
+        "qty": 1,
+        "rdt": "exit long ALAB at 300.56"
+      }
+    ],
+    "pnl": {
+      "realized": 6.970000000000027,
+      "currency": "USD"
+    }
   }
 ]

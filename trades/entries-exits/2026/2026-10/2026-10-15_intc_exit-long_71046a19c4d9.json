@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "trade_id": "71046a19c4d9",
+  "received_at": "2026-10-15T19:50:05.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-10-15T19:59:59+00:00--1a1411d5e1b9ab3c.json",
+    "archived_path": "inbox/processed/2026-10/2026-10-15T19:59:59+00:00--1a1411d5e1b9ab3c.json",
+    "raw_id": "1a1411d5e1b9ab3c",
+    "ingested_at": "2026-10-15T19:59:59.000Z"
+  },
+  "raw": {
+    "text": "#133652692211 SOLD -5 INTC @95.93, ACCOUNT *****746SCHW"
+  },
+  "instrument": "stock",
+  "paper": false,
+  "action": "SOLD",
+  "symbol": "INTC",
+  "qty": 5,
+  "fill": 95.93,
+  "option": null,
+  "computed": {
+    "month": "2026-10",
+    "dte": -1,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "stock",
+    "text": "exit long INTC at 95.93"
+  },
+  "trade_role": "close",
+  "pos_side": "long",
+  "contract_key": "STK|INTC"
+}
