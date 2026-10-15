@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "trade_id": "a9259dc836fa",
+  "received_at": "2026-10-15T14:47:40.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-10-15T14:55:47+00:00--1a140087e964bb24.json",
+    "archived_path": "inbox/processed/2026-10/2026-10-15T14:55:47+00:00--1a140087e964bb24.json",
+    "raw_id": "1a140087e964bb24",
+    "ingested_at": "2026-10-15T14:55:47.000Z"
+  },
+  "raw": {
+    "text": "#133577826426 BOT +1 RKLB @53.2677, ACCOUNT *****746SCHW"
+  },
+  "instrument": "stock",
+  "paper": false,
+  "action": "BOT",
+  "symbol": "RKLB",
+  "qty": 1,
+  "fill": 53.2677,
+  "option": null,
+  "computed": {
+    "month": "2026-10",
+    "dte": -1,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "stock",
+    "text": "long RKLB at 53.2677"
+  },
+  "trade_role": "open",
+  "pos_side": "long",
+  "contract_key": "STK|RKLB"
+}
