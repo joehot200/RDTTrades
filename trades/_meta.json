@@ -1,10 +1,6 @@
 {
-  "generated_at": "2026-10-15T18:28:04.530Z",
+  "generated_at": "2026-10-15T18:28:23.107Z",
   "latest_commit_message": "exit long RKLB at 53.185",
-  "latest_processed_trade_id": "9d25f31dc63d",
-  "processed_trade_ids_this_run": [
-    "cd88100534e5",
-    "1917ea0e01b5",
-    "9d25f31dc63d"
-  ]
+  "latest_processed_trade_id": null,
+  "processed_trade_ids_this_run": []
 }
