@@ -1,9 +1,6 @@
 {
-  "generated_at": "2026-10-15T19:43:06.607Z",
+  "generated_at": "2026-10-15T19:43:21.197Z",
   "latest_commit_message": "long META at 737.655",
-  "latest_processed_trade_id": "3c784e34155f",
-  "processed_trade_ids_this_run": [
-    "c152d4d03df3",
-    "3c784e34155f"
-  ]
+  "latest_processed_trade_id": null,
+  "processed_trade_ids_this_run": []
 }
