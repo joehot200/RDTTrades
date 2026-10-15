@@ -2384,5 +2384,141 @@
     "trade_role": "open",
     "pos_side": "long",
     "contract_key": "STK|RKLB"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "4b6da1c9dbf5",
+    "received_at": "2026-10-15T19:12:52.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-10-15T19:28:02+00:00--1a140fb4bfa50185.json",
+      "archived_path": "inbox/processed/2026-10/2026-10-15T19:28:02+00:00--1a140fb4bfa50185.json",
+      "raw_id": "1a140fb4bfa50185",
+      "ingested_at": "2026-10-15T19:28:02.000Z"
+    },
+    "raw": {
+      "text": "#133642041338 BOT +1 ALAB @293.59, ACCOUNT *****746SCHW"
+    },
+    "instrument": "stock",
+    "paper": false,
+    "action": "BOT",
+    "symbol": "ALAB",
+    "qty": 1,
+    "fill": 293.59,
+    "option": null,
+    "computed": {
+      "month": "2026-10",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "stock",
+      "text": "long ALAB at 293.59"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "STK|ALAB"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "c50ac614d598",
+    "received_at": "2026-10-15T19:14:00.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-10-15T19:28:01+00:00--1a140fc54e67f457.json",
+      "archived_path": "inbox/processed/2026-10/2026-10-15T19:28:01+00:00--1a140fc54e67f457.json",
+      "raw_id": "1a140fc54e67f457",
+      "ingested_at": "2026-10-15T19:28:01.000Z"
+    },
+    "raw": {
+      "text": "#133642041842 BOT +5 INTC @95.56, ACCOUNT *****746SCHW"
+    },
+    "instrument": "stock",
+    "paper": false,
+    "action": "BOT",
+    "symbol": "INTC",
+    "qty": 5,
+    "fill": 95.56,
+    "option": null,
+    "computed": {
+      "month": "2026-10",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "stock",
+      "text": "long INTC at 95.56"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "STK|INTC"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "7c6387e3758c",
+    "received_at": "2026-10-15T19:18:56.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-10-15T19:28:00+00:00--1a14100db7803b11.json",
+      "archived_path": "inbox/processed/2026-10/2026-10-15T19:28:00+00:00--1a14100db7803b11.json",
+      "raw_id": "1a14100db7803b11",
+      "ingested_at": "2026-10-15T19:28:00.000Z"
+    },
+    "raw": {
+      "text": "#133644548909 SOLD -5 INTC @96.055, ACCOUNT *****746SCHW"
+    },
+    "instrument": "stock",
+    "paper": false,
+    "action": "SOLD",
+    "symbol": "INTC",
+    "qty": 5,
+    "fill": 96.055,
+    "option": null,
+    "computed": {
+      "month": "2026-10",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "stock",
+      "text": "exit long INTC at 96.055"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "STK|INTC"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "357031dfd629",
+    "received_at": "2026-10-15T19:21:45.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-10-15T19:27:59+00:00--1a141036fae95242.json",
+      "archived_path": "inbox/processed/2026-10/2026-10-15T19:27:59+00:00--1a141036fae95242.json",
+      "raw_id": "1a141036fae95242",
+      "ingested_at": "2026-10-15T19:27:59.000Z"
+    },
+    "raw": {
+      "text": "#133644549753 BOT +5 INTC @96.2162, ACCOUNT *****746SCHW"
+    },
+    "instrument": "stock",
+    "paper": false,
+    "action": "BOT",
+    "symbol": "INTC",
+    "qty": 5,
+    "fill": 96.2162,
+    "option": null,
+    "computed": {
+      "month": "2026-10",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "stock",
+      "text": "long INTC at 96.2162"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "STK|INTC"
   }
 ]

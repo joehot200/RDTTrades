@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "trade_id": "4b6da1c9dbf5",
+  "received_at": "2026-10-15T19:12:52.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-10-15T19:28:02+00:00--1a140fb4bfa50185.json",
+    "archived_path": "inbox/processed/2026-10/2026-10-15T19:28:02+00:00--1a140fb4bfa50185.json",
+    "raw_id": "1a140fb4bfa50185",
+    "ingested_at": "2026-10-15T19:28:02.000Z"
+  },
+  "raw": {
+    "text": "#133642041338 BOT +1 ALAB @293.59, ACCOUNT *****746SCHW"
+  },
+  "instrument": "stock",
+  "paper": false,
+  "action": "BOT",
+  "symbol": "ALAB",
+  "qty": 1,
+  "fill": 293.59,
+  "option": null,
+  "computed": {
+    "month": "2026-10",
+    "dte": -1,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "stock",
+    "text": "long ALAB at 293.59"
+  },
+  "trade_role": "open",
+  "pos_side": "long",
+  "contract_key": "STK|ALAB"
+}

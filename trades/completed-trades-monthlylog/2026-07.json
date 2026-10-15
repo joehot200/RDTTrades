@@ -1421,6 +1421,37 @@
   },
   {
     "schema_version": 1,
+    "completed_trade_id": "46c3978bc4ad",
+    "status": "closed",
+    "contract_key": "STK|INTC",
+    "instrument": "stock",
+    "pos_side": "long",
+    "symbol": "INTC",
+    "option": null,
+    "qty_opened": 4,
+    "qty_closed": 5,
+    "entry": {
+      "trade_id": "46c3978bc4ad",
+      "received_at": "2026-07-30T14:20:26.000Z",
+      "fill": 92.385,
+      "rdt": "long INTC at 92.385"
+    },
+    "exits": [
+      {
+        "trade_id": "7c6387e3758c",
+        "received_at": "2026-10-15T19:18:56.000Z",
+        "fill": 96.055,
+        "qty": 5,
+        "rdt": "exit long INTC at 96.055"
+      }
+    ],
+    "pnl": {
+      "realized": 18.35000000000001,
+      "currency": "USD"
+    }
+  },
+  {
+    "schema_version": 1,
     "completed_trade_id": "8aa2ba67bd29",
     "status": "closed",
     "contract_key": "STK|DELL",

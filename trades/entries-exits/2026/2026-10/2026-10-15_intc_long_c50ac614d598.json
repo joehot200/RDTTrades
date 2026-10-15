@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "trade_id": "c50ac614d598",
+  "received_at": "2026-10-15T19:14:00.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-10-15T19:28:01+00:00--1a140fc54e67f457.json",
+    "archived_path": "inbox/processed/2026-10/2026-10-15T19:28:01+00:00--1a140fc54e67f457.json",
+    "raw_id": "1a140fc54e67f457",
+    "ingested_at": "2026-10-15T19:28:01.000Z"
+  },
+  "raw": {
+    "text": "#133642041842 BOT +5 INTC @95.56, ACCOUNT *****746SCHW"
+  },
+  "instrument": "stock",
+  "paper": false,
+  "action": "BOT",
+  "symbol": "INTC",
+  "qty": 5,
+  "fill": 95.56,
+  "option": null,
+  "computed": {
+    "month": "2026-10",
+    "dte": -1,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "stock",
+    "text": "long INTC at 95.56"
+  },
+  "trade_role": "open",
+  "pos_side": "long",
+  "contract_key": "STK|INTC"
+}
