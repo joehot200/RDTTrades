@@ -1,11 +1,6 @@
 {
-  "generated_at": "2026-10-15T19:28:16.947Z",
+  "generated_at": "2026-10-15T19:28:34.064Z",
   "latest_commit_message": "long INTC at 96.2162",
-  "latest_processed_trade_id": "357031dfd629",
-  "processed_trade_ids_this_run": [
-    "4b6da1c9dbf5",
-    "c50ac614d598",
-    "7c6387e3758c",
-    "357031dfd629"
-  ]
+  "latest_processed_trade_id": null,
+  "processed_trade_ids_this_run": []
 }
