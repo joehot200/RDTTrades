@@ -1664,5 +1664,107 @@
     "trade_role": "close",
     "pos_side": "long",
     "contract_key": "STK|CRWV"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "e3dc712e5956",
+    "received_at": "2026-10-16T16:54:52.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-10-16T17:07:45+00:00--1a145a34f9a3a4bc.json",
+      "archived_path": "inbox/processed/2026-10/2026-10-16T17:07:45+00:00--1a145a34f9a3a4bc.json",
+      "raw_id": "1a145a34f9a3a4bc",
+      "ingested_at": "2026-10-16T17:07:45.000Z"
+    },
+    "raw": {
+      "text": "#133744375971 BOT +1 QCOM @176.84, ACCOUNT *****746SCHW"
+    },
+    "instrument": "stock",
+    "paper": false,
+    "action": "BOT",
+    "symbol": "QCOM",
+    "qty": 1,
+    "fill": 176.84,
+    "option": null,
+    "computed": {
+      "month": "2026-10",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "stock",
+      "text": "long QCOM at 176.84"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "STK|QCOM"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "62e2b76b29eb",
+    "received_at": "2026-10-16T17:03:02.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-10-16T17:07:44+00:00--1a145aacbffdf7ff.json",
+      "archived_path": "inbox/processed/2026-10/2026-10-16T17:07:44+00:00--1a145aacbffdf7ff.json",
+      "raw_id": "1a145aacbffdf7ff",
+      "ingested_at": "2026-10-16T17:07:44.000Z"
+    },
+    "raw": {
+      "text": "#133746109742 SOLD -1 QCOM @176.258, ACCOUNT *****746SCHW"
+    },
+    "instrument": "stock",
+    "paper": false,
+    "action": "SOLD",
+    "symbol": "QCOM",
+    "qty": 1,
+    "fill": 176.258,
+    "option": null,
+    "computed": {
+      "month": "2026-10",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "stock",
+      "text": "exit long QCOM at 176.258"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "STK|QCOM"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "50bf27169cd1",
+    "received_at": "2026-10-16T17:03:14.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-10-16T17:07:43+00:00--1a145aaf6eeba47c.json",
+      "archived_path": "inbox/processed/2026-10/2026-10-16T17:07:43+00:00--1a145aaf6eeba47c.json",
+      "raw_id": "1a145aaf6eeba47c",
+      "ingested_at": "2026-10-16T17:07:43.000Z"
+    },
+    "raw": {
+      "text": "#133746109814 SOLD -4 NBIS @168.1601, ACCOUNT *****746SCHW"
+    },
+    "instrument": "stock",
+    "paper": false,
+    "action": "SOLD",
+    "symbol": "NBIS",
+    "qty": 4,
+    "fill": 168.1601,
+    "option": null,
+    "computed": {
+      "month": "2026-10",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "stock",
+      "text": "exit long NBIS at 168.1601"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "STK|NBIS"
   }
 ]
