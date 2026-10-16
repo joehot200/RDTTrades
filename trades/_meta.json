@@ -1,9 +1,6 @@
 {
-  "generated_at": "2026-10-16T18:06:19.377Z",
+  "generated_at": "2026-10-16T18:06:35.370Z",
   "latest_commit_message": "exit long TRI at 107.885",
-  "latest_processed_trade_id": "123b0678cbbc",
-  "processed_trade_ids_this_run": [
-    "94c919a8cd33",
-    "123b0678cbbc"
-  ]
+  "latest_processed_trade_id": null,
+  "processed_trade_ids_this_run": []
 }
