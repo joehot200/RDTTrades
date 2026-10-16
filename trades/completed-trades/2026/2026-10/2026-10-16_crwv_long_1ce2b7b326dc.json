@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "completed_trade_id": "1ce2b7b326dc",
+  "status": "closed",
+  "contract_key": "STK|CRWV",
+  "instrument": "stock",
+  "pos_side": "long",
+  "symbol": "CRWV",
+  "option": null,
+  "qty_opened": 1,
+  "qty_closed": 16,
+  "entry": {
+    "trade_id": "1ce2b7b326dc",
+    "received_at": "2026-10-16T17:08:12.000Z",
+    "fill": 61.515,
+    "rdt": "long CRWV at 61.515"
+  },
+  "exits": [
+    {
+      "trade_id": "4904406a1022",
+      "received_at": "2026-10-16T18:30:34.000Z",
+      "fill": 60.8188,
+      "qty": 16,
+      "rdt": "exit long CRWV at 60.8188"
+    }
+  ],
+  "pnl": {
+    "realized": -11.13919999999996,
+    "currency": "USD"
+  }
+}

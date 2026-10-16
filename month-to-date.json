@@ -3166,5 +3166,73 @@
     "trade_role": "close",
     "pos_side": "long",
     "contract_key": "STK|QCOM"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "fbc0bad581ed",
+    "received_at": "2026-10-16T18:27:48.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-10-16T18:35:07+00:00--1a145f86495c7d12.json",
+      "archived_path": "inbox/processed/2026-10/2026-10-16T18:35:07+00:00--1a145f86495c7d12.json",
+      "raw_id": "1a145f86495c7d12",
+      "ingested_at": "2026-10-16T18:35:07.000Z"
+    },
+    "raw": {
+      "text": "#133768012931 SOLD -6 NBIS @165.46, ACCOUNT *****746SCHW"
+    },
+    "instrument": "stock",
+    "paper": false,
+    "action": "SOLD",
+    "symbol": "NBIS",
+    "qty": 6,
+    "fill": 165.46,
+    "option": null,
+    "computed": {
+      "month": "2026-10",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "stock",
+      "text": "exit long NBIS at 165.46"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "STK|NBIS"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "4904406a1022",
+    "received_at": "2026-10-16T18:30:34.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-10-16T18:35:05+00:00--1a145faede627925.json",
+      "archived_path": "inbox/processed/2026-10/2026-10-16T18:35:05+00:00--1a145faede627925.json",
+      "raw_id": "1a145faede627925",
+      "ingested_at": "2026-10-16T18:35:05.000Z"
+    },
+    "raw": {
+      "text": "#133768015149 SOLD -16 CRWV @60.8188, ACCOUNT *****746SCHW"
+    },
+    "instrument": "stock",
+    "paper": false,
+    "action": "SOLD",
+    "symbol": "CRWV",
+    "qty": 16,
+    "fill": 60.8188,
+    "option": null,
+    "computed": {
+      "month": "2026-10",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "stock",
+      "text": "exit long CRWV at 60.8188"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "STK|CRWV"
   }
 ]

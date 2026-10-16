@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "completed_trade_id": "6a095ecfcea7",
+  "status": "closed",
+  "contract_key": "STK|NBIS",
+  "instrument": "stock",
+  "pos_side": "long",
+  "symbol": "NBIS",
+  "option": null,
+  "qty_opened": 5,
+  "qty_closed": 6,
+  "entry": {
+    "trade_id": "6a095ecfcea7",
+    "received_at": "2026-10-16T17:33:30.000Z",
+    "fill": 168.7731,
+    "rdt": "long NBIS at 168.7731"
+  },
+  "exits": [
+    {
+      "trade_id": "fbc0bad581ed",
+      "received_at": "2026-10-16T18:27:48.000Z",
+      "fill": 165.46,
+      "qty": 6,
+      "rdt": "exit long NBIS at 165.46"
+    }
+  ],
+  "pnl": {
+    "realized": -19.87859999999995,
+    "currency": "USD"
+  }
+}
