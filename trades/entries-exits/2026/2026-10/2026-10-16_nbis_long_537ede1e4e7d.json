@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "trade_id": "537ede1e4e7d",
+  "received_at": "2026-10-16T17:08:11.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-10-16T17:21:23+00:00--1a145af82d42d383.json",
+    "archived_path": "inbox/processed/2026-10/2026-10-16T17:21:23+00:00--1a145af82d42d383.json",
+    "raw_id": "1a145af82d42d383",
+    "ingested_at": "2026-10-16T17:21:23.000Z"
+  },
+  "raw": {
+    "text": "#133748882057 BOT +5 NBIS @167.4313, ACCOUNT *****746SCHW"
+  },
+  "instrument": "stock",
+  "paper": false,
+  "action": "BOT",
+  "symbol": "NBIS",
+  "qty": 5,
+  "fill": 167.4313,
+  "option": null,
+  "computed": {
+    "month": "2026-10",
+    "dte": -1,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "stock",
+    "text": "long NBIS at 167.4313"
+  },
+  "trade_role": "open",
+  "pos_side": "long",
+  "contract_key": "STK|NBIS"
+}
