@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "completed_trade_id": "76956bd3cfab",
+  "status": "closed",
+  "contract_key": "STK|TRI",
+  "instrument": "stock",
+  "pos_side": "long",
+  "symbol": "TRI",
+  "option": null,
+  "qty_opened": 9,
+  "qty_closed": 9,
+  "entry": {
+    "trade_id": "76956bd3cfab",
+    "received_at": "2026-10-16T17:28:27.000Z",
+    "fill": 107.915,
+    "rdt": "long TRI at 107.915"
+  },
+  "exits": [
+    {
+      "trade_id": "123b0678cbbc",
+      "received_at": "2026-10-16T17:50:38.000Z",
+      "fill": 107.885,
+      "qty": 9,
+      "rdt": "exit long TRI at 107.885"
+    }
+  ],
+  "pnl": {
+    "realized": -0.27000000000001023,
+    "currency": "USD"
+  }
+}

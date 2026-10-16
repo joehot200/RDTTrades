@@ -1936,5 +1936,73 @@
     "trade_role": "open",
     "pos_side": "long",
     "contract_key": "STK|NBIS"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "94c919a8cd33",
+    "received_at": "2026-10-16T17:50:24.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-10-16T18:06:04+00:00--1a145d6280623f29.json",
+      "archived_path": "inbox/processed/2026-10/2026-10-16T18:06:04+00:00--1a145d6280623f29.json",
+      "raw_id": "1a145d6280623f29",
+      "ingested_at": "2026-10-16T18:06:04.000Z"
+    },
+    "raw": {
+      "text": "#133758036693 SOLD -5 NBIS @168.18, ACCOUNT *****746SCHW"
+    },
+    "instrument": "stock",
+    "paper": false,
+    "action": "SOLD",
+    "symbol": "NBIS",
+    "qty": 5,
+    "fill": 168.18,
+    "option": null,
+    "computed": {
+      "month": "2026-10",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "stock",
+      "text": "exit long NBIS at 168.18"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "STK|NBIS"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "123b0678cbbc",
+    "received_at": "2026-10-16T17:50:38.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-10-16T18:06:02+00:00--1a145d65e8b27bcb.json",
+      "archived_path": "inbox/processed/2026-10/2026-10-16T18:06:02+00:00--1a145d65e8b27bcb.json",
+      "raw_id": "1a145d65e8b27bcb",
+      "ingested_at": "2026-10-16T18:06:02.000Z"
+    },
+    "raw": {
+      "text": "#133758036886 SOLD -9 TRI @107.885, ACCOUNT *****746SCHW"
+    },
+    "instrument": "stock",
+    "paper": false,
+    "action": "SOLD",
+    "symbol": "TRI",
+    "qty": 9,
+    "fill": 107.885,
+    "option": null,
+    "computed": {
+      "month": "2026-10",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "stock",
+      "text": "exit long TRI at 107.885"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "STK|TRI"
   }
 ]

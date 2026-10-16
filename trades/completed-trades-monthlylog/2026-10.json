@@ -883,5 +883,67 @@
       "realized": -0.5819999999999936,
       "currency": "USD"
     }
+  },
+  {
+    "schema_version": 1,
+    "completed_trade_id": "537ede1e4e7d",
+    "status": "closed",
+    "contract_key": "STK|NBIS",
+    "instrument": "stock",
+    "pos_side": "long",
+    "symbol": "NBIS",
+    "option": null,
+    "qty_opened": 5,
+    "qty_closed": 5,
+    "entry": {
+      "trade_id": "537ede1e4e7d",
+      "received_at": "2026-10-16T17:08:11.000Z",
+      "fill": 167.4313,
+      "rdt": "long NBIS at 167.4313"
+    },
+    "exits": [
+      {
+        "trade_id": "94c919a8cd33",
+        "received_at": "2026-10-16T17:50:24.000Z",
+        "fill": 168.18,
+        "qty": 5,
+        "rdt": "exit long NBIS at 168.18"
+      }
+    ],
+    "pnl": {
+      "realized": 3.7435000000000684,
+      "currency": "USD"
+    }
+  },
+  {
+    "schema_version": 1,
+    "completed_trade_id": "76956bd3cfab",
+    "status": "closed",
+    "contract_key": "STK|TRI",
+    "instrument": "stock",
+    "pos_side": "long",
+    "symbol": "TRI",
+    "option": null,
+    "qty_opened": 9,
+    "qty_closed": 9,
+    "entry": {
+      "trade_id": "76956bd3cfab",
+      "received_at": "2026-10-16T17:28:27.000Z",
+      "fill": 107.915,
+      "rdt": "long TRI at 107.915"
+    },
+    "exits": [
+      {
+        "trade_id": "123b0678cbbc",
+        "received_at": "2026-10-16T17:50:38.000Z",
+        "fill": 107.885,
+        "qty": 9,
+        "rdt": "exit long TRI at 107.885"
+      }
+    ],
+    "pnl": {
+      "realized": -0.27000000000001023,
+      "currency": "USD"
+    }
   }
 ]
