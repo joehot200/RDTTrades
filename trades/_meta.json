@@ -1,10 +1,6 @@
 {
-  "generated_at": "2026-10-16T17:07:56.460Z",
+  "generated_at": "2026-10-16T17:08:11.639Z",
   "latest_commit_message": "exit long NBIS at 168.1601",
-  "latest_processed_trade_id": "50bf27169cd1",
-  "processed_trade_ids_this_run": [
-    "e3dc712e5956",
-    "62e2b76b29eb",
-    "50bf27169cd1"
-  ]
+  "latest_processed_trade_id": null,
+  "processed_trade_ids_this_run": []
 }
