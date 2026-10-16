@@ -1,9 +1,6 @@
 {
-  "generated_at": "2026-10-16T17:21:39.303Z",
+  "generated_at": "2026-10-16T17:21:57.046Z",
   "latest_commit_message": "long CRWV at 61.515",
-  "latest_processed_trade_id": "1ce2b7b326dc",
-  "processed_trade_ids_this_run": [
-    "537ede1e4e7d",
-    "1ce2b7b326dc"
-  ]
+  "latest_processed_trade_id": null,
+  "processed_trade_ids_this_run": []
 }
