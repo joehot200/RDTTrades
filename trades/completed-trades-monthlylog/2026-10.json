@@ -945,5 +945,36 @@
       "realized": -0.27000000000001023,
       "currency": "USD"
     }
+  },
+  {
+    "schema_version": 1,
+    "completed_trade_id": "c910ea32c55d",
+    "status": "closed",
+    "contract_key": "STK|QCOM",
+    "instrument": "stock",
+    "pos_side": "long",
+    "symbol": "QCOM",
+    "option": null,
+    "qty_opened": 5,
+    "qty_closed": 5,
+    "entry": {
+      "trade_id": "c910ea32c55d",
+      "received_at": "2026-10-16T18:10:34.000Z",
+      "fill": 172.965,
+      "rdt": "long QCOM at 172.965"
+    },
+    "exits": [
+      {
+        "trade_id": "07984f571833",
+        "received_at": "2026-10-16T18:20:03.000Z",
+        "fill": 172.865,
+        "qty": 5,
+        "rdt": "exit long QCOM at 172.865"
+      }
+    ],
+    "pnl": {
+      "realized": -0.4999999999999716,
+      "currency": "USD"
+    }
   }
 ]

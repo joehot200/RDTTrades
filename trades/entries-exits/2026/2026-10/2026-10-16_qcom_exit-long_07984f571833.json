@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "trade_id": "07984f571833",
+  "received_at": "2026-10-16T18:20:03.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-10-16T18:20:37+00:00--1a145f14d2866bd1.json",
+    "archived_path": "inbox/processed/2026-10/2026-10-16T18:20:37+00:00--1a145f14d2866bd1.json",
+    "raw_id": "1a145f14d2866bd1",
+    "ingested_at": "2026-10-16T18:20:37.000Z"
+  },
+  "raw": {
+    "text": "#133766242890 SOLD -5 QCOM @172.865, ACCOUNT *****746SCHW"
+  },
+  "instrument": "stock",
+  "paper": false,
+  "action": "SOLD",
+  "symbol": "QCOM",
+  "qty": 5,
+  "fill": 172.865,
+  "option": null,
+  "computed": {
+    "month": "2026-10",
+    "dte": -1,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "stock",
+    "text": "exit long QCOM at 172.865"
+  },
+  "trade_role": "close",
+  "pos_side": "long",
+  "contract_key": "STK|QCOM"
+}
