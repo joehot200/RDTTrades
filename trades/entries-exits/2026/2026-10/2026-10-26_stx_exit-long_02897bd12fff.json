@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "trade_id": "02897bd12fff",
+  "received_at": "2026-10-26T19:03:00.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-10-26T19:04:58+00:00--1a1799836fffce0a.json",
+    "archived_path": "inbox/processed/2026-10/2026-10-26T19:04:58+00:00--1a1799836fffce0a.json",
+    "raw_id": "1a1799836fffce0a",
+    "ingested_at": "2026-10-26T19:04:58.000Z"
+  },
+  "raw": {
+    "text": "#134553084925 SOLD -1 STX @656.98, ACCOUNT *****746SCHW"
+  },
+  "instrument": "stock",
+  "paper": false,
+  "action": "SOLD",
+  "symbol": "STX",
+  "qty": 1,
+  "fill": 656.98,
+  "option": null,
+  "computed": {
+    "month": "2026-10",
+    "dte": -1,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "stock",
+    "text": "exit long STX at 656.98"
+  },
+  "trade_role": "close",
+  "pos_side": "long",
+  "contract_key": "STK|STX"
+}
