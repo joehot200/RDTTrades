@@ -3404,5 +3404,39 @@
     "trade_role": "close",
     "pos_side": "long",
     "contract_key": "STK|STX"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "8002e2666e14",
+    "received_at": "2026-10-26T19:49:29.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-10-26T20:04:32+00:00--1a179c2c55417889.json",
+      "archived_path": "inbox/processed/2026-10/2026-10-26T20:04:32+00:00--1a179c2c55417889.json",
+      "raw_id": "1a179c2c55417889",
+      "ingested_at": "2026-10-26T20:04:32.000Z"
+    },
+    "raw": {
+      "text": "#134563049835 BOT +1 STX @649.85, ACCOUNT *****746SCHW"
+    },
+    "instrument": "stock",
+    "paper": false,
+    "action": "BOT",
+    "symbol": "STX",
+    "qty": 1,
+    "fill": 649.85,
+    "option": null,
+    "computed": {
+      "month": "2026-10",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "stock",
+      "text": "long STX at 649.85"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "STK|STX"
   }
 ]
