@@ -1038,5 +1038,36 @@
       "realized": -0.4999999999999716,
       "currency": "USD"
     }
+  },
+  {
+    "schema_version": 1,
+    "completed_trade_id": "68f36a6072b7",
+    "status": "closed",
+    "contract_key": "STK|CRWD",
+    "instrument": "stock",
+    "pos_side": "long",
+    "symbol": "CRWD",
+    "option": null,
+    "qty_opened": 3,
+    "qty_closed": 3,
+    "entry": {
+      "trade_id": "68f36a6072b7",
+      "received_at": "2026-10-26T18:22:00.000Z",
+      "fill": 263.17,
+      "rdt": "long CRWD at 263.17"
+    },
+    "exits": [
+      {
+        "trade_id": "0e66b175af47",
+        "received_at": "2026-10-26T18:45:01.000Z",
+        "fill": 263.14,
+        "qty": 3,
+        "rdt": "exit long CRWD at 263.14"
+      }
+    ],
+    "pnl": {
+      "realized": -0.09000000000008868,
+      "currency": "USD"
+    }
   }
 ]
