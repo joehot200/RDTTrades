@@ -1131,5 +1131,67 @@
       "realized": 6.418000000000006,
       "currency": "USD"
     }
+  },
+  {
+    "schema_version": 1,
+    "completed_trade_id": "8509bc15df30",
+    "status": "closed",
+    "contract_key": "STK|MCHP",
+    "instrument": "stock",
+    "pos_side": "long",
+    "symbol": "MCHP",
+    "option": null,
+    "qty_opened": 8,
+    "qty_closed": 8,
+    "entry": {
+      "trade_id": "8509bc15df30",
+      "received_at": "2026-10-27T17:24:35.000Z",
+      "fill": 79.7618,
+      "rdt": "long MCHP at 79.7618"
+    },
+    "exits": [
+      {
+        "trade_id": "9f8129b8e5ae",
+        "received_at": "2026-10-27T18:00:44.000Z",
+        "fill": 79.75,
+        "qty": 8,
+        "rdt": "exit long MCHP at 79.75"
+      }
+    ],
+    "pnl": {
+      "realized": -0.09439999999995052,
+      "currency": "USD"
+    }
+  },
+  {
+    "schema_version": 1,
+    "completed_trade_id": "32f796fce7d2",
+    "status": "closed",
+    "contract_key": "STK|NXPI",
+    "instrument": "stock",
+    "pos_side": "long",
+    "symbol": "NXPI",
+    "option": null,
+    "qty_opened": 3,
+    "qty_closed": 3,
+    "entry": {
+      "trade_id": "32f796fce7d2",
+      "received_at": "2026-10-27T17:57:30.000Z",
+      "fill": 251.69,
+      "rdt": "long NXPI at 251.69"
+    },
+    "exits": [
+      {
+        "trade_id": "9f32ecace66a",
+        "received_at": "2026-10-27T18:01:08.000Z",
+        "fill": 251.67,
+        "qty": 3,
+        "rdt": "exit long NXPI at 251.67"
+      }
+    ],
+    "pnl": {
+      "realized": -0.060000000000030695,
+      "currency": "USD"
+    }
   }
 ]

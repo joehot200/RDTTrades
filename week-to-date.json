@@ -508,5 +508,107 @@
     "trade_role": "open",
     "pos_side": "long",
     "contract_key": "STK|MCHP"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "32f796fce7d2",
+    "received_at": "2026-10-27T17:57:30.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-10-27T18:03:10+00:00--1a17e829d8d71b14.json",
+      "archived_path": "inbox/processed/2026-10/2026-10-27T18:03:10+00:00--1a17e829d8d71b14.json",
+      "raw_id": "1a17e829d8d71b14",
+      "ingested_at": "2026-10-27T18:03:10.000Z"
+    },
+    "raw": {
+      "text": "#134666113328 BOT +3 NXPI @251.69, ACCOUNT *****746SCHW"
+    },
+    "instrument": "stock",
+    "paper": false,
+    "action": "BOT",
+    "symbol": "NXPI",
+    "qty": 3,
+    "fill": 251.69,
+    "option": null,
+    "computed": {
+      "month": "2026-10",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "stock",
+      "text": "long NXPI at 251.69"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "STK|NXPI"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "9f8129b8e5ae",
+    "received_at": "2026-10-27T18:00:44.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-10-27T18:03:08+00:00--1a17e85926bf168b.json",
+      "archived_path": "inbox/processed/2026-10/2026-10-27T18:03:08+00:00--1a17e85926bf168b.json",
+      "raw_id": "1a17e85926bf168b",
+      "ingested_at": "2026-10-27T18:03:08.000Z"
+    },
+    "raw": {
+      "text": "#134666114743 SOLD -8 MCHP @79.75, ACCOUNT *****746SCHW"
+    },
+    "instrument": "stock",
+    "paper": false,
+    "action": "SOLD",
+    "symbol": "MCHP",
+    "qty": 8,
+    "fill": 79.75,
+    "option": null,
+    "computed": {
+      "month": "2026-10",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "stock",
+      "text": "exit long MCHP at 79.75"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "STK|MCHP"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "9f32ecace66a",
+    "received_at": "2026-10-27T18:01:08.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-10-27T18:03:06+00:00--1a17e85ed7a9f86d.json",
+      "archived_path": "inbox/processed/2026-10/2026-10-27T18:03:06+00:00--1a17e85ed7a9f86d.json",
+      "raw_id": "1a17e85ed7a9f86d",
+      "ingested_at": "2026-10-27T18:03:06.000Z"
+    },
+    "raw": {
+      "text": "#134666114972 SOLD -3 NXPI @251.67, ACCOUNT *****746SCHW"
+    },
+    "instrument": "stock",
+    "paper": false,
+    "action": "SOLD",
+    "symbol": "NXPI",
+    "qty": 3,
+    "fill": 251.67,
+    "option": null,
+    "computed": {
+      "month": "2026-10",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "stock",
+      "text": "exit long NXPI at 251.67"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "STK|NXPI"
   }
 ]

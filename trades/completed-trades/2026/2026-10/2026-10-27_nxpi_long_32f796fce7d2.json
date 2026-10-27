@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "completed_trade_id": "32f796fce7d2",
+  "status": "closed",
+  "contract_key": "STK|NXPI",
+  "instrument": "stock",
+  "pos_side": "long",
+  "symbol": "NXPI",
+  "option": null,
+  "qty_opened": 3,
+  "qty_closed": 3,
+  "entry": {
+    "trade_id": "32f796fce7d2",
+    "received_at": "2026-10-27T17:57:30.000Z",
+    "fill": 251.69,
+    "rdt": "long NXPI at 251.69"
+  },
+  "exits": [
+    {
+      "trade_id": "9f32ecace66a",
+      "received_at": "2026-10-27T18:01:08.000Z",
+      "fill": 251.67,
+      "qty": 3,
+      "rdt": "exit long NXPI at 251.67"
+    }
+  ],
+  "pnl": {
+    "realized": -0.060000000000030695,
+    "currency": "USD"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "trade_id": "9f8129b8e5ae",
+  "received_at": "2026-10-27T18:00:44.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-10-27T18:03:08+00:00--1a17e85926bf168b.json",
+    "archived_path": "inbox/processed/2026-10/2026-10-27T18:03:08+00:00--1a17e85926bf168b.json",
+    "raw_id": "1a17e85926bf168b",
+    "ingested_at": "2026-10-27T18:03:08.000Z"
+  },
+  "raw": {
+    "text": "#134666114743 SOLD -8 MCHP @79.75, ACCOUNT *****746SCHW"
+  },
+  "instrument": "stock",
+  "paper": false,
+  "action": "SOLD",
+  "symbol": "MCHP",
+  "qty": 8,
+  "fill": 79.75,
+  "option": null,
+  "computed": {
+    "month": "2026-10",
+    "dte": -1,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "stock",
+    "text": "exit long MCHP at 79.75"
+  },
+  "trade_role": "close",
+  "pos_side": "long",
+  "contract_key": "STK|MCHP"
+}

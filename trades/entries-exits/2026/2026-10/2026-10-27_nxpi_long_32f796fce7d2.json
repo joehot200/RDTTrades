@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "trade_id": "32f796fce7d2",
+  "received_at": "2026-10-27T17:57:30.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-10-27T18:03:10+00:00--1a17e829d8d71b14.json",
+    "archived_path": "inbox/processed/2026-10/2026-10-27T18:03:10+00:00--1a17e829d8d71b14.json",
+    "raw_id": "1a17e829d8d71b14",
+    "ingested_at": "2026-10-27T18:03:10.000Z"
+  },
+  "raw": {
+    "text": "#134666113328 BOT +3 NXPI @251.69, ACCOUNT *****746SCHW"
+  },
+  "instrument": "stock",
+  "paper": false,
+  "action": "BOT",
+  "symbol": "NXPI",
+  "qty": 3,
+  "fill": 251.69,
+  "option": null,
+  "computed": {
+    "month": "2026-10",
+    "dte": -1,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "stock",
+    "text": "long NXPI at 251.69"
+  },
+  "trade_role": "open",
+  "pos_side": "long",
+  "contract_key": "STK|NXPI"
+}
