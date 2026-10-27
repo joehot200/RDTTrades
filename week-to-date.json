@@ -270,5 +270,73 @@
     "trade_role": "close",
     "pos_side": "long",
     "contract_key": "STK|DELL"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "fabbfa8edf38",
+    "received_at": "2026-10-27T15:00:02.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-10-27T15:08:54+00:00--1a17de02a36dd9ce.json",
+      "archived_path": "inbox/processed/2026-10/2026-10-27T15:08:54+00:00--1a17de02a36dd9ce.json",
+      "raw_id": "1a17de02a36dd9ce",
+      "ingested_at": "2026-10-27T15:08:54.000Z"
+    },
+    "raw": {
+      "text": "#134622378448 BOT +1 DELL @500.685, ACCOUNT *****746SCHW"
+    },
+    "instrument": "stock",
+    "paper": false,
+    "action": "BOT",
+    "symbol": "DELL",
+    "qty": 1,
+    "fill": 500.685,
+    "option": null,
+    "computed": {
+      "month": "2026-10",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "stock",
+      "text": "long DELL at 500.685"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "STK|DELL"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "4f4b9ebb9b18",
+    "received_at": "2026-10-27T15:02:31.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-10-27T15:08:53+00:00--1a17de270eacd914.json",
+      "archived_path": "inbox/processed/2026-10/2026-10-27T15:08:53+00:00--1a17de270eacd914.json",
+      "raw_id": "1a17de270eacd914",
+      "ingested_at": "2026-10-27T15:08:53.000Z"
+    },
+    "raw": {
+      "text": "#134622380421 SOLD -1 DELL @503.29, ACCOUNT *****746SCHW"
+    },
+    "instrument": "stock",
+    "paper": false,
+    "action": "SOLD",
+    "symbol": "DELL",
+    "qty": 1,
+    "fill": 503.29,
+    "option": null,
+    "computed": {
+      "month": "2026-10",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "stock",
+      "text": "exit long DELL at 503.29"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "STK|DELL"
   }
 ]
