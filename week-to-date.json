@@ -406,5 +406,39 @@
     "trade_role": "open",
     "pos_side": "long",
     "contract_key": "STK|GDDY"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "793149d233bb",
+    "received_at": "2026-10-27T16:42:56.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-10-27T16:48:58+00:00--1a17e3e58f9e8c23.json",
+      "archived_path": "inbox/processed/2026-10/2026-10-27T16:48:58+00:00--1a17e3e58f9e8c23.json",
+      "raw_id": "1a17e3e58f9e8c23",
+      "ingested_at": "2026-10-27T16:48:58.000Z"
+    },
+    "raw": {
+      "text": "#134648716711 SOLD -2 DELL @503.894, ACCOUNT *****746SCHW"
+    },
+    "instrument": "stock",
+    "paper": false,
+    "action": "SOLD",
+    "symbol": "DELL",
+    "qty": 2,
+    "fill": 503.894,
+    "option": null,
+    "computed": {
+      "month": "2026-10",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "stock",
+      "text": "exit long DELL at 503.894"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "STK|DELL"
   }
 ]
