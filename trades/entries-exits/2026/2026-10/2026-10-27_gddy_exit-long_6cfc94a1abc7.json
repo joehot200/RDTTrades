@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "trade_id": "6cfc94a1abc7",
+  "received_at": "2026-10-27T15:28:15.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-10-27T15:40:35+00:00--1a17df9f6c9eca89.json",
+    "archived_path": "inbox/processed/2026-10/2026-10-27T15:40:35+00:00--1a17df9f6c9eca89.json",
+    "raw_id": "1a17df9f6c9eca89",
+    "ingested_at": "2026-10-27T15:40:35.000Z"
+  },
+  "raw": {
+    "text": "#134631257043 SOLD -5 GDDY @106.01, ACCOUNT *****746SCHW"
+  },
+  "instrument": "stock",
+  "paper": false,
+  "action": "SOLD",
+  "symbol": "GDDY",
+  "qty": 5,
+  "fill": 106.01,
+  "option": null,
+  "computed": {
+    "month": "2026-10",
+    "dte": -1,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "stock",
+    "text": "exit long GDDY at 106.01"
+  },
+  "trade_role": "close",
+  "pos_side": "long",
+  "contract_key": "STK|GDDY"
+}
