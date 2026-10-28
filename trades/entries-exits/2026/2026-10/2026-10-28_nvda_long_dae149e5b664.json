@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "trade_id": "dae149e5b664",
+  "received_at": "2026-10-28T19:55:34.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-10-28T19:56:43+00:00--1a1841514235f2a5.json",
+    "archived_path": "inbox/processed/2026-10/2026-10-28T19:56:43+00:00--1a1841514235f2a5.json",
+    "raw_id": "1a1841514235f2a5",
+    "ingested_at": "2026-10-28T19:56:43.000Z"
+  },
+  "raw": {
+    "text": "#134811552398 BOT +2 NVDA @215.07, ACCOUNT *****746SCHW"
+  },
+  "instrument": "stock",
+  "paper": false,
+  "action": "BOT",
+  "symbol": "NVDA",
+  "qty": 2,
+  "fill": 215.07,
+  "option": null,
+  "computed": {
+    "month": "2026-10",
+    "dte": -1,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "stock",
+    "text": "long NVDA at 215.07"
+  },
+  "trade_role": "open",
+  "pos_side": "long",
+  "contract_key": "STK|NVDA"
+}
