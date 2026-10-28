@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "trade_id": "c15b3550504f",
+  "received_at": "2026-10-28T15:44:02.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-10-28T15:47:15+00:00--1a1832ec8bc5e318.json",
+    "archived_path": "inbox/processed/2026-10/2026-10-28T15:47:15+00:00--1a1832ec8bc5e318.json",
+    "raw_id": "1a1832ec8bc5e318",
+    "ingested_at": "2026-10-28T15:47:15.000Z"
+  },
+  "raw": {
+    "text": "#134753816559 BOT +3 CRWD @265.69, ACCOUNT *****746SCHW"
+  },
+  "instrument": "stock",
+  "paper": false,
+  "action": "BOT",
+  "symbol": "CRWD",
+  "qty": 3,
+  "fill": 265.69,
+  "option": null,
+  "computed": {
+    "month": "2026-10",
+    "dte": -1,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "stock",
+    "text": "long CRWD at 265.69"
+  },
+  "trade_role": "open",
+  "pos_side": "long",
+  "contract_key": "STK|CRWD"
+}
