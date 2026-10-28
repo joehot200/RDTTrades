@@ -1227,6 +1227,37 @@
   },
   {
     "schema_version": 1,
+    "completed_trade_id": "7f527cb28352",
+    "status": "closed",
+    "contract_key": "STK|MCHP",
+    "instrument": "stock",
+    "pos_side": "long",
+    "symbol": "MCHP",
+    "option": null,
+    "qty_opened": 12,
+    "qty_closed": 18,
+    "entry": {
+      "trade_id": "7f527cb28352",
+      "received_at": "2026-10-28T17:00:45.000Z",
+      "fill": 79.085,
+      "rdt": "long MCHP at 79.085"
+    },
+    "exits": [
+      {
+        "trade_id": "7922ee172b5a",
+        "received_at": "2026-10-28T17:15:04.000Z",
+        "fill": 79.1388,
+        "qty": 18,
+        "rdt": "exit long MCHP at 79.1388"
+      }
+    ],
+    "pnl": {
+      "realized": 0.9684000000001731,
+      "currency": "USD"
+    }
+  },
+  {
+    "schema_version": 1,
     "completed_trade_id": "4189d104c9e0",
     "status": "closed",
     "contract_key": "STK|ADI",

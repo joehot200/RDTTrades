@@ -1,6 +1,9 @@
 {
-  "generated_at": "2026-10-28T17:13:19.255Z",
-  "latest_commit_message": "exit long ADI at 427.035",
-  "latest_processed_trade_id": null,
-  "processed_trade_ids_this_run": []
+  "generated_at": "2026-10-28T17:28:01.884Z",
+  "latest_commit_message": "long NOW at 150.335",
+  "latest_processed_trade_id": "a9567e212149",
+  "processed_trade_ids_this_run": [
+    "7922ee172b5a",
+    "a9567e212149"
+  ]
 }
