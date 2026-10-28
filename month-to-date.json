@@ -3880,5 +3880,107 @@
     "trade_role": "open",
     "pos_side": "long",
     "contract_key": "STK|INTC"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "306e617927e7",
+    "received_at": "2026-10-28T15:06:39.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-10-28T15:17:37+00:00--1a1830c91f393c2b.json",
+      "archived_path": "inbox/processed/2026-10/2026-10-28T15:17:37+00:00--1a1830c91f393c2b.json",
+      "raw_id": "1a1830c91f393c2b",
+      "ingested_at": "2026-10-28T15:17:37.000Z"
+    },
+    "raw": {
+      "text": "#134746689426 BOT +3 TER @308.54, ACCOUNT *****746SCHW"
+    },
+    "instrument": "stock",
+    "paper": false,
+    "action": "BOT",
+    "symbol": "TER",
+    "qty": 3,
+    "fill": 308.54,
+    "option": null,
+    "computed": {
+      "month": "2026-10",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "stock",
+      "text": "long TER at 308.54"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "STK|TER"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "d318b45dd062",
+    "received_at": "2026-10-28T15:07:56.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-10-28T15:17:36+00:00--1a1830db8225f456.json",
+      "archived_path": "inbox/processed/2026-10/2026-10-28T15:17:36+00:00--1a1830db8225f456.json",
+      "raw_id": "1a1830db8225f456",
+      "ingested_at": "2026-10-28T15:17:36.000Z"
+    },
+    "raw": {
+      "text": "#134746690426 SOLD -3 CRWD @266.71, ACCOUNT *****746SCHW"
+    },
+    "instrument": "stock",
+    "paper": false,
+    "action": "SOLD",
+    "symbol": "CRWD",
+    "qty": 3,
+    "fill": 266.71,
+    "option": null,
+    "computed": {
+      "month": "2026-10",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "stock",
+      "text": "exit long CRWD at 266.71"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "STK|CRWD"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "a461d097c035",
+    "received_at": "2026-10-28T15:10:10.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-10-28T15:17:35+00:00--1a1830fcd90f41b6.json",
+      "archived_path": "inbox/processed/2026-10/2026-10-28T15:17:35+00:00--1a1830fcd90f41b6.json",
+      "raw_id": "1a1830fcd90f41b6",
+      "ingested_at": "2026-10-28T15:17:35.000Z"
+    },
+    "raw": {
+      "text": "#134748672136 BOT +3 LRCX @251.00, ACCOUNT *****746SCHW"
+    },
+    "instrument": "stock",
+    "paper": false,
+    "action": "BOT",
+    "symbol": "LRCX",
+    "qty": 3,
+    "fill": 251,
+    "option": null,
+    "computed": {
+      "month": "2026-10",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "stock",
+      "text": "long LRCX at 251"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "STK|LRCX"
   }
 ]

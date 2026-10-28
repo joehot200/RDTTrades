@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "trade_id": "a461d097c035",
+  "received_at": "2026-10-28T15:10:10.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-10-28T15:17:35+00:00--1a1830fcd90f41b6.json",
+    "archived_path": "inbox/processed/2026-10/2026-10-28T15:17:35+00:00--1a1830fcd90f41b6.json",
+    "raw_id": "1a1830fcd90f41b6",
+    "ingested_at": "2026-10-28T15:17:35.000Z"
+  },
+  "raw": {
+    "text": "#134748672136 BOT +3 LRCX @251.00, ACCOUNT *****746SCHW"
+  },
+  "instrument": "stock",
+  "paper": false,
+  "action": "BOT",
+  "symbol": "LRCX",
+  "qty": 3,
+  "fill": 251,
+  "option": null,
+  "computed": {
+    "month": "2026-10",
+    "dte": -1,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "stock",
+    "text": "long LRCX at 251"
+  },
+  "trade_role": "open",
+  "pos_side": "long",
+  "contract_key": "STK|LRCX"
+}
