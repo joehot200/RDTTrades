@@ -4050,5 +4050,141 @@
     "trade_role": "close",
     "pos_side": "long",
     "contract_key": "STK|LRCX"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "7f527cb28352",
+    "received_at": "2026-10-28T17:00:45.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-10-28T17:12:45+00:00--1a18375049750306.json",
+      "archived_path": "inbox/processed/2026-10/2026-10-28T17:12:45+00:00--1a18375049750306.json",
+      "raw_id": "1a18375049750306",
+      "ingested_at": "2026-10-28T17:12:45.000Z"
+    },
+    "raw": {
+      "text": "#134771640970 BOT +12 MCHP @79.085, ACCOUNT *****746SCHW"
+    },
+    "instrument": "stock",
+    "paper": false,
+    "action": "BOT",
+    "symbol": "MCHP",
+    "qty": 12,
+    "fill": 79.085,
+    "option": null,
+    "computed": {
+      "month": "2026-10",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "stock",
+      "text": "long MCHP at 79.085"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "STK|MCHP"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "4189d104c9e0",
+    "received_at": "2026-10-28T17:02:31.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-10-28T17:12:45+00:00--1a18376a16c9bdfd.json",
+      "archived_path": "inbox/processed/2026-10/2026-10-28T17:12:45+00:00--1a18376a16c9bdfd.json",
+      "raw_id": "1a18376a16c9bdfd",
+      "ingested_at": "2026-10-28T17:12:45.000Z"
+    },
+    "raw": {
+      "text": "#134771641685 BOT +2 ADI @427.275, ACCOUNT *****746SCHW"
+    },
+    "instrument": "stock",
+    "paper": false,
+    "action": "BOT",
+    "symbol": "ADI",
+    "qty": 2,
+    "fill": 427.275,
+    "option": null,
+    "computed": {
+      "month": "2026-10",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "stock",
+      "text": "long ADI at 427.275"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "STK|ADI"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "9f173db330f8",
+    "received_at": "2026-10-28T17:05:30.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-10-28T17:12:42+00:00--1a183795c9391cea.json",
+      "archived_path": "inbox/processed/2026-10/2026-10-28T17:12:42+00:00--1a183795c9391cea.json",
+      "raw_id": "1a183795c9391cea",
+      "ingested_at": "2026-10-28T17:12:42.000Z"
+    },
+    "raw": {
+      "text": "#134773902964 BOT +6 MCHP @79.2415, ACCOUNT *****746SCHW"
+    },
+    "instrument": "stock",
+    "paper": false,
+    "action": "BOT",
+    "symbol": "MCHP",
+    "qty": 6,
+    "fill": 79.2415,
+    "option": null,
+    "computed": {
+      "month": "2026-10",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "stock",
+      "text": "long MCHP at 79.2415"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "STK|MCHP"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "1cd6d2cf09fe",
+    "received_at": "2026-10-28T17:07:33.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-10-28T17:12:41+00:00--1a1837b3c38c30cc.json",
+      "archived_path": "inbox/processed/2026-10/2026-10-28T17:12:41+00:00--1a1837b3c38c30cc.json",
+      "raw_id": "1a1837b3c38c30cc",
+      "ingested_at": "2026-10-28T17:12:41.000Z"
+    },
+    "raw": {
+      "text": "#134773904242 SOLD -2 ADI @427.035, ACCOUNT *****746SCHW"
+    },
+    "instrument": "stock",
+    "paper": false,
+    "action": "SOLD",
+    "symbol": "ADI",
+    "qty": 2,
+    "fill": 427.035,
+    "option": null,
+    "computed": {
+      "month": "2026-10",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "stock",
+      "text": "exit long ADI at 427.035"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "STK|ADI"
   }
 ]

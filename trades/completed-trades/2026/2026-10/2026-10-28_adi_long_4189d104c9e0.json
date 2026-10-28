@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "completed_trade_id": "4189d104c9e0",
+  "status": "closed",
+  "contract_key": "STK|ADI",
+  "instrument": "stock",
+  "pos_side": "long",
+  "symbol": "ADI",
+  "option": null,
+  "qty_opened": 2,
+  "qty_closed": 2,
+  "entry": {
+    "trade_id": "4189d104c9e0",
+    "received_at": "2026-10-28T17:02:31.000Z",
+    "fill": 427.275,
+    "rdt": "long ADI at 427.275"
+  },
+  "exits": [
+    {
+      "trade_id": "1cd6d2cf09fe",
+      "received_at": "2026-10-28T17:07:33.000Z",
+      "fill": 427.035,
+      "qty": 2,
+      "rdt": "exit long ADI at 427.035"
+    }
+  ],
+  "pnl": {
+    "realized": -0.4799999999999045,
+    "currency": "USD"
+  }
+}

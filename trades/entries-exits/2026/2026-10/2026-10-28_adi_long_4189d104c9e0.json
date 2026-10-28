@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "trade_id": "4189d104c9e0",
+  "received_at": "2026-10-28T17:02:31.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-10-28T17:12:45+00:00--1a18376a16c9bdfd.json",
+    "archived_path": "inbox/processed/2026-10/2026-10-28T17:12:45+00:00--1a18376a16c9bdfd.json",
+    "raw_id": "1a18376a16c9bdfd",
+    "ingested_at": "2026-10-28T17:12:45.000Z"
+  },
+  "raw": {
+    "text": "#134771641685 BOT +2 ADI @427.275, ACCOUNT *****746SCHW"
+  },
+  "instrument": "stock",
+  "paper": false,
+  "action": "BOT",
+  "symbol": "ADI",
+  "qty": 2,
+  "fill": 427.275,
+  "option": null,
+  "computed": {
+    "month": "2026-10",
+    "dte": -1,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "stock",
+    "text": "long ADI at 427.275"
+  },
+  "trade_role": "open",
+  "pos_side": "long",
+  "contract_key": "STK|ADI"
+}

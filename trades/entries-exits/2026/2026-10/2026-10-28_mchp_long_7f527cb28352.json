@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "trade_id": "7f527cb28352",
+  "received_at": "2026-10-28T17:00:45.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-10-28T17:12:45+00:00--1a18375049750306.json",
+    "archived_path": "inbox/processed/2026-10/2026-10-28T17:12:45+00:00--1a18375049750306.json",
+    "raw_id": "1a18375049750306",
+    "ingested_at": "2026-10-28T17:12:45.000Z"
+  },
+  "raw": {
+    "text": "#134771640970 BOT +12 MCHP @79.085, ACCOUNT *****746SCHW"
+  },
+  "instrument": "stock",
+  "paper": false,
+  "action": "BOT",
+  "symbol": "MCHP",
+  "qty": 12,
+  "fill": 79.085,
+  "option": null,
+  "computed": {
+    "month": "2026-10",
+    "dte": -1,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "stock",
+    "text": "long MCHP at 79.085"
+  },
+  "trade_role": "open",
+  "pos_side": "long",
+  "contract_key": "STK|MCHP"
+}
