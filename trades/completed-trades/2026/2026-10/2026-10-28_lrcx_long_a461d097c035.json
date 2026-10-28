@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "completed_trade_id": "a461d097c035",
+  "status": "closed",
+  "contract_key": "STK|LRCX",
+  "instrument": "stock",
+  "pos_side": "long",
+  "symbol": "LRCX",
+  "option": null,
+  "qty_opened": 3,
+  "qty_closed": 3,
+  "entry": {
+    "trade_id": "a461d097c035",
+    "received_at": "2026-10-28T15:10:10.000Z",
+    "fill": 251,
+    "rdt": "long LRCX at 251"
+  },
+  "exits": [
+    {
+      "trade_id": "b0c0369cd76a",
+      "received_at": "2026-10-28T15:53:30.000Z",
+      "fill": 253.335,
+      "qty": 3,
+      "rdt": "exit long LRCX at 253.335"
+    }
+  ],
+  "pnl": {
+    "realized": 7.005000000000024,
+    "currency": "USD"
+  }
+}
