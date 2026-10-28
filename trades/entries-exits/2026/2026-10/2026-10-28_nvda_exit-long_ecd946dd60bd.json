@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "trade_id": "ecd946dd60bd",
+  "received_at": "2026-10-28T19:40:11.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-10-28T19:42:19+00:00--1a18406fad5ba7e2.json",
+    "archived_path": "inbox/processed/2026-10/2026-10-28T19:42:19+00:00--1a18406fad5ba7e2.json",
+    "raw_id": "1a18406fad5ba7e2",
+    "ingested_at": "2026-10-28T19:42:19.000Z"
+  },
+  "raw": {
+    "text": "#134806520381 SOLD -2 NVDA @214.675, ACCOUNT *****746SCHW"
+  },
+  "instrument": "stock",
+  "paper": false,
+  "action": "SOLD",
+  "symbol": "NVDA",
+  "qty": 2,
+  "fill": 214.675,
+  "option": null,
+  "computed": {
+    "month": "2026-10",
+    "dte": -1,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "stock",
+    "text": "exit long NVDA at 214.675"
+  },
+  "trade_role": "close",
+  "pos_side": "long",
+  "contract_key": "STK|NVDA"
+}
