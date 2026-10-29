@@ -4696,5 +4696,39 @@
     "trade_role": "close",
     "pos_side": "long",
     "contract_key": "STK|CTSH"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "1a463ee3b536",
+    "received_at": "2026-10-29T15:18:20.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-10-29T15:26:46+00:00--1a1883d99503a7cb.json",
+      "archived_path": "inbox/processed/2026-10/2026-10-29T15:26:46+00:00--1a1883d99503a7cb.json",
+      "raw_id": "1a1883d99503a7cb",
+      "ingested_at": "2026-10-29T15:26:46.000Z"
+    },
+    "raw": {
+      "text": "#134879768695 BOT +3 TER @301.135, ACCOUNT *****746SCHW"
+    },
+    "instrument": "stock",
+    "paper": false,
+    "action": "BOT",
+    "symbol": "TER",
+    "qty": 3,
+    "fill": 301.135,
+    "option": null,
+    "computed": {
+      "month": "2026-10",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "stock",
+      "text": "long TER at 301.135"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "STK|TER"
   }
 ]
