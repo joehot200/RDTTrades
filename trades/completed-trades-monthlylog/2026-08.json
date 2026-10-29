@@ -249,6 +249,37 @@
   },
   {
     "schema_version": 1,
+    "completed_trade_id": "1bca3f54cabe",
+    "status": "closed",
+    "contract_key": "STK|TER",
+    "instrument": "stock",
+    "pos_side": "long",
+    "symbol": "TER",
+    "option": null,
+    "qty_opened": 1,
+    "qty_closed": 3,
+    "entry": {
+      "trade_id": "1bca3f54cabe",
+      "received_at": "2026-08-04T15:04:32.000Z",
+      "fill": 403.67,
+      "rdt": "long TER at 403.67"
+    },
+    "exits": [
+      {
+        "trade_id": "48a0118d3fb1",
+        "received_at": "2026-10-29T15:27:06.000Z",
+        "fill": 299.875,
+        "qty": 3,
+        "rdt": "exit long TER at 299.875"
+      }
+    ],
+    "pnl": {
+      "realized": -311.38500000000005,
+      "currency": "USD"
+    }
+  },
+  {
+    "schema_version": 1,
     "completed_trade_id": "32f00ce11e3e",
     "status": "closed",
     "contract_key": "STK|INTU",
