@@ -1348,5 +1348,36 @@
       "realized": 1.4099999999999682,
       "currency": "USD"
     }
+  },
+  {
+    "schema_version": 1,
+    "completed_trade_id": "968d3c853779",
+    "status": "closed",
+    "contract_key": "STK|CTSH",
+    "instrument": "stock",
+    "pos_side": "long",
+    "symbol": "CTSH",
+    "option": null,
+    "qty_opened": 13,
+    "qty_closed": 13,
+    "entry": {
+      "trade_id": "968d3c853779",
+      "received_at": "2026-10-29T14:02:01.000Z",
+      "fill": 65.21,
+      "rdt": "long CTSH at 65.21"
+    },
+    "exits": [
+      {
+        "trade_id": "4eb1c580b315",
+        "received_at": "2026-10-29T14:47:09.000Z",
+        "fill": 63.29,
+        "qty": 13,
+        "rdt": "exit long CTSH at 63.29"
+      }
+    ],
+    "pnl": {
+      "realized": -24.95999999999993,
+      "currency": "USD"
+    }
   }
 ]
