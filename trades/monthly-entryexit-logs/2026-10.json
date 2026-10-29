@@ -4900,5 +4900,73 @@
     "trade_role": "close",
     "pos_side": "long",
     "contract_key": "STK|ORCL"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "a00027666550",
+    "received_at": "2026-10-29T15:59:54.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-10-29T16:09:33+00:00--1a18863ab43ba56b.json",
+      "archived_path": "inbox/processed/2026-10/2026-10-29T16:09:33+00:00--1a18863ab43ba56b.json",
+      "raw_id": "1a18863ab43ba56b",
+      "ingested_at": "2026-10-29T16:09:33.000Z"
+    },
+    "raw": {
+      "text": "#134890682715 BOT +7 ORCL @140.285, ACCOUNT *****746SCHW"
+    },
+    "instrument": "stock",
+    "paper": false,
+    "action": "BOT",
+    "symbol": "ORCL",
+    "qty": 7,
+    "fill": 140.285,
+    "option": null,
+    "computed": {
+      "month": "2026-10",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "stock",
+      "text": "long ORCL at 140.285"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "STK|ORCL"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "26bd6c6f4e02",
+    "received_at": "2026-10-29T16:08:02.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-10-29T16:09:32+00:00--1a1886b1e8477edc.json",
+      "archived_path": "inbox/processed/2026-10/2026-10-29T16:09:32+00:00--1a1886b1e8477edc.json",
+      "raw_id": "1a1886b1e8477edc",
+      "ingested_at": "2026-10-29T16:09:32.000Z"
+    },
+    "raw": {
+      "text": "#134890685510 SOLD -3 WDC @399.755, ACCOUNT *****746SCHW"
+    },
+    "instrument": "stock",
+    "paper": false,
+    "action": "SOLD",
+    "symbol": "WDC",
+    "qty": 3,
+    "fill": 399.755,
+    "option": null,
+    "computed": {
+      "month": "2026-10",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "stock",
+      "text": "exit long WDC at 399.755"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "STK|WDC"
   }
 ]

@@ -125,6 +125,37 @@
   },
   {
     "schema_version": 1,
+    "completed_trade_id": "1b8346683dba",
+    "status": "closed",
+    "contract_key": "STK|WDC",
+    "instrument": "stock",
+    "pos_side": "long",
+    "symbol": "WDC",
+    "option": null,
+    "qty_opened": 1,
+    "qty_closed": 3,
+    "entry": {
+      "trade_id": "1b8346683dba",
+      "received_at": "2026-08-03T18:15:52.000Z",
+      "fill": 538.72,
+      "rdt": "long WDC at 538.72"
+    },
+    "exits": [
+      {
+        "trade_id": "26bd6c6f4e02",
+        "received_at": "2026-10-29T16:08:02.000Z",
+        "fill": 399.755,
+        "qty": 3,
+        "rdt": "exit long WDC at 399.755"
+      }
+    ],
+    "pnl": {
+      "realized": -416.8950000000001,
+      "currency": "USD"
+    }
+  },
+  {
+    "schema_version": 1,
     "completed_trade_id": "245c80e9ee38",
     "status": "closed",
     "contract_key": "STK|ZM",
