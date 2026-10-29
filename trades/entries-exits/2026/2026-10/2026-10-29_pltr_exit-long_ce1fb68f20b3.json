@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "trade_id": "ce1fb68f20b3",
+  "received_at": "2026-10-29T14:02:10.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-10-29T14:03:32+00:00--1a187f7df2c4c449.json",
+    "archived_path": "inbox/processed/2026-10/2026-10-29T14:03:32+00:00--1a187f7df2c4c449.json",
+    "raw_id": "1a187f7df2c4c449",
+    "ingested_at": "2026-10-29T14:03:32.000Z"
+  },
+  "raw": {
+    "text": "#134854236526 SOLD -4 PLTR @196.0901, ACCOUNT *****746SCHW"
+  },
+  "instrument": "stock",
+  "paper": false,
+  "action": "SOLD",
+  "symbol": "PLTR",
+  "qty": 4,
+  "fill": 196.0901,
+  "option": null,
+  "computed": {
+    "month": "2026-10",
+    "dte": -1,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "stock",
+    "text": "exit long PLTR at 196.0901"
+  },
+  "trade_role": "close",
+  "pos_side": "long",
+  "contract_key": "STK|PLTR"
+}

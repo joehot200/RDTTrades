@@ -1256,5 +1256,107 @@
     "trade_role": "open",
     "pos_side": "long",
     "contract_key": "STK|NVDA"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "13438d4a7b11",
+    "received_at": "2026-10-29T13:53:32.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-10-29T14:03:34+00:00--1a187eff963afbb4.json",
+      "archived_path": "inbox/processed/2026-10/2026-10-29T14:03:34+00:00--1a187eff963afbb4.json",
+      "raw_id": "1a187eff963afbb4",
+      "ingested_at": "2026-10-29T14:03:34.000Z"
+    },
+    "raw": {
+      "text": "#134851181015 BOT +1 INTU @330.17, ACCOUNT *****746SCHW"
+    },
+    "instrument": "stock",
+    "paper": false,
+    "action": "BOT",
+    "symbol": "INTU",
+    "qty": 1,
+    "fill": 330.17,
+    "option": null,
+    "computed": {
+      "month": "2026-10",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "stock",
+      "text": "long INTU at 330.17"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "STK|INTU"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "968d3c853779",
+    "received_at": "2026-10-29T14:02:01.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-10-29T14:03:32+00:00--1a187f7c3a224269.json",
+      "archived_path": "inbox/processed/2026-10/2026-10-29T14:03:32+00:00--1a187f7c3a224269.json",
+      "raw_id": "1a187f7c3a224269",
+      "ingested_at": "2026-10-29T14:03:32.000Z"
+    },
+    "raw": {
+      "text": "#134854236338 BOT +13 CTSH @65.21, ACCOUNT *****746SCHW"
+    },
+    "instrument": "stock",
+    "paper": false,
+    "action": "BOT",
+    "symbol": "CTSH",
+    "qty": 13,
+    "fill": 65.21,
+    "option": null,
+    "computed": {
+      "month": "2026-10",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "stock",
+      "text": "long CTSH at 65.21"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "STK|CTSH"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "ce1fb68f20b3",
+    "received_at": "2026-10-29T14:02:10.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-10-29T14:03:32+00:00--1a187f7df2c4c449.json",
+      "archived_path": "inbox/processed/2026-10/2026-10-29T14:03:32+00:00--1a187f7df2c4c449.json",
+      "raw_id": "1a187f7df2c4c449",
+      "ingested_at": "2026-10-29T14:03:32.000Z"
+    },
+    "raw": {
+      "text": "#134854236526 SOLD -4 PLTR @196.0901, ACCOUNT *****746SCHW"
+    },
+    "instrument": "stock",
+    "paper": false,
+    "action": "SOLD",
+    "symbol": "PLTR",
+    "qty": 4,
+    "fill": 196.0901,
+    "option": null,
+    "computed": {
+      "month": "2026-10",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "stock",
+      "text": "exit long PLTR at 196.0901"
+    },
+    "trade_role": "close",
+    "pos_side": "long",
+    "contract_key": "STK|PLTR"
   }
 ]

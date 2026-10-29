@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "trade_id": "968d3c853779",
+  "received_at": "2026-10-29T14:02:01.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-10-29T14:03:32+00:00--1a187f7c3a224269.json",
+    "archived_path": "inbox/processed/2026-10/2026-10-29T14:03:32+00:00--1a187f7c3a224269.json",
+    "raw_id": "1a187f7c3a224269",
+    "ingested_at": "2026-10-29T14:03:32.000Z"
+  },
+  "raw": {
+    "text": "#134854236338 BOT +13 CTSH @65.21, ACCOUNT *****746SCHW"
+  },
+  "instrument": "stock",
+  "paper": false,
+  "action": "BOT",
+  "symbol": "CTSH",
+  "qty": 13,
+  "fill": 65.21,
+  "option": null,
+  "computed": {
+    "month": "2026-10",
+    "dte": -1,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "stock",
+    "text": "long CTSH at 65.21"
+  },
+  "trade_role": "open",
+  "pos_side": "long",
+  "contract_key": "STK|CTSH"
+}
