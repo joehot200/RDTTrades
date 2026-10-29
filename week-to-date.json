@@ -1732,5 +1732,39 @@
     "trade_role": "close",
     "pos_side": "long",
     "contract_key": "STK|WDC"
+  },
+  {
+    "schema_version": 1,
+    "trade_id": "62cfd9c6de85",
+    "received_at": "2026-10-29T19:34:51.000Z",
+    "source": {
+      "system": "zapier_github_inbox",
+      "inbox_path": "inbox/2026-10-29T19:36:48+00:00--1a18928747500ea1.json",
+      "archived_path": "inbox/processed/2026-10/2026-10-29T19:36:48+00:00--1a18928747500ea1.json",
+      "raw_id": "1a18928747500ea1",
+      "ingested_at": "2026-10-29T19:36:48.000Z"
+    },
+    "raw": {
+      "text": "#134935642580 BOT +2 TEL @224.245, ACCOUNT *****746SCHW"
+    },
+    "instrument": "stock",
+    "paper": false,
+    "action": "BOT",
+    "symbol": "TEL",
+    "qty": 2,
+    "fill": 224.245,
+    "option": null,
+    "computed": {
+      "month": "2026-10",
+      "dte": -1,
+      "wiki_ok": false
+    },
+    "rdt": {
+      "matched": "stock",
+      "text": "long TEL at 224.245"
+    },
+    "trade_role": "open",
+    "pos_side": "long",
+    "contract_key": "STK|TEL"
   }
 ]
