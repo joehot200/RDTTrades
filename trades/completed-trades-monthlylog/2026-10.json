@@ -1317,5 +1317,36 @@
       "realized": -0.4799999999999045,
       "currency": "USD"
     }
+  },
+  {
+    "schema_version": 1,
+    "completed_trade_id": "13438d4a7b11",
+    "status": "closed",
+    "contract_key": "STK|INTU",
+    "instrument": "stock",
+    "pos_side": "long",
+    "symbol": "INTU",
+    "option": null,
+    "qty_opened": 1,
+    "qty_closed": 2,
+    "entry": {
+      "trade_id": "13438d4a7b11",
+      "received_at": "2026-10-29T13:53:32.000Z",
+      "fill": 330.17,
+      "rdt": "long INTU at 330.17"
+    },
+    "exits": [
+      {
+        "trade_id": "ad25ab284095",
+        "received_at": "2026-10-29T14:18:51.000Z",
+        "fill": 330.875,
+        "qty": 2,
+        "rdt": "exit long INTU at 330.875"
+      }
+    ],
+    "pnl": {
+      "realized": 1.4099999999999682,
+      "currency": "USD"
+    }
   }
 ]
