@@ -1379,5 +1379,36 @@
       "realized": -24.95999999999993,
       "currency": "USD"
     }
+  },
+  {
+    "schema_version": 1,
+    "completed_trade_id": "62cfd9c6de85",
+    "status": "closed",
+    "contract_key": "STK|TEL",
+    "instrument": "stock",
+    "pos_side": "long",
+    "symbol": "TEL",
+    "option": null,
+    "qty_opened": 2,
+    "qty_closed": 2,
+    "entry": {
+      "trade_id": "62cfd9c6de85",
+      "received_at": "2026-10-29T19:34:51.000Z",
+      "fill": 224.245,
+      "rdt": "long TEL at 224.245"
+    },
+    "exits": [
+      {
+        "trade_id": "e4a6a61c32c5",
+        "received_at": "2026-10-29T19:41:09.000Z",
+        "fill": 223.365,
+        "qty": 2,
+        "rdt": "exit long TEL at 223.365"
+      }
+    ],
+    "pnl": {
+      "realized": -1.759999999999991,
+      "currency": "USD"
+    }
   }
 ]
