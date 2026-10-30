@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-10-29T19:51:44.744Z",
-  "latest_commit_message": "exit long TEL at 223.365",
-  "latest_processed_trade_id": "e4a6a61c32c5",
+  "generated_at": "2026-10-30T14:28:59.014Z",
+  "latest_commit_message": "exit long GLW at 123.57",
+  "latest_processed_trade_id": "ca8b833c2e7b",
   "processed_trade_ids_this_run": [
-    "e4a6a61c32c5"
+    "ca8b833c2e7b"
   ]
 }

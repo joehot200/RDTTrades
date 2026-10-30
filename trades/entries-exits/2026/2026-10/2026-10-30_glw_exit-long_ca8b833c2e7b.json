@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "trade_id": "ca8b833c2e7b",
+  "received_at": "2026-10-30T14:22:30.000Z",
+  "source": {
+    "system": "zapier_github_inbox",
+    "inbox_path": "inbox/2026-10-30T14:28:42+00:00--1a18d30dc2f9b220.json",
+    "archived_path": "inbox/processed/2026-10/2026-10-30T14:28:42+00:00--1a18d30dc2f9b220.json",
+    "raw_id": "1a18d30dc2f9b220",
+    "ingested_at": "2026-10-30T14:28:42.000Z"
+  },
+  "raw": {
+    "text": "#134997373083 SOLD -8 GLW @123.57, ACCOUNT *****746SCHW"
+  },
+  "instrument": "stock",
+  "paper": false,
+  "action": "SOLD",
+  "symbol": "GLW",
+  "qty": 8,
+  "fill": 123.57,
+  "option": null,
+  "computed": {
+    "month": "2026-10",
+    "dte": -1,
+    "wiki_ok": false
+  },
+  "rdt": {
+    "matched": "stock",
+    "text": "exit long GLW at 123.57"
+  },
+  "trade_role": "close",
+  "pos_side": "long",
+  "contract_key": "STK|GLW"
+}
